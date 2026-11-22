@@ -36,12 +36,14 @@ With the source text, every model passes about 97% of the task criteria. Without
 |---|---|---|---|---|
 | Claude Sonnet 4.6 | No data | 0% (0 of 209) | 38% (78 of 208) | 2 of 44 |
 | Claude Sonnet 4.6 | With the text | 82% (171 of 209) | **97%** (202 of 208) | **41 of 44** |
-| Claude Sonnet 5.5 | With the text | not run | **97%** (201 of 208) | 38 of 44 |
-| Claude Opus 5.5 | With the text | not run | **97%** (202 of 208) | 38 of 44 |
+| Claude Sonnet 5.5 | No data | 0% (0 of 209) | not run | not run |
+| Claude Sonnet 5.5 | With the text | **90%** (189 of 209) | **97%** (201 of 208) | 38 of 44 |
+| Claude Opus 5.5 | No data | 0.5% (1 of 209) | not run | not run |
+| Claude Opus 5.5 | With the text | 88% (184 of 209) | **97%** (202 of 208) | 38 of 44 |
 
 - **No data:** the model answers from memory. **With the text:** the source texts are in the prompt.
 - **Criteria passed:** a criterion counts only when both judges pass it. Each model was run once.
-- **Sonnet 5.5 and Opus 5.5:** these answered four tasks per reply, with no tools, so they have no trajectory and the comparison with Sonnet 4.6 is not exact. Neither was run without the text, and the exact-text questions were not run.
+- **Sonnet 5.5 and Opus 5.5:** these answered four tasks per reply, with no tools, so they have no trajectory and the comparison with Sonnet 4.6 is not exact. Their exact-text questions were answered in batches of about 24, with and without the text; the task notes were run with the text only.
 - The models read the law well and do not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
 
 ## Scoring
