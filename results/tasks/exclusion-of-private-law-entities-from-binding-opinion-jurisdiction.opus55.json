@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-civil-procedure-and-litigation/exclusion-of-private-law-entities-from-binding-opinion-jurisdiction",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**بشأن:** مدى اختصاص الجمعية العمومية لقسمي الفتوى والتشريع بالنزاع بين محافظة الإسكندرية (حي العامرية أول) وشركة بتروجيت\n\n## أولاً: الوقائع\nطلبت محافظة الإسكندرية (حي العامرية أول) من الجمعية العمومية أن تفصل في نزاعها مع شركة المشروعات البترولية والاستشارات الفنية (بتروجيت). ويتعلق النزاع بمسؤولية الشركة عن تلف طريقين نتيجة أعمال مد أنابيب الغاز الطبيعي.\n\n## ثانياً: السؤال\nهل تملك الجمعية العمومية إصدار رأي ملزم في هذا النزاع؟ وما أساس ذلك؟\n\n## ثالثاً: الرأي\n**لا تملك الجمعية العمومية الفصل برأي ملزم في هذا النزاع.** وأسباب ذلك ما يلي:\n\n### 1. حدود الاختصاص الملزم\n- تنص المادة (66/د) من قانون مجلس الدولة رقم 47 لسنة 1972 على اختصاص الجمعية العمومية بإبداء الرأي مسبباً في المنازعات التي تنشأ بين الوزارات، أو المصالح العامة، أو الهيئات العامة، أو المؤسسات العامة، أو الهيئات المحلية، أو بين هذه الجهات بعضها وبعض. ويكون رأيها **ملزماً للجانبين**.\n- **السند:** المادة (66/د) (source-2).\n\n### 2. اشتراط أن يكون الطرفان من أشخاص القانون العام\n- الجهات الواردة في الفقرة (د) كلها من أشخاص القانون العام. لذلك **تنحسر ولاية الجمعية العمومية** عن أي نزاع يكون أحد أطرافه شخصاً من أشخاص القانون الخاص، حتى لو كان الطرف الآخر من أشخاص القانون العام.\n- **السند:** الفتوى رقم 446 بتاريخ 2024/02/28 (source-3).\n\n### 3. التطبيق على الواقعة\n- قسّمت الجمعية الطلب إلى شقين:\n  1. طلب الرأي في مدى جواز الحجز الإداري على الشركة لاستيفاء تكلفة إصلاح الطريقين.\n  2. النزاع حول المسؤولية التقصيرية للشركة عن التلف (source-1).\n- شق النزاع لا يدخل في اختصاصها الملزم، لأن الشركة لا تندرج ضمن الجهات العامة الواردة في المادة (66/د)، وهي تُعامل في الفتوى بوصفها طرفاً خارج هذه الجهات.\n- أما شق طلب الرأي في الحجز الإداري، فهو طلب إفتاء مستقل. ورأي الجمعية فيه لا يأخذ صفة الإلزام المقررة للمنازعات بموجب الفقرة (د).\n\n## رابعاً: التوصية\n- يُفصل في مسؤولية الشركة عن التلف أمام جهة القضاء المختصة.\n- يجوز للمحافظة أن تستطلع الرأي القانوني في مسألة الحجز الإداري، لكنه رأي غير ملزم للشركة.\n\n## خامساً: تحفظ\nلا تتضمن المستندات بياناً للطبيعة القانونية للشركة سوى ما يُستفاد من الفتوى. ولم يُرفق ما انتهت إليه الجمعية في مسألة الحجز الإداري. ويقوم هذا الرأي على المستندات المرفقة وحدها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Binding Opinion Jurisdiction",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section 1 that Article 66/d of Law 47 of 1972 grants the General Assembly jurisdiction to issue binding opinions in disputes between ministries, general authorities, public institutions, and local authorities (all public law entities). Section 2 explicitly states that this jurisdiction is limited to public law entities ('أشخاص القانون العام') and does not extend to disputes where one party is a private law entity. This directly satisfies the criterion requirement."
+    },
+    {
+     "id": "C-002",
+     "title": "Public Law Entities Only",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 (اشتراط أن يكون الطرفان من أشخاص القانون العام): 'الجهات الواردة في الفقرة (د) كلها من أشخاص القانون العام' - meaning all entities listed in paragraph (d) are public law persons. This directly satisfies the criterion that the note must state all entities within the General Assembly's jurisdiction are exclusively public law persons."
+    },
+    {
+     "id": "C-003",
+     "title": "Private Law Party Exclusion",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 that 'تنحسر ولاية الجمعية العمومية عن أي نزاع يكون أحد أطرافه شخصاً من أشخاص القانون الخاص، حتى لو كان الطرف الآخر من أشخاص القانون العام' (the General Assembly's jurisdiction recedes from any dispute where one of the parties is a private law person, even if the other party is a public law person). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Petrojet as Private Entity",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 that the General Assembly's jurisdiction is limited to public law persons, and that it does not extend to disputes where one party is a private law person (شخص من أشخاص القانون الخاص). In section 3, it applies this to the case by noting that Petrojet (الشركة) does not fall within the public entities listed in Article 66/d, treating it as a party outside those entities. While the note doesn't use the exact phrase 'شركة بتروجيت هي شخص من أشخاص القانون الخاص' explicitly, it clearly characterizes Petrojet as a private law entity falling outside the public law persons enumerated in Article 66/d, and states this removes the dispute from the binding opinion jurisdiction of the General Assembly."
+    },
+    {
+     "id": "C-005",
+     "title": "No Binding Opinion Despite Public Party",
+     "verdict": "pass",
+     "reasoning": "The note states in section 2 that the General Assembly's jurisdiction recedes when one of the parties is a private law person, 'even if the other party is a public law person' (حتى لو كان الطرف الآخر من أشخاص القانون العام). This directly addresses the criterion by explicitly stating that Alexandria Governorate being a public law entity does not change the recession of jurisdiction."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Binding Opinion Jurisdiction",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in Section ثالثاً, points 1 and 2, that the General Assembly has jurisdiction to issue binding opinions (رأي ملزم) in disputes between public law entities such as ministries (الوزارات), general authorities (الهيئات العامة), public institutions (المؤسسات العامة), and local authorities (الهيئات المحلية), citing Article 66/d. It also explicitly states that this binding jurisdiction is limited to disputes between these public law entities."
+    },
+    {
+     "id": "C-002",
+     "title": "Public Law Entities Only",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 that 'الجهات الواردة في الفقرة (د) كلها من أشخاص القانون العام' (All entities listed in paragraph (d) are public law persons), clearly establishing that all entities within the General Assembly's jurisdiction are exclusively public law entities."
+    },
+    {
+     "id": "C-003",
+     "title": "Private Law Party Exclusion",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 2: 'تنحسر ولاية الجمعية العمومية عن أي نزاع يكون أحد أطرافه شخصاً من أشخاص القانون الخاص' (The General Assembly's jurisdiction recedes from any dispute in which one of the parties is a private law person). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Petrojet as Private Entity",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that Petrojet is a private law person (شخص من أشخاص القانون الخاص) in Section 2: 'تنحسر ولاية الجمعية العمومية عن أي نزاع يكون أحد أطرافه شخصاً من أشخاص القانون الخاص' and in Section 3 it applies this to Petrojet, stating the company does not fall within the public entities listed in Article 66(d). This clearly establishes that Petrojet's status as a private law entity removes the dispute from the General Assembly's binding opinion jurisdiction."
+    },
+    {
+     "id": "C-005",
+     "title": "No Binding Opinion Despite Public Party",
+     "verdict": "pass",
+     "reasoning": "The note states in section 2 that the General Assembly's jurisdiction recedes from any dispute where one party is a private law entity, 'even if the other party is a public law person' ('حتى لو كان الطرف الآخر من أشخاص القانون العام'). This directly addresses that Alexandria Governorate being a public law person does not change the recession of jurisdiction."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/exclusion-of-private-law-entities-from-binding-opinion-jurisdiction",
+  "task": "astrolabe-open/egypt-civil-procedure-and-litigation/exclusion-of-private-law-entities-from-binding-opinion-jurisdiction",
+  "scored_at": "2026-11-22T19:08:33.866948+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Binding Opinion Jurisdiction",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section 1 that Article 66/d of Law 47 of 1972 grants the General Assembly jurisdiction to issue binding opinions in disputes between ministries, general authorities, public institutions, and local authorities (all public law entities). Section 2 explicitly states that this jurisdiction is limited to public law entities ('أشخاص القانون العام') and does not extend to disputes where one party is a private law entity. This directly satisfies the criterion requirement."
+     },
+     {
+      "id": "C-002",
+      "title": "Public Law Entities Only",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 (اشتراط أن يكون الطرفان من أشخاص القانون العام): 'الجهات الواردة في الفقرة (د) كلها من أشخاص القانون العام' - meaning all entities listed in paragraph (d) are public law persons. This directly satisfies the criterion that the note must state all entities within the General Assembly's jurisdiction are exclusively public law persons."
+     },
+     {
+      "id": "C-003",
+      "title": "Private Law Party Exclusion",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 that 'تنحسر ولاية الجمعية العمومية عن أي نزاع يكون أحد أطرافه شخصاً من أشخاص القانون الخاص، حتى لو كان الطرف الآخر من أشخاص القانون العام' (the General Assembly's jurisdiction recedes from any dispute where one of the parties is a private law person, even if the other party is a public law person). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Petrojet as Private Entity",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 that the General Assembly's jurisdiction is limited to public law persons, and that it does not extend to disputes where one party is a private law person (شخص من أشخاص القانون الخاص). In section 3, it applies this to the case by noting that Petrojet (الشركة) does not fall within the public entities listed in Article 66/d, treating it as a party outside those entities. While the note doesn't use the exact phrase 'شركة بتروجيت هي شخص من أشخاص القانون الخاص' explicitly, it clearly characterizes Petrojet as a private law entity falling outside the public law persons enumerated in Article 66/d, and states this removes the dispute from the binding opinion jurisdiction of the General Assembly."
+     },
+     {
+      "id": "C-005",
+      "title": "No Binding Opinion Despite Public Party",
+      "verdict": "pass",
+      "reasoning": "The note states in section 2 that the General Assembly's jurisdiction recedes when one of the parties is a private law person, 'even if the other party is a public law person' (حتى لو كان الطرف الآخر من أشخاص القانون العام). This directly addresses the criterion by explicitly stating that Alexandria Governorate being a public law entity does not change the recession of jurisdiction."
+     }
+    ],
+    "run_id": "open-o55-files/exclusion-of-private-law-entities-from-binding-opinion-jurisdiction",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/exclusion-of-private-law-entities-from-binding-opinion-jurisdiction",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:05:53.847203+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Binding Opinion Jurisdiction",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in Section ثالثاً, points 1 and 2, that the General Assembly has jurisdiction to issue binding opinions (رأي ملزم) in disputes between public law entities such as ministries (الوزارات), general authorities (الهيئات العامة), public institutions (المؤسسات العامة), and local authorities (الهيئات المحلية), citing Article 66/d. It also explicitly states that this binding jurisdiction is limited to disputes between these public law entities."
+     },
+     {
+      "id": "C-002",
+      "title": "Public Law Entities Only",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 that 'الجهات الواردة في الفقرة (د) كلها من أشخاص القانون العام' (All entities listed in paragraph (d) are public law persons), clearly establishing that all entities within the General Assembly's jurisdiction are exclusively public law entities."
+     },
+     {
+      "id": "C-003",
+      "title": "Private Law Party Exclusion",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 2: 'تنحسر ولاية الجمعية العمومية عن أي نزاع يكون أحد أطرافه شخصاً من أشخاص القانون الخاص' (The General Assembly's jurisdiction recedes from any dispute in which one of the parties is a private law person). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Petrojet as Private Entity",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that Petrojet is a private law person (شخص من أشخاص القانون الخاص) in Section 2: 'تنحسر ولاية الجمعية العمومية عن أي نزاع يكون أحد أطرافه شخصاً من أشخاص القانون الخاص' and in Section 3 it applies this to Petrojet, stating the company does not fall within the public entities listed in Article 66(d). This clearly establishes that Petrojet's status as a private law entity removes the dispute from the General Assembly's binding opinion jurisdiction."
+     },
+     {
+      "id": "C-005",
+      "title": "No Binding Opinion Despite Public Party",
+      "verdict": "pass",
+      "reasoning": "The note states in section 2 that the General Assembly's jurisdiction recedes from any dispute where one party is a private law entity, 'even if the other party is a public law person' ('حتى لو كان الطرف الآخر من أشخاص القانون العام'). This directly addresses that Alexandria Governorate being a public law person does not change the recession of jurisdiction."
+     }
+    ],
+    "run_id": "open-o55-files/exclusion-of-private-law-entities-from-binding-opinion-jurisdiction",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/exclusion-of-private-law-entities-from-binding-opinion-jurisdiction",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:08:33.866494+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

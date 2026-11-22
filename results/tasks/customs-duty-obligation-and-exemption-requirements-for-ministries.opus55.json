@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة قانونية\n\n**الموضوع:** التزام وزارة الداخلية بالضرائب والرسوم الجمركية عن سيارات مستوردة بنظام الإفراج المؤقت، ومدى إلزامها بتعويض عن عدم تقديم الموافقة الاستيرادية.\n\n## أولًا: الوقائع\nاستوردت وزارة الداخلية في عام 1995 سيارات من الخارج بنظام الإفراج المؤقت دون سداد الضرائب والرسوم الجمركية، وقيمتها 104,262.680 جنيهًا. وتطالبها مصلحة الجمارك بالسداد، وبتعويض عن عدم تقديم الموافقة الاستيرادية.\n\n## ثانيًا: الالتزام بالضرائب والرسوم الجمركية\n**الرأي:** الوزارة ملزمة بالسداد.\n\n**السند:**\n- وضع قانون الجمارك أصلًا عامًا هو خضوع جميع الواردات للضرائب الجمركية والضرائب الإضافية، فلا يُعفى منها إلا بنص خاص، وتستحق عند ورود البضاعة.\n- أجاز المشرع الإفراج المؤقت دون تحصيل الضرائب عن واردات الوزارات والمصالح الحكومية، وفق الشروط والإجراءات التي يحددها قرار وزير المالية. لكن هذا الإفراج تأجيل للتحصيل وليس إعفاء (الفتوى رقم 57 بتاريخ 8/1/1997).\n- ما دامت الوزارة لم تقدم ما يثبت إعادة تصدير السيارات أو صدور قرار بإعفائها، فهي ملزمة بأداء المبلغ كاملًا (104,262.680 جنيهًا)، ولا يوجد سند يعفيها منه (الفتوى ذاتها).\n\n## ثالثًا: التعويض عن عدم تقديم الموافقة الاستيرادية\n**الرأي:** لا يجوز إلزام الوزارة بهذا التعويض.\n\n**السند:** أحكام القانون رقم 118 لسنة 1975 في شأن الاستيراد والتصدير تخاطب القطاعين العام والخاص فقط، ولا تمتد إلى الوزارات والهيئات العامة حين تستورد احتياجاتها. ولذلك لا تسري على الوزارة المادة (15)، التي تجيز الإفراج عن السلع المستوردة بالمخالفة للمادة (10) مقابل تعويض يعادل ثمن البضاعة. وقد انتهت الفتوى رقم 57 لسنة 1997 إلى أن مطالبة الجمارك وزارة الداخلية بتعويض قدره 82,428 جنيهًا تفتقر إلى سند صحيح ويتعين رفضها.\n\n## رابعًا: الخلاصة والتوصية\n1. تلتزم الوزارة بسداد الضرائب والرسوم الجمركية البالغة 104,262.680 جنيهًا، إلا إذا قدمت ما يثبت إعادة تصدير السيارات أو صدور قرار بإعفائها.\n2. لا تلتزم الوزارة بأي تعويض يعادل ثمن البضاعة عن عدم تقديم الموافقة الاستيرادية، لأن القانون 118 لسنة 1975 لا يخاطبها. وننصح بالتمسك برفض هذا الشق من المطالبة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "General Rule of Customs Taxation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا under السند: 'وضع قانون الجمارك أصلًا عامًا هو خضوع جميع الواردات للضرائب الجمركية والضرائب الإضافية، فلا يُعفى منها إلا بنص خاص، وتستحق عند ورود البضاعة.' This directly states that the general rule in customs law is that all imports are subject to customs taxes and additional taxes, and exemption is only granted by a special provision."
+    },
+    {
+     "id": "C-002",
+     "title": "Obligation to Pay Customs Duties",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states in section ثانيًا (Second) that the Ministry is obligated to pay the full amount of 104,262.680 pounds, and explicitly conditions this on the Ministry's failure to present evidence of re-exportation of the vehicles or a decision granting exemption. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "No Exemption Without Evidence",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا that 'لا يوجد سند يعفيها منه' (there is no legal basis to exempt the Ministry from it), directly addressing the criterion. This statement appears in the context of the customs taxes obligation, confirming that no legal basis exists for the Ministry to be released from paying the 104,262.680 pounds."
+    },
+    {
+     "id": "C-004",
+     "title": "Import Law Does Not Apply to Ministries",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section three (ثالثًا) that the provisions of Law No. 118 of 1975 regarding import and export address only the public and private sectors and do not extend to ministries and public authorities when they import their own requirements ('تخاطب القطاعين العام والخاص فقط، ولا تمتد إلى الوزارات والهيئات العامة حين تستورد احتياجاتها'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Rejection of Compensation Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا that the customs authority's claim for compensation (82,428 جنيهًا) against the Ministry of Interior for failure to present the import approval 'تفتقر إلى سند صحيح ويتعين رفضها' (lacks a sound legal basis and must be rejected). This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "General Rule of Customs Taxation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section ثانيًا: 'وضع قانون الجمارك أصلًا عامًا هو خضوع جميع الواردات للضرائب الجمركية والضرائب الإضافية، فلا يُعفى منها إلا بنص خاص' — which directly establishes the general rule that all imports are subject to customs taxes and that exemption requires a special provision."
+    },
+    {
+     "id": "C-002",
+     "title": "Obligation to Pay Customs Duties",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the Ministry of Interior is obligated to pay customs taxes and duties amounting to 104,262.680 pounds, and explicitly conditions this on the Ministry's failure to present evidence of re-exportation or a decision granting exemption. This matches the criterion exactly."
+    },
+    {
+     "id": "C-003",
+     "title": "No Exemption Without Evidence",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states 'ولا يوجد سند يعفيها منه' (there is no legal basis that would exempt the Ministry from paying), which directly satisfies the criterion requiring a statement that there is no legal basis available to the Ministry to be released from its obligation to pay customs taxes."
+    },
+    {
+     "id": "C-004",
+     "title": "Import Law Does Not Apply to Ministries",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section ثالثًا that 'أحكام القانون رقم 118 لسنة 1975 في شأن الاستيراد والتصدير تخاطب القطاعين العام والخاص فقط، ولا تمتد إلى الوزارات والهيئات العامة حين تستورد احتياجاتها.' This directly satisfies the criterion by stating that Law No. 118 of 1975 does not address ministries and public authorities when they import their own requirements."
+    },
+    {
+     "id": "C-005",
+     "title": "Rejection of Compensation Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section ثالثًا that the compensation claim for failure to present the import approval (موافقة استيرادية) lacks a sound legal basis ('تفتقر إلى سند صحيح') and must be rejected ('يتعين رفضها'). This directly satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/customs-duty-obligation-and-exemption-requirements-for-ministries",
+  "task": "astrolabe-open/egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+  "scored_at": "2026-11-22T18:28:02.377852+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "General Rule of Customs Taxation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا under السند: 'وضع قانون الجمارك أصلًا عامًا هو خضوع جميع الواردات للضرائب الجمركية والضرائب الإضافية، فلا يُعفى منها إلا بنص خاص، وتستحق عند ورود البضاعة.' This directly states that the general rule in customs law is that all imports are subject to customs taxes and additional taxes, and exemption is only granted by a special provision."
+     },
+     {
+      "id": "C-002",
+      "title": "Obligation to Pay Customs Duties",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states in section ثانيًا (Second) that the Ministry is obligated to pay the full amount of 104,262.680 pounds, and explicitly conditions this on the Ministry's failure to present evidence of re-exportation of the vehicles or a decision granting exemption. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "No Exemption Without Evidence",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا that 'لا يوجد سند يعفيها منه' (there is no legal basis to exempt the Ministry from it), directly addressing the criterion. This statement appears in the context of the customs taxes obligation, confirming that no legal basis exists for the Ministry to be released from paying the 104,262.680 pounds."
+     },
+     {
+      "id": "C-004",
+      "title": "Import Law Does Not Apply to Ministries",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section three (ثالثًا) that the provisions of Law No. 118 of 1975 regarding import and export address only the public and private sectors and do not extend to ministries and public authorities when they import their own requirements ('تخاطب القطاعين العام والخاص فقط، ولا تمتد إلى الوزارات والهيئات العامة حين تستورد احتياجاتها'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Rejection of Compensation Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا that the customs authority's claim for compensation (82,428 جنيهًا) against the Ministry of Interior for failure to present the import approval 'تفتقر إلى سند صحيح ويتعين رفضها' (lacks a sound legal basis and must be rejected). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "task": "astrolabe-open/egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:18:32.301905+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "General Rule of Customs Taxation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section ثانيًا: 'وضع قانون الجمارك أصلًا عامًا هو خضوع جميع الواردات للضرائب الجمركية والضرائب الإضافية، فلا يُعفى منها إلا بنص خاص' — which directly establishes the general rule that all imports are subject to customs taxes and that exemption requires a special provision."
+     },
+     {
+      "id": "C-002",
+      "title": "Obligation to Pay Customs Duties",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the Ministry of Interior is obligated to pay customs taxes and duties amounting to 104,262.680 pounds, and explicitly conditions this on the Ministry's failure to present evidence of re-exportation or a decision granting exemption. This matches the criterion exactly."
+     },
+     {
+      "id": "C-003",
+      "title": "No Exemption Without Evidence",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states 'ولا يوجد سند يعفيها منه' (there is no legal basis that would exempt the Ministry from paying), which directly satisfies the criterion requiring a statement that there is no legal basis available to the Ministry to be released from its obligation to pay customs taxes."
+     },
+     {
+      "id": "C-004",
+      "title": "Import Law Does Not Apply to Ministries",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section ثالثًا that 'أحكام القانون رقم 118 لسنة 1975 في شأن الاستيراد والتصدير تخاطب القطاعين العام والخاص فقط، ولا تمتد إلى الوزارات والهيئات العامة حين تستورد احتياجاتها.' This directly satisfies the criterion by stating that Law No. 118 of 1975 does not address ministries and public authorities when they import their own requirements."
+     },
+     {
+      "id": "C-005",
+      "title": "Rejection of Compensation Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section ثالثًا that the compensation claim for failure to present the import approval (موافقة استيرادية) lacks a sound legal basis ('تفتقر إلى سند صحيح') and must be rejected ('يتعين رفضها'). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "task": "astrolabe-open/egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:28:02.377510+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

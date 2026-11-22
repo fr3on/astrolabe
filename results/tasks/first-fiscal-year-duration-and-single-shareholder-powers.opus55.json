@@ -1,0 +1,220 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-company-law/first-fiscal-year-duration-and-single-shareholder-powers",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الوقائع باختصار\nشركة مساهمة يملك خالد جميع أسهمها، ويرغب في تحديد سنتها المالية الأولى بتسعة أشهر من تاريخ القيد في السجل التجاري، دون عقد اجتماع للجمعية العامة.\n\n## السؤال الأول: هل يحق لخالد تحديد هذه المدة؟\n**نعم.**\n- **من حيث الصلاحية:** إذا آلت جميع أسهم شركة المساهمة إلى شخص واحد \"يكون لهذا الشخص صلاحيات وسلطات جمعيات المساهمين\" (المصدر 1). فيمارس خالد منفردًا ما تملكه الجمعيات.\n- **من حيث المدة:** يجوز أن تُحدد السنة المالية الأولى بما لا يقل عن ستة أشهر ولا يزيد على ثمانية عشر شهرًا بدءًا من تاريخ القيد في السجل التجاري (المصدر 2). ومدة تسعة أشهر تقع ضمن هذا النطاق، وبدء احتسابها من تاريخ القيد يوافق النص.\n\nملاحظة: السنة المالية تُحدد في عقد التأسيس أو النظام الأساس (المصدر 2)، فينبغي أن ينعكس القرار فيه.\n\n## السؤال الثاني: كيف يصدر القرار وأين يُدوَّن؟\n- **الشكل:** تصدر قرارات المساهم الوحيد **كتابةً**، دون الحاجة إلى دعوة الجمعية العامة (المصدر 1). فلا يلزم عقد اجتماع.\n- **التدوين:** تُدوَّن القرارات في السجل الخاص المنصوص عليه في المادة السابعة والتسعين من النظام (المصدر 1). ولم ترد تفاصيل هذه المادة في المستندات المرفقة.\n\n## الخلاصة\nيحق لخالد تحديد السنة المالية الأولى بتسعة أشهر، بقرار مكتوب دون دعوة الجمعية العامة، يُدوَّن في السجل الخاص المشار إليه في المادة (97).",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Minimum first fiscal year duration",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states 'يجوز أن تُحدد السنة المالية الأولى بما لا يقل عن ستة أشهر ولا يزيد على ثمانية عشر شهرًا' (the first fiscal year may be set at no less than six months and no more than eighteen months), which satisfies the criterion of stating that the first fiscal year must not be less than six months."
+    },
+    {
+     "id": "C-002",
+     "title": "Maximum first fiscal year duration",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the first fiscal year may be set to no less than six months and no more than eighteen months ('يجوز أن تُحدد السنة المالية الأولى بما لا يقل عن ستة أشهر ولا يزيد على ثمانية عشر شهرًا'). This clearly communicates the maximum duration of eighteen months."
+    },
+    {
+     "id": "C-003",
+     "title": "Nine months is permissible",
+     "verdict": "pass",
+     "reasoning": "The note explicitly confirms that nine months is a legally permissible duration for the first fiscal year. It states that the first fiscal year may be set at no less than six months and no more than eighteen months from the date of commercial registration, and that nine months falls within this range ('مدة تسعة أشهر تقع ضمن هذا النطاق')."
+    },
+    {
+     "id": "C-004",
+     "title": "Single shareholder powers",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that when all shares of a joint stock company belong to one person, 'يكون لهذا الشخص صلاحيات وسلطات جمعيات المساهمين' (this person holds the powers and authorities of the shareholders' assemblies), and applies this directly to Khalid's situation."
+    },
+    {
+     "id": "C-005",
+     "title": "Written decision without general assembly",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states in the second section (السؤال الثاني) that decisions by the sole shareholder are issued in writing ('كتابةً') without the need to convene the general assembly ('دون الحاجة إلى دعوة الجمعية العامة'). This is also confirmed in the conclusion (الخلاصة) which reiterates 'بقرار مكتوب دون دعوة الجمعية العامة'."
+    },
+    {
+     "id": "C-006",
+     "title": "Recording in special register",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states that decisions are recorded in the special register (السجل الخاص) prescribed by Article 97 of the regulations. This appears in the 'التدوين' section under Question 2 and is reiterated in the conclusion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Minimum first fiscal year duration",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states 'يجوز أن تُحدد السنة المالية الأولى بما لا يقل عن ستة أشهر' which translates to 'the first fiscal year may be set at no less than six months.'"
+    },
+    {
+     "id": "C-002",
+     "title": "Maximum first fiscal year duration",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states 'لا يزيد على ثمانية عشر شهرًا' (must not exceed eighteen months) when describing the permissible duration of the first fiscal year."
+    },
+    {
+     "id": "C-003",
+     "title": "Nine months is permissible",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that nine months falls within the permissible range (6-18 months) for the first fiscal year and confirms that Khalid has the right to set this duration."
+    },
+    {
+     "id": "C-004",
+     "title": "Single shareholder powers",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that when all shares belong to one person, that person holds the powers and authorities of the shareholders' assemblies (جمعيات المساهمين), and that Khalid individually exercises what the assemblies possess."
+    },
+    {
+     "id": "C-005",
+     "title": "Written decision without general assembly",
+     "verdict": "pass",
+     "reasoning": "The note clearly states under السؤال الثاني that decisions of the sole shareholder are issued in writing ('كتابةً') without the need to convene the general assembly ('دون الحاجة إلى دعوة الجمعية العامة'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-006",
+     "title": "Recording in special register",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the decisions are recorded in the special register (السجل الخاص) prescribed by Article 97 of the regulations, mentioned both in the 'التدوين' section and in the conclusion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/first-fiscal-year-duration-and-single-shareholder-powers",
+  "task": "astrolabe-open/saudi-company-law/first-fiscal-year-duration-and-single-shareholder-powers",
+  "scored_at": "2026-11-22T18:28:49.301189+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Minimum first fiscal year duration",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states 'يجوز أن تُحدد السنة المالية الأولى بما لا يقل عن ستة أشهر ولا يزيد على ثمانية عشر شهرًا' (the first fiscal year may be set at no less than six months and no more than eighteen months), which satisfies the criterion of stating that the first fiscal year must not be less than six months."
+     },
+     {
+      "id": "C-002",
+      "title": "Maximum first fiscal year duration",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the first fiscal year may be set to no less than six months and no more than eighteen months ('يجوز أن تُحدد السنة المالية الأولى بما لا يقل عن ستة أشهر ولا يزيد على ثمانية عشر شهرًا'). This clearly communicates the maximum duration of eighteen months."
+     },
+     {
+      "id": "C-003",
+      "title": "Nine months is permissible",
+      "verdict": "pass",
+      "reasoning": "The note explicitly confirms that nine months is a legally permissible duration for the first fiscal year. It states that the first fiscal year may be set at no less than six months and no more than eighteen months from the date of commercial registration, and that nine months falls within this range ('مدة تسعة أشهر تقع ضمن هذا النطاق')."
+     },
+     {
+      "id": "C-004",
+      "title": "Single shareholder powers",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that when all shares of a joint stock company belong to one person, 'يكون لهذا الشخص صلاحيات وسلطات جمعيات المساهمين' (this person holds the powers and authorities of the shareholders' assemblies), and applies this directly to Khalid's situation."
+     },
+     {
+      "id": "C-005",
+      "title": "Written decision without general assembly",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states in the second section (السؤال الثاني) that decisions by the sole shareholder are issued in writing ('كتابةً') without the need to convene the general assembly ('دون الحاجة إلى دعوة الجمعية العامة'). This is also confirmed in the conclusion (الخلاصة) which reiterates 'بقرار مكتوب دون دعوة الجمعية العامة'."
+     },
+     {
+      "id": "C-006",
+      "title": "Recording in special register",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states that decisions are recorded in the special register (السجل الخاص) prescribed by Article 97 of the regulations. This appears in the 'التدوين' section under Question 2 and is reiterated in the conclusion."
+     }
+    ],
+    "run_id": "open-o55-files/first-fiscal-year-duration-and-single-shareholder-powers",
+    "task": "astrolabe-open/saudi-company-law/first-fiscal-year-duration-and-single-shareholder-powers",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:24:53.885072+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Minimum first fiscal year duration",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states 'يجوز أن تُحدد السنة المالية الأولى بما لا يقل عن ستة أشهر' which translates to 'the first fiscal year may be set at no less than six months.'"
+     },
+     {
+      "id": "C-002",
+      "title": "Maximum first fiscal year duration",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states 'لا يزيد على ثمانية عشر شهرًا' (must not exceed eighteen months) when describing the permissible duration of the first fiscal year."
+     },
+     {
+      "id": "C-003",
+      "title": "Nine months is permissible",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that nine months falls within the permissible range (6-18 months) for the first fiscal year and confirms that Khalid has the right to set this duration."
+     },
+     {
+      "id": "C-004",
+      "title": "Single shareholder powers",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that when all shares belong to one person, that person holds the powers and authorities of the shareholders' assemblies (جمعيات المساهمين), and that Khalid individually exercises what the assemblies possess."
+     },
+     {
+      "id": "C-005",
+      "title": "Written decision without general assembly",
+      "verdict": "pass",
+      "reasoning": "The note clearly states under السؤال الثاني that decisions of the sole shareholder are issued in writing ('كتابةً') without the need to convene the general assembly ('دون الحاجة إلى دعوة الجمعية العامة'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-006",
+      "title": "Recording in special register",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the decisions are recorded in the special register (السجل الخاص) prescribed by Article 97 of the regulations, mentioned both in the 'التدوين' section and in the conclusion."
+     }
+    ],
+    "run_id": "open-o55-files/first-fiscal-year-duration-and-single-shareholder-powers",
+    "task": "astrolabe-open/saudi-company-law/first-fiscal-year-duration-and-single-shareholder-powers",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:28:49.300848+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

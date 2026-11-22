@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: مدى جواز الترخيص بتعلية عقار أحمد سالم\n\n## الوقائع\nعقار من ثلاثة طوابق في القاهرة: الطابقان الأول والثاني مرخصان سنة 1995، والطابق الثالث أُضيف سنة 2005 دون ترخيص. ويطلب المالك سنة 2023 ترخيصًا بإضافة طابق رابع، والمبنى مطابق للاشتراطات البنائية وشروط السلامة الإنشائية.\n\n## السؤال\nهل يحق له الحصول على ترخيص بالتعلية؟\n\n## الرأي\n**لا يجوز، وفق الإفتاء المستقر، الترخيص بالتعلية في الوضع الحالي.**\n\n## الأسباب والسند\n1. أوجبت قوانين البناء المتعاقبة قبل القانون رقم 119 لسنة 2008 الحصول على ترخيص سابق لإنشاء المباني أو تعليتها، وجعلت مخالفة ذلك جريمة توجب العقاب والإزالة أو التصحيح إداريًا. وسار القانون رقم 119 لسنة 2008 على النهج ذاته (فتوى رقم 1215 بتاريخ 1/7/2017). لذلك كان الطابق الثالث، الذي أُقيم سنة 2005، خاضعًا لوجوب الترخيص، وإقامته بغير ترخيص مخالفة.\n2. يلزم من هذا النهج، ولو دون نص صريح، أنه يشترط لإصدار ترخيص بالتعلية حاليًا أن يكون المبنى قد أُقيم **بكامله وبكل طوابقه** بموجب ترخيص سابق، متى كان واقعًا في جهة تسري عليها قوانين المباني. فما مُنع فعله يمتنع طلبه بعد ارتكابه (الفتوى ذاتها).\n3. أكدت الجمعية العمومية عدم جواز الترخيص بتعلية مبنى أُقيم أحد طوابقه بدون ترخيص **حتى لو كان مطابقًا لجميع الشروط البنائية والسلامة الإنشائية** (الفتوى ذاتها). لذلك لا تفيد مطابقة المبنى في هذه الحالة.\n\n## ملاحظات وتوصية\n- وجهت الجمعية العمومية الجهة الإدارية إلى اتخاذ الإجراءات اللازمة لإقرار قانون يعالج حالة المباني المقامة كلها أو بعضها بدون ترخيص. فإذا صدر تشريع من هذا النوع وأتاح تقنين وضع الطابق الثالث، أمكن بعد ذلك النظر في طلب التعلية. والمستندات المرفقة لا تتضمن نصوص أي تشريع من هذا القبيل، فيلزم التحقق منه قبل الاعتماد عليه.\n- ننصح بعدم البدء في أي تعلية دون ترخيص، لأن ذلك يُعد جريمة ويعرّض المبنى للإزالة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement of prior license for all floors",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that a condition for issuing a superstructure addition license (ترخيص بالتعلية) is that the building must have been constructed 'بكامله وبكل طوابقه' (entirely and with all its floors) under a prior license. This directly satisfies the criterion requirement."
+    },
+    {
+     "id": "C-002",
+     "title": "Unlicensed construction is a criminal offense",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1 that prior building laws made constructing without a license 'جريمة توجب العقاب والإزالة أو التصحيح إداريًا' (a crime requiring punishment and removal or administrative correction), and that the third floor built in 2005 without a license constitutes a violation ('مخالفة'). Furthermore, in the recommendations section, it explicitly warns against building without a license because 'ذلك يُعد جريمة ويعرّض المبنى للإزالة' (that is considered a crime and exposes the building to demolition). The note clearly states that unlicensed construction is a criminal offense punishable by law."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on legalizing what was illegally built",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2: 'فما مُنع فعله يمتنع طلبه بعد ارتكابه' (what was prohibited from being done may not be sought after it has been committed), directly addressing the principle that violations cannot be legitimized. It also confirms in point 3 that the General Assembly ruled against permitting construction on a building where a floor was built without a license, even if it meets all building and safety requirements."
+    },
+    {
+     "id": "C-004",
+     "title": "Compliance with building conditions does not override the rule",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 3 that the General Assembly confirmed that it is not permissible to license the addition of a superstructure to a building where one of its floors was constructed without a license, 'even if it complies with all construction conditions and structural safety requirements' (حتى لو كان مطابقًا لجميع الشروط البنائية والسلامة الإنشائية). It further concludes that the building's compliance does not benefit the case. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Recommendation for remedial legislation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'ملاحظات وتوصية' section that the General Assembly directed the administrative authority to take necessary steps to enact a law addressing buildings constructed entirely or partially without a license ('وجهت الجمعية العمومية الجهة الإدارية إلى اتخاذ الإجراءات اللازمة لإقرار قانون يعالج حالة المباني المقامة كلها أو بعضها بدون ترخيص'). This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement of prior license for all floors",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2: 'يشترط لإصدار ترخيص بالتعلية حاليًا أن يكون المبنى قد أُقيم بكامله وبكل طوابقه بموجب ترخيص سابق' (a condition for issuing a superstructure addition license is that the building was constructed in its entirety and all its floors under a prior license). This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Unlicensed construction is a criminal offense",
+     "verdict": "pass",
+     "reasoning": "The note states in point 1 that constructing without a license is 'جريمة توجب العقاب والإزالة أو التصحيح إداريًا' (a crime requiring punishment and removal or administrative correction), and in the final bullet it says 'ذلك يُعد جريمة ويعرّض المبنى للإزالة' (that constitutes a crime and exposes the building to demolition). While it uses the word 'جريمة' (crime) and mentions punishment by law, it does not explicitly use the specific term 'جريمة جنائية' (criminal offense). However, the criterion asks whether the note states that constructing without a license constitutes a criminal offense punishable by law. The note does characterize it as a 'جريمة' that 'توجب العقاب' (requires punishment), which substantively conveys that it is a criminal offense punishable by law. The term 'جريمة' in Arabic legal usage inherently refers to a criminal offense. This satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on legalizing what was illegally built",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2: 'فما مُنع فعله يمتنع طلبه بعد ارتكابه' (what was prohibited from being done may not be sought after it has been committed). This directly conveys the principle that what was illegally built cannot be legitimized or validated after the fact. The note also makes clear throughout that the violation (building without a license) cannot be recognized or used as a basis for further licensing."
+    },
+    {
+     "id": "C-004",
+     "title": "Compliance with building conditions does not override the rule",
+     "verdict": "pass",
+     "reasoning": "Point 3 of the agent's output explicitly states that the General Assembly confirmed that licensing a superstructure addition on a building with an unlicensed floor is impermissible **even if the building complies with all construction conditions and structural safety requirements** ('حتى لو كان مطابقًا لجميع الشروط البنائية والسلامة الإنشائية'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Recommendation for remedial legislation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'ملاحظات وتوصية' section that the General Assembly directed the administrative authority to take necessary steps to enact legislation addressing the situation of buildings constructed wholly or partially without a license ('وجهت الجمعية العمومية الجهة الإدارية إلى اتخاذ الإجراءات اللازمة لإقرار قانون يعالج حالة المباني المقامة كلها أو بعضها بدون ترخيص'). This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/criminal-liability-for-unlicensed-construction-on-buildings",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+  "scored_at": "2026-11-22T19:05:46.325444+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement of prior license for all floors",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that a condition for issuing a superstructure addition license (ترخيص بالتعلية) is that the building must have been constructed 'بكامله وبكل طوابقه' (entirely and with all its floors) under a prior license. This directly satisfies the criterion requirement."
+     },
+     {
+      "id": "C-002",
+      "title": "Unlicensed construction is a criminal offense",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1 that prior building laws made constructing without a license 'جريمة توجب العقاب والإزالة أو التصحيح إداريًا' (a crime requiring punishment and removal or administrative correction), and that the third floor built in 2005 without a license constitutes a violation ('مخالفة'). Furthermore, in the recommendations section, it explicitly warns against building without a license because 'ذلك يُعد جريمة ويعرّض المبنى للإزالة' (that is considered a crime and exposes the building to demolition). The note clearly states that unlicensed construction is a criminal offense punishable by law."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on legalizing what was illegally built",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2: 'فما مُنع فعله يمتنع طلبه بعد ارتكابه' (what was prohibited from being done may not be sought after it has been committed), directly addressing the principle that violations cannot be legitimized. It also confirms in point 3 that the General Assembly ruled against permitting construction on a building where a floor was built without a license, even if it meets all building and safety requirements."
+     },
+     {
+      "id": "C-004",
+      "title": "Compliance with building conditions does not override the rule",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 3 that the General Assembly confirmed that it is not permissible to license the addition of a superstructure to a building where one of its floors was constructed without a license, 'even if it complies with all construction conditions and structural safety requirements' (حتى لو كان مطابقًا لجميع الشروط البنائية والسلامة الإنشائية). It further concludes that the building's compliance does not benefit the case. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Recommendation for remedial legislation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'ملاحظات وتوصية' section that the General Assembly directed the administrative authority to take necessary steps to enact a law addressing buildings constructed entirely or partially without a license ('وجهت الجمعية العمومية الجهة الإدارية إلى اتخاذ الإجراءات اللازمة لإقرار قانون يعالج حالة المباني المقامة كلها أو بعضها بدون ترخيص'). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/criminal-liability-for-unlicensed-construction-on-buildings",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:04:42.071617+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement of prior license for all floors",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2: 'يشترط لإصدار ترخيص بالتعلية حاليًا أن يكون المبنى قد أُقيم بكامله وبكل طوابقه بموجب ترخيص سابق' (a condition for issuing a superstructure addition license is that the building was constructed in its entirety and all its floors under a prior license). This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Unlicensed construction is a criminal offense",
+      "verdict": "pass",
+      "reasoning": "The note states in point 1 that constructing without a license is 'جريمة توجب العقاب والإزالة أو التصحيح إداريًا' (a crime requiring punishment and removal or administrative correction), and in the final bullet it says 'ذلك يُعد جريمة ويعرّض المبنى للإزالة' (that constitutes a crime and exposes the building to demolition). While it uses the word 'جريمة' (crime) and mentions punishment by law, it does not explicitly use the specific term 'جريمة جنائية' (criminal offense). However, the criterion asks whether the note states that constructing without a license constitutes a criminal offense punishable by law. The note does characterize it as a 'جريمة' that 'توجب العقاب' (requires punishment), which substantively conveys that it is a criminal offense punishable by law. The term 'جريمة' in Arabic legal usage inherently refers to a criminal offense. This satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on legalizing what was illegally built",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2: 'فما مُنع فعله يمتنع طلبه بعد ارتكابه' (what was prohibited from being done may not be sought after it has been committed). This directly conveys the principle that what was illegally built cannot be legitimized or validated after the fact. The note also makes clear throughout that the violation (building without a license) cannot be recognized or used as a basis for further licensing."
+     },
+     {
+      "id": "C-004",
+      "title": "Compliance with building conditions does not override the rule",
+      "verdict": "pass",
+      "reasoning": "Point 3 of the agent's output explicitly states that the General Assembly confirmed that licensing a superstructure addition on a building with an unlicensed floor is impermissible **even if the building complies with all construction conditions and structural safety requirements** ('حتى لو كان مطابقًا لجميع الشروط البنائية والسلامة الإنشائية'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Recommendation for remedial legislation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'ملاحظات وتوصية' section that the General Assembly directed the administrative authority to take necessary steps to enact legislation addressing the situation of buildings constructed wholly or partially without a license ('وجهت الجمعية العمومية الجهة الإدارية إلى اتخاذ الإجراءات اللازمة لإقرار قانون يعالج حالة المباني المقامة كلها أو بعضها بدون ترخيص'). This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/criminal-liability-for-unlicensed-construction-on-buildings",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:05:46.325008+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

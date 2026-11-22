@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** تفتيش المتهمة سارة، ورفع دعوى الحق الخاص على قاصر ليس لها ولي\n\n## أولًا: الوقائع\nقُبض على سارة بتهمة السرقة، ويريد رجل الضبط الجنائي تفتيشها بحثًا عن الأدلة. وسارة قاصر ناقصة الأهلية وليس لها ولي ولا وصي، ويريد المدعي بالحق الخاص رفع دعواه عليها.\n\n## ثانيًا: تفتيش سارة\n- **السند (source-1):** يجوز لرجل الضبط الجنائي تفتيش المتهم في الأحوال التي يجوز فيها القبض عليه نظامًا، ويشمل ذلك الجسد والملابس والأمتعة. وإذا كان المتهم امرأة **وجب أن تفتشها امرأة يندبها رجل الضبط الجنائي**.\n- **التطبيق:** ما دام القبض على سارة جائزًا، يجوز تفتيش جسدها وملابسها وأمتعتها. ويجب أن تتولى التفتيش امرأة يندبها رجل الضبط، ولا يفتشها هو بنفسه.\n- **تحفّظ:** الوقائع تذكر أن سارة قُبض عليها، لكنها لا تبيّن هل القبض جائز نظامًا. وجواز التفتيش مرتبط بجواز القبض.\n\n## ثالثًا: دعوى الحق الخاص على قاصر\n- **السند (source-2):** تُرفع دعوى الحق الخاص على المتهم إن كان أهلًا، وعلى الولي أو الوصي إن كان ناقص الأهلية. فإن لم يكن له ولي ولا وصي **وجب على المحكمة التي رُفعت أمامها الدعوى الجزائية أن تقيم عليه وليًا**.\n- **التطبيق:** لا تُرفع الدعوى على سارة بنفسها لأنها ناقصة الأهلية. ولأنه ليس لها ولي ولا وصي، يجب على المحكمة التي تنظر الدعوى الجزائية أن تقيم عليها وليًا، ثم تُوجَّه دعوى الحق الخاص إليه.\n\n## رابعًا: ملاحظة\nالنص الخاص بحجية الحكم السابق (source-3) لا ينطبق هنا، إذ لا تذكر الوقائع صدور حكم سابق.\n\n## خامسًا: الخلاصة\n1. تفتيش سارة جائز إذا كان القبض عليها جائزًا، وتتولاه امرأة يندبها رجل الضبط الجنائي.\n2. تُرفع دعوى الحق الخاص على ولي تقيمه المحكمة الجزائية لسارة، لأنه لا ولي لها ولا وصي.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Female Search Officer",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا that the search must be conducted by a woman delegated by the male judicial officer ('وجب أن تفتشها امرأة يندبها رجل الضبط الجنائي'), and further clarifies in the application that 'يجب أن تتولى التفتيش امرأة يندبها رجل الضبط، ولا يفتشها هو بنفسه.' This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Delegation of Female Searcher",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section two (ثانيًا) that the female searcher must be delegated by the male judicial officer: 'وجب أن تفتشها امرأة يندبها رجل الضبط الجنائي' and reinforces this in the application: 'يجب أن تتولى التفتيش امرأة يندبها رجل الضبط'. This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Civil Claim Against Guardian",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا that the civil claim (دعوى الحق الخاص) is not filed against Sara herself because she is of diminished legal capacity (ناقصة الأهلية), and that since she has no guardian or custodian, the court must appoint a guardian, after which the civil claim is directed to that guardian. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Court Appoints Guardian",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (Third) that if the accused has no guardian (ولي) or custodian (وصي), the court must appoint a guardian (وليًا) over her: 'وجب على المحكمة التي رُفعت أمامها الدعوى الجزائية أن تقيم عليه وليًا'. This is also reiterated in the conclusion (خامسًا)."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Female Search Officer",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the search must be conducted by a woman delegated by the male judicial officer ('يجب أن تتولى التفتيش امرأة يندبها رجل الضبط، ولا يفتشها هو بنفسه'), explicitly noting that the male officer cannot conduct the search himself."
+    },
+    {
+     "id": "C-002",
+     "title": "Delegation of Female Searcher",
+     "verdict": "pass",
+     "reasoning": "The note clearly states multiple times that the female searcher is delegated by the male judicial officer (رجل الضبط الجنائي), specifically: 'وجب أن تفتشها امرأة يندبها رجل الضبط الجنائي' and 'يجب أن تتولى التفتيش امرأة يندبها رجل الضبط'."
+    },
+    {
+     "id": "C-003",
+     "title": "Civil Claim Against Guardian",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the civil claim (دعوى الحق الخاص) cannot be filed against Sara herself because she is of diminished legal capacity (ناقصة الأهلية), and that it must be directed to a guardian (ولي) appointed by the court. This satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Court Appoints Guardian",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section ثالثًا that if the accused is of diminished legal capacity (ناقصة الأهلية) and has no guardian (ولي) or custodian (وصي), the court must appoint a guardian (وليًا) over her. This is explicitly mentioned both in the legal basis and in the application to Sara's case."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/female-search-officer-delegation-and-guardian-appointment",
+  "task": "astrolabe-open/saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+  "scored_at": "2026-11-22T18:38:37.944316+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Female Search Officer",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا that the search must be conducted by a woman delegated by the male judicial officer ('وجب أن تفتشها امرأة يندبها رجل الضبط الجنائي'), and further clarifies in the application that 'يجب أن تتولى التفتيش امرأة يندبها رجل الضبط، ولا يفتشها هو بنفسه.' This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Delegation of Female Searcher",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section two (ثانيًا) that the female searcher must be delegated by the male judicial officer: 'وجب أن تفتشها امرأة يندبها رجل الضبط الجنائي' and reinforces this in the application: 'يجب أن تتولى التفتيش امرأة يندبها رجل الضبط'. This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Civil Claim Against Guardian",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا that the civil claim (دعوى الحق الخاص) is not filed against Sara herself because she is of diminished legal capacity (ناقصة الأهلية), and that since she has no guardian or custodian, the court must appoint a guardian, after which the civil claim is directed to that guardian. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Court Appoints Guardian",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (Third) that if the accused has no guardian (ولي) or custodian (وصي), the court must appoint a guardian (وليًا) over her: 'وجب على المحكمة التي رُفعت أمامها الدعوى الجزائية أن تقيم عليه وليًا'. This is also reiterated in the conclusion (خامسًا)."
+     }
+    ],
+    "run_id": "open-o55-files/female-search-officer-delegation-and-guardian-appointment",
+    "task": "astrolabe-open/saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:33:45.733507+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Female Search Officer",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the search must be conducted by a woman delegated by the male judicial officer ('يجب أن تتولى التفتيش امرأة يندبها رجل الضبط، ولا يفتشها هو بنفسه'), explicitly noting that the male officer cannot conduct the search himself."
+     },
+     {
+      "id": "C-002",
+      "title": "Delegation of Female Searcher",
+      "verdict": "pass",
+      "reasoning": "The note clearly states multiple times that the female searcher is delegated by the male judicial officer (رجل الضبط الجنائي), specifically: 'وجب أن تفتشها امرأة يندبها رجل الضبط الجنائي' and 'يجب أن تتولى التفتيش امرأة يندبها رجل الضبط'."
+     },
+     {
+      "id": "C-003",
+      "title": "Civil Claim Against Guardian",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the civil claim (دعوى الحق الخاص) cannot be filed against Sara herself because she is of diminished legal capacity (ناقصة الأهلية), and that it must be directed to a guardian (ولي) appointed by the court. This satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Court Appoints Guardian",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section ثالثًا that if the accused is of diminished legal capacity (ناقصة الأهلية) and has no guardian (ولي) or custodian (وصي), the court must appoint a guardian (وليًا) over her. This is explicitly mentioned both in the legal basis and in the application to Sara's case."
+     }
+    ],
+    "run_id": "open-o55-files/female-search-officer-delegation-and-guardian-appointment",
+    "task": "astrolabe-open/saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:38:37.943988+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

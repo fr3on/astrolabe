@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: المستخلص الأخير في عقد الأشغال العامة\n\n## الأسئلة\n1. ما الحد الأدنى لقيمة المستخلص الأخير لشركة البناء المتحدة؟\n2. متى يجوز صرفه؟\n\n## الجواب\n\n### 1. الحد الأدنى للمستخلص الأخير\nالعقد عقد أشغال عامة، فيجب ألا يقل المستخلص الأخير عن **10% من قيمة العقد**، أي:\n10% × 10,000,000 ريال = **1,000,000 ريال (مليون ريال)** حدًّا أدنى.\n\n### 2. موعد الصرف\nيُصرف المستخلص الأخير **بعد تسليم الأعمال تسليمًا ابتدائيًّا**. وبما أن الشركة سلّمت الأعمال تسليمًا ابتدائيًّا في 1 يناير 2024، فقد تحقق شرط الصرف من ذلك التاريخ، ويحق لها المطالبة به.\n\n## السند النظامي\n- نظام المنافسات والمشتريات الحكومية (source-3): \"يصرف المستخلص الأخير الذي يجب ألا يقل عن (10%) عشرة في المائة في عقود الأشغال العامة وعن (5%) خمسة في المائة في العقود الأخرى بعد تسليم الأعمال تسليمًا ابتدائيًّا، أو توريد المشتريات.\"\n\n## ملاحظات\n- النص يحدد حدًّا أدنى لنسبة المستخلص الأخير، ولا يحدد مهلة زمنية معينة للصرف بعد التسليم؛ وقد تتضمن اللائحة التنفيذية (source-2) تفاصيل لم ترفق.\n- النص لا يذكر وجوب التسليم النهائي قبل الصرف؛ يكفي التسليم الابتدائي.\n- source-1 (الاستثناء من أحكام النظام) لا ينطبق على الوقائع.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Minimum_Percentage_Works",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value, explicitly writing '10% × 10,000,000 ريال = 1,000,000 ريال' and citing the regulatory source that confirms the 10% minimum for public works contracts."
+    },
+    {
+     "id": "C-002",
+     "title": "Minimum_Amount",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states that the minimum amount of the final payment certificate is 1,000,000 riyals (one million riyals), calculated as 10% of the contract value of 10,000,000 riyals. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Payment_Condition",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states that the final payment certificate (المستخلص الأخير) is released after preliminary handover (تسليم الأعمال تسليمًا ابتدائيًّا). This is stated in section 2 (موعد الصرف) and reinforced in the legal basis section (السند النظامي) with a direct quote from the regulation. The note also explicitly notes in the observations that preliminary handover (not final handover) is sufficient."
+    },
+    {
+     "id": "C-004",
+     "title": "Payment_Date",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states that the preliminary handover (التسليم الابتدائي) occurred on 1 January 2024, and that the payment condition was fulfilled from that date, entitling the company to claim payment of the final certificate as of that date."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Minimum_Percentage_Works",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value, both in the advice section and in the legal basis section."
+    },
+    {
+     "id": "C-002",
+     "title": "Minimum_Amount",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the minimum amount is 10% × 10,000,000 ريال = 1,000,000 ريال (مليون ريال), which satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Payment_Condition",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the final payment certificate (المستخلص الأخير) is released after preliminary handover (التسليم الابتدائي) of the works. Specifically, it says 'يُصرف المستخلص الأخير بعد تسليم الأعمال تسليمًا ابتدائيًّا' and further confirms that this condition has been met."
+    },
+    {
+     "id": "C-004",
+     "title": "Payment_Date",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the payment condition is met after preliminary handover (التسليم الابتدائي), references the date of 1 January 2024, and explicitly says the company has the right to claim payment from that date ('فقد تحقق شرط الصرف من ذلك التاريخ، ويحق لها المطالبة به')."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/minimum-works-percentage-amount-and-payment-conditions",
+  "task": "astrolabe-open/saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+  "scored_at": "2026-11-22T18:50:49.533759+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Minimum_Percentage_Works",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value, explicitly writing '10% × 10,000,000 ريال = 1,000,000 ريال' and citing the regulatory source that confirms the 10% minimum for public works contracts."
+     },
+     {
+      "id": "C-002",
+      "title": "Minimum_Amount",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states that the minimum amount of the final payment certificate is 1,000,000 riyals (one million riyals), calculated as 10% of the contract value of 10,000,000 riyals. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Payment_Condition",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states that the final payment certificate (المستخلص الأخير) is released after preliminary handover (تسليم الأعمال تسليمًا ابتدائيًّا). This is stated in section 2 (موعد الصرف) and reinforced in the legal basis section (السند النظامي) with a direct quote from the regulation. The note also explicitly notes in the observations that preliminary handover (not final handover) is sufficient."
+     },
+     {
+      "id": "C-004",
+      "title": "Payment_Date",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states that the preliminary handover (التسليم الابتدائي) occurred on 1 January 2024, and that the payment condition was fulfilled from that date, entitling the company to claim payment of the final certificate as of that date."
+     }
+    ],
+    "run_id": "open-o55-files/minimum-works-percentage-amount-and-payment-conditions",
+    "task": "astrolabe-open/saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:44:08.892132+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Minimum_Percentage_Works",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value, both in the advice section and in the legal basis section."
+     },
+     {
+      "id": "C-002",
+      "title": "Minimum_Amount",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the minimum amount is 10% × 10,000,000 ريال = 1,000,000 ريال (مليون ريال), which satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Payment_Condition",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the final payment certificate (المستخلص الأخير) is released after preliminary handover (التسليم الابتدائي) of the works. Specifically, it says 'يُصرف المستخلص الأخير بعد تسليم الأعمال تسليمًا ابتدائيًّا' and further confirms that this condition has been met."
+     },
+     {
+      "id": "C-004",
+      "title": "Payment_Date",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the payment condition is met after preliminary handover (التسليم الابتدائي), references the date of 1 January 2024, and explicitly says the company has the right to claim payment from that date ('فقد تحقق شرط الصرف من ذلك التاريخ، ويحق لها المطالبة به')."
+     }
+    ],
+    "run_id": "open-o55-files/minimum-works-percentage-amount-and-payment-conditions",
+    "task": "astrolabe-open/saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:50:49.533407+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

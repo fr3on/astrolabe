@@ -1,0 +1,220 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: أثر قبول مقترح المدين الصغير وحق التصويت\n\n## الأسئلة\n1. ما الذي يترتب على قبول المقترح؟\n2. متى يصبح نافذًا؟\n3. هل كان لشركة البناء المتحدة حق التصويت؟\n\n## الجواب\n\n### 1. أثر القبول\nبقبول الدائنين للمقترح يصبح المقترح **الخطة الملزمة للمدين الصغير والدائنين والملاك**، ويلتزم المدين الصغير أحمد العمري باستكمال الإجراءات النظامية التي أوجبتها الأنظمة ذات العلاقة. كما يودع الأمين في سجل الإفلاس ما يفيد نفاذ الخطة ويعلن عن ذلك وفق اللائحة.\n\n### 2. تاريخ النفاذ\nلا يصبح المقترح نافذًا من تاريخ جلسة التصويت (15 مارس 2025) بذاته، بل **من تاريخ إيداع نتيجة التصويت لدى المحكمة**. ولم تبيّن الوقائع تاريخ الإيداع، فيلزم التحقق منه.\n\n### 3. حق شركة البناء المتحدة في التصويت\nلا يصوت على المقترح إلا الدائن أو المالك الذي **يرتب المقترح أثرًا في حقوقه النظامية أو التعاقدية**. فإن صح أن المقترح لم يُحدث أي أثر في حقوق الشركة، فليس لها حق التصويت أصلًا، ورأيها في محله. ويُرجع في ضابط ذلك إلى ما تحدده اللائحة.\n\nويُلاحظ أن الخطة بعد نفاذها ملزمة \"للدائنين\" عمومًا وفق النص.\n\n## السند النظامي\n- نظام الإفلاس (source-2): نفاذ المقترح من تاريخ إيداع نتيجة التصويت لدى المحكمة، وكونه الخطة الملزمة، وواجب الأمين بالإيداع في سجل الإفلاس والإعلان.\n- نظام الإفلاس (source-3): قصر التصويت على الدائن أو المالك الذي يرتب المقترح أثرًا في حقوقه.\n\n## ملاحظات\n- source-1 (هدف التصفية الإدارية) لا يتصل مباشرة بالأسئلة.\n- تفاصيل اللائحة غير مرفقة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Effective Date of Proposal",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 (تاريخ النفاذ) that the proposal does not become effective from the date of the voting session itself, but rather 'from the date of depositing the voting result with the court' (من تاريخ إيداع نتيجة التصويت لدى المحكمة). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding Plan",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 that upon acceptance, the proposal becomes 'الخطة الملزمة للمدين الصغير والدائنين والملاك' (the binding plan for the small debtor, the creditors, and the owners), covering all three required parties."
+    },
+    {
+     "id": "C-003",
+     "title": "Debtor's Obligation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 (أثر القبول) that 'يلتزم المدين الصغير أحمد العمري باستكمال الإجراءات النظامية التي أوجبتها الأنظمة ذات العلاقة' (the small debtor Ahmed Al-Omari is obligated to complete the regulatory procedures mandated by the relevant regulations). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Trustee Registration Duty",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 that 'يودع الأمين في سجل الإفلاس ما يفيد نفاذ الخطة ويعلن عن ذلك وفق اللائحة' (the trustee deposits in the bankruptcy register what confirms the plan's effectiveness and announces that in accordance with the regulation). This satisfies both required elements: (1) depositing confirmation of the plan's effectiveness in the bankruptcy register, and (2) making an announcement of that fact."
+    },
+    {
+     "id": "C-005",
+     "title": "Voting Eligibility Condition",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 3 that only a creditor or owner whose statutory or contractual rights are affected by the proposal has the right to vote ('لا يصوت على المقترح إلا الدائن أو المالك الذي يرتب المقترح أثرًا في حقوقه النظامية أو التعاقدية'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-006",
+     "title": "No Voting Right for Unaffected Creditor",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 3 that only a creditor or owner whose rights are affected by the proposal has the right to vote, and that if the proposal produces no effect on United Construction Company's rights, then it has no right to vote ('فليس لها حق التصويت أصلًا'). This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Effective Date of Proposal",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section 2 that the proposal becomes effective 'من تاريخ إيداع نتيجة التصويت لدى المحكمة' (from the date the voting result is deposited with the court), which directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding Plan",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'يصبح المقترح الخطة الملزمة للمدين الصغير والدائنين والملاك' which clearly identifies all three parties (the small debtor, the creditors, and the owners) as bound by the plan."
+    },
+    {
+     "id": "C-003",
+     "title": "Debtor's Obligation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'ويلتزم المدين الصغير أحمد العمري باستكمال الإجراءات النظامية التي أوجبتها الأنظمة ذات العلاقة' which translates to 'the small debtor Ahmed Al-Omari is required to complete the regulatory procedures mandated by the relevant regulations.' This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Trustee Registration Duty",
+     "verdict": "pass",
+     "reasoning": "The note states in section 1 that 'يودع الأمين في سجل الإفلاس ما يفيد نفاذ الخطة ويعلن عن ذلك وفق اللائحة' which translates to the trustee deposits in the bankruptcy register confirmation that the plan is effective and announces that fact per the regulation. This satisfies both requirements of the criterion: depositing confirmation in the bankruptcy register and announcing it."
+    },
+    {
+     "id": "C-005",
+     "title": "Voting Eligibility Condition",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 3 that voting is limited to the creditor or owner whose statutory or contractual rights are affected by the proposal ('لا يصوت على المقترح إلا الدائن أو المالك الذي يرتب المقترح أثرًا في حقوقه النظامية أو التعاقدية'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-006",
+     "title": "No Voting Right for Unaffected Creditor",
+     "verdict": "pass",
+     "reasoning": "The note states in section 3 that only creditors whose rights are affected by the proposal have the right to vote, and that if the proposal does not affect United Construction Company's rights, then it does not have the right to vote. The agent explicitly says 'فإن صح أن المقترح لم يُحدث أي أثر في حقوق الشركة، فليس لها حق التصويت أصلًا' (If it is true that the proposal did not produce any effect on the company's rights, then it has no right to vote at all). This satisfies the criterion of stating that United Construction Company does not have the right to vote because the proposal does not affect its rights."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/binding-restructuring-plan-and-creditor-voting-eligibility",
+  "task": "astrolabe-open/saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+  "scored_at": "2026-11-22T18:51:02.047735+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Effective Date of Proposal",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 (تاريخ النفاذ) that the proposal does not become effective from the date of the voting session itself, but rather 'from the date of depositing the voting result with the court' (من تاريخ إيداع نتيجة التصويت لدى المحكمة). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding Plan",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 that upon acceptance, the proposal becomes 'الخطة الملزمة للمدين الصغير والدائنين والملاك' (the binding plan for the small debtor, the creditors, and the owners), covering all three required parties."
+     },
+     {
+      "id": "C-003",
+      "title": "Debtor's Obligation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 (أثر القبول) that 'يلتزم المدين الصغير أحمد العمري باستكمال الإجراءات النظامية التي أوجبتها الأنظمة ذات العلاقة' (the small debtor Ahmed Al-Omari is obligated to complete the regulatory procedures mandated by the relevant regulations). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Trustee Registration Duty",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 that 'يودع الأمين في سجل الإفلاس ما يفيد نفاذ الخطة ويعلن عن ذلك وفق اللائحة' (the trustee deposits in the bankruptcy register what confirms the plan's effectiveness and announces that in accordance with the regulation). This satisfies both required elements: (1) depositing confirmation of the plan's effectiveness in the bankruptcy register, and (2) making an announcement of that fact."
+     },
+     {
+      "id": "C-005",
+      "title": "Voting Eligibility Condition",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 3 that only a creditor or owner whose statutory or contractual rights are affected by the proposal has the right to vote ('لا يصوت على المقترح إلا الدائن أو المالك الذي يرتب المقترح أثرًا في حقوقه النظامية أو التعاقدية'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-006",
+      "title": "No Voting Right for Unaffected Creditor",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 3 that only a creditor or owner whose rights are affected by the proposal has the right to vote, and that if the proposal produces no effect on United Construction Company's rights, then it has no right to vote ('فليس لها حق التصويت أصلًا'). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "task": "astrolabe-open/saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:44:32.959561+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Effective Date of Proposal",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section 2 that the proposal becomes effective 'من تاريخ إيداع نتيجة التصويت لدى المحكمة' (from the date the voting result is deposited with the court), which directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding Plan",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'يصبح المقترح الخطة الملزمة للمدين الصغير والدائنين والملاك' which clearly identifies all three parties (the small debtor, the creditors, and the owners) as bound by the plan."
+     },
+     {
+      "id": "C-003",
+      "title": "Debtor's Obligation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'ويلتزم المدين الصغير أحمد العمري باستكمال الإجراءات النظامية التي أوجبتها الأنظمة ذات العلاقة' which translates to 'the small debtor Ahmed Al-Omari is required to complete the regulatory procedures mandated by the relevant regulations.' This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Trustee Registration Duty",
+      "verdict": "pass",
+      "reasoning": "The note states in section 1 that 'يودع الأمين في سجل الإفلاس ما يفيد نفاذ الخطة ويعلن عن ذلك وفق اللائحة' which translates to the trustee deposits in the bankruptcy register confirmation that the plan is effective and announces that fact per the regulation. This satisfies both requirements of the criterion: depositing confirmation in the bankruptcy register and announcing it."
+     },
+     {
+      "id": "C-005",
+      "title": "Voting Eligibility Condition",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 3 that voting is limited to the creditor or owner whose statutory or contractual rights are affected by the proposal ('لا يصوت على المقترح إلا الدائن أو المالك الذي يرتب المقترح أثرًا في حقوقه النظامية أو التعاقدية'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-006",
+      "title": "No Voting Right for Unaffected Creditor",
+      "verdict": "pass",
+      "reasoning": "The note states in section 3 that only creditors whose rights are affected by the proposal have the right to vote, and that if the proposal does not affect United Construction Company's rights, then it does not have the right to vote. The agent explicitly says 'فإن صح أن المقترح لم يُحدث أي أثر في حقوق الشركة، فليس لها حق التصويت أصلًا' (If it is true that the proposal did not produce any effect on the company's rights, then it has no right to vote at all). This satisfies the criterion of stating that United Construction Company does not have the right to vote because the proposal does not affect its rights."
+     }
+    ],
+    "run_id": "open-o55-files/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "task": "astrolabe-open/saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:51:02.047350+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**بشأن:** نطاق اختصاص مجمع البحوث الإسلامية، وصلته بالدراسات العليا\n\n## أولاً: الوقائع\nفي مارس 2001 تقدّم الدكتور سامي عبد الله بطلب إلى مجمع البحوث الإسلامية، يلتمس فيه أن يستعين بالمجمع في الإشراف على رسالته للدرجة العالمية. وهو يعتقد أن مهمة المجمع تقتصر على إصدار الفتاوى في المسائل العقدية والمذهبية.\n\n## ثانياً: الأسئلة\n1. هل اعتقاد الدكتور سامي صحيح؟\n2. ما نطاق اختصاص المجمع في هذا الشأن؟\n\n## ثالثاً: الرأي\n\n### 1. الاعتقاد غير صحيح\nلا تقتصر مهمة المجمع على بيان الرأي في المشكلات المذهبية أو الاجتماعية المتعلقة بالعقيدة. فالمادة (15) من القانون رقم 103 لسنة 1961 بشأن إعادة تنظيم الأزهر تنص صراحة على أن المجمع **يعاون جامعة الأزهر في توجيه الدراسات العليا لدرجتي التخصص والعالمية، والإشراف عليها، أو المشاركة في امتحاناتها**.\n- **السند:** المادة (15) من القانون 103 لسنة 1961، كما وردت في الفتوى رقم 336 بتاريخ 1999/04/07 (source-1).\n\n### 2. نطاق اختصاص المجمع\nبحسب ما استظهرته الجمعية العمومية، فإن المجمع هو الهيئة العليا للبحوث الإسلامية، ويختص بما يلي:\n- دراسة كل ما يتصل بالبحوث الإسلامية.\n- تجديد الثقافة الإسلامية وتجريدها من الفضول والشوائب وآثار التعصب السياسي والمذهبي، وتوسيع نطاق العلم بها.\n- دراسة ما يجدّ من مشكلات مذهبية أو اجتماعية تتعلق بالعقيدة، وبيان الرأي فيها.\n- حمل تبعة الدعوة إلى سبيل الله.\n- معاونة جامعة الأزهر في توجيه الدراسات الإسلامية العليا لدرجتي التخصص والعالمية والإشراف عليها، أو المشاركة في امتحاناتها.\n- الاختصاص، في نطاق أغراض الأزهر، بالنشر والترجمة والتأليف والبعوث والدعاة والطلاب الوافدين.\n- **السند:** الفتوى رقم 336 بتاريخ 1999/04/07 (source-2).\n\n### 3. حدود دور المجمع في طلب الدكتور سامي\nدور المجمع في الإشراف دور **معاونة لجامعة الأزهر**. فهو ليس جهة إشراف مستقلة عن الجامعة. لذلك يُستحسن أن يُوجَّه الطلب عن طريق جامعة الأزهر، أو بالتنسيق معها، وفي إطار الدراسات الإسلامية العليا لدرجة العالمية.\n\n## رابعاً: تحفظ\nلا تبيّن المستندات الإجراءات التفصيلية لطلب الإشراف، ولا شروطه، ولا جهة الدراسة التي ينتمي إليها الدكتور سامي. ويقوم هذا الرأي على النصوص المرفقة وحدها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Incorrect assumption about scope",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثاً/1 that 'الاعتقاد غير صحيح' (the belief is incorrect) and clarifies that the Council's mandate is not limited to doctrinal and sectarian matters, citing Article 15 of Law 103 of 1961 which grants the Council a role in supervising higher Islamic studies."
+    },
+    {
+     "id": "C-002",
+     "title": "Supervision of higher studies",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 that Article 15 of Law 103 of 1961 provides that the Council 'assists Al-Azhar University in directing higher studies for the two degrees of specialisation (التخصص) and the highest academic degree (العالمية), supervising them, or participating in their examinations.' This is repeated again in section 2 in the list of the Council's competencies. The criterion is fully satisfied."
+    },
+    {
+     "id": "C-003",
+     "title": "Publication and translation mandate",
+     "verdict": "pass",
+     "reasoning": "The agent's output includes a bullet point under section 2 (نطاق اختصاص المجمع) that states: 'الاختصاص، في نطاق أغراض الأزهر، بالنشر والترجمة والتأليف والبعوث والدعاة والطلاب الوافدين.' This covers publication (النشر), translation (الترجمة), authorship (التأليف), missions (البعوث), preachers (الدعاة), and incoming students (الطلاب الوافدين). However, the criterion specifies that the Council is 'exclusively competent' in these matters, while the note phrases it as 'الاختصاص، في نطاق أغراض الأزهر' (competence within the scope of Al-Azhar's purposes), which does reflect exclusivity within that scope. The content is present and sufficiently covers the publication and translation mandate as required by the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Broader mandate confirmed",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly lists the Council's mandate including 'دراسة كل ما يتصل بالبحوث الإسلامية' (studying everything connected with Islamic research), 'تجديد الثقافة الإسلامية وتجريدها من الفضول والشوائب وآثار التعصب السياسي والمذهبي' (renewing Islamic culture and purifying it from impurities and effects of political and sectarian fanaticism), and 'توسيع نطاق العلم بها' (expanding knowledge of it). The note clearly establishes that the Council's mandate goes beyond merely issuing fatwas on doctrinal matters, directly addressing the criterion's requirements."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Incorrect assumption about scope",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states under section ثالثاً, point 1: 'الاعتقاد غير صحيح' (The belief is incorrect), and explains that the Council's mission is not limited to doctrinal and sectarian matters, clearly identifying Dr. Sami's assumption as incorrect."
+    },
+    {
+     "id": "C-002",
+     "title": "Supervision of higher studies",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the Council assists Al-Azhar University in directing higher Islamic studies for the degrees of التخصص and العالمية, supervising them, and participating in their examinations. This is mentioned in both Section 1 and Section 2 of the advice note."
+    },
+    {
+     "id": "C-003",
+     "title": "Publication and translation mandate",
+     "verdict": "pass",
+     "reasoning": "The note includes in the list of the Council's competencies: 'الاختصاص، في نطاق أغراض الأزهر، بالنشر والترجمة والتأليف والبعوث والدعاة والطلاب الوافدين.' This covers publication (النشر), translation (الترجمة), authorship (التأليف), missions (البعوث), preachers (الدعاة), and incoming students (الطلاب الوافدين). The criterion also requires that it be stated as exclusive competence. The word 'الاختصاص' (competence/exclusive jurisdiction) is used, which conveys exclusivity. This satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Broader mandate confirmed",
+     "verdict": "pass",
+     "reasoning": "The note explicitly lists among the Council's competencies: 'دراسة كل ما يتصل بالبحوث الإسلامية' (studying everything connected with Islamic research), 'تجديد الثقافة الإسلامية وتجريدها من الفضول والشوائب وآثار التعصب السياسي والمذهبي' (renewing Islamic culture and purifying it from impurities), and clarifies that the Council's mandate goes well beyond issuing doctrinal fatwas alone. This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/scope-of-mandate-for-higher-studies-supervision-and-publication",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+  "scored_at": "2026-11-22T17:54:25.481464+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Incorrect assumption about scope",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثاً/1 that 'الاعتقاد غير صحيح' (the belief is incorrect) and clarifies that the Council's mandate is not limited to doctrinal and sectarian matters, citing Article 15 of Law 103 of 1961 which grants the Council a role in supervising higher Islamic studies."
+     },
+     {
+      "id": "C-002",
+      "title": "Supervision of higher studies",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 that Article 15 of Law 103 of 1961 provides that the Council 'assists Al-Azhar University in directing higher studies for the two degrees of specialisation (التخصص) and the highest academic degree (العالمية), supervising them, or participating in their examinations.' This is repeated again in section 2 in the list of the Council's competencies. The criterion is fully satisfied."
+     },
+     {
+      "id": "C-003",
+      "title": "Publication and translation mandate",
+      "verdict": "pass",
+      "reasoning": "The agent's output includes a bullet point under section 2 (نطاق اختصاص المجمع) that states: 'الاختصاص، في نطاق أغراض الأزهر، بالنشر والترجمة والتأليف والبعوث والدعاة والطلاب الوافدين.' This covers publication (النشر), translation (الترجمة), authorship (التأليف), missions (البعوث), preachers (الدعاة), and incoming students (الطلاب الوافدين). However, the criterion specifies that the Council is 'exclusively competent' in these matters, while the note phrases it as 'الاختصاص، في نطاق أغراض الأزهر' (competence within the scope of Al-Azhar's purposes), which does reflect exclusivity within that scope. The content is present and sufficiently covers the publication and translation mandate as required by the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Broader mandate confirmed",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly lists the Council's mandate including 'دراسة كل ما يتصل بالبحوث الإسلامية' (studying everything connected with Islamic research), 'تجديد الثقافة الإسلامية وتجريدها من الفضول والشوائب وآثار التعصب السياسي والمذهبي' (renewing Islamic culture and purifying it from impurities and effects of political and sectarian fanaticism), and 'توسيع نطاق العلم بها' (expanding knowledge of it). The note clearly establishes that the Council's mandate goes beyond merely issuing fatwas on doctrinal matters, directly addressing the criterion's requirements."
+     }
+    ],
+    "run_id": "open-o55-files/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:45:41.991715+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Incorrect assumption about scope",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states under section ثالثاً, point 1: 'الاعتقاد غير صحيح' (The belief is incorrect), and explains that the Council's mission is not limited to doctrinal and sectarian matters, clearly identifying Dr. Sami's assumption as incorrect."
+     },
+     {
+      "id": "C-002",
+      "title": "Supervision of higher studies",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the Council assists Al-Azhar University in directing higher Islamic studies for the degrees of التخصص and العالمية, supervising them, and participating in their examinations. This is mentioned in both Section 1 and Section 2 of the advice note."
+     },
+     {
+      "id": "C-003",
+      "title": "Publication and translation mandate",
+      "verdict": "pass",
+      "reasoning": "The note includes in the list of the Council's competencies: 'الاختصاص، في نطاق أغراض الأزهر، بالنشر والترجمة والتأليف والبعوث والدعاة والطلاب الوافدين.' This covers publication (النشر), translation (الترجمة), authorship (التأليف), missions (البعوث), preachers (الدعاة), and incoming students (الطلاب الوافدين). The criterion also requires that it be stated as exclusive competence. The word 'الاختصاص' (competence/exclusive jurisdiction) is used, which conveys exclusivity. This satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Broader mandate confirmed",
+      "verdict": "pass",
+      "reasoning": "The note explicitly lists among the Council's competencies: 'دراسة كل ما يتصل بالبحوث الإسلامية' (studying everything connected with Islamic research), 'تجديد الثقافة الإسلامية وتجريدها من الفضول والشوائب وآثار التعصب السياسي والمذهبي' (renewing Islamic culture and purifying it from impurities), and clarifies that the Council's mandate goes well beyond issuing doctrinal fatwas alone. This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T17:54:25.481096+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

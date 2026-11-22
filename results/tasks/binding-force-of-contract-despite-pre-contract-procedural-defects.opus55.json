@@ -1,0 +1,220 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: مدى جواز إنهاء عقد البنية التحتية بسبب مخالفات إجراءات الطرح والترسية\n\n## الوقائع\nأبرمت الهيئة الحكومية في 1 مارس 2023 عقدًا مع شركة مقاولات لتنفيذ مشروع بنية تحتية بقيمة 50 مليون جنيه ولمدة عامين. وبعد ستة أشهر من بدء التنفيذ، وبعد صرف 15 مليون جنيه، تبيّن أن إجراءات الطرح والترسية السابقة على التعاقد شابتها مخالفات إجرائية. والسؤال: هل يحق للهيئة إنهاء العقد فورًا، أم أنها ملزمة بالاستمرار في تنفيذه؟\n\n## السند القانوني\n1. **العقد شريعة المتعاقدين:** تنص المادة (147/1) من القانون المدني على أن العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون. وتوجب المادة (148/1) تنفيذه طبقًا لما اشتمل عليه وبطريقة تتفق مع حسن النية.\n2. **سريان المبدأ على العقود الإدارية:** استقر إفتاء الجمعية العمومية (فتوى رقم 83 بتاريخ 18/11/2015) على أن هذا الأصل ينطبق على العقود المدنية والإدارية على حد سواء.\n3. **أثر بطلان الإجراءات السابقة على التعاقد:** استقر الإفتاء على أنه \"أيًّا ما كان وجه البطلان\" الذي لحق بالإجراءات السابقة على التعاقد، فإن العقد إذا انعقد مستوفيًا أركانه يكون ملزمًا لطرفيه، وتلتزم الجهة الإدارية بالاستمرار في تنفيذه حتى انتهاء مدته. والعلة في ذلك استقرار المعاملات، وتجنب الضرر البالغ بالمصلحة العامة، ومنه ضياع فرصة الاستفادة مما صُرف فعلًا، أو تحميل الخزانة العامة مبالغ باهظة.\n\n## التطبيق\n- المخالفات المنسوبة إجرائية، ووقعت في مرحلة الطرح والترسية السابقة على التعاقد. ولا يوجد في الوقائع ما يدل على تخلف أي ركن من أركان العقد ذاته.\n- العقد في مرحلة التنفيذ، وقد صُرف منه 15 مليون جنيه. والإنهاء يهدد بضياع هذه المبالغ وبتحميل الخزانة أعباءً إضافية، وهذا هو الضرر الذي قصد الإفتاء تجنبه.\n- لا يجوز للهيئة نقض العقد بإرادتها المنفردة استنادًا إلى هذه المخالفات، لأنها ليست من الأسباب التي يقررها القانون للإنهاء وفقًا للمبدأ المتقدم.\n\n## التوصيات\n1. **لا يحق للهيئة إنهاء العقد فورًا** استنادًا إلى مخالفات الإجراءات السابقة على التعاقد. وهي **ملزمة بالاستمرار في تنفيذه حتى نهاية مدته**، ما دام العقد قد انعقد مستوفيًا أركانه.\n2. لا يمنع ذلك من **مساءلة من اتخذ الإجراءات المخالفة** مدنيًا وتأديبيًا وجنائيًا، ويُوصى بإحالة الأمر للتحقيق.\n3. إذا ثبت لاحقًا أن العقد نفسه فقد ركنًا من أركانه، فذلك وضع مختلف تجب دراسته مستقلًا، ولا تتضمن الوقائع الحالية ما يشير إليه.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Contract as binding law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 1 (السند القانوني) that Article 147/1 of the Civil Code establishes that 'العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' (the contract may not be revoked or amended except by mutual agreement of the parties or for reasons established by law). It also reiterates this principle in the التطبيق and التوصيات sections, confirming the contract is binding and cannot be unilaterally terminated based on pre-contract procedural violations."
+    },
+    {
+     "id": "C-002",
+     "title": "Good faith execution",
+     "verdict": "pass",
+     "reasoning": "The note explicitly references Article 148/1 of the Civil Code, stating that the contract must be executed 'بطريقة تتفق مع حسن النية' (in a manner consistent with good faith). This directly satisfies the criterion requiring the note to state that the contract must be executed in a manner consistent with the requirements of good faith."
+    },
+    {
+     "id": "C-003",
+     "title": "Pre-contract procedural defects do not void a complete contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal basis section: 'أيًّا ما كان وجه البطلان الذي لحق بالإجراءات السابقة على التعاقد، فإن العقد إذا انعقد مستوفيًا أركانه يكون ملزمًا لطرفيه' (Whatever the form of nullity affecting procedures prior to contracting, if the contract was concluded fulfilling its essential elements, it is binding on both parties). This directly satisfies the criterion that nullity affecting pre-contract procedures does not prevent the contract from being binding once it has fulfilled its essential elements (أركانه)."
+    },
+    {
+     "id": "C-004",
+     "title": "Obligation to continue execution",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in both the legal basis section and the recommendations section that the administrative authority is obligated to continue executing the contract until the end of its term. It directly cites 'استقرار المعاملات' (stability of transactions) as one of the rationales, alongside avoiding significant harm to the public interest. The recommendation section clearly states: 'ملزمة بالاستمرار في تنفيذه حتى نهاية مدته' (obligated to continue executing it until the end of its term)."
+    },
+    {
+     "id": "C-005",
+     "title": "Public interest harm from termination",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 3 (أثر بطلان الإجراءات السابقة على التعاقد) that termination causes serious harm to the public interest, specifically mentioning 'ضياع فرصة الاستفادة مما صُرف فعلًا، أو تحميل الخزانة العامة مبالغ باهظة' (loss of opportunity to benefit from amounts already expended, or burdening the public treasury with exorbitant amounts). This is further reinforced in the التطبيق section which references the 15 million already disbursed and the threat of additional burdens on the treasury."
+    },
+    {
+     "id": "C-006",
+     "title": "Liability of violators preserved",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in recommendation #2 that continuing to execute the contract does not prevent holding those who took the unlawful procedures accountable civilly, disciplinarily, and criminally, and recommends referring the matter for investigation. This satisfies the criterion that the note must state that continuing execution does not prejudice civil, disciplinary, and criminal liability against the violators."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Contract as binding law",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in Section 1 of السند القانوني that 'العقد شريعة المتعاقدين' and references Article 147/1 of the Civil Code, explicitly noting that the contract may not be revoked or modified except by agreement of the parties or for reasons established by law ('لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون'). This fully satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Good faith execution",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the السند القانوني section that المادة (148/1) requires executing the contract 'بطريقة تتفق مع حسن النية' (in a manner consistent with good faith), satisfying the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Pre-contract procedural defects do not void a complete contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that regardless of the nullity (البطلان) affecting pre-contract procedures ('أيًّا ما كان وجه البطلان الذي لحق بالإجراءات السابقة على التعاقد'), the contract remains binding once it has fulfilled its essential elements ('إذا انعقد مستوفيًا أركانه يكون ملزمًا لطرفيه'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Obligation to continue execution",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the administrative authority is obligated to continue executing the contract until the end of its term ('ملزمة بالاستمرار في تنفيذه حتى نهاية مدته' and 'تلتزم الجهة الإدارية بالاستمرار في تنفيذه حتى انتهاء مدته'), and it cites the principle of stability of transactions ('استقرار المعاملات') as the rationale for this obligation."
+    },
+    {
+     "id": "C-005",
+     "title": "Public interest harm from termination",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the السند القانوني section that the rationale includes 'تجنب الضرر البالغ بالمصلحة العامة، ومنه ضياع فرصة الاستفادة مما صُرف فعلًا، أو تحميل الخزانة العامة مبالغ باهظة' (avoiding serious harm to the public interest, including loss of amounts already expended, or imposing exorbitant amounts on the public treasury). The التطبيق section further applies this by noting that termination threatens the loss of the 15 million already spent and additional burdens on the treasury, which is exactly the harm the إفتاء sought to avoid."
+    },
+    {
+     "id": "C-006",
+     "title": "Liability of violators preserved",
+     "verdict": "pass",
+     "reasoning": "Recommendation #2 explicitly states that continuing the contract does not prevent holding those who took the violating procedures accountable civilly, disciplinarily, and criminally ('مساءلة من اتخذ الإجراءات المخالفة مدنيًا وتأديبيًا وجنائيًا'). This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/binding-force-of-contract-despite-pre-contract-procedural-defects",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+  "scored_at": "2026-11-22T18:08:26.274860+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Contract as binding law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 1 (السند القانوني) that Article 147/1 of the Civil Code establishes that 'العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' (the contract may not be revoked or amended except by mutual agreement of the parties or for reasons established by law). It also reiterates this principle in the التطبيق and التوصيات sections, confirming the contract is binding and cannot be unilaterally terminated based on pre-contract procedural violations."
+     },
+     {
+      "id": "C-002",
+      "title": "Good faith execution",
+      "verdict": "pass",
+      "reasoning": "The note explicitly references Article 148/1 of the Civil Code, stating that the contract must be executed 'بطريقة تتفق مع حسن النية' (in a manner consistent with good faith). This directly satisfies the criterion requiring the note to state that the contract must be executed in a manner consistent with the requirements of good faith."
+     },
+     {
+      "id": "C-003",
+      "title": "Pre-contract procedural defects do not void a complete contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal basis section: 'أيًّا ما كان وجه البطلان الذي لحق بالإجراءات السابقة على التعاقد، فإن العقد إذا انعقد مستوفيًا أركانه يكون ملزمًا لطرفيه' (Whatever the form of nullity affecting procedures prior to contracting, if the contract was concluded fulfilling its essential elements, it is binding on both parties). This directly satisfies the criterion that nullity affecting pre-contract procedures does not prevent the contract from being binding once it has fulfilled its essential elements (أركانه)."
+     },
+     {
+      "id": "C-004",
+      "title": "Obligation to continue execution",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in both the legal basis section and the recommendations section that the administrative authority is obligated to continue executing the contract until the end of its term. It directly cites 'استقرار المعاملات' (stability of transactions) as one of the rationales, alongside avoiding significant harm to the public interest. The recommendation section clearly states: 'ملزمة بالاستمرار في تنفيذه حتى نهاية مدته' (obligated to continue executing it until the end of its term)."
+     },
+     {
+      "id": "C-005",
+      "title": "Public interest harm from termination",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 3 (أثر بطلان الإجراءات السابقة على التعاقد) that termination causes serious harm to the public interest, specifically mentioning 'ضياع فرصة الاستفادة مما صُرف فعلًا، أو تحميل الخزانة العامة مبالغ باهظة' (loss of opportunity to benefit from amounts already expended, or burdening the public treasury with exorbitant amounts). This is further reinforced in the التطبيق section which references the 15 million already disbursed and the threat of additional burdens on the treasury."
+     },
+     {
+      "id": "C-006",
+      "title": "Liability of violators preserved",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in recommendation #2 that continuing to execute the contract does not prevent holding those who took the unlawful procedures accountable civilly, disciplinarily, and criminally, and recommends referring the matter for investigation. This satisfies the criterion that the note must state that continuing execution does not prejudice civil, disciplinary, and criminal liability against the violators."
+     }
+    ],
+    "run_id": "open-o55-files/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:02:39.509992+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Contract as binding law",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in Section 1 of السند القانوني that 'العقد شريعة المتعاقدين' and references Article 147/1 of the Civil Code, explicitly noting that the contract may not be revoked or modified except by agreement of the parties or for reasons established by law ('لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون'). This fully satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Good faith execution",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the السند القانوني section that المادة (148/1) requires executing the contract 'بطريقة تتفق مع حسن النية' (in a manner consistent with good faith), satisfying the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Pre-contract procedural defects do not void a complete contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that regardless of the nullity (البطلان) affecting pre-contract procedures ('أيًّا ما كان وجه البطلان الذي لحق بالإجراءات السابقة على التعاقد'), the contract remains binding once it has fulfilled its essential elements ('إذا انعقد مستوفيًا أركانه يكون ملزمًا لطرفيه'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Obligation to continue execution",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the administrative authority is obligated to continue executing the contract until the end of its term ('ملزمة بالاستمرار في تنفيذه حتى نهاية مدته' and 'تلتزم الجهة الإدارية بالاستمرار في تنفيذه حتى انتهاء مدته'), and it cites the principle of stability of transactions ('استقرار المعاملات') as the rationale for this obligation."
+     },
+     {
+      "id": "C-005",
+      "title": "Public interest harm from termination",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the السند القانوني section that the rationale includes 'تجنب الضرر البالغ بالمصلحة العامة، ومنه ضياع فرصة الاستفادة مما صُرف فعلًا، أو تحميل الخزانة العامة مبالغ باهظة' (avoiding serious harm to the public interest, including loss of amounts already expended, or imposing exorbitant amounts on the public treasury). The التطبيق section further applies this by noting that termination threatens the loss of the 15 million already spent and additional burdens on the treasury, which is exactly the harm the إفتاء sought to avoid."
+     },
+     {
+      "id": "C-006",
+      "title": "Liability of violators preserved",
+      "verdict": "pass",
+      "reasoning": "Recommendation #2 explicitly states that continuing the contract does not prevent holding those who took the violating procedures accountable civilly, disciplinarily, and criminally ('مساءلة من اتخذ الإجراءات المخالفة مدنيًا وتأديبيًا وجنائيًا'). This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:08:26.274464+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

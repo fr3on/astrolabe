@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** مدى التزام مديرية الزراعة بسوهاج بسداد اشتراكات تأمينية عن مكافآت وحوافز العامل المنتدب في غير أوقات العمل الرسمية\n\n## أولاً: الوقائع\nأحمد سالم موظف بمديرية الزراعة بسوهاج، انتُدب للعمل في مشروع تربية إناث الماشية في غير أوقات العمل الرسمية، ويتقاضى عن ذلك مكافآت وحوافز من جهة عمله الأصلية. ويطالب صندوق التأمين الاجتماعي للعاملين بالقطاع الحكومي المديرية بسداد اشتراكات عنها.\n\n## ثانياً: الرأي\nلا تلتزم المديرية بسداد هذه الاشتراكات، وذلك للأسباب الآتية:\n\n1. **مفهوم الأجر:** الأجر في قانون التأمين الاجتماعي هو ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية **نظير عمله الأصلي**. ويعد في حكم العمل الأصلي العمل المنتدب إليه **طوال الوقت** أو المعار إليه داخل البلاد (الفتوى رقم 1274 بتاريخ 12/9/2018).\n2. **ما يخرج عن مفهوم الأجر:** لا يعد أجراً ما يحصل عليه العامل نظير قيامه بأعباء وظيفة انتُدب إليها أو شغلها بصفة مؤقتة أو عرضية، **ولو صُرف المقابل من جهة عمله الأصلية**، وبذلك ينتفي مناط استحقاق الاشتراكات عنه (الفتوى ذاتها).\n3. **التطبيق:** انتداب أحمد كان في غير أوقات العمل الرسمية، أي ليس انتداباً طوال الوقت، فلا يعد المقابل أجراً، وصرفه من المديرية لا يغير ذلك.\n4. **سابقة مطابقة:** انتهت الجمعية العمومية لقسمي الفتوى والتشريع في الفتوى نفسها إلى رفض مطالبة الصندوق إلزام مديرية الزراعة بسوهاج بسداد اشتراكات عن حوافز ومكافآت العاملين المنتدبين لمشروعي تربية إناث الماشية وحماية الأراضي في غير أوقات العمل الرسمية.\n\n## ثالثاً: الخلاصة\nلا يتعين على مديرية الزراعة سداد الاشتراكات المطالب بها، ويُنصح بالرد على الصندوق برفض المطالبة استناداً إلى الفتوى رقم 1274 لسنة 2018.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Definition of Wage for Insurance",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1 that 'الأجر في قانون التأمين الاجتماعي هو ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي' (the wage in social insurance law is what the insured receives as monetary compensation from his original employer in return for his original work). This directly satisfies the criterion that the insurable wage is limited to remuneration received in return for the employee's original work."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary/Incidental Work Exception",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that remuneration received for work performed on a temporary or incidental secondment basis does not constitute a wage, and critically includes the condition 'even if paid by the original employer' (ولو صُرف المقابل من جهة عمله الأصلية). This directly satisfies both required elements of the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "No Contributions Due",
+     "verdict": "pass",
+     "reasoning": "The note clearly concludes in both the analysis section and the summary that no social insurance contributions are due on the bonuses and incentives paid to the seconded worker. It states explicitly that the directorate is not obligated to pay these contributions and recommends rejecting the insurance fund's claim, citing Fatwa No. 1274 of 2018. The conclusion is unqualified and directly addresses the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Rejection of Ministry's Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly references in point 4 (سابقة مطابقة) that the General Assembly of the Fatwa and Legislation Sections concluded in the same opinion (Fatwa No. 1274/2018) by rejecting the Social Insurance Fund's demand to require the Sohag Agriculture Directorate to pay contributions on incentives and bonuses for employees seconded to the cattle breeding and land protection projects outside official working hours. This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Definition of Wage for Insurance",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in point 1 that 'الأجر في قانون التأمين الاجتماعي هو ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي' — i.e., the wage subject to social insurance contributions is only what the employee receives in return for his original work. This directly satisfies the criterion's requirement to limit the insurable wage to remuneration received in return for the employee's original work."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary/Incidental Work Exception",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that remuneration received for work performed on a temporary or incidental secondment basis ('أعباء وظيفة انتُدب إليها أو شغلها بصفة مؤقتة أو عرضية') does not constitute a wage under social insurance law, and it explicitly includes the condition 'ولو صُرف المقابل من جهة عمله الأصلية' (even if paid by the original employer). This satisfies both requirements of the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "No Contributions Due",
+     "verdict": "pass",
+     "reasoning": "The note clearly concludes that no social insurance contributions are due on the bonuses and incentives paid for the secondment work, without qualifying conditions beyond those given in the facts."
+    },
+    {
+     "id": "C-004",
+     "title": "Rejection of Ministry's Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 4 that the General Assembly (الجمعية العمومية لقسمي الفتوى والتشريع) rejected the demand to require the Sohag Agriculture Directorate (مديرية الزراعة بسوهاج) to pay contributions on incentives and bonuses (حوافز ومكافآت) for seconded employees working on the cattle breeding project (مشروع تربية إناث الماشية) and land protection project (حماية الأراضي) outside official working hours (في غير أوقات العمل الرسمية). All required elements are present."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/definition-of-wage-for-social-insurance-contribution-purposes",
+  "task": "astrolabe-open/egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+  "scored_at": "2026-11-22T18:18:37.756281+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Definition of Wage for Insurance",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1 that 'الأجر في قانون التأمين الاجتماعي هو ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي' (the wage in social insurance law is what the insured receives as monetary compensation from his original employer in return for his original work). This directly satisfies the criterion that the insurable wage is limited to remuneration received in return for the employee's original work."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary/Incidental Work Exception",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that remuneration received for work performed on a temporary or incidental secondment basis does not constitute a wage, and critically includes the condition 'even if paid by the original employer' (ولو صُرف المقابل من جهة عمله الأصلية). This directly satisfies both required elements of the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "No Contributions Due",
+      "verdict": "pass",
+      "reasoning": "The note clearly concludes in both the analysis section and the summary that no social insurance contributions are due on the bonuses and incentives paid to the seconded worker. It states explicitly that the directorate is not obligated to pay these contributions and recommends rejecting the insurance fund's claim, citing Fatwa No. 1274 of 2018. The conclusion is unqualified and directly addresses the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Rejection of Ministry's Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly references in point 4 (سابقة مطابقة) that the General Assembly of the Fatwa and Legislation Sections concluded in the same opinion (Fatwa No. 1274/2018) by rejecting the Social Insurance Fund's demand to require the Sohag Agriculture Directorate to pay contributions on incentives and bonuses for employees seconded to the cattle breeding and land protection projects outside official working hours. This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/definition-of-wage-for-social-insurance-contribution-purposes",
+    "task": "astrolabe-open/egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:08:47.949169+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Definition of Wage for Insurance",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in point 1 that 'الأجر في قانون التأمين الاجتماعي هو ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي' — i.e., the wage subject to social insurance contributions is only what the employee receives in return for his original work. This directly satisfies the criterion's requirement to limit the insurable wage to remuneration received in return for the employee's original work."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary/Incidental Work Exception",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that remuneration received for work performed on a temporary or incidental secondment basis ('أعباء وظيفة انتُدب إليها أو شغلها بصفة مؤقتة أو عرضية') does not constitute a wage under social insurance law, and it explicitly includes the condition 'ولو صُرف المقابل من جهة عمله الأصلية' (even if paid by the original employer). This satisfies both requirements of the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "No Contributions Due",
+      "verdict": "pass",
+      "reasoning": "The note clearly concludes that no social insurance contributions are due on the bonuses and incentives paid for the secondment work, without qualifying conditions beyond those given in the facts."
+     },
+     {
+      "id": "C-004",
+      "title": "Rejection of Ministry's Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 4 that the General Assembly (الجمعية العمومية لقسمي الفتوى والتشريع) rejected the demand to require the Sohag Agriculture Directorate (مديرية الزراعة بسوهاج) to pay contributions on incentives and bonuses (حوافز ومكافآت) for seconded employees working on the cattle breeding project (مشروع تربية إناث الماشية) and land protection project (حماية الأراضي) outside official working hours (في غير أوقات العمل الرسمية). All required elements are present."
+     }
+    ],
+    "run_id": "open-o55-files/definition-of-wage-for-social-insurance-contribution-purposes",
+    "task": "astrolabe-open/egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:18:37.755917+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

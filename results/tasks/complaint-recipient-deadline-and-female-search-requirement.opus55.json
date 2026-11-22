@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** التظلم من أمر تمديد التوقيف، وتفتيش المتهمة سارة\n\n## أولًا: الوقائع\nأُوقف أحمد احتياطيًا في 1 محرم 1446هـ، وبعد ثلاثة أيام قرر المحقق تمديد توقيفه، فتظلّم أحمد في اليوم نفسه. وفي القضية ذاتها أراد رجل الضبط الجنائي تفتيش المتهمة سارة، والقبض عليها جائز نظامًا.\n\n## ثانيًا: إجراءات التوقيف والتظلم (أحمد)\n- **السند (source-2):**\n  1. عند التوقيف يجب أن يُسلَّم أصل أمر التوقيف إلى مدير التوقيف، بعد أن يوقّع على صورة الأمر بما يفيد التسلّم.\n  2. للموقوف احتياطيًا أن يتظلم من أمر التوقيف أو من أمر تمديده.\n  3. يُقدَّم التظلم إلى رئيس دائرة التحقيق التي يتبعها المحقق، أو رئيس الفرع، أو رئيس الهيئة، بحسب الأحوال.\n  4. يُبتّ في التظلم خلال **خمسة أيام من تاريخ تقديمه**.\n- **التطبيق:** تظلم أحمد من أمر التمديد جائز. يُقدَّم إلى الجهة المختصة المذكورة أعلاه، ويجب البت فيه خلال خمسة أيام من يوم تقديمه، أي من نحو 4 محرم 1446هـ. وينبغي التأكد من أن أصل أمر التوقيف سُلّم إلى مدير التوقيف وأنه وقّع على صورته بالتسلم.\n\n## ثالثًا: تفتيش المتهمة سارة\n- **السند (source-1):** يجوز لرجل الضبط الجنائي تفتيش المتهم في الأحوال التي يجوز فيها القبض عليه نظامًا. ويشمل التفتيش الجسد والملابس والأمتعة. وإذا كان المتهم امرأة **وجب أن تتولى التفتيش امرأة يندبها رجل الضبط الجنائي**.\n- **التطبيق:** القبض على سارة جائز، فيجوز تفتيشها في جسدها وملابسها وأمتعتها. لكن لا يجوز لرجل الضبط أن يفتشها بنفسه، بل يجب أن يندب امرأة تتولى التفتيش.\n\n## رابعًا: ملاحظة\nالنص الخاص بدعوى الحق الخاص (source-3) لا علاقة له بالأسئلة المطروحة.\n\n## خامسًا: الخلاصة\n1. أحمد: يُقدَّم التظلم إلى رئيس دائرة التحقيق أو رئيس الفرع أو رئيس الهيئة، ويُبتّ فيه خلال خمسة أيام من تقديمه، مع التحقق من تسليم أصل أمر التوقيف إلى مدير التوقيف.\n2. سارة: يجوز تفتيشها، على أن تفتشها امرأة يندبها رجل الضبط الجنائي.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Complaint recipient",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states in section ثانيًا that the complaint is submitted to 'رئيس دائرة التحقيق التي يتبعها المحقق، أو رئيس الفرع، أو رئيس الهيئة، بحسب الأحوال' (the head of the investigation department, the head of the branch, or the head of the authority, as the case may be). All three recipients are specified and the condition 'بحسب الأحوال' (as the case may be) is included. This is repeated in the summary section as well."
+    },
+    {
+     "id": "C-002",
+     "title": "Complaint deadline",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا point 4 that 'يُبتّ في التظلم خلال خمسة أيام من تاريخ تقديمه' (the complaint is decided within five days from the date of its submission), and this is repeated in the summary section خامسًا. The five-day period is clearly tied to the date of submission."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension order complaint",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the right to complain (تظلم) covers both the original detention order and the extension order (أمر التوقيف أو من أمر تمديده). The application section also specifically addresses Ahmad's complaint as being against the extension order (أمر التمديد), confirming that the right to complain is not limited to the original detention order."
+    },
+    {
+     "id": "C-004",
+     "title": "Female search requirement",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (Third) that if the accused is a woman, a woman must conduct the search ('وجب أن تتولى التفتيش امرأة يندبها رجل الضبط الجنائي'). The application section reinforces this by stating the criminal investigation officer cannot search Sarah himself but must delegate a woman to conduct the search ('لا يجوز لرجل الضبط أن يفتشها بنفسه، بل يجب أن يندب امرأة تتولى التفتيش'). This is also reiterated in the conclusion (خامسًا). The criterion is fully satisfied."
+    },
+    {
+     "id": "C-005",
+     "title": "Delegation of female searcher",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in both the legal basis and application sections that it is رجل الضبط الجنائي (the criminal investigation officer) who delegates (يندب) a woman to carry out the search of the female suspect. The phrase 'يجب أن يندب امرأة تتولى التفتيش' and 'امرأة يندبها رجل الضبط الجنائي' clearly attribute the delegation to the criminal investigation officer."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Complaint recipient",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the complaint is submitted to 'رئيس دائرة التحقيق التي يتبعها المحقق، أو رئيس الفرع، أو رئيس الهيئة، بحسب الأحوال' — all three recipients are mentioned along with the condition 'as the case may be' (بحسب الأحوال)."
+    },
+    {
+     "id": "C-002",
+     "title": "Complaint deadline",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the complaint (تظلم) must be decided within five days from the date of its submission ('خلال خمسة أيام من تاريخ تقديمه')."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension order complaint",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the right to complain (تظلم) covers both the original detention order and the extension order ('للموقوف احتياطيًا أن يتظلم من أمر التوقيف أو من أمر تمديده'), and applies it to Ahmad's case as a complaint against the extension order specifically ('تظلم أحمد من أمر التمديد جائز')."
+    },
+    {
+     "id": "C-004",
+     "title": "Female search requirement",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that Sarah's search must be carried out by a woman deputized by the criminal investigation officer, and explicitly says the officer cannot conduct the search himself ('لا يجوز لرجل الضبط أن يفتشها بنفسه، بل يجب أن يندب امرأة تتولى التفتيش')."
+    },
+    {
+     "id": "C-005",
+     "title": "Delegation of female searcher",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in multiple places that the criminal investigation officer (رجل الضبط الجنائي) is the one who delegates a woman to carry out the search. For example: 'يجب أن يندب امرأة تتولى التفتيش' and 'امرأة يندبها رجل الضبط الجنائي'."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/complaint-recipient-deadline-and-female-search-requirement",
+  "task": "astrolabe-open/saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+  "scored_at": "2026-11-22T18:33:38.134805+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Complaint recipient",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states in section ثانيًا that the complaint is submitted to 'رئيس دائرة التحقيق التي يتبعها المحقق، أو رئيس الفرع، أو رئيس الهيئة، بحسب الأحوال' (the head of the investigation department, the head of the branch, or the head of the authority, as the case may be). All three recipients are specified and the condition 'بحسب الأحوال' (as the case may be) is included. This is repeated in the summary section as well."
+     },
+     {
+      "id": "C-002",
+      "title": "Complaint deadline",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا point 4 that 'يُبتّ في التظلم خلال خمسة أيام من تاريخ تقديمه' (the complaint is decided within five days from the date of its submission), and this is repeated in the summary section خامسًا. The five-day period is clearly tied to the date of submission."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension order complaint",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the right to complain (تظلم) covers both the original detention order and the extension order (أمر التوقيف أو من أمر تمديده). The application section also specifically addresses Ahmad's complaint as being against the extension order (أمر التمديد), confirming that the right to complain is not limited to the original detention order."
+     },
+     {
+      "id": "C-004",
+      "title": "Female search requirement",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (Third) that if the accused is a woman, a woman must conduct the search ('وجب أن تتولى التفتيش امرأة يندبها رجل الضبط الجنائي'). The application section reinforces this by stating the criminal investigation officer cannot search Sarah himself but must delegate a woman to conduct the search ('لا يجوز لرجل الضبط أن يفتشها بنفسه، بل يجب أن يندب امرأة تتولى التفتيش'). This is also reiterated in the conclusion (خامسًا). The criterion is fully satisfied."
+     },
+     {
+      "id": "C-005",
+      "title": "Delegation of female searcher",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in both the legal basis and application sections that it is رجل الضبط الجنائي (the criminal investigation officer) who delegates (يندب) a woman to carry out the search of the female suspect. The phrase 'يجب أن يندب امرأة تتولى التفتيش' and 'امرأة يندبها رجل الضبط الجنائي' clearly attribute the delegation to the criminal investigation officer."
+     }
+    ],
+    "run_id": "open-o55-files/complaint-recipient-deadline-and-female-search-requirement",
+    "task": "astrolabe-open/saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:28:57.028416+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Complaint recipient",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the complaint is submitted to 'رئيس دائرة التحقيق التي يتبعها المحقق، أو رئيس الفرع، أو رئيس الهيئة، بحسب الأحوال' — all three recipients are mentioned along with the condition 'as the case may be' (بحسب الأحوال)."
+     },
+     {
+      "id": "C-002",
+      "title": "Complaint deadline",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the complaint (تظلم) must be decided within five days from the date of its submission ('خلال خمسة أيام من تاريخ تقديمه')."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension order complaint",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the right to complain (تظلم) covers both the original detention order and the extension order ('للموقوف احتياطيًا أن يتظلم من أمر التوقيف أو من أمر تمديده'), and applies it to Ahmad's case as a complaint against the extension order specifically ('تظلم أحمد من أمر التمديد جائز')."
+     },
+     {
+      "id": "C-004",
+      "title": "Female search requirement",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that Sarah's search must be carried out by a woman deputized by the criminal investigation officer, and explicitly says the officer cannot conduct the search himself ('لا يجوز لرجل الضبط أن يفتشها بنفسه، بل يجب أن يندب امرأة تتولى التفتيش')."
+     },
+     {
+      "id": "C-005",
+      "title": "Delegation of female searcher",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in multiple places that the criminal investigation officer (رجل الضبط الجنائي) is the one who delegates a woman to carry out the search. For example: 'يجب أن يندب امرأة تتولى التفتيش' and 'امرأة يندبها رجل الضبط الجنائي'."
+     }
+    ],
+    "run_id": "open-o55-files/complaint-recipient-deadline-and-female-search-requirement",
+    "task": "astrolabe-open/saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:33:38.134421+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

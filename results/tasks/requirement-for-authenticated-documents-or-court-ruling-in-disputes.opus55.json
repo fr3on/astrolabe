@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة قانونية\n\n**الموضوع:** طلب المجلس الأعلى للآثار تغيير بيانات السجل العيني لأرض بمحافظة البحيرة، ومدى اعتبار محافظ البحيرة طرفًا في النزاع.\n\n## أولًا: الوقائع باختصار\nفي عام 2024 نشأ نزاع بين المجلس الأعلى للآثار والهيئة المصرية العامة للمساحة حول أرض مسجلة في السجل العيني بمحافظة البحيرة. ويطلب المجلس تغيير بيانات السجل استنادًا إلى وثيقة إدارية صادرة عن محافظ البحيرة تفيد ملكيته للأرض.\n\n## ثانيًا: هل تكفي الوثيقة الإدارية لتغيير بيانات السجل العيني؟\n**الرأي:** لا تكفي.\n\n**السند:** المادة (39) من قانون السجل العيني رقم (142) لسنة 1964، كما طبقتها الفتوى رقم 832 بتاريخ 8/5/2024، تقضي بأنه لا يجوز تغيير البيانات الواردة بالسجل العيني إلا بمقتضى **محررات موثقة أو حكم قضائي**. والوثيقة الإدارية الصادرة عن المحافظ ليست محررًا موثقًا ولا حكمًا قضائيًا، ولذلك لا تصلح وحدها سندًا للتغيير.\n\n**التوصية:** على المجلس أن يحصل على محرر موثق يثبت ملكيته أو على حكم قضائي بها، أو أن يعرض النزاع على الجهة المختصة بالفصل فيه (انظر البند الرابع).\n\n## ثالثًا: هل يُعدّ محافظ البحيرة طرفًا في النزاع؟\n**الرأي:** لا يُعدّ طرفًا.\n\n**السند:** قررت الفتوى رقم 832 لسنة 2024 أن اختصام محافظ البحيرة لا يبرره القانون، لأن المحافظة لا صلة لها بأرض النزاع، ولم تدّعِ أي حق عليها، ولم تُبدِ طلبًا أو دفاعًا أو دفعًا. ولذلك يقوم النزاع بين المجلس الأعلى للآثار من جهة، والهيئة المصرية العامة للمساحة ومصلحة الشهر العقاري والتوثيق (ويمثلها وزير العدل) من جهة أخرى. وإصدار المحافظ للوثيقة الإدارية لا يجعله طرفًا في النزاع وفق هذا المعيار.\n\n## رابعًا: الجهة المختصة بنظر النزاع\nتختص الجمعية العمومية لقسمي الفتوى والتشريع بمجلس الدولة بإبداء الرأي مسببًا في المنازعات التي تنشأ بين الهيئات العامة والمصالح العامة. ويكون رأيها **ملزمًا للجانبين**، وذلك وفق المادة (66/د) من قانون مجلس الدولة رقم (47) لسنة 1972.\n\n## خامسًا: الخلاصة\n1. الوثيقة الإدارية الصادرة عن المحافظ لا تكفي لتغيير بيانات السجل العيني، إذ يلزم محرر موثق أو حكم قضائي (المادة 39 من القانون 142 لسنة 1964).\n2. محافظ البحيرة ليس طرفًا في النزاع. والنزاع قائم بين المجلس الأعلى للآثار من جهة، والهيئة المصرية العامة للمساحة ومصلحة الشهر العقاري من جهة أخرى.\n3. الجمعية العمومية لقسمي الفتوى والتشريع هي المختصة بنظر النزاع، ورأيها ملزم للطرفين.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement for authenticated documents or court ruling",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section II that changes to real estate register data require authenticated documents (محررات موثقة) or a court ruling (حكم قضائي), citing Article 39 of Law No. 142 of 1964. It clearly states that the administrative document issued by the Governor is neither an authenticated document nor a court ruling, and therefore is insufficient alone as a basis for changing the register data. This is also reiterated in the summary section."
+    },
+    {
+     "id": "C-002",
+     "title": "Governor not a party to the dispute",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section Three that the Governor of Beheira is not considered a party to the dispute. It provides the required reasoning: the governorate has no connection to the land ('المحافظة لا صلة لها بأرض النزاع'), made no claims ('لم تدّعِ أي حق عليها'), and made no submissions or defenses ('لم تُبدِ طلبًا أو دفاعًا أو دفعًا'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Actual parties to the dispute",
+     "verdict": "pass",
+     "reasoning": "The note correctly identifies the Supreme Council of Antiquities (المجلس الأعلى للآثار) on one side, and the Egyptian General Survey Authority (الهيئة المصرية العامة للمساحة) along with the Real Estate Publicity and Notarization Authority/مصلحة الشهر العقاري والتوثيق on the other side, in both Section III and the Summary (Section V). All three bodies are identified in their correct opposing positions."
+    },
+    {
+     "id": "C-004",
+     "title": "Binding opinion of the General Assembly",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section Four (رابعًا) that the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) of the State Council is competent to resolve disputes arising between public bodies and public authorities, and that its opinion is binding on both parties (ملزمًا للجانبين). This is also reiterated in the summary (خامسًا). The criterion is fully satisfied."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement for authenticated documents or court ruling",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in sections ثانيًا and خامسًا that changes to the real estate register require authenticated documents (محررات موثقة) or a court ruling (حكم قضائي), citing Article 39 of Law 142/1964, and explicitly states that the administrative document alone is insufficient."
+    },
+    {
+     "id": "C-002",
+     "title": "Governor not a party to the dispute",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in Section ثالثًا that the Governor of Beheira is not considered a party to the dispute, and provides the reasons: the governorate has no connection to the land in dispute ('المحافظة لا صلة لها بأرض النزاع'), did not claim any right over it ('لم تدّعِ أي حق عليها'), and made no requests, defense, or submissions ('لم تُبدِ طلبًا أو دفاعًا أو دفعًا'). This fully satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Actual parties to the dispute",
+     "verdict": "pass",
+     "reasoning": "The note clearly identifies the Supreme Council of Antiquities on one side, and the Egyptian General Survey Authority and the Real Estate Publicity and Notarization Authority (represented by the Minister of Justice) on the other side. All three bodies are identified in their correct opposing positions."
+    },
+    {
+     "id": "C-004",
+     "title": "Binding opinion of the General Assembly",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in Section رابعًا that the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) is competent to resolve disputes between public bodies and that its opinion is binding on both parties (ملزمًا للجانبين). This is also reiterated in the conclusion (point 3)."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+  "task": "astrolabe-open/egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+  "scored_at": "2026-11-22T18:14:50.603359+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement for authenticated documents or court ruling",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section II that changes to real estate register data require authenticated documents (محررات موثقة) or a court ruling (حكم قضائي), citing Article 39 of Law No. 142 of 1964. It clearly states that the administrative document issued by the Governor is neither an authenticated document nor a court ruling, and therefore is insufficient alone as a basis for changing the register data. This is also reiterated in the summary section."
+     },
+     {
+      "id": "C-002",
+      "title": "Governor not a party to the dispute",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section Three that the Governor of Beheira is not considered a party to the dispute. It provides the required reasoning: the governorate has no connection to the land ('المحافظة لا صلة لها بأرض النزاع'), made no claims ('لم تدّعِ أي حق عليها'), and made no submissions or defenses ('لم تُبدِ طلبًا أو دفاعًا أو دفعًا'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Actual parties to the dispute",
+      "verdict": "pass",
+      "reasoning": "The note correctly identifies the Supreme Council of Antiquities (المجلس الأعلى للآثار) on one side, and the Egyptian General Survey Authority (الهيئة المصرية العامة للمساحة) along with the Real Estate Publicity and Notarization Authority/مصلحة الشهر العقاري والتوثيق on the other side, in both Section III and the Summary (Section V). All three bodies are identified in their correct opposing positions."
+     },
+     {
+      "id": "C-004",
+      "title": "Binding opinion of the General Assembly",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section Four (رابعًا) that the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) of the State Council is competent to resolve disputes arising between public bodies and public authorities, and that its opinion is binding on both parties (ملزمًا للجانبين). This is also reiterated in the summary (خامسًا). The criterion is fully satisfied."
+     }
+    ],
+    "run_id": "open-o55-files/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "task": "astrolabe-open/egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:13:20.612888+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement for authenticated documents or court ruling",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in sections ثانيًا and خامسًا that changes to the real estate register require authenticated documents (محررات موثقة) or a court ruling (حكم قضائي), citing Article 39 of Law 142/1964, and explicitly states that the administrative document alone is insufficient."
+     },
+     {
+      "id": "C-002",
+      "title": "Governor not a party to the dispute",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in Section ثالثًا that the Governor of Beheira is not considered a party to the dispute, and provides the reasons: the governorate has no connection to the land in dispute ('المحافظة لا صلة لها بأرض النزاع'), did not claim any right over it ('لم تدّعِ أي حق عليها'), and made no requests, defense, or submissions ('لم تُبدِ طلبًا أو دفاعًا أو دفعًا'). This fully satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Actual parties to the dispute",
+      "verdict": "pass",
+      "reasoning": "The note clearly identifies the Supreme Council of Antiquities on one side, and the Egyptian General Survey Authority and the Real Estate Publicity and Notarization Authority (represented by the Minister of Justice) on the other side. All three bodies are identified in their correct opposing positions."
+     },
+     {
+      "id": "C-004",
+      "title": "Binding opinion of the General Assembly",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in Section رابعًا that the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) is competent to resolve disputes between public bodies and that its opinion is binding on both parties (ملزمًا للجانبين). This is also reiterated in the conclusion (point 3)."
+     }
+    ],
+    "run_id": "open-o55-files/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "task": "astrolabe-open/egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:14:50.602985+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

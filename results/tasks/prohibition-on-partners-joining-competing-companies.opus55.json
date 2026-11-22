@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-company-law/prohibition-on-partners-joining-competing-companies",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الوقائع باختصار\nأسس أحمد وخالد شركة مهنية للمحاسبة القانونية. بعد عام انضم أحمد شريكًا في شركة مهنية أخرى تمارس المهنة ذاتها دون علم خالد، كما يقدّم خدمات محاسبية لعملاء لحسابه الخاص منافسةً للشركة.\n\n## أولًا: انضمام أحمد إلى شركة مهنية أخرى\n- لا يجوز للشريك في شركة مهنية الممارس لمهنة حرة المشاركة في شركة مهنية أخرى تمارس المهنة الحرة ذاتها، ما لم ينص عقد التأسيس أو النظام الأساس على ذلك، ودون إخلال بالأنظمة ذات العلاقة، وتبين اللوائح ضوابط الاستثناء (المصدر 3).\n- كذلك لا يجوز للشريك دون موافقة باقي الشركاء أن يكون شريكًا في شركة تنافس الشركة (المصدر 2).\n\n**التقييم:** ما لم يتضمن عقد تأسيس الشركة نصًا يجيز ذلك (لم يرد في الوقائع ما يفيده)، فإن انضمام أحمد مخالف للنظام، فضلًا عن أنه تم دون موافقة خالد. ويلزم مراجعة عقد التأسيس للتحقق.\n\n## ثانيًا: ممارسة أحمد نشاطًا منافسًا لحسابه الخاص\nلا يجوز للشريك دون موافقة باقي الشركاء أن يمارس لحسابه أو لحساب الغير نشاطًا من نوع نشاط الشركة (المصدر 2). وتقديم أحمد خدمات محاسبية لحسابه دون موافقة خالد إخلال بهذا الالتزام.\n\n## ثالثًا: الخيارات المتاحة\nوفق المصدر 2، إذا أخل الشريك بذلك فللشركة:\n1. أن تطلب من الجهة القضائية المختصة أن تَعُدّ التصرفات التي قام بها أحمد لحسابه الخاص قد تمت **لحساب الشركة** (فتؤول منافعها إليها).\n2. أن تطالبه - فضلًا عن ذلك - **بالتعويض**.\n\nويُلاحظ أن هذه الجزاءات مقررة في النص للشركة؛ ولم تتضمن المستندات جزاءً محددًا خاصًا بمخالفة المصدر 3 أو حقًا مستقلًا لخالد بصفته الشخصية، كما أن اللوائح والأنظمة المهنية ذات العلاقة غير مرفقة.\n\n## التوصيات\n- مراجعة عقد التأسيس للتأكد من عدم وجود نص يجيز المشاركة أو المنافسة.\n- توثيق الأدلة على النشاط المنافس والانضمام للشركة الأخرى.\n- رفع الدعوى باسم الشركة لاعتبار التصرفات لحسابها والمطالبة بالتعويض.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Prohibition on joining competing professional company",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first section: 'لا يجوز للشريك في شركة مهنية الممارس لمهنة حرة المشاركة في شركة مهنية أخرى تمارس المهنة الحرة ذاتها' (a partner in a professional company practicing a liberal profession may not participate in another professional company practicing the same liberal profession). This clearly states the prohibition as a general rule, with the exception noted only when the founding contract or bylaws permit it."
+    },
+    {
+     "id": "C-002",
+     "title": "Exception via founding contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first section that participation in another professional company practicing the same profession is not permitted 'unless the founding contract (عقد التأسيس) or the articles of association (النظام الأساسي) provides for it.' This identifies the express provision in the founding contract or articles of association as the exception. The criterion requires the note to state that the only exception is an express provision in the founding contract or articles of association. The note does identify this as the exception, and no other exceptions are mentioned as alternatives to this contractual provision (the reference to regulations 'الأنظمة ذات العلاقة' is a general compliance note, not an alternative exception path). The note satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on competing activity without partner consent",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'ثانيًا' that a partner may not engage in an activity of the same type as the company's activity for his own account or for the account of others without the consent of the remaining partners, and that Ahmed's provision of accounting services for his own account without Khaled's consent constitutes a breach of this obligation."
+    },
+    {
+     "id": "C-004",
+     "title": "Judicial reattribution of transactions to company",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'ثالثًا: الخيارات المتاحة' that the company may request from the competent judicial authority ('الجهة القضائية المختصة') that transactions carried out by Ahmed for his own account be deemed to have been carried out on behalf of the company ('لحساب الشركة'), with their benefits accruing to it. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Right to compensation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (Third) that the company may claim compensation (التعويض) from the offending partner Ahmed, listing it as option 2: 'أن تطالبه - فضلًا عن ذلك - بالتعويض'. This clearly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Prohibition on joining competing professional company",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in Section أولًا that 'لا يجوز للشريك في شركة مهنية الممارس لمهنة حرة المشاركة في شركة مهنية أخرى تمارس المهنة الحرة ذاتها' as a general rule, with exceptions only if the founding contract or bylaws permit it. This satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Exception via founding contract",
+     "verdict": "pass",
+     "reasoning": "The note states in Section أولًا that the partner may not join another professional company practicing the same profession 'ما لم ينص عقد التأسيس أو النظام الأساس على ذلك' (unless the founding contract or articles of association provide for it). It further notes in التقييم that unless the founding contract contains such a provision, Ahmed's joining is a violation. This clearly identifies the express contractual provision (عقد التأسيس / النظام الأساسي) as the sole exception to the prohibition."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on competing activity without partner consent",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section ثانيًا that 'لا يجوز للشريك دون موافقة باقي الشركاء أن يمارس لحسابه أو لحساب الغير نشاطًا من نوع نشاط الشركة', which explicitly says a partner may not engage in an activity of the same type as the company's activity for his own account without the consent of the remaining partners."
+    },
+    {
+     "id": "C-004",
+     "title": "Judicial reattribution of transactions to company",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (option 1) that the company can request from the competent judicial authority that transactions carried out by Ahmad for his own account be deemed to have been carried out on behalf of the company ('أن تطلب من الجهة القضائية المختصة أن تَعُدّ التصرفات التي قام بها أحمد لحسابه الخاص قد تمت لحساب الشركة')."
+    },
+    {
+     "id": "C-005",
+     "title": "Right to compensation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا that the company may claim compensation (تعويض) from the offending partner: 'أن تطالبه - فضلًا عن ذلك - بالتعويض'."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/prohibition-on-partners-joining-competing-companies",
+  "task": "astrolabe-open/saudi-company-law/prohibition-on-partners-joining-competing-companies",
+  "scored_at": "2026-11-22T18:37:49.058036+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Prohibition on joining competing professional company",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first section: 'لا يجوز للشريك في شركة مهنية الممارس لمهنة حرة المشاركة في شركة مهنية أخرى تمارس المهنة الحرة ذاتها' (a partner in a professional company practicing a liberal profession may not participate in another professional company practicing the same liberal profession). This clearly states the prohibition as a general rule, with the exception noted only when the founding contract or bylaws permit it."
+     },
+     {
+      "id": "C-002",
+      "title": "Exception via founding contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first section that participation in another professional company practicing the same profession is not permitted 'unless the founding contract (عقد التأسيس) or the articles of association (النظام الأساسي) provides for it.' This identifies the express provision in the founding contract or articles of association as the exception. The criterion requires the note to state that the only exception is an express provision in the founding contract or articles of association. The note does identify this as the exception, and no other exceptions are mentioned as alternatives to this contractual provision (the reference to regulations 'الأنظمة ذات العلاقة' is a general compliance note, not an alternative exception path). The note satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on competing activity without partner consent",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'ثانيًا' that a partner may not engage in an activity of the same type as the company's activity for his own account or for the account of others without the consent of the remaining partners, and that Ahmed's provision of accounting services for his own account without Khaled's consent constitutes a breach of this obligation."
+     },
+     {
+      "id": "C-004",
+      "title": "Judicial reattribution of transactions to company",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'ثالثًا: الخيارات المتاحة' that the company may request from the competent judicial authority ('الجهة القضائية المختصة') that transactions carried out by Ahmed for his own account be deemed to have been carried out on behalf of the company ('لحساب الشركة'), with their benefits accruing to it. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Right to compensation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (Third) that the company may claim compensation (التعويض) from the offending partner Ahmed, listing it as option 2: 'أن تطالبه - فضلًا عن ذلك - بالتعويض'. This clearly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/prohibition-on-partners-joining-competing-companies",
+    "task": "astrolabe-open/saudi-company-law/prohibition-on-partners-joining-competing-companies",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:27:39.628513+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Prohibition on joining competing professional company",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in Section أولًا that 'لا يجوز للشريك في شركة مهنية الممارس لمهنة حرة المشاركة في شركة مهنية أخرى تمارس المهنة الحرة ذاتها' as a general rule, with exceptions only if the founding contract or bylaws permit it. This satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Exception via founding contract",
+      "verdict": "pass",
+      "reasoning": "The note states in Section أولًا that the partner may not join another professional company practicing the same profession 'ما لم ينص عقد التأسيس أو النظام الأساس على ذلك' (unless the founding contract or articles of association provide for it). It further notes in التقييم that unless the founding contract contains such a provision, Ahmed's joining is a violation. This clearly identifies the express contractual provision (عقد التأسيس / النظام الأساسي) as the sole exception to the prohibition."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on competing activity without partner consent",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section ثانيًا that 'لا يجوز للشريك دون موافقة باقي الشركاء أن يمارس لحسابه أو لحساب الغير نشاطًا من نوع نشاط الشركة', which explicitly says a partner may not engage in an activity of the same type as the company's activity for his own account without the consent of the remaining partners."
+     },
+     {
+      "id": "C-004",
+      "title": "Judicial reattribution of transactions to company",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (option 1) that the company can request from the competent judicial authority that transactions carried out by Ahmad for his own account be deemed to have been carried out on behalf of the company ('أن تطلب من الجهة القضائية المختصة أن تَعُدّ التصرفات التي قام بها أحمد لحسابه الخاص قد تمت لحساب الشركة')."
+     },
+     {
+      "id": "C-005",
+      "title": "Right to compensation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا that the company may claim compensation (تعويض) from the offending partner: 'أن تطالبه - فضلًا عن ذلك - بالتعويض'."
+     }
+    ],
+    "run_id": "open-o55-files/prohibition-on-partners-joining-competing-companies",
+    "task": "astrolabe-open/saudi-company-law/prohibition-on-partners-joining-competing-companies",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:37:49.057637+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

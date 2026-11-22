@@ -30,24 +30,19 @@ Each is run two ways: **no data** (from memory) and **files only** (the source t
 
 ## Results
 
-**Claude Sonnet 4.6**, one run, both settings:
+With the source text, every model passes about 97% of the task criteria. Without it, Claude Sonnet 4.6 got none of the 209 exact-text questions right.
 
-| | No data | With the text |
-|---|---|---|
-| Exact-text questions right | 0% (0 of 209) | 82% (171 of 209) |
-| Task criteria passed | 38% (78 of 208) | 97% (202 of 208) |
-| Tasks fully passed | 2 of 44 | 41 of 44 |
+| Model | Setting | Exact text right | Criteria passed | Tasks fully passed |
+|---|---|---|---|---|
+| Claude Sonnet 4.6 | No data | 0% (0 of 209) | 38% (78 of 208) | 2 of 44 |
+| Claude Sonnet 4.6 | With the text | 82% (171 of 209) | **97%** (202 of 208) | **41 of 44** |
+| Claude Sonnet 5.5 | With the text | not run | **97%** (201 of 208) | 38 of 44 |
+| Claude Opus 5.5 | With the text | not run | **97%** (202 of 208) | 38 of 44 |
 
-**Claude Sonnet 5.5**, one run, task notes with the text only:
-
-| | With the text |
-|---|---|
-| Task criteria passed | 97% (201 of 208) |
-| Tasks fully passed | 38 of 44 |
-
-The Sonnet 5.5 run answered four tasks per reply, with no tools, so it has no trajectory. It was not run without the text, and the exact-text questions were not run. Compare it with Sonnet 4.6 with care: the two were run differently.
-
-The models read the law well and do not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
+- **No data:** the model answers from memory. **With the text:** the source texts are in the prompt.
+- **Criteria passed:** a criterion counts only when both judges pass it. Each model was run once.
+- **Sonnet 5.5 and Opus 5.5:** these answered four tasks per reply, with no tools, so they have no trajectory and the comparison with Sonnet 4.6 is not exact. Neither was run without the text, and the exact-text questions were not run.
+- The models read the law well and do not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
 
 ## Scoring
 
@@ -56,7 +51,7 @@ The models read the law well and do not remember it. 16 of the 44 tasks were rev
 
 ## Status and limits
 
-Two models, one run each, two legal systems. Run scripts for the exact-text questions and the Dike search check are not in this release yet.
+Three models, one run each, two legal systems. Run scripts for the exact-text questions and the Dike search check are not in this release yet.
 
 ## Contributing
 

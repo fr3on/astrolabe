@@ -1,0 +1,220 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: مدى أحقية أحمد سالم في المطالبة بالمكافأة\n\n## الوقائع\nاستحقت لأحمد سالم، وهو موظف في جهة حكومية، مكافأة في 1/1/2015، ولم يطالب بها قضائيًا ولا إداريًا حتى 15/3/2021.\n\n## السؤال\nهل لا يزال بإمكانه المطالبة بالمكافأة؟ وهل يجوز لجهة الإدارة أن تصرفها له؟\n\n## الرأي\n**الأصل أنه لم يعد بإمكانه المطالبة، ولا يجوز لجهة الإدارة صرفها له، ما لم يثبت أن مدة التقادم أوقفت أو انقطعت.**\n\n## السند القانوني\n1. **القاعدة العامة:** طبقًا للمادة (374) من القانون المدني يتقادم الالتزام بخمس عشرة سنة، إلا إذا ورد نص خاص (فتوى رقم 429 بتاريخ 24/2/2021).\n2. **النص الخاص:** تنص المادة (29) من القانون رقم 127 لسنة 1981 على أن المرتبات والمكافآت والبدلات المستحقة للعاملين بالدولة تؤول إلى الخزانة العامة إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها، قضائيًا أو إداريًا. هذا النص هو الذي يحكم حالة أحمد، لا مدة الخمس عشرة سنة.\n3. **شروط تطبيق النص:** وفق الفتوى ذاتها يلزم شرطان:\n   - أن يكون للموظف حق مالي في ذمة الدولة، وهذا متحقق لأن المكافأة استحقت في 1/1/2015.\n   - ألا يطالب بها قضائيًا أو إداريًا مدة خمس سنوات من تاريخ استحقاقها، ما لم توقف المدة أو تنقطع. انتهت هذه المدة في 1/1/2020، أي قبل 15/3/2021 بأكثر من سنة، ولم تقع أي مطالبة.\n4. **الأثر:** بمضي المدة دون مطالبة تصبح المكافأة من أموال الدولة وتؤول إلى الخزانة العامة بقوة القانون، ولا يجوز لجهة الإدارة الإقرار بها أو صرفها.\n\n## تحفظ\nلا تذكر الوقائع أي سبب لوقف المدة أو قطعها. إذا كان لدى أحمد ما يثبت ذلك (مثل طلب أو تظلم قدمه قبل 1/1/2020)، فيجب فحصه لأنه قد يغير النتيجة. المستندات المرفقة لا تحدد أسباب الوقف أو الانقطاع.\n\n## التوصية\nجمع أي مستند يدل على مطالبة سابقة أو سبب لوقف المدة أو قطعها. إن لم يوجد، فالمطالبة الآن لن تنجح على الأرجح.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Five-Year Prescription Period",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date of entitlement (من تاريخ استحقاقها), citing Article 29 of Law 127 of 1981. It also confirms in point 4 that upon expiry of the period without a claim, the bonus becomes state property and transfers to the public treasury by operation of law."
+    },
+    {
+     "id": "C-002",
+     "title": "Administrative or Judicial Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the claim can be either judicial or administrative. In point 2, it states 'إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها، قضائيًا أو إداريًا' (if the person does not claim them within five years from the date of entitlement, judicially or administratively). In point 3, it repeats 'ألا يطالب بها قضائيًا أو إداريًا مدة خمس سنوات' (not to claim them judicially or administratively for five years). Both types of claims are treated equally throughout the note."
+    },
+    {
+     "id": "C-003",
+     "title": "Two Conditions for Application",
+     "verdict": "pass",
+     "reasoning": "The note explicitly lists two conditions under section 3 (شروط تطبيق النص): (1) that the employee has a financial right owed by the state, and (2) that they fail to claim it judicially or administratively for five years from the date it became due. Both conditions are clearly stated."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer to Treasury by Force of Law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 4 (الأثر) that upon the passage of the period without a claim, the bonus becomes state funds and transfers to the public treasury 'بقوة القانون' (by force of law). It also clearly specifies the five-year period from the date of entitlement (المادة 29 من القانون رقم 127 لسنة 1981) and confirms the five-year deadline was 1/1/2020. Both required elements are present."
+    },
+    {
+     "id": "C-005",
+     "title": "Prohibition on Administration's Acknowledgment or Payment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 4 under 'الأثر' (Effect): 'بمضي المدة دون مطالبة تصبح المكافأة من أموال الدولة وتؤول إلى الخزانة العامة بقوة القانون، ولا يجوز لجهة الإدارة الإقرار بها أو صرفها.' This directly addresses both the prohibition on acknowledgment ('الإقرار') and payment ('صرفها') after the five-year period from the date of entitlement has passed."
+    },
+    {
+     "id": "C-006",
+     "title": "Expiry Date Calculation",
+     "verdict": "pass",
+     "reasoning": "The note clearly establishes that the five-year period started on 1/1/2015 (date of entitlement) and expired on 1/1/2020, which is more than a year before Ahmed's claim on 15/3/2021. It explicitly concludes that the claim is inadmissible and that the bonus has reverted to the state treasury by operation of law, with no possibility for the administration to pay it out."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Five-Year Prescription Period",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date they fall due, citing Article 29 of Law 127 of 1981. It explicitly mentions both the five-year period from the date of entitlement and the transfer to the public treasury."
+    },
+    {
+     "id": "C-002",
+     "title": "Administrative or Judicial Claim",
+     "verdict": "pass",
+     "reasoning": "The note consistently mentions both judicial and administrative claims throughout. In the legal basis section (point 2), it states 'إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها، قضائيًا أو إداريًا' (if the holder does not claim it within five years from the date of entitlement, judicially or administratively). The facts section also notes 'ولم يطالب بها قضائيًا ولا إداريًا' (he did not claim it judicially or administratively). Both types of claims are treated equally throughout the note."
+    },
+    {
+     "id": "C-003",
+     "title": "Two Conditions for Application",
+     "verdict": "pass",
+     "reasoning": "The note explicitly lists two conditions under 'شروط تطبيق النص': (1) the existence of a financial right owed by the state ('أن يكون للموظف حق مالي في ذمة الدولة'), and (2) failure to claim it for five years ('ألا يطالب بها قضائيًا أو إداريًا مدة خمس سنوات من تاريخ استحقاقها'). Both conditions are clearly stated."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer to Treasury by Force of Law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 4 under السند القانوني: 'بمضي المدة دون مطالبة تصبح المكافأة من أموال الدولة وتؤول إلى الخزانة العامة بقوة القانون' — this clearly specifies that entitlements transfer to the public treasury (الخزانة العامة) by force of law (بقوة القانون) upon the passage of five years without a claim being made."
+    },
+    {
+     "id": "C-005",
+     "title": "Prohibition on Administration's Acknowledgment or Payment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 4 (الأثر) that after the five-year period passes without a claim, the reward becomes state funds by force of law, and the administration is prohibited from acknowledging it ('لا يجوز لجهة الإدارة الإقرار بها') or paying it ('أو صرفها'). This covers both the prohibition on acknowledgment and the prohibition on payment after five years from the date of entitlement."
+    },
+    {
+     "id": "C-006",
+     "title": "Expiry Date Calculation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the five-year period expired on 1/1/2020, which is before Ahmed's claim date of 15/3/2021, and concludes that the claim is inadmissible (the money reverted to the public treasury by operation of law, and the administration cannot pay it)."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/five-year-prescription-period-for-administrative-financial-claims",
+  "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+  "scored_at": "2026-11-22T18:01:50.095739+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Five-Year Prescription Period",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date of entitlement (من تاريخ استحقاقها), citing Article 29 of Law 127 of 1981. It also confirms in point 4 that upon expiry of the period without a claim, the bonus becomes state property and transfers to the public treasury by operation of law."
+     },
+     {
+      "id": "C-002",
+      "title": "Administrative or Judicial Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the claim can be either judicial or administrative. In point 2, it states 'إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها، قضائيًا أو إداريًا' (if the person does not claim them within five years from the date of entitlement, judicially or administratively). In point 3, it repeats 'ألا يطالب بها قضائيًا أو إداريًا مدة خمس سنوات' (not to claim them judicially or administratively for five years). Both types of claims are treated equally throughout the note."
+     },
+     {
+      "id": "C-003",
+      "title": "Two Conditions for Application",
+      "verdict": "pass",
+      "reasoning": "The note explicitly lists two conditions under section 3 (شروط تطبيق النص): (1) that the employee has a financial right owed by the state, and (2) that they fail to claim it judicially or administratively for five years from the date it became due. Both conditions are clearly stated."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer to Treasury by Force of Law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 4 (الأثر) that upon the passage of the period without a claim, the bonus becomes state funds and transfers to the public treasury 'بقوة القانون' (by force of law). It also clearly specifies the five-year period from the date of entitlement (المادة 29 من القانون رقم 127 لسنة 1981) and confirms the five-year deadline was 1/1/2020. Both required elements are present."
+     },
+     {
+      "id": "C-005",
+      "title": "Prohibition on Administration's Acknowledgment or Payment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 4 under 'الأثر' (Effect): 'بمضي المدة دون مطالبة تصبح المكافأة من أموال الدولة وتؤول إلى الخزانة العامة بقوة القانون، ولا يجوز لجهة الإدارة الإقرار بها أو صرفها.' This directly addresses both the prohibition on acknowledgment ('الإقرار') and payment ('صرفها') after the five-year period from the date of entitlement has passed."
+     },
+     {
+      "id": "C-006",
+      "title": "Expiry Date Calculation",
+      "verdict": "pass",
+      "reasoning": "The note clearly establishes that the five-year period started on 1/1/2015 (date of entitlement) and expired on 1/1/2020, which is more than a year before Ahmed's claim on 15/3/2021. It explicitly concludes that the claim is inadmissible and that the bonus has reverted to the state treasury by operation of law, with no possibility for the administration to pay it out."
+     }
+    ],
+    "run_id": "open-o55-files/five-year-prescription-period-for-administrative-financial-claims",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:51:46.865441+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Five-Year Prescription Period",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date they fall due, citing Article 29 of Law 127 of 1981. It explicitly mentions both the five-year period from the date of entitlement and the transfer to the public treasury."
+     },
+     {
+      "id": "C-002",
+      "title": "Administrative or Judicial Claim",
+      "verdict": "pass",
+      "reasoning": "The note consistently mentions both judicial and administrative claims throughout. In the legal basis section (point 2), it states 'إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها، قضائيًا أو إداريًا' (if the holder does not claim it within five years from the date of entitlement, judicially or administratively). The facts section also notes 'ولم يطالب بها قضائيًا ولا إداريًا' (he did not claim it judicially or administratively). Both types of claims are treated equally throughout the note."
+     },
+     {
+      "id": "C-003",
+      "title": "Two Conditions for Application",
+      "verdict": "pass",
+      "reasoning": "The note explicitly lists two conditions under 'شروط تطبيق النص': (1) the existence of a financial right owed by the state ('أن يكون للموظف حق مالي في ذمة الدولة'), and (2) failure to claim it for five years ('ألا يطالب بها قضائيًا أو إداريًا مدة خمس سنوات من تاريخ استحقاقها'). Both conditions are clearly stated."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer to Treasury by Force of Law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 4 under السند القانوني: 'بمضي المدة دون مطالبة تصبح المكافأة من أموال الدولة وتؤول إلى الخزانة العامة بقوة القانون' — this clearly specifies that entitlements transfer to the public treasury (الخزانة العامة) by force of law (بقوة القانون) upon the passage of five years without a claim being made."
+     },
+     {
+      "id": "C-005",
+      "title": "Prohibition on Administration's Acknowledgment or Payment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 4 (الأثر) that after the five-year period passes without a claim, the reward becomes state funds by force of law, and the administration is prohibited from acknowledging it ('لا يجوز لجهة الإدارة الإقرار بها') or paying it ('أو صرفها'). This covers both the prohibition on acknowledgment and the prohibition on payment after five years from the date of entitlement."
+     },
+     {
+      "id": "C-006",
+      "title": "Expiry Date Calculation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the five-year period expired on 1/1/2020, which is before Ahmed's claim date of 15/3/2021, and concludes that the claim is inadmissible (the money reverted to the public treasury by operation of law, and the administration cannot pay it)."
+     }
+    ],
+    "run_id": "open-o55-files/five-year-prescription-period-for-administrative-financial-claims",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:01:50.095332+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

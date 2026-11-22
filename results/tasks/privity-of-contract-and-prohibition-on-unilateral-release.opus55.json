@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: المسؤول عن سداد مستحقات شركة الصناعات الإلكترونية وحق الرجوع على هيئة التمويل\n\n## الوقائع\nفي 2022 أبرمت هيئة تمويل العلوم والتكنولوجيا والابتكار عقد منحة بحثية مع الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية. وبموجب هذا العقد أبرمت هيئة مدينة الأبحاث عقد توريد بمبلغ 5 ملايين جنيه مع شركة للصناعات الإلكترونية تابعة لوزارة الإنتاج الحربي. ونفّذت الشركة التزاماتها، ثم رفضت هيئة التمويل السداد للشركة مباشرة. والسؤال: من يتحمل السداد؟ وهل يحق لهيئة مدينة الأبحاث الرجوع على هيئة التمويل؟\n\n## السند القانوني\n1. **العقد شريعة المتعاقدين:** العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون. ويجب تنفيذه وفق ما اشتمل عليه وبحسن نية، ولا يجوز لأي طرف التحلل من التزاماته بإرادته المنفردة. وعبارات العقد الواضحة يجب احترامها (فتوى رقم 216 بتاريخ 11/1/2023).\n2. **نسبية آثار العقد:** الأصل أن آثار العقد تقتصر على عاقديه، فلا تنشأ الالتزامات إلا في ذمة المتعاقدين.\n3. **التعاقد بالنيابة:** يجوز لجهة أن تتعاقد نيابة عن جهة أخرى. وفي هذه الحالة تنصرف آثار العقد إلى الجهة الأصلية، متى أُبرم باسمها وفي حدود النيابة المتفق عليها.\n4. **ما انتهت إليه الفتوى في واقعة مماثلة:** الهيئة العامة لمدينة الأبحاث هي المسؤولة عن سداد المستحقات المتبقية للشركة الموردة، والناشئة عن العقد المبرم بينهما. ولا يخل ذلك بحقها في الرجوع على هيئة التمويل طبقًا لبنود عقد المنحة، إن كان ثمة مقتضٍ لذلك.\n\n## التطبيق\n- عقد التوريد أبرمته هيئة مدينة الأبحاث مع الشركة، وهيئة التمويل ليست طرفًا فيه. والوقائع لا تتضمن ما يدل على أن هيئة مدينة الأبحاث تعاقدت باسم هيئة التمويل ونيابةً عنها. وتمويل هيئة التمويل للمشروع لا يجعلها طرفًا في عقد التوريد.\n- بناءً على ذلك تنصرف آثار عقد التوريد إلى طرفيه وحدهما، فيقع التزام السداد على هيئة مدينة الأبحاث.\n- العلاقة بين هيئة مدينة الأبحاث وهيئة التمويل يحكمها عقد المنحة البحثية وحده، وبنوده هي التي تحدد حقوق الرجوع.\n\n## الخلاصة والتوصيات\n1. **هيئة مدينة الأبحاث هي الملتزمة بسداد** المبالغ المستحقة للشركة الموردة، باعتبارها الطرف المتعاقد معها. ولا يجوز لها التمسك بأن هيئة التمويل هي الملتزمة في مواجهة الشركة.\n2. **يحق لهيئة مدينة الأبحاث الرجوع على هيئة التمويل** بما تراه حقًا لها، وفقًا لبنود عقد المنحة البحثية وإن كان لذلك مقتضٍ.\n3. يُوصى بمراجعة بنود عقد المنحة، مثل التزامات التمويل وآلية الصرف، لتحديد نطاق الرجوع. ويُوصى كذلك بالتحقق من أن عقد التوريد لم يُبرم باسم هيئة التمويل نيابة عنها، لأن ثبوت ذلك يغيّر النتيجة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal basis section: 'نسبية آثار العقد: الأصل أن آثار العقد تقتصر على عاقديه، فلا تنشأ الالتزامات إلا في ذمة المتعاقدين' (Privity of contract: The rule is that the effects of the contract are confined to its parties, and obligations arise only in the liability of the contracting parties). This is further applied in the application section where it states that the effects of the supply contract extend only to its two parties, placing the payment obligation on the Research City Authority. The criterion is clearly satisfied."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal basis section: 'ولا يجوز لأي طرف التحلل من التزاماته بإرادته المنفردة' (no party may release itself from its obligations by its own unilateral will). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in both the legal analysis section and the conclusion that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the electronic industries company. Specifically, the conclusion states: 'هيئة مدينة الأبحاث هي الملتزمة بسداد المبالغ المستحقة للشركة الموردة، باعتبارها الطرف المتعاقد معها.'"
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 of the conclusions: 'يحق لهيئة مدينة الأبحاث الرجوع على هيئة التمويل بما تراه حقًا لها، وفقًا لبنود عقد المنحة البحثية وإن كان لذلك مقتضٍ.' This clearly states that the King Abdulaziz City for Science and Technology (هيئة مدينة الأبحاث) has the right of recourse against the Science, Technology and Innovation Funding Authority (هيئة التمويل) in accordance with the terms of the research grant contract."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the Legal Basis section: 'العقد شريعة المتعاقدين: العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' (The contract is the law of the contracting parties: the contract may not be revoked or modified except by agreement of both parties or for reasons established by law). This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states the principle of privity of contract (نسبية آثار العقد) in the legal basis section: 'الأصل أن آثار العقد تقتصر على عاقديه، فلا تنشئ الالتزامات إلا في ذمة المتعاقدين' (the effects of the contract are confined to its parties, and obligations arise only in the contracting parties' obligations). This is further applied in the analysis section where it states 'تنصرف آثار عقد التوريد إلى طرفيه وحدهما' (the effects of the supply contract extend to its two parties alone)."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the السند القانوني section: 'ولا يجوز لأي طرف التحلل من التزاماته بإرادته المنفردة' which directly translates to 'no party may release itself from its obligations by its own unilateral will.' This satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in multiple places that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the company for electronic industries. Specifically, in the الخلاصة والتوصيات section: 'هيئة مدينة الأبحاث هي الملتزمة بسداد المبالغ المستحقة للشركة الموردة'. The criterion is satisfied."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "pass",
+     "reasoning": "The criterion asks whether the note states that the entity (referred to as 'King Abdulaziz City for Science and Technology' in the criterion, but corresponding to 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' in the Arabic text) has the right of recourse (حق الرجوع) against the Science, Technology and Innovation Funding Authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) in accordance with the terms of the research grant contract. The note clearly states in multiple places: 'ولا يخل ذلك بحقها في الرجوع على هيئة التمويل طبقًا لبنود عقد المنحة' and 'يحق لهيئة مدينة الأبحاث الرجوع على هيئة التمويل بما تراه حقًا لها، وفقًا لبنود عقد المنحة البحثية'. This satisfies the criterion. Note: The criterion references 'King Abdulaziz City for Science and Technology' but the actual entity in the scenario is 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' (City of Scientific Research and Technological Applications). This appears to be a naming discrepancy in the criterion itself, but the substantive legal point about the right of recourse is clearly stated."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1 of السند القانوني: 'العقد شريعة المتعاقدين: العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون.' This directly satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/privity-of-contract-and-prohibition-on-unilateral-release",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "scored_at": "2026-11-22T19:12:45.017264+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal basis section: 'نسبية آثار العقد: الأصل أن آثار العقد تقتصر على عاقديه، فلا تنشأ الالتزامات إلا في ذمة المتعاقدين' (Privity of contract: The rule is that the effects of the contract are confined to its parties, and obligations arise only in the liability of the contracting parties). This is further applied in the application section where it states that the effects of the supply contract extend only to its two parties, placing the payment obligation on the Research City Authority. The criterion is clearly satisfied."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal basis section: 'ولا يجوز لأي طرف التحلل من التزاماته بإرادته المنفردة' (no party may release itself from its obligations by its own unilateral will). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in both the legal analysis section and the conclusion that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the electronic industries company. Specifically, the conclusion states: 'هيئة مدينة الأبحاث هي الملتزمة بسداد المبالغ المستحقة للشركة الموردة، باعتبارها الطرف المتعاقد معها.'"
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 of the conclusions: 'يحق لهيئة مدينة الأبحاث الرجوع على هيئة التمويل بما تراه حقًا لها، وفقًا لبنود عقد المنحة البحثية وإن كان لذلك مقتضٍ.' This clearly states that the King Abdulaziz City for Science and Technology (هيئة مدينة الأبحاث) has the right of recourse against the Science, Technology and Innovation Funding Authority (هيئة التمويل) in accordance with the terms of the research grant contract."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the Legal Basis section: 'العقد شريعة المتعاقدين: العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' (The contract is the law of the contracting parties: the contract may not be revoked or modified except by agreement of both parties or for reasons established by law). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:10:18.600277+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states the principle of privity of contract (نسبية آثار العقد) in the legal basis section: 'الأصل أن آثار العقد تقتصر على عاقديه، فلا تنشئ الالتزامات إلا في ذمة المتعاقدين' (the effects of the contract are confined to its parties, and obligations arise only in the contracting parties' obligations). This is further applied in the analysis section where it states 'تنصرف آثار عقد التوريد إلى طرفيه وحدهما' (the effects of the supply contract extend to its two parties alone)."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the السند القانوني section: 'ولا يجوز لأي طرف التحلل من التزاماته بإرادته المنفردة' which directly translates to 'no party may release itself from its obligations by its own unilateral will.' This satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in multiple places that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the company for electronic industries. Specifically, in the الخلاصة والتوصيات section: 'هيئة مدينة الأبحاث هي الملتزمة بسداد المبالغ المستحقة للشركة الموردة'. The criterion is satisfied."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "pass",
+      "reasoning": "The criterion asks whether the note states that the entity (referred to as 'King Abdulaziz City for Science and Technology' in the criterion, but corresponding to 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' in the Arabic text) has the right of recourse (حق الرجوع) against the Science, Technology and Innovation Funding Authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) in accordance with the terms of the research grant contract. The note clearly states in multiple places: 'ولا يخل ذلك بحقها في الرجوع على هيئة التمويل طبقًا لبنود عقد المنحة' and 'يحق لهيئة مدينة الأبحاث الرجوع على هيئة التمويل بما تراه حقًا لها، وفقًا لبنود عقد المنحة البحثية'. This satisfies the criterion. Note: The criterion references 'King Abdulaziz City for Science and Technology' but the actual entity in the scenario is 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' (City of Scientific Research and Technological Applications). This appears to be a naming discrepancy in the criterion itself, but the substantive legal point about the right of recourse is clearly stated."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1 of السند القانوني: 'العقد شريعة المتعاقدين: العقد لا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون.' This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:12:45.016858+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

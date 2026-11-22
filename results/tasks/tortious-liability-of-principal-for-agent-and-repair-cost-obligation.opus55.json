@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-contracts-and-obligations/tortious-liability-of-principal-for-agent-and-repair-cost-obligation",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** مدى التزام وزارة الري بسداد تكاليف إصلاح الحافلة والمصروفات الإدارية لهيئة النقل العام بالإسكندرية\n\n## أولاً: الوقائع\nفي عام 2023 اصطدمت سيارة نقل تابعة لوزارة الري بحافلة تابعة لهيئة النقل العام بالإسكندرية، وثبتت مسئولية سائق سيارة الوزارة. بلغت تكاليف الإصلاح 5200 جنيه، وتطالب الهيئة بمبلغ إضافي قدره 800 جنيه مصروفات إدارية.\n\n## ثانياً: الرأي\n\n### 1. تكاليف الإصلاح (5200 جنيه): تلتزم الوزارة بسدادها\n- المسئولية التقصيرية تثبت بوقوع خطأ يسبب ضرراً للغير، والمتبوع مسئول عن تعويض الأضرار التي يحدثها تابعه متى كانت له سلطة فعلية في رقابته وتوجيهه (الفتوى رقم 612 بتاريخ 3/10/2007).\n- السائق تابع لوزارة الري، وقد ثبت خطؤه، فتسأل الوزارة بوصفها متبوعاً عن تعويض الهيئة بقيمة تكاليف الإصلاح.\n- طبقت الفتوى ذاتها هذا الحكم على واقعة مماثلة، فألزمت وزارة الدفاع بأداء تكاليف إصلاح حافلة هيئة النقل العام بالقاهرة.\n\n### 2. المصروفات الإدارية (800 جنيه): لا تلتزم الوزارة بسدادها\n- استقر إفتاء الجمعية العمومية على أنه لا محل للمطالبة بالمصروفات الإدارية فيما بين الجهات الإدارية وبعضها، إلا حيث يتعلق الأمر بتقديم خدمات فعلية وفقاً للمادة (517) من اللائحة المالية للميزانية والحسابات (الفتوى رقم 612).\n- الطرفان جهتان إداريتان، والمطالبة ناشئة عن تعويض ضرر وليس عن خدمة فعلية قدمتها الهيئة للوزارة، فلا يتوافر الاستثناء.\n\n## ثالثاً: الخلاصة\nتلتزم وزارة الري بسداد 5200 جنيه فقط قيمة تكاليف الإصلاح، ولا تلتزم بمبلغ الـ800 جنيه المطالب به مصروفات إدارية.\n\n**تحفظ:** يقوم هذا الرأي على أن هيئة النقل العام بالإسكندرية جهة إدارية بالمعنى الذي أخذت به الفتوى، وعلى عدم تقديمها أي خدمة فعلية للوزارة، وذلك وفق الوقائع المعروضة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Tortious Liability Basis",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1: 'المسئولية التقصيرية تثبت بوقوع خطأ يسبب ضرراً للغير' (tortious liability is established by the occurrence of a fault that causes harm to another). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Principal Liability for Agent",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 that 'المتبوع مسئول عن تعويض الأضرار التي يحدثها تابعه متى كانت له سلطة فعلية في رقابته وتوجيهه' (the principal is liable for compensating damages caused by his agent whenever he has actual authority to supervise and direct them). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Obligation to Pay Repair Costs",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section 2.1 that the Ministry of Irrigation is obligated to pay the repair costs of 5200 pounds, and in section 2.2 that it is NOT obligated to pay the administrative expenses of 800 pounds. The conclusion (ثالثاً) explicitly states the Ministry is obligated to pay only 5200 pounds for repair costs and not the 800 pounds in administrative expenses. This satisfies the criterion that the Ministry is obligated to pay repair costs only."
+    },
+    {
+     "id": "C-004",
+     "title": "No Administrative Expenses Between Government Entities",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 that 'استقر إفتاء الجمعية العمومية على أنه لا محل للمطالبة بالمصروفات الإدارية فيما بين الجهات الإدارية وبعضها' (the General Assembly's jurisprudence has settled that there is no basis for claiming administrative expenses between government entities and one another), which directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Exception for Actual Services Only",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 that administrative expenses are only claimable between administrative bodies when actual services are provided ('إلا حيث يتعلق الأمر بتقديم خدمات فعلية وفقاً للمادة (517) من اللائحة المالية للميزانية والحسابات'). It further states that this condition is not met in the present case because the claim arises from tort compensation, not from actual services rendered by the Authority to the Ministry ('المطالبة ناشئة عن تعويض ضرر وليس عن خدمة فعلية قدمتها الهيئة للوزارة، فلا يتوافر الاستثناء'). Both required elements of the criterion are clearly present."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Tortious Liability Basis",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'المسئولية التقصيرية تثبت بوقوع خطأ يسبب ضرراً للغير' which translates to 'tortious liability is established by the occurrence of a fault that causes harm to another.' This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Principal Liability for Agent",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'المتبوع مسئول عن تعويض الأضرار التي يحدثها تابعه متى كانت له سلطة فعلية في رقابته وتوجيهه' — this clearly conveys that the principal (المتبوع) is liable for the acts of his agents (تابعيه) whenever he has actual authority to supervise and direct them."
+    },
+    {
+     "id": "C-003",
+     "title": "Obligation to Pay Repair Costs",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the Ministry of Irrigation is obligated to pay only the repair costs (5200 جنيه) and is not obligated to pay the administrative expenses (800 جنيه). The conclusion explicitly says 'تلتزم وزارة الري بسداد 5200 جنيه فقط قيمة تكاليف الإصلاح، ولا تلتزم بمبلغ الـ800 جنيه المطالب به مصروفات إدارية' - meaning the ministry is obligated to pay only the repair costs."
+    },
+    {
+     "id": "C-004",
+     "title": "No Administrative Expenses Between Government Entities",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section 2 that 'استقر إفتاء الجمعية العمومية على أنه لا محل للمطالبة بالمصروفات الإدارية فيما بين الجهات الإدارية وبعضها' (there is no basis for claiming administrative expenses between government entities and one another), which directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Exception for Actual Services Only",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that administrative expenses are only due when actual services are rendered (خدمات فعلية), citing Article 517 of the Financial Regulations, and explicitly states that this condition is not met in the present case because the claim arises from tort compensation, not from an actual service provided by the transport authority to the ministry."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/tortious-liability-of-principal-for-agent-and-repair-cost-obligation",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/tortious-liability-of-principal-for-agent-and-repair-cost-obligation",
+  "scored_at": "2026-11-22T19:12:00.110809+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Tortious Liability Basis",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1: 'المسئولية التقصيرية تثبت بوقوع خطأ يسبب ضرراً للغير' (tortious liability is established by the occurrence of a fault that causes harm to another). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Principal Liability for Agent",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 that 'المتبوع مسئول عن تعويض الأضرار التي يحدثها تابعه متى كانت له سلطة فعلية في رقابته وتوجيهه' (the principal is liable for compensating damages caused by his agent whenever he has actual authority to supervise and direct them). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Obligation to Pay Repair Costs",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section 2.1 that the Ministry of Irrigation is obligated to pay the repair costs of 5200 pounds, and in section 2.2 that it is NOT obligated to pay the administrative expenses of 800 pounds. The conclusion (ثالثاً) explicitly states the Ministry is obligated to pay only 5200 pounds for repair costs and not the 800 pounds in administrative expenses. This satisfies the criterion that the Ministry is obligated to pay repair costs only."
+     },
+     {
+      "id": "C-004",
+      "title": "No Administrative Expenses Between Government Entities",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 that 'استقر إفتاء الجمعية العمومية على أنه لا محل للمطالبة بالمصروفات الإدارية فيما بين الجهات الإدارية وبعضها' (the General Assembly's jurisprudence has settled that there is no basis for claiming administrative expenses between government entities and one another), which directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Exception for Actual Services Only",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 that administrative expenses are only claimable between administrative bodies when actual services are provided ('إلا حيث يتعلق الأمر بتقديم خدمات فعلية وفقاً للمادة (517) من اللائحة المالية للميزانية والحسابات'). It further states that this condition is not met in the present case because the claim arises from tort compensation, not from actual services rendered by the Authority to the Ministry ('المطالبة ناشئة عن تعويض ضرر وليس عن خدمة فعلية قدمتها الهيئة للوزارة، فلا يتوافر الاستثناء'). Both required elements of the criterion are clearly present."
+     }
+    ],
+    "run_id": "open-o55-files/tortious-liability-of-principal-for-agent-and-repair-cost-obligation",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/tortious-liability-of-principal-for-agent-and-repair-cost-obligation",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:10:28.770887+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Tortious Liability Basis",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'المسئولية التقصيرية تثبت بوقوع خطأ يسبب ضرراً للغير' which translates to 'tortious liability is established by the occurrence of a fault that causes harm to another.' This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Principal Liability for Agent",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'المتبوع مسئول عن تعويض الأضرار التي يحدثها تابعه متى كانت له سلطة فعلية في رقابته وتوجيهه' — this clearly conveys that the principal (المتبوع) is liable for the acts of his agents (تابعيه) whenever he has actual authority to supervise and direct them."
+     },
+     {
+      "id": "C-003",
+      "title": "Obligation to Pay Repair Costs",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the Ministry of Irrigation is obligated to pay only the repair costs (5200 جنيه) and is not obligated to pay the administrative expenses (800 جنيه). The conclusion explicitly says 'تلتزم وزارة الري بسداد 5200 جنيه فقط قيمة تكاليف الإصلاح، ولا تلتزم بمبلغ الـ800 جنيه المطالب به مصروفات إدارية' - meaning the ministry is obligated to pay only the repair costs."
+     },
+     {
+      "id": "C-004",
+      "title": "No Administrative Expenses Between Government Entities",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section 2 that 'استقر إفتاء الجمعية العمومية على أنه لا محل للمطالبة بالمصروفات الإدارية فيما بين الجهات الإدارية وبعضها' (there is no basis for claiming administrative expenses between government entities and one another), which directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Exception for Actual Services Only",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that administrative expenses are only due when actual services are rendered (خدمات فعلية), citing Article 517 of the Financial Regulations, and explicitly states that this condition is not met in the present case because the claim arises from tort compensation, not from an actual service provided by the transport authority to the ministry."
+     }
+    ],
+    "run_id": "open-o55-files/tortious-liability-of-principal-for-agent-and-repair-cost-obligation",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/tortious-liability-of-principal-for-agent-and-repair-cost-obligation",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:12:00.110299+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

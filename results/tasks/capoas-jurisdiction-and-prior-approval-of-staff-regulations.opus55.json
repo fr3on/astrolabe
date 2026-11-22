@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: أثر إدراج اعتمادات لائحة العاملين في قانون الموازنة\n\n## الوقائع\nتُعد هيئة عامة لائحة جديدة لشؤون العاملين بها، وأُدرجت الاعتمادات المالية اللازمة لتطبيقها في قانون الموازنة العامة للسنة المالية 2024.\n\n## السؤال\nهل يكفي هذا الإدراج لإقرار اللائحة ونفاذها؟\n\n## الرأي\n**لا يكفي.** يجب أولًا الحصول على موافقة الجهاز المركزي للتنظيم والإدارة على اللائحة قبل إقرارها.\n\n## الأسباب والسند\n1. **اختصاص الجهاز**: يمارس الجهاز اختصاصاته بالنسبة للهيئات والمؤسسات العامة (المادة 4/ب من القانون رقم 118 لسنة 1964). ومن هذه الاختصاصات الموافقة على اللوائح المتعلقة بشؤون العاملين قبل إقرارها (المادة 5/1 المعدلة بالقانون رقم 6 لسنة 2021). لذلك فإن موافقة الجهاز إجراء جوهري سابق على الإقرار.\n2. **طبيعة قانون الموازنة**: قانون الموازنة قانون من حيث الشكل فقط، أما من حيث موضوعه فهو عمل إداري. وهو قانون مؤقت يقتصر على تقدير الإيرادات وإجازة أوجه الصرف لسنة واحدة، ولا يتضمن أحكامًا موضوعية عامة (فتوى رقم 594 بتاريخ 13/3/2024). فلا يصلح أداةً لإقرار لائحة أو لإعفائها من موافقة الجهاز، وأقصى أثره أنه يوفر التمويل.\n3. **قانون المالية العامة الموحد** (القانون رقم 6 لسنة 2022) يحكم شؤون المالية العامة، ولا يتضمن ما يجعل إدراج الاعتماد بديلًا عن الإجراءات المقررة لإقرار اللوائح.\n\n## التوصية\nتعرض الهيئة مشروع اللائحة على الجهاز المركزي للتنظيم والإدارة، وبعد الحصول على موافقته تُقر اللائحة بالأداة المختصة. ولا يُعمل باللائحة قبل ذلك ولو كانت الاعتمادات متوفرة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "CAOA jurisdiction over public bodies",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1 under 'الأسباب والسند': 'يمارس الجهاز اختصاصاته بالنسبة للهيئات والمؤسسات العامة (المادة 4/ب من القانون رقم 118 لسنة 1964)'. This directly states that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) exercises its jurisdiction with respect to public bodies and public institutions (الهيئات والمؤسسات العامة), satisfying the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Prior approval of staff regulations",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in both the opinion section and the reasons section that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) must approve regulations relating to personnel affairs before they are enacted. Specifically, it states 'يجب أولًا الحصول على موافقة الجهاز المركزي للتنظيم والإدارة على اللائحة قبل إقرارها' and references the legal basis (Article 5/1 as amended by Law No. 6 of 2021) for this prior approval requirement."
+    },
+    {
+     "id": "C-003",
+     "title": "Budget law is formal not substantive",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that the budget law is 'قانون من حيث الشكل فقط، أما من حيث موضوعه فهو عمل إداري' (a law only in the formal sense, while in terms of its substance it is an administrative act). This directly satisfies the criterion requiring the note to state that the general budget law is a law only in the formal sense and not in the substantive sense."
+    },
+    {
+     "id": "C-004",
+     "title": "Budget law is temporary and limited",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that the budget law is temporary ('قانون مؤقت') and limited to estimating revenues and authorizing expenditures for one year ('يقتصر على تقدير الإيرادات وإجازة أوجه الصرف لسنة واحدة'), and that it does not contain general substantive provisions ('ولا يتضمن أحكامًا موضوعية عامة'). This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "CAOA jurisdiction over public bodies",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1 under الأسباب والسند: 'يمارس الجهاز اختصاصاته بالنسبة للهيئات والمؤسسات العامة (المادة 4/ب من القانون رقم 118 لسنة 1964).' This directly mentions that the Central Agency for Organization and Administration exercises its jurisdiction with respect to public bodies and public institutions."
+    },
+    {
+     "id": "C-002",
+     "title": "Prior approval of staff regulations",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) must approve regulations relating to personnel affairs before they are enacted, as described in point 1 of the reasons section and in the recommendation."
+    },
+    {
+     "id": "C-003",
+     "title": "Budget law is formal not substantive",
+     "verdict": "pass",
+     "reasoning": "The note states in point 2: 'قانون الموازنة قانون من حيث الشكل فقط، أما من حيث موضوعه فهو عمل إداري' — this clearly conveys that the budget law is a law only in the formal sense (من حيث الشكل) and not in the substantive sense (من حيث موضوعه). This satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Budget law is temporary and limited",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that the budget law is temporary ('قانون مؤقت'), limited to estimating revenues and authorizing expenditures for one year ('يقتصر على تقدير الإيرادات وإجازة أوجه الصرف لسنة واحدة'), and does not contain general substantive provisions ('ولا يتضمن أحكامًا موضوعية عامة'). This fully satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+  "scored_at": "2026-11-22T17:35:39.196155+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "CAOA jurisdiction over public bodies",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1 under 'الأسباب والسند': 'يمارس الجهاز اختصاصاته بالنسبة للهيئات والمؤسسات العامة (المادة 4/ب من القانون رقم 118 لسنة 1964)'. This directly states that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) exercises its jurisdiction with respect to public bodies and public institutions (الهيئات والمؤسسات العامة), satisfying the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Prior approval of staff regulations",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in both the opinion section and the reasons section that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) must approve regulations relating to personnel affairs before they are enacted. Specifically, it states 'يجب أولًا الحصول على موافقة الجهاز المركزي للتنظيم والإدارة على اللائحة قبل إقرارها' and references the legal basis (Article 5/1 as amended by Law No. 6 of 2021) for this prior approval requirement."
+     },
+     {
+      "id": "C-003",
+      "title": "Budget law is formal not substantive",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that the budget law is 'قانون من حيث الشكل فقط، أما من حيث موضوعه فهو عمل إداري' (a law only in the formal sense, while in terms of its substance it is an administrative act). This directly satisfies the criterion requiring the note to state that the general budget law is a law only in the formal sense and not in the substantive sense."
+     },
+     {
+      "id": "C-004",
+      "title": "Budget law is temporary and limited",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that the budget law is temporary ('قانون مؤقت') and limited to estimating revenues and authorizing expenditures for one year ('يقتصر على تقدير الإيرادات وإجازة أوجه الصرف لسنة واحدة'), and that it does not contain general substantive provisions ('ولا يتضمن أحكامًا موضوعية عامة'). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:35:35.009478+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "CAOA jurisdiction over public bodies",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1 under الأسباب والسند: 'يمارس الجهاز اختصاصاته بالنسبة للهيئات والمؤسسات العامة (المادة 4/ب من القانون رقم 118 لسنة 1964).' This directly mentions that the Central Agency for Organization and Administration exercises its jurisdiction with respect to public bodies and public institutions."
+     },
+     {
+      "id": "C-002",
+      "title": "Prior approval of staff regulations",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) must approve regulations relating to personnel affairs before they are enacted, as described in point 1 of the reasons section and in the recommendation."
+     },
+     {
+      "id": "C-003",
+      "title": "Budget law is formal not substantive",
+      "verdict": "pass",
+      "reasoning": "The note states in point 2: 'قانون الموازنة قانون من حيث الشكل فقط، أما من حيث موضوعه فهو عمل إداري' — this clearly conveys that the budget law is a law only in the formal sense (من حيث الشكل) and not in the substantive sense (من حيث موضوعه). This satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Budget law is temporary and limited",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that the budget law is temporary ('قانون مؤقت'), limited to estimating revenues and authorizing expenditures for one year ('يقتصر على تقدير الإيرادات وإجازة أوجه الصرف لسنة واحدة'), and does not contain general substantive provisions ('ولا يتضمن أحكامًا موضوعية عامة'). This fully satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T17:35:39.195825+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

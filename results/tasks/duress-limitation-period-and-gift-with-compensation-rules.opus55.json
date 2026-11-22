@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** إبطال عقد المقاولة للإكراه، وحكم اشتراط هبة الأرض مقابل تخفيض الأتعاب\n\n## أولًا: الوقائع\nأبرم سالم عام 2020م عقد مقاولة لبناء منزله، وفي العقد نفسه شرط أن يهب المقاول قطعة أرض مقابل تخفيض أتعابه. يدّعي سالم أن المقاول أكرهه على قبول شروط العقد، وقد زال الإكراه في يناير 2023م، ويريد رفع دعوى الإبطال في فبراير 2024م.\n\n## ثانيًا: دعوى الإبطال للإكراه\n- **السند (source-1):** إذا كان سبب الإبطال الإكراه، فلا تُسمع الدعوى بعد مضي **سنة من تاريخ زوال الإكراه**. ولا تُسمع دعوى الإبطال في كل الأحوال بعد مضي عشر سنوات من تاريخ التعاقد.\n- **التطبيق:** المدة في حالة الإكراه تبدأ من زوال الإكراه (يناير 2023م)، لا من تاريخ العلم به عام 2022م. فتنتهي السنة في يناير 2024م. وإذا رُفعت الدعوى في فبراير 2024م تكون السنة قد انقضت، فلا تُسمع. أما مدة العشر سنوات من 2020م فلم تنقضِ، لكنها لا تفيده لأن مدة السنة الأقصر قد انقضت.\n- **النتيجة:** لا يحق لسالم، بحسب المستندات، أن يطلب إبطال العقد للإكراه في فبراير 2024م، لأن دعواه لن تُسمع.\n\n## ثالثًا: حكم اشتراط الأرض مقابل تخفيض الأتعاب\n- **السند (source-2):** يصح أن يشترط الواهب على الموهوب له التزامًا معيّنًا، فإذا اشترط عوضًا صار العقد **معاوضة**، وتُطبّق عليه أحكام المعاوضات بحسب طبيعة العوض.\n- **التطبيق:** ما يُسمّى \"هبة\" الأرض هنا مقرون بعوض هو تخفيض الأتعاب. فلا يُعامل تبرعًا محضًا، بل معاوضة تحكمها قواعد المعاوضات بحسب طبيعة العوض. وهذا الشرط صحيح من حيث المبدأ.\n- **تحفّظ:** النصوص المرفقة لا تبيّن أحكام المعاوضات المقصودة بالتفصيل. وهذا الشرط جزء من العقد نفسه الذي لم تعد دعوى إبطاله مسموعة.\n\n## رابعًا: التزام المقاول (للاستئناس)\n- **السند (source-3):** يلتزم المقاول بإنجاز العمل وفق شروط العقد وفي المدة المتفق عليها، وإن لم توجد شروط أو مدة فوفق الأصول المتعارف عليها وفي مدة معقولة. فيبقى العقد ملزمًا للطرفين ما دام لم يُبطَل.\n\n## خامسًا: الخلاصة\n1. دعوى إبطال العقد للإكراه في فبراير 2024م لا تُسمع، لأن سنة كاملة مضت على زوال الإكراه في يناير 2023م.\n2. شرط هبة الأرض مقابل تخفيض الأتعاب صحيح، ويكون العقد فيه معاوضة تطبق عليها أحكام المعاوضات.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Duress limitation period",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا that 'المدة في حالة الإكراه تبدأ من زوال الإكراه (يناير 2023م)' — meaning the one-year period begins from the date the duress ceases (January 2023). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Claim time-barred",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section ثانيًا that the one-year period runs from the cessation of duress (January 2023), ends in January 2024, and that filing in February 2024 means the year has already elapsed, making the claim inadmissible. This is explicitly confirmed in the conclusion (خامسًا) as well."
+    },
+    {
+     "id": "C-003",
+     "title": "Gift with compensation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا that when a donor stipulates compensation (عوض), the contract transforms from a pure donation (تبرع محض) into a contract of exchange (معاوضة), governed by the rules of exchange contracts (أحكام المعاوضات). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Applicable rules",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states in section ثالثًا that when a gift is conditioned on compensation (تخفيض الأتعاب), it becomes a معاوضة (exchange contract) and the rules of exchange contracts (أحكام المعاوضات) apply according to the nature of the compensation (بحسب طبيعة العوض), not the rules of gift. This is repeated in the conclusion as well."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Duress limitation period",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the section on duress (ثانيًا) that the one-year period begins from the date the duress ceases ('تبدأ من زوال الإكراه'), satisfying the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Claim time-barred",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the annulment claim is time-barred because one year from the cessation of duress (January 2023) had elapsed before the claim was filed in February 2024. Specifically, it states: 'فتنتهي السنة في يناير 2024م. وإذا رُفعت الدعوى في فبراير 2024م تكون السنة قد انقضت، فلا تُسمع' and concludes 'دعوى إبطال العقد للإكراه في فبراير 2024م لا تُسمع، لأن سنة كاملة مضت على زوال الإكراه في يناير 2023م.'"
+    },
+    {
+     "id": "C-003",
+     "title": "Gift with compensation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in Section ثالثًا that when the donor stipulates compensation (عوض), the contract becomes a contract of exchange (معاوضة): 'فإذا اشترط عوضًا صار العقد معاوضة، وتُطبّق عليه أحكام المعاوضات بحسب طبيعة العوض.' This directly satisfies the criterion of stating that a donor's stipulation of compensation transforms the gift into a contract of exchange."
+    },
+    {
+     "id": "C-004",
+     "title": "Applicable rules",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا that when the gift includes compensation (عوض), the contract becomes a معاوضة (exchange contract) and that أحكام المعاوضات (rules of exchange contracts) apply بحسب طبيعة العوض (according to the nature of the compensation), not the rules of gift. This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/duress-limitation-period-and-gift-with-compensation-rules",
+  "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+  "scored_at": "2026-11-22T18:34:37.839418+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Duress limitation period",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا that 'المدة في حالة الإكراه تبدأ من زوال الإكراه (يناير 2023م)' — meaning the one-year period begins from the date the duress ceases (January 2023). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Claim time-barred",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section ثانيًا that the one-year period runs from the cessation of duress (January 2023), ends in January 2024, and that filing in February 2024 means the year has already elapsed, making the claim inadmissible. This is explicitly confirmed in the conclusion (خامسًا) as well."
+     },
+     {
+      "id": "C-003",
+      "title": "Gift with compensation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا that when a donor stipulates compensation (عوض), the contract transforms from a pure donation (تبرع محض) into a contract of exchange (معاوضة), governed by the rules of exchange contracts (أحكام المعاوضات). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Applicable rules",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states in section ثالثًا that when a gift is conditioned on compensation (تخفيض الأتعاب), it becomes a معاوضة (exchange contract) and the rules of exchange contracts (أحكام المعاوضات) apply according to the nature of the compensation (بحسب طبيعة العوض), not the rules of gift. This is repeated in the conclusion as well."
+     }
+    ],
+    "run_id": "open-o55-files/duress-limitation-period-and-gift-with-compensation-rules",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:28:13.140208+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Duress limitation period",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the section on duress (ثانيًا) that the one-year period begins from the date the duress ceases ('تبدأ من زوال الإكراه'), satisfying the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Claim time-barred",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the annulment claim is time-barred because one year from the cessation of duress (January 2023) had elapsed before the claim was filed in February 2024. Specifically, it states: 'فتنتهي السنة في يناير 2024م. وإذا رُفعت الدعوى في فبراير 2024م تكون السنة قد انقضت، فلا تُسمع' and concludes 'دعوى إبطال العقد للإكراه في فبراير 2024م لا تُسمع، لأن سنة كاملة مضت على زوال الإكراه في يناير 2023م.'"
+     },
+     {
+      "id": "C-003",
+      "title": "Gift with compensation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in Section ثالثًا that when the donor stipulates compensation (عوض), the contract becomes a contract of exchange (معاوضة): 'فإذا اشترط عوضًا صار العقد معاوضة، وتُطبّق عليه أحكام المعاوضات بحسب طبيعة العوض.' This directly satisfies the criterion of stating that a donor's stipulation of compensation transforms the gift into a contract of exchange."
+     },
+     {
+      "id": "C-004",
+      "title": "Applicable rules",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا that when the gift includes compensation (عوض), the contract becomes a معاوضة (exchange contract) and that أحكام المعاوضات (rules of exchange contracts) apply بحسب طبيعة العوض (according to the nature of the compensation), not the rules of gift. This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/duress-limitation-period-and-gift-with-compensation-rules",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:34:37.839073+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

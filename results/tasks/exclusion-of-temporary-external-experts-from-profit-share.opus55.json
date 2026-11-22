@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** مدى أحقية الدكتور محمود سالم في الاحتفاظ بمبلغ 321 ألف جنيه صُرف له بوصفه \"نصيب العاملين من الأرباح\"\n\n## أولاً: الوقائع\nتعاقدت شركة توطين التكنولوجيا مع الدكتور محمود سالم مستشاراً مالياً منتدباً من جهة عمل أخرى، وصرفت له 321 ألف جنيه تحت مسمى نصيب العاملين من الأرباح (10%). ثبت أن هذا الصرف لا يستند إلى أساس سليم بوصفه توزيعاً للأرباح.\n\n## ثانياً: الرأي\n\n### 1. لا يستحق المبلغ بوصفه نصيباً في الأرباح\n- مناط مشاطرة العاملين للمساهمين في الأرباح ونسبة الـ10% هو تعلق وصف \"السهمية\" بالمستحق، وهو يقتضي علاقة دائمة بالشركة (الفتوى رقم 342 بتاريخ 8/2/2023).\n- المستشارون المنتدبون لا يتوافر فيهم هذا الوصف، لأنهم من أهل الخبرة الخارجين عن الشركة، يقدمون العون بصفة مؤقتة ويتبعون جهة عمل أخرى، حتى لو أسهمت خدماتهم في تحقيق الربح (الفتوى ذاتها).\n- فلا يجوز للدكتور محمود التمسك بالمبلغ على هذا الأساس.\n\n### 2. إمكان الاحتفاظ به بوجه آخر: نظرية تحول التصرف\n- التصرف الباطل أو القابل للإبطال إذا اشتمل على أركان تصرف آخر صحيح يتحول إليه، سواء كان عقداً أو قراراً إدارياً، متى أمكن افتراض أن الطرفين كانا يريدان هذا التصرف الآخر لو علما ببطلان الأول (الفتوى رقم 342).\n- يمكن للدكتور محمود الدفع بأن الصرف، وإن بطل بوصفه توزيعاً للأرباح، قد يتحول إلى مقابل أو مكافأة عن خدماته الاستشارية التي أسهمت في ربحية الشركة، إذا ثبت أن نية الطرفين كانت ستنصرف إلى ذلك.\n- نجاح هذا الدفع يتوقف على ثبوت توافر أركان التصرف البديل ونية الطرفين، وهو ما لا تكشف عنه الوقائع المعروضة، كما أن المستندات لا تبين النتيجة النهائية التي انتهت إليها الفتوى في هذا الشأن.\n\n## ثالثاً: الخلاصة\n- لا حق للدكتور محمود في المبلغ بوصفه نصيباً في الأرباح.\n- يبقى له طريق التمسك بنظرية تحول التصرف لاعتبار المبلغ مقابلاً عن خدماته، بشرط إثبات أركان هذا التصرف ونية الطرفين.\n- يُنصح بجمع عقد الاستشارة والمراسلات وما يثبت طبيعة الخدمات ونية الشركة قبل اتخاذ أي موقف.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Exclusion from profit share",
+     "verdict": "pass",
+     "reasoning": "The agent's note clearly states in section 1 that the appointed consultant (Dr. Mahmoud Salem) is not entitled to the 10% profit share because the entitlement requires 'صفة السهمية' (shareholding quality) which requires a permanent relationship with the company. It explicitly states that external consultants lack this quality as they are temporary and affiliated with another employer, even if their services contributed to achieving profit. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary external expert",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 that the consultant (Dr. Mahmoud) is 'مستشاراً مالياً منتدباً من جهة عمل أخرى' (a financial consultant seconded from another employer) in the facts section, and further elaborates in the legal analysis that 'المستشارون المنتدبون لا يتوافر فيهم هذا الوصف، لأنهم من أهل الخبرة الخارجين عن الشركة، يقدمون العون بصفة مؤقتة ويتبعون جهة عمل أخرى' (seconded consultants do not meet this description, because they are external experts outside the company, providing assistance on a temporary basis and affiliated with another employer). Both conditions required by the criterion are clearly stated: (1) the engagement is temporary ('بصفة مؤقتة') and (2) the consultant belongs to an external employer outside the company ('يتبعون جهة عمل أخرى')."
+    },
+    {
+     "id": "C-003",
+     "title": "Contract conversion theory",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly discusses 'نظرية تحول التصرف' (theory of conversion of the legal act) in Section 2, explaining that a void or voidable act can convert into another valid act if it contains the elements of that other act. The agent applies this theory as a possible basis for Dr. Mahmoud to retain the amount under a different designation (as compensation/remuneration for consulting services rather than profit share). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Condition for conversion",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 (نظرية تحول التصرف) that conversion requires: (1) the void act containing the elements of another valid act ('اشتمل على أركان تصرف آخر صحيح'), and (2) the possibility of presuming that both parties would have intended that other act had they known of the invalidity of the first ('متى أمكن افتراض أن الطرفين كانا يريدان هذا التصرف الآخر لو علما ببطلان الأول'). Both conditions required by the criterion are explicitly mentioned."
+    },
+    {
+     "id": "C-005",
+     "title": "Alternative valid basis",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 (نظرية تحول التصرف) that the amount, even if invalid as a profit share, may be converted/recognized as remuneration or compensation for the consultancy services rendered by Dr. Mahmoud that contributed to the company's profitability. This directly satisfies the criterion of stating that the amount could be upheld on an alternative valid basis (fees/remuneration for consultancy services) as distinct from profits."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Exclusion from profit share",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section 2.1 that the consultant is not entitled to the 10% profit share because he does not possess the quality of shareholding (صفة السهمية), which requires a permanent relationship with the company. It explicitly notes that external consultants lack this status as they are temporary experts affiliated with another employer."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary external expert",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2.1 that the consultants 'يقدمون العون بصفة مؤقتة ويتبعون جهة عمل أخرى' (they provide assistance on a temporary basis and are affiliated with another employer), which directly satisfies the criterion requiring that the consultant's engagement is temporary and that he belongs to an external employer outside the company."
+    },
+    {
+     "id": "C-003",
+     "title": "Contract conversion theory",
+     "verdict": "pass",
+     "reasoning": "The note explicitly discusses نظرية تحول التصرف (theory of contract/act conversion) in section 2 as a possible basis for the consultant to retain the amount under a different legal designation (مقابل أو مكافأة عن خدماته الاستشارية). This satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Condition for conversion",
+     "verdict": "pass",
+     "reasoning": "The note clearly states both conditions for conversion (تحول التصرف): (1) the void act must contain the elements of another valid act ('إذا اشتمل على أركان تصرف آخر صحيح يتحول إليه'), and (2) it must be possible to presume that the parties would have intended that other act had they known of the invalidity ('متى أمكن افتراض أن الطرفين كانا يريدان هذا التصرف الآخر لو علما ببطلان الأول'). This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Alternative valid basis",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states under section 2 ('نظرية تحول التصرف') that the amount, while invalid as a profit share, may be recognized on an alternative basis as remuneration or fees for consultancy services ('مقابل أو مكافأة عن خدماته الاستشارية'). This is also reiterated in the conclusion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/exclusion-of-temporary-external-experts-from-profit-share",
+  "task": "astrolabe-open/egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+  "scored_at": "2026-11-22T18:13:14.109841+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Exclusion from profit share",
+      "verdict": "pass",
+      "reasoning": "The agent's note clearly states in section 1 that the appointed consultant (Dr. Mahmoud Salem) is not entitled to the 10% profit share because the entitlement requires 'صفة السهمية' (shareholding quality) which requires a permanent relationship with the company. It explicitly states that external consultants lack this quality as they are temporary and affiliated with another employer, even if their services contributed to achieving profit. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary external expert",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 that the consultant (Dr. Mahmoud) is 'مستشاراً مالياً منتدباً من جهة عمل أخرى' (a financial consultant seconded from another employer) in the facts section, and further elaborates in the legal analysis that 'المستشارون المنتدبون لا يتوافر فيهم هذا الوصف، لأنهم من أهل الخبرة الخارجين عن الشركة، يقدمون العون بصفة مؤقتة ويتبعون جهة عمل أخرى' (seconded consultants do not meet this description, because they are external experts outside the company, providing assistance on a temporary basis and affiliated with another employer). Both conditions required by the criterion are clearly stated: (1) the engagement is temporary ('بصفة مؤقتة') and (2) the consultant belongs to an external employer outside the company ('يتبعون جهة عمل أخرى')."
+     },
+     {
+      "id": "C-003",
+      "title": "Contract conversion theory",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly discusses 'نظرية تحول التصرف' (theory of conversion of the legal act) in Section 2, explaining that a void or voidable act can convert into another valid act if it contains the elements of that other act. The agent applies this theory as a possible basis for Dr. Mahmoud to retain the amount under a different designation (as compensation/remuneration for consulting services rather than profit share). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Condition for conversion",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 (نظرية تحول التصرف) that conversion requires: (1) the void act containing the elements of another valid act ('اشتمل على أركان تصرف آخر صحيح'), and (2) the possibility of presuming that both parties would have intended that other act had they known of the invalidity of the first ('متى أمكن افتراض أن الطرفين كانا يريدان هذا التصرف الآخر لو علما ببطلان الأول'). Both conditions required by the criterion are explicitly mentioned."
+     },
+     {
+      "id": "C-005",
+      "title": "Alternative valid basis",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 (نظرية تحول التصرف) that the amount, even if invalid as a profit share, may be converted/recognized as remuneration or compensation for the consultancy services rendered by Dr. Mahmoud that contributed to the company's profitability. This directly satisfies the criterion of stating that the amount could be upheld on an alternative valid basis (fees/remuneration for consultancy services) as distinct from profits."
+     }
+    ],
+    "run_id": "open-o55-files/exclusion-of-temporary-external-experts-from-profit-share",
+    "task": "astrolabe-open/egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:09:46.252273+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Exclusion from profit share",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section 2.1 that the consultant is not entitled to the 10% profit share because he does not possess the quality of shareholding (صفة السهمية), which requires a permanent relationship with the company. It explicitly notes that external consultants lack this status as they are temporary experts affiliated with another employer."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary external expert",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2.1 that the consultants 'يقدمون العون بصفة مؤقتة ويتبعون جهة عمل أخرى' (they provide assistance on a temporary basis and are affiliated with another employer), which directly satisfies the criterion requiring that the consultant's engagement is temporary and that he belongs to an external employer outside the company."
+     },
+     {
+      "id": "C-003",
+      "title": "Contract conversion theory",
+      "verdict": "pass",
+      "reasoning": "The note explicitly discusses نظرية تحول التصرف (theory of contract/act conversion) in section 2 as a possible basis for the consultant to retain the amount under a different legal designation (مقابل أو مكافأة عن خدماته الاستشارية). This satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Condition for conversion",
+      "verdict": "pass",
+      "reasoning": "The note clearly states both conditions for conversion (تحول التصرف): (1) the void act must contain the elements of another valid act ('إذا اشتمل على أركان تصرف آخر صحيح يتحول إليه'), and (2) it must be possible to presume that the parties would have intended that other act had they known of the invalidity ('متى أمكن افتراض أن الطرفين كانا يريدان هذا التصرف الآخر لو علما ببطلان الأول'). This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Alternative valid basis",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states under section 2 ('نظرية تحول التصرف') that the amount, while invalid as a profit share, may be recognized on an alternative basis as remuneration or fees for consultancy services ('مقابل أو مكافأة عن خدماته الاستشارية'). This is also reiterated in the conclusion."
+     }
+    ],
+    "run_id": "open-o55-files/exclusion-of-temporary-external-experts-from-profit-share",
+    "task": "astrolabe-open/egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:13:14.109463+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

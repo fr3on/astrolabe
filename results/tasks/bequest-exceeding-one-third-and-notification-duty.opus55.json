@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-family-and-personal-status/bequest-exceeding-one-third-and-notification-duty",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الوقائع\nتوفي خالد في 1/1/2024، وكان قد عيّن سعداً وصياً على أولاده القاصرين. ثم توفي سعد بعده بثلاثة أشهر. تركة خالد 300,000 ريال، وقد أوصى لصديقه بمنفعة شقة قيمتها 120,000 ريال وصيةً مؤبدة.\n\n## أولاً: الإجراء الواجب على ورثة سعد\n- إذا توفي الوصي أو الولي المعيّن من المحكمة، وجب على ورثته أو من يضع يده على تركته أو جزء منها أن يبلغوا الجهة المختصة لحماية حقوق القاصر (نظام الأحوال الشخصية، source-3).\n- **النتيجة:** يجب على ورثة سعد، ومن يحوز شيئاً من تركته، أن يبلغوا الجهة المختصة بوفاته.\n- **تحفظ:** النص يتكلم عن الوصي \"المعيّن من المحكمة\". والوقائع تذكر أن خالداً هو من عيّن سعداً، ولا تبيّن هل اعتمدت المحكمة هذا التعيين. وننصح بالإبلاغ في جميع الأحوال حفظاً لحقوق القاصرين.\n\n## ثانياً: هل تنفذ الوصية بالمنفعة المؤبدة؟\n- إذا كانت الوصية بمنفعة مؤبدة، فإنها تُحسب من ثلث التركة **بقيمة العين** الموصى بمنفعتها وقت وفاة الموصي (source-1).\n- ثلث التركة = 300,000 ÷ 3 = **100,000 ريال**.\n- قيمة الشقة = **120,000 ريال**، فهي تزيد على الثلث بمقدار 20,000 ريال.\n- **النتيجة:** تنفذ الوصية في حدود الثلث فقط، أي ما يعادل 100,000 ريال. أما ما زاد على ذلك فالنصوص المرفقة لا تبيّن حكمه، كإجازة الورثة أو تقليص المنفعة. ويُفترض في الحساب أن 300,000 ريال هي قيمة التركة وقت الوفاة وأنها تشمل الشقة.\n\n## ملاحظة\nنص النفقة في source-2 لا أثر له في الأسئلة المطروحة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Obligation to notify authority",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states in section 'أولاً' that the heirs of Sa'd (ورثة سعد) and those who possess any part of his estate are obligated to notify the competent authority (الجهة المختصة) to protect the rights of the minors. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Who must notify",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first section that 'يجب على ورثة سعد، ومن يحوز شيئاً من تركته، أن يبلغوا الجهة المختصة بوفاته' (the heirs of Saad and whoever possesses anything from his estate must notify the competent authority). This directly satisfies the criterion by identifying both the heirs of the guardian and whoever has possession of his estate or any part of it as the parties with the notification duty."
+    },
+    {
+     "id": "C-003",
+     "title": "Perpetual usufruct valuation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانياً: 'إذا كانت الوصية بمنفعة مؤبدة، فإنها تُحسب من ثلث التركة بقيمة العين الموصى بمنفعتها وقت وفاة الموصي' - which directly satisfies the criterion by stating that a bequest of perpetual usufruct is calculated from the one-third using the value of the asset at the time of the testator's death."
+    },
+    {
+     "id": "C-004",
+     "title": "One-third limit",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the bequest with perpetual usufruct is calculated from one-third of the estate based on the value of the property at the time of death, and clearly calculates one-third of 300,000 riyals as 100,000 riyals."
+    },
+    {
+     "id": "C-005",
+     "title": "Bequest exceeds one-third",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states that the one-third of the estate equals 100,000 riyals, that the apartment value is 120,000 riyals which exceeds the one-third limit by 20,000 riyals, and that the bequest is only executed within the limits of the one-third (100,000 riyals). This satisfies all requirements of the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Obligation to notify authority",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the heirs of Sa'd (the deceased guardian) must notify the competent authority to protect the minor's rights: 'يجب على ورثة سعد، ومن يحوز شيئاً من تركته، أن يبلغوا الجهة المختصة بوفاته.'"
+    },
+    {
+     "id": "C-002",
+     "title": "Who must notify",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the duty to notify falls on the heirs of Sa'd (ورثة سعد) and whoever possesses anything from his estate (من يحوز شيئاً من تركته), which matches the criterion requiring identification of the heirs of the guardian or whoever has possession of his estate or any part of it."
+    },
+    {
+     "id": "C-003",
+     "title": "Perpetual usufruct valuation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'إذا كانت الوصية بمنفعة مؤبدة، فإنها تُحسب من ثلث التركة بقيمة العين الموصى بمنفعتها وقت وفاة الموصي' — this directly matches the criterion that a bequest of perpetual usufruct is calculated from the one-third using the value of the asset at the time of the testator's death."
+    },
+    {
+     "id": "C-004",
+     "title": "One-third limit",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the bequest is calculated from one-third of the estate and that one-third of 300,000 riyals is 100,000 riyals."
+    },
+    {
+     "id": "C-005",
+     "title": "Bequest exceeds one-third",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the one-third of the estate is 100,000 riyals, the apartment value is 120,000 riyals (exceeding the one-third by 20,000 riyals), and that the bequest is only executed within the limits of the one-third (100,000 riyals)."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/bequest-exceeding-one-third-and-notification-duty",
+  "task": "astrolabe-open/saudi-family-and-personal-status/bequest-exceeding-one-third-and-notification-duty",
+  "scored_at": "2026-11-22T19:06:20.586766+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Obligation to notify authority",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states in section 'أولاً' that the heirs of Sa'd (ورثة سعد) and those who possess any part of his estate are obligated to notify the competent authority (الجهة المختصة) to protect the rights of the minors. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Who must notify",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first section that 'يجب على ورثة سعد، ومن يحوز شيئاً من تركته، أن يبلغوا الجهة المختصة بوفاته' (the heirs of Saad and whoever possesses anything from his estate must notify the competent authority). This directly satisfies the criterion by identifying both the heirs of the guardian and whoever has possession of his estate or any part of it as the parties with the notification duty."
+     },
+     {
+      "id": "C-003",
+      "title": "Perpetual usufruct valuation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانياً: 'إذا كانت الوصية بمنفعة مؤبدة، فإنها تُحسب من ثلث التركة بقيمة العين الموصى بمنفعتها وقت وفاة الموصي' - which directly satisfies the criterion by stating that a bequest of perpetual usufruct is calculated from the one-third using the value of the asset at the time of the testator's death."
+     },
+     {
+      "id": "C-004",
+      "title": "One-third limit",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the bequest with perpetual usufruct is calculated from one-third of the estate based on the value of the property at the time of death, and clearly calculates one-third of 300,000 riyals as 100,000 riyals."
+     },
+     {
+      "id": "C-005",
+      "title": "Bequest exceeds one-third",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states that the one-third of the estate equals 100,000 riyals, that the apartment value is 120,000 riyals which exceeds the one-third limit by 20,000 riyals, and that the bequest is only executed within the limits of the one-third (100,000 riyals). This satisfies all requirements of the criterion."
+     }
+    ],
+    "run_id": "open-o55-files/bequest-exceeding-one-third-and-notification-duty",
+    "task": "astrolabe-open/saudi-family-and-personal-status/bequest-exceeding-one-third-and-notification-duty",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:03:06.003672+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Obligation to notify authority",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the heirs of Sa'd (the deceased guardian) must notify the competent authority to protect the minor's rights: 'يجب على ورثة سعد، ومن يحوز شيئاً من تركته، أن يبلغوا الجهة المختصة بوفاته.'"
+     },
+     {
+      "id": "C-002",
+      "title": "Who must notify",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the duty to notify falls on the heirs of Sa'd (ورثة سعد) and whoever possesses anything from his estate (من يحوز شيئاً من تركته), which matches the criterion requiring identification of the heirs of the guardian or whoever has possession of his estate or any part of it."
+     },
+     {
+      "id": "C-003",
+      "title": "Perpetual usufruct valuation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'إذا كانت الوصية بمنفعة مؤبدة، فإنها تُحسب من ثلث التركة بقيمة العين الموصى بمنفعتها وقت وفاة الموصي' — this directly matches the criterion that a bequest of perpetual usufruct is calculated from the one-third using the value of the asset at the time of the testator's death."
+     },
+     {
+      "id": "C-004",
+      "title": "One-third limit",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the bequest is calculated from one-third of the estate and that one-third of 300,000 riyals is 100,000 riyals."
+     },
+     {
+      "id": "C-005",
+      "title": "Bequest exceeds one-third",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the one-third of the estate is 100,000 riyals, the apartment value is 120,000 riyals (exceeding the one-third by 20,000 riyals), and that the bequest is only executed within the limits of the one-third (100,000 riyals)."
+     }
+    ],
+    "run_id": "open-o55-files/bequest-exceeding-one-third-and-notification-duty",
+    "task": "astrolabe-open/saudi-family-and-personal-status/bequest-exceeding-one-third-and-notification-duty",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:06:20.586301+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

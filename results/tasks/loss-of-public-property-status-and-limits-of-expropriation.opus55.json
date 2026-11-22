@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة قانونية\n\n**الموضوع:** مدى جواز إعادة تخصيص وزارة الزراعة أراضي نُزعت ملكيتها لإنشاء مجمعات تنظيم الإنتاج الزراعي ببني سويف لإقامة مشروع إسكاني اجتماعي.\n\n## أولًا: الوقائع\nصدر قرار جمهوري عام 1972 بنزع ملكية أراضٍ في محافظة بني سويف لإنشاء مجمعات تنظيم الإنتاج الزراعي. وتريد وزارة الزراعة الآن تحويل جزء منها إلى مشروع إسكاني اجتماعي، بحجة أنه يحقق المنفعة العامة أيضًا.\n\n## ثانيًا: الرأي\n**لا يحق للوزارة إعادة التخصيص بلا قيد.** فما دام الغرض الذي نُزعت الملكية من أجله قائمًا، يجب على الوزارة احترامه، ولو كان الغرض الجديد ذا منفعة عامة.\n\n## ثالثًا: السند القانوني\n1. **القاعدة العامة:** الأصل أن ملكية الدولة لأموالها العامة تقوم على حاجتها إليها في إدارة المرافق العامة. ويملك رئيس مجلس الوزراء، بعد موافقة مجلس الوزراء، إصدار القرارات اللازمة لإنشاء المرافق العامة وتنظيمها (الفتوى رقم 1553 بتاريخ 13/9/2017).\n2. **الاستثناء الخاص بالأموال المنزوعة ملكيتها:** هذه القاعدة مقصورة على الأموال المملوكة للدولة ملكية عامة من الأصل. أما الأموال التي نُزعت ملكيتها من الأفراد لغرض محدد ذي منفعة عامة، فلا تفقد صفتها العامة إلا بانتهاء ذلك الغرض، طبقًا للمادة (88) من القانون المدني. وعند انتهاء الغرض فقط تسترد الدولة سلطتها التقديرية في إنهاء صفة المال العام أو تخصيصه لغرض عام آخر. والقول بغير ذلك ينتهك أحكام نزع الملكية، وهي استثنائية تتقيد بحدودها.\n3. **التطبيق على الأرض محل الاستشارة:** قررت الفتوى ذاتها، بشأن الأرض المنزوعة ملكيتها بقرار رئيس الجمهورية رقم (1401) لسنة 1972 لإنشاء مجمعات تنظيم الإنتاج الزراعي بقرى بني سويف، أنه يتعين على الجهة الإدارية احترام الغرض الذي نُزعت الملكية من أجله وعدم تجاوزه إلى غرض آخر **ولو كان ذا منفعة عامة**.\n\n## رابعًا: التوصيات\n- لا تملك الوزارة تحويل الأرض إلى مشروع إسكاني ما دام غرض مجمعات الإنتاج الزراعي قائمًا.\n- لا يجوز النظر في إعادة التخصيص لغرض عام آخر إلا إذا ثبت انتهاء الغرض الأصلي فعلًا، ويتم ذلك عندئذ بالأداة القانونية الصحيحة وفق القواعد العامة.\n- ننصح بتوثيق أي ادعاء بانتهاء الغرض الأصلي قبل اتخاذ أي إجراء، لأن تجاوزه يعرّض القرار للبطلان لمخالفته أحكام نزع الملكية.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public property loses status only upon purpose termination",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (Legal Basis), point 2: 'أما الأموال التي نُزعت ملكيتها من الأفراد لغرض محدد ذي منفعة عامة، فلا تفقد صفتها العامة إلا بانتهاء ذلك الغرض' - which directly translates to 'property expropriated from individuals for a specific public purpose does not lose its public property status except upon the termination of that purpose.' This precisely satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "State regains discretion after purpose ends",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (point 2): 'وعند انتهاء الغرض فقط تسترد الدولة سلطتها التقديرية في إنهاء صفة المال العام أو تخصيصه لغرض عام آخر' (Only upon the termination of the purpose does the State regain its discretionary authority to end the public property status or reassign it to another public purpose). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Administration must respect original expropriation purpose",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (point 3) that the administrative authority must respect the purpose for which the property was expropriated and must not exceed it to another purpose, even if that other purpose also serves public interest ('يتعين على الجهة الإدارية احترام الغرض الذي نُزعت الملكية من أجله وعدم تجاوزه إلى غرض آخر ولو كان ذا منفعة عامة'). This is also reinforced in the recommendations section."
+    },
+    {
+     "id": "C-004",
+     "title": "Deviation to another purpose is a violation even if public benefit",
+     "verdict": "fail",
+     "reasoning": "The note explicitly states in Section 2 (الرأي) that the Ministry cannot redirect the land even if the new purpose serves public benefit ('ولو كان الغرض الجديد ذا منفعة عامة'). It also states in Section 3 that the same principle applies — the administrative body must respect the original purpose and not exceed it to another purpose 'even if it serves public benefit' ('ولو كان ذا منفعة عامة'). Additionally, the recommendations note that exceeding the original purpose exposes the decision to nullity for violating expropriation rules ('يعرّض القرار للبطلان لمخالفته أحكام نزع الملكية'). However, the criterion specifically requires the note to characterize this as a 'flagrant violation' (مخالفة صريحة). While the note does describe it as a violation subject to nullity, it does not use the specific phrase 'مخالفة صريحة' (flagrant violation). The note uses 'ينتهك أحكام نزع الملكية' and 'مخالفته أحكام نزع الملكية' but not the specific characterization of 'مخالفة صريحة' as required by the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Expropriation is an exception limited to defined boundaries",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا (point 2): 'والقول بغير ذلك ينتهك أحكام نزع الملكية، وهي استثنائية تتقيد بحدودها' — which translates to 'saying otherwise violates the provisions of expropriation, which are exceptional and bound by their limits.' This directly satisfies the criterion by stating that expropriation for public benefit is an exception that must remain within specific defined limits."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public property loses status only upon purpose termination",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section ثالثًا, point 2: 'فلا تفقد صفتها العامة إلا بانتهاء ذلك الغرض، طبقًا للمادة (88) من القانون المدني' — meaning the expropriated property does not lose its public property status except upon the termination of the specific purpose for which it was expropriated. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "State regains discretion after purpose ends",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا, point 2: 'وعند انتهاء الغرض فقط تسترد الدولة سلطتها التقديرية في إنهاء صفة المال العام أو تخصيصه لغرض عام آخر' (Only when the purpose ends does the State regain its discretionary authority to end the public property status or reassign it to another public purpose). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Administration must respect original expropriation purpose",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 3 (التطبيق على الأرض محل الاستشارة) that the administrative authority must respect the purpose for which the property was expropriated and must not exceed it to another purpose, even if that other purpose serves the public interest. This is also reiterated in the recommendations section."
+    },
+    {
+     "id": "C-004",
+     "title": "Deviation to another purpose is a violation even if public benefit",
+     "verdict": "fail",
+     "reasoning": "The note clearly states that redirecting the land to a different purpose, even one serving public benefit, is not permitted and violates expropriation rules. In section ثالثًا point 3, it states the administration must respect the original purpose and not exceed it to another purpose 'even if it serves public benefit' (ولو كان ذا منفعة عامة). In section ثانيًا, it also states that the new purpose being of public benefit does not justify the redirection. However, the criterion specifically requires the note to characterize this as a 'flagrant violation' (مخالفة صريحة) of expropriation rules. The note uses language like 'ينتهك أحكام نزع الملكية' (violates expropriation rules) in point 2, and in the recommendations says it 'يعرّض القرار للبطلان لمخالفته أحكام نزع الملكية' (exposes the decision to nullity for violating expropriation rules). While the note clearly conveys that redirecting to another purpose even if public benefit is a violation of expropriation rules, it does not use the specific phrase 'مخالفة صريحة' (flagrant violation). The criterion says PASS if the note 'states that redirecting the land to a different purpose (even one serving public benefit) constitutes a flagrant violation of expropriation rules (مخالفة صريحة).' The note does state it's a violation but doesn't specifically call it a 'flagrant' or 'صريحة' violation. The substance is there but the specific characterization as 'flagrant' is missing."
+    },
+    {
+     "id": "C-005",
+     "title": "Expropriation is an exception limited to defined boundaries",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا, point 2: 'والقول بغير ذلك ينتهك أحكام نزع الملكية، وهي استثنائية تتقيد بحدودها' — meaning expropriation rules are exceptional and must be confined to their limits. This directly satisfies the criterion that expropriation for public benefit was established only as an exception within specific limits that must not be exceeded."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55-files/loss-of-public-property-status-and-limits-of-expropriation",
+  "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+  "scored_at": "2026-11-22T19:11:50.034465+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "4/5 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public property loses status only upon purpose termination",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (Legal Basis), point 2: 'أما الأموال التي نُزعت ملكيتها من الأفراد لغرض محدد ذي منفعة عامة، فلا تفقد صفتها العامة إلا بانتهاء ذلك الغرض' - which directly translates to 'property expropriated from individuals for a specific public purpose does not lose its public property status except upon the termination of that purpose.' This precisely satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "State regains discretion after purpose ends",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (point 2): 'وعند انتهاء الغرض فقط تسترد الدولة سلطتها التقديرية في إنهاء صفة المال العام أو تخصيصه لغرض عام آخر' (Only upon the termination of the purpose does the State regain its discretionary authority to end the public property status or reassign it to another public purpose). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Administration must respect original expropriation purpose",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (point 3) that the administrative authority must respect the purpose for which the property was expropriated and must not exceed it to another purpose, even if that other purpose also serves public interest ('يتعين على الجهة الإدارية احترام الغرض الذي نُزعت الملكية من أجله وعدم تجاوزه إلى غرض آخر ولو كان ذا منفعة عامة'). This is also reinforced in the recommendations section."
+     },
+     {
+      "id": "C-004",
+      "title": "Deviation to another purpose is a violation even if public benefit",
+      "verdict": "fail",
+      "reasoning": "The note explicitly states in Section 2 (الرأي) that the Ministry cannot redirect the land even if the new purpose serves public benefit ('ولو كان الغرض الجديد ذا منفعة عامة'). It also states in Section 3 that the same principle applies — the administrative body must respect the original purpose and not exceed it to another purpose 'even if it serves public benefit' ('ولو كان ذا منفعة عامة'). Additionally, the recommendations note that exceeding the original purpose exposes the decision to nullity for violating expropriation rules ('يعرّض القرار للبطلان لمخالفته أحكام نزع الملكية'). However, the criterion specifically requires the note to characterize this as a 'flagrant violation' (مخالفة صريحة). While the note does describe it as a violation subject to nullity, it does not use the specific phrase 'مخالفة صريحة' (flagrant violation). The note uses 'ينتهك أحكام نزع الملكية' and 'مخالفته أحكام نزع الملكية' but not the specific characterization of 'مخالفة صريحة' as required by the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Expropriation is an exception limited to defined boundaries",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا (point 2): 'والقول بغير ذلك ينتهك أحكام نزع الملكية، وهي استثنائية تتقيد بحدودها' — which translates to 'saying otherwise violates the provisions of expropriation, which are exceptional and bound by their limits.' This directly satisfies the criterion by stating that expropriation for public benefit is an exception that must remain within specific defined limits."
+     }
+    ],
+    "run_id": "open-o55-files/loss-of-public-property-status-and-limits-of-expropriation",
+    "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:08:18.810734+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "4/5 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public property loses status only upon purpose termination",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section ثالثًا, point 2: 'فلا تفقد صفتها العامة إلا بانتهاء ذلك الغرض، طبقًا للمادة (88) من القانون المدني' — meaning the expropriated property does not lose its public property status except upon the termination of the specific purpose for which it was expropriated. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "State regains discretion after purpose ends",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا, point 2: 'وعند انتهاء الغرض فقط تسترد الدولة سلطتها التقديرية في إنهاء صفة المال العام أو تخصيصه لغرض عام آخر' (Only when the purpose ends does the State regain its discretionary authority to end the public property status or reassign it to another public purpose). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Administration must respect original expropriation purpose",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 3 (التطبيق على الأرض محل الاستشارة) that the administrative authority must respect the purpose for which the property was expropriated and must not exceed it to another purpose, even if that other purpose serves the public interest. This is also reiterated in the recommendations section."
+     },
+     {
+      "id": "C-004",
+      "title": "Deviation to another purpose is a violation even if public benefit",
+      "verdict": "fail",
+      "reasoning": "The note clearly states that redirecting the land to a different purpose, even one serving public benefit, is not permitted and violates expropriation rules. In section ثالثًا point 3, it states the administration must respect the original purpose and not exceed it to another purpose 'even if it serves public benefit' (ولو كان ذا منفعة عامة). In section ثانيًا, it also states that the new purpose being of public benefit does not justify the redirection. However, the criterion specifically requires the note to characterize this as a 'flagrant violation' (مخالفة صريحة) of expropriation rules. The note uses language like 'ينتهك أحكام نزع الملكية' (violates expropriation rules) in point 2, and in the recommendations says it 'يعرّض القرار للبطلان لمخالفته أحكام نزع الملكية' (exposes the decision to nullity for violating expropriation rules). While the note clearly conveys that redirecting to another purpose even if public benefit is a violation of expropriation rules, it does not use the specific phrase 'مخالفة صريحة' (flagrant violation). The criterion says PASS if the note 'states that redirecting the land to a different purpose (even one serving public benefit) constitutes a flagrant violation of expropriation rules (مخالفة صريحة).' The note does state it's a violation but doesn't specifically call it a 'flagrant' or 'صريحة' violation. The substance is there but the specific characterization as 'flagrant' is missing."
+     },
+     {
+      "id": "C-005",
+      "title": "Expropriation is an exception limited to defined boundaries",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا, point 2: 'والقول بغير ذلك ينتهك أحكام نزع الملكية، وهي استثنائية تتقيد بحدودها' — meaning expropriation rules are exceptional and must be confined to their limits. This directly satisfies the criterion that expropriation for public benefit was established only as an exception within specific limits that must not be exceeded."
+     }
+    ],
+    "run_id": "open-o55-files/loss-of-public-property-status-and-limits-of-expropriation",
+    "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:11:50.033995+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.8,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}
