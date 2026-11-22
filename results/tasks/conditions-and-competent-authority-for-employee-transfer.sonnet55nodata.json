@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-administrative-law-and-public-employment/conditions-and-competent-authority-for-employee-transfer",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: نقل أحمد محمود إلى الوظيفة المعادلة بعد اعتماد جدول التوصيف\n\n## الخلاصة\nلا يُنقل أحمد تلقائيًا بمجرد اعتماد الجدول في رأيي. اعتماد الجدول يضع الإطار العام للوظائف، أما شغل الموظف لوظيفة معينة فيحتاج إلى قرار إداري من السلطة المختصة بالتعيين أو النقل. وهذا هو الأصل في نظام العاملين المدنيين بالدولة، وإن كنت لا أحفظ النصوص الدقيقة.\n\n## التحليل\n1. الجدول قرار تنظيمي عام يصنف الوظائف ويوصفها ويحدد شروط شغلها ودرجاتها.\n2. وضع العامل في وظيفة محددة بالجدول الجديد، بنقله أو تسكينه عليها، تصرف فردي يستلزم قرارًا صريحًا يصدر من السلطة المختصة.\n3. توافر جميع الشروط في أحمد وتطابق الدرجة يجعله مؤهلًا للنقل ويقوّي طلبه، لكنه لا يحوّل الأهلية إلى نقل تلقائي. وإذا امتنعت الجهة بلا مسوّغ مع توافر الشروط، جاز التظلم والطعن على القرار السلبي بالامتناع.\n4. يُراعى أن النقل يجب أن يكون إلى وظيفة معادلة بنفس الدرجة، وأن تتوافر الشروط وقت النقل، وألا يضار العامل ماليًا.\n\n## ما لا أستطيع الجزم به\nلا أعرف تفاصيل قرار الاعتماد، وقد يتضمن أحكامًا انتقالية أو نصًا على نقل العاملين إلى الوظائف المعادلة بقوة القرار. وإن وُجد مثل هذا النص تغيّرت النتيجة. ولا أستطيع الاستشهاد بأرقام مواد دون تثبّت.\n\n## التوصية\n- الاطلاع على قرار الاعتماد وما فيه من أحكام انتقالية.\n- تقديم طلب كتابي بالنقل إلى الوظيفة المعادلة مع إثبات توافر الشروط.\n- إذا لم يُجب الطلب، التظلم ثم الطعن على الامتناع أمام القضاء الإداري في المواعيد القانونية.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "No automatic transfer",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the summary: 'لا يُنقل أحمد تلقائيًا بمجرد اعتماد الجدول' (Ahmed is not transferred automatically upon approval of the table). It further reinforces this in point 3 of the analysis, stating that eligibility does not convert to automatic transfer. The note clearly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Competent authority decision required",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that a decision from the competent authority (السلطة المختصة) is required to effect the transfer. In point 2 of the analysis, it states: 'وضع العامل في وظيفة محددة بالجدول الجديد، بنقله أو تسكينه عليها، تصرف فردي يستلزم قرارًا صريحًا يصدر من السلطة المختصة.' This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Employee affairs committee consultation",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention the employee affairs committee (لجنة شئون العاملين) at all. The note discusses the competent authority for transfer decisions and recommends submitting a written request and potentially appealing, but never states that the matter must be presented to the employee affairs committee before the transfer decision is made."
+    },
+    {
+     "id": "C-004",
+     "title": "Conditions for transfer met",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 3 of the analysis: 'توافر جميع الشروط في أحمد وتطابق الدرجة يجعله مؤهلًا للنقل' (the fulfillment of all conditions by Ahmed and the matching grade makes him eligible for transfer). This directly addresses that transfer to the equivalent position is permissible because the grade matches and the employee meets the conditions for occupying it."
+    },
+    {
+     "id": "C-005",
+     "title": "Placement rules consider qualifications and experience",
+     "verdict": "fail",
+     "reasoning": "The note mentions that Ahmed meets all the conditions ('توافر جميع الشروط في أحمد') and that the grade matches ('تطابق الدرجة'), making him qualified for transfer. However, it does not explicitly state that placement rules take into account qualifications, experience, and other employment circumstances as general principles of the placement framework. The note references conditions being met in Ahmed's specific case but does not articulate that the placement rules themselves are designed to consider qualifications, experience, and employment circumstances as criteria."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "No automatic transfer",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the conclusion ('الخلاصة') that Ahmed is not transferred automatically upon approval of the table ('لا يُنقل أحمد تلقائيًا بمجرد اعتماد الجدول') and further elaborates in the analysis that placing a worker in a specific position requires an explicit decision from the competent authority, not an automatic process."
+    },
+    {
+     "id": "C-002",
+     "title": "Competent authority decision required",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that placing an employee in a specific position requires 'قرارًا صريحًا يصدر من السلطة المختصة' (an explicit decision from the competent authority), clearly satisfying the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Employee affairs committee consultation",
+     "verdict": "fail",
+     "reasoning": "The note does not mention that the matter must be presented to the employee affairs committee (لجنة شئون العاملين) before the transfer decision. There is no reference to this committee anywhere in the output."
+    },
+    {
+     "id": "C-004",
+     "title": "Conditions for transfer met",
+     "verdict": "pass",
+     "reasoning": "The note states in point 3 that Ahmed meets all the conditions and the grade matches ('توافر جميع الشروط في أحمد وتطابق الدرجة يجعله مؤهلًا للنقل'), which makes him eligible for transfer. It also states in point 4 that the transfer must be to an equivalent position of the same grade and conditions must be met. This satisfies the criterion that the note states transfer to the equivalent position is permissible because the grade matches and the employee meets the conditions."
+    },
+    {
+     "id": "C-005",
+     "title": "Placement rules consider qualifications and experience",
+     "verdict": "fail",
+     "reasoning": "The note mentions in point 3 that 'توافر جميع الشروط في أحمد وتطابق الدرجة يجعله مؤهلًا للنقل' (meeting all conditions and matching the grade makes him eligible for transfer) and in point 4 that 'النقل يجب أن يكون إلى وظيفة معادلة بنفس الدرجة، وأن تتوافر الشروط وقت النقل' (transfer must be to an equivalent position at the same grade, and conditions must be met at the time of transfer). Point 1 also mentions that the job classification table 'يحدد شروط شغلها' (determines the conditions for filling positions). However, the note does not explicitly state that placement rules take into account the employee's qualifications, experience, and other employment circumstances. It speaks generally about 'conditions' (شروط) being met but does not specifically mention qualifications and experience as factors in placement decisions."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/conditions-and-competent-authority-for-employee-transfer",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/conditions-and-competent-authority-for-employee-transfer",
+  "scored_at": "2026-11-22T19:29:21.800790+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "No automatic transfer",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the summary: 'لا يُنقل أحمد تلقائيًا بمجرد اعتماد الجدول' (Ahmed is not transferred automatically upon approval of the table). It further reinforces this in point 3 of the analysis, stating that eligibility does not convert to automatic transfer. The note clearly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Competent authority decision required",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that a decision from the competent authority (السلطة المختصة) is required to effect the transfer. In point 2 of the analysis, it states: 'وضع العامل في وظيفة محددة بالجدول الجديد، بنقله أو تسكينه عليها، تصرف فردي يستلزم قرارًا صريحًا يصدر من السلطة المختصة.' This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Employee affairs committee consultation",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention the employee affairs committee (لجنة شئون العاملين) at all. The note discusses the competent authority for transfer decisions and recommends submitting a written request and potentially appealing, but never states that the matter must be presented to the employee affairs committee before the transfer decision is made."
+     },
+     {
+      "id": "C-004",
+      "title": "Conditions for transfer met",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 3 of the analysis: 'توافر جميع الشروط في أحمد وتطابق الدرجة يجعله مؤهلًا للنقل' (the fulfillment of all conditions by Ahmed and the matching grade makes him eligible for transfer). This directly addresses that transfer to the equivalent position is permissible because the grade matches and the employee meets the conditions for occupying it."
+     },
+     {
+      "id": "C-005",
+      "title": "Placement rules consider qualifications and experience",
+      "verdict": "fail",
+      "reasoning": "The note mentions that Ahmed meets all the conditions ('توافر جميع الشروط في أحمد') and that the grade matches ('تطابق الدرجة'), making him qualified for transfer. However, it does not explicitly state that placement rules take into account qualifications, experience, and other employment circumstances as general principles of the placement framework. The note references conditions being met in Ahmed's specific case but does not articulate that the placement rules themselves are designed to consider qualifications, experience, and employment circumstances as criteria."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/conditions-and-competent-authority-for-employee-transfer",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/conditions-and-competent-authority-for-employee-transfer",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:26:50.708422+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "No automatic transfer",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the conclusion ('الخلاصة') that Ahmed is not transferred automatically upon approval of the table ('لا يُنقل أحمد تلقائيًا بمجرد اعتماد الجدول') and further elaborates in the analysis that placing a worker in a specific position requires an explicit decision from the competent authority, not an automatic process."
+     },
+     {
+      "id": "C-002",
+      "title": "Competent authority decision required",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that placing an employee in a specific position requires 'قرارًا صريحًا يصدر من السلطة المختصة' (an explicit decision from the competent authority), clearly satisfying the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Employee affairs committee consultation",
+      "verdict": "fail",
+      "reasoning": "The note does not mention that the matter must be presented to the employee affairs committee (لجنة شئون العاملين) before the transfer decision. There is no reference to this committee anywhere in the output."
+     },
+     {
+      "id": "C-004",
+      "title": "Conditions for transfer met",
+      "verdict": "pass",
+      "reasoning": "The note states in point 3 that Ahmed meets all the conditions and the grade matches ('توافر جميع الشروط في أحمد وتطابق الدرجة يجعله مؤهلًا للنقل'), which makes him eligible for transfer. It also states in point 4 that the transfer must be to an equivalent position of the same grade and conditions must be met. This satisfies the criterion that the note states transfer to the equivalent position is permissible because the grade matches and the employee meets the conditions."
+     },
+     {
+      "id": "C-005",
+      "title": "Placement rules consider qualifications and experience",
+      "verdict": "fail",
+      "reasoning": "The note mentions in point 3 that 'توافر جميع الشروط في أحمد وتطابق الدرجة يجعله مؤهلًا للنقل' (meeting all conditions and matching the grade makes him eligible for transfer) and in point 4 that 'النقل يجب أن يكون إلى وظيفة معادلة بنفس الدرجة، وأن تتوافر الشروط وقت النقل' (transfer must be to an equivalent position at the same grade, and conditions must be met at the time of transfer). Point 1 also mentions that the job classification table 'يحدد شروط شغلها' (determines the conditions for filling positions). However, the note does not explicitly state that placement rules take into account the employee's qualifications, experience, and other employment circumstances. It speaks generally about 'conditions' (شروط) being met but does not specifically mention qualifications and experience as factors in placement decisions."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/conditions-and-competent-authority-for-employee-transfer",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/conditions-and-competent-authority-for-employee-transfer",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:29:21.800383+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: المستخلص الأخير في عقد أشغال عامة\n\n## الخلاصة\nلا أستطيع تحديد رقم قاطع للحد الأدنى للمستخلص الأخير ولا موعد صرفه دون نص العقد والنظام الواجب التطبيق. وأعرض فيما يلي المبادئ العامة التي أعرفها، مع بيان ما لست متأكدًا منه.\n\n## التحليل\n1. **التسليم الابتدائي لا يُنهي العقد:** التسليم الابتدائي في أول يناير 2024 يبدأ به عادةً سريان فترة الضمان أو الصيانة. أما التسليم النهائي فيكون بعد انقضائها، ويُجرى بعده التسوية النهائية.\n2. **مكونات المستخلص الأخير:** يشمل في الغالب قيمة الأعمال المنفذة التي لم تُصرف، مخصومًا منه الدفعات السابقة والمبالغ المحتجزة أو المستردة والغرامات المستحقة إن وجدت.\n3. **المبالغ المحتجزة والضمان:** تُحتجز في عقود الأشغال العامة عادةً نسبة من كل دفعة أو يُقدَّم ضمان حسن تنفيذ، ويُفرج عنها أو يُردّ الضمان بعد التسليم النهائي وانتهاء فترة الضمان. لا أجزم بنسبة معينة مثل 5% أو 10%، فهي تتوقف على العقد والنظام.\n4. **وقت الصرف:** الأصل أن يُصرف المستخلص الختامي بعد التسليم النهائي وإنهاء الجهة لإجراءات المراجعة والاعتماد، لا بمجرد التسليم الابتدائي. وللشركة أن تطالب بصرف ما استحق من أعمال، ويُؤجَّل ما يخص الاحتجاز إلى التسليم النهائي.\n5. **الرقم المطلوب:** لا أستطيع أن أحسب رقمًا من الوقائع، لأننا لا نعرف الدفعات السابقة ولا نسبة الاحتجاز ولا مدة الضمان.\n\n## التوصية\n- راجع شروط الدفع وبند الاحتجاز وبند التسليم في العقد.\n- حدّد الدفعات المسددة وقيمة المحتجز والغرامات.\n- لا تُقدّم رقمًا للمطالبة قبل التحقق من النص.\n\n## تنبيه\nلم أذكر مواد نظامية محددة لأنني غير متأكد من أرقامها. وكل رقم ورد عاليه مثال لا نص.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 0,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Minimum_Percentage_Works",
+     "verdict": "fail",
+     "reasoning": "The agent's output explicitly states that it cannot confirm a specific percentage (such as 5% or 10%) for the minimum final payment certificate, and notes that any figures mentioned are examples rather than established rules. The criterion requires the note to state that the minimum final payment certificate in public works contracts is 10% of the contract value. The agent's output does not state this 10% figure as a requirement."
+    },
+    {
+     "id": "C-002",
+     "title": "Minimum_Amount",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not state that the minimum amount of the final payment certificate is one million riyals, being 10% of ten million. The agent explicitly states it cannot determine a specific number without the contract and applicable regulations, and avoids providing any specific figures for the final payment amount."
+    },
+    {
+     "id": "C-003",
+     "title": "Payment_Condition",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the release of the final payment certificate (المستخلص الأخير) is conditional upon preliminary handover (التسليم الابتدائي). The agent's note actually states the opposite: it says the final payment certificate is settled after the final handover (التسليم النهائي), not the preliminary handover. In fact, the note explicitly distinguishes between preliminary and final handover, stating that preliminary handover only begins the warranty/maintenance period, and that the final settlement occurs after the final handover. The note does not state that the release of the final payment certificate is conditional upon preliminary handover."
+    },
+    {
+     "id": "C-004",
+     "title": "Payment_Date",
+     "verdict": "fail",
+     "reasoning": "The agent's note explicitly states that payment of the final certificate should occur after the final handover (التسليم النهائي) and completion of review procedures, not upon preliminary handover. In point 4, the agent says 'الأصل أن يُصرف المستخلص الختامي بعد التسليم النهائي' (the principle is that the final certificate is paid after the final handover). The note does not state that the company is entitled to payment as of the date of preliminary handover on 1 January 2024. This directly contradicts the criterion requirement."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 0,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Minimum_Percentage_Works",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value. The agent's note explicitly declines to specify a percentage, stating 'لا أجزم بنسبة معينة مثل 5% أو 10%، فهي تتوقف على العقد والنظام' and does not assert that the minimum is 10%."
+    },
+    {
+     "id": "C-002",
+     "title": "Minimum_Amount",
+     "verdict": "fail",
+     "reasoning": "The note does not state that the minimum amount of the final payment certificate is one million riyals, being 10% of ten million. The agent explicitly states it cannot determine a specific number and does not provide this calculation."
+    },
+    {
+     "id": "C-003",
+     "title": "Payment_Condition",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the release of the final payment certificate (المستخلص الأخير) is conditional upon preliminary handover (التسليم الابتدائي). The agent's note actually says the opposite: it states that the final payment is typically released after final handover (التسليم النهائي), not preliminary handover (التسليم الابتدائي). Point 4 explicitly says 'الأصل أن يُصرف المستخلص الختامي بعد التسليم النهائي... لا بمجرد التسليم الابتدائي' (the principle is that the final certificate is paid after final handover, not merely upon preliminary handover). The note does not state that the final payment certificate is conditional upon preliminary handover."
+    },
+    {
+     "id": "C-004",
+     "title": "Payment_Date",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the company is entitled to payment of the certificate as of the date of preliminary handover (التسليم الابتدائي) on 1 January 2024. The agent's note does not make this statement. Instead, it says the opposite — that the final certificate is paid after final handover (التسليم النهائي), not the preliminary one, and that retention amounts are deferred until final handover. The note does not assert entitlement to payment as of 1 January 2024."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/minimum-works-percentage-amount-and-payment-conditions",
+  "task": "astrolabe-open/saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+  "scored_at": "2026-11-22T20:07:14.790990+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/4 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Minimum_Percentage_Works",
+      "verdict": "fail",
+      "reasoning": "The agent's output explicitly states that it cannot confirm a specific percentage (such as 5% or 10%) for the minimum final payment certificate, and notes that any figures mentioned are examples rather than established rules. The criterion requires the note to state that the minimum final payment certificate in public works contracts is 10% of the contract value. The agent's output does not state this 10% figure as a requirement."
+     },
+     {
+      "id": "C-002",
+      "title": "Minimum_Amount",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not state that the minimum amount of the final payment certificate is one million riyals, being 10% of ten million. The agent explicitly states it cannot determine a specific number without the contract and applicable regulations, and avoids providing any specific figures for the final payment amount."
+     },
+     {
+      "id": "C-003",
+      "title": "Payment_Condition",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the release of the final payment certificate (المستخلص الأخير) is conditional upon preliminary handover (التسليم الابتدائي). The agent's note actually states the opposite: it says the final payment certificate is settled after the final handover (التسليم النهائي), not the preliminary handover. In fact, the note explicitly distinguishes between preliminary and final handover, stating that preliminary handover only begins the warranty/maintenance period, and that the final settlement occurs after the final handover. The note does not state that the release of the final payment certificate is conditional upon preliminary handover."
+     },
+     {
+      "id": "C-004",
+      "title": "Payment_Date",
+      "verdict": "fail",
+      "reasoning": "The agent's note explicitly states that payment of the final certificate should occur after the final handover (التسليم النهائي) and completion of review procedures, not upon preliminary handover. In point 4, the agent says 'الأصل أن يُصرف المستخلص الختامي بعد التسليم النهائي' (the principle is that the final certificate is paid after the final handover). The note does not state that the company is entitled to payment as of the date of preliminary handover on 1 January 2024. This directly contradicts the criterion requirement."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/minimum-works-percentage-amount-and-payment-conditions",
+    "task": "astrolabe-open/saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:03:55.460302+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/4 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Minimum_Percentage_Works",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value. The agent's note explicitly declines to specify a percentage, stating 'لا أجزم بنسبة معينة مثل 5% أو 10%، فهي تتوقف على العقد والنظام' and does not assert that the minimum is 10%."
+     },
+     {
+      "id": "C-002",
+      "title": "Minimum_Amount",
+      "verdict": "fail",
+      "reasoning": "The note does not state that the minimum amount of the final payment certificate is one million riyals, being 10% of ten million. The agent explicitly states it cannot determine a specific number and does not provide this calculation."
+     },
+     {
+      "id": "C-003",
+      "title": "Payment_Condition",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the release of the final payment certificate (المستخلص الأخير) is conditional upon preliminary handover (التسليم الابتدائي). The agent's note actually says the opposite: it states that the final payment is typically released after final handover (التسليم النهائي), not preliminary handover (التسليم الابتدائي). Point 4 explicitly says 'الأصل أن يُصرف المستخلص الختامي بعد التسليم النهائي... لا بمجرد التسليم الابتدائي' (the principle is that the final certificate is paid after final handover, not merely upon preliminary handover). The note does not state that the final payment certificate is conditional upon preliminary handover."
+     },
+     {
+      "id": "C-004",
+      "title": "Payment_Date",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the company is entitled to payment of the certificate as of the date of preliminary handover (التسليم الابتدائي) on 1 January 2024. The agent's note does not make this statement. Instead, it says the opposite — that the final certificate is paid after final handover (التسليم النهائي), not the preliminary one, and that retention amounts are deferred until final handover. The note does not assert entitlement to payment as of 1 January 2024."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/minimum-works-percentage-amount-and-payment-conditions",
+    "task": "astrolabe-open/saudi-government-procurement/minimum-works-percentage-amount-and-payment-conditions",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:07:14.790557+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.0,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

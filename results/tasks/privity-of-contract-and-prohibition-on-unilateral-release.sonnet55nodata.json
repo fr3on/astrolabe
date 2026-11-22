@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: المسؤول عن سداد مستحقات شركة الصناعات الإلكترونية\n\n## الخلاصة\n- المسؤول الأصلي عن السداد هو الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية، لأنها الطرف المتعاقد مع الشركة. ودفع هيئة التمويل بأنها موّلت المشروع لا يُسقط التزام المتعاقد.\n- للهيئة العامة للمدينة الرجوع على هيئة التمويل بما يقرره عقد المنحة، فإن كان مبلغ العقد مشمولًا بالمنحة وامتنعت الهيئة عن الصرف فهي ملزمة بحسب شروط العقد.\n\n## التحليل\n1. **نسبية أثر العقد:** القاعدة العامة في القانون المدني (م 145) أن أثر العقد ينصرف إلى المتعاقدين، فلا تلتزم هيئة التمويل أمام الشركة لأنها ليست طرفًا في عقد التوريد.\n2. **الشركة تحت مظلة الدولة:** كون الشركة تابعة لوزارة الإنتاج الحربي لا يغيّر القاعدة، لكن قد تُعرض المنازعة على التحكيم أو لجان التوفيق في المنازعات بين الجهات الحكومية وفق ما هو مقرر، ولا أجزم بتفاصيله.\n3. **الرجوع:** يستند الرجوع إلى عقد المنحة، فإن خلا من التزام بصرف المبلغ أمكن الاستناد إلى قواعد المسؤولية العقدية أو الإثراء بلا سبب.\n\n## التوصية\n- مطالبة الهيئة العامة للمدينة بالسداد.\n- مراجعة عقد المنحة وشروط الصرف ثم مخاطبة هيئة التمويل رسميًا.\n\n## تنبيه\nلا توجد نصوص مرفقة، وما ورد من معرفتي العامة ودون جزم بأرقام المواد عدا ما ذُكر.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states in point 1 of the analysis: 'القاعدة العامة في القانون المدني (م 145) أن أثر العقد ينصرف إلى المتعاقدين، فلا تلتزم هيئة التمويل أمام الشركة لأنها ليست طرفًا في عقد التوريد.' This clearly articulates that the effects of the contract are confined to its parties and that obligations extend only to the contracting parties (privity of contract)."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "fail",
+     "reasoning": "The agent's output discusses privity of contract and the obligation of the contracting party (الهيئة العامة للمدينة) to pay, and mentions that the financing authority's claim that it only funded the project does not extinguish the contractor's obligation. However, the note never explicitly states the principle that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). This specific principle is absent from the advice note."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states in the summary section that 'المسؤول الأصلي عن السداد هو الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية، لأنها الطرف المتعاقد مع الشركة' (The original party responsible for payment is the King Abdulaziz City for Science and Technology, because it is the contracting party with the company). This directly satisfies the criterion that the note states ASRT is responsible for paying the amounts due to the company for electronic industries."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states that the هيئة العامة للمدينة (King Abdulaziz City for Science and Technology) has the right of recourse (حق الرجوع) against هيئة التمويل (the Science, Technology and Innovation Funding Authority) based on the terms of the grant contract (عقد المنحة). This appears in both the summary section ('للهيئة العامة للمدينة الرجوع على هيئة التمويل بما يقرره عقد المنحة') and the analysis section ('يستند الرجوع إلى عقد المنحة')."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "fail",
+     "reasoning": "The agent's output discusses privity of contract (نسبية أثر العقد) and references Article 145 of the Civil Code, but it does not explicitly state the principle that 'the contract is the law of the contracting parties' (العقد شريعة المتعاقدين) nor does it mention that the contract may not be revoked or modified except by agreement of both parties or for reasons established by law. The criterion specifically requires both of these elements to be present for a PASS."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states under point 1 ('نسبية أثر العقد') that the general rule under Civil Code Article 145 is that the effects of the contract extend only to the contracting parties ('أثر العقد ينصرف إلى المتعاقدين'), and that the funding authority is not obligated to the company because it is not a party to the supply contract. This clearly articulates the principle of privity of contract."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). While the note discusses privity of contract and that the funding body's claim of financing the project does not extinguish the contracting party's obligation, it never articulates the specific principle that a party cannot unilaterally release itself from its contractual obligations."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (which corresponds to ASRT/King Abdulaziz City for Science and Technology) is the party responsible for paying the amounts due to the electronic industries company. This is stated in both the summary ('المسؤول الأصلي عن السداد هو الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية') and the recommendation ('مطالبة الهيئة العامة للمدينة بالسداد')."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that King Abdulaziz City for Science and Technology (مدينة الملك عبدالعزيز للعلوم والتقنية) has a right of recourse against the Science, Technology and Innovation Funding Authority (هيئة تمويل العلوم والتقنية والابتكار). The agent's note references 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' (which appears to be a different entity — the City of Scientific Research and Technological Applications, an Egyptian entity) rather than 'مدينة الملك عبدالعزيز للعلوم والتقنية' (King Abdulaziz City for Science and Technology, a Saudi entity). Similarly, the funding authority is referred to generically as 'هيئة التمويل' rather than specifically as the Science, Technology and Innovation Funding Authority. While the note does discuss a right of recourse concept in accordance with a grant contract, it does not correctly identify the specific entities required by the criterion. The criterion specifically names King Abdulaziz City for Science and Technology and the Science, Technology and Innovation Funding Authority, and the agent's output does not mention these entities."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the contract is the law of the contracting parties (العقد شريعة المتعاقدين) and that it may not be revoked or modified except by agreement of both parties or for reasons established by law. The agent's note discusses privity of contract (نسبية أثر العقد) and references Article 145 of the Civil Code, but it does not explicitly state the principle that 'العقد شريعة المتعاقدين' (the contract is the law of the contracting parties) nor does it state that the contract may not be revoked or modified except by mutual agreement or for reasons established by law. This specific formulation is absent from the output."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/privity-of-contract-and-prohibition-on-unilateral-release",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "scored_at": "2026-11-22T19:45:12.808062+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states in point 1 of the analysis: 'القاعدة العامة في القانون المدني (م 145) أن أثر العقد ينصرف إلى المتعاقدين، فلا تلتزم هيئة التمويل أمام الشركة لأنها ليست طرفًا في عقد التوريد.' This clearly articulates that the effects of the contract are confined to its parties and that obligations extend only to the contracting parties (privity of contract)."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "fail",
+      "reasoning": "The agent's output discusses privity of contract and the obligation of the contracting party (الهيئة العامة للمدينة) to pay, and mentions that the financing authority's claim that it only funded the project does not extinguish the contractor's obligation. However, the note never explicitly states the principle that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). This specific principle is absent from the advice note."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states in the summary section that 'المسؤول الأصلي عن السداد هو الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية، لأنها الطرف المتعاقد مع الشركة' (The original party responsible for payment is the King Abdulaziz City for Science and Technology, because it is the contracting party with the company). This directly satisfies the criterion that the note states ASRT is responsible for paying the amounts due to the company for electronic industries."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states that the هيئة العامة للمدينة (King Abdulaziz City for Science and Technology) has the right of recourse (حق الرجوع) against هيئة التمويل (the Science, Technology and Innovation Funding Authority) based on the terms of the grant contract (عقد المنحة). This appears in both the summary section ('للهيئة العامة للمدينة الرجوع على هيئة التمويل بما يقرره عقد المنحة') and the analysis section ('يستند الرجوع إلى عقد المنحة')."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "fail",
+      "reasoning": "The agent's output discusses privity of contract (نسبية أثر العقد) and references Article 145 of the Civil Code, but it does not explicitly state the principle that 'the contract is the law of the contracting parties' (العقد شريعة المتعاقدين) nor does it mention that the contract may not be revoked or modified except by agreement of both parties or for reasons established by law. The criterion specifically requires both of these elements to be present for a PASS."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:41:54.290664+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states under point 1 ('نسبية أثر العقد') that the general rule under Civil Code Article 145 is that the effects of the contract extend only to the contracting parties ('أثر العقد ينصرف إلى المتعاقدين'), and that the funding authority is not obligated to the company because it is not a party to the supply contract. This clearly articulates the principle of privity of contract."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). While the note discusses privity of contract and that the funding body's claim of financing the project does not extinguish the contracting party's obligation, it never articulates the specific principle that a party cannot unilaterally release itself from its contractual obligations."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (which corresponds to ASRT/King Abdulaziz City for Science and Technology) is the party responsible for paying the amounts due to the electronic industries company. This is stated in both the summary ('المسؤول الأصلي عن السداد هو الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية') and the recommendation ('مطالبة الهيئة العامة للمدينة بالسداد')."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that King Abdulaziz City for Science and Technology (مدينة الملك عبدالعزيز للعلوم والتقنية) has a right of recourse against the Science, Technology and Innovation Funding Authority (هيئة تمويل العلوم والتقنية والابتكار). The agent's note references 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' (which appears to be a different entity — the City of Scientific Research and Technological Applications, an Egyptian entity) rather than 'مدينة الملك عبدالعزيز للعلوم والتقنية' (King Abdulaziz City for Science and Technology, a Saudi entity). Similarly, the funding authority is referred to generically as 'هيئة التمويل' rather than specifically as the Science, Technology and Innovation Funding Authority. While the note does discuss a right of recourse concept in accordance with a grant contract, it does not correctly identify the specific entities required by the criterion. The criterion specifically names King Abdulaziz City for Science and Technology and the Science, Technology and Innovation Funding Authority, and the agent's output does not mention these entities."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the contract is the law of the contracting parties (العقد شريعة المتعاقدين) and that it may not be revoked or modified except by agreement of both parties or for reasons established by law. The agent's note discusses privity of contract (نسبية أثر العقد) and references Article 145 of the Civil Code, but it does not explicitly state the principle that 'العقد شريعة المتعاقدين' (the contract is the law of the contracting parties) nor does it state that the contract may not be revoked or modified except by mutual agreement or for reasons established by law. This specific formulation is absent from the output."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:45:12.807715+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.5,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

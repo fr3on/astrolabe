@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: غرامة التأخير في عقد الصيانة الحكومي\n\n## الخلاصة\nفهم الجهة غير دقيق. فرض غرامة بنسبة 10% (مائة ألف ريال) لا يعني أنه الحد الكامل لما تتحمله الشركة. الغرامة أحد الجزاءات، وليست بالضرورة الجزاء الوحيد.\n\n## التحليل\n1. **طبيعة نسبة 10%:** أعرف من نظام المنافسات والمشتريات الحكومية ولائحته التنفيذية في المملكة أن غرامة التأخير تُحتسب وفق مدة التأخير، وأن لها سقفًا أعلى يُقدَّر بـ10% من قيمة العقد. أنا غير متأكد من رقم المادة ولا من صياغتها الحرفية، فيلزم التحقق منها قبل الاستناد إليها. وعليه فالنسبة سقف للغرامة وليست مبلغًا مقطوعًا يستغرق كل المسؤولية.\n2. **بقاء الجزاءات والحقوق الأخرى:** يجوز عادةً للجهة، عند تكرار التقصير، أن تنذر المتعاقد، وأن تنفذ على الضمان النهائي، وأن تفسخ العقد أو تسحب العمل وتنفذه على حساب المتعاقد، وأن تطالب بالتعويض عن الضرر الفعلي بحسب نص العقد والنظام. وقد تُضاف إلى ذلك جزاءات إدارية كالإيقاف عن التعامل مع الجهات الحكومية. ولا أستطيع الجزم بتفاصيل هذه الجزاءات وشروطها، وهي تحتاج إلى مراجعة النص.\n3. **المبدأ العام:** الغرامة التعاقدية تعويض اتفاقي عن التأخير، وللقاضي من حيث المبدأ سلطة تعديل التعويض الاتفاقي إذا كان مبالغًا فيه أو لم يقع ضرر. فالتعويض ليس مطلقًا.\n\n## التوصية\n- لا تُبلغ الجهة بأن المائة ألف هي كامل المسؤولية.\n- راجع نصوص العقد وشروطه الخاصة والنظام ولائحته لتحديد الجزاءات الإضافية المتاحة.\n- وثّق وقائع التقصير والإنذارات ومدد التأخير لأن الاحتجاج بها شرط لأي جزاء.\n\n## تنبيه\nهذه المذكرة مبنية على المعرفة العامة دون نصوص مرفقة. لم أذكر أرقام مواد خشية الخطأ، ويجب التحقق منها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Maintenance contract penalty cap",
+     "verdict": "fail",
+     "reasoning": "The agent's output does state that the penalty has a maximum cap of 10% of the contract value ('سقفًا أعلى يُقدَّر بـ10% من قيمة العقد'). However, the agent does not specifically characterize this as applying to maintenance and operation contracts (عقود الصيانة والتشغيل) in particular. The agent speaks generally about government procurement contracts without distinguishing the specific 10% cap that applies to maintenance and operation contracts. The criterion requires the note to state that the penalty in maintenance and operation contracts specifically does not exceed 10% of the contract value. While the agent does mention the 10% cap, it does so in a general context without explicitly tying it to the maintenance and operation contract category as a specific rule for that contract type."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction of unexecuted works",
+     "verdict": "fail",
+     "reasoning": "The agent's note discusses the penalty cap (10%), additional sanctions, and general principles about contractual penalties, but nowhere does it mention that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. The criterion specifically requires the note to state this deduction concept, which is entirely absent from the output."
+    },
+    {
+     "id": "C-003",
+     "title": "Total liability exceeds penalty alone",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the summary that 'imposing a penalty of 10% (one hundred thousand riyals) does not mean it is the full limit of what the company bears. The penalty is one of the sanctions, not necessarily the only one.' It further elaborates that additional sanctions may include final guarantee execution, contract termination, actual damage compensation, and administrative penalties. The recommendation explicitly states 'do not inform the authority that the 100,000 riyals is the full liability.' This directly satisfies the criterion that the total amount borne by the company exceeds the penalty of 100,000 riyals alone."
+    },
+    {
+     "id": "C-004",
+     "title": "Incorrect assumption corrected",
+     "verdict": "pass",
+     "reasoning": "The note explicitly corrects the government entity's mistaken understanding in multiple places. The summary states 'فهم الجهة غير دقيق' (the entity's understanding is inaccurate) and clarifies that the 10% penalty is a cap on delay penalties, not the full extent of liability. Section 2 lists additional remedies available to the entity beyond the penalty, and the recommendation explicitly states 'لا تُبلغ الجهة بأن المائة ألف هي كامل المسؤولية' (do not inform the entity that the 100,000 is the full liability). The note clearly and directly addresses the incorrect assumption."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Maintenance contract penalty cap",
+     "verdict": "pass",
+     "reasoning": "The note states that the penalty cap (سقف الغرامة) is 10% of the contract value, mentioning 'أن غرامة التأخير تُحتسب وفق مدة التأخير، وأن لها سقفًا أعلى يُقدَّر بـ10% من قيمة العقد'. While it doesn't explicitly use the exact term 'عقود الصيانة والتشغيل', the context of the note is about a maintenance contract (عقد الصيانة الحكومي) and it clearly states the 10% cap. This satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction of unexecuted works",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. The agent's note discusses penalty caps, additional sanctions (like executing work at the contractor's expense, drawing on the performance bond, contract termination), and compensation for actual damages. However, it does not specifically mention that the value of unexecuted works is deducted from the contract amount in addition to the delay penalty. The concept of 'deduction of unexecuted works' as a separate financial adjustment is not addressed."
+    },
+    {
+     "id": "C-003",
+     "title": "Total liability exceeds penalty alone",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the 10% penalty (100,000 riyals) is not the full extent of the company's liability. It explicitly mentions additional consequences beyond the penalty, including execution of the performance bond, contract termination with execution at the contractor's expense, claims for actual damages, and administrative sanctions. The conclusion ('الخلاصة') directly states that imposing a 10% penalty does not mean it is the complete extent of what the company bears, and that the penalty is one of the sanctions, not necessarily the only one."
+    },
+    {
+     "id": "C-004",
+     "title": "Incorrect assumption corrected",
+     "verdict": "pass",
+     "reasoning": "The note explicitly corrects the government entity's mistaken understanding. The summary states: 'فهم الجهة غير دقيق. فرض غرامة بنسبة 10% (مائة ألف ريال) لا يعني أنه الحد الكامل لما تتحمله الشركة. الغرامة أحد الجزاءات، وليست بالضرورة الجزاء الوحيد.' This directly addresses and corrects the assumption that the penalty alone constitutes the full liability. The analysis further elaborates on additional sanctions and rights available beyond the delay penalty, including guarantee forfeiture, contract termination, execution at contractor's expense, actual damage compensation, and administrative sanctions."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "scored_at": "2026-11-22T20:05:23.351984+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Maintenance contract penalty cap",
+      "verdict": "fail",
+      "reasoning": "The agent's output does state that the penalty has a maximum cap of 10% of the contract value ('سقفًا أعلى يُقدَّر بـ10% من قيمة العقد'). However, the agent does not specifically characterize this as applying to maintenance and operation contracts (عقود الصيانة والتشغيل) in particular. The agent speaks generally about government procurement contracts without distinguishing the specific 10% cap that applies to maintenance and operation contracts. The criterion requires the note to state that the penalty in maintenance and operation contracts specifically does not exceed 10% of the contract value. While the agent does mention the 10% cap, it does so in a general context without explicitly tying it to the maintenance and operation contract category as a specific rule for that contract type."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction of unexecuted works",
+      "verdict": "fail",
+      "reasoning": "The agent's note discusses the penalty cap (10%), additional sanctions, and general principles about contractual penalties, but nowhere does it mention that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. The criterion specifically requires the note to state this deduction concept, which is entirely absent from the output."
+     },
+     {
+      "id": "C-003",
+      "title": "Total liability exceeds penalty alone",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the summary that 'imposing a penalty of 10% (one hundred thousand riyals) does not mean it is the full limit of what the company bears. The penalty is one of the sanctions, not necessarily the only one.' It further elaborates that additional sanctions may include final guarantee execution, contract termination, actual damage compensation, and administrative penalties. The recommendation explicitly states 'do not inform the authority that the 100,000 riyals is the full liability.' This directly satisfies the criterion that the total amount borne by the company exceeds the penalty of 100,000 riyals alone."
+     },
+     {
+      "id": "C-004",
+      "title": "Incorrect assumption corrected",
+      "verdict": "pass",
+      "reasoning": "The note explicitly corrects the government entity's mistaken understanding in multiple places. The summary states 'فهم الجهة غير دقيق' (the entity's understanding is inaccurate) and clarifies that the 10% penalty is a cap on delay penalties, not the full extent of liability. Section 2 lists additional remedies available to the entity beyond the penalty, and the recommendation explicitly states 'لا تُبلغ الجهة بأن المائة ألف هي كامل المسؤولية' (do not inform the entity that the 100,000 is the full liability). The note clearly and directly addresses the incorrect assumption."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:02:54.417631+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Maintenance contract penalty cap",
+      "verdict": "pass",
+      "reasoning": "The note states that the penalty cap (سقف الغرامة) is 10% of the contract value, mentioning 'أن غرامة التأخير تُحتسب وفق مدة التأخير، وأن لها سقفًا أعلى يُقدَّر بـ10% من قيمة العقد'. While it doesn't explicitly use the exact term 'عقود الصيانة والتشغيل', the context of the note is about a maintenance contract (عقد الصيانة الحكومي) and it clearly states the 10% cap. This satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction of unexecuted works",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. The agent's note discusses penalty caps, additional sanctions (like executing work at the contractor's expense, drawing on the performance bond, contract termination), and compensation for actual damages. However, it does not specifically mention that the value of unexecuted works is deducted from the contract amount in addition to the delay penalty. The concept of 'deduction of unexecuted works' as a separate financial adjustment is not addressed."
+     },
+     {
+      "id": "C-003",
+      "title": "Total liability exceeds penalty alone",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the 10% penalty (100,000 riyals) is not the full extent of the company's liability. It explicitly mentions additional consequences beyond the penalty, including execution of the performance bond, contract termination with execution at the contractor's expense, claims for actual damages, and administrative sanctions. The conclusion ('الخلاصة') directly states that imposing a 10% penalty does not mean it is the complete extent of what the company bears, and that the penalty is one of the sanctions, not necessarily the only one."
+     },
+     {
+      "id": "C-004",
+      "title": "Incorrect assumption corrected",
+      "verdict": "pass",
+      "reasoning": "The note explicitly corrects the government entity's mistaken understanding. The summary states: 'فهم الجهة غير دقيق. فرض غرامة بنسبة 10% (مائة ألف ريال) لا يعني أنه الحد الكامل لما تتحمله الشركة. الغرامة أحد الجزاءات، وليست بالضرورة الجزاء الوحيد.' This directly addresses and corrects the assumption that the penalty alone constitutes the full liability. The analysis further elaborates on additional sanctions and rights available beyond the delay penalty, including guarantee forfeiture, contract termination, execution at contractor's expense, actual damage compensation, and administrative sanctions."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:05:23.351614+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.625,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

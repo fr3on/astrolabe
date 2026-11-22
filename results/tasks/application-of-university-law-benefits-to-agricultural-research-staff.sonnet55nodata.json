@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-administrative-law-and-public-employment/application-of-university-law-benefits-to-agricultural-research-staff",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: استحقاق زيادة بدل الجامعة أثناء الإيفاد\n\n## الخلاصة\nالراجح أن د. سامي يستحق الزيادة إذا ظل متفرغًا للعمل بالمركز من الناحية القانونية. فالإيفاد في مهمة علمية مؤقتة لا ينهي علاقته الوظيفية ولا ينقض تفرغه. لكنني لا أجزم بذلك، ولا بد من مراجعة نص القرار المنظّم للزيادة قبل الاعتماد على هذه النتيجة.\n\n## التحليل\n1. شرط الاستحقاق الذي ذكره العميل هو التفرغ للعمل بحد أدنى أربعة أيام أسبوعيًا. وهذا شرط يتعلق بنظام العمل والتفرغ، وليس بالحضور المادي اليومي في مقر المركز.\n2. الإيفاد في مهمة علمية يُعد في الأصل أداءً لعمل رسمي تكلّف به الجهة العضوَ، فتُحتسب مدته في الخدمة. وتبقى للموفد حقوقه الوظيفية الأصلية ما لم ينص القانون أو اللائحة على خلاف ذلك.\n3. إذا كانت القاعدة العامة هي استمرار صرف المرتب والبدلات للموفد، فالأصل أن يستمر صرف البدل الذي ارتبط استحقاقه بالتفرغ.\n\n## ما لا أستطيع الجزم به\n- لا أحفظ نص القانون رقم 84 لسنة 2012 ولا قرار الزيادة، ولا أعرف هل استثنيا حالة الإيفاد أو اشترطا المباشرة الفعلية.\n- لا أعرف تفاصيل لائحة الإيفاد بالمركز، وهل تُصرف البدلات كاملة أم يقتصر الصرف على المرتب الأساسي خلال المهمة.\n\n## التوصية\n- طلب نص القانون وقرار الزيادة وقرار الإيفاد.\n- التحقق من أن قرار الإيفاد لم يصنّف المدة إجازة بدون مرتب أو إعارة، فذلك يغيّر النتيجة.\n- تقديم طلب كتابي إلى المركز بصرف الزيادة، والاحتفاظ بصورة من قرار الإيفاد.\n- عند الرفض، يُرفع التظلم الإداري ثم الدعوى أمام القضاء الإداري في المواعيد القانونية.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 1,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Agricultural Research Center subject to Universities Law",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention that the Agricultural Research Center is subject to the provisions of the Universities Organization Law and its executive regulations in matters not covered by a special text. The note references 'القانون رقم 84 لسنة 2012' but does not explicitly state that the Agricultural Research Center falls under the Universities Organization Law and its executive regulations as a supplementary framework. This specific legal characterization — which is essential to establishing the legal basis for applying university law benefits to agricultural research staff — is entirely absent from the advice note."
+    },
+    {
+     "id": "C-002",
+     "title": "Research staff enjoy same benefits as teaching staff",
+     "verdict": "fail",
+     "reasoning": "The agent's note discusses whether Dr. Sami is entitled to a university allowance increase during a secondment, analyzing conditions related to full-time work and secondment rules. However, the note never states that members of the research staff at the Agricultural Research Center enjoy all the benefits and advantages prescribed for university teaching staff members. This specific legal principle — which would be a key basis for the entitlement claim — is entirely absent from the analysis."
+    },
+    {
+     "id": "C-003",
+     "title": "Full dedication condition for university allowance increase",
+     "verdict": "pass",
+     "reasoning": "The note explicitly acknowledges in point 1 of the analysis section that the condition for eligibility mentioned by the client is full dedication to work with a minimum of four days per week ('شرط الاستحقاق الذي ذكره العميل هو التفرغ للعمل بحد أدنى أربعة أيام أسبوعيًا'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Exception: full salary retained during scientific mission",
+     "verdict": "fail",
+     "reasoning": "The note does not state that the legislator explicitly preserved the right of the teaching/research staff member to receive his full salary throughout the duration of a temporary scientific mission, overriding the dedication condition. Instead, the agent only makes a general inference that the mission counts as official work and that rights should continue 'unless the law or regulation states otherwise.' The agent explicitly acknowledges uncertainty about the relevant law (Law No. 84 of 2012) and the raise decision, and does not cite any explicit legislative provision preserving full salary during a scientific mission that overrides the dedication condition."
+    },
+    {
+     "id": "C-005",
+     "title": "Mission duration and renewal condition",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention that the scientific mission is for one year, renewable once in cases of extreme necessity (ضرورة قصوى), provided it does not disrupt the work of the department or faculty. The note discusses the mission in general terms but never specifies the duration or renewal conditions."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 1,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Agricultural Research Center subject to Universities Law",
+     "verdict": "fail",
+     "reasoning": "The note does not state that the Agricultural Research Center is subject to the provisions of the Universities Organization Law and its executive regulations in matters not covered by a special text. The note discusses general principles about secondment and entitlements but never explicitly establishes the legal relationship between the Agricultural Research Center and the Universities Organization Law."
+    },
+    {
+     "id": "C-002",
+     "title": "Research staff enjoy same benefits as teaching staff",
+     "verdict": "fail",
+     "reasoning": "The note does not state that members of the research staff at the Agricultural Research Center enjoy all the benefits and advantages prescribed for university teaching staff members. This specific legal principle, which is a key provision relevant to the scenario, is entirely absent from the advice note."
+    },
+    {
+     "id": "C-003",
+     "title": "Full dedication condition for university allowance increase",
+     "verdict": "pass",
+     "reasoning": "The note explicitly acknowledges in point 1 of the analysis that the condition for eligibility is full dedication (التفرغ) with a minimum of four days per week ('شرط الاستحقاق الذي ذكره العميل هو التفرغ للعمل بحد أدنى أربعة أيام أسبوعيًا'). This satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Exception: full salary retained during scientific mission",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the legislator explicitly preserved the right of the teaching/research staff member to receive his full salary throughout the duration of a temporary scientific mission, overriding the dedication condition. The agent's note does not make this explicit statement. Instead, it hedges by saying it cannot confirm the text of the law, does not know if the law excluded the case of scientific missions, and treats the continuation of salary/benefits as a general principle rather than an explicit legislative provision. The note fails to assert that the legislator explicitly preserved this right."
+    },
+    {
+     "id": "C-005",
+     "title": "Mission duration and renewal condition",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention that the scientific mission is for one year, renewable once in cases of extreme necessity (ضرورة قصوى), provided it does not disrupt the work of the department or faculty. None of these specific details appear in the advice note."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/application-of-university-law-benefits-to-agricultural-research-staff",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/application-of-university-law-benefits-to-agricultural-research-staff",
+  "scored_at": "2026-11-22T19:31:46.158960+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/5 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Agricultural Research Center subject to Universities Law",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention that the Agricultural Research Center is subject to the provisions of the Universities Organization Law and its executive regulations in matters not covered by a special text. The note references 'القانون رقم 84 لسنة 2012' but does not explicitly state that the Agricultural Research Center falls under the Universities Organization Law and its executive regulations as a supplementary framework. This specific legal characterization — which is essential to establishing the legal basis for applying university law benefits to agricultural research staff — is entirely absent from the advice note."
+     },
+     {
+      "id": "C-002",
+      "title": "Research staff enjoy same benefits as teaching staff",
+      "verdict": "fail",
+      "reasoning": "The agent's note discusses whether Dr. Sami is entitled to a university allowance increase during a secondment, analyzing conditions related to full-time work and secondment rules. However, the note never states that members of the research staff at the Agricultural Research Center enjoy all the benefits and advantages prescribed for university teaching staff members. This specific legal principle — which would be a key basis for the entitlement claim — is entirely absent from the analysis."
+     },
+     {
+      "id": "C-003",
+      "title": "Full dedication condition for university allowance increase",
+      "verdict": "pass",
+      "reasoning": "The note explicitly acknowledges in point 1 of the analysis section that the condition for eligibility mentioned by the client is full dedication to work with a minimum of four days per week ('شرط الاستحقاق الذي ذكره العميل هو التفرغ للعمل بحد أدنى أربعة أيام أسبوعيًا'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Exception: full salary retained during scientific mission",
+      "verdict": "fail",
+      "reasoning": "The note does not state that the legislator explicitly preserved the right of the teaching/research staff member to receive his full salary throughout the duration of a temporary scientific mission, overriding the dedication condition. Instead, the agent only makes a general inference that the mission counts as official work and that rights should continue 'unless the law or regulation states otherwise.' The agent explicitly acknowledges uncertainty about the relevant law (Law No. 84 of 2012) and the raise decision, and does not cite any explicit legislative provision preserving full salary during a scientific mission that overrides the dedication condition."
+     },
+     {
+      "id": "C-005",
+      "title": "Mission duration and renewal condition",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention that the scientific mission is for one year, renewable once in cases of extreme necessity (ضرورة قصوى), provided it does not disrupt the work of the department or faculty. The note discusses the mission in general terms but never specifies the duration or renewal conditions."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/application-of-university-law-benefits-to-agricultural-research-staff",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/application-of-university-law-benefits-to-agricultural-research-staff",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:27:34.954201+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/5 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Agricultural Research Center subject to Universities Law",
+      "verdict": "fail",
+      "reasoning": "The note does not state that the Agricultural Research Center is subject to the provisions of the Universities Organization Law and its executive regulations in matters not covered by a special text. The note discusses general principles about secondment and entitlements but never explicitly establishes the legal relationship between the Agricultural Research Center and the Universities Organization Law."
+     },
+     {
+      "id": "C-002",
+      "title": "Research staff enjoy same benefits as teaching staff",
+      "verdict": "fail",
+      "reasoning": "The note does not state that members of the research staff at the Agricultural Research Center enjoy all the benefits and advantages prescribed for university teaching staff members. This specific legal principle, which is a key provision relevant to the scenario, is entirely absent from the advice note."
+     },
+     {
+      "id": "C-003",
+      "title": "Full dedication condition for university allowance increase",
+      "verdict": "pass",
+      "reasoning": "The note explicitly acknowledges in point 1 of the analysis that the condition for eligibility is full dedication (التفرغ) with a minimum of four days per week ('شرط الاستحقاق الذي ذكره العميل هو التفرغ للعمل بحد أدنى أربعة أيام أسبوعيًا'). This satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Exception: full salary retained during scientific mission",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the legislator explicitly preserved the right of the teaching/research staff member to receive his full salary throughout the duration of a temporary scientific mission, overriding the dedication condition. The agent's note does not make this explicit statement. Instead, it hedges by saying it cannot confirm the text of the law, does not know if the law excluded the case of scientific missions, and treats the continuation of salary/benefits as a general principle rather than an explicit legislative provision. The note fails to assert that the legislator explicitly preserved this right."
+     },
+     {
+      "id": "C-005",
+      "title": "Mission duration and renewal condition",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention that the scientific mission is for one year, renewable once in cases of extreme necessity (ضرورة قصوى), provided it does not disrupt the work of the department or faculty. None of these specific details appear in the advice note."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/application-of-university-law-benefits-to-agricultural-research-staff",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/application-of-university-law-benefits-to-agricultural-research-staff",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:31:46.158491+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.2,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

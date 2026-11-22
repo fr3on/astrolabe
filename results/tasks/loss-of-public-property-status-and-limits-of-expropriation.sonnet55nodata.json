@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: إعادة تخصيص أراضٍ نُزعت ملكيتها لغرض آخر\n\n## تنبيه\nلا توجد نصوص مرفقة، والمذكرة مبنية على معرفتي. لا أجزم برقم مادة بعينها. أذكر المبادئ العامة فقط.\n\n## الخلاصة\nلا يحق للوزارة إعادة التخصيص دون قيد. نزع الملكية استثناء من حماية الملكية الخاصة، ولا يصح إلا للمنفعة العامة المحددة في قرار النزع، وأي تغيير للغرض له ضوابط وإجراءات.\n\n## التحليل\n- الدستور المصري يحمي الملكية الخاصة، ولا يُنزع منها إلا للمنفعة العامة ومقابل تعويض عادل. وقانون نزع الملكية للمنفعة العامة (رقم 577 لسنة 1954 الذي كان سارياً عند قرار 1972، ثم القانون رقم 10 لسنة 1990) يربط النزع بمشروع محدد ذي نفع عام.\n- القرار الصادر في 1972 حدد الغرض: إنشاء مجمعات تنظيم الإنتاج الزراعي. والأصل أن يُستخدم العقار في هذا الغرض. استخدامه لغرض مختلف يثير مسألة الانحراف عن الغاية التي نُزعت الملكية من أجلها (عيب الانحراف بالسلطة أو مخالفة قرار النزع).\n- أذكر من القانون 10 لسنة 1990 أن هناك أحكامًا تتيح تغيير الغرض بقرار من جهة مختصة (رئيس مجلس الوزراء فيما أعلم)، وأخرى تتيح للملاك السابقين طلب استرداد العقار إذا لم يُستخدم في الغرض خلال مدة معينة. لا أحفظ المواد ولا المدد ولا مدى انطباقها على نزع سابق على ذلك القانون، فلا أجزم بها.\n- كون المشروع الإسكاني الاجتماعي ذا نفع عام لا يكفي وحده. المطلوب قرار مستوفٍ للشكل والاختصاص بتغيير الغرض.\n\n## التوصية\n- تُراجع صحيفة قرار 1972 وما لحقه من قرارات تخصيص.\n- يُستصدر قرار بتغيير الغرض من الجهة المختصة، ويُتحقق من مدى وجود حق استرداد للملاك السابقين.\n- يُراجع النص الفعلي للقانون قبل المضي، وتُدرس مخاطر الطعن بالإلغاء.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public property loses status only upon purpose termination",
+     "verdict": "fail",
+     "reasoning": "The note discusses that the expropriation decision from 1972 specified a particular purpose (agricultural production complexes), and that using the property for a different purpose raises issues of deviation from the purpose for which ownership was expropriated. However, the criterion specifically requires the note to state that public property status is lost *only upon termination of the specific purpose* for which the property was expropriated. The agent's note focuses on the procedural requirements for changing the purpose (needing a new decision from competent authority) and the risk of abuse of power, but does not explicitly state the principle that public property status persists until the specific purpose is terminated. The agent instead frames it as a procedural/authorization issue rather than articulating the substantive legal principle about when public property status is lost."
+    },
+    {
+     "id": "C-002",
+     "title": "State regains discretion after purpose ends",
+     "verdict": "fail",
+     "reasoning": "The agent's output discusses the need for a formal decision to change the purpose of expropriated land and warns about deviation from the original purpose. However, it does not state the principle that once the original public purpose ends, the State regains its general discretionary authority to end the public property status or reassign it to another public purpose according to general rules. Instead, the note emphasizes procedural requirements and restrictions, without affirming this fundamental principle of discretionary authority post-purpose."
+    },
+    {
+     "id": "C-003",
+     "title": "Administration must respect original expropriation purpose",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that expropriation is linked to a specific project of public benefit, that the 1972 decision specified the purpose (agricultural production complexes), and that using the property for a different purpose raises the issue of deviation from the purpose for which ownership was expropriated ('عيب الانحراف بالسلطة أو مخالفة قرار النزع'). It further states that the fact that the new housing project is of public benefit is not sufficient on its own, and that a proper decision changing the purpose is required. This clearly conveys that the administrative authority must respect the original expropriation purpose and must not exceed it to achieve another purpose."
+    },
+    {
+     "id": "C-004",
+     "title": "Deviation to another purpose is a violation even if public benefit",
+     "verdict": "fail",
+     "reasoning": "The note does state that using the property for a different purpose raises issues of 'deviation from the purpose for which the property was expropriated' (عيب الانحراف بالسلطة أو مخالفة قرار النزع), and explicitly states that 'the fact that the social housing project serves public benefit is not sufficient on its own.' However, the criterion requires the note to characterize redirecting land to a different purpose (even one serving public benefit) as a 'flagrant violation' (مخالفة صريحة) of expropriation rules. The note does not use the term 'مخالفة صريحة' nor does it characterize the action as a flagrant violation — instead it frames it as raising issues and requiring proper procedures, which is a softer characterization than what the criterion demands."
+    },
+    {
+     "id": "C-005",
+     "title": "Expropriation is an exception limited to defined boundaries",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that expropriation is an exception from the protection of private property ('نزع الملكية استثناء من حماية الملكية الخاصة') and that it is only valid for the specific public benefit defined in the expropriation decision ('ولا يصح إلا للمنفعة العامة المحددة في قرار النزع'). This directly satisfies the criterion that expropriation for public benefit was established only as an exception within specific limits that must not be exceeded."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public property loses status only upon purpose termination",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that property expropriated for a specific public purpose does not lose its public property status except upon the termination of that specific purpose. The agent's note discusses that expropriation is tied to a specific public purpose and that changing the purpose requires proper procedures, and that using it for a different purpose raises issues of deviation from the stated purpose. However, the note does not explicitly state the principle that public property loses its status only upon the termination of the specific purpose for which it was expropriated. The note focuses on the procedural requirements for changing purpose and the rights of former owners, but does not articulate the specific legal principle about when public property status is lost."
+    },
+    {
+     "id": "C-002",
+     "title": "State regains discretion after purpose ends",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that once the original purpose ends, the State regains its discretionary authority to end the public property status or reassign it to another public purpose according to general rules. The agent's note does not make this point. Instead, it focuses on the constraints on changing the purpose and the need for a proper decision from the competent authority, as well as the former owners' potential right of recovery. It does not articulate the principle that the State regains discretionary authority over the property once the original public purpose has ended."
+    },
+    {
+     "id": "C-003",
+     "title": "Administration must respect original expropriation purpose",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that expropriation is tied to a specific public purpose defined in the expropriation decision, and that using the property for a different purpose raises the issue of deviation from the purpose for which the property was expropriated ('الانحراف عن الغاية التي نُزعت الملكية من أجلها'). It also states that the original purpose was agricultural production complexes and that changing to a different purpose requires proper procedures. This satisfies the criterion that the administrative authority must respect the original expropriation purpose and must not exceed it to achieve another purpose."
+    },
+    {
+     "id": "C-004",
+     "title": "Deviation to another purpose is a violation even if public benefit",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that redirecting the land to a different purpose, even one serving public benefit, constitutes a 'flagrant violation' (مخالفة صريحة) of expropriation rules. The agent's note does address the issue, stating that using the property for a different purpose raises concerns about 'الانحراف عن الغاية' (deviation from purpose) and 'عيب الانحراف بالسلطة أو مخالفة قرار النزع'. It also explicitly states 'كون المشروع الإسكاني الاجتماعي ذا نفع عام لا يكفي وحده' (the fact that the social housing project serves public benefit is not sufficient on its own). However, the note does not use the specific language of 'مخالفة صريحة' (flagrant violation) - it frames the issue more cautiously as raising concerns ('يثير مسألة') rather than definitively stating it constitutes a flagrant violation. The criterion specifically requires the note to state this constitutes a 'flagrant violation' of expropriation rules, and the agent's language is softer and more equivocal."
+    },
+    {
+     "id": "C-005",
+     "title": "Expropriation is an exception limited to defined boundaries",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'نزع الملكية استثناء من حماية الملكية الخاصة، ولا يصح إلا للمنفعة العامة المحددة في قرار النزع' (Expropriation is an exception to the protection of private property, and is only valid for the public benefit specified in the expropriation decision). It also states that any change of purpose has controls and procedures ('أي تغيير للغرض له ضوابط وإجراءات'). This clearly conveys that expropriation for public benefit is established only as an exception within specific limits that must not be exceeded."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/loss-of-public-property-status-and-limits-of-expropriation",
+  "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+  "scored_at": "2026-11-22T19:52:11.401528+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public property loses status only upon purpose termination",
+      "verdict": "fail",
+      "reasoning": "The note discusses that the expropriation decision from 1972 specified a particular purpose (agricultural production complexes), and that using the property for a different purpose raises issues of deviation from the purpose for which ownership was expropriated. However, the criterion specifically requires the note to state that public property status is lost *only upon termination of the specific purpose* for which the property was expropriated. The agent's note focuses on the procedural requirements for changing the purpose (needing a new decision from competent authority) and the risk of abuse of power, but does not explicitly state the principle that public property status persists until the specific purpose is terminated. The agent instead frames it as a procedural/authorization issue rather than articulating the substantive legal principle about when public property status is lost."
+     },
+     {
+      "id": "C-002",
+      "title": "State regains discretion after purpose ends",
+      "verdict": "fail",
+      "reasoning": "The agent's output discusses the need for a formal decision to change the purpose of expropriated land and warns about deviation from the original purpose. However, it does not state the principle that once the original public purpose ends, the State regains its general discretionary authority to end the public property status or reassign it to another public purpose according to general rules. Instead, the note emphasizes procedural requirements and restrictions, without affirming this fundamental principle of discretionary authority post-purpose."
+     },
+     {
+      "id": "C-003",
+      "title": "Administration must respect original expropriation purpose",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that expropriation is linked to a specific project of public benefit, that the 1972 decision specified the purpose (agricultural production complexes), and that using the property for a different purpose raises the issue of deviation from the purpose for which ownership was expropriated ('عيب الانحراف بالسلطة أو مخالفة قرار النزع'). It further states that the fact that the new housing project is of public benefit is not sufficient on its own, and that a proper decision changing the purpose is required. This clearly conveys that the administrative authority must respect the original expropriation purpose and must not exceed it to achieve another purpose."
+     },
+     {
+      "id": "C-004",
+      "title": "Deviation to another purpose is a violation even if public benefit",
+      "verdict": "fail",
+      "reasoning": "The note does state that using the property for a different purpose raises issues of 'deviation from the purpose for which the property was expropriated' (عيب الانحراف بالسلطة أو مخالفة قرار النزع), and explicitly states that 'the fact that the social housing project serves public benefit is not sufficient on its own.' However, the criterion requires the note to characterize redirecting land to a different purpose (even one serving public benefit) as a 'flagrant violation' (مخالفة صريحة) of expropriation rules. The note does not use the term 'مخالفة صريحة' nor does it characterize the action as a flagrant violation — instead it frames it as raising issues and requiring proper procedures, which is a softer characterization than what the criterion demands."
+     },
+     {
+      "id": "C-005",
+      "title": "Expropriation is an exception limited to defined boundaries",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that expropriation is an exception from the protection of private property ('نزع الملكية استثناء من حماية الملكية الخاصة') and that it is only valid for the specific public benefit defined in the expropriation decision ('ولا يصح إلا للمنفعة العامة المحددة في قرار النزع'). This directly satisfies the criterion that expropriation for public benefit was established only as an exception within specific limits that must not be exceeded."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/loss-of-public-property-status-and-limits-of-expropriation",
+    "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:50:20.007728+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public property loses status only upon purpose termination",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that property expropriated for a specific public purpose does not lose its public property status except upon the termination of that specific purpose. The agent's note discusses that expropriation is tied to a specific public purpose and that changing the purpose requires proper procedures, and that using it for a different purpose raises issues of deviation from the stated purpose. However, the note does not explicitly state the principle that public property loses its status only upon the termination of the specific purpose for which it was expropriated. The note focuses on the procedural requirements for changing purpose and the rights of former owners, but does not articulate the specific legal principle about when public property status is lost."
+     },
+     {
+      "id": "C-002",
+      "title": "State regains discretion after purpose ends",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that once the original purpose ends, the State regains its discretionary authority to end the public property status or reassign it to another public purpose according to general rules. The agent's note does not make this point. Instead, it focuses on the constraints on changing the purpose and the need for a proper decision from the competent authority, as well as the former owners' potential right of recovery. It does not articulate the principle that the State regains discretionary authority over the property once the original public purpose has ended."
+     },
+     {
+      "id": "C-003",
+      "title": "Administration must respect original expropriation purpose",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that expropriation is tied to a specific public purpose defined in the expropriation decision, and that using the property for a different purpose raises the issue of deviation from the purpose for which the property was expropriated ('الانحراف عن الغاية التي نُزعت الملكية من أجلها'). It also states that the original purpose was agricultural production complexes and that changing to a different purpose requires proper procedures. This satisfies the criterion that the administrative authority must respect the original expropriation purpose and must not exceed it to achieve another purpose."
+     },
+     {
+      "id": "C-004",
+      "title": "Deviation to another purpose is a violation even if public benefit",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that redirecting the land to a different purpose, even one serving public benefit, constitutes a 'flagrant violation' (مخالفة صريحة) of expropriation rules. The agent's note does address the issue, stating that using the property for a different purpose raises concerns about 'الانحراف عن الغاية' (deviation from purpose) and 'عيب الانحراف بالسلطة أو مخالفة قرار النزع'. It also explicitly states 'كون المشروع الإسكاني الاجتماعي ذا نفع عام لا يكفي وحده' (the fact that the social housing project serves public benefit is not sufficient on its own). However, the note does not use the specific language of 'مخالفة صريحة' (flagrant violation) - it frames the issue more cautiously as raising concerns ('يثير مسألة') rather than definitively stating it constitutes a flagrant violation. The criterion specifically requires the note to state this constitutes a 'flagrant violation' of expropriation rules, and the agent's language is softer and more equivocal."
+     },
+     {
+      "id": "C-005",
+      "title": "Expropriation is an exception limited to defined boundaries",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'نزع الملكية استثناء من حماية الملكية الخاصة، ولا يصح إلا للمنفعة العامة المحددة في قرار النزع' (Expropriation is an exception to the protection of private property, and is only valid for the public benefit specified in the expropriation decision). It also states that any change of purpose has controls and procedures ('أي تغيير للغرض له ضوابط وإجراءات'). This clearly conveys that expropriation for public benefit is established only as an exception within specific limits that must not be exceeded."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/loss-of-public-property-status-and-limits-of-expropriation",
+    "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:52:11.401147+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.4,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

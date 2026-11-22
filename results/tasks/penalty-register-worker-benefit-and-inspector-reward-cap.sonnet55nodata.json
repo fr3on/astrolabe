@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: غرامات العمال وحق مفتشة العمل في مكافأة\n\n**تنبيه:** لم تُحدَّد الدولة في الوقائع، وتشير الصياغة إلى نظام العمل السعودي. لا أستحضر أرقام المواد بدقة، وما يرد أدناه مبادئ عامة يجب مطابقتها على النص النافذ.\n\n## الخلاصة\n- لا يجوز لصاحب العمل توقيع غرامة إلا بمخالفة منصوص عليها في لائحة تنظيم العمل المعتمدة، وبعد التحقيق مع العامل وإبلاغه، وضمن الحد الأقصى النظامي للغرامة، ثم تسجيلها في سجل خاص.\n- لا يجوز له أن يأخذ حصيلة الغرامات لنفسه. تُخصَّص الحصيلة لأغراض اجتماعية أو خدمية للعمال بحسب ما ينص النظام.\n- لا أرى حقاً قانونياً لسارة في مكافأة، لأن الكشف عن المخالفات من صميم عملها.\n\n## الإجراءات الصحيحة على صاحب العمل\n1. أن يكون الجزاء منصوصاً عليه في لائحة تنظيم العمل المعتمدة. لا جزاء بلا نص.\n2. أن يُبلَّغ العامل بالمخالفة المنسوبة إليه، وأن يُحقَّق معه ويُسمع دفاعه كتابةً، ثم يصدر القرار مسبباً.\n3. أن تكون الغرامة متناسبة، وألا تتجاوز الحد الأقصى المقرر نظاماً للمخالفة الواحدة وللشهر الواحد (يتعلق بأجر أيام محددة). لا أجزم برقم الحد.\n4. أن تُقيَّد الغرامة في سجل خاص يبين اسم العامل والمخالفة ومقدار الغرامة وتاريخها.\n5. أن تُصرف حصيلة الغرامات في الوجوه التي يحددها النظام لمصلحة العمال. وعند عدم وجود لجنة عمالية تتولى الجهة المختصة أو ما تحدده اللائحة تحديد وجه الصرف، ولا يغني غياب اللجنة صاحبَ العمل عن الالتزام.\n\n## تكييف تصرف صاحب العمل\nتوقيع الغرامات بلا تسجيل مخالفة لقواعد الجزاءات. وأخذه الحصيلة لنفسه خصم غير مشروع من أجر العامل، ويُحتمل أن يرقى إلى استيلاء على مال الغير أو أكل لأموال العمال بالباطل. وهذا يستوجب عقوبة نظامية ورد المبالغ للعمال أو للجهة المستحقة. وللعمال المطالبة بالمبالغ المخصومة.\n\n## مكافأة سارة\n- المفتشة موظفة عامة، والتفتيش والإبلاغ عن المخالفات واجب وظيفي، فلا يقابله أجر إضافي بنص عام.\n- لا أعلم نصاً في نظام العمل يمنح المفتش مكافأة على ضبط المخالفات. قد تكون هناك حوافز إدارية تقديرية في لوائح الجهة، فينبغي لسارة الرجوع إلى جهة عملها. وإن كان في الدولة نظام لمكافأة المبلّغين فيُنظر في شروطه.\n- عليها أن تحرر محضر ضبط بالمخالفة، وأن ترفعه للجهة المختصة.\n\n## توصية\nتحرير محضر مخالفة، وطلب السجلات، والمطالبة برد المبالغ، وإحالة شبهة الاستيلاء إلى الجهة المختصة، وعدم افتراض استحقاق أي مكافأة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 1,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Penalty Register Requirement",
+     "verdict": "fail",
+     "reasoning": "The agent's output states that penalties must be recorded in a special register (سجل خاص) that includes: the worker's name (اسم العامل), the violation/reason (المخالفة), the penalty amount (مقدار الغرامة), and the date (تاريخها). However, the criterion requires that the register also include the worker's wage amount (مقدار الأجر). The agent's output does not mention recording the wage amount in the register, so it fails to include all required elements."
+    },
+    {
+     "id": "C-002",
+     "title": "Penalties Must Benefit Workers",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the employer may not take the penalty proceeds for himself ('لا يجوز له أن يأخذ حصيلة الغرامات لنفسه') and that the proceeds must be allocated for social or service purposes benefiting the workers ('تُخصَّص الحصيلة لأغراض اجتماعية أو خدمية للعمال'). Both required elements are present."
+    },
+    {
+     "id": "C-003",
+     "title": "Ministry Approval When No Committee",
+     "verdict": "fail",
+     "reasoning": "The note states that when no labor committee exists, 'الجهة المختصة أو ما تحدده اللائحة' determines the disposal of penalty amounts. It does not specifically state that the Ministry's approval is required in the absence of a labor committee. The criterion requires the note to explicitly mention Ministry approval when no labor committee exists, which is not present in the agent's output."
+    },
+    {
+     "id": "C-004",
+     "title": "Inspector Reward Eligibility",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not state that the Minister may grant a financial reward (مكافأة مالية) to inspection employees who assist in detecting violations. Instead, the agent states there is no legal right for Sara to receive a reward, mentions possible discretionary administrative incentives, and suggests she check with her employer. The specific provision about the Minister's authority to grant financial rewards to inspection employees detecting violations is entirely absent."
+    },
+    {
+     "id": "C-005",
+     "title": "Reward Cap",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention any 25% cap on financial rewards related to collected fines. The note discusses that the inspector (Sara) has no legal right to a reward since disclosure of violations is part of her job duties, but it never states that any financial reward would not exceed 25% of the amount of the collected fine."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 1,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Penalty Register Requirement",
+     "verdict": "fail",
+     "reasoning": "The note states in point 4 that penalties must be recorded in a special register (سجل خاص) including the worker's name, the violation, the penalty amount, and its date. However, it does not mention the worker's wage amount (مقدار أجره), which is one of the required elements in the criterion. The criterion requires all of the following: worker's name, wage amount, penalty amount, reason for the penalty, and date. Since wage amount is missing, the criterion is not fully satisfied."
+    },
+    {
+     "id": "C-002",
+     "title": "Penalties Must Benefit Workers",
+     "verdict": "pass",
+     "reasoning": "The note clearly states both elements: (1) the employer may not take the penalty amounts for himself ('لا يجوز له أن يأخذ حصيلة الغرامات لنفسه'), and (2) the amounts must be allocated for social or service purposes for the workers ('تُخصَّص الحصيلة لأغراض اجتماعية أو خدمية للعمال'). Additionally, in the procedures section, it reiterates that penalty proceeds must be spent in ways determined by law for the benefit of workers ('أن تُصرف حصيلة الغرامات في الوجوه التي يحددها النظام لمصلحة العمال'). Both required elements are present."
+    },
+    {
+     "id": "C-003",
+     "title": "Ministry Approval When No Committee",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that in the absence of a labor committee (لجنة عمالية), the disposal of penalty amounts requires the approval of the Ministry. The agent's note states: 'وعند عدم وجود لجنة عمالية تتولى الجهة المختصة أو ما تحدده اللائحة تحديد وجه الصرف' - this refers to 'الجهة المختصة' (the competent authority) rather than explicitly stating 'the Ministry' (الوزارة). While 'الجهة المختصة' could be interpreted as the Ministry, the criterion specifically requires mention of Ministry approval. The note is vague and hedging rather than clearly stating that Ministry approval is required. This does not satisfy the specific criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Inspector Reward Eligibility",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the Minister may grant a financial reward (مكافأة مالية) to inspection employees who assist in detecting violations of the provisions of the regulation. The agent's note does not mention the Minister's authority to grant such a reward. Instead, it states 'لا أعلم نصاً في نظام العمل يمنح المفتش مكافأة على ضبط المخالفات' and suggests there may be discretionary administrative incentives, but does not specifically identify the Minister's power to grant a financial reward as required by the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Reward Cap",
+     "verdict": "fail",
+     "reasoning": "The note does not state that the financial reward does not exceed 25% of the amount of the collected fine. Instead, the note says the agent does not know of any provision granting inspectors a reward for detecting violations and suggests Sarah check with her employer."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "scored_at": "2026-11-22T20:05:45.479580+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/5 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Penalty Register Requirement",
+      "verdict": "fail",
+      "reasoning": "The agent's output states that penalties must be recorded in a special register (سجل خاص) that includes: the worker's name (اسم العامل), the violation/reason (المخالفة), the penalty amount (مقدار الغرامة), and the date (تاريخها). However, the criterion requires that the register also include the worker's wage amount (مقدار الأجر). The agent's output does not mention recording the wage amount in the register, so it fails to include all required elements."
+     },
+     {
+      "id": "C-002",
+      "title": "Penalties Must Benefit Workers",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the employer may not take the penalty proceeds for himself ('لا يجوز له أن يأخذ حصيلة الغرامات لنفسه') and that the proceeds must be allocated for social or service purposes benefiting the workers ('تُخصَّص الحصيلة لأغراض اجتماعية أو خدمية للعمال'). Both required elements are present."
+     },
+     {
+      "id": "C-003",
+      "title": "Ministry Approval When No Committee",
+      "verdict": "fail",
+      "reasoning": "The note states that when no labor committee exists, 'الجهة المختصة أو ما تحدده اللائحة' determines the disposal of penalty amounts. It does not specifically state that the Ministry's approval is required in the absence of a labor committee. The criterion requires the note to explicitly mention Ministry approval when no labor committee exists, which is not present in the agent's output."
+     },
+     {
+      "id": "C-004",
+      "title": "Inspector Reward Eligibility",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not state that the Minister may grant a financial reward (مكافأة مالية) to inspection employees who assist in detecting violations. Instead, the agent states there is no legal right for Sara to receive a reward, mentions possible discretionary administrative incentives, and suggests she check with her employer. The specific provision about the Minister's authority to grant financial rewards to inspection employees detecting violations is entirely absent."
+     },
+     {
+      "id": "C-005",
+      "title": "Reward Cap",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention any 25% cap on financial rewards related to collected fines. The note discusses that the inspector (Sara) has no legal right to a reward since disclosure of violations is part of her job duties, but it never states that any financial reward would not exceed 25% of the amount of the collected fine."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:58:45.386848+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/5 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Penalty Register Requirement",
+      "verdict": "fail",
+      "reasoning": "The note states in point 4 that penalties must be recorded in a special register (سجل خاص) including the worker's name, the violation, the penalty amount, and its date. However, it does not mention the worker's wage amount (مقدار أجره), which is one of the required elements in the criterion. The criterion requires all of the following: worker's name, wage amount, penalty amount, reason for the penalty, and date. Since wage amount is missing, the criterion is not fully satisfied."
+     },
+     {
+      "id": "C-002",
+      "title": "Penalties Must Benefit Workers",
+      "verdict": "pass",
+      "reasoning": "The note clearly states both elements: (1) the employer may not take the penalty amounts for himself ('لا يجوز له أن يأخذ حصيلة الغرامات لنفسه'), and (2) the amounts must be allocated for social or service purposes for the workers ('تُخصَّص الحصيلة لأغراض اجتماعية أو خدمية للعمال'). Additionally, in the procedures section, it reiterates that penalty proceeds must be spent in ways determined by law for the benefit of workers ('أن تُصرف حصيلة الغرامات في الوجوه التي يحددها النظام لمصلحة العمال'). Both required elements are present."
+     },
+     {
+      "id": "C-003",
+      "title": "Ministry Approval When No Committee",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that in the absence of a labor committee (لجنة عمالية), the disposal of penalty amounts requires the approval of the Ministry. The agent's note states: 'وعند عدم وجود لجنة عمالية تتولى الجهة المختصة أو ما تحدده اللائحة تحديد وجه الصرف' - this refers to 'الجهة المختصة' (the competent authority) rather than explicitly stating 'the Ministry' (الوزارة). While 'الجهة المختصة' could be interpreted as the Ministry, the criterion specifically requires mention of Ministry approval. The note is vague and hedging rather than clearly stating that Ministry approval is required. This does not satisfy the specific criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Inspector Reward Eligibility",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the Minister may grant a financial reward (مكافأة مالية) to inspection employees who assist in detecting violations of the provisions of the regulation. The agent's note does not mention the Minister's authority to grant such a reward. Instead, it states 'لا أعلم نصاً في نظام العمل يمنح المفتش مكافأة على ضبط المخالفات' and suggests there may be discretionary administrative incentives, but does not specifically identify the Minister's power to grant a financial reward as required by the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Reward Cap",
+      "verdict": "fail",
+      "reasoning": "The note does not state that the financial reward does not exceed 25% of the amount of the collected fine. Instead, the note says the agent does not know of any provision granting inspectors a reward for detecting violations and suggests Sarah check with her employer."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:05:45.479205+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.2,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

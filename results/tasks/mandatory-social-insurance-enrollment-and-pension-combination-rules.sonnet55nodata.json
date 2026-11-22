@@ -1,0 +1,221 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: الجمع بين راتب الوظيفة الجديدة والمعاش بعد الإحالة للمعاش للعجز\n\n## الخلاصة\nالأرجح أنه **لا يحق** لأحمد سالم الجمع بين راتبه الكامل ومعاشه المستحق **بسبب العجز**. فإعادة تعيينه براتب كامل تدل على زوال حالة العجز أو تعارض معها، ويؤدي ذلك عادةً إلى **إيقاف معاش العجز** أو إعادة النظر فيه. وهذا استنتاج من مبادئ عامة، ولا أستطيع الجزم بنص المادة الحاكمة.\n\n## السند والمبادئ (بتحفظ)\n1. **قوانين التأمين الاجتماعي** في مصر، وأهمها القانون 79 لسنة 1975 (للوقائع السابقة)، والقانون 148 لسنة 2019، تقوم على أن **معاش العجز** يُقرَّر لمن ثبت عجزه الكامل أو الجزئي عن العمل بقرار لجنة طبية. فهو بدل عن الدخل المفقود بسبب العجز.\n2. للجهة المختصة مراجعة حالة صاحب معاش العجز طبيًا، وإيقاف المعاش أو تعديله إذا زال العجز أو تغيّرت نسبته.\n3. توجد في تلك القوانين قواعد خاصة بحالات **الجمع بين المعاش والأجر**، وتختلف بحسب نوع المعاش (شيخوخة أو عجز أو وفاة) وبحسب ما إذا كان الجمع مع وظيفة حكومية أو خاصة، ولهذه القواعد حدود وإيقافات جزئية. لا أستطيع أن أحدد لك رقم المادة أو قيمة الحد المقرر، ولا أختلق نصًا.\n\n## التطبيق\n- الواقعة أن الإحالة كانت **بسبب العجز** عام 2018، ثم أُعيد تعيينه عام 2019 **براتب كامل** في الجهة نفسها. ويثير ذلك التساؤل التالي: كيف يكون عاجزًا عن العمل ثم يُعاد تعيينه لأداء وظيفة كاملة؟\n- من حيث الأصل، لا يجتمع معاش عجز مع عمل كامل مأجور دون مراجعة، وقد يُطلب من الجهة التأمينية إيقاف المعاش من تاريخ التعيين، وقد يُطالَب برد ما صُرف بعده.\n- ما لم يكن العجز جزئيًا وحدده القرار الطبي بحيث لا يمنع العمل، فقد يسمح القانون بالجمع كليًا أو جزئيًا.\n- وإذا كان قد أُعيد تعيينه مع علم الجهة بكل ظروفه، فلا يعني ذلك سقوط التزامه بإخطار الجهة التأمينية. والتقصير في الإخطار يعرّضه لرد ما صُرف دون وجه حق.\n- أما اشتراكاته في وظيفته الجديدة فتُحتسب لتحسين معاشه المستقبلي أو تسويته عند انتهاء الخدمة.\n\n## التوصية\n1. **الإخطار الفوري** للهيئة القومية للتأمين الاجتماعي (أو الصندوق المختص) بإعادة التعيين.\n2. طلب عرضه على اللجنة الطبية لتحديد حالته.\n3. الاستعداد لاحتمال إيقاف المعاش وخيار الاستمرار في العمل، والتحقق من إمكان الاحتفاظ بحقوقه عن المدة السابقة.\n4. مراجعة النص المنطبق على ما سبق قبل أي تصرف.\n\n> المذكرة مبنية على معرفة عامة دون نصوص مرفقة، ولا أجزم بأرقام المواد أو القيم النظامية، وتجب مراجعتها قبل الاعتماد عليها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 0,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Mandatory Social Insurance Enrollment",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not explicitly state that enrollment in the social insurance system is mandatory, nor does it mention the requirement of a regular employment relationship (علاقة عمل منتظمة) between the insured and the employer. The note discusses pension combination rules, disability pension review, and notification obligations, but never addresses mandatory enrollment as a legal requirement tied to the existence of a regular employment relationship."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction at Source",
+     "verdict": "fail",
+     "reasoning": "The note does not mention that social insurance contributions are deducted at source and remitted by the employer. The only reference to contributions is a brief mention that contributions in the new job will be counted toward improving future pension entitlements, with no discussion of the deduction-at-source mechanism or the employer's remittance obligation."
+    },
+    {
+     "id": "C-003",
+     "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+     "verdict": "fail",
+     "reasoning": "The agent's note does not mention the specific rule that pension suspension applies to reinstatement occurring before the age of 60. It also does not explicitly state that such reinstatement results in the deduction of insurance premiums and the counting of the new period of service as a linked consequence of the suspension trigger. While the note does mention that contributions from the new job will be counted toward future pension entitlements, it fails to connect this to the specific age-60 threshold as the criterion for suspension. The criterion requires both elements: (1) the age-60 threshold as the trigger for suspension, and (2) the deduction of insurance premiums and counting of the new service period."
+    },
+    {
+     "id": "C-004",
+     "title": "Combining Salary and Pension After Age 60",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention the rule that a person reinstated after reaching the age of 60 is entitled to combine their salary and pension. The note focuses entirely on Ahmed's disability pension situation and does not distinguish this from a reinstatement after age 60, nor does it state that such a reinstatement would entitle the person to combine both salary and pension."
+    },
+    {
+     "id": "C-005",
+     "title": "Applicability to Civil Servants in Public Bodies",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that the provisions of the social insurance law apply to civil servants in public bodies (الهيئات العامة). While it references social insurance laws (القانون 79 لسنة 1975 and القانون 148 لسنة 2019) in general terms, it never specifically addresses or confirms their applicability to civil servants working in public bodies (الهيئات العامة). The criterion requires an explicit statement to this effect."
+    },
+    {
+     "id": "C-006",
+     "title": "Work Injury Insurance Funded by Employer",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention work injury insurance (تأمين إصابات العمل) at all, nor does it state that this insurance is funded by monthly contributions paid by the employer. The note focuses on disability pension (معاش العجز) and the rules for combining it with a salary, without addressing the funding mechanism of work injury insurance."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 0,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Mandatory Social Insurance Enrollment",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that enrollment in the social insurance system is mandatory, nor does it mention the requirement of a regular employment relationship (علاقة عمل منتظمة) between the insured and the employer. While the note discusses social insurance contributions and general principles, it fails to address these specific points required by the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction at Source",
+     "verdict": "fail",
+     "reasoning": "The note does not state that social insurance contributions are deducted at source and remitted by the employer. It only briefly mentions that contributions in the new job are counted toward future pension calculation, but does not address the mechanism of deduction at source or employer remittance."
+    },
+    {
+     "id": "C-003",
+     "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to specifically state that pension suspension applies to reinstatement before age 60, and that such reinstatement results in the deduction of insurance premiums and the counting of the new period of service. The agent's note does not mention the age-60 threshold at all. While it vaguely mentions that contributions in the new job would count toward future pension calculation, it does not explicitly tie pension suspension to reinstatement before age 60 or clearly state that reinstatement results in deduction of insurance premiums and counting of the new service period as required."
+    },
+    {
+     "id": "C-004",
+     "title": "Combining Salary and Pension After Age 60",
+     "verdict": "fail",
+     "reasoning": "The note does not mention the age of 60 or the rule that a person reinstated after reaching the age of 60 is entitled to combine salary and pension. It does not distinguish Ahmed's case from such a scenario."
+    },
+    {
+     "id": "C-005",
+     "title": "Applicability to Civil Servants in Public Bodies",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that the provisions of the social insurance law apply to civil servants in public bodies (الهيئات العامة). While it references Egyptian social insurance laws (Law 79/1975 and Law 148/2019) in general terms, it never specifically indicates that these provisions apply to civil servants working in public bodies. The criterion requires an explicit statement about applicability to civil servants in public bodies, which is absent from the output."
+    },
+    {
+     "id": "C-006",
+     "title": "Work Injury Insurance Funded by Employer",
+     "verdict": "fail",
+     "reasoning": "The note does not mention work injury insurance (تأمين إصابات العمل) or that it is funded by monthly contributions paid by the employer. The criterion requires this specific information to be present."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+  "task": "astrolabe-open/egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+  "scored_at": "2026-11-22T19:49:22.272632+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/6 criteria passed.  Missed 6 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Mandatory Social Insurance Enrollment",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not explicitly state that enrollment in the social insurance system is mandatory, nor does it mention the requirement of a regular employment relationship (علاقة عمل منتظمة) between the insured and the employer. The note discusses pension combination rules, disability pension review, and notification obligations, but never addresses mandatory enrollment as a legal requirement tied to the existence of a regular employment relationship."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction at Source",
+      "verdict": "fail",
+      "reasoning": "The note does not mention that social insurance contributions are deducted at source and remitted by the employer. The only reference to contributions is a brief mention that contributions in the new job will be counted toward improving future pension entitlements, with no discussion of the deduction-at-source mechanism or the employer's remittance obligation."
+     },
+     {
+      "id": "C-003",
+      "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+      "verdict": "fail",
+      "reasoning": "The agent's note does not mention the specific rule that pension suspension applies to reinstatement occurring before the age of 60. It also does not explicitly state that such reinstatement results in the deduction of insurance premiums and the counting of the new period of service as a linked consequence of the suspension trigger. While the note does mention that contributions from the new job will be counted toward future pension entitlements, it fails to connect this to the specific age-60 threshold as the criterion for suspension. The criterion requires both elements: (1) the age-60 threshold as the trigger for suspension, and (2) the deduction of insurance premiums and counting of the new service period."
+     },
+     {
+      "id": "C-004",
+      "title": "Combining Salary and Pension After Age 60",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention the rule that a person reinstated after reaching the age of 60 is entitled to combine their salary and pension. The note focuses entirely on Ahmed's disability pension situation and does not distinguish this from a reinstatement after age 60, nor does it state that such a reinstatement would entitle the person to combine both salary and pension."
+     },
+     {
+      "id": "C-005",
+      "title": "Applicability to Civil Servants in Public Bodies",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that the provisions of the social insurance law apply to civil servants in public bodies (الهيئات العامة). While it references social insurance laws (القانون 79 لسنة 1975 and القانون 148 لسنة 2019) in general terms, it never specifically addresses or confirms their applicability to civil servants working in public bodies (الهيئات العامة). The criterion requires an explicit statement to this effect."
+     },
+     {
+      "id": "C-006",
+      "title": "Work Injury Insurance Funded by Employer",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention work injury insurance (تأمين إصابات العمل) at all, nor does it state that this insurance is funded by monthly contributions paid by the employer. The note focuses on disability pension (معاش العجز) and the rules for combining it with a salary, without addressing the funding mechanism of work injury insurance."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "task": "astrolabe-open/egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:46:54.650436+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/6 criteria passed.  Missed 6 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Mandatory Social Insurance Enrollment",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that enrollment in the social insurance system is mandatory, nor does it mention the requirement of a regular employment relationship (علاقة عمل منتظمة) between the insured and the employer. While the note discusses social insurance contributions and general principles, it fails to address these specific points required by the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction at Source",
+      "verdict": "fail",
+      "reasoning": "The note does not state that social insurance contributions are deducted at source and remitted by the employer. It only briefly mentions that contributions in the new job are counted toward future pension calculation, but does not address the mechanism of deduction at source or employer remittance."
+     },
+     {
+      "id": "C-003",
+      "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to specifically state that pension suspension applies to reinstatement before age 60, and that such reinstatement results in the deduction of insurance premiums and the counting of the new period of service. The agent's note does not mention the age-60 threshold at all. While it vaguely mentions that contributions in the new job would count toward future pension calculation, it does not explicitly tie pension suspension to reinstatement before age 60 or clearly state that reinstatement results in deduction of insurance premiums and counting of the new service period as required."
+     },
+     {
+      "id": "C-004",
+      "title": "Combining Salary and Pension After Age 60",
+      "verdict": "fail",
+      "reasoning": "The note does not mention the age of 60 or the rule that a person reinstated after reaching the age of 60 is entitled to combine salary and pension. It does not distinguish Ahmed's case from such a scenario."
+     },
+     {
+      "id": "C-005",
+      "title": "Applicability to Civil Servants in Public Bodies",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that the provisions of the social insurance law apply to civil servants in public bodies (الهيئات العامة). While it references Egyptian social insurance laws (Law 79/1975 and Law 148/2019) in general terms, it never specifically indicates that these provisions apply to civil servants working in public bodies. The criterion requires an explicit statement about applicability to civil servants in public bodies, which is absent from the output."
+     },
+     {
+      "id": "C-006",
+      "title": "Work Injury Insurance Funded by Employer",
+      "verdict": "fail",
+      "reasoning": "The note does not mention work injury insurance (تأمين إصابات العمل) or that it is funded by monthly contributions paid by the employer. The criterion requires this specific information to be present."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "task": "astrolabe-open/egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:49:22.272297+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.0,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: استرداد مبلغ \"نصيب العاملين من الأرباح\" المصروف للدكتور محمود سالم\n\n## الخلاصة\n- **لا يحق** للدكتور محمود الاحتفاظ بالمبلغ بوصفه نصيبًا في الأرباح، لأن الصرف لا سند له بهذه الصفة، فيُلزم برده على أساس **دفع غير المستحق**.\n- يجوز له المطالبة بما يستحقه فعلًا عن أعماله بموجب **عقده** أو بحسب **الإثراء بلا سبب**، في حدود ما يثبت أنه أدّاه، وبالمقاصة مع ما يُلزم برده.\n\n## السند القانوني (القانون المدني المصري، كما أعرفه)\n1. **المادة 181**: من تسلّم على سبيل الوفاء ما ليس مستحقًا له وجب عليه رده. وينطبق ذلك إذا كان الوفاء بدين غير مستحق، أو بغير سبب قانوني.\n2. **المادة 182**: التزامات من تسلّم غير المستحق تُحدد بحسب حسن نيته أو سوء نيته، من حيث الثمار والفوائد وتبعة الهلاك.\n3. **المادتان 179 و180**: الإثراء بلا سبب، ويلتزم المثرى بتعويض المفتقر في حدود ما أثري به، ولا يزيد على ما افتقر به الآخر.\n4. **المادة 185**: تسقط دعوى استرداد غير المستحق بثلاث سنوات من علم من دفع بحقه في الاسترداد، وبخمس عشرة سنة من وقت نشوء الحق.\n5. أما نصيب العاملين من الأرباح فمصدره قانون الشركات والنظام الأساسي للشركة، وهو يوزع على العاملين بالشركة أنفسهم من الأرباح المحققة وبعد اعتماد الجمعية العامة. ولا أستطيع الجزم بتفاصيل نسبة 10% ونصوصها الدقيقة.\n\n## التطبيق\n- الدكتور محمود **مستشار منتدب من جهة أخرى**، أي ليس من العاملين بالشركة أصلًا، فلا يدخل في فئة المستفيدين من نصيب العاملين من الأرباح. كما أن الأرباح لا توزع إلا من أرباح محققة وبقرار من الجهة المختصة، وقد اكتُشف أن الصرف لا يستند إلى توزيع أرباح سليم.\n- **حسن النية**: إن كان قد تسلّم المبلغ معتقدًا استحقاقه دون علمه بالعيب، فيُرد عليه بحسن نية ولا يلزمه رد الثمار والفوائد قبل المطالبة، أما إن علم فيلتزم بها. ولا تكفي الوقائع للجزم بحالته.\n- **أحقيته بوجه آخر**: له أن يتمسك بمقابل خدماته الاستشارية المتفق عليها في العقد إن لم يكن قد استوفاها، وله عند اللزوم الاحتجاج بالإثراء بلا سبب لعمل أفاد الشركة، ولكن ضمن حدود الأقل من الإثراء والافتقار. ويجوز التمسك بالمقاصة بين ما يستحقه وما يلتزم برده.\n- **جهة الانتداب**: إن كانت قواعد الجهة المنتدب منها تحدد مقابل الانتداب ومن يتحمله، فهذا يحدّ مما يمكنه طلبه من الشركة.\n- إن كانت الشركة مملوكة للدولة أو لشخص عام، فقد يُعامل المبلغ كمال عام، وتعلو احتمالات المساءلة وإلزامه بالرد.\n\n## التوصية\n1. الاحتفاظ بالمبلغ على أنه حصة أرباح غير ممكن، والأسلم التفاوض على رده.\n2. جرد ما أدّاه فعلًا من أعمال، وما قبضه، وما بقي مستحقًا له بموجب العقد.\n3. التمسك بالمقاصة وبحسن النية إن توافر، وفحص مدة التقادم.\n\n> المذكرة مبنية على معرفة عامة بلا نصوص مرفقة، فأرقام المواد تحتاج إلى مراجعة قبل الاحتجاج بها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Exclusion from profit share",
+     "verdict": "fail",
+     "reasoning": "The note states that the consultant is excluded from the profit share because he is 'مستشار منتدب من جهة أخرى، أي ليس من العاملين بالشركة أصلًا' (an appointed consultant from another entity, not among the company's employees), and therefore does not fall within the category of beneficiaries of the employees' profit share. However, the criterion specifically requires the note to state exclusion due to absence of 'صفة السهمية' (shareholding status) or a permanent relationship with the company. The note mentions the lack of permanent employment status but frames it in terms of not being an employee rather than explicitly referencing shareholding status (صفة السهمية) or a permanent relationship with the company as the basis for exclusion. The criterion uses 'صفة السهمية' which is a specific legal concept related to shareholding, not merely employment status. The note does not mention shareholding status at all, and while it touches on the lack of permanent relationship implicitly, it does not explicitly state these as the legal grounds for exclusion as required by the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary external expert",
+     "verdict": "pass",
+     "reasoning": "The note states in the 'التطبيق' section: 'الدكتور محمود مستشار منتدب من جهة أخرى، أي ليس من العاملين بالشركة أصلًا' (Dr. Mahmoud is a consultant seconded/delegated from another entity, meaning he is not among the company's own employees). The term 'منتدب' (seconded/delegated) implies a temporary assignment, and 'من جهة أخرى' (from another entity) indicates he belongs to an external employer outside the company. The note also references 'جهة الانتداب' (the seconding entity) and notes that rules of the seconding entity may limit what he can claim from the company. These elements together establish both the temporary nature of his engagement and his affiliation with an external employer."
+    },
+    {
+     "id": "C-003",
+     "title": "Contract conversion theory",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention the theory of contract conversion (نظرية تحول العقد) or conversion of the legal act anywhere in the advice note. The note discusses unjust enrichment (إثراء بلا سبب), undue payment (دفع غير المستحق), and setoff (مقاصة) as potential grounds, but completely omits the contract conversion theory as a basis for retaining the amount under a different legal designation."
+    },
+    {
+     "id": "C-004",
+     "title": "Condition for conversion",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention the legal concept of conversion (تحول العقد) at all, nor does it discuss the conditions for conversion — namely, that the void act must contain the elements of another valid contract, and that the parties' intention toward that other act can be presumed. The note focuses on unjust enrichment, undue payment, and contractual claims, but entirely omits any reference to conversion and its requirements."
+    },
+    {
+     "id": "C-005",
+     "title": "Alternative valid basis",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that Dr. Mahmoud may claim what he is actually owed under his contract or based on unjust enrichment for consultancy services rendered. Specifically, it mentions: 'له أن يتمسك بمقابل خدماته الاستشارية المتفق عليها في العقد إن لم يكن قد استوفاها' (he may invoke the agreed remuneration for his consultancy services under the contract if he has not already received it) and also references unjust enrichment as an alternative basis. This clearly identifies an alternative valid basis (fees/remuneration for consultancy services) distinct from profit sharing."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Exclusion from profit share",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that the consultant is excluded from the 10% profit share because he lacks shareholding status (صفة السهمية) or a permanent relationship with the company. The agent's note does state that the consultant is 'مستشار منتدب من جهة أخرى، أي ليس من العاملين بالشركة أصلًا، فلا يدخل في فئة المستفيدين من نصيب العاملين من الأرباح' — meaning he is not among the company's workers and thus excluded from profit sharing. This addresses the lack of a permanent relationship with the company. However, the note does not specifically mention the absence of 'صفة السهمية' (shareholding status) as a reason for exclusion. The criterion requires mention of either shareholding status OR permanent relationship. Since the note does address the lack of permanent relationship (not being a worker/employee of the company), this satisfies the criterion's alternative condition."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary external expert",
+     "verdict": "fail",
+     "reasoning": "The note states that the consultant is 'مستشار منتدب من جهة أخرى' (a consultant seconded/delegated from another entity), which clearly indicates he belongs to an external employer outside the company. However, regarding the temporary nature of his engagement, the note does not explicitly state that his services are performed on a temporary basis. The word 'منتدب' (seconded/delegated) implies a temporary arrangement, but the criterion requires an explicit statement about the temporary nature of the engagement. The note focuses on him being external but does not clearly state the engagement is temporary."
+    },
+    {
+     "id": "C-003",
+     "title": "Contract conversion theory",
+     "verdict": "fail",
+     "reasoning": "The note does not mention the theory of contract conversion (نظرية تحول العقد) or conversion of the legal act as a possible basis for retaining the amount under a different designation. While the note discusses unjust enrichment and payment of undue amounts, it does not reference the specific legal theory of contract conversion (تحول العقد) as outlined in the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Condition for conversion",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that conversion (تحول العقد) requires two conditions: (1) the existence of the elements of another valid contract within the void act, and (2) the possibility of presuming the parties' intention toward that other act. The agent's output does not discuss the concept of conversion (تحول العقد) at all, nor does it mention these specific conditions. While the note discusses related concepts like unjust enrichment and payment of undue amounts, it never addresses the legal doctrine of conversion of void acts and its requirements."
+    },
+    {
+     "id": "C-005",
+     "title": "Alternative valid basis",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states under 'أحقيته بوجه آخر' that the consultant may claim compensation for his consultancy services under the contract or under unjust enrichment, and may set off such amounts against what he is required to return. This clearly recognizes an alternative valid basis (consultancy fees/remuneration) distinct from profit share."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/exclusion-of-temporary-external-experts-from-profit-share",
+  "task": "astrolabe-open/egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+  "scored_at": "2026-11-22T19:52:47.665540+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Exclusion from profit share",
+      "verdict": "fail",
+      "reasoning": "The note states that the consultant is excluded from the profit share because he is 'مستشار منتدب من جهة أخرى، أي ليس من العاملين بالشركة أصلًا' (an appointed consultant from another entity, not among the company's employees), and therefore does not fall within the category of beneficiaries of the employees' profit share. However, the criterion specifically requires the note to state exclusion due to absence of 'صفة السهمية' (shareholding status) or a permanent relationship with the company. The note mentions the lack of permanent employment status but frames it in terms of not being an employee rather than explicitly referencing shareholding status (صفة السهمية) or a permanent relationship with the company as the basis for exclusion. The criterion uses 'صفة السهمية' which is a specific legal concept related to shareholding, not merely employment status. The note does not mention shareholding status at all, and while it touches on the lack of permanent relationship implicitly, it does not explicitly state these as the legal grounds for exclusion as required by the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary external expert",
+      "verdict": "pass",
+      "reasoning": "The note states in the 'التطبيق' section: 'الدكتور محمود مستشار منتدب من جهة أخرى، أي ليس من العاملين بالشركة أصلًا' (Dr. Mahmoud is a consultant seconded/delegated from another entity, meaning he is not among the company's own employees). The term 'منتدب' (seconded/delegated) implies a temporary assignment, and 'من جهة أخرى' (from another entity) indicates he belongs to an external employer outside the company. The note also references 'جهة الانتداب' (the seconding entity) and notes that rules of the seconding entity may limit what he can claim from the company. These elements together establish both the temporary nature of his engagement and his affiliation with an external employer."
+     },
+     {
+      "id": "C-003",
+      "title": "Contract conversion theory",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention the theory of contract conversion (نظرية تحول العقد) or conversion of the legal act anywhere in the advice note. The note discusses unjust enrichment (إثراء بلا سبب), undue payment (دفع غير المستحق), and setoff (مقاصة) as potential grounds, but completely omits the contract conversion theory as a basis for retaining the amount under a different legal designation."
+     },
+     {
+      "id": "C-004",
+      "title": "Condition for conversion",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention the legal concept of conversion (تحول العقد) at all, nor does it discuss the conditions for conversion — namely, that the void act must contain the elements of another valid contract, and that the parties' intention toward that other act can be presumed. The note focuses on unjust enrichment, undue payment, and contractual claims, but entirely omits any reference to conversion and its requirements."
+     },
+     {
+      "id": "C-005",
+      "title": "Alternative valid basis",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that Dr. Mahmoud may claim what he is actually owed under his contract or based on unjust enrichment for consultancy services rendered. Specifically, it mentions: 'له أن يتمسك بمقابل خدماته الاستشارية المتفق عليها في العقد إن لم يكن قد استوفاها' (he may invoke the agreed remuneration for his consultancy services under the contract if he has not already received it) and also references unjust enrichment as an alternative basis. This clearly identifies an alternative valid basis (fees/remuneration for consultancy services) distinct from profit sharing."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/exclusion-of-temporary-external-experts-from-profit-share",
+    "task": "astrolabe-open/egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:46:21.213315+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Exclusion from profit share",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that the consultant is excluded from the 10% profit share because he lacks shareholding status (صفة السهمية) or a permanent relationship with the company. The agent's note does state that the consultant is 'مستشار منتدب من جهة أخرى، أي ليس من العاملين بالشركة أصلًا، فلا يدخل في فئة المستفيدين من نصيب العاملين من الأرباح' — meaning he is not among the company's workers and thus excluded from profit sharing. This addresses the lack of a permanent relationship with the company. However, the note does not specifically mention the absence of 'صفة السهمية' (shareholding status) as a reason for exclusion. The criterion requires mention of either shareholding status OR permanent relationship. Since the note does address the lack of permanent relationship (not being a worker/employee of the company), this satisfies the criterion's alternative condition."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary external expert",
+      "verdict": "fail",
+      "reasoning": "The note states that the consultant is 'مستشار منتدب من جهة أخرى' (a consultant seconded/delegated from another entity), which clearly indicates he belongs to an external employer outside the company. However, regarding the temporary nature of his engagement, the note does not explicitly state that his services are performed on a temporary basis. The word 'منتدب' (seconded/delegated) implies a temporary arrangement, but the criterion requires an explicit statement about the temporary nature of the engagement. The note focuses on him being external but does not clearly state the engagement is temporary."
+     },
+     {
+      "id": "C-003",
+      "title": "Contract conversion theory",
+      "verdict": "fail",
+      "reasoning": "The note does not mention the theory of contract conversion (نظرية تحول العقد) or conversion of the legal act as a possible basis for retaining the amount under a different designation. While the note discusses unjust enrichment and payment of undue amounts, it does not reference the specific legal theory of contract conversion (تحول العقد) as outlined in the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Condition for conversion",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that conversion (تحول العقد) requires two conditions: (1) the existence of the elements of another valid contract within the void act, and (2) the possibility of presuming the parties' intention toward that other act. The agent's output does not discuss the concept of conversion (تحول العقد) at all, nor does it mention these specific conditions. While the note discusses related concepts like unjust enrichment and payment of undue amounts, it never addresses the legal doctrine of conversion of void acts and its requirements."
+     },
+     {
+      "id": "C-005",
+      "title": "Alternative valid basis",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states under 'أحقيته بوجه آخر' that the consultant may claim compensation for his consultancy services under the contract or under unjust enrichment, and may set off such amounts against what he is required to return. This clearly recognizes an alternative valid basis (consultancy fees/remuneration) distinct from profit share."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/exclusion-of-temporary-external-experts-from-profit-share",
+    "task": "astrolabe-open/egypt-employment-and-labour/exclusion-of-temporary-external-experts-from-profit-share",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:52:47.665196+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.4,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

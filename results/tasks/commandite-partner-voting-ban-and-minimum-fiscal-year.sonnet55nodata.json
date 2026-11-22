@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-company-law/commandite-partner-voting-ban-and-minimum-fiscal-year",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: التصويت على عزل المدير والسنة المالية الأولى في شركة التوصية البسيطة\n\n## الخلاصة\n1. **التصويت على عزل المدير:** الأصل أن الشريك الموصي لا يشارك في إدارة الشركة ولا في اتخاذ قراراتها الإدارية، ومنها تعيين المدير وعزله، وإنما يملك حق الاطلاع والرقابة. لذلك لا يحق لمحمد التصويت على عزل المدير بحسب الأصل، ويعود ذلك إلى المتضامنين.\n2. **السنة المالية الأولى:** مقترح خالد بأن تكون خمسة أشهر فقط من تاريخ القيد في السجل التجاري يحتاج إلى التحقق من الحد الأدنى للسنة المالية الأولى في النظام. أميل إلى أن الأنظمة التجارية الحديثة تجيز سنة مالية أولى أقصر أو أطول من اثني عشر شهرًا ضمن حدود معينة، لكنني غير متأكد من الحد الأدنى أو الأقصى، ولا أذكر رقم المادة.\n\n## أولًا: حق محمد في التصويت على عزل المدير\n- **المبدأ العام:** تقوم شركة التوصية البسيطة على فئتين من الشركاء: متضامنون مسؤولون مسؤولية شخصية وتضامنية عن ديون الشركة، وموصون تقتصر مسؤوليتهم على حصصهم. يتولى المتضامنون الإدارة، ولا يجوز للموصي التدخل في أعمال الإدارة الخارجية، وإلا تحمّل مسؤولية المتضامن عمّا تدخّل فيه (وهذا مبدأ مستقر في فقه الشركات، ولا أجزم برقم المادة).\n- **التطبيق:** عزل المدير عمل إداري. فمحمد، بصفته موصيًا، ليس له حق التصويت في هذه المسألة بحكم النظام، إلا إذا نص عقد التأسيس على إشراكه فيها، وعندئذ يجب مراجعة أثر ذلك على وصفه كموصٍ.\n- **تنبيه:** قد يكون لتعديل عقد الشركة أو حل الشركة أحكام تُشرك الموصين، لكن عزل المدير في الأصل شأن إداري.\n- **ما يحق لمحمد:** الاطلاع على الدفاتر والمركز المالي، وطلب الإيضاحات، وإبداء الرأي غير الملزم، وحضور الاجتماعات إن نص العقد.\n- **توصية:** مراجعة عقد التأسيس أولًا، فهو قد ينظم آلية تعيين المدير وعزله وصلاحيات كل فئة.\n\n## ثانيًا: السنة المالية الأولى بخمسة أشهر\n- **الأصل:** السنة المالية للشركة اثنا عشر شهرًا. وتجيز الأنظمة عادةً أن تبدأ السنة المالية الأولى من تاريخ القيد في السجل التجاري وتنتهي في نهاية السنة المالية المحددة في العقد، فتكون أقصر أو أطول من اثني عشر شهرًا.\n- **عدم اليقين:** لا أتذكر على وجه اليقين هل يضع النظام حدًا أدنى لمدة السنة المالية الأولى أو يمنع تقصيرها، ولا رقم المادة ذات الصلة، ولن أختلق نصًا. يلزم الرجوع إلى نص نظام الشركات والعقد.\n- **التقدير:** إذا كان النظام يجيز السنة الأولى الأقصر، فخمسة أشهر مقبولة من حيث الأصل، بشرط أن يرد ذلك في عقد التأسيس أو يُقرّ وفق الإجراء الصحيح، وأن يكون الغرض مشروعًا (مواءمة نهاية السنة المالية مع التقويم المعتمد مثلًا).\n- **مسألة الصلاحية:** تحديد السنة المالية من مسائل عقد التأسيس، فتعديله يتطلب موافقة الشركاء وفق ما ينص عليه العقد. وقد يحتاج مقترح خالد إلى موافقة الشريكين المتضامنين على الأقل، وربما الجميع إن كان تعديلًا للعقد.\n\n## خطوات مقترحة\n1. مراجعة عقد التأسيس بشأن الإدارة وعزل المدير والسنة المالية.\n2. التحقق من نص نظام الشركات ولائحته في الحد الأدنى للسنة المالية الأولى.\n3. إبلاغ محمد بأن حقه رقابي، وتنظيم طريقة لإبداء رأيه دون تدخل في الإدارة.\n4. توثيق قرار السنة المالية في محضر موقّع.\n\n## تنبيه\nهذه المذكرة مبنية على المبادئ العامة، دون نصوص مرفقة، وما ورد فيها يحتاج إلى مطابقة مع النظام النافذ.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Commandite partner voting ban",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that محمد, as a commandite partner (شريك موصي), does not have the right to vote on the removal of the manager. This is explicitly stated in the summary ('لا يحق لمحمد التصويت على عزل المدير بحسب الأصل') and elaborated in the first section ('عزل المدير عمل إداري. فمحمد، بصفته موصيًا، ليس له حق التصويت في هذه المسألة بحكم النظام')."
+    },
+    {
+     "id": "C-002",
+     "title": "Minimum first fiscal year",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not state that the minimum first fiscal year is six months. Instead, the agent explicitly admits uncertainty about the minimum duration, stating 'لا أتذكر على وجه اليقين هل يضع النظام حدًا أدنى لمدة السنة المالية الأولى' (I don't remember with certainty whether the law sets a minimum for the first fiscal year). The note discusses five months as a possibility but never mentions six months as the minimum requirement."
+    },
+    {
+     "id": "C-003",
+     "title": "Proposal below minimum",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not state that Khalid's proposal of five months is below the minimum permitted period and therefore not acceptable. Instead, the agent expresses uncertainty about whether there is a minimum period, says it cannot recall the relevant article, and tentatively suggests that five months 'may be acceptable in principle' if the law allows shorter first fiscal years. The agent explicitly avoids concluding that the proposal violates a minimum requirement, which is exactly what the criterion requires."
+    },
+    {
+     "id": "C-004",
+     "title": "Commandite partner scope of restriction",
+     "verdict": "pass",
+     "reasoning": "The note states that Mohamed (the commandite partner) has no right to vote on the removal of the manager, as removal is an administrative act belonging to the general partners. However, the criterion requires the note to state that the restriction covers specifically BOTH appointment AND removal matters. The note mentions removal ('عزل المدير') explicitly, but does not clearly state that the restriction also covers appointment ('تعيين المدير') as a specific matter within the scope of the voting ban. While there is a brief mention of 'تعيين المدير وعزله' in a parenthetical context, the analysis focuses only on removal without explicitly addressing appointment as part of the restricted scope."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Commandite partner voting ban",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that محمد, as a commandite partner (شريك موصي), does not have the right to vote on the removal of the manager. Specifically, it says: 'لا يحق لمحمد التصويت على عزل المدير بحسب الأصل' and 'محمد، بصفته موصيًا، ليس له حق التصويت في هذه المسألة بحكم النظام'."
+    },
+    {
+     "id": "C-002",
+     "title": "Minimum first fiscal year",
+     "verdict": "fail",
+     "reasoning": "The note does not state that the minimum first fiscal year is six months. Instead, it explicitly says it is uncertain about the minimum duration and cannot recall the relevant article number. It discusses five months as potentially acceptable but never identifies six months as the minimum."
+    },
+    {
+     "id": "C-003",
+     "title": "Proposal below minimum",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to clearly state that Khalid's five-month proposal is below the minimum permitted period and is therefore not acceptable. The agent's note instead expresses uncertainty, saying it doesn't remember whether there is a minimum period and refuses to fabricate a legal text. It says 'if the system permits a shorter first year, then five months is acceptable in principle.' The note does not state that the proposal falls below the minimum permitted period and is not acceptable."
+    },
+    {
+     "id": "C-004",
+     "title": "Commandite partner scope of restriction",
+     "verdict": "pass",
+     "reasoning": "The note states that the commandite partner (محمد, الشريك الموصي) cannot participate in management decisions, including specifically 'تعيين المدير وعزله' (appointment and removal of the manager). This explicitly covers both appointment and removal as part of the restriction on the commandite partner's voting rights."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/commandite-partner-voting-ban-and-minimum-fiscal-year",
+  "task": "astrolabe-open/saudi-company-law/commandite-partner-voting-ban-and-minimum-fiscal-year",
+  "scored_at": "2026-11-22T19:54:11.626834+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Commandite partner voting ban",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that محمد, as a commandite partner (شريك موصي), does not have the right to vote on the removal of the manager. This is explicitly stated in the summary ('لا يحق لمحمد التصويت على عزل المدير بحسب الأصل') and elaborated in the first section ('عزل المدير عمل إداري. فمحمد، بصفته موصيًا، ليس له حق التصويت في هذه المسألة بحكم النظام')."
+     },
+     {
+      "id": "C-002",
+      "title": "Minimum first fiscal year",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not state that the minimum first fiscal year is six months. Instead, the agent explicitly admits uncertainty about the minimum duration, stating 'لا أتذكر على وجه اليقين هل يضع النظام حدًا أدنى لمدة السنة المالية الأولى' (I don't remember with certainty whether the law sets a minimum for the first fiscal year). The note discusses five months as a possibility but never mentions six months as the minimum requirement."
+     },
+     {
+      "id": "C-003",
+      "title": "Proposal below minimum",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not state that Khalid's proposal of five months is below the minimum permitted period and therefore not acceptable. Instead, the agent expresses uncertainty about whether there is a minimum period, says it cannot recall the relevant article, and tentatively suggests that five months 'may be acceptable in principle' if the law allows shorter first fiscal years. The agent explicitly avoids concluding that the proposal violates a minimum requirement, which is exactly what the criterion requires."
+     },
+     {
+      "id": "C-004",
+      "title": "Commandite partner scope of restriction",
+      "verdict": "pass",
+      "reasoning": "The note states that Mohamed (the commandite partner) has no right to vote on the removal of the manager, as removal is an administrative act belonging to the general partners. However, the criterion requires the note to state that the restriction covers specifically BOTH appointment AND removal matters. The note mentions removal ('عزل المدير') explicitly, but does not clearly state that the restriction also covers appointment ('تعيين المدير') as a specific matter within the scope of the voting ban. While there is a brief mention of 'تعيين المدير وعزله' in a parenthetical context, the analysis focuses only on removal without explicitly addressing appointment as part of the restricted scope."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/commandite-partner-voting-ban-and-minimum-fiscal-year",
+    "task": "astrolabe-open/saudi-company-law/commandite-partner-voting-ban-and-minimum-fiscal-year",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:52:18.397900+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Commandite partner voting ban",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that محمد, as a commandite partner (شريك موصي), does not have the right to vote on the removal of the manager. Specifically, it says: 'لا يحق لمحمد التصويت على عزل المدير بحسب الأصل' and 'محمد، بصفته موصيًا، ليس له حق التصويت في هذه المسألة بحكم النظام'."
+     },
+     {
+      "id": "C-002",
+      "title": "Minimum first fiscal year",
+      "verdict": "fail",
+      "reasoning": "The note does not state that the minimum first fiscal year is six months. Instead, it explicitly says it is uncertain about the minimum duration and cannot recall the relevant article number. It discusses five months as potentially acceptable but never identifies six months as the minimum."
+     },
+     {
+      "id": "C-003",
+      "title": "Proposal below minimum",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to clearly state that Khalid's five-month proposal is below the minimum permitted period and is therefore not acceptable. The agent's note instead expresses uncertainty, saying it doesn't remember whether there is a minimum period and refuses to fabricate a legal text. It says 'if the system permits a shorter first year, then five months is acceptable in principle.' The note does not state that the proposal falls below the minimum permitted period and is not acceptable."
+     },
+     {
+      "id": "C-004",
+      "title": "Commandite partner scope of restriction",
+      "verdict": "pass",
+      "reasoning": "The note states that the commandite partner (محمد, الشريك الموصي) cannot participate in management decisions, including specifically 'تعيين المدير وعزله' (appointment and removal of the manager). This explicitly covers both appointment and removal as part of the restriction on the commandite partner's voting rights."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/commandite-partner-voting-ban-and-minimum-fiscal-year",
+    "task": "astrolabe-open/saudi-company-law/commandite-partner-voting-ban-and-minimum-fiscal-year",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:54:11.626474+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.5,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

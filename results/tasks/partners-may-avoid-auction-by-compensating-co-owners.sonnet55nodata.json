@@ -1,0 +1,149 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-property-and-co-ownership/partners-may-avoid-auction-by-compensating-co-owners",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: قسمة الأرض الزراعية المشتركة\n\n## الخلاصة\nلا، لا تأمر المحكمة حتمًا بالبيع بالمزاد. البيع هو الملجأ الأخير إذا تعذّرت القسمة العينية. وبإمكان خالد وعمر تفادي بيع الأرض كلها بشراء حصة سارة.\n\n## التحليل\n1. **المبدأ:** لكل شريك في المال الشائع أن يطلب القسمة، ولا يُجبر أحد على البقاء في الشيوع. الأصل القسمة عينًا. فإذا كانت القسمة العينية تُنقص قيمة المال نقصًا كبيرًا أو لا تتحقق بها العدالة، جاز للمحكمة أن تأمر ببيعه بالمزاد وتوزّع الثمن بين الشركاء بحسب حصصهم. وهذا ما قررته القواعد العامة في الفقه والأنظمة المدنية، ولا أستشهد برقم مادة محددة لعدم تأكدي منه.\n2. **ليس حتميًا:** بيع الأرض كلها بالمزاد أمر جوازي وبديل أخير. وقبله تُبحث وسائل أخرى، منها أن يشتري بعض الشركاء حصة طالب القسمة.\n3. **ما يستطيعه خالد وعمر:** يعرضان شراء حصة سارة بقيمتها العادلة. وإذا كانت أرضًا قيمتها ثلاثة ملايين وبحصص متساوية فحصة سارة تساوي مليون ريال، ويدفع كل منهما خمسمائة ألف بالتساوي. وإذا قبلت سارة أو قضت المحكمة بذلك، تنتهي الدعوى دون بيع كامل الأرض. ولهما كذلك الاتفاق الودي على قسمة المهايأة أو غيرها.\n4. **أثر قدرة سارة على بيع حصتها:** إن كانت سارة تستطيع بيع حصتها بما لا يقل عن مليون ريال، أي بما لا يقل عن نصيبها لو بيعت الأرض كلها، فلا حاجة إلى بيع الأرض كلها لتحصل على حقها. وهذا يقوّي طلب خالد وعمر ويضعف مبرر البيع الجبري. وتحتاج المحكمة لتأكيد صحة هذا التقدير.\n5. **حق الأولوية:** قد ينص النظام على حق الشركاء في الأفضلية عند بيع الحصة، وأنا غير متأكد من أحكامه ومدته.\n\n## التوصية\n- يقدم خالد وعمر عرضًا رسميًا لشراء حصة سارة بالقيمة العادلة قبل صدور الحكم.\n- يُطلب تقييم الحصة من خبير.\n- يُدفع أمام المحكمة بأن البيع الجبري غير لازم ما دام الشراء ممكنًا.\n\n## تنبيه\nالمذكرة مبنية على المبادئ العامة دون نصوص مرفقة، وأرقام المواد غير مذكورة لعدم التأكد منها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 3,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "No Mandatory Auction When Separate Sale Is Viable",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 4: 'إن كانت سارة تستطيع بيع حصتها بما لا يقل عن مليون ريال، أي بما لا يقل عن نصيبها لو بيعت الأرض كلها، فلا حاجة إلى بيع الأرض كلها لتحصل على حقها. وهذا يقوّي طلب خالد وعمر ويضعف مبرر البيع الجبري.' This directly addresses the criterion: when Sara can sell her share for no less than what she would receive if the whole property were sold together, the partners cannot be compelled to sell at auction. The note satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Partners' Right to Avoid Auction by Compensating",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that Khalid and Omar can avoid the auction by paying Sara the exact shortfall (النقص) that her share suffers as a result of being sold separately (i.e., compensating for the difference between what her share would fetch sold individually versus her proportional share of the whole property sold together). The agent's output instead frames the solution as Khalid and Omar buying Sara's share at fair market value (القيمة العادلة). The note does not mention the concept of compensating Sara specifically for the 'shortfall' or 'deficit' caused by the separate sale of her share — which is the specific legal mechanism described in the criterion. The agent's approach is a general purchase offer, not the specific compensation-for-shortfall mechanism required by the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Court Orders Auction When Division Causes Major Loss",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1: 'فإذا كانت القسمة العينية تُنقص قيمة المال نقصًا كبيرًا أو لا تتحقق بها العدالة، جاز للمحكمة أن تأمر ببيعه بالمزاد وتوزّع الثمن بين الشركاء بحسب حصصهم.' This directly states the general principle that the court orders a sale at auction when physical division results in a major loss in value. The criterion requires the note to state this principle, and it does so clearly."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 3,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "No Mandatory Auction When Separate Sale Is Viable",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that if Sara can sell her share for no less than its value had the entire property been sold as a whole, the partners cannot be compelled to sell at auction. In point 4, the agent states: 'إن كانت سارة تستطيع بيع حصتها بما لا يقل عن مليون ريال، أي بما لا يقل عن نصيبها لو بيعت الأرض كلها، فلا حاجة إلى بيع الأرض كلها لتحصل على حقها. وهذا يقوّي طلب خالد وعمر ويضعف مبرر البيع الجبري.' This says that if Sara can sell her share for no less than what she would receive if the whole property were sold, there is no need to sell the whole property, and this weakens the justification for compulsory auction sale. While the language says it 'strengthens' the partners' position and 'weakens' the justification rather than definitively stating they 'cannot be compelled,' it does not clearly state that the partners are free from compelled auction. The criterion requires a statement that 'the partners cannot be compelled to sell at auction' — the agent's language is softer ('يقوّي' and 'يضعف مبرر') rather than definitive. However, 'فلا حاجة إلى بيع الأرض كلها' (there is no need to sell the entire property) does convey that auction is not required. On balance, the note does communicate the essential point that when Sara can obtain fair value for her share, the forced auction is not necessary, which substantively satisfies the criterion even if the language could be more definitive."
+    },
+    {
+     "id": "C-002",
+     "title": "Partners' Right to Avoid Auction by Compensating",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that Khalid and Omar can avoid the auction by paying the amount of the shortfall (النقص) that Sara's share suffers from being sold separately rather than as part of the whole property. The agent's note discusses buying Sara's share at fair value and mentions that if Sara can sell her share for at least 1 million (her proportional share), there's no need for a full auction. However, the note does not specifically address the concept of compensating Sara for the exact shortfall/deficit (النقص) caused by the separate sale of her share versus the whole property sale. The note talks about buying the share at fair value, not about paying the difference/shortfall between the separate sale value and the proportional value from a whole-property sale. This is a distinct legal mechanism where partners compensate for the specific النقص rather than simply purchasing the share outright."
+    },
+    {
+     "id": "C-003",
+     "title": "Court Orders Auction When Division Causes Major Loss",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1: 'فإذا كانت القسمة العينية تُنقص قيمة المال نقصًا كبيرًا أو لا تتحقق بها العدالة، جاز للمحكمة أن تأمر ببيعه بالمزاد وتوزّع الثمن بين الشركاء بحسب حصصهم.' This clearly articulates that the court orders a sale at auction (مزاد) when physical division (قسمة عينية) results in a major loss (نقص كبير) in value, satisfying the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/partners-may-avoid-auction-by-compensating-co-owners",
+  "task": "astrolabe-open/saudi-property-and-co-ownership/partners-may-avoid-auction-by-compensating-co-owners",
+  "scored_at": "2026-11-22T20:06:46.146438+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/3 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 3,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "No Mandatory Auction When Separate Sale Is Viable",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 4: 'إن كانت سارة تستطيع بيع حصتها بما لا يقل عن مليون ريال، أي بما لا يقل عن نصيبها لو بيعت الأرض كلها، فلا حاجة إلى بيع الأرض كلها لتحصل على حقها. وهذا يقوّي طلب خالد وعمر ويضعف مبرر البيع الجبري.' This directly addresses the criterion: when Sara can sell her share for no less than what she would receive if the whole property were sold together, the partners cannot be compelled to sell at auction. The note satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Partners' Right to Avoid Auction by Compensating",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that Khalid and Omar can avoid the auction by paying Sara the exact shortfall (النقص) that her share suffers as a result of being sold separately (i.e., compensating for the difference between what her share would fetch sold individually versus her proportional share of the whole property sold together). The agent's output instead frames the solution as Khalid and Omar buying Sara's share at fair market value (القيمة العادلة). The note does not mention the concept of compensating Sara specifically for the 'shortfall' or 'deficit' caused by the separate sale of her share — which is the specific legal mechanism described in the criterion. The agent's approach is a general purchase offer, not the specific compensation-for-shortfall mechanism required by the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Court Orders Auction When Division Causes Major Loss",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1: 'فإذا كانت القسمة العينية تُنقص قيمة المال نقصًا كبيرًا أو لا تتحقق بها العدالة، جاز للمحكمة أن تأمر ببيعه بالمزاد وتوزّع الثمن بين الشركاء بحسب حصصهم.' This directly states the general principle that the court orders a sale at auction when physical division results in a major loss in value. The criterion requires the note to state this principle, and it does so clearly."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/partners-may-avoid-auction-by-compensating-co-owners",
+    "task": "astrolabe-open/saudi-property-and-co-ownership/partners-may-avoid-auction-by-compensating-co-owners",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:05:29.499280+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/3 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 3,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "No Mandatory Auction When Separate Sale Is Viable",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that if Sara can sell her share for no less than its value had the entire property been sold as a whole, the partners cannot be compelled to sell at auction. In point 4, the agent states: 'إن كانت سارة تستطيع بيع حصتها بما لا يقل عن مليون ريال، أي بما لا يقل عن نصيبها لو بيعت الأرض كلها، فلا حاجة إلى بيع الأرض كلها لتحصل على حقها. وهذا يقوّي طلب خالد وعمر ويضعف مبرر البيع الجبري.' This says that if Sara can sell her share for no less than what she would receive if the whole property were sold, there is no need to sell the whole property, and this weakens the justification for compulsory auction sale. While the language says it 'strengthens' the partners' position and 'weakens' the justification rather than definitively stating they 'cannot be compelled,' it does not clearly state that the partners are free from compelled auction. The criterion requires a statement that 'the partners cannot be compelled to sell at auction' — the agent's language is softer ('يقوّي' and 'يضعف مبرر') rather than definitive. However, 'فلا حاجة إلى بيع الأرض كلها' (there is no need to sell the entire property) does convey that auction is not required. On balance, the note does communicate the essential point that when Sara can obtain fair value for her share, the forced auction is not necessary, which substantively satisfies the criterion even if the language could be more definitive."
+     },
+     {
+      "id": "C-002",
+      "title": "Partners' Right to Avoid Auction by Compensating",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that Khalid and Omar can avoid the auction by paying the amount of the shortfall (النقص) that Sara's share suffers from being sold separately rather than as part of the whole property. The agent's note discusses buying Sara's share at fair value and mentions that if Sara can sell her share for at least 1 million (her proportional share), there's no need for a full auction. However, the note does not specifically address the concept of compensating Sara for the exact shortfall/deficit (النقص) caused by the separate sale of her share versus the whole property sale. The note talks about buying the share at fair value, not about paying the difference/shortfall between the separate sale value and the proportional value from a whole-property sale. This is a distinct legal mechanism where partners compensate for the specific النقص rather than simply purchasing the share outright."
+     },
+     {
+      "id": "C-003",
+      "title": "Court Orders Auction When Division Causes Major Loss",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1: 'فإذا كانت القسمة العينية تُنقص قيمة المال نقصًا كبيرًا أو لا تتحقق بها العدالة، جاز للمحكمة أن تأمر ببيعه بالمزاد وتوزّع الثمن بين الشركاء بحسب حصصهم.' This clearly articulates that the court orders a sale at auction (مزاد) when physical division (قسمة عينية) results in a major loss (نقص كبير) in value, satisfying the criterion."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/partners-may-avoid-auction-by-compensating-co-owners",
+    "task": "astrolabe-open/saudi-property-and-co-ownership/partners-may-avoid-auction-by-compensating-co-owners",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:06:46.146011+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6666666666666666,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

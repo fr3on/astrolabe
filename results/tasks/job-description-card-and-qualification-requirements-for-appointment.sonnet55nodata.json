@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: تعيين أحمد في وظيفة شاغرة بعد حصوله على مؤهل\n\n## الخلاصة\nلا يحق لأحمد، في الأرجح، التعيين في الوظيفة الشاغرة مباشرة دون الإعلان والامتحان. حصوله على المؤهل أثناء الخدمة لا ينشئ له حقاً تلقائياً في شغل وظيفة تتطلبه.\n\n## التحليل\n1. **الأصل:** يقوم قانون نظام العاملين المدنيين بالدولة (أرجّح أنه القانون رقم 47 لسنة 1978) على أن شغل الوظائف يكون بالإعلان والمسابقة وفق شروط الوظيفة، تحقيقاً للمساواة وتكافؤ الفرص. لا أذكر رقم المادة بدقة، وأرجّح أنها المادة 20 أو ما يجاورها.\n2. **أثر المؤهل الجديد:** حصول العامل على مؤهل أعلى أثناء الخدمة قد يرتب أثراً في تسوية حالته أو في أهليته للترشح. وقد وردت في التشريعات والقرارات المتعاقبة أحكام لتسوية حالات المؤهلات (مثل ما عُرف بقانون تسوية حالات العاملين رقم 73 لسنة 1973)، لكني غير متأكد من انطباقها على وقائعه، ولا أستطيع الجزم بشروطها.\n3. **النتيجة:** وجود شاغر يتطلب المؤهل ووجود المؤهل لدى أحمد يجعله مؤهلاً للتقدم، لا مستحقاً للتعيين دون إجراءات.\n\n## التوصية\n- التقدم للوظيفة عند الإعلان واجتياز الامتحان.\n- السؤال عن إمكان تسوية حالته أو تعديل وصف وظيفته وفق قواعد الوحدة.\n- مراجعة النصوص السارية، فقد تغيّر القانون بتشريعات لاحقة.\n\n## تنبيه\nلا نصوص مرفقة، وأرقام المواد المذكورة غير مؤكدة وتحتاج إلى مراجعة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 0,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Job Description Card Requirement",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention that the vacant position has its duties and occupancy requirements defined in a job description card (بطاقة وصف الوظيفة). The note discusses general procedures for filling vacancies, the effect of obtaining a new qualification, and references to civil service laws, but never confirms or references the concept of a job description card as a requirement for defining the position's duties and occupancy conditions."
+    },
+    {
+     "id": "C-002",
+     "title": "Higher Qualification Must Be Required",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention that the higher qualification must be required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). The note only discusses the vacancy requiring the qualification in general terms ('وجود شاغر يتطلب المؤهل') without specifically referencing the classification and arrangement schedules as the source of this requirement, which is the key legal condition that must be confirmed."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension to Non-Qualification Appointees",
+     "verdict": "fail",
+     "reasoning": "The agent's note does not mention or confirm that the provision applies specifically to employees who were appointed to positions that do not require an academic qualification and who subsequently obtained a qualification during service. The note only discusses Ahmed obtaining a higher qualification during service in general terms, without addressing this specific category of employees (those originally appointed to non-qualification-required positions)."
+    },
+    {
+     "id": "C-004",
+     "title": "Exemption from Advertisement and Exam",
+     "verdict": "fail",
+     "reasoning": "The agent's note explicitly states that Ahmed does NOT have an automatic right to appointment without advertisement and examination ('لا يحق لأحمد، في الأرجح، التعيين في الوظيفة الشاغرة مباشرة دون الإعلان والامتحان'). The note concludes that Ahmed is eligible to apply (مؤهلاً للتقدم) but not entitled to appointment without procedures. This is the opposite of what the criterion requires — the criterion requires the note to confirm that Ahmed IS exempt from both advertisement and examination requirements."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 0,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Job Description Card Requirement",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention a job description card (بطاقة وصف الوظيفة) or state that the vacant position has its duties and occupancy requirements defined in one. The criterion requires the note to confirm this, and it does not."
+    },
+    {
+     "id": "C-002",
+     "title": "Higher Qualification Must Be Required",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). The agent's note does not mention جداول التوصيف والترتيب at all. While it mentions that the vacancy requires the qualification, it does not confirm this requirement in accordance with the classification and arrangement schedules as specifically required by the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension to Non-Qualification Appointees",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that the provision applies to employees who were appointed to positions that do not require an academic qualification and who subsequently obtained a qualification during service. The agent's note discusses the general case of an employee obtaining a higher qualification during service, but it does not specifically confirm that the provision applies to employees appointed to positions that do not require an academic qualification. The note is too general and does not make this specific distinction."
+    },
+    {
+     "id": "C-004",
+     "title": "Exemption from Advertisement and Exam",
+     "verdict": "fail",
+     "reasoning": "The agent's note explicitly states the opposite of the criterion: it says Ahmed is NOT entitled to direct appointment without advertisement and examination. The criterion requires the note to confirm that Ahmed IS exempt from both requirements. Therefore, the output fails the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/job-description-card-and-qualification-requirements-for-appointment",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+  "scored_at": "2026-11-22T19:33:22.001441+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/4 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Job Description Card Requirement",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention that the vacant position has its duties and occupancy requirements defined in a job description card (بطاقة وصف الوظيفة). The note discusses general procedures for filling vacancies, the effect of obtaining a new qualification, and references to civil service laws, but never confirms or references the concept of a job description card as a requirement for defining the position's duties and occupancy conditions."
+     },
+     {
+      "id": "C-002",
+      "title": "Higher Qualification Must Be Required",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention that the higher qualification must be required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). The note only discusses the vacancy requiring the qualification in general terms ('وجود شاغر يتطلب المؤهل') without specifically referencing the classification and arrangement schedules as the source of this requirement, which is the key legal condition that must be confirmed."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension to Non-Qualification Appointees",
+      "verdict": "fail",
+      "reasoning": "The agent's note does not mention or confirm that the provision applies specifically to employees who were appointed to positions that do not require an academic qualification and who subsequently obtained a qualification during service. The note only discusses Ahmed obtaining a higher qualification during service in general terms, without addressing this specific category of employees (those originally appointed to non-qualification-required positions)."
+     },
+     {
+      "id": "C-004",
+      "title": "Exemption from Advertisement and Exam",
+      "verdict": "fail",
+      "reasoning": "The agent's note explicitly states that Ahmed does NOT have an automatic right to appointment without advertisement and examination ('لا يحق لأحمد، في الأرجح، التعيين في الوظيفة الشاغرة مباشرة دون الإعلان والامتحان'). The note concludes that Ahmed is eligible to apply (مؤهلاً للتقدم) but not entitled to appointment without procedures. This is the opposite of what the criterion requires — the criterion requires the note to confirm that Ahmed IS exempt from both advertisement and examination requirements."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/job-description-card-and-qualification-requirements-for-appointment",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:29:28.024469+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/4 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Job Description Card Requirement",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention a job description card (بطاقة وصف الوظيفة) or state that the vacant position has its duties and occupancy requirements defined in one. The criterion requires the note to confirm this, and it does not."
+     },
+     {
+      "id": "C-002",
+      "title": "Higher Qualification Must Be Required",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). The agent's note does not mention جداول التوصيف والترتيب at all. While it mentions that the vacancy requires the qualification, it does not confirm this requirement in accordance with the classification and arrangement schedules as specifically required by the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension to Non-Qualification Appointees",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that the provision applies to employees who were appointed to positions that do not require an academic qualification and who subsequently obtained a qualification during service. The agent's note discusses the general case of an employee obtaining a higher qualification during service, but it does not specifically confirm that the provision applies to employees appointed to positions that do not require an academic qualification. The note is too general and does not make this specific distinction."
+     },
+     {
+      "id": "C-004",
+      "title": "Exemption from Advertisement and Exam",
+      "verdict": "fail",
+      "reasoning": "The agent's note explicitly states the opposite of the criterion: it says Ahmed is NOT entitled to direct appointment without advertisement and examination. The criterion requires the note to confirm that Ahmed IS exempt from both requirements. Therefore, the output fails the criterion."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/job-description-card-and-qualification-requirements-for-appointment",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:33:22.001107+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.0,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

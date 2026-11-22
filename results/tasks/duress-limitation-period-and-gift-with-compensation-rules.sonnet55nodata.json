@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الخلاصة\n1. يحق لسالم، على الأرجح، المطالبة بإبطال العقد في فبراير 2024م. العقد في الغالب قابل للإبطال بسبب الإكراه، وليس باطلًا بطلانًا مطلقًا. وقد رُفعت المطالبة بعد نحو ثلاثة عشر شهرًا من زوال الإكراه في يناير 2023م، فهي ضمن المدد المعروفة في الأنظمة المقارنة.\n2. اشتراط \"هبة\" الأرض مقابل تخفيض الأتعاب ليس هبة بالمعنى الصحيح. هو معاوضة تُعامَل أحكامها معاملة البيع أو المقايضة، وتخضع لشروط التصرف في العقار من توثيق وتسجيل.\n\n## تنبيه بشأن السند\nلا نصوص مرفقة. ما يلي مبني على المبادئ العامة المعروفة في نظام المعاملات المدنية السعودي وفي الفقه والأنظمة المقارنة. لا أجزم برقم مادة أو بمدة محددة في النظام السعودي، ويجب التحقق منها قبل رفع الدعوى.\n\n## التحليل\n\n### أولًا: إبطال العقد للإكراه\n- الإكراه عيب في الرضا. الأصل أن العقد المشوب به قابل للإبطال لمصلحة المكرَه، وأنه يصح بإجازته.\n- الفرق مهم. العقد القابل للإبطال يبقى منتجًا لآثاره حتى يُقضى بإبطاله، ويملك الدفع بالإبطال المكرَه وحده.\n- تسقط دعوى الإبطال في الغالب بأحد أمرين:\n  - **الإجازة الصريحة أو الضمنية بعد زوال الإكراه.** يجب التحقق من أن سالم لم يُنفّذ العقد طوعًا أو يسكت عنه سكوتًا يُفهم منه الرضا بعد يناير 2023م.\n  - **التقادم.** القاعدة المقارنة، كما في القانون المدني المصري، أن المدة ثلاث سنوات من زوال الإكراه، وخمس عشرة سنة من إبرام العقد.\n- بالتطبيق على الوقائع:\n  - الإكراه زال في يناير 2023م.\n  - الدعوى في فبراير 2024م، أي بعد نحو 13 شهرًا.\n  - فهي ضمن أي مدة معقولة، ما لم يقصّر النظام السعودي المدة تقصيرًا لا أعلمه. أنبّه إلى أن اكتشاف سالم للإكراه عام 2022م لا يبدأ به السريان ما دام الإكراه قائمًا، لأن العبرة بزواله.\n- عبء الإثبات على سالم. عليه إثبات وقوع الإكراه وجسامته وأثره في رضاه، وإثبات عدم إجازته العقد بعد زواله.\n\n### ثانيًا: اشتراط هبة الأرض مقابل تخفيض الأتعاب\n- الهبة تمليك بلا عوض. إذا اشترط الواهب عوضًا، فهي \"هبة بعوض\"، ويُعامَل العقد معاملة البيع أو المعاوضة في أحكامه.\n- هنا يتنازل المقاول عن أرض ويحصل في مقابلها على ثمن، وهو ما يُحسب من أتعابه. فهذه معاوضة، وليست هبة محضة.\n- يترتب على ذلك:\n  - تسري عليها شروط العقد المعاوض: تعيين الأرض ومعرفة قيمتها، ومشروعية المحل والسبب.\n  - يلزم لنقل ملكية العقار التوثيق والتسجيل وفق الأنظمة العقارية. اشتراط الهبة في عقد المقاولة لا ينقل الملكية وحده.\n- هذا الشرط جزء من العقد الذي شابه الإكراه. إذا أُبطل العقد، سقط معه الشرط وما ترتب عليه، مع الإعادة إلى الحال السابقة. وللمحكمة أن تنظر في أثر ذلك على سائر العقد.\n\n## التوصيات\n1. جمع أدلة الإكراه ووقت زواله: مراسلات وشهود وتقارير وأي قرائن.\n2. التأكد من عدم صدور تنفيذ أو إقرار من سالم بعد يناير 2023م.\n3. رفع دعوى الإبطال بلا تأخير. ويمكن طلب الإعادة إلى الحال السابقة، وبطلان شرط الأرض تبعًا.\n4. مراجعة النصوص النظامية السارية في المملكة للتحقق من مدة سقوط الدعوى قبل الرفع.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Duress limitation period",
+     "verdict": "fail",
+     "reasoning": "The agent's note discusses the limitation period for annulment due to duress. It mentions that the duress ceased in January 2023 and the claim was filed in February 2024 (about 13 months later), and states this is within reasonable periods. However, the agent references a three-year period from comparative law (Egyptian civil law) rather than a one-year period. The agent does state that the period runs from the date the duress ceases ('من زوال الإكراه'), which satisfies the 'starts from the date the duress ceases' part of the criterion. But the criterion requires the note to state specifically that the one-year period begins from the date the duress ceases. The agent mentions a three-year period (from comparative law) starting from cessation of duress, not a one-year period. The criterion is specifically about the one-year annulment period starting from cessation of duress. Since the agent does not state that the period is one year (instead citing three years from comparative law), the criterion is not satisfied."
+    },
+    {
+     "id": "C-002",
+     "title": "Claim time-barred",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the annulment claim is time-barred because one year from the cessation of duress had elapsed before the February 2024 filing. The agent's output instead states the claim is likely valid, citing a three-year limitation period from comparative law (Egyptian Civil Code) and concluding that 13 months falls within any reasonable period. The agent explicitly does not identify the claim as time-barred under a one-year rule. The note fails to state that the one-year period from cessation of duress (January 2023) had already expired before February 2024."
+    },
+    {
+     "id": "C-003",
+     "title": "Gift with compensation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the second section (ثانيًا) that a gift with a stipulated compensation is treated as a contract of exchange (معاوضة) rather than a pure gift (هبة محضة). It says 'إذا اشترط الواهب عوضًا، فهي هبة بعوض، ويُعامَل العقد معاملة البيع أو المعاوضة في أحكامه' — directly satisfying the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Applicable rules",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the second section (ثانيًا) that the arrangement is not a true gift (هبة محضة) but rather a form of exchange/compensation (معاوضة), and that the rules of exchange contracts (أحكام العقد المعاوض) apply to it rather than gift rules. The note states: 'هبة بعوض، ويُعامَل العقد معاملة البيع أو المعاوضة في أحكامه' and 'تسري عليها شروط العقد المعاوض'. This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Duress limitation period",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the one-year period for annulment due to duress begins from the date the duress ceases. The agent's note does state that the limitation period begins from the date the duress ceases ('العبرة بزواله' and 'من زوال الإكراه'). However, it does not specifically identify the period as one year. Instead, it references a three-year period from comparative law (Egyptian Civil Code) and describes the 13-month gap as 'within any reasonable period.' The note fails to state that the specific period is one year, which is what the criterion requires."
+    },
+    {
+     "id": "C-002",
+     "title": "Claim time-barred",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the annulment claim is time-barred because one year from the cessation of duress had elapsed before the claim was filed in February 2024. The agent's note states the opposite: that the claim filed in February 2024 (approximately 13 months after duress ceased in January 2023) is within any reasonable period, and does not identify it as time-barred. The agent references a three-year comparative period rather than a one-year limitation period, and concludes the claim is likely admissible."
+    },
+    {
+     "id": "C-003",
+     "title": "Gift with compensation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that if the donor stipulates compensation (عوض), the contract is treated as a sale or exchange (معاوضة) rather than a pure gift (هبة). Specifically, it says: 'الهبة تمليك بلا عوض. إذا اشترط الواهب عوضًا، فهي \"هبة بعوض\"، ويُعامَل العقد معاملة البيع أو المعاوضة في أحكامه.' This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Applicable rules",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that when a gift includes compensation (هبة بعوض), the contract is treated as a sale or exchange (معاوضة) in its rulings, not as a pure gift. Specifically, it says 'يُعامَل العقد معاملة البيع أو المعاوضة في أحكامه' and 'فهذه معاوضة، وليست هبة محضة', and that the rules of exchange contracts apply (شروط العقد المعاوض). This satisfies the criterion that the rules of exchange contracts apply according to the nature of the compensation rather than the rules of gift."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/duress-limitation-period-and-gift-with-compensation-rules",
+  "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+  "scored_at": "2026-11-22T19:56:46.004041+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Duress limitation period",
+      "verdict": "fail",
+      "reasoning": "The agent's note discusses the limitation period for annulment due to duress. It mentions that the duress ceased in January 2023 and the claim was filed in February 2024 (about 13 months later), and states this is within reasonable periods. However, the agent references a three-year period from comparative law (Egyptian civil law) rather than a one-year period. The agent does state that the period runs from the date the duress ceases ('من زوال الإكراه'), which satisfies the 'starts from the date the duress ceases' part of the criterion. But the criterion requires the note to state specifically that the one-year period begins from the date the duress ceases. The agent mentions a three-year period (from comparative law) starting from cessation of duress, not a one-year period. The criterion is specifically about the one-year annulment period starting from cessation of duress. Since the agent does not state that the period is one year (instead citing three years from comparative law), the criterion is not satisfied."
+     },
+     {
+      "id": "C-002",
+      "title": "Claim time-barred",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the annulment claim is time-barred because one year from the cessation of duress had elapsed before the February 2024 filing. The agent's output instead states the claim is likely valid, citing a three-year limitation period from comparative law (Egyptian Civil Code) and concluding that 13 months falls within any reasonable period. The agent explicitly does not identify the claim as time-barred under a one-year rule. The note fails to state that the one-year period from cessation of duress (January 2023) had already expired before February 2024."
+     },
+     {
+      "id": "C-003",
+      "title": "Gift with compensation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the second section (ثانيًا) that a gift with a stipulated compensation is treated as a contract of exchange (معاوضة) rather than a pure gift (هبة محضة). It says 'إذا اشترط الواهب عوضًا، فهي هبة بعوض، ويُعامَل العقد معاملة البيع أو المعاوضة في أحكامه' — directly satisfying the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Applicable rules",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the second section (ثانيًا) that the arrangement is not a true gift (هبة محضة) but rather a form of exchange/compensation (معاوضة), and that the rules of exchange contracts (أحكام العقد المعاوض) apply to it rather than gift rules. The note states: 'هبة بعوض، ويُعامَل العقد معاملة البيع أو المعاوضة في أحكامه' and 'تسري عليها شروط العقد المعاوض'. This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/duress-limitation-period-and-gift-with-compensation-rules",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:54:19.309257+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Duress limitation period",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the one-year period for annulment due to duress begins from the date the duress ceases. The agent's note does state that the limitation period begins from the date the duress ceases ('العبرة بزواله' and 'من زوال الإكراه'). However, it does not specifically identify the period as one year. Instead, it references a three-year period from comparative law (Egyptian Civil Code) and describes the 13-month gap as 'within any reasonable period.' The note fails to state that the specific period is one year, which is what the criterion requires."
+     },
+     {
+      "id": "C-002",
+      "title": "Claim time-barred",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the annulment claim is time-barred because one year from the cessation of duress had elapsed before the claim was filed in February 2024. The agent's note states the opposite: that the claim filed in February 2024 (approximately 13 months after duress ceased in January 2023) is within any reasonable period, and does not identify it as time-barred. The agent references a three-year comparative period rather than a one-year limitation period, and concludes the claim is likely admissible."
+     },
+     {
+      "id": "C-003",
+      "title": "Gift with compensation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that if the donor stipulates compensation (عوض), the contract is treated as a sale or exchange (معاوضة) rather than a pure gift (هبة). Specifically, it says: 'الهبة تمليك بلا عوض. إذا اشترط الواهب عوضًا، فهي \"هبة بعوض\"، ويُعامَل العقد معاملة البيع أو المعاوضة في أحكامه.' This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Applicable rules",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that when a gift includes compensation (هبة بعوض), the contract is treated as a sale or exchange (معاوضة) in its rulings, not as a pure gift. Specifically, it says 'يُعامَل العقد معاملة البيع أو المعاوضة في أحكامه' and 'فهذه معاوضة، وليست هبة محضة', and that the rules of exchange contracts apply (شروط العقد المعاوض). This satisfies the criterion that the rules of exchange contracts apply according to the nature of the compensation rather than the rules of gift."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/duress-limitation-period-and-gift-with-compensation-rules",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:56:46.003696+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.5,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

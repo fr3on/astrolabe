@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-contracts-and-obligations/annulment-limitation-period-and-lease-assignee-substitution",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: عيب في عقد المقاولة والتنازل عن عقد الإيجار\n\n## الخلاصة\n1. **عقد المقاولة:** إذا كان العيب يجعل العقد قابلًا للإبطال (لا باطلًا بطلانًا مطلقًا)، فإن الحق في طلب الإبطال يسقط بالإجازة، ويتقادم بمرور مدة معينة من وقت زوال سبب العيب أو العلم به، ويحتاج إلى حكم قضائي أو اتفاق. وعلم سامر في يناير 2023 مهم لحساب المدة. لا أتذكر مدد التقادم ولا أرقام المواد على وجه الدقة، فيجب التحقق منها.\n2. **التنازل عن الإيجار:** هو عقد مستقل عن المقاولة، وعيب عقد المقاولة لا ينتقل تلقائيًا إليه، لكن له أثر في التزامات سامر وخالد من حيث الإيجار والمستودع.\n3. **الحذر:** سامر يجب أن يتصرف بسرعة، وألا يُجيز العقد ضمنًا بسلوك يوحي بالرضا بعد علمه بالعيب.\n\n## أولًا: عقد المقاولة القابل للإبطال\n- **طبيعة القابلية للإبطال:** العقد القابل للإبطال منتج لآثاره حتى يُحكم بإبطاله، ويقرر الإبطال لمصلحة من شُرّع لحمايته. أما إذا كان العيب يوجب البطلان المطلق فتختلف الأحكام ولا يسقط بالتقادم القصير.\n- **المدة:** تقرر القوانين المدنية عادةً مدة تقادم لدعوى الإبطال تبدأ من زوال سبب العيب (كالإكراه) أو من العلم به (كالغلط والتدليس)، وأقصى مدة من تاريخ العقد. لا أستطيع الجزم بالمدة في النظام المعني، وقد تكون قصيرة نسبيًا.\n- **أثر الإجازة:** أي تصرف من سامر بعد العلم يدل على الرضا، كاستمرار الانتفاع بالمستودع أو سداد المستحقات دون تحفظ، قد يُفسَّر إجازة تُسقط حق الإبطال.\n- **أثر الإبطال:** يعيد الطرفين إلى الحالة السابقة قدر الإمكان، وفي عقد المقاولة المنفذ قد يتعذر الرد العيني، فيُصار إلى التعويض أو أجر المثل.\n\n## ثانيًا: وضع خالد والتنازل عن الإيجار\n- **عقد التنازل:** يخضع لأحكام التنازل عن عقد الإيجار، ويشترط عادةً موافقة المؤجر أو عدم المنع في العقد، ولا نعلم من الوقائع هل وُجدت الموافقة.\n- **حقوق الغير:** إبطال المقاولة قد لا يمس خالدًا مباشرةً لأنه ليس طرفًا فيها، لكن قد يتأثر إن كان انتفاعه بالمستودع مرتبطًا بنتائج المقاولة.\n- **المسؤولية:** يجب بيان من يتحمل التزامات الإيجار (الأجرة والصيانة) بعد التنازل، وهل بقي سامر مسؤولًا أمام المؤجر.\n- **الضمان:** المقاول قد يكون مسؤولًا عن عيوب البناء في مدة الضمان، وهذه قاعدة مستقلة عن بطلان العقد.\n\n## ثالثًا: ما يجب فعله\n1. **تحديد العيب بدقة:** نوعه (غلط، تدليس، إكراه، نقص أهلية...) لتحديد التقادم والآثار.\n2. **التوقف عن أي تصرف يُفهم منه الإجازة** وتوثيق ما حدث وقت العلم.\n3. **إخطار الشركة المقاولة كتابةً** بالتمسك بالإبطال، ثم رفع الدعوى خلال المدة النظامية.\n4. **مراجعة عقد الإيجار وعقد التنازل** وموافقة المؤجر.\n5. **تنسيق سامر وخالد** بشأن الالتزامات المتبادلة، ويفضّل الاتفاق الكتابي.\n6. **النظر في الضمان:** تقدير ما إذا كانت مطالبة بعيوب البناء أنفع من الإبطال.\n\n## تنبيه\nلا نصوص قانونية مرفقة. المدد والأحكام المذكورة مبنية على مبادئ عامة، ولا أستطيع تحديد أرقام المواد، ويلزم التثبت من النظام المدني المطبق وتاريخ العلم الدقيق.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 0,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "One-Year Limitation for Annulment",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not specify a one-year limitation period for the annulment claim. It vaguely states that limitation periods are 'usually' set by civil laws running from when the defect cause ceases or becomes known, and explicitly admits it cannot confirm the specific period. It does not state that the period is one year, nor does it identify January 2024 as the deadline for filing the annulment claim."
+    },
+    {
+     "id": "C-002",
+     "title": "Ten-Year Absolute Limit",
+     "verdict": "fail",
+     "reasoning": "The agent's note does not mention a ten-year absolute maximum period from the date of contracting (2020), nor does it identify 2030 as the final cutoff date for bringing an annulment claim. The note only vaguely references 'أقصى مدة من تاريخ العقد' (maximum period from the date of the contract) without specifying any duration or the year 2030."
+    },
+    {
+     "id": "C-003",
+     "title": "Assignee Substitution in Lease",
+     "verdict": "fail",
+     "reasoning": "The note discusses the lease assignment (التنازل عن الإيجار) but does not clearly state that Khaled, as the assignee (المحال إليه), steps into Samer's position and assumes all rights and obligations under the assigned lease contract. Instead, it raises questions about whether Khaled's use of the warehouse is affected by the construction contract annulment, discusses who bears lease obligations after assignment, and mentions that Samer may remain responsible to the landlord. The note never affirmatively states that Khaled steps into Samer's full position with all rights and obligations."
+    },
+    {
+     "id": "C-004",
+     "title": "Contractor Completion Obligation",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention or reference any obligation of the contractor to complete the work according to agreed conditions and within the agreed period. The note focuses on the voidability of the contract, limitation periods, assignment of the lease, and procedural recommendations, but never states that the contractor was obligated to complete the work per agreed conditions and timeline."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 0,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "One-Year Limitation for Annulment",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the annulment claim must be filed within one year from the date Samer learned of the defect, and to identify January 2024 as the deadline. The agent's note discusses limitation periods in general terms but explicitly says 'لا أستطيع الجزم بالمدة' (I cannot be certain of the period) and 'قد تكون قصيرة نسبيًا' (it may be relatively short). It does not specify the one-year period, nor does it identify January 2024 as the deadline."
+    },
+    {
+     "id": "C-002",
+     "title": "Ten-Year Absolute Limit",
+     "verdict": "fail",
+     "reasoning": "The note does not state that there is an absolute maximum period of ten years from the date of contracting (2020), nor does it identify 2030 as the final cutoff. The note vaguely mentions 'أقصى مدة من تاريخ العقد' but does not specify ten years or the year 2030."
+    },
+    {
+     "id": "C-003",
+     "title": "Assignee Substitution in Lease",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that Khaled, as the assignee (المحال إليه), steps into Samer's position and assumes all rights and obligations under the assigned lease contract. The note mentions the assignment and raises questions about who bears lease obligations after the assignment, but it does not affirmatively state that Khaled substitutes into Samer's position with all rights and obligations. It instead says 'يجب بيان من يتحمل التزامات الإيجار' (it must be clarified who bears the lease obligations), which is a question rather than a statement of the legal principle."
+    },
+    {
+     "id": "C-004",
+     "title": "Contractor Completion Obligation",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that the contractor was obligated to complete the work according to the agreed conditions and within the agreed period. While it mentions contractor responsibility for construction defects during the warranty period and references the muqawala (construction) contract generally, it never specifically addresses the contractor's obligation to complete the work per agreed conditions and timeline."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/annulment-limitation-period-and-lease-assignee-substitution",
+  "task": "astrolabe-open/saudi-contracts-and-obligations/annulment-limitation-period-and-lease-assignee-substitution",
+  "scored_at": "2026-11-22T19:55:57.798497+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/4 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "One-Year Limitation for Annulment",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not specify a one-year limitation period for the annulment claim. It vaguely states that limitation periods are 'usually' set by civil laws running from when the defect cause ceases or becomes known, and explicitly admits it cannot confirm the specific period. It does not state that the period is one year, nor does it identify January 2024 as the deadline for filing the annulment claim."
+     },
+     {
+      "id": "C-002",
+      "title": "Ten-Year Absolute Limit",
+      "verdict": "fail",
+      "reasoning": "The agent's note does not mention a ten-year absolute maximum period from the date of contracting (2020), nor does it identify 2030 as the final cutoff date for bringing an annulment claim. The note only vaguely references 'أقصى مدة من تاريخ العقد' (maximum period from the date of the contract) without specifying any duration or the year 2030."
+     },
+     {
+      "id": "C-003",
+      "title": "Assignee Substitution in Lease",
+      "verdict": "fail",
+      "reasoning": "The note discusses the lease assignment (التنازل عن الإيجار) but does not clearly state that Khaled, as the assignee (المحال إليه), steps into Samer's position and assumes all rights and obligations under the assigned lease contract. Instead, it raises questions about whether Khaled's use of the warehouse is affected by the construction contract annulment, discusses who bears lease obligations after assignment, and mentions that Samer may remain responsible to the landlord. The note never affirmatively states that Khaled steps into Samer's full position with all rights and obligations."
+     },
+     {
+      "id": "C-004",
+      "title": "Contractor Completion Obligation",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention or reference any obligation of the contractor to complete the work according to agreed conditions and within the agreed period. The note focuses on the voidability of the contract, limitation periods, assignment of the lease, and procedural recommendations, but never states that the contractor was obligated to complete the work per agreed conditions and timeline."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/annulment-limitation-period-and-lease-assignee-substitution",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/annulment-limitation-period-and-lease-assignee-substitution",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:53:53.508355+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/4 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "One-Year Limitation for Annulment",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the annulment claim must be filed within one year from the date Samer learned of the defect, and to identify January 2024 as the deadline. The agent's note discusses limitation periods in general terms but explicitly says 'لا أستطيع الجزم بالمدة' (I cannot be certain of the period) and 'قد تكون قصيرة نسبيًا' (it may be relatively short). It does not specify the one-year period, nor does it identify January 2024 as the deadline."
+     },
+     {
+      "id": "C-002",
+      "title": "Ten-Year Absolute Limit",
+      "verdict": "fail",
+      "reasoning": "The note does not state that there is an absolute maximum period of ten years from the date of contracting (2020), nor does it identify 2030 as the final cutoff. The note vaguely mentions 'أقصى مدة من تاريخ العقد' but does not specify ten years or the year 2030."
+     },
+     {
+      "id": "C-003",
+      "title": "Assignee Substitution in Lease",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that Khaled, as the assignee (المحال إليه), steps into Samer's position and assumes all rights and obligations under the assigned lease contract. The note mentions the assignment and raises questions about who bears lease obligations after the assignment, but it does not affirmatively state that Khaled substitutes into Samer's position with all rights and obligations. It instead says 'يجب بيان من يتحمل التزامات الإيجار' (it must be clarified who bears the lease obligations), which is a question rather than a statement of the legal principle."
+     },
+     {
+      "id": "C-004",
+      "title": "Contractor Completion Obligation",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that the contractor was obligated to complete the work according to the agreed conditions and within the agreed period. While it mentions contractor responsibility for construction defects during the warranty period and references the muqawala (construction) contract generally, it never specifically addresses the contractor's obligation to complete the work per agreed conditions and timeline."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/annulment-limitation-period-and-lease-assignee-substitution",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/annulment-limitation-period-and-lease-assignee-substitution",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:55:57.798121+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.0,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

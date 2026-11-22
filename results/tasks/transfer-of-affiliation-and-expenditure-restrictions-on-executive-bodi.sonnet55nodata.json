@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: مدى جواز صرف أموال منحة الإسكان المشترك في نفقات إدارية عامة\n\n## الخلاصة\nفي تقديري لا يحق للجهاز المركزي للتعمير أن يصرف من أموال المنحة في نفقات إدارية عامة غير مدرجة في اللائحة الخاصة بأموال المنحة. والأصل أن أموال المنحة مخصصة لأغراضها المحددة في اتفاقية المنحة أو اللائحة المنظمة لها. وتبعية الجهاز التنفيذي للمشروعات المشتركة للجهاز المركزي بقرار وزاري، واندماج موازنته، لا يُغيّران تخصيص هذه الأموال ولا يُجيزان الصرف في غير الأوجه المقررة لها.\n\n## الوقائع المختصرة\nفي عام 2024 قرر الجهاز المركزي للتعمير صرف مبالغ من أموال منحة الإسكان المشترك لتغطية نفقات إدارية عامة لا ترد في لائحة أموال المنحة، محتجًا بأن الجهاز التنفيذي للمشروعات المشتركة أصبح تابعًا له بقرار وزاري وبأن موازنته اندمجت في موازنته.\n\n## التحليل\n1. **تخصيص المال.** من المبادئ المستقرة في المالية العامة أن المال المخصص لغرض معين لا يجوز صرفه في غيره، ومنها ما يُعرف بقاعدة تخصيص الاعتمادات. وإذا كان المال منحةً مشروطة، فشروط المانح وأحكام اتفاقية المنحة تُلزم متلقيها.\n2. **أثر التبعية والاندماج.** تبعية جهة لأخرى أو دمج الموازنات هو تنظيم إداري ومالي داخلي. وهو لا يمحو الصفة الخاصة للأموال المخصصة، ولا يُحوّلها إلى مال عام مطلق التصرف. فالتخصيص يتبع المال ولو انتقلت إدارته.\n3. **اللائحة.** إذا حددت لائحة أموال المنحة أوجه الصرف، فإن الصرف خارجها يكون مخالفًا لها، ولا يجوز تعديلها إلا بالأداة نفسها أو بما يعادلها، مع مراعاة شروط الجهة المانحة.\n4. **المسؤولية.** يُعرّض الصرف المخالف القائمين عليه للمساءلة الإدارية والمالية، وقد يخضع لرقابة الجهاز المركزي للمحاسبات.\n\n## التوصية\n- الامتناع عن الصرف في هذه النفقات، وتغطيتها من الموازنة العامة للجهاز.\n- إن ثبتت الحاجة، فيُنظر في تعديل اللائحة بالإجراء القانوني الصحيح، وبعد موافقة الجهة المانحة إن لزم.\n- مراجعة نص القرار الوزاري واتفاقية المنحة للوقوف على ما إذا كان فيها ما يسمح بنفقات إدارية بنسبة محددة.\n\n## تنبيه\nهذا رأي مبني على المبادئ العامة، ولم أطّلع على القرار الوزاري ولا اللائحة ولا اتفاقية المنحة، ولا أجزم برقم نص بعينه.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Transfer of Affiliation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) became affiliated with the Central Agency for Reconstruction (الجهاز المركزي للتعمير) by a ministerial decree (بقرار وزاري) and that its budget was merged (اندمجت موازنته) with the latter's budget. Both required elements are present in the Facts section and reinforced in the Analysis section."
+    },
+    {
+     "id": "C-002",
+     "title": "Restricted Role of Executive Body",
+     "verdict": "fail",
+     "reasoning": "The note discusses the principle that grant funds must be used only for their designated purposes and that administrative/organizational changes (like the merger of budgets or transfer of affiliation) do not change the nature of restricted funds. However, it does not specifically state that the role of the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) is restricted solely to managing the grant funds (أموال المنحة). The note focuses on the funds themselves rather than explicitly defining or restricting the role/mandate of the Executive Body."
+    },
+    {
+     "id": "C-003",
+     "title": "Expenditure Restriction",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 3 (اللائحة) that if the regulation governing the grant funds (لائحة أموال المنحة) specifies the permitted purposes of expenditure, then spending outside those purposes is a violation of it. It also states in the summary that grant funds are designated for specific purposes and that spending on non-designated purposes is not permitted. This satisfies both requirements of the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer Does Not Override Restriction",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 (أثر التبعية والاندماج) that the transfer of affiliation and merger of budgets is an internal administrative and financial arrangement that does not erase the special character of designated funds, and does not convert them into unrestricted public funds. It further states 'التخصيص يتبع المال ولو انتقلت إدارته' (the designation follows the funds even if their administration is transferred). This directly addresses the criterion that transfer of affiliation and merger of budget do not permit expenditure from grant funds on purposes outside the regulation."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Transfer of Affiliation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the facts section that the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) became affiliated with the Central Agency for Reconstruction (الجهاز المركزي للتعمير) by a ministerial decree (بقرار وزاري) and that its budget was merged with the latter's budget (موازنته اندمجت في موازنته). This satisfies both requirements of the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Restricted Role of Executive Body",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that the role of the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) is restricted solely to managing the grant funds (أموال المنحة). The note mentions the Executive Body in the context of it becoming subordinate to the Central Agency by ministerial decree and its budget being merged, but it never explicitly states that the Executive Body's role is restricted solely to managing the grant funds. The note focuses on the earmarking principle and the impermissibility of spending grant funds on general administrative expenses, but does not make the specific statement about the restricted role of the Executive Body as required by the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Expenditure Restriction",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in point 3 of the analysis that if the regulation governing the grant funds (لائحة أموال المنحة) specified the purposes of expenditure, then spending outside those purposes constitutes a violation ('إذا حددت لائحة أموال المنحة أوجه الصرف، فإن الصرف خارجها يكون مخالفًا لها'). This satisfies both parts of the criterion: (1) the regulation restricted expenditure to designated purposes, and (2) expenditure on other purposes is not permitted."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer Does Not Override Restriction",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the conclusion ('الخلاصة') that 'تبعية الجهاز التنفيذي للمشروعات المشتركة للجهاز المركزي بقرار وزاري، واندماج موازنته، لا يُغيّران تخصيص هذه الأموال ولا يُجيزان الصرف في غير الأوجه المقررة لها.' This directly states that the transfer of affiliation and the merger of the budget do not permit expenditure from the grant funds on purposes outside the regulation. Additionally, point 2 in the analysis reinforces this by stating that administrative subordination or budget merger does not erase the special designation of allocated funds."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+  "scored_at": "2026-11-22T19:34:59.158048+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Transfer of Affiliation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) became affiliated with the Central Agency for Reconstruction (الجهاز المركزي للتعمير) by a ministerial decree (بقرار وزاري) and that its budget was merged (اندمجت موازنته) with the latter's budget. Both required elements are present in the Facts section and reinforced in the Analysis section."
+     },
+     {
+      "id": "C-002",
+      "title": "Restricted Role of Executive Body",
+      "verdict": "fail",
+      "reasoning": "The note discusses the principle that grant funds must be used only for their designated purposes and that administrative/organizational changes (like the merger of budgets or transfer of affiliation) do not change the nature of restricted funds. However, it does not specifically state that the role of the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) is restricted solely to managing the grant funds (أموال المنحة). The note focuses on the funds themselves rather than explicitly defining or restricting the role/mandate of the Executive Body."
+     },
+     {
+      "id": "C-003",
+      "title": "Expenditure Restriction",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 3 (اللائحة) that if the regulation governing the grant funds (لائحة أموال المنحة) specifies the permitted purposes of expenditure, then spending outside those purposes is a violation of it. It also states in the summary that grant funds are designated for specific purposes and that spending on non-designated purposes is not permitted. This satisfies both requirements of the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer Does Not Override Restriction",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 (أثر التبعية والاندماج) that the transfer of affiliation and merger of budgets is an internal administrative and financial arrangement that does not erase the special character of designated funds, and does not convert them into unrestricted public funds. It further states 'التخصيص يتبع المال ولو انتقلت إدارته' (the designation follows the funds even if their administration is transferred). This directly addresses the criterion that transfer of affiliation and merger of budget do not permit expenditure from grant funds on purposes outside the regulation."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:33:28.971344+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Transfer of Affiliation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the facts section that the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) became affiliated with the Central Agency for Reconstruction (الجهاز المركزي للتعمير) by a ministerial decree (بقرار وزاري) and that its budget was merged with the latter's budget (موازنته اندمجت في موازنته). This satisfies both requirements of the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Restricted Role of Executive Body",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that the role of the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) is restricted solely to managing the grant funds (أموال المنحة). The note mentions the Executive Body in the context of it becoming subordinate to the Central Agency by ministerial decree and its budget being merged, but it never explicitly states that the Executive Body's role is restricted solely to managing the grant funds. The note focuses on the earmarking principle and the impermissibility of spending grant funds on general administrative expenses, but does not make the specific statement about the restricted role of the Executive Body as required by the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Expenditure Restriction",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in point 3 of the analysis that if the regulation governing the grant funds (لائحة أموال المنحة) specified the purposes of expenditure, then spending outside those purposes constitutes a violation ('إذا حددت لائحة أموال المنحة أوجه الصرف، فإن الصرف خارجها يكون مخالفًا لها'). This satisfies both parts of the criterion: (1) the regulation restricted expenditure to designated purposes, and (2) expenditure on other purposes is not permitted."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer Does Not Override Restriction",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the conclusion ('الخلاصة') that 'تبعية الجهاز التنفيذي للمشروعات المشتركة للجهاز المركزي بقرار وزاري، واندماج موازنته، لا يُغيّران تخصيص هذه الأموال ولا يُجيزان الصرف في غير الأوجه المقررة لها.' This directly states that the transfer of affiliation and the merger of the budget do not permit expenditure from the grant funds on purposes outside the regulation. Additionally, point 2 in the analysis reinforces this by stating that administrative subordination or budget merger does not erase the special designation of allocated funds."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:34:59.157685+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.75,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

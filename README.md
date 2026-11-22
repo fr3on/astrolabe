@@ -36,7 +36,7 @@ With the source text, all three models pass about 97% of the task criteria. With
 |---|---|---|---|---|
 | Claude Sonnet 4.6 | No data | 0% (0 of 209) | 38% (78 of 208) | 2 of 44 |
 | Claude Sonnet 4.6 | With the text | 82% (171 of 209) | **97%** (202 of 208) | **41 of 44** |
-| Claude Sonnet 5.5 | No data | 0% (0 of 209) | not run | not run |
+| Claude Sonnet 5.5 | No data | 0% (0 of 209) | 35% (72 of 208) | 1 of 44 |
 | Claude Sonnet 5.5 | With the text | **90%** (189 of 209) | **97%** (201 of 208) | 38 of 44 |
 | Claude Opus 5.5 | No data | 0.5% (1 of 209) | not run | not run |
 | Claude Opus 5.5 | With the text | 88% (184 of 209) | **97%** (202 of 208) | 38 of 44 |

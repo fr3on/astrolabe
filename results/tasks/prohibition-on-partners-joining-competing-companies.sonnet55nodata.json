@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-company-law/prohibition-on-partners-joining-competing-companies",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: منافسة شريك لشركة مهنية للمحاسبة القانونية\n\n## الخلاصة\nتصرف أحمد، بانضمامه إلى شركة مهنية منافسة وتقديمه خدمات لحسابه الخاص لعملاء، يُعدّ في الأصل إخلالًا بالتزامات الشريك تجاه شركته. وأخطرها: واجب الأمانة والولاء، والامتناع عن منافسة الشركة، وتقديم مصلحة الشركة. وللشركة وخالد خيارات متعددة تبدأ بالإنذار والمطالبة بالتعويض ووقف المنافسة، وقد تصل إلى استبعاد أحمد أو طلب حل الشركة. ولا أتذكر أرقام المواد على وجه الدقة، فأكتفي بالمبادئ.\n\n## أولًا: التكييف القانوني\n- **المنع من المنافسة:** في عقود الشركات عمومًا يلتزم الشريك، لا سيما المدير أو المتضامن، بألا يزاول لحسابه عملًا من نوع نشاط الشركة يضر بها، إلا بإذن الشركاء. وهذا المبدأ مستقر في القانون التجاري والمدني، وقد يتفرع عن قاعدة حسن النية في تنفيذ العقود.\n- **الشركات المهنية:** تفرض أنظمة المهنة (المحاسبة القانونية) قيودًا إضافية، منها حصر الممارسة المهنية في إطار الشركة، وحظر تعارض المصالح. لذلك قد يكون لانضمام أحمد لشركة أخرى تمارس المهنة ذاتها أثر مهني وتأديبي.\n- **عقد التأسيس:** يجب فحصه، فقد يتضمن شرط عدم المنافسة أو جزاءات محددة، أو يسمح بالمنافسة بإذن.\n- **الأمر غير المؤكد:** هل يمنع النظام الشريك المهني من الانضمام لشركة مهنية أخرى منعًا مطلقًا؟ لست متأكدًا من نص صريح، وأرجح أن ذلك يتوقف على نظام المهنة وعقد الشركة.\n\n## ثانيًا: الخيارات المتاحة\n1. **الإنذار والمطالبة الودية:** مخاطبة أحمد كتابةً بالتوقف عن المنافسة وتقديم كشف بالعملاء والأعمال، وإمهاله مدة معقولة.\n2. **المطالبة بالتعويض:** عن الضرر الذي لحق الشركة بسبب المنافسة.\n3. **المطالبة برد الأرباح:** المطالبة بما حققه أحمد من أرباح من الأعمال المنافسة، بحسب ما يقرره بعض الأنظمة من حق الشركة في اعتبار تلك الأعمال لحسابها. لا أجزم بوجود هذا الحكم في النظام المعني.\n4. **الاستبعاد أو الفصل:** استبعاد الشريك بقرار من بقية الشركاء أو بحكم قضائي عند وجود سبب مشروع، وفق عقد الشركة.\n5. **طلب حل الشركة:** لسبب مشروع إذا فقدت الثقة بين الشركاء وتعذر استمرار الشركة.\n6. **الشكوى المهنية:** إلى الجهة المنظمة للمهنة لاتخاذ إجراء تأديبي، وهذا خيار حساس يحتاج إلى تقدير.\n7. **الإجراءات المستعجلة:** طلب وقف المنافسة مؤقتًا إن توفرت شروط الاستعجال.\n\n## ثالثًا: الإثبات\n- جمع الأدلة: عقود العملاء، الفواتير، المراسلات، سجلات الدخول لأنظمة الشركة.\n- تحديد وقت علم خالد بالمخالفة، فقد يتأثر به التقادم أو التنازل الضمني.\n- حفظ الأدلة بطريقة نظامية.\n\n## خطوات مقترحة\n1. مراجعة عقد التأسيس ونظام المهنة.\n2. إرسال إنذار رسمي.\n3. تقدير الضرر وإعداد مطالبة.\n4. دراسة الاستبعاد أو الحل بحسب جدوى استمرار الشراكة.\n\n## تنبيه\nلا نصوص قانونية مرفقة، والمذكرة قائمة على المبادئ العامة، وما ذُكر من خيارات يحتاج إلى تحقق من النظام الواجب التطبيق.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Prohibition on joining competing professional company",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not clearly state that a partner practicing a liberal profession may not, as a general rule, participate in another professional company practicing the same profession. Instead, the note expresses uncertainty ('لست متأكدًا من نص صريح') about whether the law prohibits a professional partner from joining another professional company, and says the answer 'depends on' the profession's regulations and the partnership agreement. The criterion requires the note to affirmatively state this prohibition as a general rule, which the agent fails to do."
+    },
+    {
+     "id": "C-002",
+     "title": "Exception via founding contract",
+     "verdict": "fail",
+     "reasoning": "The note mentions the founding contract (عقد التأسيس) as a source that may contain a non-compete clause or specific penalties, and notes it 'may allow competition with permission.' However, it does not identify an express provision in the founding contract/articles of association as the SOLE exception to the prohibition on competition. The criterion requires the note to state that the only exception is an express contractual provision permitting such participation. The note treats the founding contract as one factor to check among others, rather than establishing it as the exclusive exception to the prohibition."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on competing activity without partner consent",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first section (التكييف القانوني) under 'المنع من المنافسة': 'يلتزم الشريك، لا سيما المدير أو المتضامن، بألا يزاول لحسابه عملًا من نوع نشاط الشركة يضر بها، إلا بإذن الشركاء.' This directly states that a partner may not engage in an activity of the same type as the company's activity for his own account without the consent of the remaining partners, satisfying the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Judicial reattribution of transactions to company",
+     "verdict": "fail",
+     "reasoning": "The note mentions in point 3 under 'الخيارات المتاحة' the possibility of claiming that transactions carried out by Ahmed for his own account be considered as carried out on behalf of the company ('المطالبة برد الأرباح: المطالبة بما حققه أحمد من أرباح من الأعمال المنافسة، بحسب ما يقرره بعض الأنظمة من حق الشركة في اعتبار تلك الأعمال لحسابها'). However, this is framed as a claim for profits/restitution rather than a judicial reattribution of transactions to the company through a competent judicial authority. The note explicitly expresses uncertainty about this right ('لا أجزم بوجود هذا الحكم في النظام المعني') and does not clearly state that the company has the right to request from a competent judicial authority that the transactions be deemed to have been carried out on behalf of the company. The criterion requires the note to affirmatively state this right of judicial reattribution, which is not clearly articulated here."
+    },
+    {
+     "id": "C-005",
+     "title": "Right to compensation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (Available Options), point 2: 'المطالبة بالتعويض: عن الضرر الذي لحق الشركة بسبب المنافسة.' This clearly states the company's right to claim compensation (تعويض) from the offending partner for damages caused by the competition."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Prohibition on joining competing professional company",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state, as a general rule, that a partner practicing a liberal profession may not participate in another professional company practicing the same profession. The note does discuss the prohibition on competing but hedges significantly, saying 'هل يمنع النظام الشريك المهني من الانضمام لشركة مهنية أخرى منعًا مطلقًا؟ لست متأكدًا من نص صريح' (I'm not sure of an explicit text). It does not state this prohibition as a general rule; instead, it expresses uncertainty about whether such a prohibition exists. The criterion requires the note to affirmatively state this as a general rule, which it fails to do."
+    },
+    {
+     "id": "C-002",
+     "title": "Exception via founding contract",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the **only** exception to the prohibition on partners joining competing companies is an express provision in the founding contract (عقد التأسيس) or articles of association (النظام الأساسي) permitting such participation. The agent's note mentions the founding contract in passing ('عقد التأسيس: يجب فحصه، فقد يتضمن شرط عدم المنافسة أو جزاءات محددة، أو يسمح بالمنافسة بإذن') and also says 'إلا بإذن الشركاء' as a general principle. However, the note does not clearly identify the express contractual provision in the founding contract as the **sole** exception. It presents multiple possible exceptions or qualifications (permission from partners, the profession's regulations, etc.) without pinpointing the founding contract provision as the only exception. The criterion demands specificity that the sole exception is an express provision in the founding contract/articles of association, which the note fails to establish."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on competing activity without partner consent",
+     "verdict": "pass",
+     "reasoning": "The note states in the first section (التكييف القانوني): 'يلتزم الشريك، لا سيما المدير أو المتضامن، بألا يزاول لحسابه عملًا من نوع نشاط الشركة يضر بها، إلا بإذن الشركاء' — this clearly conveys that a partner may not engage in an activity of the same type as the company's activity for his own account without the consent of the remaining partners."
+    },
+    {
+     "id": "C-004",
+     "title": "Judicial reattribution of transactions to company",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the company has the right to request from the competent judicial authority that transactions carried out by the partner for his own account be deemed to have been carried out on behalf of the company. The note mentions in option 3 ('المطالبة برد الأرباح') that the company may claim profits made by Ahmed from competing activities, and references 'حق الشركة في اعتبار تلك الأعمال لحسابها' (the company's right to consider those transactions as carried out on its behalf). However, the note hedges this with 'لا أجزم بوجود هذا الحكم في النظام المعني' and does not explicitly mention requesting this from the competent judicial authority. The criterion specifically requires mention of the right to seek 'judicial reattribution' - i.e., requesting from the competent judicial authority that the transactions be deemed carried out on behalf of the company. While the note hints at the concept, it does not clearly state the right to request this from a judicial authority. The mention is vague and uncertain rather than affirmative. This is a borderline case, but the core concept of reattributing the transactions to the company is present ('حق الشركة في اعتبار تلك الأعمال لحسابها'), even though the judicial mechanism is not explicitly stated. I'll lean toward FAIL because the criterion specifically requires mention of requesting this from the 'competent judicial authority,' which is absent."
+    },
+    {
+     "id": "C-005",
+     "title": "Right to compensation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in option 2 under 'الخيارات المتاحة' (Available Options): 'المطالبة بالتعويض: عن الضرر الذي لحق الشركة بسبب المنافسة' (Claiming compensation for the damage caused to the company due to competition). This clearly states the company's right to claim compensation from the offending partner."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/prohibition-on-partners-joining-competing-companies",
+  "task": "astrolabe-open/saudi-company-law/prohibition-on-partners-joining-competing-companies",
+  "scored_at": "2026-11-22T20:00:21.721973+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Prohibition on joining competing professional company",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not clearly state that a partner practicing a liberal profession may not, as a general rule, participate in another professional company practicing the same profession. Instead, the note expresses uncertainty ('لست متأكدًا من نص صريح') about whether the law prohibits a professional partner from joining another professional company, and says the answer 'depends on' the profession's regulations and the partnership agreement. The criterion requires the note to affirmatively state this prohibition as a general rule, which the agent fails to do."
+     },
+     {
+      "id": "C-002",
+      "title": "Exception via founding contract",
+      "verdict": "fail",
+      "reasoning": "The note mentions the founding contract (عقد التأسيس) as a source that may contain a non-compete clause or specific penalties, and notes it 'may allow competition with permission.' However, it does not identify an express provision in the founding contract/articles of association as the SOLE exception to the prohibition on competition. The criterion requires the note to state that the only exception is an express contractual provision permitting such participation. The note treats the founding contract as one factor to check among others, rather than establishing it as the exclusive exception to the prohibition."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on competing activity without partner consent",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first section (التكييف القانوني) under 'المنع من المنافسة': 'يلتزم الشريك، لا سيما المدير أو المتضامن، بألا يزاول لحسابه عملًا من نوع نشاط الشركة يضر بها، إلا بإذن الشركاء.' This directly states that a partner may not engage in an activity of the same type as the company's activity for his own account without the consent of the remaining partners, satisfying the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Judicial reattribution of transactions to company",
+      "verdict": "fail",
+      "reasoning": "The note mentions in point 3 under 'الخيارات المتاحة' the possibility of claiming that transactions carried out by Ahmed for his own account be considered as carried out on behalf of the company ('المطالبة برد الأرباح: المطالبة بما حققه أحمد من أرباح من الأعمال المنافسة، بحسب ما يقرره بعض الأنظمة من حق الشركة في اعتبار تلك الأعمال لحسابها'). However, this is framed as a claim for profits/restitution rather than a judicial reattribution of transactions to the company through a competent judicial authority. The note explicitly expresses uncertainty about this right ('لا أجزم بوجود هذا الحكم في النظام المعني') and does not clearly state that the company has the right to request from a competent judicial authority that the transactions be deemed to have been carried out on behalf of the company. The criterion requires the note to affirmatively state this right of judicial reattribution, which is not clearly articulated here."
+     },
+     {
+      "id": "C-005",
+      "title": "Right to compensation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (Available Options), point 2: 'المطالبة بالتعويض: عن الضرر الذي لحق الشركة بسبب المنافسة.' This clearly states the company's right to claim compensation (تعويض) from the offending partner for damages caused by the competition."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/prohibition-on-partners-joining-competing-companies",
+    "task": "astrolabe-open/saudi-company-law/prohibition-on-partners-joining-competing-companies",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:53:19.481307+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Prohibition on joining competing professional company",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state, as a general rule, that a partner practicing a liberal profession may not participate in another professional company practicing the same profession. The note does discuss the prohibition on competing but hedges significantly, saying 'هل يمنع النظام الشريك المهني من الانضمام لشركة مهنية أخرى منعًا مطلقًا؟ لست متأكدًا من نص صريح' (I'm not sure of an explicit text). It does not state this prohibition as a general rule; instead, it expresses uncertainty about whether such a prohibition exists. The criterion requires the note to affirmatively state this as a general rule, which it fails to do."
+     },
+     {
+      "id": "C-002",
+      "title": "Exception via founding contract",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the **only** exception to the prohibition on partners joining competing companies is an express provision in the founding contract (عقد التأسيس) or articles of association (النظام الأساسي) permitting such participation. The agent's note mentions the founding contract in passing ('عقد التأسيس: يجب فحصه، فقد يتضمن شرط عدم المنافسة أو جزاءات محددة، أو يسمح بالمنافسة بإذن') and also says 'إلا بإذن الشركاء' as a general principle. However, the note does not clearly identify the express contractual provision in the founding contract as the **sole** exception. It presents multiple possible exceptions or qualifications (permission from partners, the profession's regulations, etc.) without pinpointing the founding contract provision as the only exception. The criterion demands specificity that the sole exception is an express provision in the founding contract/articles of association, which the note fails to establish."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on competing activity without partner consent",
+      "verdict": "pass",
+      "reasoning": "The note states in the first section (التكييف القانوني): 'يلتزم الشريك، لا سيما المدير أو المتضامن، بألا يزاول لحسابه عملًا من نوع نشاط الشركة يضر بها، إلا بإذن الشركاء' — this clearly conveys that a partner may not engage in an activity of the same type as the company's activity for his own account without the consent of the remaining partners."
+     },
+     {
+      "id": "C-004",
+      "title": "Judicial reattribution of transactions to company",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the company has the right to request from the competent judicial authority that transactions carried out by the partner for his own account be deemed to have been carried out on behalf of the company. The note mentions in option 3 ('المطالبة برد الأرباح') that the company may claim profits made by Ahmed from competing activities, and references 'حق الشركة في اعتبار تلك الأعمال لحسابها' (the company's right to consider those transactions as carried out on its behalf). However, the note hedges this with 'لا أجزم بوجود هذا الحكم في النظام المعني' and does not explicitly mention requesting this from the competent judicial authority. The criterion specifically requires mention of the right to seek 'judicial reattribution' - i.e., requesting from the competent judicial authority that the transactions be deemed carried out on behalf of the company. While the note hints at the concept, it does not clearly state the right to request this from a judicial authority. The mention is vague and uncertain rather than affirmative. This is a borderline case, but the core concept of reattributing the transactions to the company is present ('حق الشركة في اعتبار تلك الأعمال لحسابها'), even though the judicial mechanism is not explicitly stated. I'll lean toward FAIL because the criterion specifically requires mention of requesting this from the 'competent judicial authority,' which is absent."
+     },
+     {
+      "id": "C-005",
+      "title": "Right to compensation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in option 2 under 'الخيارات المتاحة' (Available Options): 'المطالبة بالتعويض: عن الضرر الذي لحق الشركة بسبب المنافسة' (Claiming compensation for the damage caused to the company due to competition). This clearly states the company's right to claim compensation from the offending partner."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/prohibition-on-partners-joining-competing-companies",
+    "task": "astrolabe-open/saudi-company-law/prohibition-on-partners-joining-competing-companies",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:00:21.721615+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.4,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

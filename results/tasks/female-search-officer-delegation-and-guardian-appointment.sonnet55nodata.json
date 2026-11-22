@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الخلاصة\n- **تفتيش سارة:** يجوز تفتيشها لأن القبض عليها قائم، لكن يجب أن تتولاه امرأة، مع تحرير محضر.\n- **دعوى الحق الخاص:** سارة ناقصة الأهلية ولا ولي لها ولا وصي. فلا ترفع الدعوى عليها مباشرة، بل يُطلب من المحكمة المختصة تعيين من يمثلها، ثم تُقام الدعوى في مواجهته.\n\n## تنبيه بشأن السند\nلا نصوص مرفقة. أعتمد على المبادئ العامة المعروفة في نظام الإجراءات الجزائية السعودي وأحكام الأهلية. لا أجزم بأرقام المواد، وأنبّه إلى ضرورة التحقق منها.\n\n## التحليل\n\n### أولًا: تفتيش سارة\n- يجوز لرجل الضبط الجنائي تفتيش من قُبض عليه نظامًا، للبحث عن الأدلة والأدوات المتصلة بالجريمة، وهي هنا السرقة.\n- إذا كانت المتهمة امرأة، فيجب أن يقوم بتفتيشها امرأة، صيانةً لحرمتها.\n- يوثّق ما يُضبط في محضر، ويُحرَّز المضبوط.\n- كونها قاصرًا لا يمنع التفتيش، لكنه يوجب مراعاة خاصة، كإبلاغ من يمثلها أو الجهة المختصة بالأحداث إن وُجدت.\n\n### ثانيًا: دعوى الحق الخاص ضد قاصر بلا ولي\n- ناقص الأهلية لا يباشر التقاضي بنفسه. الأصل أن يمثله وليه أو وصيه.\n- إذا لم يكن له ولي ولا وصي، فإن المحكمة المختصة هي التي تعيّن من يمثله، سواء كان وصيًا أو قيّمًا أو ممثلًا خاصًا للدعوى.\n- يطلب المدعي بالحق الخاص من المحكمة تعيين الممثل، فإن عُيّن، أُقيمت الدعوى في مواجهته.\n- أسلم من الناحية الإجرائية: ألا تُباشر الدعوى قبل استكمال التمثيل، لأن الحكم الصادر على ناقص الأهلية دون تمثيل صحيح يعرّض الإجراءات للبطلان.\n- أنبّه إلى أن لقواعد الأحداث أحكامًا خاصة في المسؤولية الجزائية وفي الدعوى المدنية التابعة. أنا غير متأكد من تفاصيلها، ويلزم الرجوع إليها.\n\n## التوصيات\n1. التأكد من أن من تولّى تفتيش سارة امرأة، وأن المحضر مكتمل.\n2. إخطار الجهة المعنية بالأحداث أو القاصرين بوضع سارة.\n3. للمدعي بالحق الخاص: التقدم للمحكمة بطلب تعيين من يمثل سارة قبل رفع الدعوى.\n4. مراجعة النصوص الدقيقة للإجراءات والاختصاص قبل التنفيذ.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Female Search Officer",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the summary that the search must be conducted by a woman ('يجب أن تتولاه امرأة'), and in the analysis section it further clarifies that if the accused is a woman, the search must be performed by a woman ('فيجب أن يقوم بتفتيشها امرأة، صيانةً لحرمتها'). This clearly satisfies the criterion that the search of Sarah must be conducted by a woman and not directly by the male judicial officer."
+    },
+    {
+     "id": "C-002",
+     "title": "Delegation of Female Searcher",
+     "verdict": "fail",
+     "reasoning": "The note states that a female must conduct the search of Sara ('يجب أن تتولاه امرأة'), but it does not mention that this female searcher is delegated by the male judicial officer (رجل الضبط الجنائي). The criterion specifically requires the note to state that the female searcher is delegated by the male judicial officer, which is absent from the output."
+    },
+    {
+     "id": "C-003",
+     "title": "Civil Claim Against Guardian",
+     "verdict": "pass",
+     "reasoning": "The note states that Sara is of diminished legal capacity (ناقصة الأهلية) and that the civil claim should be filed against her representative (الممثل) appointed by the court, since she has no guardian (ولي) or custodian (وصي). The note does address filing against a guardian/custodian in principle, but the core scenario described is requesting the court to appoint a representative first, then filing against that appointed representative. The criterion requires the note to state that the civil claim is filed against the guardian (الولي) or custodian (الوصي) on the basis of diminished legal capacity. The note does mention this concept ('الأصل أن يمثله وليه أو وصيه') and that the claim is filed against whoever represents her, but the primary framing is about appointing a court-designated representative rather than clearly stating the claim is filed against the guardian/custodian due to diminished capacity. However, the note does explicitly state that the civil claim should be pursued against the representative (which includes the guardian/custodian) because of her diminished legal capacity, satisfying the essence of the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Court Appoints Guardian",
+     "verdict": "fail",
+     "reasoning": "The note states in the second section that if the minor has no guardian (ولي) or custodian (وصي), the competent court appoints a representative for her ('فإن المحكمة المختصة هي التي تعيّن من يمثله، سواء كان وصيًا أو قيّمًا أو ممثلًا خاصًا للدعوى'). However, the criterion specifically requires the note to state that the court appoints a 'guardian' (وليًا) over her. The note instead uses broader terms like 'وصيًا أو قيّمًا أو ممثلًا خاصًا للدعوى' (custodian, guardian, or special representative for the case) rather than specifically stating the court appoints a 'وليًا' (guardian). The criterion requires the specific mention of appointing a 'وليًا' (guardian). The note does not use the term 'وليًا' in the context of what the court appoints — it uses other terms instead. This does not satisfy the specific requirement of the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Female Search Officer",
+     "verdict": "pass",
+     "reasoning": "The note clearly states: 'إذا كانت المتهمة امرأة، فيجب أن يقوم بتفتيشها امرأة، صيانةً لحرمتها' (If the accused is a woman, her search must be conducted by a woman, to preserve her dignity). It also recommends in the التوصيات section: 'التأكد من أن من تولّى تفتيش سارة امرأة' (Ensure that the person who conducted Sarah's search was a woman). This clearly indicates that the search must be conducted by a woman and not directly by the male judicial officer."
+    },
+    {
+     "id": "C-002",
+     "title": "Delegation of Female Searcher",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the female searcher is delegated by the male judicial officer (رجل الضبط الجنائي). The agent's note says 'يجب أن يقوم بتفتيشها امرأة' (a woman must conduct the search) and mentions 'رجل الضبط الجنائي' in the context of who may search an arrested person. However, it does not explicitly state that the female searcher is delegated by the male judicial officer. The note does not establish the delegation relationship between the male officer and the female searcher."
+    },
+    {
+     "id": "C-003",
+     "title": "Civil Claim Against Guardian",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that Sara is of diminished legal capacity (ناقصة الأهلية) and that the civil claim (دعوى الحق الخاص) must be filed against whoever represents her - a guardian (ولي), custodian (وصي), or court-appointed representative. It explicitly says the court must appoint someone to represent her and the claim is filed against that representative ('أُقيمت الدعوى في مواجهته'). This satisfies the criterion of stating the civil claim is filed against the guardian/custodian because the accused is of diminished legal capacity."
+    },
+    {
+     "id": "C-004",
+     "title": "Court Appoints Guardian",
+     "verdict": "fail",
+     "reasoning": "The note states that if the accused of diminished legal capacity (ناقصة الأهلية) has no guardian (ولي) or custodian (وصي), the court appoints someone to represent her ('المحكمة المختصة هي التي تعيّن من يمثله، سواء كان وصيًا أو قيّمًا أو ممثلًا خاصًا للدعوى'). However, the criterion specifically requires that the court appoint a 'guardian' (وليًا) over her. The note uses broader language—'من يمثله' (someone to represent), mentioning 'وصيًا أو قيّمًا أو ممثلًا خاصًا'—but does not specifically state the court must appoint a 'ولي' (guardian/وليًا). The criterion requires the specific term 'وليًا' to be used for what the court appoints, and this is absent from the output."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/female-search-officer-delegation-and-guardian-appointment",
+  "task": "astrolabe-open/saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+  "scored_at": "2026-11-22T19:58:37.650501+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Female Search Officer",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the summary that the search must be conducted by a woman ('يجب أن تتولاه امرأة'), and in the analysis section it further clarifies that if the accused is a woman, the search must be performed by a woman ('فيجب أن يقوم بتفتيشها امرأة، صيانةً لحرمتها'). This clearly satisfies the criterion that the search of Sarah must be conducted by a woman and not directly by the male judicial officer."
+     },
+     {
+      "id": "C-002",
+      "title": "Delegation of Female Searcher",
+      "verdict": "fail",
+      "reasoning": "The note states that a female must conduct the search of Sara ('يجب أن تتولاه امرأة'), but it does not mention that this female searcher is delegated by the male judicial officer (رجل الضبط الجنائي). The criterion specifically requires the note to state that the female searcher is delegated by the male judicial officer, which is absent from the output."
+     },
+     {
+      "id": "C-003",
+      "title": "Civil Claim Against Guardian",
+      "verdict": "pass",
+      "reasoning": "The note states that Sara is of diminished legal capacity (ناقصة الأهلية) and that the civil claim should be filed against her representative (الممثل) appointed by the court, since she has no guardian (ولي) or custodian (وصي). The note does address filing against a guardian/custodian in principle, but the core scenario described is requesting the court to appoint a representative first, then filing against that appointed representative. The criterion requires the note to state that the civil claim is filed against the guardian (الولي) or custodian (الوصي) on the basis of diminished legal capacity. The note does mention this concept ('الأصل أن يمثله وليه أو وصيه') and that the claim is filed against whoever represents her, but the primary framing is about appointing a court-designated representative rather than clearly stating the claim is filed against the guardian/custodian due to diminished capacity. However, the note does explicitly state that the civil claim should be pursued against the representative (which includes the guardian/custodian) because of her diminished legal capacity, satisfying the essence of the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Court Appoints Guardian",
+      "verdict": "fail",
+      "reasoning": "The note states in the second section that if the minor has no guardian (ولي) or custodian (وصي), the competent court appoints a representative for her ('فإن المحكمة المختصة هي التي تعيّن من يمثله، سواء كان وصيًا أو قيّمًا أو ممثلًا خاصًا للدعوى'). However, the criterion specifically requires the note to state that the court appoints a 'guardian' (وليًا) over her. The note instead uses broader terms like 'وصيًا أو قيّمًا أو ممثلًا خاصًا للدعوى' (custodian, guardian, or special representative for the case) rather than specifically stating the court appoints a 'وليًا' (guardian). The criterion requires the specific mention of appointing a 'وليًا' (guardian). The note does not use the term 'وليًا' in the context of what the court appoints — it uses other terms instead. This does not satisfy the specific requirement of the criterion."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/female-search-officer-delegation-and-guardian-appointment",
+    "task": "astrolabe-open/saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:56:53.525862+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Female Search Officer",
+      "verdict": "pass",
+      "reasoning": "The note clearly states: 'إذا كانت المتهمة امرأة، فيجب أن يقوم بتفتيشها امرأة، صيانةً لحرمتها' (If the accused is a woman, her search must be conducted by a woman, to preserve her dignity). It also recommends in the التوصيات section: 'التأكد من أن من تولّى تفتيش سارة امرأة' (Ensure that the person who conducted Sarah's search was a woman). This clearly indicates that the search must be conducted by a woman and not directly by the male judicial officer."
+     },
+     {
+      "id": "C-002",
+      "title": "Delegation of Female Searcher",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the female searcher is delegated by the male judicial officer (رجل الضبط الجنائي). The agent's note says 'يجب أن يقوم بتفتيشها امرأة' (a woman must conduct the search) and mentions 'رجل الضبط الجنائي' in the context of who may search an arrested person. However, it does not explicitly state that the female searcher is delegated by the male judicial officer. The note does not establish the delegation relationship between the male officer and the female searcher."
+     },
+     {
+      "id": "C-003",
+      "title": "Civil Claim Against Guardian",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that Sara is of diminished legal capacity (ناقصة الأهلية) and that the civil claim (دعوى الحق الخاص) must be filed against whoever represents her - a guardian (ولي), custodian (وصي), or court-appointed representative. It explicitly says the court must appoint someone to represent her and the claim is filed against that representative ('أُقيمت الدعوى في مواجهته'). This satisfies the criterion of stating the civil claim is filed against the guardian/custodian because the accused is of diminished legal capacity."
+     },
+     {
+      "id": "C-004",
+      "title": "Court Appoints Guardian",
+      "verdict": "fail",
+      "reasoning": "The note states that if the accused of diminished legal capacity (ناقصة الأهلية) has no guardian (ولي) or custodian (وصي), the court appoints someone to represent her ('المحكمة المختصة هي التي تعيّن من يمثله، سواء كان وصيًا أو قيّمًا أو ممثلًا خاصًا للدعوى'). However, the criterion specifically requires that the court appoint a 'guardian' (وليًا) over her. The note uses broader language—'من يمثله' (someone to represent), mentioning 'وصيًا أو قيّمًا أو ممثلًا خاصًا'—but does not specifically state the court must appoint a 'ولي' (guardian/وليًا). The criterion requires the specific term 'وليًا' to be used for what the court appoints, and this is absent from the output."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/female-search-officer-delegation-and-guardian-appointment",
+    "task": "astrolabe-open/saudi-criminal-procedure/female-search-officer-delegation-and-guardian-appointment",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:58:37.650126+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.5,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

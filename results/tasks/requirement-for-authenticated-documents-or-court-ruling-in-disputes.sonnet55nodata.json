@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: تغيير بيانات السجل العيني بناءً على وثيقة إدارية صادرة عن المحافظ\n\n## تنبيه\nلا توجد نصوص مرفقة، والمذكرة مبنية على معرفتي العامة. لن أذكر أرقام مواد لست متأكدًا منها، وما لم أجزم به سأنبّه عليه.\n\n## الخلاصة\n1. الأرجح أن الوثيقة الإدارية الصادرة عن المحافظ وحدها لا تكفي لتغيير بيانات السجل العيني.\n2. المحافظ ليس بالضرورة طرفًا في النزاع. قد يُختصم أو يُستدعى إن كان قراره هو مصدر الادعاء بالملكية.\n\n## التحليل\n- نظام السجل العيني في مصر (قانون السجل العيني رقم 142 لسنة 1964) يقوم على القيد في السجل بالاستناد إلى مستندات رسمية ثابتة، وعلى أن بيانات الصحيفة العقارية لها حجية. فلا يُعدَّل القيد إلا بسند يصلح قانونًا لنقل الملكية أو إثباتها: عقد مسجَّل، أو حكم قضائي نهائي، أو قرار من جهة مختصة قانونًا بذلك.\n- الوثيقة الإدارية الصادرة عن المحافظ لا تُنشئ ملكية في ذاتها. المحافظ يمثل المحافظة، وليست له ولاية على أملاك جهة أخرى. وللمجلس الأعلى للآثار والهيئة المصرية العامة للمساحة شخصية اعتبارية مستقلة، ولا يملك المحافظ بقرار منه حسم التنازع بينهما أو إسناد الملكية.\n- إن كانت الأرض مسجلة باسم الغير في السجل العيني، فتغيير البيانات يتطلب طلبًا إلى مكتب السجل العيني أو لجنة التظلمات، أو دعوى قضائية بتصحيح القيد. ولا أجزم بالمواد المنظِّمة لذلك.\n- الأراضي الأثرية لها نظام خاص (قانون حماية الآثار رقم 117 لسنة 1983)، وقد يغيّر ذلك مسألة الملكية والتسجيل. أنبّه إلى أنني لا أحفظ أحكام هذا القانون بدقة تسمح بالاستشهاد بمواده.\n- النزاع بين جهتين حكوميتين تُحسم عادةً بالطرق الودية الخاصة بالجهات الإدارية: لجان التسوية الودية (قانون رقم 7 لسنة 2000 في المنازعات بين الجهات الحكومية وهيئاتها العامة وشركاتها)، أو الجمعية العمومية لقسمي الفتوى والتشريع بمجلس الدولة. ولا أجزم بتفاصيل نطاقه.\n\n## التوصية\n- لا يُعوَّل على وثيقة المحافظ وحدها. يُجمع ما يثبت الملكية من مستندات: تسلسل الملكية، وقرارات التخصيص، وكشوف الشهر.\n- يُرفع الأمر إلى مكتب السجل العيني المختص، ويُدرس عرض النزاع على لجنة التسوية.\n- يُدعى المحافظ كطرف أو شاهد إذا اتُّخذ قراره سندًا في الدعوى.\n- يُراجع النص الفعلي للقوانين المذكورة قبل أي تحرك.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 1,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement for authenticated documents or court ruling",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that changes to the real estate register (السجل العيني) require a registered contract, a final court ruling, or a decision from a legally competent authority ('عقد مسجَّل، أو حكم قضائي نهائي، أو قرار من جهة مختصة قانونًا بذلك'). It also clearly states that the administrative document issued by the governor alone is insufficient ('الوثيقة الإدارية الصادرة عن المحافظ لا تُنشئ ملكية في ذاتها') and that it cannot by itself change the register data. The conclusion section reinforces this by stating 'لا يُعوَّل على وثيقة المحافظ وحدها' (the governor's document alone cannot be relied upon). This satisfies the criterion requiring authenticated documents or a court ruling for register changes, and explicitly rejecting an administrative document alone as sufficient."
+    },
+    {
+     "id": "C-002",
+     "title": "Governor not a party to the dispute",
+     "verdict": "fail",
+     "reasoning": "The note does mention that the Governor may be called as a party or witness if his decision is used as a basis in the lawsuit, but it does not state that the Governor of Beheira is excluded as a party because the governorate has no connection to the land and made no claims or submissions. The criterion requires the note to specifically state that the Governor of Beheira is not a party due to the governorate having no connection to the land and having made no claims or submissions. The agent's output does not provide this specific reasoning for exclusion."
+    },
+    {
+     "id": "C-003",
+     "title": "Actual parties to the dispute",
+     "verdict": "fail",
+     "reasoning": "The note mentions the Supreme Council of Antiquities (المجلس الأعلى للآثار) and the Egyptian General Survey Authority (الهيئة المصرية العامة للمساحة) but does not mention the Real Estate Publicity and Notarization Authority (هيئة الشهر العقاري والتوثيق) as a party to the dispute. Furthermore, the note does not clearly delineate the opposing positions of these bodies — it merely mentions them in passing as having independent legal personalities. The criterion requires identifying all three bodies in their correct opposing positions, which the note fails to do."
+    },
+    {
+     "id": "C-004",
+     "title": "Binding opinion of the General Assembly",
+     "verdict": "fail",
+     "reasoning": "The note mentions the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) as a possible avenue for resolving disputes between government bodies. However, it does not state that its opinion is binding on both parties. The criterion requires both that the General Assembly is competent to resolve such disputes AND that its opinion is binding on both parties. The note only mentions it as an option without affirming the binding nature of its opinions."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 1,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement for authenticated documents or court ruling",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that changes to the real estate register data require proper legal documentation: 'لا يُعدَّل القيد إلا بسند يصلح قانونًا لنقل الملكية أو إثباتها: عقد مسجَّل، أو حكم قضائي نهائي، أو قرار من جهة مختصة قانونًا بذلك' (the entry cannot be modified except with a legally valid basis for transferring or establishing ownership: a registered contract, a final court ruling, or a decision from a legally competent authority). It also explicitly states that an administrative document from the governor alone is insufficient: 'الأرجح أن الوثيقة الإدارية الصادرة عن المحافظ وحدها لا تكفي لتغيير بيانات السجل العيني' and 'الوثيقة الإدارية الصادرة عن المحافظ لا تُنشئ ملكية في ذاتها'. This satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Governor not a party to the dispute",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the Governor of Beheira is not considered a party to the dispute because the governorate has no connection to the land and made no claims or submissions. The agent's note says 'المحافظ ليس بالضرورة طرفًا في النزاع' (the Governor is not necessarily a party to the dispute), which is equivocal rather than a clear exclusion. Moreover, the note does not give the specific reason required by the criterion—that the governorate has no connection to the land and made no claims or submissions. Instead, it hedges and even suggests the Governor could be joined as a party or witness. This does not satisfy the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Actual parties to the dispute",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to identify the actual parties as the Supreme Council of Antiquities on one side, and the Egyptian General Survey Authority and the Real Estate Publicity and Notarization Authority on the other. The note mentions the Supreme Council of Antiquities (المجلس الأعلى للآثار) and the Egyptian General Survey Authority (الهيئة المصرية العامة للمساحة) but does not mention the Real Estate Publicity and Notarization Authority (مصلحة الشهر العقاري والتوثيق) at all. Furthermore, it does not clearly establish them in their correct opposing positions as actual parties to the dispute. Therefore, the criterion is not satisfied."
+    },
+    {
+     "id": "C-004",
+     "title": "Binding opinion of the General Assembly",
+     "verdict": "fail",
+     "reasoning": "The note mentions the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) as competent to resolve disputes between government entities. However, it does not state that the opinion of the General Assembly is binding on both parties. The note merely mentions it as an option and adds a disclaimer ('ولا أجزم بتفاصيل نطاقه'). The criterion requires both that competence is indicated AND that the binding nature of the opinion is stated. Since the binding nature is not mentioned, this is a FAIL."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55nd-nodata/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+  "task": "astrolabe-open/egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+  "scored_at": "2026-11-22T19:53:47.515481+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/4 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement for authenticated documents or court ruling",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that changes to the real estate register (السجل العيني) require a registered contract, a final court ruling, or a decision from a legally competent authority ('عقد مسجَّل، أو حكم قضائي نهائي، أو قرار من جهة مختصة قانونًا بذلك'). It also clearly states that the administrative document issued by the governor alone is insufficient ('الوثيقة الإدارية الصادرة عن المحافظ لا تُنشئ ملكية في ذاتها') and that it cannot by itself change the register data. The conclusion section reinforces this by stating 'لا يُعوَّل على وثيقة المحافظ وحدها' (the governor's document alone cannot be relied upon). This satisfies the criterion requiring authenticated documents or a court ruling for register changes, and explicitly rejecting an administrative document alone as sufficient."
+     },
+     {
+      "id": "C-002",
+      "title": "Governor not a party to the dispute",
+      "verdict": "fail",
+      "reasoning": "The note does mention that the Governor may be called as a party or witness if his decision is used as a basis in the lawsuit, but it does not state that the Governor of Beheira is excluded as a party because the governorate has no connection to the land and made no claims or submissions. The criterion requires the note to specifically state that the Governor of Beheira is not a party due to the governorate having no connection to the land and having made no claims or submissions. The agent's output does not provide this specific reasoning for exclusion."
+     },
+     {
+      "id": "C-003",
+      "title": "Actual parties to the dispute",
+      "verdict": "fail",
+      "reasoning": "The note mentions the Supreme Council of Antiquities (المجلس الأعلى للآثار) and the Egyptian General Survey Authority (الهيئة المصرية العامة للمساحة) but does not mention the Real Estate Publicity and Notarization Authority (هيئة الشهر العقاري والتوثيق) as a party to the dispute. Furthermore, the note does not clearly delineate the opposing positions of these bodies — it merely mentions them in passing as having independent legal personalities. The criterion requires identifying all three bodies in their correct opposing positions, which the note fails to do."
+     },
+     {
+      "id": "C-004",
+      "title": "Binding opinion of the General Assembly",
+      "verdict": "fail",
+      "reasoning": "The note mentions the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) as a possible avenue for resolving disputes between government bodies. However, it does not state that its opinion is binding on both parties. The criterion requires both that the General Assembly is competent to resolve such disputes AND that its opinion is binding on both parties. The note only mentions it as an option without affirming the binding nature of its opinions."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "task": "astrolabe-open/egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T19:47:16.546019+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/4 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement for authenticated documents or court ruling",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that changes to the real estate register data require proper legal documentation: 'لا يُعدَّل القيد إلا بسند يصلح قانونًا لنقل الملكية أو إثباتها: عقد مسجَّل، أو حكم قضائي نهائي، أو قرار من جهة مختصة قانونًا بذلك' (the entry cannot be modified except with a legally valid basis for transferring or establishing ownership: a registered contract, a final court ruling, or a decision from a legally competent authority). It also explicitly states that an administrative document from the governor alone is insufficient: 'الأرجح أن الوثيقة الإدارية الصادرة عن المحافظ وحدها لا تكفي لتغيير بيانات السجل العيني' and 'الوثيقة الإدارية الصادرة عن المحافظ لا تُنشئ ملكية في ذاتها'. This satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Governor not a party to the dispute",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the Governor of Beheira is not considered a party to the dispute because the governorate has no connection to the land and made no claims or submissions. The agent's note says 'المحافظ ليس بالضرورة طرفًا في النزاع' (the Governor is not necessarily a party to the dispute), which is equivocal rather than a clear exclusion. Moreover, the note does not give the specific reason required by the criterion—that the governorate has no connection to the land and made no claims or submissions. Instead, it hedges and even suggests the Governor could be joined as a party or witness. This does not satisfy the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Actual parties to the dispute",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to identify the actual parties as the Supreme Council of Antiquities on one side, and the Egyptian General Survey Authority and the Real Estate Publicity and Notarization Authority on the other. The note mentions the Supreme Council of Antiquities (المجلس الأعلى للآثار) and the Egyptian General Survey Authority (الهيئة المصرية العامة للمساحة) but does not mention the Real Estate Publicity and Notarization Authority (مصلحة الشهر العقاري والتوثيق) at all. Furthermore, it does not clearly establish them in their correct opposing positions as actual parties to the dispute. Therefore, the criterion is not satisfied."
+     },
+     {
+      "id": "C-004",
+      "title": "Binding opinion of the General Assembly",
+      "verdict": "fail",
+      "reasoning": "The note mentions the General Assembly of the Fatwa and Legislation Sections (الجمعية العمومية لقسمي الفتوى والتشريع) as competent to resolve disputes between government entities. However, it does not state that the opinion of the General Assembly is binding on both parties. The note merely mentions it as an option and adds a disclaimer ('ولا أجزم بتفاصيل نطاقه'). The criterion requires both that competence is indicated AND that the binding nature of the opinion is stated. Since the binding nature is not mentioned, this is a FAIL."
+     }
+    ],
+    "run_id": "open-s55nd-nodata/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "task": "astrolabe-open/egypt-evidence/requirement-for-authenticated-documents-or-court-ruling-in-disputes",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:53:47.515025+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.25,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}
