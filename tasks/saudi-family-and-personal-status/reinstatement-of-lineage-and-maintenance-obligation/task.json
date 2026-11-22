@@ -1,0 +1,72 @@
+{
+  "title": "Reinstatement of Lineage and Maintenance Obligation",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "family and personal status",
+    "نظام الأحوال الشخصية"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Reinstatement of Lineage After Self-Denial",
+      "match_criteria": "PASS if the note states that the child's lineage (نسب) is established if the man retracts his denial (أكذب نفسه), even after a judgment has been issued denying it. FAIL if the note does not state that lineage is established upon the man's self-retraction (إكذاب نفسه), even after the judgment of denial.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "No Further Denial After Admission",
+      "match_criteria": "PASS if the note states that after a man retracts his denial (أكذب نفسه), a further denial of lineage (نسب) is not accepted from him. FAIL if the note does not state that a further denial of lineage is not accepted from the man after his self-retraction (إكذاب نفسه).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Obligation of Maintenance on Heirs",
+      "match_criteria": "PASS if the note states that the maintenance (نفقة) of a person who is unable to earn is obligatory upon his solvent heirs (وارثيه الموسرين) in proportion to their shares in inheritance. FAIL if the note does not state that maintenance of a person unable to earn is obligatory upon his solvent heirs in proportion to their shares in inheritance.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Father as Heir Obligated to Maintain",
+      "match_criteria": "PASS if the note states that after the establishment of lineage (ثبوت النسب), the father is among the heirs obligated to provide maintenance (نفقة) for the child who is unable to earn. FAIL if the note does not state that the father, after establishment of lineage, is among the heirs obligated to provide maintenance for the child who is unable to earn.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-007",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-28",
+      "F2-29",
+      "F2-30"
+    ]
+  }
+}

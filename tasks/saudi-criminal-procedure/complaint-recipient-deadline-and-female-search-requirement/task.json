@@ -1,0 +1,84 @@
+{
+  "title": "Complaint Recipient, Deadline, and Female Search Requirement",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "criminal procedure",
+    "نظام الإجراءات الجزائية"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Complaint recipient",
+      "match_criteria": "PASS if the note states that the complaint (تظلم) is submitted to the head of the investigation department, the head of the branch, or the head of the authority, as the case may be. FAIL if the note does not specify all three recipients or omits the condition 'as the case may be.'",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Complaint deadline",
+      "match_criteria": "PASS if the note states that the complaint (تظلم) is decided within five days from the date of its submission. FAIL if the note does not state the five-day period or does not tie it to the date of submission.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Extension order complaint",
+      "match_criteria": "PASS if the note states that the right to complain (تظلم) covers the detention extension order (أمر تمديد التوقيف) and not only the original detention order. FAIL if the note limits the right to complain to the original detention order only or omits the extension order.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Female search requirement",
+      "match_criteria": "PASS if the note states that the search of the accused Sarah must be carried out by a woman and not directly by the criminal investigation officer (رجل الضبط الجنائي). FAIL if the note does not specify that a woman must conduct the search or implies that the criminal investigation officer may conduct it directly.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Delegation of female searcher",
+      "match_criteria": "PASS if the note states that it is the criminal investigation officer (رجل الضبط الجنائي) who delegates a woman to carry out the search. FAIL if the note does not attribute the delegation of the female searcher to the criminal investigation officer.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-010",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-33",
+      "F2-34",
+      "F2-35"
+    ]
+  }
+}

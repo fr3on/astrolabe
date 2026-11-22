@@ -1,0 +1,84 @@
+{
+  "title": "Privity of Contract and Prohibition on Unilateral Release",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "contracts and obligations",
+    "فتوى رقم 216 - بتاريخ 2023/01/11"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "match_criteria": "PASS if the note states that the effects of the contract are confined to its parties and obligations extend only to the contracting parties (privity of contract). FAIL if the note does not state that the effects of the contract are confined to its parties and obligations extend only to the contracting parties.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "match_criteria": "PASS if the note states that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). FAIL if the note does not state that no party may release itself from its obligations by its own unilateral will.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "match_criteria": "PASS if the note states that the King Abdulaziz City for Science and Technology (ASRT / الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية) is responsible for paying the amounts due to the company for electronic industries. FAIL if the note does not state that the King Abdulaziz City for Science and Technology is responsible for paying the amounts due to the company for electronic industries.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "match_criteria": "PASS if the note states that the King Abdulaziz City for Science and Technology has the right of recourse (حق الرجوع) against the Science, Technology and Innovation Funding Authority in accordance with the terms of the research grant contract. FAIL if the note does not state that the King Abdulaziz City for Science and Technology has the right of recourse against the Science, Technology and Innovation Funding Authority in accordance with the terms of the research grant contract.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "match_criteria": "PASS if the note states that the contract is the law of the contracting parties (العقد شريعة المتعاقدين) and may not be revoked or modified except by agreement of both parties or for reasons established by law. FAIL if the note does not state that the contract is the law of the contracting parties and may not be revoked or modified except by agreement of both parties or for reasons established by law.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-123",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-9444#1",
+      "eg-fatwa-9444#2",
+      "eg-fatwa-9444#3"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Scope of Mandate for Higher Studies Supervision and Publication",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "administrative law and public employment",
+    "فتوى رقم 336 - بتاريخ 1999/04/07"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Incorrect assumption about scope",
+      "match_criteria": "PASS if the note states that Dr. Sami's belief that the Council (المجمع) is limited to doctrinal and sectarian matters (المسائل العقدية والمذهبية) is an incorrect assumption. FAIL if the note does not identify this belief as incorrect or omits any reference to the mistaken assumption about the Council's scope.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Supervision of higher studies",
+      "match_criteria": "PASS if the note states that the Council assists Al-Azhar University in directing, supervising, or participating in the examinations of higher Islamic studies at the levels of specialisation (التخصص) and the highest academic degree (العالمية). FAIL if the note does not mention the Council's role in relation to higher Islamic studies at the two degrees of التخصص and العالمية or its supervision of or participation in their examinations.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Publication and translation mandate",
+      "match_criteria": "PASS if the note states that the Council is also exclusively competent in everything connected with publication, translation, authorship, missions (البعوث), its preachers (دعاته), and its incoming students (طلابه الوافدين). FAIL if the note omits the Council's mandate covering publication, translation, authorship, missions, preachers, and incoming students.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Broader mandate confirmed",
+      "match_criteria": "PASS if the note clarifies that the Council's mandate includes studying everything connected with Islamic research, renewing Islamic culture (تجديد الثقافة الإسلامية), and purifying it from impurities (تجريدها من الشوائب), which goes beyond the scope of doctrinal fatwas alone. FAIL if the note does not explain that the Council's mandate extends to Islamic research, renewal of Islamic culture, and its purification from impurities, thereby exceeding the scope of doctrinal fatwas only.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-119",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-17644#1",
+      "eg-fatwa-17644#2"
+    ],
+    "review": {
+      "reviewer": "Hussein Abu Zarifa",
+      "date": "2026-11-22",
+      "outcome": "approved",
+      "changes": [
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 through C-004 against Articles 15 and 25 of Law No. 103 of 1961 on the Reorganization of Al-Azhar and its Affiliated Bodies, confirming the Islamic Research Academy's mandate over higher studies supervision, Islamic culture renewal, publication, translation, missions, preachers, and incoming students."
+    }
+  }
+}

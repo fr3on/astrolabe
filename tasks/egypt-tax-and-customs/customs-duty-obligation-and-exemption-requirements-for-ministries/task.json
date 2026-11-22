@@ -1,0 +1,84 @@
+{
+  "title": "Customs Duty Obligation and Exemption Requirements for Ministries",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "tax and customs",
+    "فتوى رقم 57 - بتاريخ 1997/01/08"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "General Rule of Customs Taxation",
+      "match_criteria": "PASS if the note states that the general rule in customs law is that all imports are subject to customs taxes (ضرائب جمركية) and exemption therefrom is only granted by a special provision. FAIL if the note does not state that the general rule in customs law is that all imports are subject to customs taxes and that exemption requires a special provision.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Obligation to Pay Customs Duties",
+      "match_criteria": "PASS if the note states that the Ministry of Interior is obligated to pay the customs taxes and duties amounting to 104262.680 pounds due to its failure to present evidence of re-exportation or a decision granting exemption. FAIL if the note does not state that the Ministry of Interior is obligated to pay the customs taxes and duties amounting to 104262.680 pounds because it did not present evidence of re-exportation or a decision granting exemption.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "No Exemption Without Evidence",
+      "match_criteria": "PASS if the note states that there is no legal basis (سند) available to the Ministry that would allow it to be released from its obligation to pay the customs taxes. FAIL if the note does not state that there is no legal basis available to the Ministry that would allow it to be released from its obligation to pay the customs taxes.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Import Law Does Not Apply to Ministries",
+      "match_criteria": "PASS if the note states that the provisions of Law No. 118 of 1975 do not address ministries and public authorities when they import their own requirements. FAIL if the note does not state that the provisions of Law No. 118 of 1975 do not address ministries and public authorities when they import their own requirements.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Rejection of Compensation Claim",
+      "match_criteria": "PASS if the note states that the claim to oblige the Ministry of Interior to pay compensation for failure to present the import approval (موافقة استيرادية) is devoid of a sound legal basis and must be rejected. FAIL if the note does not state that the claim to oblige the Ministry of Interior to pay compensation for failure to present the import approval is devoid of a sound legal basis and must be rejected.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-107",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-17812#1",
+      "eg-fatwa-17812#2",
+      "eg-fatwa-17812#3"
+    ]
+  }
+}

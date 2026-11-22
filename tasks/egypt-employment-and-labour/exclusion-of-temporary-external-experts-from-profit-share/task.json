@@ -1,0 +1,84 @@
+{
+  "title": "Exclusion of Temporary External Experts from Profit Share",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "employment and labour",
+    "فتوى رقم 342 - بتاريخ 2023/02/08"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Exclusion from profit share",
+      "match_criteria": "PASS if the note states that the appointed consultant is not entitled to the 10% of profits because he does not possess the quality of shareholding (صفة السهمية) or a permanent relationship with the company. FAIL if the note does not state that the appointed consultant is excluded from the 10% of profits due to the absence of shareholding status or a permanent relationship with the company.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Temporary external expert",
+      "match_criteria": "PASS if the note states that the consultant performs his services on a temporary basis and is affiliated with another employer outside the company. FAIL if the note does not state that the consultant's engagement is temporary and that he belongs to an external employer outside the company.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Contract conversion theory",
+      "match_criteria": "PASS if the note states the theory of contract conversion (نظرية تحول العقد) or conversion of the legal act as a possible basis for retaining the amount under a different designation. FAIL if the note does not mention the theory of contract conversion (نظرية تحول العقد) or conversion of the legal act as a potential ground for keeping the amount.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Condition for conversion",
+      "match_criteria": "PASS if the note states that conversion requires the existence of the elements of another valid contract within the void act and the possibility of presuming the parties' intention toward that other act. FAIL if the note does not state that conversion is conditioned on the presence of the elements of another valid contract within the void act and the possibility of presuming the parties' intention toward that other act.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Alternative valid basis",
+      "match_criteria": "PASS if the note states that the amount may be recognised on a different basis, such as fees or remuneration for consultancy services, rather than as profits. FAIL if the note does not state that the amount could be upheld on an alternative valid basis, such as fees or remuneration for consultancy services, as distinct from profits.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-125",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-9441#1",
+      "eg-fatwa-9441#2",
+      "eg-fatwa-9441#3"
+    ]
+  }
+}

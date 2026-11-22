@@ -1,0 +1,96 @@
+{
+  "title": "Binding Force of Contract Despite Pre-Contract Procedural Defects",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "contracts and obligations",
+    "فتوى رقم 83 - بتاريخ 2015/11/18"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Contract as binding law",
+      "match_criteria": "PASS if the note states that the contract is binding law upon the contracting parties (العقد شريعة المتعاقدين) and may not be revoked except by mutual agreement of the parties or for reasons established by law. FAIL if the note does not state that the contract is binding law upon the contracting parties and may not be revoked except by mutual agreement of the parties or for reasons established by law.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Good faith execution",
+      "match_criteria": "PASS if the note states that the contract must be executed in a manner consistent with the requirements of good faith (حسن النية). FAIL if the note does not state that the contract must be executed in a manner consistent with the requirements of good faith.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Pre-contract procedural defects do not void a complete contract",
+      "match_criteria": "PASS if the note states that nullity (البطلان) affecting procedures prior to contracting does not prevent the contract from being binding once it has fulfilled its essential elements (أركانه). FAIL if the note does not state that nullity affecting procedures prior to contracting does not prevent the contract from being binding once it has fulfilled its essential elements.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Obligation to continue execution",
+      "match_criteria": "PASS if the note states that the administrative authority is obligated to continue executing the contract until the end of its term in order to achieve the principle of stability of transactions (استقرار المعاملات). FAIL if the note does not state that the administrative authority is obligated to continue executing the contract until the end of its term in order to achieve the principle of stability of transactions.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Public interest harm from termination",
+      "match_criteria": "PASS if the note states that terminating the contract during its execution causes serious harm to the public interest due to the loss of amounts already expended or the imposition of exorbitant amounts on the public treasury. FAIL if the note does not state that terminating the contract during its execution causes serious harm to the public interest due to the loss of amounts already expended or the imposition of exorbitant amounts on the public treasury.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-006",
+      "title": "Liability of violators preserved",
+      "match_criteria": "PASS if the note states that continuing to execute the contract does not prejudice the rules of civil, disciplinary, and criminal liability against those who took the procedures in violation of the law. FAIL if the note does not state that continuing to execute the contract does not prejudice the rules of civil, disciplinary, and criminal liability against those who took the procedures in violation of the law.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-104",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-17192#1",
+      "eg-fatwa-17192#2",
+      "eg-fatwa-17192#3"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Application of University Law Benefits to Agricultural Research Staff",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "administrative law and public employment",
+    "فتوى رقم 1224 - بتاريخ 2017/07/01"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Agricultural Research Center subject to Universities Law",
+      "match_criteria": "PASS if the note states that the Agricultural Research Center is subject to the provisions of the Universities Organization Law and its executive regulations in matters not covered by a special text. FAIL if the note does not state that the Agricultural Research Center is subject to the provisions of the Universities Organization Law and its executive regulations in matters not covered by a special text.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Research staff enjoy same benefits as teaching staff",
+      "match_criteria": "PASS if the note states that members of the research staff at the Agricultural Research Center enjoy all the benefits and advantages prescribed for university teaching staff members. FAIL if the note does not state that members of the research staff at the Agricultural Research Center enjoy all the benefits and advantages prescribed for university teaching staff members.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Full dedication condition for university allowance increase",
+      "match_criteria": "PASS if the note acknowledges that the legislator set a condition of full dedication with a minimum of four days per week to qualify for the university allowance increase under Law 84 of 2012. FAIL if the note does not acknowledge that the legislator set a condition of full dedication with a minimum of four days per week to qualify for the university allowance increase under Law 84 of 2012.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Exception: full salary retained during scientific mission",
+      "match_criteria": "PASS if the note states that the legislator explicitly preserved the right of the teaching/research staff member to receive his full salary throughout the duration of a temporary scientific mission outside the university, overriding the dedication condition. FAIL if the note does not state that the legislator explicitly preserved the right of the teaching/research staff member to receive his full salary throughout the duration of a temporary scientific mission outside the university, overriding the dedication condition.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Mission duration and renewal condition",
+      "match_criteria": "PASS if the note states that the scientific mission is for one year, renewable once in cases of extreme necessity (ضرورة قصوى), provided it does not disrupt the work of the department or faculty. FAIL if the note does not state that the scientific mission is for one year, renewable once in cases of extreme necessity (ضرورة قصوى), provided it does not disrupt the work of the department or faculty.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-109",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-16499#1",
+      "eg-fatwa-16499#2",
+      "eg-fatwa-16499#3"
+    ],
+    "review": {
+      "reviewer": "Hussein Abu Zarifa",
+      "date": "2026-11-22",
+      "outcome": "approved",
+      "changes": [
+        "Aligned C-005 FAIL clause wording with PASS clause and added (ضرورة قصوى)"
+      ],
+      "notes": "Verified C-001 through C-005 against Presidential Decree No. 19 of 1983, Law No. 49 of 1972, Law No. 84 of 2012, and State Council Fatwa jurisprudence."
+    }
+  }
+}

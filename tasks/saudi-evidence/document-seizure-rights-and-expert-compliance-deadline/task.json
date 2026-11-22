@@ -1,0 +1,84 @@
+{
+  "title": "Document Seizure Rights and Expert Compliance Deadline",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "evidence",
+    "نظام الإثبات"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Right to seize document",
+      "match_criteria": "PASS if the note states that the court may order the seizure or preservation of the document (المحرر) upon the request of the claimant of forgery (المدعي بالتزوير) for a legitimate interest. FAIL if the note does not mention that the court may order the seizure or preservation of the document upon the request of the claimant of forgery for a legitimate interest.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Defendant's waiver ends proceedings",
+      "match_criteria": "PASS if the note states that the defendant's waiver of reliance on the document ends the forgery investigation proceedings at whatever stage they are at. FAIL if the note does not mention that the defendant's waiver of reliance on the document ends the forgery investigation proceedings at whatever stage they are at.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Expert return deadline",
+      "match_criteria": "PASS if the note states that the expert is obligated to return everything received within ten days from the date of the completion of his mission. FAIL if the note does not mention that the expert is obligated to return everything received within ten days from the date of the completion of his mission.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Fine for non-compliance",
+      "match_criteria": "PASS if the note states that the court shall rule against the non-complying expert with a fine not exceeding ten thousand riyals. FAIL if the note does not mention that the court shall rule against the non-complying expert with a fine not exceeding ten thousand riyals.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Final non-appealable judgment",
+      "match_criteria": "PASS if the note states that the court's judgment against the expert in this case is final and not subject to appeal (غير قابل للاعتراض). FAIL if the note does not mention that the court's judgment against the expert in this case is final and not subject to appeal.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-009",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-21",
+      "F2-22",
+      "F2-23"
+    ]
+  }
+}

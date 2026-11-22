@@ -1,0 +1,72 @@
+{
+  "title": "Female Search Officer Delegation and Guardian Appointment",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "criminal procedure",
+    "نظام الإجراءات الجزائية"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Female Search Officer",
+      "match_criteria": "PASS if the note states that the search of Sarah must be conducted by a woman and not directly by the male judicial officer (رجل الضبط الجنائي). FAIL if the note does not state that the search must be conducted by a woman rather than directly by the male judicial officer (رجل الضبط الجنائي).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Delegation of Female Searcher",
+      "match_criteria": "PASS if the note states that the woman assigned to conduct the search is delegated by the male judicial officer (رجل الضبط الجنائي). FAIL if the note does not state that the female searcher is delegated by the male judicial officer (رجل الضبط الجنائي).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Civil Claim Against Guardian",
+      "match_criteria": "PASS if the note states that the civil claim (دعوى الحق الخاص) is filed against the guardian (الولي) or custodian (الوصي) because the accused is of diminished legal capacity (ناقصة الأهلية). FAIL if the note does not state that the civil claim (دعوى الحق الخاص) is filed against the guardian (الولي) or custodian (الوصي) on the basis that the accused is of diminished legal capacity (ناقصة الأهلية).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Court Appoints Guardian",
+      "match_criteria": "PASS if the note states that if the accused of diminished legal capacity (ناقصة الأهلية) has no guardian (ولي) or custodian (وصي), the court must appoint a guardian (وليًا) over her. FAIL if the note does not state that the court must appoint a guardian (وليًا) when the accused of diminished legal capacity (ناقصة الأهلية) has no guardian (ولي) or custodian (وصي).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-011",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-33",
+      "F2-35",
+      "F2-37"
+    ]
+  }
+}

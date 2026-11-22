@@ -1,0 +1,81 @@
+{
+  "title": "Non-Retroactivity of Transfer Provisions Under Police Law",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "administrative law and public employment",
+    "فتوى رقم 373 - بتاريخ 1978/03/07"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "New Provision Post-1971",
+      "match_criteria": "PASS if the note states that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is a new provision introduced by Law No. 109 of 1971 and did not exist in prior laws. FAIL if the note does not state that this provision was newly introduced by Law No. 109 of 1971 and was absent from earlier legislation.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Non-Retroactivity of Transfer",
+      "match_criteria": "PASS if the note states that this provision does not apply to transfer events (واقعات النقل) that occurred under laws preceding the year 1971. FAIL if the note does not state that the provision is non-retroactive and does not cover transfers that took place under laws prior to 1971.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Inapplicability of CAOA Exception Authority",
+      "match_criteria": "PASS if the note states that the authority of the Head of the Central Agency for Organization and Administration (رئيس الجهاز المركزي للتنظيم والإدارة) to grant exceptions from the workers' scale (كادر العمال) does not constitute a basis for establishing a prior right to retention of allowances (الاحتفاظ بالبدلات). FAIL if the note does not state that such authority cannot serve as a legal basis for proving a pre-existing right to retention of allowances.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Police Law as Sole Source",
+      "match_criteria": "PASS if the note states that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is found in the Police Force Law (قانون هيئة الشرطة) and not in the workers' scale (كادر العمال). FAIL if the note does not state that the Police Force Law, and not the workers' scale, is the sole source of the retention of allowances provision.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-112",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-1849#1",
+      "eg-fatwa-1849#2"
+    ],
+    "review": {
+      "reviewer": "Hussein Abu Zarifa",
+      "date": "2026-11-22",
+      "outcome": "approved",
+      "changes": [
+        "Standardized agency name in C-003 from \"Central Organization for Organization and Administration\" to \"Central Agency for Organization and Administration\" (CAOA)",
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 through C-004 against Police Authority Law No. 109 of 1971 and State Council Fatwa jurisprudence (Fatwa No. 373 of 1978/03/07) confirming the non-retroactivity of the allowance-retention provision and the inapplicability of CAOA workers' scale exception authority."
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Definition of Wage for Social Insurance Contribution Purposes",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "employment and labour",
+    "فتوى رقم 1274 - بتاريخ 2018/09/12"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Definition of Wage for Insurance",
+      "match_criteria": "PASS if the note states that the wage subject to social insurance contributions is only what the employee receives in return for his original work (الأجر الأصلي). FAIL if the note does not limit the insurable wage to remuneration received in return for the employee's original work, or adds conditions not given.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Temporary/Incidental Work Exception",
+      "match_criteria": "PASS if the note states that remuneration received for work performed on a temporary or incidental secondment basis does not constitute a wage under social insurance law, even if paid by the original employer. FAIL if the note does not distinguish temporary or incidental secondment remuneration from the insurable wage, or omits the condition that this applies even when payment is made by the original employer.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "No Contributions Due",
+      "match_criteria": "PASS if the note concludes that no social insurance contributions are due on the bonuses and incentives paid for the secondment work. FAIL if the note does not reach the conclusion that no social insurance contributions are due on the bonuses and incentives paid for the secondment work, or qualifies that conclusion with conditions not given.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Rejection of Ministry's Claim",
+      "match_criteria": "PASS if the note references that the General Assembly rejected the demand to require the Sohag Agriculture Directorate to pay contributions on incentives and bonuses received by seconded employees working on the cattle breeding and land protection projects outside official working hours. FAIL if the note does not reference the General Assembly's rejection of the demand against the Sohag Agriculture Directorate concerning contributions on incentives and bonuses for seconded employees working on the cattle breeding and land protection projects outside official working hours.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-117",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-8585#1",
+      "eg-fatwa-8585#2"
+    ]
+  }
+}

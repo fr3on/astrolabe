@@ -1,0 +1,84 @@
+{
+  "title": "Bequest Exceeding One-Third and Notification Duty",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "family and personal status",
+    "نظام الأحوال الشخصية"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Obligation to notify authority",
+      "match_criteria": "PASS if the note states that the heirs of Sa'd (the deceased guardian) (الوصي المتوفى) are obligated to notify the competent authority to protect the minor's rights. FAIL if the note does not state that the heirs of Sa'd (الوصي المتوفى) must notify the competent authority to protect the minor's rights.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Who must notify",
+      "match_criteria": "PASS if the note states that the duty to notify falls on the heirs of the guardian (الوصي), or whoever has possession of his estate or any part of it. FAIL if the note does not state that the duty to notify falls on the heirs of the guardian (الوصي) or whoever has possession of his estate or any part of it.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Perpetual usufruct valuation",
+      "match_criteria": "PASS if the note states that a bequest of perpetual usufruct (الوصية بالمنفعة المؤبدة) is calculated from the one-third using the value of the asset whose usufruct was bequeathed at the time of the testator's death. FAIL if the note does not state that a bequest of perpetual usufruct (الوصية بالمنفعة المؤبدة) is calculated from the one-third using the value of the asset at the time of the testator's death.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "One-third limit",
+      "match_criteria": "PASS if the note states that the bequest is calculated from one-third of the estate, and that one-third of 300,000 riyals is 100,000 riyals. FAIL if the note does not state that the bequest is calculated from one-third of the estate and that one-third of 300,000 riyals is 100,000 riyals.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Bequest exceeds one-third",
+      "match_criteria": "PASS if the note states that the value of the asset (120,000 riyals) exceeds the one-third limit (100,000 riyals) and therefore the bequest is only executed within the limits of the one-third. FAIL if the note does not state that the value of the asset (120,000 riyals) exceeds the one-third (100,000 riyals) and that the bequest is only executed within the limits of the one-third.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-008",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-27",
+      "F2-29",
+      "F2-31"
+    ]
+  }
+}

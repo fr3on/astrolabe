@@ -1,0 +1,96 @@
+{
+  "title": "First Fiscal Year Duration and Single Shareholder Powers",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "company law",
+    "نظام الشركات"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Minimum first fiscal year duration",
+      "match_criteria": "PASS if the note states that the first fiscal year must not be less than six months. FAIL if the note does not state that the first fiscal year must not be less than six months.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Maximum first fiscal year duration",
+      "match_criteria": "PASS if the note states that the first fiscal year must not exceed eighteen months. FAIL if the note does not state that the first fiscal year must not exceed eighteen months.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Nine months is permissible",
+      "match_criteria": "PASS if the note confirms that nine months is a legally permissible duration for the first fiscal year. FAIL if the note does not confirm that nine months is a legally permissible duration for the first fiscal year.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Single shareholder powers",
+      "match_criteria": "PASS if the note states that Khalid, as the sole owner of all shares, holds the powers of the shareholders' assemblies (جمعيات المساهمين). FAIL if the note does not state that Khalid, as the sole owner of all shares, holds the powers of the shareholders' assemblies (جمعيات المساهمين).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Written decision without general assembly",
+      "match_criteria": "PASS if the note states that the decision is issued in writing without the need to convene the general assembly. FAIL if the note does not state that the decision is issued in writing without the need to convene the general assembly.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-006",
+      "title": "Recording in special register",
+      "match_criteria": "PASS if the note states that the decision is recorded in the special register (السجل الخاص) prescribed by the regulations. FAIL if the note does not state that the decision is recorded in the special register (السجل الخاص) prescribed by the regulations.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-013",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-8",
+      "F2-9",
+      "F2-10"
+    ]
+  }
+}

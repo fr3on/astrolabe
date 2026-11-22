@@ -1,0 +1,92 @@
+{
+  "title": "Public Property Exemption and Binding Opinion as Litigation Alternative",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "civil procedure and litigation",
+    "فتوى رقم 833 - بتاريخ 2024/05/22"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Public Property Exemption",
+      "match_criteria": "PASS if the note states that real estate owned by the state and allocated for a purpose of public benefit is not subject to the tax on built properties (ضريبة العقارات المبنية). FAIL if the note does not mention that state-owned real estate allocated for a public-benefit purpose is exempt from the tax on built properties.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Authority Funds Are Public",
+      "match_criteria": "PASS if the note states that the funds of the Egyptian General Authority for Cinema, Theatre and Music are considered public funds (أموال عامة). FAIL if the note does not state that the funds of the Egyptian General Authority for Cinema, Theatre and Music are considered public funds.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Binding Opinion Mechanism",
+      "match_criteria": "PASS if the note states that the General Assembly of the Fatwa and Legislation Departments (الجمعية العمومية لقسمَي الفتوى والتشريع) is competent to issue a binding opinion on both parties in disputes between administrative bodies. FAIL if the note does not mention that the General Assembly of the Fatwa and Legislation Departments is competent to issue a binding opinion on both parties in disputes between administrative bodies.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Alternative to Litigation",
+      "match_criteria": "PASS if the note states that the opinion of the General Assembly (رأي الجمعية العمومية) is considered an alternative to the use of litigation for resolving disputes between administrative bodies. FAIL if the note does not state that the opinion of the General Assembly is considered an alternative to the use of litigation for resolving disputes between administrative bodies.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Expert Delegation",
+      "match_criteria": "PASS if the note states that the General Assembly may delegate one or more experts to seek their opinion on technical matters that require special expertise. FAIL if the note does not mention that the General Assembly may delegate one or more experts to seek their opinion on technical matters that require special expertise.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-106",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-13349#1",
+      "eg-fatwa-13349#2"
+    ],
+    "review": {
+      "reviewer": "Iten Osama",
+      "date": "2026-11-23",
+      "outcome": "approved",
+      "changes": [
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 through C-005 against Law No. 196 of 2008 (Built Property Tax exemption for public-benefit state property), public-fund status of the Authority, and Article 66(d) of State Council Law No. 47 of 1972."
+    }
+  }
+}

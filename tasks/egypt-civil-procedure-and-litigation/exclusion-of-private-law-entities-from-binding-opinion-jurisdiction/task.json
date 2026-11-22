@@ -1,0 +1,94 @@
+{
+  "title": "Exclusion of Private Law Entities from Binding Opinion Jurisdiction",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "civil procedure and litigation",
+    "فتوى رقم 446 - بتاريخ 2024/02/28"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Binding Opinion Jurisdiction",
+      "match_criteria": "PASS if the note states that the General Assembly (الجمعية العمومية) has jurisdiction to issue a binding opinion (رأي ملزم) in disputes between public law entities such as ministries, general authorities, and local authorities. FAIL if the note does not state that the General Assembly's binding opinion jurisdiction is limited to disputes between public law entities such as ministries, general authorities, and local authorities.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Public Law Entities Only",
+      "match_criteria": "PASS if the note states that all entities specified within the General Assembly's jurisdiction are public law persons (أشخاص القانون العام). FAIL if the note does not state that all entities falling within the General Assembly's jurisdiction are exclusively public law persons (أشخاص القانون العام).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Private Law Party Exclusion",
+      "match_criteria": "PASS if the note states that the General Assembly's jurisdiction recedes whenever one of the parties to the dispute is a private law person (شخص من أشخاص القانون الخاص). FAIL if the note does not state that the General Assembly's jurisdiction recedes when one of the parties to the dispute is a private law person (شخص من أشخاص القانون الخاص).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Petrojet as Private Entity",
+      "match_criteria": "PASS if the note states that Petrojet (بتروجيت) is a private law person (شخص من أشخاص القانون الخاص), which removes the dispute from the General Assembly's jurisdiction. FAIL if the note does not state that Petrojet (بتروجيت) is a private law person (شخص من أشخاص القانون الخاص) and that this removes the dispute from the General Assembly's jurisdiction.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "No Binding Opinion Despite Public Party",
+      "match_criteria": "PASS if the note states that the fact that the other party, Alexandria Governorate (محافظة الإسكندرية), is a public law person does not change the recession of the General Assembly's jurisdiction. FAIL if the note does not state that Alexandria Governorate (محافظة الإسكندرية) being a public law person does not alter the recession of the General Assembly's jurisdiction.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-115",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-14103#1",
+      "eg-fatwa-14103#2",
+      "eg-fatwa-14103#3"
+    ],
+    "review": {
+      "reviewer": "Iten Osama",
+      "date": "2026-11-23",
+      "outcome": "approved",
+      "changes": [
+        "Fixed spelling of \"Petrogiet\" to \"Petrojet\" in C-004 title and match_criteria",
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 through C-005 against Article 66(d) of State Council Law No. 47 of 1972 and General Assembly jurisprudence excluding disputes involving private law persons (such as Petrojet). Noted that source-1.txt is not directly referenced by any criterion."
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "title": "180-Day Bar on Aggravation and Penalty Register Requirement",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "employment and labour",
+    "نظام العمل"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "180-day rule bars aggravation",
+      "match_criteria": "PASS if the note states that aggravation of the penalty (تشديد الجزاء) is not permissible because the period exceeded one hundred and eighty days from the date the worker was notified of the previous penalty. FAIL if the note does not state that aggravation of the penalty is barred once one hundred and eighty days have passed from the date the worker was notified of the previous penalty.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Start of 180-day period",
+      "match_criteria": "PASS if the note states that the one-hundred-and-eighty-day period is calculated from the date the worker was notified of the imposition of the penalty, not from the date of the violation. FAIL if the note does not state that the starting point of the one-hundred-and-eighty-day period is the date of notification to the worker of the penalty, or if it states that the period starts from the date of the violation.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Special register requirement",
+      "match_criteria": "PASS if the note states that the employer is required to record the fine in a special register (سجل خاص) indicating the worker's name, the amount of his wage, the amount of the fine, its reason, and its date. FAIL if the note does not state that the employer is obligated to record the fine in a special register with all of the following details: the worker's name, the amount of his wage, the amount of the fine, its reason, and its date.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Fines used for workers' benefit",
+      "match_criteria": "PASS if the note states that fines may not be disposed of except in a manner that benefits the workers of the establishment. FAIL if the note does not state that disposing of fines is restricted solely to uses that benefit the workers of the establishment.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Labor committee or ministry approval",
+      "match_criteria": "PASS if the note states that the disposal of fines is carried out through the labor committee (اللجنة العمالية), or with the approval of the Ministry in the absence of the committee. FAIL if the note does not state that disposal of fines requires either the labor committee or, where no such committee exists, the approval of the Ministry.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-016",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-1",
+      "F2-2",
+      "F2-3"
+    ]
+  }
+}

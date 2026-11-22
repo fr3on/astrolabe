@@ -1,0 +1,72 @@
+{
+  "title": "Minimum Works Percentage, Amount, and Payment Conditions",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "government procurement",
+    "نظام المنافسات والمشتريات الحكومية"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Minimum_Percentage_Works",
+      "match_criteria": "PASS if the note states that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value. FAIL if the note does not state that the minimum final payment certificate (المستخلص الأخير) in public works contracts is 10% of the contract value.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Minimum_Amount",
+      "match_criteria": "PASS if the note states that the minimum amount of the final payment certificate (المستخلص الأخير) is one million riyals, being 10% of ten million. FAIL if the note does not state that the minimum amount of the final payment certificate (المستخلص الأخير) is one million riyals, being 10% of ten million.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Payment_Condition",
+      "match_criteria": "PASS if the note states that the release of the final payment certificate (المستخلص الأخير) is conditional upon preliminary handover (التسليم الابتدائي) of the works. FAIL if the note does not state that the release of the final payment certificate (المستخلص الأخير) is conditional upon preliminary handover (التسليم الابتدائي) of the works.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Payment_Date",
+      "match_criteria": "PASS if the note states that the company is entitled to payment of the certificate as of the date of preliminary handover (التسليم الابتدائي) on 1 January 2024. FAIL if the note does not state that the company is entitled to payment of the certificate as of the date of preliminary handover (التسليم الابتدائي) on 1 January 2024.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-021",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-42",
+      "F2-43",
+      "F2-44"
+    ]
+  }
+}

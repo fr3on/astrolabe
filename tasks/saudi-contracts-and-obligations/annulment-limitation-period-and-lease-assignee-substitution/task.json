@@ -1,0 +1,72 @@
+{
+  "title": "Annulment Limitation Period and Lease Assignee Substitution",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "contracts and obligations",
+    "نظام المعاملات المدنية"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "One-Year Limitation for Annulment",
+      "match_criteria": "PASS if the note states that the annulment claim (دعوى الإبطال) must be filed within one year from the date Samer learned of the defect, i.e., before January 2024. FAIL if the note does not state that the one-year limitation period runs from the date Samer learned of the defect or does not identify January 2024 as the deadline.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Ten-Year Absolute Limit",
+      "match_criteria": "PASS if the note states that there is an absolute maximum period of ten years from the date of contracting (2020), meaning the claim cannot be heard after 2030. FAIL if the note does not state that the absolute maximum period is ten years from 2020 or does not identify 2030 as the final cutoff.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Assignee Substitution in Lease",
+      "match_criteria": "PASS if the note states that Khaled, as the assignee (المحال إليه), steps into Samer's position and assumes all rights and obligations under the assigned lease contract. FAIL if the note does not state that Khaled steps into Samer's position and assumes all rights and obligations under the assigned lease contract.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Contractor Completion Obligation",
+      "match_criteria": "PASS if the note states that the contractor was obligated to complete the work according to the agreed conditions and within the agreed period. FAIL if the note does not reference that the contractor was obligated to complete the work according to the agreed conditions and within the agreed period.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-020",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-15",
+      "F2-17",
+      "F2-19"
+    ]
+  }
+}

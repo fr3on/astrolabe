@@ -1,0 +1,81 @@
+{
+  "title": "CAOA Jurisdiction and Prior Approval of Staff Regulations",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "administrative law and public employment",
+    "فتوى رقم 594 - بتاريخ 2024/03/13"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "CAOA jurisdiction over public bodies",
+      "match_criteria": "PASS if the note states that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) exercises its jurisdiction with respect to public bodies and public institutions (الهيئات والمؤسسات العامة). FAIL if the note does not mention that the Central Agency for Organization and Administration exercises its jurisdiction with respect to public bodies and public institutions.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Prior approval of staff regulations",
+      "match_criteria": "PASS if the note states that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) must approve regulations relating to personnel affairs before they are enacted. FAIL if the note does not mention that the Central Agency for Organization and Administration must approve regulations relating to personnel affairs before they are enacted.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Budget law is formal not substantive",
+      "match_criteria": "PASS if the note states that the general budget law (قانون الموازنة العامة) is a law only in the formal sense (من الناحية الشكلية) and not in the substantive sense (من الناحية الموضوعية). FAIL if the note does not mention that the general budget law is a law only in the formal sense and not in the substantive sense.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Budget law is temporary and limited",
+      "match_criteria": "PASS if the note states that the budget law (قانون الموازنة) is a temporary law limited to approving revenues and expenditures for one year only and does not contain general substantive provisions (أحكاماً موضوعية عامة). FAIL if the note does not mention that the budget law is a temporary law limited to approving revenues and expenditures for one year only and does not contain general substantive provisions.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-126",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-13917#1",
+      "eg-fatwa-13917#2"
+    ],
+    "review": {
+      "reviewer": "Hussein Abu Zarifa",
+      "date": "2026-11-22",
+      "outcome": "approved",
+      "changes": [
+        "Corrected acronym from CAPOAS to CAOA in title and C-001.title",
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 and C-002 against Articles 4(b) and 5(1) of Law No. 118 of 1964, and C-003 and C-004 against established Egyptian constitutional and State Council jurisprudence on the formal, temporary nature of the General Budget Law."
+    }
+  }
+}

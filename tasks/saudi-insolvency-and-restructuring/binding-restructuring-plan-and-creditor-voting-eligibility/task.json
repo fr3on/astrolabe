@@ -1,0 +1,96 @@
+{
+  "title": "Binding Restructuring Plan and Creditor Voting Eligibility",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "insolvency and restructuring",
+    "نظام الإفلاس"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Effective Date of Proposal",
+      "match_criteria": "PASS if the note states that the proposal becomes effective from the date the voting result is deposited with the court. FAIL if the note does not state that the effective date is tied to the deposit of the voting result with the court.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Binding Plan",
+      "match_criteria": "PASS if the note states that the proposal becomes a binding plan (خطة ملزمة) on the small debtor, the creditors, and the owners. FAIL if the note does not state that the proposal binds all three parties: the small debtor, the creditors, and the owners.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Debtor's Obligation",
+      "match_criteria": "PASS if the note states that the small debtor is required to complete the regulatory procedures mandated by the relevant regulations. FAIL if the note does not state that the small debtor must complete the regulatory procedures required by the relevant regulations.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Trustee Registration Duty",
+      "match_criteria": "PASS if the note states that the trustee (الأمين) deposits in the bankruptcy register a record confirming that the plan is effective and makes an announcement of that fact. FAIL if the note does not state that the trustee both deposits confirmation of the plan's effectiveness in the bankruptcy register and announces it.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Voting Eligibility Condition",
+      "match_criteria": "PASS if the note states that the right to vote is limited to the creditor or owner whose statutory or contractual rights are affected by the proposal. FAIL if the note does not state that voting eligibility is restricted to those creditors or owners whose statutory or contractual rights are affected by the proposal.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-006",
+      "title": "No Voting Right for Unaffected Creditor",
+      "match_criteria": "PASS if the note states that United Construction Company does not have the right to vote because the proposal does not affect its rights. FAIL if the note does not state that United Construction Company is ineligible to vote on the ground that the proposal produces no effect on its rights.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-012",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-39",
+      "F2-40",
+      "F2-41"
+    ]
+  }
+}

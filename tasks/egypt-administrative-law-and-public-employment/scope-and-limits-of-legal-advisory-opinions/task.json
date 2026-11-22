@@ -1,0 +1,92 @@
+{
+  "title": "Scope and Limits of Legal Advisory Opinions",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "administrative law and public employment",
+    "فتوى رقم 304 - بتاريخ 2014/03/05"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Fatwa limited to specific case",
+      "match_criteria": "PASS if the note states that the opinion of the General Assembly (الجمعية العمومية) is limited to the specific actual case referred to it and does not extend beyond it to other cases. FAIL if the note does not state that the opinion is confined solely to the specific actual case referred to it.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Fatwa not theoretical",
+      "match_criteria": "PASS if the note states that the fatwa (فتوى) must be issued in a specific, individually defined incident and is not merely a general theoretical study. FAIL if the note does not state that the fatwa must concern a specific, individually defined incident rather than a general theoretical study.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "General law supplementary only",
+      "match_criteria": "PASS if the note states that recourse to the provisions of the general civil service law (قانون التوظف العام) is conditional upon the Legal Departments Law (قانون الإدارات القانونية) containing no specific provision on the matter. FAIL if the note does not state that recourse to the general civil service law is conditional on the absence of a specific provision in the Legal Departments Law.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "No conflict with special law",
+      "match_criteria": "PASS if the note states that recourse to the general law is conditional upon its provisions neither conflicting with the provisions of the Legal Departments Law nor being incompatible with its special nature. FAIL if the note does not state that recourse to the general law requires that its provisions do not conflict with or prove incompatible with the special nature of the Legal Departments Law.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Legal departments law is primary",
+      "match_criteria": "PASS if the note states that the Legal Departments Law (قانون الإدارات القانونية) is the primary basis for regulating the affairs of members of the legal departments. FAIL if the note does not state that the Legal Departments Law is the primary basis for regulating the affairs of members of the legal departments.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-102",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-17278#1",
+      "eg-fatwa-17278#2"
+    ],
+    "review": {
+      "reviewer": "Hussein Abu Zarifa",
+      "date": "2026-11-22",
+      "outcome": "approved",
+      "changes": [
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 and C-002 against State Council Law No. 47 of 1972 (Article 66) and General Assembly jurisprudence on the concrete, non-theoretical scope of fatwas, and C-003 through C-005 against Article 24 of the Legal Departments Law (Law No. 47 of 1973) on the supplementary application of general civil service law."
+    }
+  }
+}

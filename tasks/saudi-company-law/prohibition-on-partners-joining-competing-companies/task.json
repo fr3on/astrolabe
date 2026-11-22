@@ -1,0 +1,84 @@
+{
+  "title": "Prohibition on Partners Joining Competing Companies",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "company law",
+    "نظام الشركات"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Prohibition on joining competing professional company",
+      "match_criteria": "PASS if the note states that a partner practicing a liberal profession (شريك ممارس لمهنة حرة) may not, as a general rule, participate in another professional company practicing the same profession. FAIL if the note does not state this prohibition as a general rule.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Exception via founding contract",
+      "match_criteria": "PASS if the note states that the only exception is an express provision in the founding contract (عقد التأسيس) or the articles of association (النظام الأساسي) permitting such participation. FAIL if the note does not identify this express contractual provision as the sole exception.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Prohibition on competing activity without partner consent",
+      "match_criteria": "PASS if the note states that a partner may not engage in an activity of the same type as the company's activity for his own account without the consent of the remaining partners. FAIL if the note does not state that the consent of the remaining partners is required before the partner may carry out such competing activity for his own account.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Judicial reattribution of transactions to company",
+      "match_criteria": "PASS if the note states that the company has the right to request from the competent judicial authority that transactions carried out by the partner for his own account be deemed to have been carried out on behalf of the company. FAIL if the note does not mention the company's right to seek judicial reattribution of such transactions to the company.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Right to compensation",
+      "match_criteria": "PASS if the note states that the company may claim compensation (تعويض) from the offending partner. FAIL if the note does not state the company's right to claim compensation from the offending partner.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-015",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-8",
+      "F2-10",
+      "F2-12"
+    ]
+  }
+}

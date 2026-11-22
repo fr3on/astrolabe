@@ -1,0 +1,71 @@
+{
+  "title": "Final Insurance Percentage, Deadline, and Confiscation Rights",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "government procurement",
+    "فتوى رقم 1410 - بتاريخ 2018/10/10"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Final Insurance Percentage",
+      "match_criteria": "PASS if the note states that the final insurance (التأمين النهائي) equals 5% of the contract value. FAIL if the note does not state that the final insurance equals 5% of the contract value.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Deadline Ten Days",
+      "match_criteria": "PASS if the note states that the performance deadline is ten days starting from the day following notification of bid acceptance. FAIL if the note does not state that the performance deadline is ten days starting from the day following notification of bid acceptance.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Guarantee Purpose",
+      "match_criteria": "PASS if the note states that the final insurance (التأمين النهائي) is a guarantee for the execution of the contract that protects the contracting authority from the contractor's errors and ensures his solvency. FAIL if the note does not state that the final insurance is a guarantee for the execution of the contract that protects the contracting authority from the contractor's errors and ensures his solvency.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Right of Confiscation",
+      "match_criteria": "PASS if the note states that the administration has the right to confiscate the final insurance (التأمين النهائي). FAIL if the note does not state that the administration has the right to confiscate the final insurance.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-121",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-17159#1",
+      "eg-fatwa-17159#2"
+    ]
+  }
+}

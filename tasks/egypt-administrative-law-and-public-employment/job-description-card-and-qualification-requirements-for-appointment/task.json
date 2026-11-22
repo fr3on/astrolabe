@@ -1,0 +1,80 @@
+{
+  "title": "Job Description Card and Qualification Requirements for Appointment",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "administrative law and public employment",
+    "فتوى رقم 684 - بتاريخ 2013/03/06"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Job Description Card Requirement",
+      "match_criteria": "PASS if the note states that the vacant position has its duties and occupancy requirements defined in a job description card (بطاقة وصف الوظيفة). FAIL if the note does not confirm that the vacant position has its duties and occupancy requirements defined in a job description card (بطاقة وصف الوظيفة).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Higher Qualification Must Be Required",
+      "match_criteria": "PASS if the note states that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). FAIL if the note does not confirm that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب).",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Extension to Non-Qualification Appointees",
+      "match_criteria": "PASS if the note states that the provision applies to employees who were appointed to positions that do not require an academic qualification and who subsequently obtained a qualification during service. FAIL if the note does not confirm that the provision applies to employees who were appointed to positions that do not require an academic qualification and who subsequently obtained a qualification during service.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Exemption from Advertisement and Exam",
+      "match_criteria": "PASS if the note states that Ahmed is exempt from both the advertisement requirement and the examination requirement upon appointment to the vacant position. FAIL if the note does not confirm that Ahmed is exempt from both the advertisement requirement and the examination requirement upon appointment to the vacant position.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-101",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-17477#1",
+      "eg-fatwa-17477#2"
+    ],
+    "review": {
+      "reviewer": "Hussein Abu Zarifa",
+      "date": "2026-11-22",
+      "outcome": "approved",
+      "changes": [
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 through C-004 against Article 25 bis of Law No. 47 of 1978 on Civil Servants (in force at the time of Fatwa No. 684 on 2013/03/06) and State Council jurisprudence on job description cards and re-appointment with higher qualifications obtained during service."
+    }
+  }
+}

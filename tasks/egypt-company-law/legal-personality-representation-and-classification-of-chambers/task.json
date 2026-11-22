@@ -1,0 +1,95 @@
+{
+  "title": "Legal Personality, Representation, and Classification of Chambers",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "company law",
+    "فتوى رقم 2189 - بتاريخ 2020/11/11"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Legal Personality of Chamber",
+      "match_criteria": "PASS if the note states that the commercial chamber (الغرفة التجارية) possesses independent legal personality (الشخصية الاعتبارية المستقلة). FAIL if the note does not state that the commercial chamber possesses independent legal personality.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "President Represents Chamber in Court",
+      "match_criteria": "PASS if the note states that the president of the chamber represents the chamber before the judiciary (القضاء). FAIL if the note does not state that the president of the chamber represents the chamber before the judiciary.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Competent Minister Issues Internal Regulation",
+      "match_criteria": "PASS if the note states that the competent minister (الوزير المختص) issues the decision of the internal regulation (اللائحة الداخلية) based on a proposal from the board of directors (مجلس الإدارة). FAIL if the note does not state that the competent minister issues the decision of the internal regulation based on a proposal from the board of directors.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Internal Regulation Covers Employees' Salaries and Allowances",
+      "match_criteria": "PASS if the note states that the internal regulation (اللائحة الداخلية) organizes the rules of employees' salaries including special allowances (العلاوات الخاصة). FAIL if the note does not state that the internal regulation organizes the rules of employees' salaries including special allowances.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Prime Minister Determines Competent Ministry",
+      "match_criteria": "PASS if the note states that the determination of the competent ministry and the competent minister (الوزير المختص) is issued by a decision of the Prime Minister (رئيس مجلس الوزراء). FAIL if the note does not state that the determination of the competent ministry and the competent minister is issued by a decision of the Prime Minister.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-006",
+      "title": "Chambers Classified as Public Institutions",
+      "match_criteria": "PASS if the note states that the legislator classified commercial chambers as public institutions (مؤسسات عامة) pursuant to Law No. 189 of 1951. FAIL if the note does not state that the legislator classified commercial chambers as public institutions pursuant to Law No. 189 of 1951.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-110",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-15650#1",
+      "eg-fatwa-15650#2"
+    ]
+  }
+}

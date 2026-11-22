@@ -1,0 +1,83 @@
+{
+  "title": "Tortious Liability of Principal for Agent and Repair Cost Obligation",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "contracts and obligations",
+    "فتوى رقم 612 - بتاريخ 2007/10/03"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Tortious Liability Basis",
+      "match_criteria": "PASS if the note states that tortious liability (المسئولية التقصيرية) is established by the occurrence of a fault (خطأ) that causes harm to another. FAIL if the note does not state that tortious liability is established by the occurrence of a fault that causes harm to another.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Principal Liability for Agent",
+      "match_criteria": "PASS if the note states that the principal (المتبوع) is liable for the acts of his agents (تابعيه) whenever he has actual authority to supervise and direct them. FAIL if the note does not state that the principal is liable for the acts of his agents whenever he has actual authority to supervise and direct them.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Obligation to Pay Repair Costs",
+      "match_criteria": "PASS if the note states that the Ministry of Irrigation is obligated to pay the costs of repairing the damages only. FAIL if the note does not state that the Ministry of Irrigation is obligated to pay the costs of repairing the damages only.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "No Administrative Expenses Between Government Entities",
+      "match_criteria": "PASS if the note states that there is no basis for claiming administrative expenses (المصروفات الإدارية) between government entities and one another. FAIL if the note does not state that there is no basis for claiming administrative expenses between government entities and one another.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Exception for Actual Services Only",
+      "match_criteria": "PASS if the note states that administrative expenses (المصروفات الإدارية) are only due when actual services are rendered, and that this condition is not met in the present case. FAIL if the note does not state that administrative expenses are only due when actual services are rendered and that this condition is not met in the present case.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-124",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "eg-fatwa-18247#1",
+      "eg-fatwa-18247#2"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Transfer of Affiliation and Expenditure Restrictions on Executive Bodies",
+  "work_type": "analyze",
+  "tags": [
+    "Egypt",
+    "administrative law and public employment",
+    "فتوى رقم 897 - بتاريخ 2024/05/22"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد والمبادئ القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Transfer of Affiliation",
+      "match_criteria": "PASS if the note states that the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) had its affiliation transferred to the Central Agency for Reconstruction (الجهاز المركزي للتعمير) by a ministerial decree and its budget was merged with the latter's budget. FAIL if the note does not mention that the affiliation transfer was made by a ministerial decree or does not mention the merger of the budget with the Central Agency for Reconstruction's budget.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Restricted Role of Executive Body",
+      "match_criteria": "PASS if the note states that the role of the Executive Body for Joint Projects (الجهاز التنفيذي للمشروعات المشتركة) is restricted solely to managing the grant funds (أموال المنحة). FAIL if the note does not state that the role of the Executive Body for Joint Projects is restricted solely to managing the grant funds.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Expenditure Restriction",
+      "match_criteria": "PASS if the note states that the regulation governing the grant funds (اللائحة الخاصة بأموال المنحة) restricted expenditure to the purposes designated therein and that expenditure on any other purposes is not permitted. FAIL if the note does not state that the regulation restricted expenditure to the designated purposes or does not state that expenditure on other purposes is not permitted.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-1.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Transfer Does Not Override Restriction",
+      "match_criteria": "PASS if the note states that the transfer of affiliation and the merger of the budget do not permit expenditure from the grant funds (أموال المنحة) on purposes outside the regulation (اللائحة). FAIL if the note does not state that the transfer of affiliation and the merger of the budget do not permit expenditure from the grant funds on purposes outside the regulation.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-105",
+    "status": "approved",
+    "source_ids": [
+      "eg-fatwa-13407#1",
+      "eg-fatwa-13407#2",
+      "eg-fatwa-13407#3"
+    ],
+    "review": {
+      "reviewer": "Hussein Abu Zarifa",
+      "date": "2026-11-22",
+      "outcome": "approved",
+      "changes": [
+        "Added metadata.review audit block"
+      ],
+      "notes": "Verified C-001 through C-004 against State Council Fatwa No. 897 (2024/05/22) and Egyptian administrative/public finance principles confirming that the transfer of the Executive Body for Joint Projects to the Central Agency for Reconstruction and budget merger do not override grant-fund expenditure restrictions. Noted that source-2.txt is not directly referenced by any criterion."
+    }
+  }
+}

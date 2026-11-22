@@ -1,0 +1,84 @@
+{
+  "title": "Penalty Register, Worker Benefit, and Inspector Reward Cap",
+  "work_type": "analyze",
+  "tags": [
+    "Saudi",
+    "employment and labour",
+    "نظام العمل"
+  ],
+  "instructions": "أنت محامٍ يقدّم المشورة لعميلك. اطّلع على المستندات المرفقة: وقائع العميل ونصوص المواد القانونية ذات الصلة. ثم أعدّ مذكرة مشورة قصيرة باسم `advice-note.md` تجيب عن الأسئلة المطروحة في وقائع العميل، وتبيّن السند القانوني لكل نقطة. استند إلى المستندات المرفقة وحدها، ولا تفترض وقائع أو نصوصًا غير واردة فيها. اكتب باللغة العربية.",
+  "deliverables": {
+    "advice-note.md": "advice-note.md"
+  },
+  "criteria": [
+    {
+      "id": "C-001",
+      "title": "Penalty Register Requirement",
+      "match_criteria": "PASS if the note states that the employer must record penalties in a special register (سجل خاص) that includes the worker's name, wage amount, penalty amount, reason for the penalty, and its date. FAIL if the note does not state that the employer must record penalties in a special register containing all of the following: the worker's name, wage amount, penalty amount, reason for the penalty, and its date.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-002",
+      "title": "Penalties Must Benefit Workers",
+      "match_criteria": "PASS if the note states that the employer may not dispose of penalty amounts for his own benefit and that such amounts must be spent on matters that benefit the workers of the establishment. FAIL if the note does not state both that the employer is prohibited from using penalty amounts for his own benefit and that the amounts must be spent in a way that benefits the workers of the establishment.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-003",
+      "title": "Ministry Approval When No Committee",
+      "match_criteria": "PASS if the note states that in the absence of a labor committee (لجنة عمالية), the disposal of penalty amounts requires the approval of the Ministry. FAIL if the note does not state that when no labor committee exists, disposal of penalty amounts must be with the Ministry's approval.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-2.txt"
+      ]
+    },
+    {
+      "id": "C-004",
+      "title": "Inspector Reward Eligibility",
+      "match_criteria": "PASS if the note states that the Minister may grant a financial reward (مكافأة مالية) to inspection employees who assist in detecting violations of the provisions of the regulation. FAIL if the note does not state that the Minister may grant a financial reward to inspection employees who assist in detecting violations of the provisions of the regulation.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Reward Cap",
+      "match_criteria": "PASS if the note states that the financial reward does not exceed 25% of the amount of the collected fine. FAIL if the note does not state that the financial reward does not exceed 25% of the amount of the collected fine.",
+      "deliverables": [
+        "advice-note.md"
+      ],
+      "sources": [
+        "client-facts.txt",
+        "source-3.txt"
+      ]
+    }
+  ],
+  "metadata": {
+    "astrolabe_id": "AST-017",
+    "status": "draft, not lawyer reviewed",
+    "source_ids": [
+      "F2-1",
+      "F2-3",
+      "F2-5"
+    ]
+  }
+}
