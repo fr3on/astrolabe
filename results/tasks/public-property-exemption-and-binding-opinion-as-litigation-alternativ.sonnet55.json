@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-civil-procedure-and-litigation/public-property-exemption-and-binding-opinion-as-litigation-alternativ",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** النزاع بين الهيئة المصرية العامة للسينما والمسرح والموسيقا ومصلحة الضرائب العقارية حول الضريبة على العقارات المبنية\n\n## الخلاصة\n\nيُحال النزاع إلى الجمعية العمومية لقسمي الفتوى والتشريع، فرأيها فيه مسبب وملزم للطرفين. وفي الموضوع، فإن المستند يستند إلى أن العقارات المملوكة للدولة والمخصصة لغرض ذي نفع عام لا تخضع للضريبة، غير أن الوقائع لا تثبت صراحة هذا التخصيص، ومن ثم تتوقف النتيجة النهائية على ثبوته.\n\n## الوقائع\n\n- تمتلك الهيئة عقارات مبنية في القاهرة.\n- طالبتها مصلحة الضرائب العقارية بسداد الضريبة عليها.\n- ترى الهيئة أنها غير ملزمة بالسداد، فنشأ نزاع بين الجهتين.\n\n## التحليل القانوني\n\n**1. الفصل في النزاع.** اختص المشرع الجمعية العمومية بإبداء الرأي مسبباً في الأنزعة بين الجهات الإدارية بديلاً عن الدعوى القضائية، وأضفى على رأيها صفة الإلزام للجانبين حسماً للنزاع وقطعاً له. ولها أن تنتدب خبيراً أو أكثر في المسائل الفنية التي تستدعي خبرة خاصة، وسيلةً من وسائل التحقيق والإثبات (فتوى رقم 833 بتاريخ 2024/05/22). وعليه فسبيل الفصل في النزاع هو عرضه على الجمعية العمومية.\n\n**2. الموضوع.** أوردت الفتوى أن الهيئة أنشئت بالقرار الجمهوري رقم (453) لسنة 1966 والقرار رقم (2827) لسنة 1971، وأن أموالها تعد أموالاً عامة. ووفقاً للمادة (11) من القانون رقم (196) لسنة 2008 بإصدار قانون الضريبة على العقارات المبنية، فإن العقارات المملوكة للدولة والمخصصة لغرض ذي نفع عام لا تخضع للضريبة. وبذلك يقوى موقف الهيئة إذا ثبت أن عقاراتها مملوكة للدولة ومخصصة لغرض ذي نفع عام.\n\n**3. تحفظ.** المستند يذكر أن القرار الجمهوري رقم (150) لسنة 1980 أحل المجلس الأعلى للثقافة محل الهيئة، وألغى هيئة المسرح والموسيقا والفنون الشعبية. والنص المرفق لا يبيّن أثر ذلك على وضع الهيئة اليوم، ولا يحدد أن عقاراتها بعينها مخصصة لنفع عام. فيلزم تقديم ما يثبت ملكية الدولة للعقارات وتخصيصها.\n\n## الإجابة عن الأسئلة\n\n- **ما الموقف القانوني؟** للهيئة حجة قوية بعدم الخضوع للضريبة إن ثبت أن عقاراتها مملوكة للدولة ومخصصة لغرض ذي نفع عام، استناداً إلى المادة (11) من القانون 196 لسنة 2008.\n- **كيف يفصل النزاع؟** بعرضه على الجمعية العمومية لقسمي الفتوى والتشريع، ويكون رأيها ملزماً للهيئة والمصلحة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public Property Exemption",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal analysis section (point 2) that according to Article 11 of Law No. 196 of 2008, real estate owned by the state and allocated for a purpose of public benefit is not subject to the tax on built properties (لا تخضع للضريبة). This is also reiterated in the answers section."
+    },
+    {
+     "id": "C-002",
+     "title": "Authority Funds Are Public",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the التحليل القانوني section: 'وأن أموالها تعد أموالاً عامة' (and its funds are considered public funds), referring to the Egyptian General Authority for Cinema, Theatre and Music."
+    },
+    {
+     "id": "C-003",
+     "title": "Binding Opinion Mechanism",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the General Assembly of the Fatwa and Legislation Departments (الجمعية العمومية لقسمي الفتوى والتشريع) is competent to issue a reasoned opinion in disputes between administrative bodies as an alternative to litigation, and that its opinion is binding on both parties. This is stated clearly in Section 1 of the legal analysis and reinforced in the answers section."
+    },
+    {
+     "id": "C-004",
+     "title": "Alternative to Litigation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 (الفصل في النزاع) that the General Assembly is specialized in giving reasoned opinions on disputes between administrative bodies 'بديلاً عن الدعوى القضائية' (as an alternative to litigation). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Expert Delegation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 (الفصل في النزاع) that the General Assembly may delegate one or more experts in technical matters requiring special expertise as a means of investigation and proof: 'ولها أن تنتدب خبيراً أو أكثر في المسائل الفنية التي تستدعي خبرة خاصة، وسيلةً من وسائل التحقيق والإثبات'"
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public Property Exemption",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 2 of the legal analysis: 'وفقاً للمادة (11) من القانون رقم (196) لسنة 2008 بإصدار قانون الضريبة على العقارات المبنية، فإن العقارات المملوكة للدولة والمخصصة لغرض ذي نفع عام لا تخضع للضريبة.' This clearly satisfies the criterion by stating that state-owned real estate allocated for a public-benefit purpose is not subject to the tax on built properties."
+    },
+    {
+     "id": "C-002",
+     "title": "Authority Funds Are Public",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 of the legal analysis: 'أن أموالها تعد أموالاً عامة' (that its funds are considered public funds), referring to the Egyptian General Authority for Cinema, Theatre and Music."
+    },
+    {
+     "id": "C-003",
+     "title": "Binding Opinion Mechanism",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the General Assembly of the Fatwa and Legislation Departments (الجمعية العمومية لقسمي الفتوى والتشريع) is competent to issue a binding opinion on both parties in disputes between administrative bodies. Specifically, it says: 'اختص المشرع الجمعية العمومية بإبداء الرأي مسبباً في الأنزعة بين الجهات الإدارية بديلاً عن الدعوى القضائية، وأضفى على رأيها صفة الإلزام للجانبين حسماً للنزاع وقطعاً له' and 'يكون رأيها ملزماً للهيئة والمصلحة'."
+    },
+    {
+     "id": "C-004",
+     "title": "Alternative to Litigation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1 of the legal analysis: 'اختص المشرع الجمعية العمومية بإبداء الرأي مسبباً في الأنزعة بين الجهات الإدارية بديلاً عن الدعوى القضائية' - which clearly describes the General Assembly's opinion as an alternative to litigation for resolving disputes between administrative bodies."
+    },
+    {
+     "id": "C-005",
+     "title": "Expert Delegation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 1: 'ولها أن تنتدب خبيراً أو أكثر في المسائل الفنية التي تستدعي خبرة خاصة' which translates to the General Assembly may delegate one or more experts on technical matters that require special expertise. This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/public-property-exemption-and-binding-opinion-as-litigation-alternativ",
+  "task": "astrolabe-open/egypt-civil-procedure-and-litigation/public-property-exemption-and-binding-opinion-as-litigation-alternativ",
+  "scored_at": "2026-11-22T18:08:14.113274+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public Property Exemption",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal analysis section (point 2) that according to Article 11 of Law No. 196 of 2008, real estate owned by the state and allocated for a purpose of public benefit is not subject to the tax on built properties (لا تخضع للضريبة). This is also reiterated in the answers section."
+     },
+     {
+      "id": "C-002",
+      "title": "Authority Funds Are Public",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the التحليل القانوني section: 'وأن أموالها تعد أموالاً عامة' (and its funds are considered public funds), referring to the Egyptian General Authority for Cinema, Theatre and Music."
+     },
+     {
+      "id": "C-003",
+      "title": "Binding Opinion Mechanism",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the General Assembly of the Fatwa and Legislation Departments (الجمعية العمومية لقسمي الفتوى والتشريع) is competent to issue a reasoned opinion in disputes between administrative bodies as an alternative to litigation, and that its opinion is binding on both parties. This is stated clearly in Section 1 of the legal analysis and reinforced in the answers section."
+     },
+     {
+      "id": "C-004",
+      "title": "Alternative to Litigation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 (الفصل في النزاع) that the General Assembly is specialized in giving reasoned opinions on disputes between administrative bodies 'بديلاً عن الدعوى القضائية' (as an alternative to litigation). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Expert Delegation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 (الفصل في النزاع) that the General Assembly may delegate one or more experts in technical matters requiring special expertise as a means of investigation and proof: 'ولها أن تنتدب خبيراً أو أكثر في المسائل الفنية التي تستدعي خبرة خاصة، وسيلةً من وسائل التحقيق والإثبات'"
+     }
+    ],
+    "run_id": "open-s55-files/public-property-exemption-and-binding-opinion-as-litigation-alternativ",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/public-property-exemption-and-binding-opinion-as-litigation-alternativ",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:59:32.658760+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public Property Exemption",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 2 of the legal analysis: 'وفقاً للمادة (11) من القانون رقم (196) لسنة 2008 بإصدار قانون الضريبة على العقارات المبنية، فإن العقارات المملوكة للدولة والمخصصة لغرض ذي نفع عام لا تخضع للضريبة.' This clearly satisfies the criterion by stating that state-owned real estate allocated for a public-benefit purpose is not subject to the tax on built properties."
+     },
+     {
+      "id": "C-002",
+      "title": "Authority Funds Are Public",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 of the legal analysis: 'أن أموالها تعد أموالاً عامة' (that its funds are considered public funds), referring to the Egyptian General Authority for Cinema, Theatre and Music."
+     },
+     {
+      "id": "C-003",
+      "title": "Binding Opinion Mechanism",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the General Assembly of the Fatwa and Legislation Departments (الجمعية العمومية لقسمي الفتوى والتشريع) is competent to issue a binding opinion on both parties in disputes between administrative bodies. Specifically, it says: 'اختص المشرع الجمعية العمومية بإبداء الرأي مسبباً في الأنزعة بين الجهات الإدارية بديلاً عن الدعوى القضائية، وأضفى على رأيها صفة الإلزام للجانبين حسماً للنزاع وقطعاً له' and 'يكون رأيها ملزماً للهيئة والمصلحة'."
+     },
+     {
+      "id": "C-004",
+      "title": "Alternative to Litigation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1 of the legal analysis: 'اختص المشرع الجمعية العمومية بإبداء الرأي مسبباً في الأنزعة بين الجهات الإدارية بديلاً عن الدعوى القضائية' - which clearly describes the General Assembly's opinion as an alternative to litigation for resolving disputes between administrative bodies."
+     },
+     {
+      "id": "C-005",
+      "title": "Expert Delegation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 1: 'ولها أن تنتدب خبيراً أو أكثر في المسائل الفنية التي تستدعي خبرة خاصة' which translates to the General Assembly may delegate one or more experts on technical matters that require special expertise. This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-s55-files/public-property-exemption-and-binding-opinion-as-litigation-alternativ",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/public-property-exemption-and-binding-opinion-as-litigation-alternativ",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:08:14.112878+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

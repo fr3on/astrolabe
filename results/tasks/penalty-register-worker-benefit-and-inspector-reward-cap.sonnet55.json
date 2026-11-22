@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الخلاصة\n- الإجراء الصحيح: تسجيل كل غرامة في سجل خاص بالبيانات المطلوبة، ثم التصرف فيها بما يعود بالنفع على العمال وبموافقة الوزارة، لأن المنشأة بلا لجنة عمالية.\n- ما فعله صاحب العمل (توقيع غرامات دون تسجيل وصرفها لنفسه) مخالف لهذا الحكم.\n- مكافأة سارة ممكنة لكنها غير مستحقة تلقائيًا، فهي بتقدير الوزير وبسقف 25% من الغرامة المحصلة.\n\n## أولًا: الإجراءات التي كان يجب على صاحب العمل اتباعها\n1. **التسجيل:** يجب كتابة كل غرامة في سجل خاص، مع بيان اسم العامل، ومقدار أجره، ومقدار الغرامة، وسبب توقيعها، وتاريخها. (source-2: نظام العمل)\n2. **التصرف في الغرامات:** لا يجوز إلا فيما يعود بالنفع على عمال المنشأة، ولا يجوز لصاحب العمل صرفها لنفسه. (source-2)\n3. **جهة التصرف:** الأصل أن تتصرف اللجنة العمالية. وبما أن المنشأة لا تضم لجنة، فيكون التصرف بموافقة الوزارة. (source-2)\n\n## ثانيًا: أثر ما فعله صاحب العمل\n- عدم التسجيل مخالف لوجوب الكتابة في السجل الخاص.\n- صرف الغرامات لنفسه مخالف لقيد التصرف فيما ينفع العمال، ولاشتراط موافقة الوزارة عند غياب اللجنة.\n- النصوص المرفقة لا تتضمن عقوبة محددة لهذه المخالفة، فلا نجزم بها.\n\n## ثالثًا: هل تستحق سارة مكافأة؟\n- يجوز للوزير منح مكافأة مالية لا تزيد على 25% من مبلغ الغرامة المحصلة لمن يساعد في الكشف عن مخالفات النظام، سواء أكان من موظفي التفتيش أم من غيرهم. (source-3)\n- سارة مفتشة عمل، والتفتيش يتولاه مفتشون من موظفي الوزارة أو من غيرهم من السعوديين. (source-1) والنص يشمل موظفي التفتيش صراحة، فلا يمنعها وصفها الوظيفي من نظر المكافأة.\n- المكافأة جوازية بيد الوزير، وليست حقًا ثابتًا لسارة، وسقفها 25% من الغرامة المحصلة. والنصوص المرفقة لا تبيّن إجراءات الطلب.\n\n## التوصية\nتُبلَّغ الجهة المختصة بالمخالفة، ويُطلب النظر في منح سارة المكافأة وفق سلطة الوزير التقديرية.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Penalty Register Requirement",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'أولًا' point 1 that the employer must record each penalty in a special register (سجل خاص) with the worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سبب توقيعها), and its date (تاريخها). All five required elements are present."
+    },
+    {
+     "id": "C-002",
+     "title": "Penalties Must Benefit Workers",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states both required elements: (1) that the employer may not dispose of penalty amounts for his own benefit ('لا يجوز لصاحب العمل صرفها لنفسه') and (2) that such amounts must be spent on matters that benefit the workers of the establishment ('لا يجوز إلا فيما يعود بالنفع على عمال المنشأة'). Both conditions of the criterion are satisfied."
+    },
+    {
+     "id": "C-003",
+     "title": "Ministry Approval When No Committee",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section أولًا (point 3) that when no labor committee exists, the disposal must be with the Ministry's approval: 'الأصل أن تتصرف اللجنة العمالية. وبما أن المنشأة لا تضم لجنة، فيكون التصرف بموافقة الوزارة.' This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Inspector Reward Eligibility",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا that 'يجوز للوزير منح مكافأة مالية لا تزيد على 25% من مبلغ الغرامة المحصلة لمن يساعد في الكشف عن مخالفات النظام، سواء أكان من موظفي التفتيش أم من غيرهم' (source-3). This directly states that the Minister may grant a financial reward to inspection employees who assist in detecting violations of the regulation's provisions."
+    },
+    {
+     "id": "C-005",
+     "title": "Reward Cap",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثالثًا that the financial reward does not exceed 25% of the collected fine amount ('مكافأة مالية لا تزيد على 25% من مبلغ الغرامة المحصلة'), and this is reiterated in the summary section as well ('سقفها 25% من الغرامة المحصلة')."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Penalty Register Requirement",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section أولًا item 1 that the employer must record each penalty in a special register (سجل خاص) including the worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سبب توقيعها), and its date (تاريخها). All five required elements are present."
+    },
+    {
+     "id": "C-002",
+     "title": "Penalties Must Benefit Workers",
+     "verdict": "pass",
+     "reasoning": "The note clearly states both requirements: (1) 'لا يجوز لصاحب العمل صرفها لنفسه' (the employer may not dispose of penalty amounts for his own benefit) and (2) 'لا يجوز إلا فيما يعود بالنفع على عمال المنشأة' (amounts must be spent on matters that benefit the workers of the establishment)."
+    },
+    {
+     "id": "C-003",
+     "title": "Ministry Approval When No Committee",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section أولًا, point 3: 'وبما أن المنشأة لا تضم لجنة، فيكون التصرف بموافقة الوزارة' — clearly indicating that in the absence of a labor committee, disposal of penalty amounts requires Ministry approval."
+    },
+    {
+     "id": "C-004",
+     "title": "Inspector Reward Eligibility",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the Minister may grant a financial reward (مكافأة مالية) not exceeding 25% of the collected fine to those who assist in detecting violations, including inspection employees ('موظفي التفتيش'). This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Reward Cap",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the reward does not exceed 25% of the collected fine ('لا تزيد على 25% من مبلغ الغرامة المحصلة' and 'سقفها 25% من الغرامة المحصلة')."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "scored_at": "2026-11-22T18:47:49.549966+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Penalty Register Requirement",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'أولًا' point 1 that the employer must record each penalty in a special register (سجل خاص) with the worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سبب توقيعها), and its date (تاريخها). All five required elements are present."
+     },
+     {
+      "id": "C-002",
+      "title": "Penalties Must Benefit Workers",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states both required elements: (1) that the employer may not dispose of penalty amounts for his own benefit ('لا يجوز لصاحب العمل صرفها لنفسه') and (2) that such amounts must be spent on matters that benefit the workers of the establishment ('لا يجوز إلا فيما يعود بالنفع على عمال المنشأة'). Both conditions of the criterion are satisfied."
+     },
+     {
+      "id": "C-003",
+      "title": "Ministry Approval When No Committee",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section أولًا (point 3) that when no labor committee exists, the disposal must be with the Ministry's approval: 'الأصل أن تتصرف اللجنة العمالية. وبما أن المنشأة لا تضم لجنة، فيكون التصرف بموافقة الوزارة.' This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Inspector Reward Eligibility",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا that 'يجوز للوزير منح مكافأة مالية لا تزيد على 25% من مبلغ الغرامة المحصلة لمن يساعد في الكشف عن مخالفات النظام، سواء أكان من موظفي التفتيش أم من غيرهم' (source-3). This directly states that the Minister may grant a financial reward to inspection employees who assist in detecting violations of the regulation's provisions."
+     },
+     {
+      "id": "C-005",
+      "title": "Reward Cap",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثالثًا that the financial reward does not exceed 25% of the collected fine amount ('مكافأة مالية لا تزيد على 25% من مبلغ الغرامة المحصلة'), and this is reiterated in the summary section as well ('سقفها 25% من الغرامة المحصلة')."
+     }
+    ],
+    "run_id": "open-s55-files/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:41:45.576164+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Penalty Register Requirement",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section أولًا item 1 that the employer must record each penalty in a special register (سجل خاص) including the worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سبب توقيعها), and its date (تاريخها). All five required elements are present."
+     },
+     {
+      "id": "C-002",
+      "title": "Penalties Must Benefit Workers",
+      "verdict": "pass",
+      "reasoning": "The note clearly states both requirements: (1) 'لا يجوز لصاحب العمل صرفها لنفسه' (the employer may not dispose of penalty amounts for his own benefit) and (2) 'لا يجوز إلا فيما يعود بالنفع على عمال المنشأة' (amounts must be spent on matters that benefit the workers of the establishment)."
+     },
+     {
+      "id": "C-003",
+      "title": "Ministry Approval When No Committee",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section أولًا, point 3: 'وبما أن المنشأة لا تضم لجنة، فيكون التصرف بموافقة الوزارة' — clearly indicating that in the absence of a labor committee, disposal of penalty amounts requires Ministry approval."
+     },
+     {
+      "id": "C-004",
+      "title": "Inspector Reward Eligibility",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the Minister may grant a financial reward (مكافأة مالية) not exceeding 25% of the collected fine to those who assist in detecting violations, including inspection employees ('موظفي التفتيش'). This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Reward Cap",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the reward does not exceed 25% of the collected fine ('لا تزيد على 25% من مبلغ الغرامة المحصلة' and 'سقفها 25% من الغرامة المحصلة')."
+     }
+    ],
+    "run_id": "open-s55-files/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:47:49.549593+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

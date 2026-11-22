@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## السؤال\nهل يصح اعتقاد الجهة الحكومية أن غرامة التقصير في عقد الصيانة (10% من قيمة العقد، أي مائة ألف ريال) هي المبلغ الكامل الذي ستدفعه الشركة؟\n\n## الخلاصة\nلا، هذا الفهم غير صحيح. فالمائة ألف ريال هي حدٌّ أعلى للغرامة لا مبلغٌ ثابت، وإلى جانبها يجب حسم قيمة الأعمال التي لم تنفَّذ. فالمبلغ الذي تتحمله الشركة يزيد على الغرامة وحدها.\n\n## السند والتحليل\n1. **نطاق الحكم:** عقد الصيانة من العقود التي تنطبق عليها المادة المتعلقة بتقصير المتعاقد في عقود الصيانة والتشغيل والعقود ذات التنفيذ المستمر (source-3).\n2. **سقف الغرامة:** تنص المادة على أن الغرامة \"لا تتجاوز (10%)\" من قيمة العقد. وبما أن قيمة العقد مليون ريال، فالحد الأعلى للغرامة مائة ألف ريال. والنص يقرر سقفًا، فيجوز أن تقلّ الغرامة عنه، ولا يجوز أن تزيد عليه. وعليه فاعتبار المائة ألف هي \"الغرامة المقررة\" دون تقدير لا يطابق ظاهر النص، بل تُقدَّر الغرامة بما لا يجاوز هذا السقف.\n3. **الحسم المستقل:** تضيف المادة عبارة \"مع حسم قيمة الأعمال التي لم تنفذ\". فهذا حسمٌ مستقل عن الغرامة، يُضاف إليها. فإذا كانت هناك أعمال لم تُنفَّذ بسبب تقصير الشركة، فقيمتها تُحسم كذلك. ومن ثمّ فليست المائة ألف هي المبلغ الكامل.\n4. **المصدران الآخران:** المصدر الأول (source-1) يتعلق بإصدار اللائحة التنفيذية، والمصدر الثاني (source-2) يتعلق بصرف المستخلص الأخير. وكلاهما لا صلة مباشرة له بسؤال الغرامة، فلا يُبنى عليهما حكم في هذه المسألة.\n\n## التوصية\n- عدم اعتبار مائة ألف ريال هي الحد الكامل لما تتحمله الشركة، بل هي أقصى ما يجوز فرضه غرامةً.\n- حصر قيمة الأعمال غير المنفذة وحسمها بالإضافة إلى الغرامة.\n- ملاحظة: الوقائع لا تبيّن قيمة الأعمال غير المنفذة، ولذلك لا يمكن تحديد المبلغ الإجمالي النهائي من المستندات المرفقة وحدها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Maintenance contract penalty cap",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 that the penalty 'does not exceed (10%)' of the contract value for maintenance contracts, and since the contract value is one million riyals, the maximum penalty is 100,000 riyals. This directly satisfies the criterion requirement."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction of unexecuted works",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 3 that 'مع حسم قيمة الأعمال التي لم تنفذ' is an independent deduction separate from the penalty and added to it. The recommendation section also explicitly instructs to 'حصر قيمة الأعمال غير المنفذة وحسمها بالإضافة إلى الغرامة'. This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Total liability exceeds penalty alone",
+     "verdict": "pass",
+     "reasoning": "The note explicitly clarifies in multiple places that the total amount borne by the company exceeds the penalty of 100,000 riyals alone. In the summary (الخلاصة), it states 'المبلغ الذي تتحمله الشركة يزيد على الغرامة وحدها' (the amount borne by the company exceeds the penalty alone). In the analysis, it explains that the deduction for unexecuted works is independent of and additional to the penalty. The recommendation also reinforces this by instructing to inventory and deduct unexecuted works in addition to the penalty."
+    },
+    {
+     "id": "C-004",
+     "title": "Incorrect assumption corrected",
+     "verdict": "pass",
+     "reasoning": "The note explicitly corrects the government entity's mistaken understanding. In the summary section, it states 'لا، هذا الفهم غير صحيح' (No, this understanding is incorrect) and clarifies that the 100,000 SAR is a ceiling on the penalty, not a fixed total amount. It further explains that unexecuted works must be deducted separately and independently from the penalty, meaning the company's total liability exceeds the penalty alone. The recommendation section reinforces this correction by instructing not to consider 100,000 SAR as the full amount the company bears."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Maintenance contract penalty cap",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in point 2 that the penalty 'لا تتجاوز (10%)' من قيمة العقد for maintenance contracts (عقود الصيانة والتشغيل), satisfying the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction of unexecuted works",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. Point 3 in the analysis specifically discusses this as an independent deduction added to the penalty, and the recommendations also mention deducting the value of unexecuted works in addition to the penalty."
+    },
+    {
+     "id": "C-003",
+     "title": "Total liability exceeds penalty alone",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the conclusion ('الخلاصة') that the amount borne by the company exceeds the penalty alone ('فالمبلغ الذي تتحمله الشركة يزيد على الغرامة وحدها'), and further explains in the analysis that the deduction for unexecuted works is independent of and added to the penalty. The recommendation also reinforces this point."
+    },
+    {
+     "id": "C-004",
+     "title": "Incorrect assumption corrected",
+     "verdict": "pass",
+     "reasoning": "The advice note explicitly corrects the government entity's mistaken understanding. The conclusion states clearly that the 100,000 SAR is only the maximum cap for the penalty, not a fixed amount, and that in addition to the penalty, the value of unexecuted works must be deducted. The note repeatedly emphasizes that the total liability exceeds the penalty alone, directly addressing and correcting the misconception."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "scored_at": "2026-11-22T18:54:12.920672+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Maintenance contract penalty cap",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 that the penalty 'does not exceed (10%)' of the contract value for maintenance contracts, and since the contract value is one million riyals, the maximum penalty is 100,000 riyals. This directly satisfies the criterion requirement."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction of unexecuted works",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 3 that 'مع حسم قيمة الأعمال التي لم تنفذ' is an independent deduction separate from the penalty and added to it. The recommendation section also explicitly instructs to 'حصر قيمة الأعمال غير المنفذة وحسمها بالإضافة إلى الغرامة'. This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Total liability exceeds penalty alone",
+      "verdict": "pass",
+      "reasoning": "The note explicitly clarifies in multiple places that the total amount borne by the company exceeds the penalty of 100,000 riyals alone. In the summary (الخلاصة), it states 'المبلغ الذي تتحمله الشركة يزيد على الغرامة وحدها' (the amount borne by the company exceeds the penalty alone). In the analysis, it explains that the deduction for unexecuted works is independent of and additional to the penalty. The recommendation also reinforces this by instructing to inventory and deduct unexecuted works in addition to the penalty."
+     },
+     {
+      "id": "C-004",
+      "title": "Incorrect assumption corrected",
+      "verdict": "pass",
+      "reasoning": "The note explicitly corrects the government entity's mistaken understanding. In the summary section, it states 'لا، هذا الفهم غير صحيح' (No, this understanding is incorrect) and clarifies that the 100,000 SAR is a ceiling on the penalty, not a fixed total amount. It further explains that unexecuted works must be deducted separately and independently from the penalty, meaning the company's total liability exceeds the penalty alone. The recommendation section reinforces this correction by instructing not to consider 100,000 SAR as the full amount the company bears."
+     }
+    ],
+    "run_id": "open-s55-files/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:47:56.209970+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Maintenance contract penalty cap",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in point 2 that the penalty 'لا تتجاوز (10%)' من قيمة العقد for maintenance contracts (عقود الصيانة والتشغيل), satisfying the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction of unexecuted works",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. Point 3 in the analysis specifically discusses this as an independent deduction added to the penalty, and the recommendations also mention deducting the value of unexecuted works in addition to the penalty."
+     },
+     {
+      "id": "C-003",
+      "title": "Total liability exceeds penalty alone",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the conclusion ('الخلاصة') that the amount borne by the company exceeds the penalty alone ('فالمبلغ الذي تتحمله الشركة يزيد على الغرامة وحدها'), and further explains in the analysis that the deduction for unexecuted works is independent of and added to the penalty. The recommendation also reinforces this point."
+     },
+     {
+      "id": "C-004",
+      "title": "Incorrect assumption corrected",
+      "verdict": "pass",
+      "reasoning": "The advice note explicitly corrects the government entity's mistaken understanding. The conclusion states clearly that the 100,000 SAR is only the maximum cap for the penalty, not a fixed amount, and that in addition to the penalty, the value of unexecuted works must be deducted. The note repeatedly emphasizes that the total liability exceeds the penalty alone, directly addressing and correcting the misconception."
+     }
+    ],
+    "run_id": "open-s55-files/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:54:12.920313+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**إلى:** المستشارة نادية حسن\n**الموضوع:** مدى جواز إصدار فتوى عامة، والرجوع إلى قانون التوظف العام لسد الفراغ في قانون الإدارات القانونية\n\n## الوقائع\nأُحيلت إلى الجمعية العمومية للفتوى والتشريع مسألة تتعلق بتحديد مدة معينة لترقية المستشارة نادية حسن. ولم يتضمن قانون الإدارات القانونية نصًا صريحًا في هذا الشأن. والسؤالان المطروحان:\n1. هل يجوز للجمعية العمومية إصدار فتوى عامة تسري على جميع أعضاء الإدارات القانونية في مختلف الهيئات؟\n2. هل يجوز الرجوع إلى أحكام قانون التوظف العام لسد هذا الفراغ التشريعي؟\n\n## الرأي المختصر\n1. **لا يجوز، بحسب الأصل،** أن تصدر الجمعية العمومية فتوى عامة تتعدى الحالة المعروضة. فرأيها يقتصر على الواقعة المحددة التي أُحيلت إليها.\n2. **يجوز الرجوع** إلى أحكام التوظف العامة فيما لم يرد فيه حكم في قانون الإدارات القانونية، **بشرط** ألا تتعارض هذه الأحكام مع القانون الخاص أو تتنافى مع طبيعته الخاصة.\n\n## التحليل والسند القانوني\n\n### أولًا: الفتوى العامة\n- استقر إفتاء الجمعية العمومية على أن اختصاصها بإبداء الرأي في المسائل القانونية المحالة إليها يقع بحسب الأصل على **حالة واقعية بعينها**. وما تنتهي إليه فيها **يقتصر عليها ولا يتعداها إلى غيرها** من الحالات.\n- علّة ذلك أن الفتوى ليست بحثًا نظريًا، وإنما تصدر في **واقعة محددة بذاتها** تثير مشكلة معينة اشتبه فيها الرأي القانوني على جهة الإدارة.\n- **النتيجة:** ما ينتهي إليه رأي الجمعية بشأن مدة ترقية المستشارة نادية يخص حالتها المعروضة. ولا يسري تلقائيًا على جميع أعضاء الإدارات القانونية في مختلف الهيئات.\n- **السند:** فتوى رقم 304 بتاريخ 2014/03/05 (المستند الأول).\n\n### ثانيًا: سد الفراغ بأحكام التوظف العام\n- قانون الإدارات القانونية من **قوانين التوظف الخاصة**، وتسري أحكامه في نطاقه الوظيفي المحدد. وهو **الأساس** في تنظيم شؤون أعضاء الإدارات القانونية ومديريها.\n- منطق التفسير يقبل استدعاء أحكام التوظف العامة في النظام الخاص **فيما لم يرد فيه حكم مخصوص**، لكن بشروط:\n  1. ألا يتضمن النظام العام أحكامًا تتعارض مع أحكام القانون الخاص، أو تتنافى مع مقتضاها، أو تتنافر مع مفادها.\n  2. ألا يتعارض الرجوع مع أحكام القانون الخاص أو يتنافى مع طبيعته الخاصة.\n  3. ألا يكون القانون الخاص قد تناول المسألة بالتنظيم، إذ لا يجوز الرجوع إلى القانون العام إلا فيما لم يتناوله.\n- **النتيجة:** سكوت قانون الإدارات القانونية عن تحديد مدة الترقية لا يمنع من الرجوع إلى قانون التوظف العام، بشرط ألا يتعارض الحكم المستدعى مع أحكام القانون الخاص أو طبيعته.\n- **السند:** فتوى رقم 304 بتاريخ 2014/03/05 (المستند الثاني).\n\n## التوصية\n- التركيز في الطلب على حالة المستشارة نادية المحددة، مع توقع أن يقتصر الرأي عليها.\n- الاستناد في سد الفراغ إلى أحكام التوظف العامة ذات الصلة بالترقية، والتحقق من عدم تعارضها مع قانون الإدارات القانونية أو طبيعته الخاصة.\n- لا تتضمن المستندات المرفقة نص أحكام التوظف العامة المتعلقة بمدة الترقية، ولذلك لا تسمح بتحديد المدة نفسها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Fatwa limited to specific case",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the General Assembly's opinion is limited to the specific case referred to it and does not extend to other cases. In the summary section it states 'رأيها يقتصر على الواقعة المحددة التي أُحيلت إليها', and in the analysis section it states 'ما تنتهي إليه فيها يقتصر عليها ولا يتعداها إلى غيرها من الحالات' and 'ما ينتهي إليه رأي الجمعية بشأن مدة ترقية المستشارة نادية يخص حالتها المعروضة. ولا يسري تلقائيًا على جميع أعضاء الإدارات القانونية في مختلف الهيئات.'"
+    },
+    {
+     "id": "C-002",
+     "title": "Fatwa not theoretical",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the analysis section under 'أولًا: الفتوى العامة' that 'الفتوى ليست بحثًا نظريًا، وإنما تصدر في واقعة محددة بذاتها تثير مشكلة معينة اشتبه فيها الرأي القانوني على جهة الإدارة.' This directly satisfies the criterion by stating that the fatwa must concern a specific, individually defined incident and is not merely a general theoretical study."
+    },
+    {
+     "id": "C-003",
+     "title": "General law supplementary only",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the third condition under 'ثانيًا: سد الفراغ بأحكام التوظف العام' that recourse to the general law is only permissible 'ألا يكون القانون الخاص قد تناول المسألة بالتنظيم، إذ لا يجوز الرجوع إلى القانون العام إلا فيما لم يتناوله' (the special law must not have addressed the matter, as recourse to the general law is only allowed for matters not covered by the special law). The conclusion also reinforces this by stating 'سكوت قانون الإدارات القانونية عن تحديد مدة الترقية' (the silence of the Legal Departments Law on the promotion period) as the basis for permitting recourse to the general law. This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "No conflict with special law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the analysis section (ثانيًا: سد الفراغ بأحكام التوظف العام) that recourse to general employment law is conditional upon: (1) the general law's provisions not conflicting with or being incompatible with the special law's provisions or its implications, and (2) the recourse not conflicting with the special law or being incompatible with its special nature. This condition is repeated in the conclusion paragraph and in the recommendations section. The criterion is fully satisfied."
+    },
+    {
+     "id": "C-005",
+     "title": "Legal departments law is primary",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the second section (ثانيًا: سد الفراغ بأحكام التوظف العام) that the Legal Departments Law is 'الأساس' (the primary basis) for regulating the affairs of members of legal departments and their directors: 'وهو الأساس في تنظيم شؤون أعضاء الإدارات القانونية ومديريها'. This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Fatwa limited to specific case",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the General Assembly's opinion is limited to the specific case referred to it and does not extend to other cases. For example: 'يقتصر عليها ولا يتعداها إلى غيرها من الحالات' and 'ما ينتهي إليه رأي الجمعية بشأن مدة ترقية المستشارة نادية يخص حالتها المعروضة. ولا يسري تلقائيًا على جميع أعضاء الإدارات القانونية في مختلف الهيئات.'"
+    },
+    {
+     "id": "C-002",
+     "title": "Fatwa not theoretical",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the fatwa is not a theoretical study ('الفتوى ليست بحثًا نظريًا') and that it is issued in a specific, individually defined incident ('واقعة محددة بذاتها'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "General law supplementary only",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states multiple times that recourse to the general civil service law is conditional upon the Legal Departments Law not containing a specific provision on the matter. For example: 'فيما لم يرد فيه حكم مخصوص' and condition 3: 'ألا يكون القانون الخاص قد تناول المسألة بالتنظيم، إذ لا يجوز الرجوع إلى القانون العام إلا فيما لم يتناوله'. This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "No conflict with special law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly and repeatedly states that recourse to the general employment law is conditional upon its provisions not conflicting with the provisions of the Legal Departments Law (the special law) and not being incompatible with its special nature. This is stated in the short opinion ('بشرط ألا تتعارض هذه الأحكام مع القانون الخاص أو تتنافى مع طبيعته الخاصة'), in the detailed analysis conditions, and in the conclusion/recommendation section."
+    },
+    {
+     "id": "C-005",
+     "title": "Legal departments law is primary",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'قانون الإدارات القانونية من قوانين التوظف الخاصة، وتسري أحكامه في نطاقه الوظيفي المحدد. وهو الأساس في تنظيم شؤون أعضاء الإدارات القانونية ومديريها.' This clearly identifies the Legal Departments Law as the primary basis for regulating the affairs of members of the legal departments."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/scope-and-limits-of-legal-advisory-opinions",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+  "scored_at": "2026-11-22T17:55:38.045893+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Fatwa limited to specific case",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the General Assembly's opinion is limited to the specific case referred to it and does not extend to other cases. In the summary section it states 'رأيها يقتصر على الواقعة المحددة التي أُحيلت إليها', and in the analysis section it states 'ما تنتهي إليه فيها يقتصر عليها ولا يتعداها إلى غيرها من الحالات' and 'ما ينتهي إليه رأي الجمعية بشأن مدة ترقية المستشارة نادية يخص حالتها المعروضة. ولا يسري تلقائيًا على جميع أعضاء الإدارات القانونية في مختلف الهيئات.'"
+     },
+     {
+      "id": "C-002",
+      "title": "Fatwa not theoretical",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the analysis section under 'أولًا: الفتوى العامة' that 'الفتوى ليست بحثًا نظريًا، وإنما تصدر في واقعة محددة بذاتها تثير مشكلة معينة اشتبه فيها الرأي القانوني على جهة الإدارة.' This directly satisfies the criterion by stating that the fatwa must concern a specific, individually defined incident and is not merely a general theoretical study."
+     },
+     {
+      "id": "C-003",
+      "title": "General law supplementary only",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the third condition under 'ثانيًا: سد الفراغ بأحكام التوظف العام' that recourse to the general law is only permissible 'ألا يكون القانون الخاص قد تناول المسألة بالتنظيم، إذ لا يجوز الرجوع إلى القانون العام إلا فيما لم يتناوله' (the special law must not have addressed the matter, as recourse to the general law is only allowed for matters not covered by the special law). The conclusion also reinforces this by stating 'سكوت قانون الإدارات القانونية عن تحديد مدة الترقية' (the silence of the Legal Departments Law on the promotion period) as the basis for permitting recourse to the general law. This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "No conflict with special law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the analysis section (ثانيًا: سد الفراغ بأحكام التوظف العام) that recourse to general employment law is conditional upon: (1) the general law's provisions not conflicting with or being incompatible with the special law's provisions or its implications, and (2) the recourse not conflicting with the special law or being incompatible with its special nature. This condition is repeated in the conclusion paragraph and in the recommendations section. The criterion is fully satisfied."
+     },
+     {
+      "id": "C-005",
+      "title": "Legal departments law is primary",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the second section (ثانيًا: سد الفراغ بأحكام التوظف العام) that the Legal Departments Law is 'الأساس' (the primary basis) for regulating the affairs of members of legal departments and their directors: 'وهو الأساس في تنظيم شؤون أعضاء الإدارات القانونية ومديريها'. This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-s55-files/scope-and-limits-of-legal-advisory-opinions",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:47:59.966656+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Fatwa limited to specific case",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the General Assembly's opinion is limited to the specific case referred to it and does not extend to other cases. For example: 'يقتصر عليها ولا يتعداها إلى غيرها من الحالات' and 'ما ينتهي إليه رأي الجمعية بشأن مدة ترقية المستشارة نادية يخص حالتها المعروضة. ولا يسري تلقائيًا على جميع أعضاء الإدارات القانونية في مختلف الهيئات.'"
+     },
+     {
+      "id": "C-002",
+      "title": "Fatwa not theoretical",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the fatwa is not a theoretical study ('الفتوى ليست بحثًا نظريًا') and that it is issued in a specific, individually defined incident ('واقعة محددة بذاتها'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "General law supplementary only",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states multiple times that recourse to the general civil service law is conditional upon the Legal Departments Law not containing a specific provision on the matter. For example: 'فيما لم يرد فيه حكم مخصوص' and condition 3: 'ألا يكون القانون الخاص قد تناول المسألة بالتنظيم، إذ لا يجوز الرجوع إلى القانون العام إلا فيما لم يتناوله'. This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "No conflict with special law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly and repeatedly states that recourse to the general employment law is conditional upon its provisions not conflicting with the provisions of the Legal Departments Law (the special law) and not being incompatible with its special nature. This is stated in the short opinion ('بشرط ألا تتعارض هذه الأحكام مع القانون الخاص أو تتنافى مع طبيعته الخاصة'), in the detailed analysis conditions, and in the conclusion/recommendation section."
+     },
+     {
+      "id": "C-005",
+      "title": "Legal departments law is primary",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'قانون الإدارات القانونية من قوانين التوظف الخاصة، وتسري أحكامه في نطاقه الوظيفي المحدد. وهو الأساس في تنظيم شؤون أعضاء الإدارات القانونية ومديريها.' This clearly identifies the Legal Departments Law as the primary basis for regulating the affairs of members of the legal departments."
+     }
+    ],
+    "run_id": "open-s55-files/scope-and-limits-of-legal-advisory-opinions",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T17:55:38.045508+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**إلى:** الجهة المستشيرة\n**الموضوع:** مدى حق الجهاز المركزي للتعمير في الصرف من أموال منحة الإسكان المشترك على نفقات إدارية عامة\n\n## الوقائع\nفي عام 2024 قرر الجهاز المركزي للتعمير صرف مبالغ من أموال منحة الإسكان المشترك لتغطية نفقات إدارية عامة غير مدرجة في اللائحة الخاصة بأموال المنحة. وحجته أن الجهاز التنفيذي للمشروعات المشتركة صار تابعًا له بقرار وزاري، وأن موازنته اندمجت في موازنته.\n\n## الرأي المختصر\n**لا يحق** للجهاز المركزي للتعمير الصرف من أموال المنحة في تلك النفقات الإدارية العامة. فاللائحة الخاصة بالمنحة قصرت الصرف على الأغراض المحددة فيها ولا يمكن الصرف في غيرها. ولا يغير من ذلك نقل التبعية ودمج الموازنة.\n\n## التحليل والسند القانوني\n\n### أولًا: اللائحة الخاصة بأموال المنحة تقصر الصرف على أغراضها\n- ينحصر دور الجهاز التنفيذي للمشروعات المشتركة، الذي أُنشئ تنفيذًا للاتفاقية بقرار وزير الإسكان رقم 48 لسنة 1979، في **إدارة أموال المنحة**.\n- اللائحة الخاصة بأموال المنحة معتمدة من وزير الإسكان والمرافق والمجتمعات العمرانية بعد إقرار وزارة المالية. وقد **قصرت الصرف** من هذه الأموال **على الأغراض المخصصة في اللائحة**، ولا يمكن الصرف في غير تلك الأغراض.\n- النفقات الإدارية العامة محل الواقعة غير مدرجة في اللائحة، فلا يجوز الصرف عليها من أموال المنحة.\n- **السند:** فتوى رقم 897 بتاريخ 2024/05/22 (المستند الأول).\n\n### ثانيًا: أثر نقل التبعية ودمج الموازنة\n- أنشأ قرار وزير الإسكان الجهاز التنفيذي للمشروعات المشتركة في الديوان العام للوزارة، لتنفيذ الاتفاقيات مع الحكومات الأجنبية والمنظمات الدولية لتمويل مشروعات الإسكان منخفض التكاليف.\n- نقل قرار الوزير رقم 283 لسنة 2014 تبعية الجهاز إلى الجهاز المركزي للتعمير ليكون أحد أجهزته التنفيذية، مع دمج موازنته في موازنة الجهاز المركزي.\n- هذا القرار يتناول **التبعية الإدارية والموازنة**. وليس في المستندات المرفقة ما يفيد أنه عدّل اللائحة الخاصة بأموال المنحة أو وسّع أغراض الصرف منها. وعليه فإن حجة الجهاز المركزي لا تصلح سندًا للصرف خارج أغراض اللائحة.\n- **السند:** فتوى رقم 897 بتاريخ 2024/05/22 (المستند الثالث).\n\n### ثالثًا: الإطار العام\nتنص المادة الأولى من القانون رقم 33 لسنة 2014 في شأن الإسكان الاجتماعي على أن وزارة الإسكان تتولى اقتراح وتخطيط وطرح مشروعات الإسكان الاجتماعي والإشراف على تنفيذها، لتوفير مسكن ملائم لمحدودي الدخل. وهذا النص يبين غرض هذه المشروعات، ولا يجيز الصرف من أموال المنحة خارج الأغراض التي حددتها لائحتها. (المستند الثاني)\n\n## التوصية\n- عدم صرف أي مبالغ من أموال المنحة على النفقات الإدارية العامة غير المدرجة في اللائحة.\n- إذا رأى الجهاز المركزي الحاجة إلى توسيع أغراض الصرف، فعليه تعديل اللائحة وفق الإجراءات التي اعتمدتها. وقد صدرت بموافقة وزير الإسكان بعد إقرار وزارة المالية.\n- مصدر هذه المذكرة المستندات المرفقة وحدها. وهي لا تتضمن نص اللائحة نفسها ولا بنود النفقات المدرجة فيها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Transfer of Affiliation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the second section (ثانيًا) that 'قرار الوزير رقم 283 لسنة 2014 نقل تبعية الجهاز إلى الجهاز المركزي للتعمير ليكون أحد أجهزته التنفيذية، مع دمج موازنته في موازنة الجهاز المركزي.' This confirms both that the affiliation transfer was made by a ministerial decree (قرار الوزير) and that the budget was merged with the Central Agency for Reconstruction's budget."
+    },
+    {
+     "id": "C-002",
+     "title": "Restricted Role of Executive Body",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section أولًا: 'ينحصر دور الجهاز التنفيذي للمشروعات المشتركة، الذي أُنشئ تنفيذًا للاتفاقية بقرار وزير الإسكان رقم 48 لسنة 1979، في إدارة أموال المنحة.' This clearly states that the role of the Executive Body for Joint Projects is restricted solely to managing the grant funds (أموال المنحة)."
+    },
+    {
+     "id": "C-003",
+     "title": "Expenditure Restriction",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'أولًا' that the regulation (اللائحة الخاصة بأموال المنحة) 'قصرت الصرف من هذه الأموال على الأغراض المخصصة في اللائحة، ولا يمكن الصرف في غير تلك الأغراض' (restricted expenditure from these funds to the purposes designated in the regulation, and expenditure on other purposes is not permitted). This directly satisfies both elements of the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer Does Not Override Restriction",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'ثانيًا' that the transfer of affiliation (نقل التبعية) and merger of the budget (دمج الموازنة) do not modify the regulation governing grant funds, and that the Central Authority's argument does not constitute a valid basis for spending outside the regulation's purposes. The note clearly concludes that these administrative actions do not permit expenditure from grant funds on purposes outside the regulation."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Transfer of Affiliation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the Executive Body for Joint Projects had its affiliation transferred to the Central Agency for Reconstruction by ministerial decree (قرار الوزير رقم 283 لسنة 2014), and that its budget was merged with the Central Agency's budget ('مع دمج موازنته في موازنة الجهاز المركزي'). Both elements required by the criterion are present."
+    },
+    {
+     "id": "C-002",
+     "title": "Restricted Role of Executive Body",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'ينحصر دور الجهاز التنفيذي للمشروعات المشتركة... في إدارة أموال المنحة' which translates to 'the role of the Executive Body for Joint Projects is restricted to managing the grant funds.' This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Expenditure Restriction",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the regulation governing the grant funds (اللائحة الخاصة بأموال المنحة) restricted expenditure to the purposes designated therein ('قصرت الصرف من هذه الأموال على الأغراض المخصصة في اللائحة') and that expenditure on any other purposes is not permitted ('ولا يمكن الصرف في غير تلك الأغراض'). This satisfies both parts of the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer Does Not Override Restriction",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section ثانيًا that the transfer of affiliation (نقل التبعية) and the merger of the budget (دمج الموازنة) do not modify the regulation (اللائحة) governing grant funds, and therefore do not permit expenditure outside the purposes specified in the regulation. The summary opinion also states 'ولا يغير من ذلك نقل التبعية ودمج الموازنة'."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+  "scored_at": "2026-11-22T17:56:02.093846+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Transfer of Affiliation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the second section (ثانيًا) that 'قرار الوزير رقم 283 لسنة 2014 نقل تبعية الجهاز إلى الجهاز المركزي للتعمير ليكون أحد أجهزته التنفيذية، مع دمج موازنته في موازنة الجهاز المركزي.' This confirms both that the affiliation transfer was made by a ministerial decree (قرار الوزير) and that the budget was merged with the Central Agency for Reconstruction's budget."
+     },
+     {
+      "id": "C-002",
+      "title": "Restricted Role of Executive Body",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section أولًا: 'ينحصر دور الجهاز التنفيذي للمشروعات المشتركة، الذي أُنشئ تنفيذًا للاتفاقية بقرار وزير الإسكان رقم 48 لسنة 1979، في إدارة أموال المنحة.' This clearly states that the role of the Executive Body for Joint Projects is restricted solely to managing the grant funds (أموال المنحة)."
+     },
+     {
+      "id": "C-003",
+      "title": "Expenditure Restriction",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'أولًا' that the regulation (اللائحة الخاصة بأموال المنحة) 'قصرت الصرف من هذه الأموال على الأغراض المخصصة في اللائحة، ولا يمكن الصرف في غير تلك الأغراض' (restricted expenditure from these funds to the purposes designated in the regulation, and expenditure on other purposes is not permitted). This directly satisfies both elements of the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer Does Not Override Restriction",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'ثانيًا' that the transfer of affiliation (نقل التبعية) and merger of the budget (دمج الموازنة) do not modify the regulation governing grant funds, and that the Central Authority's argument does not constitute a valid basis for spending outside the regulation's purposes. The note clearly concludes that these administrative actions do not permit expenditure from grant funds on purposes outside the regulation."
+     }
+    ],
+    "run_id": "open-s55-files/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:49:43.673620+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Transfer of Affiliation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the Executive Body for Joint Projects had its affiliation transferred to the Central Agency for Reconstruction by ministerial decree (قرار الوزير رقم 283 لسنة 2014), and that its budget was merged with the Central Agency's budget ('مع دمج موازنته في موازنة الجهاز المركزي'). Both elements required by the criterion are present."
+     },
+     {
+      "id": "C-002",
+      "title": "Restricted Role of Executive Body",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'ينحصر دور الجهاز التنفيذي للمشروعات المشتركة... في إدارة أموال المنحة' which translates to 'the role of the Executive Body for Joint Projects is restricted to managing the grant funds.' This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Expenditure Restriction",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the regulation governing the grant funds (اللائحة الخاصة بأموال المنحة) restricted expenditure to the purposes designated therein ('قصرت الصرف من هذه الأموال على الأغراض المخصصة في اللائحة') and that expenditure on any other purposes is not permitted ('ولا يمكن الصرف في غير تلك الأغراض'). This satisfies both parts of the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer Does Not Override Restriction",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section ثانيًا that the transfer of affiliation (نقل التبعية) and the merger of the budget (دمج الموازنة) do not modify the regulation (اللائحة) governing grant funds, and therefore do not permit expenditure outside the purposes specified in the regulation. The summary opinion also states 'ولا يغير من ذلك نقل التبعية ودمج الموازنة'."
+     }
+    ],
+    "run_id": "open-s55-files/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/transfer-of-affiliation-and-expenditure-restrictions-on-executive-bodi",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T17:56:02.093513+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

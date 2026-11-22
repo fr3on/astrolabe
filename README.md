@@ -28,7 +28,9 @@ Do language models know the law, or do they only sound like they do? Astrolabe t
 
 Each is run two ways: **no data** (from memory) and **files only** (the source text is given).
 
-## Results (Claude Sonnet 4.6, one run)
+## Results
+
+**Claude Sonnet 4.6**, one run, both settings:
 
 | | No data | With the text |
 |---|---|---|
@@ -36,7 +38,16 @@ Each is run two ways: **no data** (from memory) and **files only** (the source t
 | Task criteria passed | 38% (78 of 208) | 97% (202 of 208) |
 | Tasks fully passed | 2 of 44 | 41 of 44 |
 
-The model reads the law well and does not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
+**Claude Sonnet 5.5**, one run, task notes with the text only:
+
+| | With the text |
+|---|---|
+| Task criteria passed | 97% (201 of 208) |
+| Tasks fully passed | 38 of 44 |
+
+The Sonnet 5.5 run answered four tasks per reply, with no tools, so it has no trajectory. It was not run without the text, and the exact-text questions were not run. Compare it with Sonnet 4.6 with care: the two were run differently.
+
+The models read the law well and do not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
 
 ## Scoring
 
@@ -45,7 +56,7 @@ The model reads the law well and does not remember it. 16 of the 44 tasks were r
 
 ## Status and limits
 
-One model, one run, two legal systems. Run scripts for the exact-text questions and the Dike search check are not in this release yet.
+Two models, one run each, two legal systems. Run scripts for the exact-text questions and the Dike search check are not in this release yet.
 
 ## Contributing
 

@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** الجهة المسؤولة عن سداد مستحقات شركة الصناعات الإلكترونية، وحق الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية في الرجوع على هيئة تمويل العلوم والتكنولوجيا والابتكار.\n\n## أولًا: الخلاصة\n\n1. المسؤولة عن سداد المبالغ المستحقة للشركة (5 ملايين جنيه) هي **الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية**، لأنها الطرف المتعاقد مع الشركة.\n2. **يحق** لهذه الهيئة الرجوع على هيئة التمويل بما تراه حقًا لها، وفقًا لبنود عقد المنحة البحثية المبرم بينهما، إن كان ثمة مقتضٍ لذلك.\n\n## ثانيًا: السند القانوني\n\n1. **أثر العقد:** الأصل أن آثار العقود تقتصر على عاقديها، فلا تترتب الالتزامات إلا في ذمة المتعاقدين. والعقد شريعة المتعاقدين، فلا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون، ولا يجوز لأي منهما التحلل من التزاماته بإرادته المنفردة. ويجب تنفيذه طبقًا لما اشتمل عليه وبما يتفق مع حسن النية.\n2. **النيابة في التعاقد:** يجوز أن تتعاقد جهة نيابةً عن جهة أخرى، وعندئذ تنصرف آثار العقد إلى ذمة الجهة الأصلية، بشرط أن يكون ذلك في حدود النيابة المتفق عليها بينهما.\n3. **التطبيق:** عقد التوريد أبرمته الهيئة العامة لمدينة الأبحاث مع الشركة. ولا تفيد الوقائع بأنها تعاقدت نيابةً عن هيئة التمويل، ولا بوجود اتفاق نيابة. وعليه فالالتزام بالسداد يقع في ذمة الهيئة المتعاقدة، ولا يغير من ذلك احتجاج هيئة التمويل بأنها موّلت المشروع، إذ إن تمويلها محله عقد المنحة، والشركة ليست طرفًا فيه.\n4. **الرجوع:** المنتهى الذي أخذته الجمعية العمومية في واقعة مماثلة أن المسؤولية عن السداد تقع على الجهة المتعاقدة مع المورد، دون إخلال بحقها في الرجوع على هيئة التمويل بما تراه حقًا لها طبقًا لبنود عقد المنحة البحثية.\n\n## ثالثًا: التوصية\n\n1. على الهيئة العامة لمدينة الأبحاث سداد مستحقات الشركة، لأن المطالبة تتوجه إليها بصفتها المتعاقدة.\n2. ثم الرجوع على هيئة التمويل استنادًا إلى بنود عقد المنحة البحثية. ولم يرد نص هذه البنود في المستندات المرفقة، فيلزم مراجعتها لتحديد مدى الحق وحدوده.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (Legal Basis), point 1: 'الأصل أن آثار العقود تقتصر على عاقديها، فلا تترتب الالتزامات إلا في ذمة المتعاقدين' (The principle is that the effects of contracts are confined to their parties, and obligations extend only to the contracting parties). This directly satisfies the criterion regarding privity of contract."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (Legal Basis), point 1: 'ولا يجوز لأي منهما التحلل من التزاماته بإرادته المنفردة' (no party may release itself from its obligations by its own unilateral will). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in its summary (أولًا: الخلاصة) that the responsible party for paying the amounts due to the company (5 million pounds) is the General Authority for the City of Scientific Research and Technological Applications (الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية), because it is the contracting party with the company. This is further reinforced in the legal basis section and the recommendations section."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (point 4) and ثالثًا (point 2) that the Heiئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (which corresponds to King Abdulaziz City for Science and Technology) has the right of recourse (حق الرجوع) against هيئة تمويل العلوم والتكنولوجيا والابتكار (Science, Technology and Innovation Funding Authority) in accordance with the terms of the research grant contract (عقد المنحة البحثية). This is clearly stated in the summary (أولًا, point 2), the legal basis (ثانيًا, point 4), and the recommendation (ثالثًا, point 2)."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (Legal Basis), point 1: 'والعقد شريعة المتعاقدين، فلا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' — which directly satisfies the criterion by stating that the contract is the law of the contracting parties and may not be revoked or modified except by agreement of both parties or for reasons established by law."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section ثانيًا point 1 that 'الأصل أن آثار العقود تقتصر على عاقديها، فلا تترتب الالتزامات إلا في ذمة المتعاقدين' (the effects of contracts are confined to their parties, and obligations extend only to the contracting parties). This directly satisfies the privity of contract criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا, point 1: 'ولا يجوز لأي منهما التحلل من التزاماته بإرادته المنفردة' which translates to 'no party may release itself from its obligations by its own unilateral will.' This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية is responsible for paying the amounts due (5 million pounds) to the company (شركة الصناعات الإلكترونية), because it is the contracting party with the company. This satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the contracting authority (الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية) has the right of recourse (حق الرجوع) against the funding authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) in accordance with the terms of the research grant contract (عقد المنحة البحثية). Although the entity name used is 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' rather than 'مدينة الملك عبدالعزيز للعلوم والتقنية' (King Abdulaziz City for Science and Technology), the criterion is about whether the note states that the contracting entity has the right of recourse against the funding authority per the grant contract terms. The note does express this concept clearly. However, the criterion specifically mentions 'King Abdulaziz City for Science and Technology' (مدينة الملك عبدالعزيز للعلوم والتقنية), while the agent uses a different entity name (الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية). Despite the name difference, the substantive legal analysis — that the contracting party has the right of recourse against the funding authority under the research grant contract — is present. The criterion appears to be checking for the legal concept rather than the exact entity name, and the note satisfies this by stating the right of recourse exists and is governed by the grant contract terms."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا, point 1: 'والعقد شريعة المتعاقدين، فلا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' which translates to 'the contract is the law of the contracting parties, and may not be revoked or modified except by agreement of both parties or for reasons established by law.' This fully satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/privity-of-contract-and-prohibition-on-unilateral-release",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "scored_at": "2026-11-22T18:12:49.194932+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (Legal Basis), point 1: 'الأصل أن آثار العقود تقتصر على عاقديها، فلا تترتب الالتزامات إلا في ذمة المتعاقدين' (The principle is that the effects of contracts are confined to their parties, and obligations extend only to the contracting parties). This directly satisfies the criterion regarding privity of contract."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (Legal Basis), point 1: 'ولا يجوز لأي منهما التحلل من التزاماته بإرادته المنفردة' (no party may release itself from its obligations by its own unilateral will). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in its summary (أولًا: الخلاصة) that the responsible party for paying the amounts due to the company (5 million pounds) is the General Authority for the City of Scientific Research and Technological Applications (الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية), because it is the contracting party with the company. This is further reinforced in the legal basis section and the recommendations section."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (point 4) and ثالثًا (point 2) that the Heiئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (which corresponds to King Abdulaziz City for Science and Technology) has the right of recourse (حق الرجوع) against هيئة تمويل العلوم والتكنولوجيا والابتكار (Science, Technology and Innovation Funding Authority) in accordance with the terms of the research grant contract (عقد المنحة البحثية). This is clearly stated in the summary (أولًا, point 2), the legal basis (ثانيًا, point 4), and the recommendation (ثالثًا, point 2)."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (Legal Basis), point 1: 'والعقد شريعة المتعاقدين، فلا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' — which directly satisfies the criterion by stating that the contract is the law of the contracting parties and may not be revoked or modified except by agreement of both parties or for reasons established by law."
+     }
+    ],
+    "run_id": "open-s55-files/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:08:21.995426+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section ثانيًا point 1 that 'الأصل أن آثار العقود تقتصر على عاقديها، فلا تترتب الالتزامات إلا في ذمة المتعاقدين' (the effects of contracts are confined to their parties, and obligations extend only to the contracting parties). This directly satisfies the privity of contract criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا, point 1: 'ولا يجوز لأي منهما التحلل من التزاماته بإرادته المنفردة' which translates to 'no party may release itself from its obligations by its own unilateral will.' This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية is responsible for paying the amounts due (5 million pounds) to the company (شركة الصناعات الإلكترونية), because it is the contracting party with the company. This satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the contracting authority (الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية) has the right of recourse (حق الرجوع) against the funding authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) in accordance with the terms of the research grant contract (عقد المنحة البحثية). Although the entity name used is 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية' rather than 'مدينة الملك عبدالعزيز للعلوم والتقنية' (King Abdulaziz City for Science and Technology), the criterion is about whether the note states that the contracting entity has the right of recourse against the funding authority per the grant contract terms. The note does express this concept clearly. However, the criterion specifically mentions 'King Abdulaziz City for Science and Technology' (مدينة الملك عبدالعزيز للعلوم والتقنية), while the agent uses a different entity name (الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية). Despite the name difference, the substantive legal analysis — that the contracting party has the right of recourse against the funding authority under the research grant contract — is present. The criterion appears to be checking for the legal concept rather than the exact entity name, and the note satisfies this by stating the right of recourse exists and is governed by the grant contract terms."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا, point 1: 'والعقد شريعة المتعاقدين، فلا يجوز نقضه ولا تعديله إلا باتفاق الطرفين أو للأسباب التي يقررها القانون' which translates to 'the contract is the law of the contracting parties, and may not be revoked or modified except by agreement of both parties or for reasons established by law.' This fully satisfies the criterion."
+     }
+    ],
+    "run_id": "open-s55-files/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:12:49.194519+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

@@ -1,0 +1,220 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## السؤال\nهل يحق لأحمد سالم الجمع بين راتب وظيفته الجديدة ومعاشه، أم يُوقف المعاش؟\n\n## الخلاصة\nلا تتيح المستندات المرفقة جوابًا قاطعًا. فالمعيار الوارد فيها أن إيقاف المعاش يتوقف على ما إذا كانت الإعادة للعمل تُخضع المؤمن عليه لأحكام قانون التأمين الاجتماعي، أي باستقطاع الاشتراكات وحساب مدة العمل الجديدة في المعاش. ولا يتحقق ذلك إلا فيمن يعاد قبل بلوغه سن الستين. وبما أن أحمد أُعيد تعيينه بعد إحالته للمعاش عام 2018 بسبب العجز وهو في الخامسة والخمسين، فإن الراجح بحسب المستندات أن إعادته قبل الستين تخضعه للقانون، ومن ثم يُوقف المعاش لا أن يجمع بينه وبين الراتب. ويشترط التحقق من الوقائع الناقصة المبينة أدناه.\n\n## الوقائع\nأحمد موظف مدني في إحدى الهيئات العامة، أُحيل إلى المعاش عام 2018 بعد بلوغه الخامسة والخمسين بسبب العجز، ثم أُعيد تعيينه في الجهة نفسها عام 2019 براتب كامل.\n\n## التحليل والسند القانوني\n\n### أولًا: نطاق سريان القانون\n- تسري أحكام قانون التأمين الاجتماعي رقم 79 لسنة 1975 على العاملين المدنيين بالجهاز الإداري للدولة والهيئات العامة وغيرها (المادة 2، المصدر الأول). فأحمد، وهو موظف مدني بهيئة عامة، داخل في نطاق القانون.\n- الأصل العام أن يقوم الخضوع للقانون على علاقة عمل منتظمة بين المؤمن عليه وصاحب العمل، والاشتراك إلزامي، وتستحق الاشتراكات بحصة على رب العمل وأخرى على العامل (المصدر الثاني).\n\n### ثانيًا: أثر الإعادة للعمل على المعاش\n- الإعادة التي تؤدي إلى الخضوع لأحكام القانون، ومن ثم إلى وقف صرف المعاش، هي التي يترتب عليها استقطاع أقساط التأمين وحساب مدة العمل الجديدة في المعاش، وذلك لا يتحقق إلا فيمن يعاد قبل بلوغه سن الستين (المصدر الثاني).\n- أما العامل المعين بعد إحالته إلى المعاش لبلوغه سن الستين فيحق له الجمع بين المرتب والمعاش (المصدر الثاني).\n\n### ثالثًا: التطبيق\n- أحمد أُحيل إلى المعاش عام 2018 وهو في الخامسة والخامسة، لا لبلوغ الستين، فلا يدخل في حالة الجمع المقررة لمن بلغ الستين. وإعادة تعيينه في 2019 تمت وهو دون الستين على الأرجح، فإذا استُقطعت عنه الاشتراكات وحُسبت مدته الجديدة، فإن المعاش يُوقف.\n- لا تتناول المستندات صراحة حالة الإحالة بسبب العجز، وهي نقطة تحتاج إلى مراجعة النص الكامل للفتوى.\n\n## التوصية\n- عدم الاعتماد على الجمع بين الراتب والمعاش قبل التحقق مما يلي: هل تُستقطع اشتراكات التأمين من راتبه الجديد وتُحسب مدته فيه؟ وكم عمره الآن؟ ومدى أثر كون الإحالة بسبب العجز.\n- إذا تأكد الخضوع للقانون، فيُتوقع إيقاف المعاش وفق المعيار المذكور.\n\n## ملاحظة\nالمصدر الثالث مقتطع ولا يتصل مباشرة بالسؤال. واقتصر الرأي على المستندات المرفقة، ولم تُفترض أي وقائع أو نصوص غير واردة فيها. ويلاحظ أن الوقائع تذكر سن الخامسة والخمسين وقت الإحالة، وأن عمره الحالي غير مذكور.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Mandatory Social Insurance Enrollment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the second bullet point under 'أولًا: نطاق سريان القانون' that: 'الأصل العام أن يقوم الخضوع للقانون على علاقة عمل منتظمة بين المؤمن عليه وصاحب العمل، والاشتراك إلزامي' — which directly states that enrollment (الاشتراك) is mandatory (إلزامي) and requires a regular employment relationship (علاقة عمل منتظمة) between the insured and the employer. Both required elements are present."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction at Source",
+     "verdict": "fail",
+     "reasoning": "The note states in the second point under 'أولًا' (Section One) that contributions are mandatory and that contribution amounts are due as a share on the employer and a share on the worker ('تستحق الاشتراكات بحصة على رب العمل وأخرى على العامل'). It also references deduction of insurance installments ('استقطاع أقساط التأمين') in Section Two. However, the note does not explicitly state that contributions are deducted at source and remitted by the employer to the insurance authority. It mentions the employer's share and worker's share of contributions, and references deduction of premiums, but does not clearly articulate the mechanism that the employer deducts contributions at source from the worker's salary and remits them. The criterion requires the note to state that contributions are deducted at source and remitted by the employer, which is not explicitly stated."
+    },
+    {
+     "id": "C-003",
+     "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the second section (ثانيًا: أثر الإعادة للعمل على المعاش) that pension suspension applies to reinstatement that occurs before reaching age 60, and that this reinstatement results in the deduction of insurance premiums (استقطاع أقساط التأمين) and the counting of the new period of service in the pension (حساب مدة العمل الجديدة في المعاش). Both required elements are clearly present."
+    },
+    {
+     "id": "C-004",
+     "title": "Combining Salary and Pension After Age 60",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the second bullet of 'ثانيًا' (Section 2) that 'أما العامل المعين بعد إحالته إلى المعاش لبلوغه سن الستين فيحق له الجمع بين المرتب والمعاش' (a worker reinstated after reaching age 60 is entitled to combine salary and pension). It also distinguishes this from Ahmed's case in Section 3, noting that Ahmed was retired at age 55 due to disability, not upon reaching 60, and was reinstated before reaching 60, making him subject to the law and thus not entitled to combine the two."
+    },
+    {
+     "id": "C-005",
+     "title": "Applicability to Civil Servants in Public Bodies",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first section (أولًا: نطاق سريان القانون) that the provisions of Social Insurance Law No. 79 of 1975 apply to civil servants in the state's administrative apparatus, public bodies (الهيئات العامة), and others, citing Article 2. It further confirms that Ahmed, as a civil servant in a public body, falls within the scope of the law."
+    },
+    {
+     "id": "C-006",
+     "title": "Work Injury Insurance Funded by Employer",
+     "verdict": "fail",
+     "reasoning": "The agent's note discusses mandatory social insurance enrollment and pension combination rules for Ahmed Salem. While it briefly mentions that contributions are shared between employer and employee (المصدر الثاني), it does not specifically address work injury insurance (تأمين إصابات العمل) or state that it is funded by monthly contributions paid solely by the employer. The criterion requires the note to explicitly state that work injury insurance resources consist of monthly contributions that the employer is obligated to pay. This specific information is absent from the note."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Mandatory Social Insurance Enrollment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the section 'أولًا: نطاق سريان القانون' that enrollment is mandatory ('الاشتراك إلزامي') and that it is based on a regular employment relationship between the insured and the employer ('الأصل العام أن يقوم الخضوع للقانون على علاقة عمل منتظمة بين المؤمن عليه وصاحب العمل'). Both requirements of the criterion are met."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction at Source",
+     "verdict": "pass",
+     "reasoning": "The note states that contributions are mandatory ('الاشتراك إلزامي') and that they comprise a share from the employer and a share from the worker ('تستحق الاشتراكات بحصة على رب العمل وأخرى على العامل'). It also mentions that contributions are deducted from the salary ('استقطاع أقساط التأمين'/'استُقطعت عنه الاشتراكات'). While it doesn't use the exact phrase 'deducted at source and remitted by the employer,' the substance is conveyed: the employer bears a share and deducts the employee's share from wages, which collectively indicates deduction at source and remittance by the employer."
+    },
+    {
+     "id": "C-003",
+     "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section ثانيًا that reinstatement which leads to pension suspension is reinstatement that occurs before reaching age 60, and that it results in the deduction of insurance premiums (استقطاع أقساط التأمين) and counting of the new period of service (حساب مدة العمل الجديدة في المعاش). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Combining Salary and Pension After Age 60",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا that a worker appointed after reaching the age of 60 is entitled to combine salary and pension ('أما العامل المعين بعد إحالته إلى المعاش لبلوغه سن الستين فيحق له الجمع بين المرتب والمعاش'). It also distinguishes this from Ahmed's case in section ثالثًا, noting that Ahmed was referred to pension at age 55 (not 60) and was reinstated before reaching 60, so he does not fall under the combining provision ('لا لبلوغ الستين، فلا يدخل في حالة الجمع المقررة لمن بلغ الستين')."
+    },
+    {
+     "id": "C-005",
+     "title": "Applicability to Civil Servants in Public Bodies",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section أولًا that the social insurance law (قانون التأمين الاجتماعي رقم 79 لسنة 1975) applies to civil servants in public bodies (العاملين المدنيين بالجهاز الإداري للدولة والهيئات العامة), and confirms that أحمد, as a civil servant in a public body, falls within the scope of the law."
+    },
+    {
+     "id": "C-006",
+     "title": "Work Injury Insurance Funded by Employer",
+     "verdict": "fail",
+     "reasoning": "The note does not mention that work injury insurance (تأمين إصابات العمل) is funded by monthly contributions paid by the employer. The note discusses general social insurance enrollment and pension combination rules but does not specifically address the funding source of work injury insurance."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+  "task": "astrolabe-open/egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+  "scored_at": "2026-11-22T18:23:49.078435+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "4/6 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Mandatory Social Insurance Enrollment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the second bullet point under 'أولًا: نطاق سريان القانون' that: 'الأصل العام أن يقوم الخضوع للقانون على علاقة عمل منتظمة بين المؤمن عليه وصاحب العمل، والاشتراك إلزامي' — which directly states that enrollment (الاشتراك) is mandatory (إلزامي) and requires a regular employment relationship (علاقة عمل منتظمة) between the insured and the employer. Both required elements are present."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction at Source",
+      "verdict": "fail",
+      "reasoning": "The note states in the second point under 'أولًا' (Section One) that contributions are mandatory and that contribution amounts are due as a share on the employer and a share on the worker ('تستحق الاشتراكات بحصة على رب العمل وأخرى على العامل'). It also references deduction of insurance installments ('استقطاع أقساط التأمين') in Section Two. However, the note does not explicitly state that contributions are deducted at source and remitted by the employer to the insurance authority. It mentions the employer's share and worker's share of contributions, and references deduction of premiums, but does not clearly articulate the mechanism that the employer deducts contributions at source from the worker's salary and remits them. The criterion requires the note to state that contributions are deducted at source and remitted by the employer, which is not explicitly stated."
+     },
+     {
+      "id": "C-003",
+      "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the second section (ثانيًا: أثر الإعادة للعمل على المعاش) that pension suspension applies to reinstatement that occurs before reaching age 60, and that this reinstatement results in the deduction of insurance premiums (استقطاع أقساط التأمين) and the counting of the new period of service in the pension (حساب مدة العمل الجديدة في المعاش). Both required elements are clearly present."
+     },
+     {
+      "id": "C-004",
+      "title": "Combining Salary and Pension After Age 60",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the second bullet of 'ثانيًا' (Section 2) that 'أما العامل المعين بعد إحالته إلى المعاش لبلوغه سن الستين فيحق له الجمع بين المرتب والمعاش' (a worker reinstated after reaching age 60 is entitled to combine salary and pension). It also distinguishes this from Ahmed's case in Section 3, noting that Ahmed was retired at age 55 due to disability, not upon reaching 60, and was reinstated before reaching 60, making him subject to the law and thus not entitled to combine the two."
+     },
+     {
+      "id": "C-005",
+      "title": "Applicability to Civil Servants in Public Bodies",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first section (أولًا: نطاق سريان القانون) that the provisions of Social Insurance Law No. 79 of 1975 apply to civil servants in the state's administrative apparatus, public bodies (الهيئات العامة), and others, citing Article 2. It further confirms that Ahmed, as a civil servant in a public body, falls within the scope of the law."
+     },
+     {
+      "id": "C-006",
+      "title": "Work Injury Insurance Funded by Employer",
+      "verdict": "fail",
+      "reasoning": "The agent's note discusses mandatory social insurance enrollment and pension combination rules for Ahmed Salem. While it briefly mentions that contributions are shared between employer and employee (المصدر الثاني), it does not specifically address work injury insurance (تأمين إصابات العمل) or state that it is funded by monthly contributions paid solely by the employer. The criterion requires the note to explicitly state that work injury insurance resources consist of monthly contributions that the employer is obligated to pay. This specific information is absent from the note."
+     }
+    ],
+    "run_id": "open-s55-files/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "task": "astrolabe-open/egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:18:00.538439+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "5/6 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Mandatory Social Insurance Enrollment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the section 'أولًا: نطاق سريان القانون' that enrollment is mandatory ('الاشتراك إلزامي') and that it is based on a regular employment relationship between the insured and the employer ('الأصل العام أن يقوم الخضوع للقانون على علاقة عمل منتظمة بين المؤمن عليه وصاحب العمل'). Both requirements of the criterion are met."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction at Source",
+      "verdict": "pass",
+      "reasoning": "The note states that contributions are mandatory ('الاشتراك إلزامي') and that they comprise a share from the employer and a share from the worker ('تستحق الاشتراكات بحصة على رب العمل وأخرى على العامل'). It also mentions that contributions are deducted from the salary ('استقطاع أقساط التأمين'/'استُقطعت عنه الاشتراكات'). While it doesn't use the exact phrase 'deducted at source and remitted by the employer,' the substance is conveyed: the employer bears a share and deducts the employee's share from wages, which collectively indicates deduction at source and remittance by the employer."
+     },
+     {
+      "id": "C-003",
+      "title": "Reinstatement Before Age 60 Triggers Pension Suspension",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section ثانيًا that reinstatement which leads to pension suspension is reinstatement that occurs before reaching age 60, and that it results in the deduction of insurance premiums (استقطاع أقساط التأمين) and counting of the new period of service (حساب مدة العمل الجديدة في المعاش). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Combining Salary and Pension After Age 60",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا that a worker appointed after reaching the age of 60 is entitled to combine salary and pension ('أما العامل المعين بعد إحالته إلى المعاش لبلوغه سن الستين فيحق له الجمع بين المرتب والمعاش'). It also distinguishes this from Ahmed's case in section ثالثًا, noting that Ahmed was referred to pension at age 55 (not 60) and was reinstated before reaching 60, so he does not fall under the combining provision ('لا لبلوغ الستين، فلا يدخل في حالة الجمع المقررة لمن بلغ الستين')."
+     },
+     {
+      "id": "C-005",
+      "title": "Applicability to Civil Servants in Public Bodies",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section أولًا that the social insurance law (قانون التأمين الاجتماعي رقم 79 لسنة 1975) applies to civil servants in public bodies (العاملين المدنيين بالجهاز الإداري للدولة والهيئات العامة), and confirms that أحمد, as a civil servant in a public body, falls within the scope of the law."
+     },
+     {
+      "id": "C-006",
+      "title": "Work Injury Insurance Funded by Employer",
+      "verdict": "fail",
+      "reasoning": "The note does not mention that work injury insurance (تأمين إصابات العمل) is funded by monthly contributions paid by the employer. The note discusses general social insurance enrollment and pension combination rules but does not specifically address the funding source of work injury insurance."
+     }
+    ],
+    "run_id": "open-s55-files/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "task": "astrolabe-open/egypt-employment-and-labour/mandatory-social-insurance-enrollment-and-pension-combination-rules",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:23:49.078015+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.75,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

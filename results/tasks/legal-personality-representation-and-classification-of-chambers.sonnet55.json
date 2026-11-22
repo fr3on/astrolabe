@@ -1,0 +1,220 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-company-law/legal-personality-representation-and-classification-of-chambers",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** الجهة المختصة بإصدار اللائحة الداخلية للغرفة التجارية بالإسكندرية (متضمنةً العلاوة الخاصة) ومدى تمتع الغرفة بالشخصية الاعتبارية.\n\n## أولًا: الخلاصة\n\n1. **الجهة المختصة بإصدار اللائحة:** الوزير المختص هو الذي يصدر قرارًا باللائحة الداخلية للغرفة، بناءً على اقتراح مجلس إدارتها. أما مجلس الإدارة فدوره اقتراح اللائحة لا إصدارها.\n2. **الشخصية الاعتبارية:** نعم، تتمتع الغرفة بالشخصية الاعتبارية، ويمثلها أمام القضاء رئيسها.\n\n## ثانيًا: السند القانوني\n\n### 1) صلاحية إصدار اللائحة\n- تنص المادة (45) من قانون الغرف التجارية رقم (189) لسنة 1951 على أن \"يصدر الوزير المختص قرارًا باللائحة الداخلية لكل غرفة تجارية بناء على اقتراح مجلس إدارتها\".\n- وتبين المادة نفسها أن اللائحة تنظم على الأخص الهيكل التنظيمي والمالي للغرفة، وقواعد تعيين العاملين وترقياتهم ومرتباتهم ومساءلتهم، وتحديد الوظائف واختصاصات كل منها. ومنح علاوة خاصة للعاملين يتصل بمرتباتهم، فيدخل في نطاق ما تنظمه اللائحة.\n- وتنص المادة (44) مكررًا على أن تحديد الوزارة المختصة والوزير المختص يكون بقرار من رئيس مجلس الوزراء.\n- وبناءً عليه، فإن اقتراح مجلس الإدارة المقدَّم في يناير 2024 لا يصير نافذًا بذاته، بل يلزم صدور قرار من الوزير المختص باللائحة المعدَّلة.\n\n### 2) الشخصية الاعتبارية\n- تنص المادة (2) على أن \"يكون للغرف التجارية الشخصية الاعتبارية\"، ويقوم رؤساء الغرف بتمثيلها أمام القضاء.\n- وتنص المادة (1) على أن الغرف هي الهيئات التي تمثل في دوائر اختصاصها المصالح التجارية والصناعية الإقليمية لدى السلطات العامة، وتعتبر من المؤسسات العامة.\n- ومن ثم تملك الغرفة، بحكم الشخصية الاعتبارية، أن تتعاقد وتتقاضى بشأن العلاوة، ويمثلها في التقاضي رئيسها.\n\n## ثالثًا: ملاحظة\n\nالمستندات المرفقة تعرض تطور تنظيم المؤسسات العامة (القوانين أرقام 32 لسنة 1957 و265 لسنة 1960 و60 لسنة 1963 و32 لسنة 1966 و60 لسنة 1971، ثم القانون رقم 111 لسنة 1975 بإلغاء المؤسسات العامة)، لكن النص المقتطع لا يبيّن أثر ذلك على وضع الغرف التجارية. لذلك لا نبني عليه استنتاجًا ولا نفترض ما لم يرد فيه. والنتيجة أعلاه قائمة على نصوص المواد (1) و(2) و(45) الواردة في المستندات.\n\n## رابعًا: التوصية\n\nيحسن أن يرفع رئيس الغرفة اقتراح مجلس الإدارة بتعديل اللائحة إلى الوزير المختص لإصدار قرار بها، دون اعتبار اللائحة نافذة قبل ذلك.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Legal Personality of Chamber",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states in section 'ثانيًا: السند القانوني' under '2) الشخصية الاعتبارية' that the chamber possesses legal personality ('تتمتع الغرفة بالشخصية الاعتبارية'), citing Article 2 of the Commercial Chambers Law No. 189 of 1951. This is also summarized in the conclusions section. The note affirms the chamber's independent legal personality."
+    },
+    {
+     "id": "C-002",
+     "title": "President Represents Chamber in Court",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (2) under الشخصية الاعتبارية: 'يقوم رؤساء الغرف بتمثيلها أمام القضاء' (the presidents of the chambers represent them before the judiciary). This is also reiterated in the summary section (أولًا) where it states 'ويمثلها أمام القضاء رئيسها' (and its president represents it before the judiciary)."
+    },
+    {
+     "id": "C-003",
+     "title": "Competent Minister Issues Internal Regulation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (1) that Article 45 of Law 189 of 1951 provides that 'the competent minister issues a decision on the internal regulation of each chamber of commerce based on a proposal from its board of directors' (يصدر الوزير المختص قرارًا باللائحة الداخلية لكل غرفة تجارية بناء على اقتراح مجلس إدارتها). This is also restated in the conclusion (أولًا) and the recommendation (رابعًا). The criterion is fully satisfied."
+    },
+    {
+     "id": "C-004",
+     "title": "Internal Regulation Covers Employees' Salaries and Allowances",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states in section ثانيًا (1) that the internal regulation organizes, among other things, 'قواعد تعيين العاملين وترقياتهم ومرتباتهم ومساءلتهم' (rules for appointing employees, their promotions, salaries, and accountability). It further states that 'منح علاوة خاصة للعاملين يتصل بمرتباتهم، فيدخل في نطاق ما تنظمه اللائحة' (granting special allowances to employees relates to their salaries and falls within the scope of what the regulation organizes). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Prime Minister Determines Competent Ministry",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (2) under صلاحية إصدار اللائحة: 'وتنص المادة (44) مكررًا على أن تحديد الوزارة المختصة والوزير المختص يكون بقرار من رئيس مجلس الوزراء.' This directly satisfies the criterion."
+    },
+    {
+     "id": "C-006",
+     "title": "Chambers Classified as Public Institutions",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (2) under الشخصية الاعتبارية: 'وتنص المادة (1) على أن الغرف هي الهيئات التي تمثل في دوائر اختصاصها المصالح التجارية والصناعية الإقليمية لدى السلطات العامة، وتعتبر من المؤسسات العامة.' This clearly states that commercial chambers are classified as public institutions (مؤسسات عامة) pursuant to Law No. 189 of 1951 (as referenced throughout the document)."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Legal Personality of Chamber",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the commercial chamber possesses legal personality (الشخصية الاعتبارية), citing Article 2 of the law. While the note uses 'الشخصية الاعتبارية' rather than explicitly adding 'المستقلة' (independent), it does affirm the chamber's independent legal personality by explaining that it can contract, litigate, and is represented by its president before courts - all attributes of independent legal personality. The criterion asks whether the note states the chamber possesses independent legal personality, and the note does convey this meaning substantively."
+    },
+    {
+     "id": "C-002",
+     "title": "President Represents Chamber in Court",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the president of the chamber represents the chamber before the judiciary (القضاء). For example: 'يمثلها أمام القضاء رئيسها' and 'يقوم رؤساء الغرف بتمثيلها أمام القضاء' and 'ويمثلها في التقاضي رئيسها'."
+    },
+    {
+     "id": "C-003",
+     "title": "Competent Minister Issues Internal Regulation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in multiple places that the competent minister (الوزير المختص) issues the decision of the internal regulation (اللائحة الداخلية) based on a proposal from the board of directors (مجلس الإدارة). For example, in the summary: 'الوزير المختص هو الذي يصدر قرارًا باللائحة الداخلية للغرفة، بناءً على اقتراح مجلس إدارتها' and in the legal basis section quoting Article 45: 'يصدر الوزير المختص قرارًا باللائحة الداخلية لكل غرفة تجارية بناء على اقتراح مجلس إدارتها'."
+    },
+    {
+     "id": "C-004",
+     "title": "Internal Regulation Covers Employees' Salaries and Allowances",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that Article 45 provides that the internal regulation organizes, among other things, 'قواعد تعيين العاملين وترقياتهم ومرتباتهم ومساءلتهم' (rules for appointment, promotion, salaries, and discipline of employees). It further states 'ومنح علاوة خاصة للعاملين يتصل بمرتباتهم، فيدخل في نطاق ما تنظمه اللائحة' (granting a special allowance to employees relates to their salaries and falls within the scope of what the internal regulation organizes). This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Prime Minister Determines Competent Ministry",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the section on اللائحة: 'وتنص المادة (44) مكررًا على أن تحديد الوزارة المختصة والوزير المختص يكون بقرار من رئيس مجلس الوزراء.' This directly satisfies the criterion that the determination of the competent ministry and competent minister is issued by a decision of the Prime Minister."
+    },
+    {
+     "id": "C-006",
+     "title": "Chambers Classified as Public Institutions",
+     "verdict": "pass",
+     "reasoning": "The note states in Section ثانيًا under point 2 (الشخصية الاعتبارية) that المادة (1) provides that chambers 'تعتبر من المؤسسات العامة' (are considered public institutions). This is stated in the context of discussing Law No. 189 of 1951 (قانون الغرف التجارية رقم 189 لسنة 1951), which is referenced earlier in the same section. The note clearly classifies commercial chambers as public institutions pursuant to this law."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/legal-personality-representation-and-classification-of-chambers",
+  "task": "astrolabe-open/egypt-company-law/legal-personality-representation-and-classification-of-chambers",
+  "scored_at": "2026-11-22T19:02:34.273669+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Legal Personality of Chamber",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states in section 'ثانيًا: السند القانوني' under '2) الشخصية الاعتبارية' that the chamber possesses legal personality ('تتمتع الغرفة بالشخصية الاعتبارية'), citing Article 2 of the Commercial Chambers Law No. 189 of 1951. This is also summarized in the conclusions section. The note affirms the chamber's independent legal personality."
+     },
+     {
+      "id": "C-002",
+      "title": "President Represents Chamber in Court",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (2) under الشخصية الاعتبارية: 'يقوم رؤساء الغرف بتمثيلها أمام القضاء' (the presidents of the chambers represent them before the judiciary). This is also reiterated in the summary section (أولًا) where it states 'ويمثلها أمام القضاء رئيسها' (and its president represents it before the judiciary)."
+     },
+     {
+      "id": "C-003",
+      "title": "Competent Minister Issues Internal Regulation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (1) that Article 45 of Law 189 of 1951 provides that 'the competent minister issues a decision on the internal regulation of each chamber of commerce based on a proposal from its board of directors' (يصدر الوزير المختص قرارًا باللائحة الداخلية لكل غرفة تجارية بناء على اقتراح مجلس إدارتها). This is also restated in the conclusion (أولًا) and the recommendation (رابعًا). The criterion is fully satisfied."
+     },
+     {
+      "id": "C-004",
+      "title": "Internal Regulation Covers Employees' Salaries and Allowances",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states in section ثانيًا (1) that the internal regulation organizes, among other things, 'قواعد تعيين العاملين وترقياتهم ومرتباتهم ومساءلتهم' (rules for appointing employees, their promotions, salaries, and accountability). It further states that 'منح علاوة خاصة للعاملين يتصل بمرتباتهم، فيدخل في نطاق ما تنظمه اللائحة' (granting special allowances to employees relates to their salaries and falls within the scope of what the regulation organizes). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Prime Minister Determines Competent Ministry",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (2) under صلاحية إصدار اللائحة: 'وتنص المادة (44) مكررًا على أن تحديد الوزارة المختصة والوزير المختص يكون بقرار من رئيس مجلس الوزراء.' This directly satisfies the criterion."
+     },
+     {
+      "id": "C-006",
+      "title": "Chambers Classified as Public Institutions",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (2) under الشخصية الاعتبارية: 'وتنص المادة (1) على أن الغرف هي الهيئات التي تمثل في دوائر اختصاصها المصالح التجارية والصناعية الإقليمية لدى السلطات العامة، وتعتبر من المؤسسات العامة.' This clearly states that commercial chambers are classified as public institutions (مؤسسات عامة) pursuant to Law No. 189 of 1951 (as referenced throughout the document)."
+     }
+    ],
+    "run_id": "open-s55-files/legal-personality-representation-and-classification-of-chambers",
+    "task": "astrolabe-open/egypt-company-law/legal-personality-representation-and-classification-of-chambers",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:59:41.338678+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Legal Personality of Chamber",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the commercial chamber possesses legal personality (الشخصية الاعتبارية), citing Article 2 of the law. While the note uses 'الشخصية الاعتبارية' rather than explicitly adding 'المستقلة' (independent), it does affirm the chamber's independent legal personality by explaining that it can contract, litigate, and is represented by its president before courts - all attributes of independent legal personality. The criterion asks whether the note states the chamber possesses independent legal personality, and the note does convey this meaning substantively."
+     },
+     {
+      "id": "C-002",
+      "title": "President Represents Chamber in Court",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the president of the chamber represents the chamber before the judiciary (القضاء). For example: 'يمثلها أمام القضاء رئيسها' and 'يقوم رؤساء الغرف بتمثيلها أمام القضاء' and 'ويمثلها في التقاضي رئيسها'."
+     },
+     {
+      "id": "C-003",
+      "title": "Competent Minister Issues Internal Regulation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in multiple places that the competent minister (الوزير المختص) issues the decision of the internal regulation (اللائحة الداخلية) based on a proposal from the board of directors (مجلس الإدارة). For example, in the summary: 'الوزير المختص هو الذي يصدر قرارًا باللائحة الداخلية للغرفة، بناءً على اقتراح مجلس إدارتها' and in the legal basis section quoting Article 45: 'يصدر الوزير المختص قرارًا باللائحة الداخلية لكل غرفة تجارية بناء على اقتراح مجلس إدارتها'."
+     },
+     {
+      "id": "C-004",
+      "title": "Internal Regulation Covers Employees' Salaries and Allowances",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that Article 45 provides that the internal regulation organizes, among other things, 'قواعد تعيين العاملين وترقياتهم ومرتباتهم ومساءلتهم' (rules for appointment, promotion, salaries, and discipline of employees). It further states 'ومنح علاوة خاصة للعاملين يتصل بمرتباتهم، فيدخل في نطاق ما تنظمه اللائحة' (granting a special allowance to employees relates to their salaries and falls within the scope of what the internal regulation organizes). This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Prime Minister Determines Competent Ministry",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the section on اللائحة: 'وتنص المادة (44) مكررًا على أن تحديد الوزارة المختصة والوزير المختص يكون بقرار من رئيس مجلس الوزراء.' This directly satisfies the criterion that the determination of the competent ministry and competent minister is issued by a decision of the Prime Minister."
+     },
+     {
+      "id": "C-006",
+      "title": "Chambers Classified as Public Institutions",
+      "verdict": "pass",
+      "reasoning": "The note states in Section ثانيًا under point 2 (الشخصية الاعتبارية) that المادة (1) provides that chambers 'تعتبر من المؤسسات العامة' (are considered public institutions). This is stated in the context of discussing Law No. 189 of 1951 (قانون الغرف التجارية رقم 189 لسنة 1951), which is referenced earlier in the same section. The note clearly classifies commercial chambers as public institutions pursuant to this law."
+     }
+    ],
+    "run_id": "open-s55-files/legal-personality-representation-and-classification-of-chambers",
+    "task": "astrolabe-open/egypt-company-law/legal-personality-representation-and-classification-of-chambers",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T19:02:34.273181+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

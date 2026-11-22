@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-government-procurement/final-insurance-percentage-deadline-and-confiscation-rights",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الموضوع\nمقدار التأمين النهائي الواجب على شركة \"النيل للمقاولات\" سداده، وآخر موعد لأدائه في الحالة الاعتيادية.\n\n## أولاً: وقائع العميل\n- عقد إداري بقيمة مليون جنيه.\n- أُخطرت الشركة بقبول عطائها بكتاب موصى عليه بعلم الوصول بتاريخ 1 نوفمبر 2024.\n- سددت الشركة التأمين المؤقت عند تقديم عطائها. ولم تذكر الوقائع مقداره.\n\n## ثانياً: مقدار التأمين النهائي\n**السند:** تنص المادة (18) من القانون رقم (89) لسنة 1998، كما أوردتها الفتوى رقم 1410 بتاريخ 2018/10/10، على أن على صاحب العطاء المقبول أن يؤدي التأمين النهائي الذي **يكمل التأمين المؤقت إلى ما يساوي (5%) من قيمة العقد**.\n\n**التطبيق:**\n- قيمة العقد مليون جنيه، فيكون مجموع التأمين المطلوب 5% منها، أي **50,000 جنيه**.\n- يُحسب التأمين النهائي على أنه المبلغ الذي يكمل التأمين المؤقت إلى هذا الحد، فيكون المبلغ المستحق على الشركة هو **50,000 جنيه مخصوماً منها قيمة التأمين المؤقت** الذي سبق سداده.\n- لم تُبيَّن في الوقائع قيمة التأمين المؤقت، فلا يمكن تحديد الرقم النهائي الصافي إلا بمعرفتها. فإذا كان التأمين المؤقت مثلاً مساوياً لهذا الحد لم يتبقَّ شيء، وإن كان أقل منه وجب سداد الفرق.\n\n## ثالثاً: آخر موعد للأداء في الحالة الاعتيادية\n**السند:** نصت المادة (18) على أن الأداء يكون **خلال عشرة أيام تبدأ من اليوم التالي لإخطار صاحب العطاء بكتاب موصى عليه بعلم الوصول** بقبول عطائه. أما العقود التي تبرم مع متعاقد في الخارج فيكون الأداء فيها خلال عشرين يوماً.\n\n**التطبيق:** الشركة متعاقدة محلياً بحسب الوقائع، فتسري مهلة العشرة أيام. وقد تم الإخطار في 1 نوفمبر 2024، فتبدأ المهلة من 2 نوفمبر 2024، وينتهي آخر موعد للأداء في **11 نوفمبر 2024**.\n\n**المد:** يجوز بموافقة السلطة المختصة مد المهلة بما لا يجاوز عشرة أيام. ولا يُعدّ ذلك من الحالة الاعتيادية، ويتوقف على موافقة السلطة المختصة.\n\n## رابعاً: وظيفة التأمين النهائي\nبحسب الفتوى، التأمين النهائي ضمان لجهة الإدارة يقيها الأخطاء التي قد تصدر عن المتعاقد معها عند تنفيذ العقد الإداري، ويضمن ملاءته عند مواجهة مسؤوليات إخلاله بالعقد، ولذلك فللإدارة حق مصادرته. ويجب ردّه فور إتمام التنفيذ بغير طلب.\n\n## التوصية\n1. سداد التأمين النهائي بما يكمل التأمين المؤقت إلى 50,000 جنيه.\n2. إتمام السداد في موعد أقصاه 11 نوفمبر 2024.\n3. التحقق من قيمة التأمين المؤقت المسدد لتحديد المبلغ المتبقي بدقة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Final Insurance Percentage",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانياً that the final insurance equals 5% of the contract value ('يكمل التأمين المؤقت إلى ما يساوي (5%) من قيمة العقد'), and applies this by calculating 5% of one million pounds as 50,000 pounds."
+    },
+    {
+     "id": "C-002",
+     "title": "Deadline Ten Days",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section three that the deadline is ten days starting from the day following notification by registered mail with acknowledgment of receipt. It applies this to the specific facts, noting the notification was on 1 November 2024, the period starts on 2 November 2024, and the final deadline is 11 November 2024."
+    },
+    {
+     "id": "C-003",
+     "title": "Guarantee Purpose",
+     "verdict": "pass",
+     "reasoning": "Section 'رابعاً: وظيفة التأمين النهائي' explicitly states that the final insurance is a guarantee for the contracting authority that protects it from errors that may arise from the contractor during execution of the administrative contract, and ensures his solvency when facing liabilities from breach of contract. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Confiscation",
+     "verdict": "pass",
+     "reasoning": "In section 'رابعاً: وظيفة التأمين النهائي', the note explicitly states that the administration has the right to confiscate the final insurance: 'ولذلك فللإدارة حق مصادرته' (and therefore the administration has the right to confiscate it)."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Final Insurance Percentage",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the final insurance (التأمين النهائي) completes the provisional insurance to 5% of the contract value, and explicitly calculates 5% of 1,000,000 as 50,000 جنيه."
+    },
+    {
+     "id": "C-002",
+     "title": "Deadline Ten Days",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the deadline is ten days starting from the day following notification of bid acceptance ('خلال عشرة أيام تبدأ من اليوم التالي لإخطار صاحب العطاء بكتاب موصى عليه بعلم الوصول بقبول عطائه')."
+    },
+    {
+     "id": "C-003",
+     "title": "Guarantee Purpose",
+     "verdict": "pass",
+     "reasoning": "Section رابعاً explicitly states that the final insurance is 'ضمان لجهة الإدارة يقيها الأخطاء التي قد تصدر عن المتعاقد معها عند تنفيذ العقد الإداري، ويضمن ملاءته عند مواجهة مسؤوليات إخلاله بالعقد', which covers it being a guarantee for contract execution, protecting the authority from contractor errors, and ensuring solvency."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Confiscation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section رابعاً that the administration has the right to confiscate the final insurance: 'ولذلك فللإدارة حق مصادرته'."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/final-insurance-percentage-deadline-and-confiscation-rights",
+  "task": "astrolabe-open/egypt-government-procurement/final-insurance-percentage-deadline-and-confiscation-rights",
+  "scored_at": "2026-11-22T18:23:03.126821+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Final Insurance Percentage",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانياً that the final insurance equals 5% of the contract value ('يكمل التأمين المؤقت إلى ما يساوي (5%) من قيمة العقد'), and applies this by calculating 5% of one million pounds as 50,000 pounds."
+     },
+     {
+      "id": "C-002",
+      "title": "Deadline Ten Days",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section three that the deadline is ten days starting from the day following notification by registered mail with acknowledgment of receipt. It applies this to the specific facts, noting the notification was on 1 November 2024, the period starts on 2 November 2024, and the final deadline is 11 November 2024."
+     },
+     {
+      "id": "C-003",
+      "title": "Guarantee Purpose",
+      "verdict": "pass",
+      "reasoning": "Section 'رابعاً: وظيفة التأمين النهائي' explicitly states that the final insurance is a guarantee for the contracting authority that protects it from errors that may arise from the contractor during execution of the administrative contract, and ensures his solvency when facing liabilities from breach of contract. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Confiscation",
+      "verdict": "pass",
+      "reasoning": "In section 'رابعاً: وظيفة التأمين النهائي', the note explicitly states that the administration has the right to confiscate the final insurance: 'ولذلك فللإدارة حق مصادرته' (and therefore the administration has the right to confiscate it)."
+     }
+    ],
+    "run_id": "open-s55-files/final-insurance-percentage-deadline-and-confiscation-rights",
+    "task": "astrolabe-open/egypt-government-procurement/final-insurance-percentage-deadline-and-confiscation-rights",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:21:55.057797+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Final Insurance Percentage",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the final insurance (التأمين النهائي) completes the provisional insurance to 5% of the contract value, and explicitly calculates 5% of 1,000,000 as 50,000 جنيه."
+     },
+     {
+      "id": "C-002",
+      "title": "Deadline Ten Days",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the deadline is ten days starting from the day following notification of bid acceptance ('خلال عشرة أيام تبدأ من اليوم التالي لإخطار صاحب العطاء بكتاب موصى عليه بعلم الوصول بقبول عطائه')."
+     },
+     {
+      "id": "C-003",
+      "title": "Guarantee Purpose",
+      "verdict": "pass",
+      "reasoning": "Section رابعاً explicitly states that the final insurance is 'ضمان لجهة الإدارة يقيها الأخطاء التي قد تصدر عن المتعاقد معها عند تنفيذ العقد الإداري، ويضمن ملاءته عند مواجهة مسؤوليات إخلاله بالعقد', which covers it being a guarantee for contract execution, protecting the authority from contractor errors, and ensuring solvency."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Confiscation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section رابعاً that the administration has the right to confiscate the final insurance: 'ولذلك فللإدارة حق مصادرته'."
+     }
+    ],
+    "run_id": "open-s55-files/final-insurance-percentage-deadline-and-confiscation-rights",
+    "task": "astrolabe-open/egypt-government-procurement/final-insurance-percentage-deadline-and-confiscation-rights",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:23:03.126412+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

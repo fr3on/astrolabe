@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## السؤال\nهل يُعدّ قرار مجلس الجامعة الحكومية بمنح مكافآت مالية لأعضاء هيئة التدريس المشاركين في أعمال الامتحانات، الصادر عن المجلس منفرداً دون الرجوع إلى أي جهة أخرى، مستوفياً للإجراءات القانونية المقررة؟\n\n## الخلاصة\nلا يبدو القرار مستوفياً للإجراءات القانونية. فالمسألة مما ناط المشرع تنظيمه باللائحة التنفيذية لقانون تنظيم الجامعات، وهذه اللائحة لا تصدر عن مجلس الجامعة منفرداً، بل بقرار من رئيس الجمهورية وفق إجراءات محددة.\n\n## السند القانوني\n1. **المادة (196) من القانون رقم (49) لسنة 1972 بشأن تنظيم الجامعات** (فتوى رقم 30 بتاريخ 2016/12/14): تصدر اللائحة التنفيذية بقرار من رئيس الجمهورية بناءً على عرض وزير التعليم العالي، وبعد أخذ رأي مجلس الجامعات وموافقة المجلس الأعلى للجامعات. وتتولى اللائحة وضع الإطار العام لتنفيذ أحكام القانون وبيان النظم والأحكام العامة المشتركة بين الجامعات.\n\n2. **اختصاص اللائحة بموضوع المكافآت**: استظهرت الجمعية العمومية أن المشرع ناط باللائحة التنفيذية تنظيم مسائل محددة، من بينها منح المكافآت والحوافز الدراسية، وقواعد الندب للتدريس ولأعمال الامتحانات والمكافآت الخاصة بها، وقواعد تحديد المكافآت المالية والمنح لأعضاء هيئة التدريس.\n\n## التطبيق على وقائع العميل\nالمكافآت محل القرار تتعلق بالمشاركة في أعمال الامتحانات، وهي من المسائل التي خصّها المشرع بالتنظيم في اللائحة التنفيذية. واللائحة تصدر عن جهة وبإجراءات غير ما اتخذه مجلس الجامعة، وهي قرار رئيس الجمهورية بعد عرض وزير التعليم العالي وأخذ رأي مجلس الجامعات وموافقة المجلس الأعلى للجامعات. وعليه فإن انفراد مجلس الجامعة بإصدار القرار دون الرجوع إلى أي جهة أخرى لا يتفق مع المسار الذي رسمه المشرع.\n\n## التوصية\n- عدم الاعتداد بالقرار الصادر عن مجلس الجامعة منفرداً أساساً لصرف هذه المكافآت.\n- ضرورة أن يستند منح المكافآت إلى قواعد منصوص عليها في اللائحة التنفيذية للقانون، الصادرة وفق الإجراءات المبيّنة أعلاه.\n\n## حدود المذكرة\nاقتصر هذا الرأي على ما ورد في المستندات المرفقة، ولم يُطّلع على نص اللائحة التنفيذية ذاتها ولا على القرار محل البحث.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Executive Regulation Authority",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the Executive Regulation (اللائحة التنفيذية) is the authority entrusted with establishing the general framework for implementing the law's provisions, and explicitly notes it is issued by presidential decree following specific procedures involving the Minister of Higher Education, the University Council's opinion, and the Supreme Universities Council's approval. The note consistently emphasizes that the University Council cannot act alone in this matter, and that exam remuneration falls within the scope of the Executive Regulation's authority."
+    },
+    {
+     "id": "C-002",
+     "title": "Exam Remuneration Rules",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'اختصاص اللائحة بموضوع المكافآت' section that the Executive Regulation (اللائحة التنفيذية) is entrusted with organizing specific matters, including 'قواعد الندب للتدريس ولأعمال الامتحانات والمكافآت الخاصة بها' (rules of secondment for teaching and examination duties and the remuneration related thereto). This directly satisfies the criterion requiring the note to state that rules governing secondment for examination duties and related remuneration are among the competencies entrusted to the Executive Regulation."
+    },
+    {
+     "id": "C-003",
+     "title": "Financial Grants Rules",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'اختصاص اللائحة بموضوع المكافآت' section that the Executive Regulation (اللائحة التنفيذية) is responsible for regulating financial remuneration and grants for faculty members (أعضاء هيئة التدريس), including 'قواعد تحديد المكافآت المالية والمنح لأعضاء هيئة التدريس'. This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Issuance Procedure",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 1 (المادة 196) that the Executive Regulation is issued by a decision of the President of the Republic (قرار من رئيس الجمهورية) based on the submission of the Minister of Higher Education (بناءً على عرض وزير التعليم العالي), after taking the opinion of the Universities Council (بعد أخذ رأي مجلس الجامعات), and with the approval of the Supreme Council of Universities (موافقة المجلس الأعلى للجامعات). This is repeated again in the Application section. All four required elements are present and correctly stated."
+    },
+    {
+     "id": "C-005",
+     "title": "Decision Invalidity",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the University Council's unilateral decision does not satisfy the legally prescribed procedures ('لا يبدو القرار مستوفياً للإجراءات القانونية'). It explains that remuneration matters must be regulated through the executive regulation issued by presidential decree following specific procedures, and that the Council acting alone ('دون الرجوع إلى أي جهة أخرى') does not align with the legislative path ('لا يتفق مع المسار الذي رسمه المشرع'). The recommendation also advises against relying on this unilateral decision as a basis for disbursing remuneration. While the note uses slightly softer language ('لا يبدو' and 'لا يتفق') rather than explicitly using the phrase 'مخالفاً للقانون', the substance clearly identifies the decision as legally defective and procedurally invalid."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Executive Regulation Authority",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the Executive Regulation (اللائحة التنفيذية) is the authority entrusted with establishing the general framework for implementing the provisions of the law ('وتتولى اللائحة وضع الإطار العام لتنفيذ أحكام القانون وبيان النظم والأحكام العامة المشتركة بين الجامعات'), and explicitly distinguishes this from the University Council acting alone. The note emphasizes that the University Council cannot act unilaterally on this matter."
+    },
+    {
+     "id": "C-002",
+     "title": "Exam Remuneration Rules",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal basis section that the Executive Regulation (اللائحة التنفيذية) is entrusted with regulating 'قواعد الندب للتدريس ولأعمال الامتحانات والمكافآت الخاصة بها' (rules governing secondment for teaching and examination duties and the remuneration related thereto). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Financial Grants Rules",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal basis section that the Executive Regulation (اللائحة التنفيذية) is responsible for regulating 'قواعد تحديد المكافآت المالية والمنح لأعضاء هيئة التدريس' (rules for determining financial remuneration and grants for faculty members). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Issuance Procedure",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the السند القانوني section that the Executive Regulation is issued by a decision of the President of the Republic (قرار من رئيس الجمهورية) based on the submission of the Minister of Higher Education (بناءً على عرض وزير التعليم العالي), after taking the opinion of the Universities Council (بعد أخذ رأي مجلس الجامعات), and the approval of the Supreme Council of Universities (موافقة المجلس الأعلى للجامعات). All four procedural steps and bodies are correctly identified without omission or alteration."
+    },
+    {
+     "id": "C-005",
+     "title": "Decision Invalidity",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the University Council's unilateral decision does not satisfy legally prescribed procedures. The conclusion ('الخلاصة') explicitly says 'لا يبدو القرار مستوفياً للإجراءات القانونية' and the application section states 'انفراد مجلس الجامعة بإصدار القرار دون الرجوع إلى أي جهة أخرى لا يتفق مع المسار الذي رسمه المشرع.' The recommendation advises against relying on the decision. While the note uses phrases like 'لا يبدو' and 'لا يتفق مع المسار الذي رسمه المشرع' rather than the exact phrase 'مخالفاً للقانون', it clearly identifies the decision as legally defective and contrary to the law. The criterion requires the note to state that the unilateral decision does not satisfy legally prescribed procedures and is considered in violation of the law, which the note substantively does."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/executive-regulation-authority-over-exam-remuneration-and-grants",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+  "scored_at": "2026-11-22T17:47:51.681348+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Executive Regulation Authority",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the Executive Regulation (اللائحة التنفيذية) is the authority entrusted with establishing the general framework for implementing the law's provisions, and explicitly notes it is issued by presidential decree following specific procedures involving the Minister of Higher Education, the University Council's opinion, and the Supreme Universities Council's approval. The note consistently emphasizes that the University Council cannot act alone in this matter, and that exam remuneration falls within the scope of the Executive Regulation's authority."
+     },
+     {
+      "id": "C-002",
+      "title": "Exam Remuneration Rules",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'اختصاص اللائحة بموضوع المكافآت' section that the Executive Regulation (اللائحة التنفيذية) is entrusted with organizing specific matters, including 'قواعد الندب للتدريس ولأعمال الامتحانات والمكافآت الخاصة بها' (rules of secondment for teaching and examination duties and the remuneration related thereto). This directly satisfies the criterion requiring the note to state that rules governing secondment for examination duties and related remuneration are among the competencies entrusted to the Executive Regulation."
+     },
+     {
+      "id": "C-003",
+      "title": "Financial Grants Rules",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'اختصاص اللائحة بموضوع المكافآت' section that the Executive Regulation (اللائحة التنفيذية) is responsible for regulating financial remuneration and grants for faculty members (أعضاء هيئة التدريس), including 'قواعد تحديد المكافآت المالية والمنح لأعضاء هيئة التدريس'. This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Issuance Procedure",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 1 (المادة 196) that the Executive Regulation is issued by a decision of the President of the Republic (قرار من رئيس الجمهورية) based on the submission of the Minister of Higher Education (بناءً على عرض وزير التعليم العالي), after taking the opinion of the Universities Council (بعد أخذ رأي مجلس الجامعات), and with the approval of the Supreme Council of Universities (موافقة المجلس الأعلى للجامعات). This is repeated again in the Application section. All four required elements are present and correctly stated."
+     },
+     {
+      "id": "C-005",
+      "title": "Decision Invalidity",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the University Council's unilateral decision does not satisfy the legally prescribed procedures ('لا يبدو القرار مستوفياً للإجراءات القانونية'). It explains that remuneration matters must be regulated through the executive regulation issued by presidential decree following specific procedures, and that the Council acting alone ('دون الرجوع إلى أي جهة أخرى') does not align with the legislative path ('لا يتفق مع المسار الذي رسمه المشرع'). The recommendation also advises against relying on this unilateral decision as a basis for disbursing remuneration. While the note uses slightly softer language ('لا يبدو' and 'لا يتفق') rather than explicitly using the phrase 'مخالفاً للقانون', the substance clearly identifies the decision as legally defective and procedurally invalid."
+     }
+    ],
+    "run_id": "open-s55-files/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:42:47.208278+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Executive Regulation Authority",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the Executive Regulation (اللائحة التنفيذية) is the authority entrusted with establishing the general framework for implementing the provisions of the law ('وتتولى اللائحة وضع الإطار العام لتنفيذ أحكام القانون وبيان النظم والأحكام العامة المشتركة بين الجامعات'), and explicitly distinguishes this from the University Council acting alone. The note emphasizes that the University Council cannot act unilaterally on this matter."
+     },
+     {
+      "id": "C-002",
+      "title": "Exam Remuneration Rules",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal basis section that the Executive Regulation (اللائحة التنفيذية) is entrusted with regulating 'قواعد الندب للتدريس ولأعمال الامتحانات والمكافآت الخاصة بها' (rules governing secondment for teaching and examination duties and the remuneration related thereto). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Financial Grants Rules",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal basis section that the Executive Regulation (اللائحة التنفيذية) is responsible for regulating 'قواعد تحديد المكافآت المالية والمنح لأعضاء هيئة التدريس' (rules for determining financial remuneration and grants for faculty members). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Issuance Procedure",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the السند القانوني section that the Executive Regulation is issued by a decision of the President of the Republic (قرار من رئيس الجمهورية) based on the submission of the Minister of Higher Education (بناءً على عرض وزير التعليم العالي), after taking the opinion of the Universities Council (بعد أخذ رأي مجلس الجامعات), and the approval of the Supreme Council of Universities (موافقة المجلس الأعلى للجامعات). All four procedural steps and bodies are correctly identified without omission or alteration."
+     },
+     {
+      "id": "C-005",
+      "title": "Decision Invalidity",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the University Council's unilateral decision does not satisfy legally prescribed procedures. The conclusion ('الخلاصة') explicitly says 'لا يبدو القرار مستوفياً للإجراءات القانونية' and the application section states 'انفراد مجلس الجامعة بإصدار القرار دون الرجوع إلى أي جهة أخرى لا يتفق مع المسار الذي رسمه المشرع.' The recommendation advises against relying on the decision. While the note uses phrases like 'لا يبدو' and 'لا يتفق مع المسار الذي رسمه المشرع' rather than the exact phrase 'مخالفاً للقانون', it clearly identifies the decision as legally defective and contrary to the law. The criterion requires the note to state that the unilateral decision does not satisfy legally prescribed procedures and is considered in violation of the law, which the note substantively does."
+     }
+    ],
+    "run_id": "open-s55-files/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T17:47:51.680881+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

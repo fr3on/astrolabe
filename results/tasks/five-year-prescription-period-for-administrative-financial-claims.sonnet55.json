@@ -1,0 +1,220 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** مدى جواز مطالبة أحمد سالم بمكافأة مستحقة منذ 1 يناير 2015، وجواز صرفها له\n\n## الخلاصة\n\nلا يستطيع أحمد المطالبة بالمكافأة، ولا يجوز لجهة الإدارة صرفها له. فقد مضت أكثر من خمس سنوات على استحقاقها دون مطالبة قضائية أو إدارية، فآلت إلى الخزانة العامة.\n\n## الوقائع\n\n- أحمد موظف في جهة حكومية.\n- استحقت له مكافأة بتاريخ 1 يناير 2015.\n- لم يطالب بها قضائياً ولا إدارياً حتى 15 مارس 2021.\n\n## التحليل القانوني\n\n**1. الأصل العام في التقادم.** الأصل وفق المادة (374) من القانون المدني أن الالتزام يتقادم بخمس عشرة سنة، إلا ما ورد فيه نص خاص (فتوى رقم 429 بتاريخ 2021/02/24).\n\n**2. النص الخاص.** تنص المادة (29) من القانون رقم (127) لسنة 1981 على أن المرتبات والمكافآت والبدلات المستحقة للعاملين بالدولة تؤول إلى الخزانة العامة إذا لم يُطالب بها خلال خمس سنوات من تاريخ استحقاقها، سواء كانت المطالبة قضائية أم إدارية. وهذا النص الخاص هو الواجب التطبيق على المكافأة، لا الأصل العام.\n\n**3. شرطا التطبيق.** يشترط لتطبيق هذا النص:\n- نشوء حق مالي في ذمة الدولة. وهو متحقق، فالمكافأة استحقت في 1/1/2015.\n- تخلف المطالبة بالحق قضائياً أو إدارياً خمس سنوات من تاريخ نشوئه، ما لم يوقف التقادم أو ينقطع. وقد انقضت الخمس سنوات في 1/1/2020، ولم تتم مطالبة حتى 15/3/2021، أي بعد نحو سنة وشهرين ونصف من انقضاء المدة.\n\n**4. الأثر.** بمضي المدة دون مطالبة تصبح المستحقات من أموال الدولة، وتؤول إلى الخزانة العامة بقوة القانون (فتوى رقم 429).\n\n## الإجابة عن الأسئلتين\n\n- **هل يمكن لأحمد المطالبة؟** لا. فقد آل الحق إلى الخزانة العامة بقوة القانون بانقضاء خمس سنوات دون مطالبة.\n- **هل يجوز للإدارة صرفها؟** لا. فهي لا يجوز لها الإقرار بهذه المستحقات ولا صرفها بعد مضي خمس سنوات من تاريخ الاستحقاق.\n\n## تنبيه\n\nالاستنتاج مبني على الوقائع الواردة، وهي تخلو من أي سبب لوقف التقادم أو انقطاعه. فإن وُجد سبب من هذا القبيل لم يرد في الوقائع تغيّر الحكم.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Five-Year Prescription Period",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date of entitlement (استحقاقها). This is mentioned both in the legal analysis section referencing Article 29 of Law 127/1981 and in the conclusions. The five-year period starting from January 1, 2015 and expiring on January 1, 2020 is clearly calculated, and the transfer to the public treasury is explicitly stated."
+    },
+    {
+     "id": "C-002",
+     "title": "Administrative or Judicial Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the claim includes both judicial and administrative claims equally. In section 2, it states 'سواء كانت المطالبة قضائية أم إدارية' (whether the claim is judicial or administrative). In section 3, it repeats 'تخلف المطالبة بالحق قضائياً أو إدارياً' (failure to claim the right judicially or administratively). The summary also mentions 'لم يطالب بها قضائياً ولا إدارياً' (did not claim it judicially or administratively). The note consistently treats both types of claims as equally valid and sufficient to interrupt the prescription period."
+    },
+    {
+     "id": "C-003",
+     "title": "Two Conditions for Application",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states two conditions under section 3 (شرطا التطبيق): (1) the existence of a financial right owed by the state ('نشوء حق مالي في ذمة الدولة'), and (2) the failure to claim the right judicially or administratively for five years from the date it arose ('تخلف المطالبة بالحق قضائياً أو إدارياً خمس سنوات من تاريخ نشوئه'). Both conditions are clearly identified and applied to the facts."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer to Treasury by Force of Law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 4 (الأثر) that 'بمضي المدة دون مطالبة تصبح المستحقات من أموال الدولة، وتؤول إلى الخزانة العامة بقوة القانون' (by force of law). It also clearly specifies the five-year period without a claim as the trigger for this transfer, referencing Article 29 of Law 127/1981 and calculating that the five years expired on 1/1/2020. The criterion is fully satisfied."
+    },
+    {
+     "id": "C-005",
+     "title": "Prohibition on Administration's Acknowledgment or Payment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'الإجابة عن الأسئلتين' section: 'هل يجوز للإدارة صرفها؟ لا. فهي لا يجوز لها الإقرار بهذه المستحقات ولا صرفها بعد مضي خمس سنوات من تاريخ الاستحقاق.' This directly addresses both the prohibition on acknowledgment (الإقرار) and payment (الصرف) after five years from the date of entitlement, satisfying the criterion completely."
+    },
+    {
+     "id": "C-006",
+     "title": "Expiry Date Calculation",
+     "verdict": "pass",
+     "reasoning": "The note clearly establishes that the five-year period started on 1 January 2015 and expired on 1 January 2020. It then notes that Ahmed did not make any claim until 15 March 2021, which is approximately one year and two and a half months after the period had already elapsed. The note explicitly concludes that the claim is inadmissible and that the entitlement has transferred to the public treasury by operation of law."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 6,
+   "n_criteria": 6,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Five-Year Prescription Period",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date they fall due, referencing Article 29 of Law 127 of 1981."
+    },
+    {
+     "id": "C-002",
+     "title": "Administrative or Judicial Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the claim includes both judicial and administrative claims equally. In section 2 (النص الخاص), it states 'سواء كانت المطالبة قضائية أم إدارية' (whether the claim is judicial or administrative). In section 3 (شرطا التطبيق), it mentions 'تخلف المطالبة بالحق قضائياً أو إدارياً' (failure to claim the right judicially or administratively). Both types are treated equally throughout the analysis."
+    },
+    {
+     "id": "C-003",
+     "title": "Two Conditions for Application",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states under section '3. شرطا التطبيق' (Two Conditions for Application) two conditions: (1) the existence of a financial right owed by the state ('نشوء حق مالي في ذمة الدولة'), and (2) the failure to claim it for five years ('تخلف المطالبة بالحق قضائياً أو إدارياً خمس سنوات من تاريخ نشوئه'). Both conditions are clearly identified."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer to Treasury by Force of Law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 4 (الأثر) that 'بمضي المدة دون مطالبة تصبح المستحقات من أموال الدولة، وتؤول إلى الخزانة العامة بقوة القانون' and in section 2 specifies the five-year period ('خمس سنوات من تاريخ استحقاقها'). Both elements — transfer to الخزانة العامة بقوة القانون and the five-year period without a claim — are clearly present."
+    },
+    {
+     "id": "C-005",
+     "title": "Prohibition on Administration's Acknowledgment or Payment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the answer to the second question: 'لا يجوز لها الإقرار بهذه المستحقات ولا صرفها بعد مضي خمس سنوات من تاريخ الاستحقاق' — this clearly mentions the prohibition on both acknowledgment (الإقرار) and payment (صرفها) after the passage of five years from the date of entitlement."
+    },
+    {
+     "id": "C-006",
+     "title": "Expiry Date Calculation",
+     "verdict": "pass",
+     "reasoning": "The note clearly calculates that the five-year period expired on 1/1/2020 and that Ahmed's claim on 15/3/2021 was approximately one year and two and a half months after expiry. It concludes the claim is inadmissible and that the funds reverted to the public treasury by operation of law."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/five-year-prescription-period-for-administrative-financial-claims",
+  "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+  "scored_at": "2026-11-22T17:59:25.476636+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Five-Year Prescription Period",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date of entitlement (استحقاقها). This is mentioned both in the legal analysis section referencing Article 29 of Law 127/1981 and in the conclusions. The five-year period starting from January 1, 2015 and expiring on January 1, 2020 is clearly calculated, and the transfer to the public treasury is explicitly stated."
+     },
+     {
+      "id": "C-002",
+      "title": "Administrative or Judicial Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the claim includes both judicial and administrative claims equally. In section 2, it states 'سواء كانت المطالبة قضائية أم إدارية' (whether the claim is judicial or administrative). In section 3, it repeats 'تخلف المطالبة بالحق قضائياً أو إدارياً' (failure to claim the right judicially or administratively). The summary also mentions 'لم يطالب بها قضائياً ولا إدارياً' (did not claim it judicially or administratively). The note consistently treats both types of claims as equally valid and sufficient to interrupt the prescription period."
+     },
+     {
+      "id": "C-003",
+      "title": "Two Conditions for Application",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states two conditions under section 3 (شرطا التطبيق): (1) the existence of a financial right owed by the state ('نشوء حق مالي في ذمة الدولة'), and (2) the failure to claim the right judicially or administratively for five years from the date it arose ('تخلف المطالبة بالحق قضائياً أو إدارياً خمس سنوات من تاريخ نشوئه'). Both conditions are clearly identified and applied to the facts."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer to Treasury by Force of Law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 4 (الأثر) that 'بمضي المدة دون مطالبة تصبح المستحقات من أموال الدولة، وتؤول إلى الخزانة العامة بقوة القانون' (by force of law). It also clearly specifies the five-year period without a claim as the trigger for this transfer, referencing Article 29 of Law 127/1981 and calculating that the five years expired on 1/1/2020. The criterion is fully satisfied."
+     },
+     {
+      "id": "C-005",
+      "title": "Prohibition on Administration's Acknowledgment or Payment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'الإجابة عن الأسئلتين' section: 'هل يجوز للإدارة صرفها؟ لا. فهي لا يجوز لها الإقرار بهذه المستحقات ولا صرفها بعد مضي خمس سنوات من تاريخ الاستحقاق.' This directly addresses both the prohibition on acknowledgment (الإقرار) and payment (الصرف) after five years from the date of entitlement, satisfying the criterion completely."
+     },
+     {
+      "id": "C-006",
+      "title": "Expiry Date Calculation",
+      "verdict": "pass",
+      "reasoning": "The note clearly establishes that the five-year period started on 1 January 2015 and expired on 1 January 2020. It then notes that Ahmed did not make any claim until 15 March 2021, which is approximately one year and two and a half months after the period had already elapsed. The note explicitly concludes that the claim is inadmissible and that the entitlement has transferred to the public treasury by operation of law."
+     }
+    ],
+    "run_id": "open-s55-files/five-year-prescription-period-for-administrative-financial-claims",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T17:55:46.942035+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "6/6 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 6,
+    "n_passed": 6,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Five-Year Prescription Period",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that bonuses owed to state employees transfer to the public treasury (الخزانة العامة) if no claim is made within five years from the date they fall due, referencing Article 29 of Law 127 of 1981."
+     },
+     {
+      "id": "C-002",
+      "title": "Administrative or Judicial Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the claim includes both judicial and administrative claims equally. In section 2 (النص الخاص), it states 'سواء كانت المطالبة قضائية أم إدارية' (whether the claim is judicial or administrative). In section 3 (شرطا التطبيق), it mentions 'تخلف المطالبة بالحق قضائياً أو إدارياً' (failure to claim the right judicially or administratively). Both types are treated equally throughout the analysis."
+     },
+     {
+      "id": "C-003",
+      "title": "Two Conditions for Application",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states under section '3. شرطا التطبيق' (Two Conditions for Application) two conditions: (1) the existence of a financial right owed by the state ('نشوء حق مالي في ذمة الدولة'), and (2) the failure to claim it for five years ('تخلف المطالبة بالحق قضائياً أو إدارياً خمس سنوات من تاريخ نشوئه'). Both conditions are clearly identified."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer to Treasury by Force of Law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 4 (الأثر) that 'بمضي المدة دون مطالبة تصبح المستحقات من أموال الدولة، وتؤول إلى الخزانة العامة بقوة القانون' and in section 2 specifies the five-year period ('خمس سنوات من تاريخ استحقاقها'). Both elements — transfer to الخزانة العامة بقوة القانون and the five-year period without a claim — are clearly present."
+     },
+     {
+      "id": "C-005",
+      "title": "Prohibition on Administration's Acknowledgment or Payment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the answer to the second question: 'لا يجوز لها الإقرار بهذه المستحقات ولا صرفها بعد مضي خمس سنوات من تاريخ الاستحقاق' — this clearly mentions the prohibition on both acknowledgment (الإقرار) and payment (صرفها) after the passage of five years from the date of entitlement."
+     },
+     {
+      "id": "C-006",
+      "title": "Expiry Date Calculation",
+      "verdict": "pass",
+      "reasoning": "The note clearly calculates that the five-year period expired on 1/1/2020 and that Ahmed's claim on 15/3/2021 was approximately one year and two and a half months after expiry. It concludes the claim is inadmissible and that the funds reverted to the public treasury by operation of law."
+     }
+    ],
+    "run_id": "open-s55-files/five-year-prescription-period-for-administrative-financial-claims",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T17:59:25.476258+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

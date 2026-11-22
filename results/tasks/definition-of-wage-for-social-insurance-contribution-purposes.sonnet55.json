@@ -1,0 +1,172 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## السؤال\nهل يتعين على مديرية الزراعة بسوهاج سداد اشتراكات تأمينية لصندوق التأمين الاجتماعي للعاملين بالقطاع الحكومي عن المكافآت والحوافز التي صُرفت للموظف أحمد سالم مقابل عمله المنتدب إليه في مشروع تربية إناث الماشية في غير أوقات العمل الرسمية؟\n\n## الخلاصة\nلا يتعين على المديرية سداد هذه الاشتراكات. فالمكافآت والحوافز موضوع المطالبة ليست \"أجرًا\" في مفهوم قانون التأمين الاجتماعي، فلا تستحق عنها اشتراكات تأمينية.\n\n## الوقائع\nيعمل أحمد سالم موظفًا في مديرية الزراعة بسوهاج، وانتُدب للعمل في مشروع تربية إناث الماشية في غير أوقات العمل الرسمية، وتُصرف له مكافآت وحوافز من جهة عمله الأصلية مقابل هذا العمل. وطالب الصندوق المديرية بسداد اشتراكات عنها.\n\n## التحليل والسند القانوني\n\n### أولًا: مفهوم الأجر في قانون التأمين الاجتماعي\n- الأجر الذي يستحق عنه العامل معاش الأجر الأساسي أو المتغير هو كل ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي.\n- ويعتبر في حكم العمل الأصلي العمل المنتدب إليه المؤمن عليه طوال الوقت، أو المعار إليه داخل البلاد (الفتوى رقم 1274 بتاريخ 2018/09/12، المصدر الأول).\n\n### ثانيًا: التطبيق على الواقعة\n- انتداب أحمد سالم للمشروع كان في غير أوقات العمل الرسمية، أي ليس انتدابًا طوال الوقت. وهو بذلك قيام بأعباء عمل منتدب إليه بصفة مؤقتة أو عرضية.\n- نص الفتوى على أنه لا يعد أجرًا ما يحصل عليه العامل نظير قيامه بأعباء وظيفة انتدب إليها أو شغلها بصفة مؤقتة أو عرضية، ولو صُرف المقابل من جهة عمله الأصلية. ومن ثم ينتفي مناط استحقاق الاشتراكات التأمينية عن هذا المقابل (المصدر الأول).\n- وقد انتهت الجمعية العمومية لقسمي الفتوى والتشريع في واقعة مطابقة، تخص المديرية ذاتها ومشروع تربية إناث الماشية، إلى رفض مطالبة صندوق التأمين الاجتماعي للعاملين بالقطاع الحكومي بإلزام المديرية بسداد الاشتراكات عن الحوافز والمكافآت (المصدر الثاني).\n\n## التوصية\n- رفض مطالبة الصندوق، والاستناد إلى الفتوى رقم 1274 لسنة 2018.\n- يظل الأجر الأصلي المصروف عن العمل الأصلي خاضعًا للاشتراكات وفق القواعد العامة، وهذه المذكرة لا تمس ذلك.\n\n## ملاحظة\nاقتصر الرأي على المستندات المرفقة. وقد ورد في المصدر الثاني أن الأسباب مبيّنة في الفتوى دون سردها، فاعتمدنا على القاعدة الواردة في المصدر الأول.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Definition of Wage for Insurance",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the analysis section (أولاً) that the wage subject to social insurance contributions is 'كل ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي' — i.e., only what the employee receives in return for his original work (العمل الأصلي). This directly satisfies the criterion that the insurable wage is limited to remuneration received in return for the employee's original work."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary/Incidental Work Exception",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that remuneration received for work performed on a temporary or incidental secondment basis does not constitute a wage under social insurance law. It also specifically includes the condition that this applies 'ولو صُرف المقابل من جهة عمله الأصلية' (even if the remuneration is paid by the original employer). Both required elements of the criterion are clearly present."
+    },
+    {
+     "id": "C-003",
+     "title": "No Contributions Due",
+     "verdict": "pass",
+     "reasoning": "The agent's note clearly concludes in the summary (الخلاصة) that no social insurance contributions are due on the bonuses and incentives paid for the secondment work: 'لا يتعين على المديرية سداد هذه الاشتراكات. فالمكافآت والحوافز موضوع المطالبة ليست أجرًا في مفهوم قانون التأمين الاجتماعي، فلا تستحق عنها اشتراكات تأمينية.' The recommendation also confirms rejecting the fund's claim. The note does not qualify this conclusion with any conditions not given in the sources."
+    },
+    {
+     "id": "C-004",
+     "title": "Rejection of Ministry's Claim",
+     "verdict": "fail",
+     "reasoning": "The agent's note explicitly references that the General Assembly (الجمعية العمومية لقسمي الفتوى والتشريع) rejected the demand by the Social Insurance Fund to require the Sohag Agriculture Directorate (المديرية ذاتها) to pay contributions on incentives and bonuses for the cattle breeding project (مشروع تربية إناث الماشية) for seconded employees working outside official working hours. However, the criterion requires mention of both the cattle breeding project AND the land protection project. The agent's output only mentions the cattle breeding project and omits any reference to a land protection project."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Definition of Wage for Insurance",
+     "verdict": "pass",
+     "reasoning": "The note states in the analysis section: 'الأجر الذي يستحق عنه العامل معاش الأجر الأساسي أو المتغير هو كل ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي.' This clearly limits the insurable wage to remuneration received in return for the employee's original work (الأجر الأصلي). The note further clarifies that work done on a temporary or occasional basis (such as the secondment in non-working hours) does not count as original work, thus its compensation is not subject to insurance contributions. The definition is properly limited to remuneration for original work without adding extraneous conditions."
+    },
+    {
+     "id": "C-002",
+     "title": "Temporary/Incidental Work Exception",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the analysis section (ثانيًا) that remuneration received for work performed on a temporary or incidental secondment basis ('نظير قيامه بأعباء وظيفة انتدب إليها أو شغلها بصفة مؤقتة أو عرضية') does not constitute a wage under social insurance law, and specifically notes this applies even if paid by the original employer ('ولو صُرف المقابل من جهة عمله الأصلية'). Both conditions of the criterion are clearly met."
+    },
+    {
+     "id": "C-003",
+     "title": "No Contributions Due",
+     "verdict": "pass",
+     "reasoning": "The note clearly concludes that no social insurance contributions are due on the bonuses and incentives paid for the secondment work. The conclusion states: 'لا يتعين على المديرية سداد هذه الاشتراكات' (The directorate is not required to pay these contributions). The recommendation also clearly states to reject the fund's claim. The only note about the basic salary remaining subject to contributions is not a qualification of the conclusion but a clarification of scope, which is appropriate."
+    },
+    {
+     "id": "C-004",
+     "title": "Rejection of Ministry's Claim",
+     "verdict": "fail",
+     "reasoning": "The note references the General Assembly's rejection of the demand to require the Sohag Agriculture Directorate to pay contributions on incentives and bonuses for seconded employees working on the cattle breeding project outside official working hours. However, the criterion requires mention of both the 'cattle breeding' AND 'land protection' projects. The note only mentions the cattle breeding project (مشروع تربية إناث الماشية) and does not reference the land protection project. Since the criterion explicitly requires both projects to be mentioned, this is a partial miss."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/definition-of-wage-for-social-insurance-contribution-purposes",
+  "task": "astrolabe-open/egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+  "scored_at": "2026-11-22T18:56:00.682642+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Definition of Wage for Insurance",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the analysis section (أولاً) that the wage subject to social insurance contributions is 'كل ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي' — i.e., only what the employee receives in return for his original work (العمل الأصلي). This directly satisfies the criterion that the insurable wage is limited to remuneration received in return for the employee's original work."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary/Incidental Work Exception",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that remuneration received for work performed on a temporary or incidental secondment basis does not constitute a wage under social insurance law. It also specifically includes the condition that this applies 'ولو صُرف المقابل من جهة عمله الأصلية' (even if the remuneration is paid by the original employer). Both required elements of the criterion are clearly present."
+     },
+     {
+      "id": "C-003",
+      "title": "No Contributions Due",
+      "verdict": "pass",
+      "reasoning": "The agent's note clearly concludes in the summary (الخلاصة) that no social insurance contributions are due on the bonuses and incentives paid for the secondment work: 'لا يتعين على المديرية سداد هذه الاشتراكات. فالمكافآت والحوافز موضوع المطالبة ليست أجرًا في مفهوم قانون التأمين الاجتماعي، فلا تستحق عنها اشتراكات تأمينية.' The recommendation also confirms rejecting the fund's claim. The note does not qualify this conclusion with any conditions not given in the sources."
+     },
+     {
+      "id": "C-004",
+      "title": "Rejection of Ministry's Claim",
+      "verdict": "fail",
+      "reasoning": "The agent's note explicitly references that the General Assembly (الجمعية العمومية لقسمي الفتوى والتشريع) rejected the demand by the Social Insurance Fund to require the Sohag Agriculture Directorate (المديرية ذاتها) to pay contributions on incentives and bonuses for the cattle breeding project (مشروع تربية إناث الماشية) for seconded employees working outside official working hours. However, the criterion requires mention of both the cattle breeding project AND the land protection project. The agent's output only mentions the cattle breeding project and omits any reference to a land protection project."
+     }
+    ],
+    "run_id": "open-s55-files/definition-of-wage-for-social-insurance-contribution-purposes",
+    "task": "astrolabe-open/egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:55:55.015923+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Definition of Wage for Insurance",
+      "verdict": "pass",
+      "reasoning": "The note states in the analysis section: 'الأجر الذي يستحق عنه العامل معاش الأجر الأساسي أو المتغير هو كل ما يحصل عليه المؤمن عليه من مقابل نقدي من جهة عمله الأصلية نظير عمله الأصلي.' This clearly limits the insurable wage to remuneration received in return for the employee's original work (الأجر الأصلي). The note further clarifies that work done on a temporary or occasional basis (such as the secondment in non-working hours) does not count as original work, thus its compensation is not subject to insurance contributions. The definition is properly limited to remuneration for original work without adding extraneous conditions."
+     },
+     {
+      "id": "C-002",
+      "title": "Temporary/Incidental Work Exception",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the analysis section (ثانيًا) that remuneration received for work performed on a temporary or incidental secondment basis ('نظير قيامه بأعباء وظيفة انتدب إليها أو شغلها بصفة مؤقتة أو عرضية') does not constitute a wage under social insurance law, and specifically notes this applies even if paid by the original employer ('ولو صُرف المقابل من جهة عمله الأصلية'). Both conditions of the criterion are clearly met."
+     },
+     {
+      "id": "C-003",
+      "title": "No Contributions Due",
+      "verdict": "pass",
+      "reasoning": "The note clearly concludes that no social insurance contributions are due on the bonuses and incentives paid for the secondment work. The conclusion states: 'لا يتعين على المديرية سداد هذه الاشتراكات' (The directorate is not required to pay these contributions). The recommendation also clearly states to reject the fund's claim. The only note about the basic salary remaining subject to contributions is not a qualification of the conclusion but a clarification of scope, which is appropriate."
+     },
+     {
+      "id": "C-004",
+      "title": "Rejection of Ministry's Claim",
+      "verdict": "fail",
+      "reasoning": "The note references the General Assembly's rejection of the demand to require the Sohag Agriculture Directorate to pay contributions on incentives and bonuses for seconded employees working on the cattle breeding project outside official working hours. However, the criterion requires mention of both the 'cattle breeding' AND 'land protection' projects. The note only mentions the cattle breeding project (مشروع تربية إناث الماشية) and does not reference the land protection project. Since the criterion explicitly requires both projects to be mentioned, this is a partial miss."
+     }
+    ],
+    "run_id": "open-s55-files/definition-of-wage-for-social-insurance-contribution-purposes",
+    "task": "astrolabe-open/egypt-employment-and-labour/definition-of-wage-for-social-insurance-contribution-purposes",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:56:00.682199+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.75,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

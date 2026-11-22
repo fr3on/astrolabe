@@ -1,0 +1,196 @@
+{
+ "metrics": {
+  "model": "Claude Sonnet 5.5",
+  "task": "saudi-evidence/document-seizure-rights-and-expert-compliance-deadline",
+  "setting": "files only",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n## الخلاصة\n- نعم، يجوز لأحمد طلب ضبط العقد، والقرار للمحكمة وتقدّره بحسب وجود مصلحة مشروعة.\n- نعم، يلتزم الخبير بإعادة كل ما تسلّمه خلال عشرة أيام من انتهاء مهمته.\n- إن امتنع دون عذر مقبول، حكمت عليه المحكمة بالتسليم وبغرامة لا تزيد على عشرة آلاف ريال، وحكمها نهائي.\n\n## أولًا: ضبط العقد\n- للمدعى عليه بالتزوير (سالم) إنهاء إجراءات التحقيق في أي حالة كانت بنزوله عن التمسك بالمحرر المدعى تزويره. وهذا ما فعله. (source-3: نظام الإثبات)\n- في هذه الحالة للمحكمة أن تأمر بضبط المحرر أو حفظه إذا طلب المدعي بالتزوير ذلك لمصلحة مشروعة. (source-3)\n- أحمد هو المدعي بالتزوير وقد طلب الضبط، فيحق له الطلب. لكن الأمر جوازي للمحكمة ومشروط بثبوت مصلحة مشروعة، فعلى أحمد أن يبيّنها.\n\n## ثانيًا: التزام الخبير\n- متى انتهت مهمة الخبير وجب عليه إعادة جميع ما تسلّمه من أوراق أو مستندات أو غيرها خلال عشرة أيام من تاريخ انتهاء المهمة. (source-2)\n- الوقائع تذكر إيداع التقرير النهائي في 15 أبريل 2024 دون تحديد تاريخ انتهاء المهمة، فلا يمكن الجزم ببدء مدة العشرة أيام من هذا التاريخ.\n\n## ثالثًا: أثر الامتناع\n- إذا امتنع الخبير دون عذر مقبول، حكمت عليه المحكمة بتسليم جميع ما تسلّمه وبغرامة لا تزيد على عشرة آلاف ريال.\n- حكم المحكمة في ذلك نهائي غير قابل للاعتراض. (source-2)\n\n## التوصية\nيقدّم أحمد طلب ضبط العقد مع بيان مصلحته المشروعة. وإذا تأخر الخبير في الإعادة دون عذر، يُطلب من المحكمة الحكم عليه وفق ما سبق.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Right to seize document",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'أولًا: ضبط العقد' that the court may order the seizure or preservation of the document (المحرر) if the claimant of forgery (المدعي بالتزوير) requests it for a legitimate interest ('للمحكمة أن تأمر بضبط المحرر أو حفظه إذا طلب المدعي بالتزوير ذلك لمصلحة مشروعة'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Defendant's waiver ends proceedings",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first bullet under 'أولًا: ضبط العقد' that the defendant (سالم) can end the forgery investigation proceedings at whatever stage they are at by waiving reliance on the disputed document ('في أي حالة كانت بنزوله عن التمسك بالمحرر المدعى تزويره'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Expert return deadline",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'ثانيًا: التزام الخبير' that upon completion of the expert's mission, he is obligated to return all documents and materials received within ten days from the date of the completion of the mission ('خلال عشرة أيام من تاريخ انتهاء المهمة'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Fine for non-compliance",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in both the summary and the third section (ثالثًا: أثر الامتناع) that if the expert refuses without an acceptable excuse, the court shall rule against him to deliver everything he received and with a fine not exceeding ten thousand riyals (غرامة لا تزيد على عشرة آلاف ريال). This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Final non-appealable judgment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in both the summary (الخلاصة) and the third section (ثالثًا: أثر الامتناع) that the court's judgment against the expert is final and not subject to appeal (نهائي غير قابل للاعتراض)."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Right to seize document",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the section 'أولًا: ضبط العقد' that the court may order the seizure or preservation of the document (المحرر) upon the request of the claimant of forgery (المدعي بالتزوير) for a legitimate interest (مصلحة مشروعة), which directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Defendant's waiver ends proceedings",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states under 'أولًا: ضبط العقد' that the defendant (سالم) can end the forgery investigation proceedings at any stage by waiving reliance on the disputed document ('للمدعى عليه بالتزوير (سالم) إنهاء إجراءات التحقيق في أي حالة كانت بنزوله عن التمسك بالمحرر المدعى تزويره'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Expert return deadline",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the section 'ثانيًا: التزام الخبير' that the expert must return all received documents within ten days from the date of completion of his mission ('خلال عشرة أيام من تاريخ انتهاء المهمة')."
+    },
+    {
+     "id": "C-004",
+     "title": "Fine for non-compliance",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'أثر الامتناع' section that if the expert refuses without acceptable excuse, the court shall rule against them with a fine not exceeding ten thousand riyals ('غرامة لا تزيد على عشرة آلاف ريال')."
+    },
+    {
+     "id": "C-005",
+     "title": "Final non-appealable judgment",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the section 'ثالثًا: أثر الامتناع' that 'حكم المحكمة في ذلك نهائي غير قابل للاعتراض' (the court's judgment in this matter is final and not subject to appeal), which satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-s55-files/document-seizure-rights-and-expert-compliance-deadline",
+  "task": "astrolabe-open/saudi-evidence/document-seizure-rights-and-expert-compliance-deadline",
+  "scored_at": "2026-11-22T18:48:25.243753+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Right to seize document",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'أولًا: ضبط العقد' that the court may order the seizure or preservation of the document (المحرر) if the claimant of forgery (المدعي بالتزوير) requests it for a legitimate interest ('للمحكمة أن تأمر بضبط المحرر أو حفظه إذا طلب المدعي بالتزوير ذلك لمصلحة مشروعة'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Defendant's waiver ends proceedings",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first bullet under 'أولًا: ضبط العقد' that the defendant (سالم) can end the forgery investigation proceedings at whatever stage they are at by waiving reliance on the disputed document ('في أي حالة كانت بنزوله عن التمسك بالمحرر المدعى تزويره'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Expert return deadline",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'ثانيًا: التزام الخبير' that upon completion of the expert's mission, he is obligated to return all documents and materials received within ten days from the date of the completion of the mission ('خلال عشرة أيام من تاريخ انتهاء المهمة'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Fine for non-compliance",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in both the summary and the third section (ثالثًا: أثر الامتناع) that if the expert refuses without an acceptable excuse, the court shall rule against him to deliver everything he received and with a fine not exceeding ten thousand riyals (غرامة لا تزيد على عشرة آلاف ريال). This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Final non-appealable judgment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in both the summary (الخلاصة) and the third section (ثالثًا: أثر الامتناع) that the court's judgment against the expert is final and not subject to appeal (نهائي غير قابل للاعتراض)."
+     }
+    ],
+    "run_id": "open-s55-files/document-seizure-rights-and-expert-compliance-deadline",
+    "task": "astrolabe-open/saudi-evidence/document-seizure-rights-and-expert-compliance-deadline",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T18:41:56.821307+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Right to seize document",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the section 'أولًا: ضبط العقد' that the court may order the seizure or preservation of the document (المحرر) upon the request of the claimant of forgery (المدعي بالتزوير) for a legitimate interest (مصلحة مشروعة), which directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Defendant's waiver ends proceedings",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states under 'أولًا: ضبط العقد' that the defendant (سالم) can end the forgery investigation proceedings at any stage by waiving reliance on the disputed document ('للمدعى عليه بالتزوير (سالم) إنهاء إجراءات التحقيق في أي حالة كانت بنزوله عن التمسك بالمحرر المدعى تزويره'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Expert return deadline",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the section 'ثانيًا: التزام الخبير' that the expert must return all received documents within ten days from the date of completion of his mission ('خلال عشرة أيام من تاريخ انتهاء المهمة')."
+     },
+     {
+      "id": "C-004",
+      "title": "Fine for non-compliance",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'أثر الامتناع' section that if the expert refuses without acceptable excuse, the court shall rule against them with a fine not exceeding ten thousand riyals ('غرامة لا تزيد على عشرة آلاف ريال')."
+     },
+     {
+      "id": "C-005",
+      "title": "Final non-appealable judgment",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the section 'ثالثًا: أثر الامتناع' that 'حكم المحكمة في ذلك نهائي غير قابل للاعتراض' (the court's judgment in this matter is final and not subject to appeal), which satisfies the criterion."
+     }
+    ],
+    "run_id": "open-s55-files/document-seizure-rights-and-expert-compliance-deadline",
+    "task": "astrolabe-open/saudi-evidence/document-seizure-rights-and-expert-compliance-deadline",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T18:48:25.243371+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}
