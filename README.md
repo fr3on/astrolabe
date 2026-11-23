@@ -51,6 +51,21 @@ With the source text, all three models pass about 97% of the task criteria. With
 - **Exact text:** right when the answer contains at least 60% of the reference words and every number in it.
 - **Tasks:** the two judges are Claude Sonnet 4.6 and Claude Opus 4.6. The judge prompt is the unchanged Harvey LAB rubric template.
 
+## Paper
+
+Mardi, A. (2026). *Astrolabe: Do language models know Arabic law, or only sound like they do?* Zenodo. [https://doi.org/10.5281/zenodo.24449438](https://doi.org/10.5281/zenodo.24449438)
+
+```bibtex
+@misc{mardi2026astrolabe,
+  author = {Mardi, Ahmed},
+  title  = {Astrolabe: Do language models know Arabic law, or only sound like they do?},
+  year   = {2026},
+  doi    = {10.5281/zenodo.24449438},
+  url    = {https://doi.org/10.5281/zenodo.24449438},
+  publisher = {Zenodo}
+}
+```
+
 ## Status and limits
 
 Three models, one run each, two legal systems. Run scripts for the exact-text questions and the Dike search check are not in this release yet.
