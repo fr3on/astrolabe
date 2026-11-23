@@ -32,17 +32,16 @@ Each is run two ways: **no data** (from memory) and **files only** (the source t
 
 With the source text, all three models pass about 97% of the task criteria. Without it, no model got more than 1 of the 209 exact-text questions right.
 
-| Model | Setting | Exact text right | Criteria passed | Tasks fully passed |
-|---|---|---|---|---|
-| Claude Sonnet 4.6 | No data | 0% (0 of 209) | 38% (78 of 208) | 2 of 44 |
-| Claude Sonnet 4.6 | With the text | 82% (171 of 209) | **97%** (202 of 208) | **41 of 44** |
-| Claude Sonnet 5.5 | No data | 0% (0 of 209) | 35% (72 of 208) | 1 of 44 |
-| Claude Sonnet 5.5 | With the text | **90%** (189 of 209) | **97%** (201 of 208) | 38 of 44 |
-| Claude Opus 5.5 | No data | 0.5% (1 of 209) | 51% (107 of 208) | 3 of 44 |
-| Claude Opus 5.5 | With the text | 88% (184 of 209) | **97%** (202 of 208) | 38 of 44 |
+Each cell reads **from memory → with the text**.
 
-- **No data:** the model answers from memory. **With the text:** the source texts are in the prompt.
-- **Criteria passed:** a criterion counts only when both judges pass it. Each model was run once. Bold marks the best score among the "With the text" rows (ties are all bold).
+| Model | Exact text right (of 209) | Criteria passed (of 208) | Tasks fully passed (of 44) |
+|---|---|---|---|
+| Claude Sonnet 4.6 | 0% → 82% | 38% → **97%** | 2 → **41** |
+| Claude Sonnet 5.5 | 0% → **90%** | 35% → **97%** | 1 → 38 |
+| Claude Opus 5.5 | 0.5% → 88% | 51% → **97%** | 3 → 38 |
+
+- **From memory:** no source text. **With the text:** the source texts are in the prompt.
+- **Criteria passed:** a criterion counts only when both judges pass it. Each model was run once. Bold marks the best score among the "with the text" results (ties are all bold).
 - **Sonnet 5.5 and Opus 5.5:** these answered four tasks per reply, with no tools, so they have no trajectory and the comparison with Sonnet 4.6 is not exact. Their exact-text questions were answered in batches of up to 24, with and without the text; the task notes were run with the text only.
 - The models read the law well and do not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
 
