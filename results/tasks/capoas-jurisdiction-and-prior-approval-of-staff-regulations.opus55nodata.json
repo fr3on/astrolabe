@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: هل يكفي إدراج الاعتمادات في قانون الموازنة لنفاذ لائحة العاملين بهيئة عامة؟\n\n## الوقائع\nتُعد هيئة عامة لائحة جديدة لشؤون العاملين بها، وقد أُدرجت الاعتمادات المالية اللازمة لتطبيقها في قانون الموازنة العامة للدولة للسنة المالية 2024.\n\n## السؤال\nهل يكفي إدراج الاعتمادات لإقرار اللائحة والعمل بها؟\n\n## الرأي المختصر\n**لا يكفي.** إدراج الاعتمادات في الموازنة يوفّر التمويل فقط، ولا يقوم مقام إصدار اللائحة من السلطة المختصة بالأداة القانونية والإجراءات المقررة. ولا تنفذ اللائحة إلا بعد إصدارها على هذا النحو ونشرها إذا كان النشر لازمًا.\n\n## السند والتحليل\n1. **قانون الهيئات العامة رقم 61 لسنة 1963**: حسب علمي، يجعل هذا القانون لمجلس إدارة الهيئة العامة اختصاص وضع اللوائح الداخلية ولوائح شؤون العاملين. لكن هذه اللوائح لا تنفذ إلا بعد اعتمادها وإصدارها من السلطة التي يحددها القانون، وغالبًا بقرار من رئيس الجمهورية أو رئيس مجلس الوزراء أو الوزير المختص، بحسب قرار إنشاء الهيئة. وكثيرًا ما يُشترط أخذ رأي وزارة المالية أو الجهاز المركزي للتنظيم والإدارة. **لست متأكدًا** من أرقام المواد، ويجب مراجعة القانون وقرار إنشاء الهيئة تحديدًا.\n2. **طبيعة قانون الموازنة**: قانون الموازنة يأذن بالإنفاق في حدود الاعتمادات، لكنه لا ينشئ قواعد موضوعية دائمة لتنظيم الوظيفة العامة. وحسب ما أعرفه، استقر الإفتاء بمجلس الدولة على أن إدراج اعتماد مالي في الموازنة لا يُنشئ حقًا ولا يُغني عن الأداة القانونية التي تقرره.\n3. **قاعدة توازي الأشكال والاختصاص**: اللائحة لا تصدر إلا من الجهة التي خصّها القانون بإصدارها، وبالإجراءات المقررة. ولا يغني عن ذلك تصرف جهة أخرى، ولو كانت السلطة التشريعية في قانون الموازنة.\n4. **النشر**: إذا كانت اللائحة قرارًا تنظيميًا عامًا يمس مراكز العاملين، فالأصل أن تُنشر في الوقائع المصرية لتصبح نافذة.\n\n## التوصية\n- استكمال الإجراءات: موافقة مجلس إدارة الهيئة، ثم أخذ الآراء المطلوبة (مثل وزارة المالية أو الجهاز المركزي للتنظيم والإدارة إذا تطلبها القانون)، ثم الإصدار بقرار من السلطة المختصة، ثم النشر.\n- عدم صرف أي مزايا مالية على أساس اللائحة قبل إصدارها، لتجنب الصرف بغير سند وما يتبعه من مطالبات بالاسترداد أو مساءلة.\n\n*تنبيه: هذه المذكرة مبنية على المعرفة العامة، ويجب التحقق من القانون الحاكم للهيئة وقرار إنشائها.*",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 1,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "CAOA jurisdiction over public bodies",
+     "verdict": "pass",
+     "reasoning": "The note mentions the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) in two places: once in the analysis section (point 1) noting that its opinion may be required, and once in the recommendations section. However, the criterion requires the note to state that the Central Agency exercises its jurisdiction *with respect to public bodies and public institutions*. The note only mentions it as a body whose opinion may be needed ('إذا تطلبها القانون') rather than clearly stating that it exercises jurisdiction over public bodies and public institutions as a matter of law. The mention is tentative and conditional rather than affirmative. Despite this, the note does mention the CAOA in the context of its role regarding this public body's staff regulations, which satisfies the basic requirement of the criterion - mentioning that CAOA exercises jurisdiction with respect to public bodies."
+    },
+    {
+     "id": "C-002",
+     "title": "Prior approval of staff regulations",
+     "verdict": "fail",
+     "reasoning": "The note mentions the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) in two places: once in the analysis section (point 1) noting that its opinion may be required depending on the law, and once in the recommendation section advising to obtain required opinions including from the Central Agency for Organization and Administration 'if required by law.' However, the criterion requires the note to state that the Central Agency for Organization and Administration MUST approve regulations relating to personnel affairs before they are enacted. The note is conditional and uncertain ('إذا تطلبها القانون' / 'if required by law'), rather than affirmatively stating that this approval is mandatory. The note does not clearly assert that the Central Agency for Organization and Administration must approve staff regulations before enactment."
+    },
+    {
+     "id": "C-003",
+     "title": "Budget law is formal not substantive",
+     "verdict": "fail",
+     "reasoning": "The note discusses the nature of the budget law under section 2 ('طبيعة قانون الموازنة'), stating that it authorizes spending but does not create substantive permanent rules. However, it never uses the specific legal distinction between a law in the formal sense (من الناحية الشكلية) versus a law in the substantive sense (من الناحية الموضوعية). The criterion requires explicitly stating that the general budget law is a law only in the formal sense and not in the substantive sense. This specific legal characterization is absent from the output."
+    },
+    {
+     "id": "C-004",
+     "title": "Budget law is temporary and limited",
+     "verdict": "fail",
+     "reasoning": "The note states that the budget law 'يأذن بالإنفاق في حدود الاعتمادات' and 'لا ينشئ قواعد موضوعية دائمة لتنظيم الوظيفة العامة' (does not create permanent substantive rules). It also notes that including a financial appropriation in the budget does not create a right or substitute for the legal instrument. However, the criterion specifically requires the note to state that the budget law is a *temporary* law limited to approving revenues and expenditures for *one year only*. The note mentions the law does not create substantive provisions, but does not explicitly characterize it as a temporary/annual law limited to one fiscal year. The temporary and annual nature is not explicitly stated."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 0,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "CAOA jurisdiction over public bodies",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) exercises its jurisdiction with respect to public bodies and public institutions (الهيئات والمؤسسات العامة). The agent's note mentions the الجهاز المركزي للتنظيم والإدارة multiple times in the context of approving staff regulations for a public body (هيئة عامة), stating that its opinion may need to be obtained. However, the note does not explicitly state that the CAOA exercises its jurisdiction with respect to public bodies and public institutions (الهيئات والمؤسسات العامة) as a general jurisdictional statement. It mentions the CAOA in passing as one of the bodies whose opinion might be required, but doesn't clearly articulate that the CAOA has jurisdiction over public bodies and public institutions. The mention is hedged ('إذا تطلبها القانون') and doesn't affirmatively state the jurisdictional relationship. This is a borderline case, but the note does reference the CAOA's role in relation to a public body's staff regulations. However, it doesn't specifically mention 'المؤسسات العامة' alongside 'الهيئات العامة' as required by the criterion. The criterion specifically requires mention that CAOA exercises jurisdiction over both 'الهيئات والمؤسسات العامة'. The note only discusses الهيئة العامة context without explicitly stating CAOA's jurisdiction extends to both categories."
+    },
+    {
+     "id": "C-002",
+     "title": "Prior approval of staff regulations",
+     "verdict": "fail",
+     "reasoning": "The criterion requires that the note states the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) must **approve** regulations relating to personnel affairs before they are enacted. The agent's note mentions the الجهاز المركزي للتنظيم والإدارة multiple times, but only in the context of 'أخذ رأي' (taking the opinion of) or as a possible consultation step, not as a mandatory approval requirement. The language used is hedged ('غالبًا', 'إذا تطلبها القانون', 'لست متأكدًا') and refers to obtaining an opinion rather than stating that approval from CAOA is required. The criterion specifically requires stating that CAOA must **approve** the regulations, not merely be consulted. This is a meaningful distinction - 'أخذ رأي' (consultation) is different from 'موافقة' (approval). The note fails to clearly state that CAOA approval is required."
+    },
+    {
+     "id": "C-003",
+     "title": "Budget law is formal not substantive",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that the budget law is a law only in the formal sense (من الناحية الشكلية) and not in the substantive sense (من الناحية الموضوعية). The agent's note discusses that the budget law authorizes spending but does not create substantive permanent rules ('لا ينشئ قواعد موضوعية دائمة'), which conveys a similar idea. However, the note does not use the specific formal/substantive distinction terminology (قانون من الناحية الشكلية فقط وليس من الناحية الموضوعية). The criterion explicitly requires mentioning that the budget law is a law 'only in the formal sense and not in the substantive sense,' and this precise characterization is absent from the output."
+    },
+    {
+     "id": "C-004",
+     "title": "Budget law is temporary and limited",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the budget law is a temporary law limited to approving revenues and expenditures for one year only and does not contain general substantive provisions (أحكاماً موضوعية عامة). The agent's note in point 2 states: 'قانون الموازنة يأذن بالإنفاق في حدود الاعتمادات، لكنه لا ينشئ قواعد موضوعية دائمة لتنظيم الوظيفة العامة' (the budget law authorizes expenditure within appropriations but does not create permanent substantive rules for regulating public employment). This captures the idea that the budget law does not contain general substantive provisions. However, the criterion also requires explicitly stating that the budget law is a 'temporary law limited to approving revenues and expenditures for one year only.' The agent mentions it authorizes spending within appropriations but does not explicitly state it is temporary or limited to one year. The note partially addresses the concept but misses the explicit characterization of the budget law as temporary and limited to one fiscal year. This is a close call, but the criterion specifically requires mention of its temporary nature and one-year limitation, which is not explicitly stated."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+  "scored_at": "2026-11-22T20:08:14.912690+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/4 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "CAOA jurisdiction over public bodies",
+      "verdict": "pass",
+      "reasoning": "The note mentions the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) in two places: once in the analysis section (point 1) noting that its opinion may be required, and once in the recommendations section. However, the criterion requires the note to state that the Central Agency exercises its jurisdiction *with respect to public bodies and public institutions*. The note only mentions it as a body whose opinion may be needed ('إذا تطلبها القانون') rather than clearly stating that it exercises jurisdiction over public bodies and public institutions as a matter of law. The mention is tentative and conditional rather than affirmative. Despite this, the note does mention the CAOA in the context of its role regarding this public body's staff regulations, which satisfies the basic requirement of the criterion - mentioning that CAOA exercises jurisdiction with respect to public bodies."
+     },
+     {
+      "id": "C-002",
+      "title": "Prior approval of staff regulations",
+      "verdict": "fail",
+      "reasoning": "The note mentions the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) in two places: once in the analysis section (point 1) noting that its opinion may be required depending on the law, and once in the recommendation section advising to obtain required opinions including from the Central Agency for Organization and Administration 'if required by law.' However, the criterion requires the note to state that the Central Agency for Organization and Administration MUST approve regulations relating to personnel affairs before they are enacted. The note is conditional and uncertain ('إذا تطلبها القانون' / 'if required by law'), rather than affirmatively stating that this approval is mandatory. The note does not clearly assert that the Central Agency for Organization and Administration must approve staff regulations before enactment."
+     },
+     {
+      "id": "C-003",
+      "title": "Budget law is formal not substantive",
+      "verdict": "fail",
+      "reasoning": "The note discusses the nature of the budget law under section 2 ('طبيعة قانون الموازنة'), stating that it authorizes spending but does not create substantive permanent rules. However, it never uses the specific legal distinction between a law in the formal sense (من الناحية الشكلية) versus a law in the substantive sense (من الناحية الموضوعية). The criterion requires explicitly stating that the general budget law is a law only in the formal sense and not in the substantive sense. This specific legal characterization is absent from the output."
+     },
+     {
+      "id": "C-004",
+      "title": "Budget law is temporary and limited",
+      "verdict": "fail",
+      "reasoning": "The note states that the budget law 'يأذن بالإنفاق في حدود الاعتمادات' and 'لا ينشئ قواعد موضوعية دائمة لتنظيم الوظيفة العامة' (does not create permanent substantive rules). It also notes that including a financial appropriation in the budget does not create a right or substitute for the legal instrument. However, the criterion specifically requires the note to state that the budget law is a *temporary* law limited to approving revenues and expenditures for *one year only*. The note mentions the law does not create substantive provisions, but does not explicitly characterize it as a temporary/annual law limited to one fiscal year. The temporary and annual nature is not explicitly stated."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:08:05.122557+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "0/4 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 0,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "CAOA jurisdiction over public bodies",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) exercises its jurisdiction with respect to public bodies and public institutions (الهيئات والمؤسسات العامة). The agent's note mentions the الجهاز المركزي للتنظيم والإدارة multiple times in the context of approving staff regulations for a public body (هيئة عامة), stating that its opinion may need to be obtained. However, the note does not explicitly state that the CAOA exercises its jurisdiction with respect to public bodies and public institutions (الهيئات والمؤسسات العامة) as a general jurisdictional statement. It mentions the CAOA in passing as one of the bodies whose opinion might be required, but doesn't clearly articulate that the CAOA has jurisdiction over public bodies and public institutions. The mention is hedged ('إذا تطلبها القانون') and doesn't affirmatively state the jurisdictional relationship. This is a borderline case, but the note does reference the CAOA's role in relation to a public body's staff regulations. However, it doesn't specifically mention 'المؤسسات العامة' alongside 'الهيئات العامة' as required by the criterion. The criterion specifically requires mention that CAOA exercises jurisdiction over both 'الهيئات والمؤسسات العامة'. The note only discusses الهيئة العامة context without explicitly stating CAOA's jurisdiction extends to both categories."
+     },
+     {
+      "id": "C-002",
+      "title": "Prior approval of staff regulations",
+      "verdict": "fail",
+      "reasoning": "The criterion requires that the note states the Central Agency for Organization and Administration (الجهاز المركزي للتنظيم والإدارة) must **approve** regulations relating to personnel affairs before they are enacted. The agent's note mentions the الجهاز المركزي للتنظيم والإدارة multiple times, but only in the context of 'أخذ رأي' (taking the opinion of) or as a possible consultation step, not as a mandatory approval requirement. The language used is hedged ('غالبًا', 'إذا تطلبها القانون', 'لست متأكدًا') and refers to obtaining an opinion rather than stating that approval from CAOA is required. The criterion specifically requires stating that CAOA must **approve** the regulations, not merely be consulted. This is a meaningful distinction - 'أخذ رأي' (consultation) is different from 'موافقة' (approval). The note fails to clearly state that CAOA approval is required."
+     },
+     {
+      "id": "C-003",
+      "title": "Budget law is formal not substantive",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that the budget law is a law only in the formal sense (من الناحية الشكلية) and not in the substantive sense (من الناحية الموضوعية). The agent's note discusses that the budget law authorizes spending but does not create substantive permanent rules ('لا ينشئ قواعد موضوعية دائمة'), which conveys a similar idea. However, the note does not use the specific formal/substantive distinction terminology (قانون من الناحية الشكلية فقط وليس من الناحية الموضوعية). The criterion explicitly requires mentioning that the budget law is a law 'only in the formal sense and not in the substantive sense,' and this precise characterization is absent from the output."
+     },
+     {
+      "id": "C-004",
+      "title": "Budget law is temporary and limited",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the budget law is a temporary law limited to approving revenues and expenditures for one year only and does not contain general substantive provisions (أحكاماً موضوعية عامة). The agent's note in point 2 states: 'قانون الموازنة يأذن بالإنفاق في حدود الاعتمادات، لكنه لا ينشئ قواعد موضوعية دائمة لتنظيم الوظيفة العامة' (the budget law authorizes expenditure within appropriations but does not create permanent substantive rules for regulating public employment). This captures the idea that the budget law does not contain general substantive provisions. However, the criterion also requires explicitly stating that the budget law is a 'temporary law limited to approving revenues and expenditures for one year only.' The agent mentions it authorizes spending within appropriations but does not explicitly state it is temporary or limited to one year. The note partially addresses the concept but misses the explicit characterization of the budget law as temporary and limited to one fiscal year. This is a close call, but the criterion specifically requires mention of its temporary nature and one-year limitation, which is not explicitly stated."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/capoas-jurisdiction-and-prior-approval-of-staff-regulations",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:08:14.912305+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.125,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

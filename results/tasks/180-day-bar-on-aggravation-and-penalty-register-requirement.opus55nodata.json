@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-employment-and-labour/180-day-bar-on-aggravation-and-penalty-register-requirement",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: تشديد الجزاء لتكرار المخالفة وإجراءات توقيع الغرامة\n\n## الوقائع\nوُقّعت غرامة على خالد وأُبلغ بها في 1 محرم 1445هـ، ثم ارتكب مخالفة مماثلة في 15 رجب 1445هـ.\n\n## أولًا: هل يجوز تشديد الجزاء؟\n- نظام العمل السعودي (المادة 67 حسب علمي) لا يجيز لصاحب العمل توقيع جزاء أشد بسبب تكرار المخالفة إذا كان قد انقضى على المخالفة السابقة **مائة وثمانون يومًا** من تاريخ إبلاغ العامل بتوقيع الجزاء عليه عن تلك المخالفة.\n- المدة من 1 محرم إلى 15 رجب 1445هـ: ستة أشهر هجرية ونصف تقريبًا، أي نحو **191–192 يومًا**، وهي أكثر من 180 يومًا.\n- **النتيجة:** لا يجوز تشديد الجزاء بسبب التكرار، وتُعامل المخالفة الجديدة كأنها أول مرة وفق لائحة تنظيم العمل/الجزاءات المعتمدة.\n\n## ثانيًا: الإجراء الواجب عند توقيع الغرامة الجديدة\n- لا يجوز توقيع الجزاء إلا بعد **إبلاغ العامل كتابةً** بما نُسب إليه، و**سماع أقواله وتحقيق دفاعه** وإثبات ذلك في محضر (المادة 71 حسب علمي).\n- يجب أن يكون الجزاء من الجزاءات الواردة في لائحة تنظيم العمل المعتمدة ومتناسبًا مع المخالفة.\n- لا يجوز توقيع الجزاء بعد مضي ثلاثين يومًا من اكتشاف المخالفة، ولا بعد ثلاثين يومًا من انتهاء التحقيق (المادة 69 تقريبًا).\n- لا تزيد الغرامة عن المخالفة الواحدة على أجر خمسة أيام، ولا يزيد مجموع الخصم في الشهر على أجر خمسة أيام (المادة 70 تقريبًا).\n- **إبلاغ العامل كتابةً** بقرار الجزاء ونوعه ومقداره والجزاء الذي يتعرض له عند التكرار؛ وإن رفض الاستلام أو كان غائبًا يُبلّغ بكتاب مسجل أو وسيلة إلكترونية معتمدة (المادة 72 تقريبًا).\n- تُقيَّد الغرامات في **سجل خاص** باسم العامل وسبب توقيعها، ويُخصص حصيلتها لما يعود بالنفع على عمال المنشأة بعد موافقة الوزارة.\n- للعامل الاعتراض على الجزاء أمام الجهة المختصة (هيئات/محاكم العمل) خلال المدة النظامية.\n\n*تنبيه: أرقام المواد مذكورة من الذاكرة وتحتاج إلى مراجعة النص النافذ لنظام العمل ولوائحه.*",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "180-day rule bars aggravation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'أولًا' that aggravation of the penalty is not permissible if 180 days have passed from the date the worker was notified of the previous penalty. It then calculates that the period from 1 Muharram to 15 Rajab 1445H is approximately 191-192 days, exceeding 180 days, and concludes that aggravation is not permissible and the new violation must be treated as a first offense."
+    },
+    {
+     "id": "C-002",
+     "title": "Start of 180-day period",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the 180-day period is calculated from 'تاريخ إبلاغ العامل بتوقيع الجزاء عليه عن تلك المخالفة' (the date the worker was notified of the imposition of the penalty for that violation), which correctly identifies the starting point as the notification date rather than the date of the violation."
+    },
+    {
+     "id": "C-003",
+     "title": "Special register requirement",
+     "verdict": "fail",
+     "reasoning": "The agent's output mentions recording fines in a special register (سجل خاص) with the worker's name and the reason for the fine, but it does not mention all required details. Specifically, it omits: the amount of the worker's wage (مقدار أجره), the amount of the fine (مقدار الغرامة), and the date of the fine (تاريخها). The criterion requires all five elements: worker's name, wage amount, fine amount, reason, and date."
+    },
+    {
+     "id": "C-004",
+     "title": "Fines used for workers' benefit",
+     "verdict": "pass",
+     "reasoning": "The note states that fines collected are to be allocated for uses that benefit the workers of the establishment ('يُخصص حصيلتها لما يعود بالنفع على عمال المنشأة بعد موافقة الوزارة'), which satisfies the criterion that disposing of fines is restricted solely to uses that benefit the workers of the establishment."
+    },
+    {
+     "id": "C-005",
+     "title": "Labor committee or ministry approval",
+     "verdict": "fail",
+     "reasoning": "The agent's output mentions that the proceeds of fines are allocated for the benefit of the establishment's workers 'بعد موافقة الوزارة' (after Ministry approval), but does not mention the labor committee (اللجنة العمالية) as the primary mechanism for disposal of fines, nor does it frame the Ministry approval as a fallback for when no such committee exists. The criterion requires the note to state that disposal is carried out through the labor committee, or with Ministry approval in the absence of such a committee. The agent only mentions Ministry approval without any reference to the labor committee."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "180-day rule bars aggravation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that aggravation of the penalty (تشديد الجزاء) is not permissible because the period between the notification of the previous penalty and the new violation exceeded 180 days. It explicitly references the 180-day rule, calculates the elapsed time as approximately 191-192 days, and concludes that the new violation must be treated as a first offense."
+    },
+    {
+     "id": "C-002",
+     "title": "Start of 180-day period",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'لا يجيز لصاحب العمل توقيع جزاء أشد بسبب تكرار المخالفة إذا كان قد انقضى على المخالفة السابقة مائة وثمانون يومًا من تاريخ إبلاغ العامل بتوقيع الجزاء عليه عن تلك المخالفة' — this clearly identifies the starting point of the 180-day period as the date the worker was notified of the imposition of the penalty, not from the date of the violation."
+    },
+    {
+     "id": "C-003",
+     "title": "Special register requirement",
+     "verdict": "fail",
+     "reasoning": "The note mentions that fines must be recorded in a 'سجل خاص' (special register) with the worker's name and the reason for the fine. However, it does not mention all required details: specifically, it omits the amount of the worker's wage, the amount of the fine, and the date of the fine. The criterion requires all of these details to be mentioned: the worker's name, the amount of his wage, the amount of the fine, its reason, and its date."
+    },
+    {
+     "id": "C-004",
+     "title": "Fines used for workers' benefit",
+     "verdict": "pass",
+     "reasoning": "The note states: 'تُقيَّد الغرامات في سجل خاص باسم العامل وسبب توقيعها، ويُخصص حصيلتها لما يعود بالنفع على عمال المنشأة بعد موافقة الوزارة.' This translates to fines being allocated for the benefit of the establishment's workers with ministry approval, which satisfies the criterion that fines may not be disposed of except in a manner that benefits the workers."
+    },
+    {
+     "id": "C-005",
+     "title": "Labor committee or ministry approval",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that disposal of fines is carried out through the labor committee (اللجنة العمالية), or with the approval of the Ministry in the absence of the committee. The agent's note only mentions 'بعد موافقة الوزارة' (with the approval of the Ministry) regarding the disposal of fine proceeds, but does not mention the labor committee's role or the conditional relationship (labor committee first, Ministry only in its absence). This does not satisfy the full criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/180-day-bar-on-aggravation-and-penalty-register-requirement",
+  "task": "astrolabe-open/saudi-employment-and-labour/180-day-bar-on-aggravation-and-penalty-register-requirement",
+  "scored_at": "2026-11-22T21:50:51.242614+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "180-day rule bars aggravation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'أولًا' that aggravation of the penalty is not permissible if 180 days have passed from the date the worker was notified of the previous penalty. It then calculates that the period from 1 Muharram to 15 Rajab 1445H is approximately 191-192 days, exceeding 180 days, and concludes that aggravation is not permissible and the new violation must be treated as a first offense."
+     },
+     {
+      "id": "C-002",
+      "title": "Start of 180-day period",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the 180-day period is calculated from 'تاريخ إبلاغ العامل بتوقيع الجزاء عليه عن تلك المخالفة' (the date the worker was notified of the imposition of the penalty for that violation), which correctly identifies the starting point as the notification date rather than the date of the violation."
+     },
+     {
+      "id": "C-003",
+      "title": "Special register requirement",
+      "verdict": "fail",
+      "reasoning": "The agent's output mentions recording fines in a special register (سجل خاص) with the worker's name and the reason for the fine, but it does not mention all required details. Specifically, it omits: the amount of the worker's wage (مقدار أجره), the amount of the fine (مقدار الغرامة), and the date of the fine (تاريخها). The criterion requires all five elements: worker's name, wage amount, fine amount, reason, and date."
+     },
+     {
+      "id": "C-004",
+      "title": "Fines used for workers' benefit",
+      "verdict": "pass",
+      "reasoning": "The note states that fines collected are to be allocated for uses that benefit the workers of the establishment ('يُخصص حصيلتها لما يعود بالنفع على عمال المنشأة بعد موافقة الوزارة'), which satisfies the criterion that disposing of fines is restricted solely to uses that benefit the workers of the establishment."
+     },
+     {
+      "id": "C-005",
+      "title": "Labor committee or ministry approval",
+      "verdict": "fail",
+      "reasoning": "The agent's output mentions that the proceeds of fines are allocated for the benefit of the establishment's workers 'بعد موافقة الوزارة' (after Ministry approval), but does not mention the labor committee (اللجنة العمالية) as the primary mechanism for disposal of fines, nor does it frame the Ministry approval as a fallback for when no such committee exists. The criterion requires the note to state that disposal is carried out through the labor committee, or with Ministry approval in the absence of such a committee. The agent only mentions Ministry approval without any reference to the labor committee."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/180-day-bar-on-aggravation-and-penalty-register-requirement",
+    "task": "astrolabe-open/saudi-employment-and-labour/180-day-bar-on-aggravation-and-penalty-register-requirement",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T21:36:56.761574+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "180-day rule bars aggravation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that aggravation of the penalty (تشديد الجزاء) is not permissible because the period between the notification of the previous penalty and the new violation exceeded 180 days. It explicitly references the 180-day rule, calculates the elapsed time as approximately 191-192 days, and concludes that the new violation must be treated as a first offense."
+     },
+     {
+      "id": "C-002",
+      "title": "Start of 180-day period",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'لا يجيز لصاحب العمل توقيع جزاء أشد بسبب تكرار المخالفة إذا كان قد انقضى على المخالفة السابقة مائة وثمانون يومًا من تاريخ إبلاغ العامل بتوقيع الجزاء عليه عن تلك المخالفة' — this clearly identifies the starting point of the 180-day period as the date the worker was notified of the imposition of the penalty, not from the date of the violation."
+     },
+     {
+      "id": "C-003",
+      "title": "Special register requirement",
+      "verdict": "fail",
+      "reasoning": "The note mentions that fines must be recorded in a 'سجل خاص' (special register) with the worker's name and the reason for the fine. However, it does not mention all required details: specifically, it omits the amount of the worker's wage, the amount of the fine, and the date of the fine. The criterion requires all of these details to be mentioned: the worker's name, the amount of his wage, the amount of the fine, its reason, and its date."
+     },
+     {
+      "id": "C-004",
+      "title": "Fines used for workers' benefit",
+      "verdict": "pass",
+      "reasoning": "The note states: 'تُقيَّد الغرامات في سجل خاص باسم العامل وسبب توقيعها، ويُخصص حصيلتها لما يعود بالنفع على عمال المنشأة بعد موافقة الوزارة.' This translates to fines being allocated for the benefit of the establishment's workers with ministry approval, which satisfies the criterion that fines may not be disposed of except in a manner that benefits the workers."
+     },
+     {
+      "id": "C-005",
+      "title": "Labor committee or ministry approval",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that disposal of fines is carried out through the labor committee (اللجنة العمالية), or with the approval of the Ministry in the absence of the committee. The agent's note only mentions 'بعد موافقة الوزارة' (with the approval of the Ministry) regarding the disposal of fine proceeds, but does not mention the labor committee's role or the conditional relationship (labor committee first, Ministry only in its absence). This does not satisfy the full criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/180-day-bar-on-aggravation-and-penalty-register-requirement",
+    "task": "astrolabe-open/saudi-employment-and-labour/180-day-bar-on-aggravation-and-penalty-register-requirement",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T21:50:51.242105+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

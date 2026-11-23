@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-contracts-and-obligations/suspension-of-delay-fines-during-sudden-incident-conditions",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: غرامة التأخير في ظل فيضان مفاجئ (قوة قاهرة)\n\n## الوقائع\nفي يناير 2023 تعاقدت شركة النيل للمقاولات مع جهة إدارية على أعمال إنشائية مدتها ستة أشهر. وفي مارس 2023 أوقف فيضان مفاجئ غير مسبوق الأعمال شهرين، ثم أتمت الشركة التنفيذ متأخرة عن الموعد.\n\n## التحليل\n### 1. القانون الحاكم\nيسري على العقد قانون تنظيم التعاقدات التي تبرمها الجهات العامة رقم 182 لسنة 2018 ولائحته التنفيذية، والمبادئ العامة للعقود الإدارية، والقانون المدني فيما لم يرد فيه نص.\n\n### 2. طبيعة غرامة التأخير\nغرامة التأخير في العقد الإداري جزاء توقعه الإدارة بمجرد التأخير، دون حاجة إلى إثبات ضرر أو إنذار. لكن مناطها أن يكون التأخير **راجعًا إلى المتعاقد**. فإذا رجع التأخير إلى سبب أجنبي لا يد للمتعاقد فيه، كالقوة القاهرة أو فعل الإدارة، امتنع توقيع الغرامة عن المدة المقابلة له.\n\n### 3. هل الفيضان قوة قاهرة؟\n- القوة القاهرة حادث غير متوقع، ويستحيل دفعه، ويجعل التنفيذ مستحيلًا. والفيضان المفاجئ غير المسبوق يستوفي هذه الشروط في الغالب.\n- وفق المادة 215 من القانون المدني لا يلتزم المدين بالتعويض إذا أثبت أن استحالة التنفيذ نشأت عن سبب أجنبي. وتتناول المادة 165 السبب الأجنبي بوجه عام. وقد استقر قضاء مجلس الدولة على إعفاء المتعاقد من غرامة التأخير عن مدة القوة القاهرة.\n- وينص القانون 182 لسنة 2018 ولائحته على **مد مدة التنفيذ** دون غرامة إذا رجع التأخير إلى قوة قاهرة أو إلى سبب خارج عن إرادة المتعاقد، وعلى جواز الإعفاء من الغرامة إذا ثبت أن التأخير لا يد للمتعاقد فيه. ولا أذكر بدقة رقم المادة الخاصة بغرامة التأخير وحالات الإعفاء منها، ويُرجَّح أنها في حدود المادة 48، فيجب التحقق منها.\n\n### 4. حساب الغرامة\n- **مدة الفيضان (شهران) تُستبعد** من مدة التأخير، ولا تُوقَّع عنها غرامة.\n- يُطرح الشهران من إجمالي مدة التأخير. فإن بقي تأخير زائد عليهما، جاز توقيع الغرامة عنه وحده، في حدود النسب المقررة قانونًا، ما لم تثبت الشركة أن الزيادة أيضًا ترجع إلى آثار الفيضان، كإزالة المخلفات أو تلف الأعمال.\n\n### 5. اعتبارات عملية\n- على الشركة إثبات الواقعة ومدتها، مثلًا بشهادات من الجهات الرسمية كالري والمحافظة والأرصاد، ومحاضر إيقاف الأعمال.\n- ينبغي أن تكون الشركة قد أخطرت الجهة الإدارية بالحادث وطلبت مد المدة في حينه. وإذا لم تفعل، فقد تحتج الجهة بذلك إن اشترطته كراسة الشروط، لكن الراجح أن ذلك لا يُسقط حقها متى ثبتت القوة القاهرة.\n- إذا وُقِّعت الغرامة عن كامل المدة، فللشركة التظلم ثم الطعن أمام محاكم مجلس الدولة لاسترداد ما خُصم دون وجه حق.\n\n## الخلاصة\nلا يحق للجهة الإدارية توقيع غرامة التأخير عن كامل مدة التأخير. فمدة الشهرين التي أوقف فيها الفيضان الأعمال قوة قاهرة تُعفى منها الشركة، وتستحق عنها مدًّا لمدة التنفيذ. ولا تُوقَّع الغرامة إلا عما زاد على هذه المدة، إن وُجد، وكان راجعًا إلى الشركة. ويُوصى بالتحقق من أرقام مواد القانون 182 لسنة 2018 ولائحته وشروط العقد.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Delay fine is applicable in principle",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 2 (طبيعة غرامة التأخير) that 'غرامة التأخير في العقد الإداري جزاء توقعه الإدارة بمجرد التأخير، دون حاجة إلى إثبات ضرر أو إنذار' (the delay fine in an administrative contract is a penalty imposed by the administration upon mere delay, without needing to prove damage or give notice). This clearly establishes the delay fine as a general principle applicable to contractors who delay fulfilling their obligations."
+    },
+    {
+     "id": "C-002",
+     "title": "Sudden incident suspends obligation",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that a sudden incident (حادث فجائي) suspends execution of the obligation without fully exempting the contractor from it — i.e., the obligation resumes after the incident ceases. The agent's note discusses force majeure (قوة قاهرة) and states that the two-month flood period is excluded from delay penalties, and that the contractor is entitled to an extension of time for that period. However, the note does not explicitly frame this as a 'suspension' of the obligation that resumes after the incident ceases, nor does it use the concept of حادث فجائي as distinct from قوة قاهرة. The note focuses on exemption from penalties and extension of time, but does not clearly articulate the legal principle that a sudden incident suspends (rather than extinguishes) the obligation, with execution resuming afterward. The criterion specifically requires the note to state that a sudden incident suspends execution without fully exempting the contractor."
+    },
+    {
+     "id": "C-003",
+     "title": "No fine during suspension period",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 4 that 'مدة الفيضان (شهران) تُستبعد من مدة التأخير، ولا تُوقَّع عنها غرامة' (the flood period of two months is excluded from the delay period, and no fine is imposed for it). The conclusion also reiterates that the two-month period caused by the flood constitutes force majeure and the company is exempt from fines for that period, entitled to an extension. This clearly satisfies the criterion that the note states no delay fine is imposed for the suspension period resulting from the sudden incident."
+    },
+    {
+     "id": "C-004",
+     "title": "Fatwa department opinion required",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention the requirement to obtain the opinion of the competent Fatwa Department (إدارة الفتوى) at the State Council as a condition for exemption from the delay fine during the suspension period. The note discusses force majeure principles, cites relevant laws, and provides practical advice, but nowhere does it state that exemption is conditional on obtaining a Fatwa Department opinion."
+    },
+    {
+     "id": "C-005",
+     "title": "Conditions of sudden incident",
+     "verdict": "pass",
+     "reasoning": "In section 3, the note states: 'القوة القاهرة حادث غير متوقع، ويستحيل دفعه، ويجعل التنفيذ مستحيلًا.' This explicitly states that a sudden incident (force majeure) must be both unforeseeable (غير متوقع) and impossible to repel (يستحيل دفعه), satisfying the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Delay fine is applicable in principle",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in Section 2 (طبيعة غرامة التأخير) that the delay fine in administrative contracts is a penalty imposed by the administration upon the mere occurrence of delay, without the need to prove damage or give notice ('غرامة التأخير في العقد الإداري جزاء توقعه الإدارة بمجرد التأخير، دون حاجة إلى إثبات ضرر أو إنذار'). This establishes the general principle that a delay fine is applicable to a contractor who delays fulfilling obligations."
+    },
+    {
+     "id": "C-002",
+     "title": "Sudden incident suspends obligation",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that a sudden incident (حادث فجائي) suspends execution of the obligation until it ceases, without fully exempting the contractor from the obligation. The agent's note does convey that the force majeure event suspends the obligation during its duration (the two months are excluded from delay calculation, and the contractor gets an extension of time), and that after the event ceases, the contractor must resume and complete the work - any remaining delay is still subject to penalties. The note states: 'مدة الفيضان (شهران) تُستبعد من مدة التأخير' and 'تستحق عنها مدًّا لمدة التنفيذ' and 'لا تُوقَّع الغرامة إلا عما زاد على هذه المدة'. This effectively communicates that the incident suspends rather than fully exempts the contractor. However, the criterion specifically asks for the concept that the sudden incident 'suspends execution of the obligation' rather than fully exempting the contractor. The note does communicate this concept implicitly - the contractor still must complete the work, just gets extra time. The note does not use the specific term 'حادث فجائي' but discusses force majeure (قوة قاهرة) which encompasses it. The key concept - suspension not exemption - is present in the note's analysis, particularly in sections 4 and the conclusion where it's clear the contractor must still complete the work and is only relieved of penalties for the period of the incident."
+    },
+    {
+     "id": "C-003",
+     "title": "No fine during suspension period",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the two-month flood period is excluded from the delay calculation and no fine is imposed for that suspension period. For example: 'مدة الفيضان (شهران) تُستبعد من مدة التأخير، ولا تُوقَّع عنها غرامة' and the conclusion reiterates that the company is exempt from the fine for the force majeure period."
+    },
+    {
+     "id": "C-004",
+     "title": "Fatwa department opinion required",
+     "verdict": "fail",
+     "reasoning": "The advice note does not mention that exemption from the delay fine is conditional on obtaining the opinion of the competent Fatwa Department (إدارة الفتوى) at the State Council. This requirement is entirely absent from the agent's output."
+    },
+    {
+     "id": "C-005",
+     "title": "Conditions of sudden incident",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 3: 'القوة القاهرة حادث غير متوقع، ويستحيل دفعه، ويجعل التنفيذ مستحيلًا' — meaning force majeure is an event that is unforeseeable (غير متوقع) and impossible to repel (يستحيل دفعه). This satisfies the criterion requiring that a sudden incident must be both unforeseeable and impossible to repel."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/suspension-of-delay-fines-during-sudden-incident-conditions",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/suspension-of-delay-fines-during-sudden-incident-conditions",
+  "scored_at": "2026-11-22T20:34:47.190501+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Delay fine is applicable in principle",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 2 (طبيعة غرامة التأخير) that 'غرامة التأخير في العقد الإداري جزاء توقعه الإدارة بمجرد التأخير، دون حاجة إلى إثبات ضرر أو إنذار' (the delay fine in an administrative contract is a penalty imposed by the administration upon mere delay, without needing to prove damage or give notice). This clearly establishes the delay fine as a general principle applicable to contractors who delay fulfilling their obligations."
+     },
+     {
+      "id": "C-002",
+      "title": "Sudden incident suspends obligation",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that a sudden incident (حادث فجائي) suspends execution of the obligation without fully exempting the contractor from it — i.e., the obligation resumes after the incident ceases. The agent's note discusses force majeure (قوة قاهرة) and states that the two-month flood period is excluded from delay penalties, and that the contractor is entitled to an extension of time for that period. However, the note does not explicitly frame this as a 'suspension' of the obligation that resumes after the incident ceases, nor does it use the concept of حادث فجائي as distinct from قوة قاهرة. The note focuses on exemption from penalties and extension of time, but does not clearly articulate the legal principle that a sudden incident suspends (rather than extinguishes) the obligation, with execution resuming afterward. The criterion specifically requires the note to state that a sudden incident suspends execution without fully exempting the contractor."
+     },
+     {
+      "id": "C-003",
+      "title": "No fine during suspension period",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 4 that 'مدة الفيضان (شهران) تُستبعد من مدة التأخير، ولا تُوقَّع عنها غرامة' (the flood period of two months is excluded from the delay period, and no fine is imposed for it). The conclusion also reiterates that the two-month period caused by the flood constitutes force majeure and the company is exempt from fines for that period, entitled to an extension. This clearly satisfies the criterion that the note states no delay fine is imposed for the suspension period resulting from the sudden incident."
+     },
+     {
+      "id": "C-004",
+      "title": "Fatwa department opinion required",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention the requirement to obtain the opinion of the competent Fatwa Department (إدارة الفتوى) at the State Council as a condition for exemption from the delay fine during the suspension period. The note discusses force majeure principles, cites relevant laws, and provides practical advice, but nowhere does it state that exemption is conditional on obtaining a Fatwa Department opinion."
+     },
+     {
+      "id": "C-005",
+      "title": "Conditions of sudden incident",
+      "verdict": "pass",
+      "reasoning": "In section 3, the note states: 'القوة القاهرة حادث غير متوقع، ويستحيل دفعه، ويجعل التنفيذ مستحيلًا.' This explicitly states that a sudden incident (force majeure) must be both unforeseeable (غير متوقع) and impossible to repel (يستحيل دفعه), satisfying the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/suspension-of-delay-fines-during-sudden-incident-conditions",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/suspension-of-delay-fines-during-sudden-incident-conditions",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:24:31.072150+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "4/5 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Delay fine is applicable in principle",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in Section 2 (طبيعة غرامة التأخير) that the delay fine in administrative contracts is a penalty imposed by the administration upon the mere occurrence of delay, without the need to prove damage or give notice ('غرامة التأخير في العقد الإداري جزاء توقعه الإدارة بمجرد التأخير، دون حاجة إلى إثبات ضرر أو إنذار'). This establishes the general principle that a delay fine is applicable to a contractor who delays fulfilling obligations."
+     },
+     {
+      "id": "C-002",
+      "title": "Sudden incident suspends obligation",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that a sudden incident (حادث فجائي) suspends execution of the obligation until it ceases, without fully exempting the contractor from the obligation. The agent's note does convey that the force majeure event suspends the obligation during its duration (the two months are excluded from delay calculation, and the contractor gets an extension of time), and that after the event ceases, the contractor must resume and complete the work - any remaining delay is still subject to penalties. The note states: 'مدة الفيضان (شهران) تُستبعد من مدة التأخير' and 'تستحق عنها مدًّا لمدة التنفيذ' and 'لا تُوقَّع الغرامة إلا عما زاد على هذه المدة'. This effectively communicates that the incident suspends rather than fully exempts the contractor. However, the criterion specifically asks for the concept that the sudden incident 'suspends execution of the obligation' rather than fully exempting the contractor. The note does communicate this concept implicitly - the contractor still must complete the work, just gets extra time. The note does not use the specific term 'حادث فجائي' but discusses force majeure (قوة قاهرة) which encompasses it. The key concept - suspension not exemption - is present in the note's analysis, particularly in sections 4 and the conclusion where it's clear the contractor must still complete the work and is only relieved of penalties for the period of the incident."
+     },
+     {
+      "id": "C-003",
+      "title": "No fine during suspension period",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the two-month flood period is excluded from the delay calculation and no fine is imposed for that suspension period. For example: 'مدة الفيضان (شهران) تُستبعد من مدة التأخير، ولا تُوقَّع عنها غرامة' and the conclusion reiterates that the company is exempt from the fine for the force majeure period."
+     },
+     {
+      "id": "C-004",
+      "title": "Fatwa department opinion required",
+      "verdict": "fail",
+      "reasoning": "The advice note does not mention that exemption from the delay fine is conditional on obtaining the opinion of the competent Fatwa Department (إدارة الفتوى) at the State Council. This requirement is entirely absent from the agent's output."
+     },
+     {
+      "id": "C-005",
+      "title": "Conditions of sudden incident",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 3: 'القوة القاهرة حادث غير متوقع، ويستحيل دفعه، ويجعل التنفيذ مستحيلًا' — meaning force majeure is an event that is unforeseeable (غير متوقع) and impossible to repel (يستحيل دفعه). This satisfies the criterion requiring that a sudden incident must be both unforeseeable and impossible to repel."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/suspension-of-delay-fines-during-sudden-incident-conditions",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/suspension-of-delay-fines-during-sudden-incident-conditions",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:34:47.190090+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.7,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

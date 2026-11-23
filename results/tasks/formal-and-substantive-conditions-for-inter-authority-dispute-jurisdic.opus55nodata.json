@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-civil-procedure-and-litigation/formal-and-substantive-conditions-for-inter-authority-dispute-jurisdic",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: نزاع وزارة الإسكان وهيئة المجتمعات العمرانية الجديدة أمام الجمعية العمومية\n\n## الوقائع\nفي يناير 2024 طلبت وزارة الإسكان من الجمعية العمومية لقسمي الفتوى والتشريع أن تفصل في نزاع مالي بينها وبين هيئة المجتمعات العمرانية الجديدة، قيمته 50 مليون جنيه، لكنها لم ترفق بالطلب أي مستندات.\n\n## السند القانوني\n- **قانون مجلس الدولة رقم 47 لسنة 1972، المادة 66 فقرة (د):** تختص الجمعية العمومية لقسمي الفتوى والتشريع بإبداء الرأي مسبباً في المنازعات التي تنشأ بين الوزارات، أو بين المصالح العامة، أو بين الهيئات العامة، أو بين المؤسسات العامة، أو بين الهيئات المحلية، أو بين هذه الجهات وبعضها البعض. **ويكون رأيها في هذه المنازعات ملزماً للجانبين.**\n- **مبادئ الإفتاء المستقرة:** يُشترط لانعقاد الاختصاص أن يقوم نزاع حقيقي جدي بين جهتين من الجهات المذكورة، وأن يكون محدد العناصر وتؤيده المستندات، حتى تستطيع الجمعية أن تتحقق من وجوده ومن أساسه. فإذا عرض الطلب مجرداً من الأوراق، اعتادت الجمعية أن تطلب استيفاءها، فإن لم تُستوف قررت عدم إمكان إبداء الرأي أو حفظ الطلب، دون أن تتعرض لموضوع النزاع. **ولست متأكداً من الصيغة الدقيقة التي تنتهي إليها الجمعية في هذه الحالة.**\n\n## التحليل\n- **الاختصاص قائم:** الوزارة جهة إدارية مركزية، وهيئة المجتمعات العمرانية الجديدة هيئة عامة أنشئت بالقانون رقم 59 لسنة 1979، والنزاع مالي ويقع بين جهتين مما تنص عليه المادة 66 (د).\n- **المانع إجرائي:** خلو الطلب من المستندات يمنع الجمعية من أن تقف على حقيقة النزاع: سنده، وعناصر المبلغ، وموقف الهيئة منه.\n\n## الخلاصة\n1. نعم، تملك الجمعية العمومية سلطة الفصل في هذا النزاع برأي ملزم للطرفين.\n2. حتى تستطيع إصدار رأيها يلزم ما يلي:\n   - أن يثبت أن نزاعاً جدياً قائماً بين الطرفين، كأن تكون هناك مطالبة من الوزارة ورفض أو اعتراض من الهيئة.\n   - أن تُقدم المستندات المؤيدة له: العقود أو البروتوكولات أو القرارات التي نشأ عنها الالتزام، وبيان بكيفية حساب مبلغ الخمسين مليون جنيه، والمكاتبات المتبادلة بين الجهتين.\n   - أن يُرفع الطلب من السلطة المختصة في الجهة الطالبة، أي الوزير أو من يفوضه، وأن تُمكَّن الهيئة من الرد.\n   - ألا يكون النزاع قد سبق عرضه على القضاء أو صدر فيه حكم، وهو قيد اعتادت الجمعية مراعاته.\n\n## التوصية\nاستكملوا الملف بالمستندات المذكورة وأعيدوا تقديمه أو قدموه تكملةً للطلب الحالي، لأن عدم استيفائه قد ينتهي بحفظه.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Jurisdiction over inter-authority disputes",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the legal basis section that Article 66(d) of Law 47 of 1972 grants the General Assembly (الجمعية العمومية) jurisdiction over disputes arising between ministries, public authorities, and other governmental entities. The analysis section further confirms that jurisdiction exists in this case, stating 'الاختصاص قائم' (jurisdiction is established), noting that the Ministry is a central administrative body and the New Urban Communities Authority is a public authority established by law, and that the dispute falls within the scope of Article 66(d). The conclusion also reaffirms that the General Assembly has the authority to decide on the dispute with a binding opinion for both parties."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding opinion",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal basis section under Article 66(d): 'ويكون رأيها في هذه المنازعات ملزماً للجانبين' (its opinion in these disputes is binding on both parties). This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Formal and substantive conditions",
+     "verdict": "fail",
+     "reasoning": "The criterion requires that the note explicitly states that the General Assembly's exercise of its jurisdiction requires that the dispute fulfils its 'formal and substantive conditions' (شرائطه الشكلية والموضوعية) as a phrase or concept. While the agent's output does discuss various conditions (both procedural/formal and substantive) that must be met, it never uses the specific terminology 'شرائطه الشكلية والموضوعية' or an equivalent formulation stating that jurisdiction requires fulfillment of 'formal and substantive conditions' as a unified concept. The note separates the analysis into 'الاختصاص قائم' and 'المانع إجرائي' without framing it as the dispute needing to meet its formal and substantive conditions for the General Assembly to exercise jurisdiction."
+    },
+    {
+     "id": "C-004",
+     "title": "Supporting documents required",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that supporting documents are required for the dispute to be examined. In the 'مبادئ الإفتاء المستقرة' section, it states that the dispute must be 'محدد العناصر وتؤيده المستندات' (defined in its elements and supported by documents) so the Assembly can verify its existence and basis. In the conclusions section, it lists specific documents required: contracts, protocols, decisions, a breakdown of the 50 million pounds calculation, and correspondence between the two parties. The recommendation also emphasizes completing the file with the mentioned documents before resubmission."
+    },
+    {
+     "id": "C-005",
+     "title": "Authority to prepare dispute",
+     "verdict": "fail",
+     "reasoning": "The note does not state that the General Assembly has the authority to prepare the dispute itself (i.e., to gather documents, investigate, or take steps to make the dispute fit for determination). Instead, the note places the burden entirely on the requesting party (the Ministry) to complete the file and resubmit it. The note describes what the General Assembly typically does when documents are missing (requests them, and if not supplied, decides it cannot issue an opinion or archives the request), but never affirmatively states that the General Assembly has its own authority to prepare/investigate the dispute to make it fit for determination before issuing its opinion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Jurisdiction over inter-authority disputes",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the General Assembly (الجمعية العمومية) has jurisdiction to give an opinion on disputes arising between ministries or public authorities, citing Article 66(d) of Law 47/1972 and explicitly confirming 'نعم، تملك الجمعية العمومية سلطة الفصل في هذا النزاع برأي ملزم للطرفين'."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding opinion",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the opinion of the General Assembly is binding on both parties: in the legal basis section ('ويكون رأيها في هذه المنازعات ملزماً للجانبين') and in the conclusion ('تملك الجمعية العمومية سلطة الفصل في هذا النزاع برأي ملزم للطرفين')."
+    },
+    {
+     "id": "C-003",
+     "title": "Formal and substantive conditions",
+     "verdict": "fail",
+     "reasoning": "The criterion requires that the note explicitly states that the General Assembly's exercise of its jurisdiction requires the dispute to fulfil its formal and substantive conditions (شرائطه الشكلية والموضوعية). While the note discusses various conditions (procedural/documentary requirements, standing, existence of a genuine dispute, etc.), it does not use the specific formulation that the dispute must fulfil its 'formal and substantive conditions' (شرائطه الشكلية والموضوعية) as a general principle for the exercise of jurisdiction. The note separates the analysis into 'الاختصاص قائم' and 'المانع إجرائي' and lists specific requirements, but never states the overarching principle that the General Assembly's jurisdiction requires the dispute to fulfil both its formal and substantive conditions as such."
+    },
+    {
+     "id": "C-004",
+     "title": "Supporting documents required",
+     "verdict": "pass",
+     "reasoning": "The note clearly states multiple times that the dispute must be supported by documents necessary for its examination. In the legal basis section, it mentions that the dispute must be 'محدد العناصر وتؤيده المستندات' (defined in its elements and supported by documents). In the conclusion section, it explicitly lists the required supporting documents including contracts, protocols, decisions, calculation details, and correspondence. The recommendation also emphasizes completing the file with the mentioned documents."
+    },
+    {
+     "id": "C-005",
+     "title": "Authority to prepare dispute",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the General Assembly (الجمعية العمومية) has the authority to prepare the dispute so that it is fit for determination before issuing its opinion. The agent's note mentions that the General Assembly customarily requests completion of documents ('اعتادت الجمعية أن تطلب استيفاءها'), which implies it has the authority to request supplementation. However, the note does not explicitly state that the General Assembly has the authority to 'prepare the dispute' (تهيئة النزاع / تحضير النزاع) so that it is fit for determination (صالحاً للبت فيه) before issuing its opinion. The note frames the document request as a procedural practice rather than as a formal authority/power of the General Assembly to prepare and ready the dispute for adjudication. The specific concept of the GA having authority to prepare/ready the dispute for determination is not articulated."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/formal-and-substantive-conditions-for-inter-authority-dispute-jurisdic",
+  "task": "astrolabe-open/egypt-civil-procedure-and-litigation/formal-and-substantive-conditions-for-inter-authority-dispute-jurisdic",
+  "scored_at": "2026-11-22T20:19:23.033521+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Jurisdiction over inter-authority disputes",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the legal basis section that Article 66(d) of Law 47 of 1972 grants the General Assembly (الجمعية العمومية) jurisdiction over disputes arising between ministries, public authorities, and other governmental entities. The analysis section further confirms that jurisdiction exists in this case, stating 'الاختصاص قائم' (jurisdiction is established), noting that the Ministry is a central administrative body and the New Urban Communities Authority is a public authority established by law, and that the dispute falls within the scope of Article 66(d). The conclusion also reaffirms that the General Assembly has the authority to decide on the dispute with a binding opinion for both parties."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding opinion",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal basis section under Article 66(d): 'ويكون رأيها في هذه المنازعات ملزماً للجانبين' (its opinion in these disputes is binding on both parties). This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Formal and substantive conditions",
+      "verdict": "fail",
+      "reasoning": "The criterion requires that the note explicitly states that the General Assembly's exercise of its jurisdiction requires that the dispute fulfils its 'formal and substantive conditions' (شرائطه الشكلية والموضوعية) as a phrase or concept. While the agent's output does discuss various conditions (both procedural/formal and substantive) that must be met, it never uses the specific terminology 'شرائطه الشكلية والموضوعية' or an equivalent formulation stating that jurisdiction requires fulfillment of 'formal and substantive conditions' as a unified concept. The note separates the analysis into 'الاختصاص قائم' and 'المانع إجرائي' without framing it as the dispute needing to meet its formal and substantive conditions for the General Assembly to exercise jurisdiction."
+     },
+     {
+      "id": "C-004",
+      "title": "Supporting documents required",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that supporting documents are required for the dispute to be examined. In the 'مبادئ الإفتاء المستقرة' section, it states that the dispute must be 'محدد العناصر وتؤيده المستندات' (defined in its elements and supported by documents) so the Assembly can verify its existence and basis. In the conclusions section, it lists specific documents required: contracts, protocols, decisions, a breakdown of the 50 million pounds calculation, and correspondence between the two parties. The recommendation also emphasizes completing the file with the mentioned documents before resubmission."
+     },
+     {
+      "id": "C-005",
+      "title": "Authority to prepare dispute",
+      "verdict": "fail",
+      "reasoning": "The note does not state that the General Assembly has the authority to prepare the dispute itself (i.e., to gather documents, investigate, or take steps to make the dispute fit for determination). Instead, the note places the burden entirely on the requesting party (the Ministry) to complete the file and resubmit it. The note describes what the General Assembly typically does when documents are missing (requests them, and if not supplied, decides it cannot issue an opinion or archives the request), but never affirmatively states that the General Assembly has its own authority to prepare/investigate the dispute to make it fit for determination before issuing its opinion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/formal-and-substantive-conditions-for-inter-authority-dispute-jurisdic",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/formal-and-substantive-conditions-for-inter-authority-dispute-jurisdic",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:17:57.304961+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Jurisdiction over inter-authority disputes",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the General Assembly (الجمعية العمومية) has jurisdiction to give an opinion on disputes arising between ministries or public authorities, citing Article 66(d) of Law 47/1972 and explicitly confirming 'نعم، تملك الجمعية العمومية سلطة الفصل في هذا النزاع برأي ملزم للطرفين'."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding opinion",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the opinion of the General Assembly is binding on both parties: in the legal basis section ('ويكون رأيها في هذه المنازعات ملزماً للجانبين') and in the conclusion ('تملك الجمعية العمومية سلطة الفصل في هذا النزاع برأي ملزم للطرفين')."
+     },
+     {
+      "id": "C-003",
+      "title": "Formal and substantive conditions",
+      "verdict": "fail",
+      "reasoning": "The criterion requires that the note explicitly states that the General Assembly's exercise of its jurisdiction requires the dispute to fulfil its formal and substantive conditions (شرائطه الشكلية والموضوعية). While the note discusses various conditions (procedural/documentary requirements, standing, existence of a genuine dispute, etc.), it does not use the specific formulation that the dispute must fulfil its 'formal and substantive conditions' (شرائطه الشكلية والموضوعية) as a general principle for the exercise of jurisdiction. The note separates the analysis into 'الاختصاص قائم' and 'المانع إجرائي' and lists specific requirements, but never states the overarching principle that the General Assembly's jurisdiction requires the dispute to fulfil both its formal and substantive conditions as such."
+     },
+     {
+      "id": "C-004",
+      "title": "Supporting documents required",
+      "verdict": "pass",
+      "reasoning": "The note clearly states multiple times that the dispute must be supported by documents necessary for its examination. In the legal basis section, it mentions that the dispute must be 'محدد العناصر وتؤيده المستندات' (defined in its elements and supported by documents). In the conclusion section, it explicitly lists the required supporting documents including contracts, protocols, decisions, calculation details, and correspondence. The recommendation also emphasizes completing the file with the mentioned documents."
+     },
+     {
+      "id": "C-005",
+      "title": "Authority to prepare dispute",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the General Assembly (الجمعية العمومية) has the authority to prepare the dispute so that it is fit for determination before issuing its opinion. The agent's note mentions that the General Assembly customarily requests completion of documents ('اعتادت الجمعية أن تطلب استيفاءها'), which implies it has the authority to request supplementation. However, the note does not explicitly state that the General Assembly has the authority to 'prepare the dispute' (تهيئة النزاع / تحضير النزاع) so that it is fit for determination (صالحاً للبت فيه) before issuing its opinion. The note frames the document request as a procedural practice rather than as a formal authority/power of the General Assembly to prepare and ready the dispute for adjudication. The specific concept of the GA having authority to prepare/ready the dispute for determination is not articulated."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/formal-and-substantive-conditions-for-inter-authority-dispute-jurisdic",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/formal-and-substantive-conditions-for-inter-authority-dispute-jurisdic",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:19:23.033136+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

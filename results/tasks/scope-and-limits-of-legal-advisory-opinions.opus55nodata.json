@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** مدى جواز إصدار فتوى عامة بشأن مدة الترقية لأعضاء الإدارات القانونية، والرجوع إلى قانون التوظف العام.\n\n## أولًا: الوقائع\nأُحيلت إلى الجمعية العمومية لقسمي الفتوى والتشريع مسألة تحديد مدة لترقية المستشارة نادية حسن، عضو الإدارة القانونية بإحدى الهيئات العامة، مع خلو قانون الإدارات القانونية (القانون رقم 47 لسنة 1973 فيما أعلم) من نص صريح.\n\n## ثانيًا: الرأي\n1. **الفتوى العامة:** الجمعية العمومية تختص، وفقًا لقانون مجلس الدولة (القانون رقم 47 لسنة 1972، والمادة 66 منه فيما أذكر)، بإبداء الرأي في المسائل التي تُحال إليها من الجهات الإدارية ذات الصلة. ورأيها يُبدى في المسألة المعروضة، لكنه يتضمن مبدأً قانونيًا يُستهدى به عمليًا في الحالات المماثلة لدى سائر الجهات. أما أن يكون له أثر تشريعي عام ملزم لجميع الهيئات فهذا غير مسلّم به؛ إذ الفتوى ليست تشريعًا، وإلزامها مقصور أصلًا على حالات النزاع بين الجهات العامة (المادة 66/د). ويُستحسن أن تطلب الجهة الفتوى في صورة مبدأ عام يمكن تعميمه إداريًا.\n2. **الرجوع إلى قانون التوظف:** المستقر في فتاوى الجمعية العمومية وأحكام القضاء الإداري - بحسب علمي - أن قانون الإدارات القانونية قانون خاص، وأن قانون العاملين المدنيين بالدولة (حاليًا قانون الخدمة المدنية رقم 81 لسنة 2016) هو الشريعة العامة التي يُرجع إليها فيما لم يرد بشأنه نص خاص، بشرط ألا يتعارض مع طبيعة الوظيفة الفنية القانونية. وأذكر أن قانون الإدارات القانونية ذاته يتضمن نصًا (المادة 1 أو ما يقاربها) يحيل إلى القواعد العامة فيما لم يرد فيه نص، دون جزم مني برقم المادة.\n\n## ثالثًا: الخلاصة\n- رأي الجمعية يصدر في المسألة المحالة، ويُتبع كمبدأ إرشادي عام، ولا يرقى إلى قاعدة ملزمة لكل الهيئات خارج حالات النزاع.\n- يجوز الرجوع إلى قانون التوظف العام لسد الفراغ، ما لم يتعارض مع أحكام قانون الإدارات القانونية وطبيعة الوظيفة.\n\n**تنبيه:** أرقام المواد مذكورة من الذاكرة ويلزم التحقق منها من النصوص الرسمية.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Fatwa limited to specific case",
+     "verdict": "fail",
+     "reasoning": "The note states that the General Assembly's opinion is issued in the specific referred case ('رأيها يُبدى في المسألة المعروضة'), but then immediately adds that it 'includes a legal principle that can be used as guidance in similar cases at other bodies' and suggests the entity request the opinion in the form of a general principle that can be administratively circulated. The note then explicitly states in the conclusion that the opinion 'يُتبع كمبدأ إرشادي عام' (is followed as a general guiding principle). This contradicts the criterion requirement that the opinion be stated as limited solely to the specific actual case referred to it. The note does not clearly confine the opinion to the specific case; rather, it extends its application to similar cases and treats it as a general guiding principle."
+    },
+    {
+     "id": "C-002",
+     "title": "Fatwa not theoretical",
+     "verdict": "fail",
+     "reasoning": "The note does reference a specific individual (المستشارة نادية حسن) and a specific incident (determining her promotion period). However, the criterion requires the note to explicitly state that the fatwa must be issued in a specific, individually defined incident and is NOT merely a general theoretical study. The note actually goes in the opposite direction by suggesting the requesting authority should frame the fatwa as a general principle ('يُستحسن أن تطلب الجهة الفتوى في صورة مبدأ عام يمكن تعميمه إداريًا'). The note does not explicitly state the requirement that a fatwa must concern a specific, individually defined incident rather than a general theoretical study — it in fact encourages broadening it to a general principle. This fails to meet the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "General law supplementary only",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا point 2 that recourse to the general civil service law (قانون الخدمة المدنية) applies 'فيما لم يرد بشأنه نص خاص' (in matters for which no specific provision exists), and further conditions this on it not conflicting with the nature of the legal technical position. This clearly establishes that recourse to the general civil service law is conditional upon the absence of a specific provision in the Legal Departments Law."
+    },
+    {
+     "id": "C-004",
+     "title": "No conflict with special law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا point 2 that recourse to the general employment law is permissible 'بشرط ألا يتعارض مع طبيعة الوظيفة الفنية القانونية' (provided it does not conflict with the nature of the legal technical position), and the conclusion repeats 'ما لم يتعارض مع أحكام قانون الإدارات القانونية وطبيعة الوظيفة' (as long as it does not conflict with the provisions of the Legal Departments Law and the nature of the position). This satisfies the criterion requiring that recourse to the general law be conditional upon its provisions neither conflicting with the Legal Departments Law nor being incompatible with its special nature."
+    },
+    {
+     "id": "C-005",
+     "title": "Legal departments law is primary",
+     "verdict": "fail",
+     "reasoning": "The note describes the Legal Departments Law as a 'special law' (قانون خاص) and states that the general employment law applies only to matters not covered by the special law, and only when it does not conflict with the nature of the legal profession. This implicitly treats the Legal Departments Law as primary. However, the note does not explicitly state that the Legal Departments Law is 'the primary basis' for regulating the affairs of members of legal departments. The framing focuses more on when to resort to the general law to fill gaps, rather than affirmatively declaring the Legal Departments Law as the primary regulatory framework. The criterion requires an explicit statement of primacy, which is not clearly present."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Fatwa limited to specific case",
+     "verdict": "fail",
+     "reasoning": "The note states that the General Assembly's opinion is issued regarding the specific referred matter ('رأي الجمعية يصدر في المسألة المحالة') and that it serves as a guiding principle but does not rise to a binding rule for all entities outside dispute cases. It also says 'ورأيه يُبدى في المسألة المعروضة، لكنه يتضمن مبدأً قانونيًا يُستهدى به عمليًا في الحالات المماثلة'. While the note does state the opinion is issued in the specific referred case, it simultaneously says it contains a legal principle that can be followed in similar cases. The criterion requires the note to state that the opinion is 'limited to the specific actual case referred to it and does not extend beyond it to other cases.' The agent's note actually suggests the opposite - that while issued for the specific case, the principle can be used as guidance in similar cases. The note does not clearly state that the fatwa does NOT extend to other cases; rather, it says it can be used as an 'إرشادي عام' (general guidance). This is a nuanced point, but the criterion specifically requires stating the opinion is 'confined solely to the specific actual case' and 'does not extend beyond it to other cases.' The agent's note partially contradicts this by suggesting the principle can guide similar cases."
+    },
+    {
+     "id": "C-002",
+     "title": "Fatwa not theoretical",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that a fatwa must be issued in a specific, individually defined incident and is not merely a general theoretical study. The agent's note does touch on this distinction partially — it states that 'رأيها يُبدى في المسألة المعروضة' (the opinion is given on the referred matter) and that it 'يتضمن مبدأً قانونيًا يُستهدى به عمليًا في الحالات المماثلة' (contains a legal principle that can be followed in similar cases). However, the note does not explicitly state the key principle that the fatwa must concern a specific, individually defined incident (واقعة بعينها) and cannot be a general theoretical study (دراسة نظرية عامة). The note actually seems to suggest the opposite direction by recommending that the entity request the fatwa 'في صورة مبدأ عام يمكن تعميمه إداريًا' (in the form of a general principle that can be administratively circulated). The note lacks the explicit statement that a fatwa is not a theoretical study but must address a concrete, specific case."
+    },
+    {
+     "id": "C-003",
+     "title": "General law supplementary only",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section ثانيًا (point 2) that the general civil service law is the 'الشريعة العامة التي يُرجع إليها فيما لم يرد بشأنه نص خاص' (the general law to be referred to in the absence of a specific provision), and in the conclusion it reiterates 'يجوز الرجوع إلى قانون التوظف العام لسد الفراغ، ما لم يتعارض مع أحكام قانون الإدارات القانونية وطبيعة الوظيفة.' This clearly conditions recourse to the general civil service law on the absence of a specific provision in the Legal Departments Law."
+    },
+    {
+     "id": "C-004",
+     "title": "No conflict with special law",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in both section ثانيًا (point 2) and section ثالثًا that recourse to the general employment law is permissible 'بشرط ألا يتعارض مع طبيعة الوظيفة الفنية القانونية' (provided it does not conflict with the nature of the legal technical position) and 'ما لم يتعارض مع أحكام قانون الإدارات القانونية وطبيعة الوظيفة' (unless it conflicts with the provisions of the Legal Departments Law and the nature of the position). This satisfies the criterion requiring that recourse to general law is conditional upon no conflict with the special law's provisions and its special nature."
+    },
+    {
+     "id": "C-005",
+     "title": "Legal departments law is primary",
+     "verdict": "pass",
+     "reasoning": "The note states that قانون الإدارات القانونية is a 'قانون خاص' (special/specific law) and that the general civil service law is the 'شريعة عامة' (general law) to be referred to only when the special law does not contain a provision, provided it does not conflict with the nature of the legal function. By characterizing it as the special law that takes precedence, the note effectively establishes the Legal Departments Law as the primary basis for regulating the affairs of members of legal departments."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/scope-and-limits-of-legal-advisory-opinions",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+  "scored_at": "2026-11-22T20:17:48.061864+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Fatwa limited to specific case",
+      "verdict": "fail",
+      "reasoning": "The note states that the General Assembly's opinion is issued in the specific referred case ('رأيها يُبدى في المسألة المعروضة'), but then immediately adds that it 'includes a legal principle that can be used as guidance in similar cases at other bodies' and suggests the entity request the opinion in the form of a general principle that can be administratively circulated. The note then explicitly states in the conclusion that the opinion 'يُتبع كمبدأ إرشادي عام' (is followed as a general guiding principle). This contradicts the criterion requirement that the opinion be stated as limited solely to the specific actual case referred to it. The note does not clearly confine the opinion to the specific case; rather, it extends its application to similar cases and treats it as a general guiding principle."
+     },
+     {
+      "id": "C-002",
+      "title": "Fatwa not theoretical",
+      "verdict": "fail",
+      "reasoning": "The note does reference a specific individual (المستشارة نادية حسن) and a specific incident (determining her promotion period). However, the criterion requires the note to explicitly state that the fatwa must be issued in a specific, individually defined incident and is NOT merely a general theoretical study. The note actually goes in the opposite direction by suggesting the requesting authority should frame the fatwa as a general principle ('يُستحسن أن تطلب الجهة الفتوى في صورة مبدأ عام يمكن تعميمه إداريًا'). The note does not explicitly state the requirement that a fatwa must concern a specific, individually defined incident rather than a general theoretical study — it in fact encourages broadening it to a general principle. This fails to meet the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "General law supplementary only",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا point 2 that recourse to the general civil service law (قانون الخدمة المدنية) applies 'فيما لم يرد بشأنه نص خاص' (in matters for which no specific provision exists), and further conditions this on it not conflicting with the nature of the legal technical position. This clearly establishes that recourse to the general civil service law is conditional upon the absence of a specific provision in the Legal Departments Law."
+     },
+     {
+      "id": "C-004",
+      "title": "No conflict with special law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا point 2 that recourse to the general employment law is permissible 'بشرط ألا يتعارض مع طبيعة الوظيفة الفنية القانونية' (provided it does not conflict with the nature of the legal technical position), and the conclusion repeats 'ما لم يتعارض مع أحكام قانون الإدارات القانونية وطبيعة الوظيفة' (as long as it does not conflict with the provisions of the Legal Departments Law and the nature of the position). This satisfies the criterion requiring that recourse to the general law be conditional upon its provisions neither conflicting with the Legal Departments Law nor being incompatible with its special nature."
+     },
+     {
+      "id": "C-005",
+      "title": "Legal departments law is primary",
+      "verdict": "fail",
+      "reasoning": "The note describes the Legal Departments Law as a 'special law' (قانون خاص) and states that the general employment law applies only to matters not covered by the special law, and only when it does not conflict with the nature of the legal profession. This implicitly treats the Legal Departments Law as primary. However, the note does not explicitly state that the Legal Departments Law is 'the primary basis' for regulating the affairs of members of legal departments. The framing focuses more on when to resort to the general law to fill gaps, rather than affirmatively declaring the Legal Departments Law as the primary regulatory framework. The criterion requires an explicit statement of primacy, which is not clearly present."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/scope-and-limits-of-legal-advisory-opinions",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:13:10.789018+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Fatwa limited to specific case",
+      "verdict": "fail",
+      "reasoning": "The note states that the General Assembly's opinion is issued regarding the specific referred matter ('رأي الجمعية يصدر في المسألة المحالة') and that it serves as a guiding principle but does not rise to a binding rule for all entities outside dispute cases. It also says 'ورأيه يُبدى في المسألة المعروضة، لكنه يتضمن مبدأً قانونيًا يُستهدى به عمليًا في الحالات المماثلة'. While the note does state the opinion is issued in the specific referred case, it simultaneously says it contains a legal principle that can be followed in similar cases. The criterion requires the note to state that the opinion is 'limited to the specific actual case referred to it and does not extend beyond it to other cases.' The agent's note actually suggests the opposite - that while issued for the specific case, the principle can be used as guidance in similar cases. The note does not clearly state that the fatwa does NOT extend to other cases; rather, it says it can be used as an 'إرشادي عام' (general guidance). This is a nuanced point, but the criterion specifically requires stating the opinion is 'confined solely to the specific actual case' and 'does not extend beyond it to other cases.' The agent's note partially contradicts this by suggesting the principle can guide similar cases."
+     },
+     {
+      "id": "C-002",
+      "title": "Fatwa not theoretical",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that a fatwa must be issued in a specific, individually defined incident and is not merely a general theoretical study. The agent's note does touch on this distinction partially — it states that 'رأيها يُبدى في المسألة المعروضة' (the opinion is given on the referred matter) and that it 'يتضمن مبدأً قانونيًا يُستهدى به عمليًا في الحالات المماثلة' (contains a legal principle that can be followed in similar cases). However, the note does not explicitly state the key principle that the fatwa must concern a specific, individually defined incident (واقعة بعينها) and cannot be a general theoretical study (دراسة نظرية عامة). The note actually seems to suggest the opposite direction by recommending that the entity request the fatwa 'في صورة مبدأ عام يمكن تعميمه إداريًا' (in the form of a general principle that can be administratively circulated). The note lacks the explicit statement that a fatwa is not a theoretical study but must address a concrete, specific case."
+     },
+     {
+      "id": "C-003",
+      "title": "General law supplementary only",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section ثانيًا (point 2) that the general civil service law is the 'الشريعة العامة التي يُرجع إليها فيما لم يرد بشأنه نص خاص' (the general law to be referred to in the absence of a specific provision), and in the conclusion it reiterates 'يجوز الرجوع إلى قانون التوظف العام لسد الفراغ، ما لم يتعارض مع أحكام قانون الإدارات القانونية وطبيعة الوظيفة.' This clearly conditions recourse to the general civil service law on the absence of a specific provision in the Legal Departments Law."
+     },
+     {
+      "id": "C-004",
+      "title": "No conflict with special law",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in both section ثانيًا (point 2) and section ثالثًا that recourse to the general employment law is permissible 'بشرط ألا يتعارض مع طبيعة الوظيفة الفنية القانونية' (provided it does not conflict with the nature of the legal technical position) and 'ما لم يتعارض مع أحكام قانون الإدارات القانونية وطبيعة الوظيفة' (unless it conflicts with the provisions of the Legal Departments Law and the nature of the position). This satisfies the criterion requiring that recourse to general law is conditional upon no conflict with the special law's provisions and its special nature."
+     },
+     {
+      "id": "C-005",
+      "title": "Legal departments law is primary",
+      "verdict": "pass",
+      "reasoning": "The note states that قانون الإدارات القانونية is a 'قانون خاص' (special/specific law) and that the general civil service law is the 'شريعة عامة' (general law) to be referred to only when the special law does not contain a provision, provided it does not conflict with the nature of the legal function. By characterizing it as the special law that takes precedence, the note effectively establishes the Legal Departments Law as the primary basis for regulating the affairs of members of legal departments."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/scope-and-limits-of-legal-advisory-opinions",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-and-limits-of-legal-advisory-opinions",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:17:48.061490+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.5,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

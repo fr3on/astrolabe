@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-civil-procedure-and-litigation/jurisdiction-and-binding-opinion-in-inter-agency-disputes",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: سلطة الجمعية العمومية في انتداب خبير وأثر رأيها\n\n## الوقائع\nنشأ نزاع حول مستحقات مالية بين وزارة الصحة وهيئة عامة للتأمين الصحي. أحالت الجمعية العمومية لقسمي الفتوى والتشريع النزاع إلى خبير لفحص المستندات، فاعترضت الهيئة وطلبت أن يُعرض النزاع على القضاء الإداري مباشرة.\n\n## السند القانوني\n- **قانون مجلس الدولة رقم 47 لسنة 1972، المادة 66 فقرة (د):** تختص الجمعية العمومية بإبداء الرأي مسبباً في المنازعات بين الوزارات والهيئات العامة وغيرها من الجهات العامة، ويكون رأيها ملزماً للجانبين.\n- **المبادئ المستقرة:** هذا الاختصاص طريق مقرر قانوناً لحسم المنازعات بين الجهات الإدارية، والغاية منه ألا تتقاضى أجهزة الدولة أمام المحاكم. ولذلك استقر القضاء والإفتاء على أن الجمعية العمومية هي الجهة المختصة بهذه المنازعات دون المحاكم، وأن الدعوى التي ترفعها جهة إدارية على أخرى قد يُقضى فيها بعدم الاختصاص أو بعدم القبول. **ولست متأكداً من أن هذا الاتجاه موحد في جميع الأحكام.**\n- **انتداب الخبير:** لا أعرف نصاً صريحاً في قانون مجلس الدولة يمنح الجمعية سلطة انتداب الخبراء. لكن المسلّم به أن الجهة التي تملك الفصل في النزاع تملك وسائل تحقيقه، ومنها الاستعانة بأهل الخبرة في المسائل الفنية والحسابية، تطبيقاً للقواعد العامة في الإثبات. وقد جرى عمل الجمعية فعلاً على الاستعانة بخبراء أو لجان فنية، أو على طلب بيانات محاسبية من الجهات. **فأنا أقرر ذلك بوصفه مبدأً عاماً لا نصاً محدداً.**\n\n## التحليل\n- **انتداب الخبير جائز:** فحص المستندات المالية إجراء تحقيق يدخل في سلطة الجمعية التقديرية، والخبير لا يقرر شيئاً بنفسه، والرأي الأخير للجمعية. واعتراض الهيئة لا يُلزم الجمعية بشيء.\n- **طلب الإحالة إلى القضاء الإداري لا سند له:** لا تملك الجمعية أن تحيل النزاع إلى المحاكم، ولا تملك الهيئة أن تنتزعه منها بإرادتها المنفردة ما دام النزاع بين جهتين عامتين.\n- **أثر الرأي:** يُلزم الطرفين، فيجب عليهما تنفيذه، ولا يجوز في الأصل الطعن فيه أمام القضاء لأنه ليس حكماً قضائياً ولا قراراً إدارياً قابلاً للطعن. وقد تعيد الجمعية النظر فيه في حالات استثنائية إذا ظهرت وقائع جديدة. **ولست متأكداً من حدود هذه الإمكانية.**\n\n## الخلاصة\n1. يحق للجمعية العمومية أن تنتدب خبيراً، واعتراض الهيئة غير مؤثر.\n2. رأيها النهائي ملزم للطرفين واجب التنفيذ، ولا يجوز اللجوء إلى القضاء الإداري لنقضه أو للالتفاف عليه.\n\n## التوصية\nتعاونوا مع الخبير وقدموا إليه مستنداتكم وملاحظاتكم، لأن تقريره سيكون أساساً مهماً للرأي.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Jurisdiction over inter-agency disputes",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the legal basis section that Article 66(d) of Law No. 47 of 1972 grants the General Assembly jurisdiction to issue reasoned opinions in disputes between ministries, public authorities, and other public entities, and that its opinion is binding on both parties. The analysis section further reinforces this by stating that the General Assembly is the competent body for such disputes and that referral to administrative courts has no legal basis."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding opinion on both parties",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in multiple places that the General Assembly's opinion is binding on both parties. In the legal basis section (المادة 66 فقرة (د)), it states 'يكون رأيها ملزماً للجانبين' (its opinion is binding on both parties). In the analysis section under 'أثر الرأي', it again states 'يُلزم الطرفين، فيجب عليهما تنفيذه' (it binds both parties, and they must implement it). The conclusion also reiterates 'رأيها النهائي ملزم للطرفين واجب التنفيذ' (its final opinion is binding on both parties and must be implemented)."
+    },
+    {
+     "id": "C-003",
+     "title": "Alternative to litigation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'المبادئ المستقرة' section that the General Assembly's jurisdiction is 'طريق مقرر قانوناً لحسم المنازعات بين الجهات الإدارية، والغاية منه ألا تتقاضى أجهزة الدولة أمام المحاكم' (a legally established path for resolving disputes between administrative bodies, with the purpose being that state agencies do not litigate before courts). It further states that the General Assembly is the competent body for these disputes 'دون المحاكم' (without the courts), and that lawsuits filed by one administrative body against another may be dismissed for lack of jurisdiction or inadmissibility. This clearly establishes the General Assembly as an alternative to litigation."
+    },
+    {
+     "id": "C-004",
+     "title": "Right to appoint expert",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the General Assembly has the right to appoint an expert (انتداب الخبير جائز) to examine financial documents as part of its investigative authority. It explains that examining financial documents is an investigative procedure within the General Assembly's discretionary power, and that the expert does not decide anything on their own while the final opinion remains with the General Assembly. This satisfies the criterion that the note states the General Assembly has the right to appoint experts to prepare the dispute for adjudication."
+    },
+    {
+     "id": "C-005",
+     "title": "Purpose of expert appointment",
+     "verdict": "pass",
+     "reasoning": "The note states that the expert appointment is for 'فحص المستندات المالية' (scrutinizing financial documents) as an investigative procedure ('إجراء تحقيق') within the General Assembly's discretionary authority, and earlier mentions 'الاستعانة بأهل الخبرة في المسائل الفنية والحسابية' (seeking the assistance of experts in technical and accounting matters). The recommendation also states the expert's report will serve as an important basis for the opinion. This collectively conveys that the purpose is to scrutinize documents and seek technical opinion in order to arrive at the truth."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Jurisdiction over inter-agency disputes",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the General Assembly (الجمعية العمومية) has jurisdiction to adjudicate disputes between ministries and public authorities, referencing Article 66(d) of Law 47/1972 and explicitly stating that it is the competent body for such disputes ('الجمعية العمومية هي الجهة المختصة بهذه المنازعات دون المحاكم')."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding opinion on both parties",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states multiple times that the opinion of the General Assembly is binding on both parties: 'ويكون رأيها ملزماً للجانبين' (its opinion is binding on both sides), 'يُلزم الطرفين، فيجب عليهما تنفيذه' (it binds both parties and they must execute it), and in the conclusion 'رأيها النهائي ملزم للطرفين واجب التنفيذ' (its final opinion is binding on both parties and must be executed)."
+    },
+    {
+     "id": "C-003",
+     "title": "Alternative to litigation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the General Assembly is an alternative to litigation for resolving disputes between administrative bodies. Specifically, it says: 'هذا الاختصاص طريق مقرر قانوناً لحسم المنازعات بين الجهات الإدارية، والغاية منه ألا تتقاضى أجهزة الدولة أمام المحاكم' and 'الجمعية العمومية هي الجهة المختصة بهذه المنازعات دون المحاكم'. This clearly establishes the General Assembly as an alternative to litigation."
+    },
+    {
+     "id": "C-004",
+     "title": "Right to appoint expert",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the General Assembly has the right to appoint an expert ('انتداب الخبير جائز') and explains that examining financial documents is an investigative procedure within the General Assembly's discretionary authority. It also states that the expert's role is to prepare the matter for the Assembly's final opinion, as 'الخبير لا يقرر شيئاً بنفسه، والرأي الأخير للجمعية.' The note also mentions in the legal basis section that the Assembly's practice includes appointing experts or technical committees. While the phrasing focuses on the expert preparing the technical/financial aspects rather than explicitly using the phrase 'to prepare the dispute so that it is fit for adjudication,' the substance is equivalent - the expert is appointed to examine documents and prepare a report that will be the basis for the Assembly's binding opinion. This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Purpose of expert appointment",
+     "verdict": "pass",
+     "reasoning": "The note states that the expert appointment is for 'فحص المستندات المالية' (scrutinizing financial documents) and describes it as 'إجراء تحقيق' (an investigative measure) within the assembly's discretionary authority to arrive at its opinion. It also mentions that the expert's report will be an important basis for the opinion ('تقريره سيكون أساساً مهماً للرأي'). This effectively conveys that the purpose is to scrutinize documents and seek technical opinion in order to arrive at the truth."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/jurisdiction-and-binding-opinion-in-inter-agency-disputes",
+  "task": "astrolabe-open/egypt-civil-procedure-and-litigation/jurisdiction-and-binding-opinion-in-inter-agency-disputes",
+  "scored_at": "2026-11-22T20:21:22.910847+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Jurisdiction over inter-agency disputes",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the legal basis section that Article 66(d) of Law No. 47 of 1972 grants the General Assembly jurisdiction to issue reasoned opinions in disputes between ministries, public authorities, and other public entities, and that its opinion is binding on both parties. The analysis section further reinforces this by stating that the General Assembly is the competent body for such disputes and that referral to administrative courts has no legal basis."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding opinion on both parties",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in multiple places that the General Assembly's opinion is binding on both parties. In the legal basis section (المادة 66 فقرة (د)), it states 'يكون رأيها ملزماً للجانبين' (its opinion is binding on both parties). In the analysis section under 'أثر الرأي', it again states 'يُلزم الطرفين، فيجب عليهما تنفيذه' (it binds both parties, and they must implement it). The conclusion also reiterates 'رأيها النهائي ملزم للطرفين واجب التنفيذ' (its final opinion is binding on both parties and must be implemented)."
+     },
+     {
+      "id": "C-003",
+      "title": "Alternative to litigation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'المبادئ المستقرة' section that the General Assembly's jurisdiction is 'طريق مقرر قانوناً لحسم المنازعات بين الجهات الإدارية، والغاية منه ألا تتقاضى أجهزة الدولة أمام المحاكم' (a legally established path for resolving disputes between administrative bodies, with the purpose being that state agencies do not litigate before courts). It further states that the General Assembly is the competent body for these disputes 'دون المحاكم' (without the courts), and that lawsuits filed by one administrative body against another may be dismissed for lack of jurisdiction or inadmissibility. This clearly establishes the General Assembly as an alternative to litigation."
+     },
+     {
+      "id": "C-004",
+      "title": "Right to appoint expert",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the General Assembly has the right to appoint an expert (انتداب الخبير جائز) to examine financial documents as part of its investigative authority. It explains that examining financial documents is an investigative procedure within the General Assembly's discretionary power, and that the expert does not decide anything on their own while the final opinion remains with the General Assembly. This satisfies the criterion that the note states the General Assembly has the right to appoint experts to prepare the dispute for adjudication."
+     },
+     {
+      "id": "C-005",
+      "title": "Purpose of expert appointment",
+      "verdict": "pass",
+      "reasoning": "The note states that the expert appointment is for 'فحص المستندات المالية' (scrutinizing financial documents) as an investigative procedure ('إجراء تحقيق') within the General Assembly's discretionary authority, and earlier mentions 'الاستعانة بأهل الخبرة في المسائل الفنية والحسابية' (seeking the assistance of experts in technical and accounting matters). The recommendation also states the expert's report will serve as an important basis for the opinion. This collectively conveys that the purpose is to scrutinize documents and seek technical opinion in order to arrive at the truth."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/jurisdiction-and-binding-opinion-in-inter-agency-disputes",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/jurisdiction-and-binding-opinion-in-inter-agency-disputes",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:18:45.956929+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Jurisdiction over inter-agency disputes",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the General Assembly (الجمعية العمومية) has jurisdiction to adjudicate disputes between ministries and public authorities, referencing Article 66(d) of Law 47/1972 and explicitly stating that it is the competent body for such disputes ('الجمعية العمومية هي الجهة المختصة بهذه المنازعات دون المحاكم')."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding opinion on both parties",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states multiple times that the opinion of the General Assembly is binding on both parties: 'ويكون رأيها ملزماً للجانبين' (its opinion is binding on both sides), 'يُلزم الطرفين، فيجب عليهما تنفيذه' (it binds both parties and they must execute it), and in the conclusion 'رأيها النهائي ملزم للطرفين واجب التنفيذ' (its final opinion is binding on both parties and must be executed)."
+     },
+     {
+      "id": "C-003",
+      "title": "Alternative to litigation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the General Assembly is an alternative to litigation for resolving disputes between administrative bodies. Specifically, it says: 'هذا الاختصاص طريق مقرر قانوناً لحسم المنازعات بين الجهات الإدارية، والغاية منه ألا تتقاضى أجهزة الدولة أمام المحاكم' and 'الجمعية العمومية هي الجهة المختصة بهذه المنازعات دون المحاكم'. This clearly establishes the General Assembly as an alternative to litigation."
+     },
+     {
+      "id": "C-004",
+      "title": "Right to appoint expert",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the General Assembly has the right to appoint an expert ('انتداب الخبير جائز') and explains that examining financial documents is an investigative procedure within the General Assembly's discretionary authority. It also states that the expert's role is to prepare the matter for the Assembly's final opinion, as 'الخبير لا يقرر شيئاً بنفسه، والرأي الأخير للجمعية.' The note also mentions in the legal basis section that the Assembly's practice includes appointing experts or technical committees. While the phrasing focuses on the expert preparing the technical/financial aspects rather than explicitly using the phrase 'to prepare the dispute so that it is fit for adjudication,' the substance is equivalent - the expert is appointed to examine documents and prepare a report that will be the basis for the Assembly's binding opinion. This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Purpose of expert appointment",
+      "verdict": "pass",
+      "reasoning": "The note states that the expert appointment is for 'فحص المستندات المالية' (scrutinizing financial documents) and describes it as 'إجراء تحقيق' (an investigative measure) within the assembly's discretionary authority to arrive at its opinion. It also mentions that the expert's report will be an important basis for the opinion ('تقريره سيكون أساساً مهماً للرأي'). This effectively conveys that the purpose is to scrutinize documents and seek technical opinion in order to arrive at the truth."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/jurisdiction-and-binding-opinion-in-inter-agency-disputes",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/jurisdiction-and-binding-opinion-in-inter-agency-disputes",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:21:22.910437+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

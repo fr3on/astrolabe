@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: تعيين العامل الحاصل على مؤهل أثناء الخدمة دون إعلان أو امتحان\n\n## السؤال\nالتحق أحمد بالخدمة عام 2005 في وظيفة لا تتطلب مؤهلاً، وحصل على بكالوريوس التجارة عام 2010. هل يجوز تعيينه في وظيفة شاغرة تتطلب هذا المؤهل دون إعلان أو امتحان؟\n\n## الرأي المختصر\nنعم، في ظل القانون رقم 47 لسنة 1978 الذي كان يطبق على وضعه. هذا القانون كان يسمح باستثناء العاملين الذين يحصلون على مؤهل أعلى أثناء الخدمة من إجراءات الإعلان والامتحان، بشرط توفر وظيفة شاغرة ممولة، واستيفاء شروط شغلها الواردة في بطاقة الوصف، وصدور قرار من السلطة المختصة. ولكن هذا التعيين **جوازي للجهة وليس حقًا ملزمًا لها**.\n\n## السند القانوني\n1. **قانون نظام العاملين المدنيين بالدولة رقم 47 لسنة 1978**: الأصل فيه أن التعيين يكون بعد إعلان وامتحان (المادتان 17 و18 تقريبًا). ولكن المادة 25 مكررًا، المضافة بالقانون رقم 115 لسنة 1983، تجيز تعيين العامل الذي يحصل أثناء الخدمة على مؤهل أعلى في الوظيفة التي تناسب مؤهله، دون التقيد بالإعلان والامتحان، ما دامت الوظيفة شاغرة واستوفى العامل شروطها. هذا ما أذكره من النص، ويلزم التحقق من صيغته الحرفية.\n2. **مبدأ مستقر في الفتوى والقضاء الإداري**: هذا الاستثناء رخصة للإدارة تمارسها حسب تقديرها لمصلحة العمل، ولا يستطيع العامل أن يجبرها عليها. وتكون الأقدمية في الوظيفة الجديدة عادة من تاريخ التعيين فيها، مع بعض الأحكام الخاصة بالأجر.\n3. **تنبيه مهم**: ألغي القانون رقم 47 لسنة 1978، وحل محله قانون الخدمة المدنية رقم 81 لسنة 2016. ويتضمن القانون الجديد حكمًا يجيز للعامل الذي يحصل على مؤهل أعلى أثناء الخدمة أن يُعيَّن في وظيفة تناسبه وفق ضوابط محددة، منها أن تكون الوظيفة شاغرة، وأن يجتاز الاختبار الذي تحدده الجهة في بعض الحالات. لا أذكر رقم المادة بثقة، ولذلك يجب معرفة القانون الساري وقت التعيين المطلوب.\n\n## التوصية\n- تقديم طلب إلى السلطة المختصة لتعيينه في الوظيفة الشاغرة، مع إرفاق المؤهل وما يثبت استيفاء شروط بطاقة الوصف.\n- التأكد من أن الوظيفة ممولة في الموازنة.\n- إذا رفضت الجهة، فالطعن على قرار الرفض غير مضمون النتيجة، لأن للإدارة سلطة تقديرية. ولكن يمكن الطعن إذا كان الرفض مشوبًا بإساءة استعمال السلطة أو بالتمييز بين العاملين.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Job Description Card Requirement",
+     "verdict": "pass",
+     "reasoning": "The note mentions 'بطاقة الوصف' (job description card) in two places: in the brief opinion section ('واستيفاء شروط شغلها الواردة في بطاقة الوصف') and in the recommendation section ('مع إرفاق المؤهل وما يثبت استيفاء شروط بطاقة الوصف'). These references confirm that the vacant position's duties and occupancy requirements are defined in a job description card, satisfying the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Higher Qualification Must Be Required",
+     "verdict": "fail",
+     "reasoning": "The note mentions 'بطاقة الوصف' (job description card) as a condition for occupying the position, but does not specifically reference 'جداول التوصيف والترتيب' (classification and arrangement schedules) as the basis for requiring the higher qualification. The criterion specifically requires the note to state that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). This specific requirement is absent from the agent's output."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension to Non-Qualification Appointees",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the question setup that Ahmed joined service in 2005 in a position that does not require a qualification ('وظيفة لا تتطلب مؤهلاً'), and then obtained a Bachelor's degree in Commerce in 2010. The legal opinion confirms that the provision applies to workers who obtain a higher qualification during service ('العاملين الذين يحصلون على مؤهل أعلى أثناء الخدمة'), which directly addresses employees appointed to positions not requiring an academic qualification who subsequently obtained one. The note clearly confirms the provision applies to this category of employees."
+    },
+    {
+     "id": "C-004",
+     "title": "Exemption from Advertisement and Exam",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that under Law No. 47 of 1978 (as amended by Law No. 115 of 1983, Article 25 bis), Ahmed can be appointed to a vacant position matching his qualification 'دون التقيد بالإعلان والامتحان' (without being bound by advertisement and examination requirements). This clearly confirms exemption from both the advertisement requirement and the examination requirement."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Job Description Card Requirement",
+     "verdict": "pass",
+     "reasoning": "The note references بطاقة الوصف (job description card) in multiple places. In the السند القانوني section, it mentions 'استوفى العامل شروطها' in the context of the vacant position, and in the التوصية section it explicitly states 'إرفاق المؤهل وما يثبت استيفاء شروط بطاقة الوصف.' Additionally, in the الرأي المختصر section, it states 'استيفاء شروط شغلها الواردة في بطاقة الوصف.' The note confirms that the vacant position has its occupancy requirements defined in a job description card (بطاقة وصف الوظيفة), though it uses the slightly abbreviated term 'بطاقة الوصف'. However, the criterion also requires confirming that the card defines the *duties* of the position, and the note focuses primarily on the occupancy requirements/conditions rather than explicitly stating that the duties are defined in the card. Despite this partial gap, the note does reference the بطاقة الوصف as the source document for position requirements, which implicitly encompasses duties and occupancy requirements. This is a reasonable pass."
+    },
+    {
+     "id": "C-002",
+     "title": "Higher Qualification Must Be Required",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). The note mentions 'بطاقة الوصف' (job description card) and 'شروط شغلها الواردة في بطاقة الوصف' but does not specifically reference 'جداول التوصيف والترتيب' (classification and arrangement schedules). While the note does mention that the position must require the qualification and that the worker must meet the conditions in the job description card, it does not explicitly confirm the requirement in accordance with the classification and arrangement schedules as specified in the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension to Non-Qualification Appointees",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the question section that Ahmed was appointed to a position that does not require a qualification ('وظيفة لا تتطلب مؤهلاً') and subsequently obtained a bachelor's degree during service. The legal analysis confirms that the provision (Article 25 bis) applies to employees who obtain a higher qualification during service, allowing their appointment to positions matching their new qualification. The note explicitly addresses the scenario of non-qualification appointees who later obtain qualifications."
+    },
+    {
+     "id": "C-004",
+     "title": "Exemption from Advertisement and Exam",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that Ahmed is exempt from both the advertisement requirement (الإعلان) and the examination requirement (الامتحان) when being appointed to the vacant position. It references المادة 25 مكررًا which allows appointment 'دون التقيد بالإعلان والامتحان' (without being bound by advertisement and examination). The short opinion also confirms this exemption."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/job-description-card-and-qualification-requirements-for-appointment",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+  "scored_at": "2026-11-22T20:13:37.819935+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Job Description Card Requirement",
+      "verdict": "pass",
+      "reasoning": "The note mentions 'بطاقة الوصف' (job description card) in two places: in the brief opinion section ('واستيفاء شروط شغلها الواردة في بطاقة الوصف') and in the recommendation section ('مع إرفاق المؤهل وما يثبت استيفاء شروط بطاقة الوصف'). These references confirm that the vacant position's duties and occupancy requirements are defined in a job description card, satisfying the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Higher Qualification Must Be Required",
+      "verdict": "fail",
+      "reasoning": "The note mentions 'بطاقة الوصف' (job description card) as a condition for occupying the position, but does not specifically reference 'جداول التوصيف والترتيب' (classification and arrangement schedules) as the basis for requiring the higher qualification. The criterion specifically requires the note to state that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). This specific requirement is absent from the agent's output."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension to Non-Qualification Appointees",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the question setup that Ahmed joined service in 2005 in a position that does not require a qualification ('وظيفة لا تتطلب مؤهلاً'), and then obtained a Bachelor's degree in Commerce in 2010. The legal opinion confirms that the provision applies to workers who obtain a higher qualification during service ('العاملين الذين يحصلون على مؤهل أعلى أثناء الخدمة'), which directly addresses employees appointed to positions not requiring an academic qualification who subsequently obtained one. The note clearly confirms the provision applies to this category of employees."
+     },
+     {
+      "id": "C-004",
+      "title": "Exemption from Advertisement and Exam",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that under Law No. 47 of 1978 (as amended by Law No. 115 of 1983, Article 25 bis), Ahmed can be appointed to a vacant position matching his qualification 'دون التقيد بالإعلان والامتحان' (without being bound by advertisement and examination requirements). This clearly confirms exemption from both the advertisement requirement and the examination requirement."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/job-description-card-and-qualification-requirements-for-appointment",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:11:05.764938+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Job Description Card Requirement",
+      "verdict": "pass",
+      "reasoning": "The note references بطاقة الوصف (job description card) in multiple places. In the السند القانوني section, it mentions 'استوفى العامل شروطها' in the context of the vacant position, and in the التوصية section it explicitly states 'إرفاق المؤهل وما يثبت استيفاء شروط بطاقة الوصف.' Additionally, in the الرأي المختصر section, it states 'استيفاء شروط شغلها الواردة في بطاقة الوصف.' The note confirms that the vacant position has its occupancy requirements defined in a job description card (بطاقة وصف الوظيفة), though it uses the slightly abbreviated term 'بطاقة الوصف'. However, the criterion also requires confirming that the card defines the *duties* of the position, and the note focuses primarily on the occupancy requirements/conditions rather than explicitly stating that the duties are defined in the card. Despite this partial gap, the note does reference the بطاقة الوصف as the source document for position requirements, which implicitly encompasses duties and occupancy requirements. This is a reasonable pass."
+     },
+     {
+      "id": "C-002",
+      "title": "Higher Qualification Must Be Required",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the higher qualification is required for occupying the position in accordance with the classification and arrangement schedules (جداول التوصيف والترتيب). The note mentions 'بطاقة الوصف' (job description card) and 'شروط شغلها الواردة في بطاقة الوصف' but does not specifically reference 'جداول التوصيف والترتيب' (classification and arrangement schedules). While the note does mention that the position must require the qualification and that the worker must meet the conditions in the job description card, it does not explicitly confirm the requirement in accordance with the classification and arrangement schedules as specified in the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension to Non-Qualification Appointees",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the question section that Ahmed was appointed to a position that does not require a qualification ('وظيفة لا تتطلب مؤهلاً') and subsequently obtained a bachelor's degree during service. The legal analysis confirms that the provision (Article 25 bis) applies to employees who obtain a higher qualification during service, allowing their appointment to positions matching their new qualification. The note explicitly addresses the scenario of non-qualification appointees who later obtain qualifications."
+     },
+     {
+      "id": "C-004",
+      "title": "Exemption from Advertisement and Exam",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that Ahmed is exempt from both the advertisement requirement (الإعلان) and the examination requirement (الامتحان) when being appointed to the vacant position. It references المادة 25 مكررًا which allows appointment 'دون التقيد بالإعلان والامتحان' (without being bound by advertisement and examination). The short opinion also confirms this exemption."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/job-description-card-and-qualification-requirements-for-appointment",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/job-description-card-and-qualification-requirements-for-appointment",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:13:37.819581+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.75,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

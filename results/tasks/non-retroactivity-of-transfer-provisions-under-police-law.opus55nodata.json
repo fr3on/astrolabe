@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/non-retroactivity-of-transfer-provisions-under-police-law",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: احتفاظ ضابط شرطة سابق نُقل إلى وظيفة مدنية بالبدلات الثابتة\n\n## السؤال\nنُقل محمد سالم من هيئة الشرطة إلى وظيفة مدنية عام 1968. هل يحق له الاحتفاظ بالبدلات الثابتة المقررة لرتبته بعد صدور القانون رقم 109 لسنة 1971، استنادًا إلى أساسين: (أ) صلاحية رئيس الجهاز المركزي للتنظيم والإدارة في الاستثناء من أحكام كادر العمال، و(ب) وجود حق سابق في الاحتفاظ بها؟\n\n## الرأي المختصر\nعلى الأرجح لا يصلح أي من الأساسين.\n\n## الأسباب\n1. **طبيعة البدلات الثابتة**: البدلات المقررة لرتب الشرطة مرتبطة بالوظيفة الشرطية ورتبتها وطبيعة العمل فيها. والقاعدة المستقرة في فتاوى مجلس الدولة أن البدل الذي يرتبط بوظيفة معينة يتوقف صرفه إذا ترك العامل هذه الوظيفة، ما لم يوجد نص صريح يقرر الاحتفاظ به بصفة شخصية.\n2. **القانون رقم 109 لسنة 1971 بشأن هيئة الشرطة**: حسب ما أعرفه، لا يتضمن هذا القانون نصًا يقرر بأثر رجعي احتفاظ الضباط الذين نُقلوا إلى وظائف مدنية قبل صدوره ببدلات الرتبة. وأحكام النقل فيه تتعلق أساسًا بمرتب الضابط الأساسي. لست متأكدًا من وجود نص انتقالي خاص بهذه الحالة، ويلزم مراجعة نصوص القانون.\n3. **الأساس الأول (صلاحية الاستثناء من كادر العمال)**: كادر العمال نظام خاص بفئة العمال، ولا علاقة له بضباط الشرطة ولا بالعاملين المدنيين المنقولين منها. ولذلك فإن صلاحية رئيس الجهاز في الاستثناء من أحكام هذا الكادر لا يمكن مدها إلى بدلات الشرطة. كما أن الصلاحية المقررة لجهة ما لا تمنح الأفراد حقًا مكتسبًا، لأنها رخصة تقديرية للإدارة، ولم تُستعمل لصالحه أصلًا.\n4. **الأساس الثاني (الحق السابق)**: الحق المكتسب يتطلب وجود سند قانوني قائم ينشئه. وما دام صرف البدل مرتبطًا بشغل الوظيفة الشرطية، فإن الحق فيه انقضى بالنقل عام 1968، فلا يوجد حق قائم يمكن الاحتفاظ به بعد عام 1971. ولا أعرف نصًا قرر له الاحتفاظ بها عند النقل. إذا كان قرار نقله نفسه قد نص على ذلك بسند قانوني صحيح، فقد يتغير الحكم.\n\n## التوصية\n- مراجعة قرار النقل الصادر عام 1968 والنصوص التي استند إليها لمعرفة ما إذا كان يتضمن احتفاظًا شخصيًا بالبدلات.\n- ما لم يوجد هذا النص، فالمطالبة ضعيفة. ويجب أيضًا الانتباه إلى أن مدد التقادم الطويلة قد تكون انقضت.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 1,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "New Provision Post-1971",
+     "verdict": "fail",
+     "reasoning": "The agent's note does not state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) was a new provision introduced by Law No. 109 of 1971 that did not exist in prior laws. Instead, the agent states uncertainty about whether the law contains a transitional provision for this case and recommends reviewing the law's text. The agent never affirmatively identifies the allowance retention provision as newly introduced by the 1971 law and absent from earlier legislation."
+    },
+    {
+     "id": "C-002",
+     "title": "Non-Retroactivity of Transfer",
+     "verdict": "fail",
+     "reasoning": "The agent's note does not explicitly state that the transfer provision in Law No. 109 of 1971 is non-retroactive and does not cover transfer events (واقعات النقل) that occurred under laws prior to 1971. While the note mentions that the law does not contain a retroactive text preserving allowances for officers transferred before its issuance, and notes uncertainty about transitional provisions, it does not clearly articulate the principle that the transfer provisions of the 1971 law are non-retroactive and do not apply to transfers that took place under earlier laws. The criterion specifically requires the note to state that the provision does not apply to transfer events that occurred under laws preceding 1971."
+    },
+    {
+     "id": "C-003",
+     "title": "Inapplicability of CAOA Exception Authority",
+     "verdict": "pass",
+     "reasoning": "In section 3 (الأساس الأول), the note explicitly states that the authority of the Head of the Central Agency for Organization and Administration to grant exceptions from the workers' scale (كادر العمال) cannot be extended to police allowances, and furthermore that such discretionary authority does not grant individuals an acquired right ('رخصة تقديرية للإدارة') and was not even exercised in his favor. This directly addresses the criterion by stating that this exception authority cannot serve as a legal basis for establishing a prior right to retention of allowances."
+    },
+    {
+     "id": "C-004",
+     "title": "Police Law as Sole Source",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to affirmatively state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is found in the Police Force Law (قانون هيئة الشرطة) and not in the workers' scale (كادر العمال). The agent's note discusses both bases but does not clearly state that the Police Force Law is the sole/proper source for the retention of allowances provision. Instead, the note expresses uncertainty about whether Law 109/1971 contains a transitional provision for this case, and does not affirmatively identify the Police Force Law as the source of the retention rule. The note dismisses the workers' scale basis but fails to positively establish that the Police Force Law is the sole source of any retention of allowances provision."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "New Provision Post-1971",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is a new provision introduced by Law No. 109 of 1971 and did not exist in prior laws. The agent's note does not make this clear statement. Instead, it says 'لا يتضمن هذا القانون نصًا يقرر بأثر رجعي احتفاظ الضباط' and expresses uncertainty ('لست متأكدًا من وجود نص انتقالي خاص بهذه الحالة'). The note does not affirmatively state that the retention provision was newly introduced by Law 109/1971 and was absent from earlier legislation. In fact, it seems uncertain about whether such a provision even exists in Law 109/1971."
+    },
+    {
+     "id": "C-002",
+     "title": "Non-Retroactivity of Transfer",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that the 1971 law's transfer provisions do not apply retroactively to transfers that occurred under prior laws (i.e., before 1971). The agent's note does address this concept: it states that the 1971 law does not contain a provision with retroactive effect granting retention of allowances to officers transferred to civilian positions before its enactment ('لا يتضمن هذا القانون نصًا يقرر بأثر رجعي احتفاظ الضباط الذين نُقلوا إلى وظائف مدنية قبل صدوره ببدلات الرتبة'). It also notes that the transfer occurred in 1968, before the 1971 law, and that the right to the allowance ceased at the time of transfer. This effectively communicates the non-retroactivity principle — that the 1971 law's provisions do not cover transfer events that took place under prior laws. While the phrasing could be more explicit about the general non-retroactivity principle, the substance is clearly conveyed."
+    },
+    {
+     "id": "C-003",
+     "title": "Inapplicability of CAOA Exception Authority",
+     "verdict": "pass",
+     "reasoning": "The note explicitly addresses the authority of the Head of the Central Agency for Organization and Administration (رئيس الجهاز المركزي للتنظيم والإدارة) in point 3 (الأساس الأول). It states that this authority to grant exceptions from the workers' scale (كادر العمال) cannot be extended to police allowances, and furthermore that such authority is a discretionary power of the administration that does not grant individuals an acquired right ('لا يمكن مدها إلى بدلات الشرطة' and 'الصلاحية المقررة لجهة ما لا تمنح الأفراد حقًا مكتسبًا، لأنها رخصة تقديرية للإدارة'). This clearly satisfies the criterion that the note must state that such authority cannot serve as a legal basis for establishing a prior right to retention of allowances."
+    },
+    {
+     "id": "C-004",
+     "title": "Police Law as Sole Source",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is found in the Police Force Law (قانون هيئة الشرطة) and not in the workers' scale (كادر العمال). The agent's note does state that the workers' scale (كادر العمال) has no relation to police officers or transferred civil employees (point 3), and discusses the Police Force Law (القانون رقم 109 لسنة 1971) in point 2 as the relevant law regarding retention provisions. However, the agent expresses uncertainty about whether the Police Force Law actually contains a retention provision ('لا يتضمن هذا القانون نصًا يقرر بأثر رجعي احتفاظ الضباط... ببدلات الرتبة' and 'لست متأكدًا من وجود نص انتقالي خاص بهذه الحالة'). The criterion requires the note to affirmatively state that the Police Force Law IS the source of the retention provision, not the workers' scale. The agent does not affirmatively identify the Police Force Law as the source of the retention provision; instead, it questions whether such a provision exists at all. This fails to satisfy the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/non-retroactivity-of-transfer-provisions-under-police-law",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/non-retroactivity-of-transfer-provisions-under-police-law",
+  "scored_at": "2026-11-22T20:17:38.182583+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/4 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "New Provision Post-1971",
+      "verdict": "fail",
+      "reasoning": "The agent's note does not state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) was a new provision introduced by Law No. 109 of 1971 that did not exist in prior laws. Instead, the agent states uncertainty about whether the law contains a transitional provision for this case and recommends reviewing the law's text. The agent never affirmatively identifies the allowance retention provision as newly introduced by the 1971 law and absent from earlier legislation."
+     },
+     {
+      "id": "C-002",
+      "title": "Non-Retroactivity of Transfer",
+      "verdict": "fail",
+      "reasoning": "The agent's note does not explicitly state that the transfer provision in Law No. 109 of 1971 is non-retroactive and does not cover transfer events (واقعات النقل) that occurred under laws prior to 1971. While the note mentions that the law does not contain a retroactive text preserving allowances for officers transferred before its issuance, and notes uncertainty about transitional provisions, it does not clearly articulate the principle that the transfer provisions of the 1971 law are non-retroactive and do not apply to transfers that took place under earlier laws. The criterion specifically requires the note to state that the provision does not apply to transfer events that occurred under laws preceding 1971."
+     },
+     {
+      "id": "C-003",
+      "title": "Inapplicability of CAOA Exception Authority",
+      "verdict": "pass",
+      "reasoning": "In section 3 (الأساس الأول), the note explicitly states that the authority of the Head of the Central Agency for Organization and Administration to grant exceptions from the workers' scale (كادر العمال) cannot be extended to police allowances, and furthermore that such discretionary authority does not grant individuals an acquired right ('رخصة تقديرية للإدارة') and was not even exercised in his favor. This directly addresses the criterion by stating that this exception authority cannot serve as a legal basis for establishing a prior right to retention of allowances."
+     },
+     {
+      "id": "C-004",
+      "title": "Police Law as Sole Source",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to affirmatively state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is found in the Police Force Law (قانون هيئة الشرطة) and not in the workers' scale (كادر العمال). The agent's note discusses both bases but does not clearly state that the Police Force Law is the sole/proper source for the retention of allowances provision. Instead, the note expresses uncertainty about whether Law 109/1971 contains a transitional provision for this case, and does not affirmatively identify the Police Force Law as the source of the retention rule. The note dismisses the workers' scale basis but fails to positively establish that the Police Force Law is the sole source of any retention of allowances provision."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/non-retroactivity-of-transfer-provisions-under-police-law",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/non-retroactivity-of-transfer-provisions-under-police-law",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:11:29.803238+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "New Provision Post-1971",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is a new provision introduced by Law No. 109 of 1971 and did not exist in prior laws. The agent's note does not make this clear statement. Instead, it says 'لا يتضمن هذا القانون نصًا يقرر بأثر رجعي احتفاظ الضباط' and expresses uncertainty ('لست متأكدًا من وجود نص انتقالي خاص بهذه الحالة'). The note does not affirmatively state that the retention provision was newly introduced by Law 109/1971 and was absent from earlier legislation. In fact, it seems uncertain about whether such a provision even exists in Law 109/1971."
+     },
+     {
+      "id": "C-002",
+      "title": "Non-Retroactivity of Transfer",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that the 1971 law's transfer provisions do not apply retroactively to transfers that occurred under prior laws (i.e., before 1971). The agent's note does address this concept: it states that the 1971 law does not contain a provision with retroactive effect granting retention of allowances to officers transferred to civilian positions before its enactment ('لا يتضمن هذا القانون نصًا يقرر بأثر رجعي احتفاظ الضباط الذين نُقلوا إلى وظائف مدنية قبل صدوره ببدلات الرتبة'). It also notes that the transfer occurred in 1968, before the 1971 law, and that the right to the allowance ceased at the time of transfer. This effectively communicates the non-retroactivity principle — that the 1971 law's provisions do not cover transfer events that took place under prior laws. While the phrasing could be more explicit about the general non-retroactivity principle, the substance is clearly conveyed."
+     },
+     {
+      "id": "C-003",
+      "title": "Inapplicability of CAOA Exception Authority",
+      "verdict": "pass",
+      "reasoning": "The note explicitly addresses the authority of the Head of the Central Agency for Organization and Administration (رئيس الجهاز المركزي للتنظيم والإدارة) in point 3 (الأساس الأول). It states that this authority to grant exceptions from the workers' scale (كادر العمال) cannot be extended to police allowances, and furthermore that such authority is a discretionary power of the administration that does not grant individuals an acquired right ('لا يمكن مدها إلى بدلات الشرطة' and 'الصلاحية المقررة لجهة ما لا تمنح الأفراد حقًا مكتسبًا، لأنها رخصة تقديرية للإدارة'). This clearly satisfies the criterion that the note must state that such authority cannot serve as a legal basis for establishing a prior right to retention of allowances."
+     },
+     {
+      "id": "C-004",
+      "title": "Police Law as Sole Source",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the retention of allowances provision (حكم الاحتفاظ بالبدلات) is found in the Police Force Law (قانون هيئة الشرطة) and not in the workers' scale (كادر العمال). The agent's note does state that the workers' scale (كادر العمال) has no relation to police officers or transferred civil employees (point 3), and discusses the Police Force Law (القانون رقم 109 لسنة 1971) in point 2 as the relevant law regarding retention provisions. However, the agent expresses uncertainty about whether the Police Force Law actually contains a retention provision ('لا يتضمن هذا القانون نصًا يقرر بأثر رجعي احتفاظ الضباط... ببدلات الرتبة' and 'لست متأكدًا من وجود نص انتقالي خاص بهذه الحالة'). The criterion requires the note to affirmatively state that the Police Force Law IS the source of the retention provision, not the workers' scale. The agent does not affirmatively identify the Police Force Law as the source of the retention provision; instead, it questions whether such a provision exists at all. This fails to satisfy the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/non-retroactivity-of-transfer-provisions-under-police-law",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/non-retroactivity-of-transfer-provisions-under-police-law",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:17:38.182112+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.375,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

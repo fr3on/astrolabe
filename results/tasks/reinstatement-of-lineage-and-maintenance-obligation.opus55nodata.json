@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-family-and-personal-status/reinstatement-of-lineage-and-maintenance-obligation",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: رجوع الملاعن عن لعانه وأثره في النسب والنفقة\n\n**ملاحظة:** الإجابة مبنية على أحكام الفقه الإسلامي (المذاهب الأربعة) وما تأخذ به قوانين الأحوال الشخصية العربية، ومنها النظام السعودي. لا أستحضر رقم مادة محدد.\n\n## أولًا: هل يعود نسب الولد؟\n- **نعم.** إذا أكذب الملاعن نفسه بعد اللعان والحكم بنفي النسب، ثبت نسب الولد منه، وهذا متفق عليه بين الفقهاء. والعلة أن النسب حق للولد يُحتاط لإثباته، والإقرار به بعد نفيه إقرار على النفس، فيُقبل.\n- ولا يسقط هذا الحق بمرور الزمن، ما دام الإقرار صادرًا منه وهو أهل له.\n- **أثر جانبي:** يُعرّض الرجوع الرجلَ لحد القذف، أو التعزير بحسب النظام المطبق، لأنه اعترف بأنه قذف زوجته كذبًا.\n- **أما الزوجية:** فالراجح عند الجمهور أن التحريم الناشئ عن اللعان مؤبد، ولا يحل له أن يعود إليها ولو أكذب نفسه. ويرى أبو حنيفة ومحمد جواز عودتها بعقد جديد بعد إكذابه نفسه، فينبغي مراجعة المذهب أو النص المعتمد في بلد العميل.\n\n## ثانيًا: نفقة الولد بعد عودة النسب\n- يترتب على ثبوت النسب جميع آثاره، ومنها النفقة والميراث والولاية.\n- نفقة الولد الفقير العاجز عن الكسب واجبة على أبيه الموسر، إجماعًا. والعجز يكون لصغر أو مرض أو إعاقة، أو للأنثى حتى تتزوج، أو لطالب العلم في حدود معينة بحسب النظام.\n- **فيلتزم الرجل بالإنفاق** على الولد العاجز عن التكسب، بقدر يساره. ويجوز المطالبة بالنفقة من تاريخ المطالبة القضائية، وفي استحقاق نفقة عن مدة ماضية سابقة على الإقرار خلاف وتفصيل، فينبغي التحقق منه.\n\n## التوصية\nتوثيق إقرار الرجل بكذبه أمام المحكمة، وطلب الحكم بإثبات النسب وإلغاء أثر حكم النفي. ثم رفع دعوى نفقة للولد، مع تنبيه الرجل إلى احتمال مساءلته عن القذف.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Reinstatement of Lineage After Self-Denial",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first section that if the man retracts his denial (أكذب الملاعن نفسه) after the li'an and after a judgment has been issued denying lineage (بعد اللعان والحكم بنفي النسب), the child's lineage is established from him (ثبت نسب الولد منه). It further notes this is agreed upon among jurists (متفق عليه بين الفقهاء). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "No Further Denial After Admission",
+     "verdict": "fail",
+     "reasoning": "The note discusses the man retracting his denial (إكذاب نفسه) and its effects on lineage and maintenance, but it does not state that after such a retraction, any further denial of lineage is not accepted from him. The criterion specifically requires the note to address that a subsequent denial of lineage is inadmissible after the man has already retracted his denial. This point is entirely absent from the agent's output."
+    },
+    {
+     "id": "C-003",
+     "title": "Obligation of Maintenance on Heirs",
+     "verdict": "fail",
+     "reasoning": "The note discusses maintenance (نفقة) obligations but only addresses the father's obligation to maintain his child. It does not mention the broader principle that maintenance of a person unable to earn is obligatory upon his solvent heirs (وارثيه الموسرين) in proportion to their shares in inheritance. The criterion specifically requires this rule about heirs and their proportional shares to be stated."
+    },
+    {
+     "id": "C-004",
+     "title": "Father as Heir Obligated to Maintain",
+     "verdict": "pass",
+     "reasoning": "The note states that after establishment of lineage (ثبوت النسب), all its effects follow, including maintenance (النفقة), inheritance (الميراث), and guardianship (الولاية). It then states that maintenance of a child who is unable to earn is obligatory on the father. However, the criterion specifically requires the note to state that the father is among the 'heirs obligated to provide maintenance' (الورثة الملزمون بالنفقة) — framing the obligation in terms of the father's status as an heir. The note mentions inheritance and maintenance separately but does not explicitly frame the father as an heir who is thereby obligated to provide maintenance. The linkage between being an heir and being obligated to maintain is not explicitly made. That said, the note does clearly state that after lineage is established, the father is obligated to provide maintenance for the unable child, which satisfies the practical substance of the criterion even if the specific 'heir' framing is not used."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 1,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Reinstatement of Lineage After Self-Denial",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in section أولًا that if the man retracts his denial (أكذب الملاعن نفسه) after the li'an and the judgment denying lineage, the child's lineage is established from him ('ثبت نسب الولد منه'). This directly satisfies the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "No Further Denial After Admission",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that after the man retracts his denial (أكذب نفسه), a further denial of lineage is not accepted from him. The note discusses that if the man retracts his denial, the child's lineage is established, and it mentions that the admission is accepted because it is an admission against oneself. However, it does not explicitly state that after this retraction, a subsequent denial of lineage would not be accepted from him. The note does not address the scenario of a further denial after the self-retraction."
+    },
+    {
+     "id": "C-003",
+     "title": "Obligation of Maintenance on Heirs",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that maintenance of a person unable to earn is obligatory upon his solvent heirs (وارثيه الموسرين) in proportion to their shares in inheritance. The agent's note only mentions that the maintenance is obligatory upon the father (الأب) specifically, and does not discuss the broader rule about maintenance being obligatory upon solvent heirs in proportion to their inheritance shares."
+    },
+    {
+     "id": "C-004",
+     "title": "Father as Heir Obligated to Maintain",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that after establishment of lineage (ثبوت النسب), the father is among the heirs obligated to provide maintenance for the child who is unable to earn. The note does state that after lineage is established, the father is obligated to provide maintenance for the child who is unable to earn ('نفقة الولد الفقير العاجز عن الكسب واجبة على أبيه الموسر'). However, the specific criterion asks for the father to be described as among the 'heirs' (الوارثين) obligated to maintain. The note does not explicitly frame the father's obligation as being in his capacity as an heir (وارث). It mentions inheritance (الميراث) as one of the consequences of lineage, and mentions the father's obligation to maintain, but does not explicitly connect the maintenance obligation to the concept of being an heir obligated to maintain (as per the Quranic/fiqhi principle that maintenance is upon the heirs). Despite this nuance, the note does clearly state that after ثبوت النسب, the father must provide نفقة for the child unable to earn. The criterion's core requirement—that the father after establishment of lineage is obligated to provide maintenance for the unable child—is met, even if the specific 'heir' framing is not explicitly used."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/reinstatement-of-lineage-and-maintenance-obligation",
+  "task": "astrolabe-open/saudi-family-and-personal-status/reinstatement-of-lineage-and-maintenance-obligation",
+  "scored_at": "2026-11-22T22:39:24.645234+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Reinstatement of Lineage After Self-Denial",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first section that if the man retracts his denial (أكذب الملاعن نفسه) after the li'an and after a judgment has been issued denying lineage (بعد اللعان والحكم بنفي النسب), the child's lineage is established from him (ثبت نسب الولد منه). It further notes this is agreed upon among jurists (متفق عليه بين الفقهاء). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "No Further Denial After Admission",
+      "verdict": "fail",
+      "reasoning": "The note discusses the man retracting his denial (إكذاب نفسه) and its effects on lineage and maintenance, but it does not state that after such a retraction, any further denial of lineage is not accepted from him. The criterion specifically requires the note to address that a subsequent denial of lineage is inadmissible after the man has already retracted his denial. This point is entirely absent from the agent's output."
+     },
+     {
+      "id": "C-003",
+      "title": "Obligation of Maintenance on Heirs",
+      "verdict": "fail",
+      "reasoning": "The note discusses maintenance (نفقة) obligations but only addresses the father's obligation to maintain his child. It does not mention the broader principle that maintenance of a person unable to earn is obligatory upon his solvent heirs (وارثيه الموسرين) in proportion to their shares in inheritance. The criterion specifically requires this rule about heirs and their proportional shares to be stated."
+     },
+     {
+      "id": "C-004",
+      "title": "Father as Heir Obligated to Maintain",
+      "verdict": "pass",
+      "reasoning": "The note states that after establishment of lineage (ثبوت النسب), all its effects follow, including maintenance (النفقة), inheritance (الميراث), and guardianship (الولاية). It then states that maintenance of a child who is unable to earn is obligatory on the father. However, the criterion specifically requires the note to state that the father is among the 'heirs obligated to provide maintenance' (الورثة الملزمون بالنفقة) — framing the obligation in terms of the father's status as an heir. The note mentions inheritance and maintenance separately but does not explicitly frame the father as an heir who is thereby obligated to provide maintenance. The linkage between being an heir and being obligated to maintain is not explicitly made. That said, the note does clearly state that after lineage is established, the father is obligated to provide maintenance for the unable child, which satisfies the practical substance of the criterion even if the specific 'heir' framing is not used."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/reinstatement-of-lineage-and-maintenance-obligation",
+    "task": "astrolabe-open/saudi-family-and-personal-status/reinstatement-of-lineage-and-maintenance-obligation",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T22:34:38.556739+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/4 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Reinstatement of Lineage After Self-Denial",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in section أولًا that if the man retracts his denial (أكذب الملاعن نفسه) after the li'an and the judgment denying lineage, the child's lineage is established from him ('ثبت نسب الولد منه'). This directly satisfies the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "No Further Denial After Admission",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that after the man retracts his denial (أكذب نفسه), a further denial of lineage is not accepted from him. The note discusses that if the man retracts his denial, the child's lineage is established, and it mentions that the admission is accepted because it is an admission against oneself. However, it does not explicitly state that after this retraction, a subsequent denial of lineage would not be accepted from him. The note does not address the scenario of a further denial after the self-retraction."
+     },
+     {
+      "id": "C-003",
+      "title": "Obligation of Maintenance on Heirs",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that maintenance of a person unable to earn is obligatory upon his solvent heirs (وارثيه الموسرين) in proportion to their shares in inheritance. The agent's note only mentions that the maintenance is obligatory upon the father (الأب) specifically, and does not discuss the broader rule about maintenance being obligatory upon solvent heirs in proportion to their inheritance shares."
+     },
+     {
+      "id": "C-004",
+      "title": "Father as Heir Obligated to Maintain",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that after establishment of lineage (ثبوت النسب), the father is among the heirs obligated to provide maintenance for the child who is unable to earn. The note does state that after lineage is established, the father is obligated to provide maintenance for the child who is unable to earn ('نفقة الولد الفقير العاجز عن الكسب واجبة على أبيه الموسر'). However, the specific criterion asks for the father to be described as among the 'heirs' (الوارثين) obligated to maintain. The note does not explicitly frame the father's obligation as being in his capacity as an heir (وارث). It mentions inheritance (الميراث) as one of the consequences of lineage, and mentions the father's obligation to maintain, but does not explicitly connect the maintenance obligation to the concept of being an heir obligated to maintain (as per the Quranic/fiqhi principle that maintenance is upon the heirs). Despite this nuance, the note does clearly state that after ثبوت النسب, the father must provide نفقة for the child unable to earn. The criterion's core requirement—that the father after establishment of lineage is obligated to provide maintenance for the unable child—is met, even if the specific 'heir' framing is not explicitly used."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/reinstatement-of-lineage-and-maintenance-obligation",
+    "task": "astrolabe-open/saudi-family-and-personal-status/reinstatement-of-lineage-and-maintenance-obligation",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T22:39:24.644816+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.375,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

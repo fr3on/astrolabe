@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: التزام وزارة الداخلية بالضرائب الجمركية وتعويض الموافقة الاستيرادية\n\n## الوقائع\nاستوردت الوزارة سيارات عام 1995 بنظام الإفراج المؤقت دون سداد الضرائب والرسوم (104,262.680 جنيهًا)، ولم تقدم موافقة استيرادية، وتطالبها مصلحة الجمارك بالسداد، وتطلب الوزارة الإعفاء من التعويض.\n\n## السؤال الأول: الالتزام بالضرائب والرسوم\n**الرأي: نعم، تلتزم الوزارة.**\n- قانون الجمارك رقم 66 لسنة 1963 يُخضع البضائع الواردة للضرائب الجمركية ما لم يوجد نص إعفاء (المادة 5 تقريبًا). والجهات الحكومية لا تُعفى إلا بنص صريح، ولا أذكر نصًا يعفي وزارة الداخلية من ذلك مطلقًا (الإعفاءات في المادة 34 وما بعدها لا تشمل ذلك في حدود علمي، ويُرجى التحقق).\n- الإفراج المؤقت (المواد 98 وما بعدها تقريبًا) يعلق الضريبة ولا يسقطها؛ فإذا لم تُعَد تصدير البضاعة أو لم تُستوفَ شروط الإفراج المؤقت، أصبحت الضرائب مستحقة.\n- استقرت فتاوى الجمعية العمومية لقسمي الفتوى والتشريع على إلزام الجهات الحكومية بأداء الضرائب الجمركية المستحقة لمصلحة الجمارك، ما لم يوجد نص إعفاء.\n\n## السؤال الثاني: التعويض المعادل لقيمة البضاعة\n**الرأي: الأرجح لا يجوز إلزام الوزارة به، مع وجود تحفظ.**\n- قانون الاستيراد والتصدير رقم 118 لسنة 1975 كان يقرر، عند الاستيراد دون موافقة، عقوبات تشمل غرامة أو تعويضًا ومصادرة. وهذا التعويض ذو طبيعة **عقابية/جزائية** وليس دينًا ضريبيًا.\n- بحسب ما أتذكر من فتاوى الجمعية العمومية لقسمي الفتوى والتشريع، فإن الجزاءات ذات الطابع العقابي لا تُفرض على الجهات الإدارية للدولة، لأنها في النهاية تعود إلى الخزانة العامة نفسها (وحدة الذمة المالية للدولة)، ولأن الغاية الردعية غير متحققة. لكنني غير متأكد من وجود فتوى بعينها في هذه الواقعة.\n- كما يثور تساؤل عما إذا كانت الوزارة تحتاج أصلًا إلى موافقة استيرادية لاستيراد معدات لاستخدامها الحكومي، أم أن هناك استثناء للجهات الحكومية في القرارات الوزارية المنفذة؛ وهذا يحتاج إلى مراجعة.\n\n## الخلاصة\n- **سداد** الضرائب والرسوم الجمركية (104,262.680 جنيهًا): واجب.\n- **التعويض** المعادل لقيمة البضاعة: الأرجح عدم جواز إلزام الوزارة به لطابعه العقابي.\n- يُوصى بعرض النزاع على الجمعية العمومية لقسمي الفتوى والتشريع بمجلس الدولة (المادة 66/د من القانون 47 لسنة 1972) للحصول على رأي ملزم. **تنبيه:** أرقام المواد من الذاكرة ويجب التحقق منها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "General Rule of Customs Taxation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the first question section that customs law subjects imported goods to customs taxes unless there is an exemption provision ('يُخضع البضائع الواردة للضرائب الجمركية ما لم يوجد نص إعفاء'), and that government entities are only exempt if there is an explicit text ('الجهات الحكومية لا تُعفى إلا بنص صريح'). This clearly articulates the general rule that all imports are subject to customs taxes and that exemption requires a special provision."
+    },
+    {
+     "id": "C-002",
+     "title": "Obligation to Pay Customs Duties",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly states that the Ministry of Interior is obligated to pay the customs taxes and duties amounting to 104,262.680 pounds. The note explains that temporary release (الإفراج المؤقت) suspends but does not cancel the tax obligation, and that if the goods were not re-exported or the conditions of temporary release were not fulfilled, the taxes become due. This aligns with the criterion's requirement that the Ministry failed to present evidence of re-exportation or a decision granting exemption. The conclusion explicitly states that payment of the customs taxes and duties (104,262.680 pounds) is obligatory."
+    },
+    {
+     "id": "C-003",
+     "title": "No Exemption Without Evidence",
+     "verdict": "pass",
+     "reasoning": "The note states in the first question that government entities are only exempt from customs duties if there is an explicit legal text granting exemption, and that the agent does not recall any text exempting the Ministry of Interior from customs duties ('لا أذكر نصًا يعفي وزارة الداخلية من ذلك مطلقًا'). It also states that temporary release suspends but does not eliminate the tax obligation. The conclusion clearly states that payment of customs taxes is obligatory ('واجب'). This effectively communicates that there is no legal basis available to the Ministry to be released from its obligation to pay customs taxes, satisfying the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Import Law Does Not Apply to Ministries",
+     "verdict": "fail",
+     "reasoning": "The agent's note raises a question about whether the Ministry even needs an import approval for importing equipment for its own governmental use, suggesting there might be an exception for governmental entities in ministerial decrees. However, the criterion specifically requires the note to state that the provisions of Law No. 118 of 1975 do not address (i.e., do not apply to) ministries and public authorities when they import their own requirements. The agent merely raises this as a question/possibility ('يثور تساؤل') without making a clear, affirmative statement that the law does not address ministries and public authorities when importing their own requirements. This falls short of satisfying the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Rejection of Compensation Claim",
+     "verdict": "fail",
+     "reasoning": "The agent's output states that the compensation claim (التعويض المعادل لقيمة البضاعة) likely cannot be imposed on the Ministry due to its punitive/penal nature, as such penalties are not applied to state administrative bodies. However, the agent expresses this with significant hedging ('الأرجح لا يجوز', 'مع وجود تحفظ', 'غير متأكد') and does not clearly state that the claim is 'devoid of a sound legal basis and must be rejected.' The criterion requires a definitive statement that the compensation claim is devoid of sound legal basis and must be rejected, but the agent only offers a probabilistic opinion with caveats and uncertainty, stopping short of the clear, definitive rejection the criterion requires."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "General Rule of Customs Taxation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states under السؤال الأول that customs law (قانون الجمارك رقم 66 لسنة 1963) subjects imported goods to customs taxes unless there is an exemption provision ('يُخضع البضائع الواردة للضرائب الجمركية ما لم يوجد نص إعفاء'), and that government entities are not exempt unless there is an explicit text ('والجهات الحكومية لا تُعفى إلا بنص صريح'). This satisfies the criterion of stating the general rule that all imports are subject to customs taxes and exemption requires a special provision."
+    },
+    {
+     "id": "C-002",
+     "title": "Obligation to Pay Customs Duties",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the Ministry of Interior is obligated to pay the customs taxes and duties amounting to 104,262.680 pounds. It explains that temporary release suspends but does not eliminate the tax obligation, and that if the goods are not re-exported or the conditions of temporary release are not met, the taxes become due. It also notes the absence of any exemption decision. This satisfies the criterion's requirements regarding obligation to pay due to failure to present evidence of re-exportation or a decision granting exemption."
+    },
+    {
+     "id": "C-003",
+     "title": "No Exemption Without Evidence",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the Ministry is obligated to pay the customs taxes and duties, and that governmental entities are not exempted unless there is an explicit exemption text, which does not exist for the Ministry of Interior in this case. Specifically, it says 'الجهات الحكومية لا تُعفى إلا بنص صريح، ولا أذكر نصًا يعفي وزارة الداخلية من ذلك مطلقًا' and concludes that payment is 'واجب'. This effectively states there is no legal basis (سند) available to the Ministry to be released from its obligation to pay customs taxes."
+    },
+    {
+     "id": "C-004",
+     "title": "Import Law Does Not Apply to Ministries",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the provisions of Law No. 118 of 1975 do not address ministries and public authorities when they import their own requirements. The agent's note does not explicitly make this statement. Instead, it raises a question ('يثور تساؤل عما إذا كانت الوزارة تحتاج أصلًا إلى موافقة استيرادية') about whether the ministry needs import approval at all, and suggests this needs further review. It does not affirmatively state that Law 118 of 1975 does not address/apply to ministries importing their own requirements. The note hedges and expresses uncertainty rather than making the clear declarative statement required by the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Rejection of Compensation Claim",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the claim to oblige the Ministry of Interior to pay compensation for failure to present the import approval is devoid of a sound legal basis and must be rejected. The agent's note says 'الأرجح لا يجوز إلزام الوزارة به' (it is most likely not permissible to oblige the Ministry) and in the conclusion states 'الأرجح عدم جواز إلزام الوزارة به لطابعه العقابي' (most likely the Ministry cannot be obliged due to its punitive nature). However, the language is hedged ('الأرجح' = most likely) and includes reservations ('مع وجود تحفظ', 'لكنني غير متأكد'). The criterion requires a clear statement that the claim 'is devoid of a sound legal basis and must be rejected.' The agent's output does not clearly state that the claim is devoid of legal basis - it uses probabilistic/hedged language rather than a definitive rejection. It recommends referring the matter to the General Assembly for a binding opinion rather than definitively rejecting the claim. This falls short of the criterion's requirement for a clear statement of rejection."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/customs-duty-obligation-and-exemption-requirements-for-ministries",
+  "task": "astrolabe-open/egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+  "scored_at": "2026-11-22T22:06:27.630525+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "General Rule of Customs Taxation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the first question section that customs law subjects imported goods to customs taxes unless there is an exemption provision ('يُخضع البضائع الواردة للضرائب الجمركية ما لم يوجد نص إعفاء'), and that government entities are only exempt if there is an explicit text ('الجهات الحكومية لا تُعفى إلا بنص صريح'). This clearly articulates the general rule that all imports are subject to customs taxes and that exemption requires a special provision."
+     },
+     {
+      "id": "C-002",
+      "title": "Obligation to Pay Customs Duties",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly states that the Ministry of Interior is obligated to pay the customs taxes and duties amounting to 104,262.680 pounds. The note explains that temporary release (الإفراج المؤقت) suspends but does not cancel the tax obligation, and that if the goods were not re-exported or the conditions of temporary release were not fulfilled, the taxes become due. This aligns with the criterion's requirement that the Ministry failed to present evidence of re-exportation or a decision granting exemption. The conclusion explicitly states that payment of the customs taxes and duties (104,262.680 pounds) is obligatory."
+     },
+     {
+      "id": "C-003",
+      "title": "No Exemption Without Evidence",
+      "verdict": "pass",
+      "reasoning": "The note states in the first question that government entities are only exempt from customs duties if there is an explicit legal text granting exemption, and that the agent does not recall any text exempting the Ministry of Interior from customs duties ('لا أذكر نصًا يعفي وزارة الداخلية من ذلك مطلقًا'). It also states that temporary release suspends but does not eliminate the tax obligation. The conclusion clearly states that payment of customs taxes is obligatory ('واجب'). This effectively communicates that there is no legal basis available to the Ministry to be released from its obligation to pay customs taxes, satisfying the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Import Law Does Not Apply to Ministries",
+      "verdict": "fail",
+      "reasoning": "The agent's note raises a question about whether the Ministry even needs an import approval for importing equipment for its own governmental use, suggesting there might be an exception for governmental entities in ministerial decrees. However, the criterion specifically requires the note to state that the provisions of Law No. 118 of 1975 do not address (i.e., do not apply to) ministries and public authorities when they import their own requirements. The agent merely raises this as a question/possibility ('يثور تساؤل') without making a clear, affirmative statement that the law does not address ministries and public authorities when importing their own requirements. This falls short of satisfying the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Rejection of Compensation Claim",
+      "verdict": "fail",
+      "reasoning": "The agent's output states that the compensation claim (التعويض المعادل لقيمة البضاعة) likely cannot be imposed on the Ministry due to its punitive/penal nature, as such penalties are not applied to state administrative bodies. However, the agent expresses this with significant hedging ('الأرجح لا يجوز', 'مع وجود تحفظ', 'غير متأكد') and does not clearly state that the claim is 'devoid of a sound legal basis and must be rejected.' The criterion requires a definitive statement that the compensation claim is devoid of sound legal basis and must be rejected, but the agent only offers a probabilistic opinion with caveats and uncertainty, stopping short of the clear, definitive rejection the criterion requires."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "task": "astrolabe-open/egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T21:57:00.456274+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "General Rule of Customs Taxation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states under السؤال الأول that customs law (قانون الجمارك رقم 66 لسنة 1963) subjects imported goods to customs taxes unless there is an exemption provision ('يُخضع البضائع الواردة للضرائب الجمركية ما لم يوجد نص إعفاء'), and that government entities are not exempt unless there is an explicit text ('والجهات الحكومية لا تُعفى إلا بنص صريح'). This satisfies the criterion of stating the general rule that all imports are subject to customs taxes and exemption requires a special provision."
+     },
+     {
+      "id": "C-002",
+      "title": "Obligation to Pay Customs Duties",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the Ministry of Interior is obligated to pay the customs taxes and duties amounting to 104,262.680 pounds. It explains that temporary release suspends but does not eliminate the tax obligation, and that if the goods are not re-exported or the conditions of temporary release are not met, the taxes become due. It also notes the absence of any exemption decision. This satisfies the criterion's requirements regarding obligation to pay due to failure to present evidence of re-exportation or a decision granting exemption."
+     },
+     {
+      "id": "C-003",
+      "title": "No Exemption Without Evidence",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the Ministry is obligated to pay the customs taxes and duties, and that governmental entities are not exempted unless there is an explicit exemption text, which does not exist for the Ministry of Interior in this case. Specifically, it says 'الجهات الحكومية لا تُعفى إلا بنص صريح، ولا أذكر نصًا يعفي وزارة الداخلية من ذلك مطلقًا' and concludes that payment is 'واجب'. This effectively states there is no legal basis (سند) available to the Ministry to be released from its obligation to pay customs taxes."
+     },
+     {
+      "id": "C-004",
+      "title": "Import Law Does Not Apply to Ministries",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the provisions of Law No. 118 of 1975 do not address ministries and public authorities when they import their own requirements. The agent's note does not explicitly make this statement. Instead, it raises a question ('يثور تساؤل عما إذا كانت الوزارة تحتاج أصلًا إلى موافقة استيرادية') about whether the ministry needs import approval at all, and suggests this needs further review. It does not affirmatively state that Law 118 of 1975 does not address/apply to ministries importing their own requirements. The note hedges and expresses uncertainty rather than making the clear declarative statement required by the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Rejection of Compensation Claim",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the claim to oblige the Ministry of Interior to pay compensation for failure to present the import approval is devoid of a sound legal basis and must be rejected. The agent's note says 'الأرجح لا يجوز إلزام الوزارة به' (it is most likely not permissible to oblige the Ministry) and in the conclusion states 'الأرجح عدم جواز إلزام الوزارة به لطابعه العقابي' (most likely the Ministry cannot be obliged due to its punitive nature). However, the language is hedged ('الأرجح' = most likely) and includes reservations ('مع وجود تحفظ', 'لكنني غير متأكد'). The criterion requires a clear statement that the claim 'is devoid of a sound legal basis and must be rejected.' The agent's output does not clearly state that the claim is devoid of legal basis - it uses probabilistic/hedged language rather than a definitive rejection. It recommends referring the matter to the General Assembly for a binding opinion rather than definitively rejecting the claim. This falls short of the criterion's requirement for a clear statement of rejection."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "task": "astrolabe-open/egypt-tax-and-customs/customs-duty-obligation-and-exemption-requirements-for-ministries",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T22:06:27.630005+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

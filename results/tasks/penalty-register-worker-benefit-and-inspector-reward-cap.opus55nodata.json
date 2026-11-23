@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: الغرامات التي يوقّعها صاحب العمل ومكافأة المفتش\n\n**ملاحظة أولية:** لم تحدد الوقائع الدولة. ما يلي مبني أساسًا على نظام العمل السعودي، مع الإشارة إلى المبادئ المشابهة في القانون المصري. أرقام المواد مذكورة بقدر ما أتذكر، ويجب التحقق منها من النص الرسمي.\n\n## أولًا: ما كان يجب على صاحب العمل فعله\n1. **لائحة جزاءات معتمدة:** لا يجوز توقيع جزاء غير وارد في لائحة تنظيم العمل أو لائحة الجزاءات المعتمدة من الجهة المختصة (وزارة العمل/الموارد البشرية).\n2. **التحقيق الكتابي:** لا يُوقَّع الجزاء إلا بعد إبلاغ العامل كتابةً بما نُسب إليه، وسماع أقواله وتحقيق دفاعه، وتدوين ذلك في محضر. ويجب إبلاغه بالقرار كتابةً، وله حق التظلم.\n3. **حدود الغرامة:** لا يجوز أن تزيد الغرامة عن المخالفة الواحدة على أجر خمسة أيام، ولا أن يُقتطع لسداد الغرامات أكثر من أجر خمسة أيام في الشهر الواحد.\n4. **سجل الجزاءات:** يجب تسجيل الغرامات في سجل خاص يبيّن اسم العامل ومقدار أجره ومقدار الغرامة وسببها وتاريخ توقيعها.\n5. **مصير المبالغ:** لا يجوز لصاحب العمل أن يأخذ مبالغ الغرامات لنفسه. تُودَع في حساب خاص وتُصرف فيما يعود بالنفع على عمال المنشأة. وإذا لم توجد لجنة عمالية، فالصرف يكون بموافقة الوزارة أو الجهة المختصة، أو وفق ما يحدده قرار وزاري. (في نظام العمل السعودي هذه الأحكام موجودة في المواد 66 إلى 72 تقريبًا، ولست متأكدًا من الأرقام بالضبط. وفي القانون المصري يوجد حكم مشابه بتخصيص حصيلة الغرامات لصالح العمال.)\n\n**النتيجة:** توقيع غرامات دون تسجيلها، وأخذ حصيلتها لنفسه، مخالفتان صريحتان. يجوز للمفتشة تحرير محضر ضبط وإحالته لتوقيع العقوبات المقررة. ويحق للعمال استرداد المبالغ التي اقتُطعت منهم دون حق.\n\n## ثانيًا: هل تستحق سارة مكافأة مالية؟\n- يتضمن نظام العمل السعودي، في باب العقوبات، حكمًا يجيز للوزير منح من ساعد في كشف المخالفات مكافأة مالية من حصيلة الغرامة المحكوم بها، لا تتجاوز في حدود ما أتذكر **ربع الغرامة**، ويشمل ذلك مفتشي العمل. لست متأكدًا من رقم المادة، وأرجّح أنها من المواد 236 إلى 241.\n- هذه المكافأة **جوازية وليست حقًا مكتسبًا.** تتوقف على صدور قرار من الوزير وعلى تحصيل الغرامة فعلًا، فلا تستطيع سارة المطالبة بها كحق.\n- في القانون المصري لا أعرف نصًا مماثلًا يمنح المفتش مكافأة من الغرامات، لأن الكشف عن المخالفات من صميم عمله الوظيفي.\n\n## التوصية\nتحرير محضر مفصّل بالمخالفات وإرفاق إفادات العمال، ثم التقدم بطلب المكافأة عبر الجهة الإدارية بعد صدور الحكم بالغرامة وتحصيلها، مع مراجعة النص الحالي للنظام ولوائحه التنفيذية.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Penalty Register Requirement",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states in section 4 (سجل الجزاءات) that the employer must record penalties in a special register (سجل خاص) that includes: the worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سببها), and date of imposition (تاريخ توقيعها). All five required elements are present."
+    },
+    {
+     "id": "C-002",
+     "title": "Penalties Must Benefit Workers",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states both required elements: (1) 'لا يجوز لصاحب العمل أن يأخذ مبالغ الغرامات لنفسه' (the employer may not take the penalty amounts for himself), and (2) 'تُودَع في حساب خاص وتُصرف فيما يعود بالنفع على عمال المنشأة' (they are deposited in a special account and spent on matters that benefit the workers of the establishment). Both conditions of the criterion are satisfied."
+    },
+    {
+     "id": "C-003",
+     "title": "Ministry Approval When No Committee",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section أولًا, point 5: 'وإذا لم توجد لجنة عمالية، فالصرف يكون بموافقة الوزارة أو الجهة المختصة' — which directly addresses the criterion that in the absence of a labor committee (لجنة عمالية), disposal of penalty amounts requires the approval of the Ministry."
+    },
+    {
+     "id": "C-004",
+     "title": "Inspector Reward Eligibility",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 'ثانيًا' that the system includes a provision allowing the Minister ('الوزير') to grant a financial reward ('مكافأة مالية') to those who helped in detecting violations, and specifically mentions that this includes labor inspectors ('مفتشي العمل'). This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Reward Cap",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states that the financial reward does not exceed 'ربع الغرامة' (a quarter of the fine, i.e., 25%) of the collected fine amount. This satisfies the criterion requiring the note to state that the financial reward does not exceed 25% of the amount of the collected fine."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 5,
+   "n_criteria": 5,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Penalty Register Requirement",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 4 under the first section: 'يجب تسجيل الغرامات في سجل خاص يبيّن اسم العامل ومقدار أجره ومقدار الغرامة وسببها وتاريخ توقيعها' — which covers all required elements: special register (سجل خاص), worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سببها), and its date (تاريخ توقيعها)."
+    },
+    {
+     "id": "C-002",
+     "title": "Penalties Must Benefit Workers",
+     "verdict": "pass",
+     "reasoning": "The note clearly states both requirements: 'لا يجوز لصاحب العمل أن يأخذ مبالغ الغرامات لنفسه' (the employer may not take penalty amounts for himself) and 'تُودَع في حساب خاص وتُصرف فيما يعود بالنفع على عمال المنشأة' (they are deposited in a special account and spent on matters that benefit the workers of the establishment). Both elements of the criterion are satisfied."
+    },
+    {
+     "id": "C-003",
+     "title": "Ministry Approval When No Committee",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'وإذا لم توجد لجنة عمالية، فالصرف يكون بموافقة الوزارة أو الجهة المختصة' which clearly indicates that in the absence of a labor committee (لجنة عمالية), the disposal of penalty amounts requires the approval of the Ministry."
+    },
+    {
+     "id": "C-004",
+     "title": "Inspector Reward Eligibility",
+     "verdict": "pass",
+     "reasoning": "The note states that the Minister may grant a financial reward (مكافأة مالية) to those who helped detect violations, including labor inspectors ('يجيز للوزير منح من ساعد في كشف المخالفات مكافأة مالية من حصيلة الغرامة المحكوم بها... ويشمل ذلك مفتشي العمل'). This satisfies the criterion requiring the note to state that the Minister may grant a financial reward to inspection employees who assist in detecting violations."
+    },
+    {
+     "id": "C-005",
+     "title": "Reward Cap",
+     "verdict": "pass",
+     "reasoning": "The note states that the reward does not exceed 'ربع الغرامة' (a quarter of the fine), which is equivalent to 25% of the collected fine. This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+  "scored_at": "2026-11-22T22:28:05.211596+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Penalty Register Requirement",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states in section 4 (سجل الجزاءات) that the employer must record penalties in a special register (سجل خاص) that includes: the worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سببها), and date of imposition (تاريخ توقيعها). All five required elements are present."
+     },
+     {
+      "id": "C-002",
+      "title": "Penalties Must Benefit Workers",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states both required elements: (1) 'لا يجوز لصاحب العمل أن يأخذ مبالغ الغرامات لنفسه' (the employer may not take the penalty amounts for himself), and (2) 'تُودَع في حساب خاص وتُصرف فيما يعود بالنفع على عمال المنشأة' (they are deposited in a special account and spent on matters that benefit the workers of the establishment). Both conditions of the criterion are satisfied."
+     },
+     {
+      "id": "C-003",
+      "title": "Ministry Approval When No Committee",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section أولًا, point 5: 'وإذا لم توجد لجنة عمالية، فالصرف يكون بموافقة الوزارة أو الجهة المختصة' — which directly addresses the criterion that in the absence of a labor committee (لجنة عمالية), disposal of penalty amounts requires the approval of the Ministry."
+     },
+     {
+      "id": "C-004",
+      "title": "Inspector Reward Eligibility",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 'ثانيًا' that the system includes a provision allowing the Minister ('الوزير') to grant a financial reward ('مكافأة مالية') to those who helped in detecting violations, and specifically mentions that this includes labor inspectors ('مفتشي العمل'). This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Reward Cap",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states that the financial reward does not exceed 'ربع الغرامة' (a quarter of the fine, i.e., 25%) of the collected fine amount. This satisfies the criterion requiring the note to state that the financial reward does not exceed 25% of the amount of the collected fine."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T22:20:08.070227+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "5/5 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 5,
+    "n_passed": 5,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Penalty Register Requirement",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 4 under the first section: 'يجب تسجيل الغرامات في سجل خاص يبيّن اسم العامل ومقدار أجره ومقدار الغرامة وسببها وتاريخ توقيعها' — which covers all required elements: special register (سجل خاص), worker's name (اسم العامل), wage amount (مقدار أجره), penalty amount (مقدار الغرامة), reason for the penalty (سببها), and its date (تاريخ توقيعها)."
+     },
+     {
+      "id": "C-002",
+      "title": "Penalties Must Benefit Workers",
+      "verdict": "pass",
+      "reasoning": "The note clearly states both requirements: 'لا يجوز لصاحب العمل أن يأخذ مبالغ الغرامات لنفسه' (the employer may not take penalty amounts for himself) and 'تُودَع في حساب خاص وتُصرف فيما يعود بالنفع على عمال المنشأة' (they are deposited in a special account and spent on matters that benefit the workers of the establishment). Both elements of the criterion are satisfied."
+     },
+     {
+      "id": "C-003",
+      "title": "Ministry Approval When No Committee",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'وإذا لم توجد لجنة عمالية، فالصرف يكون بموافقة الوزارة أو الجهة المختصة' which clearly indicates that in the absence of a labor committee (لجنة عمالية), the disposal of penalty amounts requires the approval of the Ministry."
+     },
+     {
+      "id": "C-004",
+      "title": "Inspector Reward Eligibility",
+      "verdict": "pass",
+      "reasoning": "The note states that the Minister may grant a financial reward (مكافأة مالية) to those who helped detect violations, including labor inspectors ('يجيز للوزير منح من ساعد في كشف المخالفات مكافأة مالية من حصيلة الغرامة المحكوم بها... ويشمل ذلك مفتشي العمل'). This satisfies the criterion requiring the note to state that the Minister may grant a financial reward to inspection employees who assist in detecting violations."
+     },
+     {
+      "id": "C-005",
+      "title": "Reward Cap",
+      "verdict": "pass",
+      "reasoning": "The note states that the reward does not exceed 'ربع الغرامة' (a quarter of the fine), which is equivalent to 25% of the collected fine. This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "task": "astrolabe-open/saudi-employment-and-labour/penalty-register-worker-benefit-and-inspector-reward-cap",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T22:28:05.211180+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

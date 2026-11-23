@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: الترخيص بتعلية مبنى به دور مخالف دون ترخيص\n\n## الوقائع\nيمتلك أحمد سالم عقارًا في القاهرة من ثلاثة أدوار. بُني الأول والثاني بترخيص صادر في 1995، وأُضيف الثالث في 2005 دون ترخيص. ويرغب في 2023 في إضافة دور رابع، والمبنى مطابق للاشتراطات البنائية والسلامة الإنشائية.\n\n## السؤال\nهل يحق له الحصول على ترخيص بالتعلية؟\n\n## الرأي المختصر\n**لا يحق له الحصول على ترخيص التعلية ما دام الدور الثالث قائمًا دون ترخيص.** والطريق المتاح هو أن يقنن وضع الدور الثالث أولًا بالتصالح وفقًا لقانون التصالح، ثم يتقدم بطلب التعلية إذا سمحت الاشتراطات التخطيطية والبنائية (الارتفاع المسموح والكثافة) بدور رابع.\n\n## السند والتحليل\n1. **قانون البناء رقم 119 لسنة 2008 ولائحته التنفيذية**: حسب علمي، لا يجوز إنشاء أو تعلية أي مبنى إلا بترخيص من الجهة الإدارية المختصة. ومن شروط ترخيص التعلية أن يكون المبنى القائم مرخصًا، وأن يتحمل هيكله التعلية بشهادة إنشائية من مهندس استشاري، وأن تسمح قيود الارتفاع. وجود دور مبني دون ترخيص يجعل المبنى القائم مخالفًا، فلا يجوز البناء فوقه. **لست متأكدًا** من رقم المادة.\n2. **مطابقة المبنى للاشتراطات لا تُغني عن الترخيص**: كون الدور الثالث مطابقًا فنيًا لا يحوّله إلى دور مرخص. المخالفة هنا هي البناء دون ترخيص، ولا تزول إلا بالتصالح أو بإجراء قانوني آخر.\n3. **قوانين التصالح**: صدر القانون رقم 17 لسنة 2019 بشأن التصالح في بعض مخالفات البناء وتقنين أوضاعها، ثم صدر قانون جديد للتصالح في 2023 (أظنه القانون رقم 187 لسنة 2023، **ولست متأكدًا تمامًا** من الرقم). يسمح التصالح عن الأعمال المخالفة المقامة قبل تاريخ معين، ومنها البناء دون ترخيص، مقابل رسوم، بشرط ألا تمس السلامة الإنشائية وألا تقع ضمن المخالفات المستثناة (مثل تجاوز قيود الارتفاع المقررة لاعتبارات الطيران أو التعدي على خطوط التنظيم أو أملاك الدولة). ومطابقة المبنى للاشتراطات وسلامته الإنشائية تجعل فرص قبول التصالح جيدة.\n4. **أثر التصالح**: حسب علمي، يترتب على قبول التصالح ما يترتب على الترخيص بالنسبة للأعمال التي شملها، فيصبح الدور الثالث في حكم المرخص. بعد ذلك يمكن طلب ترخيص التعلية وفقًا للقواعد العادية. ويُراعى أيضًا أن القاهرة كانت تخضع في فترات لقيود أو وقف مؤقت على تراخيص البناء والتعلية، وفرضت اشتراطات تخطيطية جديدة، فيجب التحقق من الوضع الحالي.\n\n## التوصية\n1. تقديم طلب تصالح عن الدور الثالث للجهة المختصة (الحي) وفقًا لقانون التصالح الساري، مع تقرير سلامة إنشائية معتمد.\n2. بعد قبول التصالح وصدور الشهادة، التحقق من الارتفاع والكثافة المسموح بهما في المنطقة.\n3. ثم تقديم طلب ترخيص التعلية مع شهادة من مهندس استشاري بقدرة الهيكل على تحمل الدور الرابع.\n4. عدم البدء في البناء قبل صدور الترخيص، لأن ذلك يعرّضه للإزالة والعقوبات الجنائية المقررة بقانون البناء.\n\n*تنبيه: هذه المذكرة مبنية على المعرفة العامة دون نصوص مرفقة، ويجب التحقق من أرقام القوانين والمواد والقرارات المحلية السارية.*",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement of prior license for all floors",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 1 under 'السند والتحليل': 'ومن شروط ترخيص التعلية أن يكون المبنى القائم مرخصًا' (one of the conditions for a superstructure addition license is that the existing building must be licensed), and further states 'وجود دور مبني دون ترخيص يجعل المبنى القائم مخالفًا، فلا يجوز البناء فوقه' (the existence of a floor built without a license makes the existing building non-compliant, so building on top of it is not permitted). This clearly conveys that all floors must have been built under a prior license as a condition for issuing a superstructure addition license."
+    },
+    {
+     "id": "C-002",
+     "title": "Unlicensed construction is a criminal offense",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that constructing the third floor without a license constitutes a criminal offense (جريمة جنائية). The only mention of criminal penalties is in recommendation #4, where it warns against starting construction before obtaining a license, noting that doing so would expose him to removal and criminal penalties under the Building Law. However, this refers to future potential violations, not to the existing third floor built without a license. The note never characterizes the already-built unlicensed third floor as a criminal offense punishable by law."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on legalizing what was illegally built",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not state that what was prohibited from being done may not be sought to be legitimized after it has been committed. In fact, the agent explicitly recommends the opposite: pursuing 'tawfiq al-awda'' (reconciliation/legalization) through the 2019 and 2023 reconciliation laws to legitimize the unlicensed third floor. The agent treats legalization/reconciliation as a valid and available path, contradicting the criterion which requires stating that violations cannot be recognized or validated."
+    },
+    {
+     "id": "C-004",
+     "title": "Compliance with building conditions does not override the rule",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 of the analysis: 'مطابقة المبنى للاشتراطات لا تُغني عن الترخيص: كون الدور الثالث مطابقًا فنيًا لا يحوّله إلى دور مرخص. المخالفة هنا هي البناء دون ترخيص، ولا تزول إلا بالتصالح أو بإجراء قانوني آخر.' This directly addresses the criterion by stating that the building's compliance with construction conditions does not convert the unlicensed floor into a licensed one, and therefore does not permit granting a superstructure addition license."
+    },
+    {
+     "id": "C-005",
+     "title": "Recommendation for remedial legislation",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention any recommendation by the General Assembly to enact legislation addressing buildings constructed without a license. The note discusses existing laws (Law 119 of 2008, reconciliation laws of 2019 and 2023) and provides practical recommendations to the client, but contains no reference to a General Assembly recommendation for remedial legislation."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Requirement of prior license for all floors",
+     "verdict": "pass",
+     "reasoning": "The note states in point 1 of the analysis: 'ومن شروط ترخيص التعلية أن يكون المبنى القائم مرخصًا' (among the conditions for a superstructure addition license is that the existing building must be licensed). It also states: 'وجود دور مبني دون ترخيص يجعل المبنى القائم مخالفًا، فلا يجوز البناء فوقه' (the existence of an unlicensed floor makes the existing building in violation, so building on top of it is not permitted). This clearly conveys that all floors must have been built under a prior license as a condition for issuing a superstructure addition license."
+    },
+    {
+     "id": "C-002",
+     "title": "Unlicensed construction is a criminal offense",
+     "verdict": "fail",
+     "reasoning": "The note mentions in the recommendation section (point 4) that building without a license exposes the owner to 'العقوبات الجنائية المقررة بقانون البناء' (criminal penalties prescribed by the building law), and refers to removal and criminal sanctions. However, it does not explicitly state that the construction of the third floor without a license constitutes a criminal offense (جريمة جنائية) punishable by law. The reference to criminal penalties is only in the context of future unauthorized construction (the fourth floor), not specifically addressing the third floor's unlicensed construction as a criminal offense. The criterion requires the note to state that constructing the third floor without a license constitutes a criminal offense punishable by law, which it does not clearly do."
+    },
+    {
+     "id": "C-003",
+     "title": "Prohibition on legalizing what was illegally built",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that what was prohibited from being done may not be sought to be legitimized after it has been committed — i.e., that the violation (building without a license) cannot be recognized or validated. However, the agent's note actually recommends the opposite: it advises the client to pursue reconciliation/legalization (تصالح) of the unlicensed third floor, treating it as a viable path to legitimize the violation. The note does not contain any statement about the principle that what was prohibited cannot be sought to be legitimized after the fact. In fact, the entire thrust of the advice is about how to legalize the illegal construction."
+    },
+    {
+     "id": "C-004",
+     "title": "Compliance with building conditions does not override the rule",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 2 of the analysis: 'مطابقة المبنى للاشتراطات لا تُغني عن الترخيص' (compliance with building conditions does not substitute for the license), and explains that the building being technically compliant does not convert the unlicensed floor into a licensed one, and the violation persists until resolved through reconciliation or other legal means. This clearly satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Recommendation for remedial legislation",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the General Assembly recommended enacting legislation to address the situation of buildings constructed without a license. The agent's note does not mention any recommendation by the General Assembly (الجمعية العمومية) regarding enacting legislation. It discusses reconciliation laws and building permits but does not reference any General Assembly recommendation."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/criminal-liability-for-unlicensed-construction-on-buildings",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+  "scored_at": "2026-11-22T20:12:35.718607+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement of prior license for all floors",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 1 under 'السند والتحليل': 'ومن شروط ترخيص التعلية أن يكون المبنى القائم مرخصًا' (one of the conditions for a superstructure addition license is that the existing building must be licensed), and further states 'وجود دور مبني دون ترخيص يجعل المبنى القائم مخالفًا، فلا يجوز البناء فوقه' (the existence of a floor built without a license makes the existing building non-compliant, so building on top of it is not permitted). This clearly conveys that all floors must have been built under a prior license as a condition for issuing a superstructure addition license."
+     },
+     {
+      "id": "C-002",
+      "title": "Unlicensed construction is a criminal offense",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that constructing the third floor without a license constitutes a criminal offense (جريمة جنائية). The only mention of criminal penalties is in recommendation #4, where it warns against starting construction before obtaining a license, noting that doing so would expose him to removal and criminal penalties under the Building Law. However, this refers to future potential violations, not to the existing third floor built without a license. The note never characterizes the already-built unlicensed third floor as a criminal offense punishable by law."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on legalizing what was illegally built",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not state that what was prohibited from being done may not be sought to be legitimized after it has been committed. In fact, the agent explicitly recommends the opposite: pursuing 'tawfiq al-awda'' (reconciliation/legalization) through the 2019 and 2023 reconciliation laws to legitimize the unlicensed third floor. The agent treats legalization/reconciliation as a valid and available path, contradicting the criterion which requires stating that violations cannot be recognized or validated."
+     },
+     {
+      "id": "C-004",
+      "title": "Compliance with building conditions does not override the rule",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 of the analysis: 'مطابقة المبنى للاشتراطات لا تُغني عن الترخيص: كون الدور الثالث مطابقًا فنيًا لا يحوّله إلى دور مرخص. المخالفة هنا هي البناء دون ترخيص، ولا تزول إلا بالتصالح أو بإجراء قانوني آخر.' This directly addresses the criterion by stating that the building's compliance with construction conditions does not convert the unlicensed floor into a licensed one, and therefore does not permit granting a superstructure addition license."
+     },
+     {
+      "id": "C-005",
+      "title": "Recommendation for remedial legislation",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention any recommendation by the General Assembly to enact legislation addressing buildings constructed without a license. The note discusses existing laws (Law 119 of 2008, reconciliation laws of 2019 and 2023) and provides practical recommendations to the client, but contains no reference to a General Assembly recommendation for remedial legislation."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/criminal-liability-for-unlicensed-construction-on-buildings",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:08:11.428930+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Requirement of prior license for all floors",
+      "verdict": "pass",
+      "reasoning": "The note states in point 1 of the analysis: 'ومن شروط ترخيص التعلية أن يكون المبنى القائم مرخصًا' (among the conditions for a superstructure addition license is that the existing building must be licensed). It also states: 'وجود دور مبني دون ترخيص يجعل المبنى القائم مخالفًا، فلا يجوز البناء فوقه' (the existence of an unlicensed floor makes the existing building in violation, so building on top of it is not permitted). This clearly conveys that all floors must have been built under a prior license as a condition for issuing a superstructure addition license."
+     },
+     {
+      "id": "C-002",
+      "title": "Unlicensed construction is a criminal offense",
+      "verdict": "fail",
+      "reasoning": "The note mentions in the recommendation section (point 4) that building without a license exposes the owner to 'العقوبات الجنائية المقررة بقانون البناء' (criminal penalties prescribed by the building law), and refers to removal and criminal sanctions. However, it does not explicitly state that the construction of the third floor without a license constitutes a criminal offense (جريمة جنائية) punishable by law. The reference to criminal penalties is only in the context of future unauthorized construction (the fourth floor), not specifically addressing the third floor's unlicensed construction as a criminal offense. The criterion requires the note to state that constructing the third floor without a license constitutes a criminal offense punishable by law, which it does not clearly do."
+     },
+     {
+      "id": "C-003",
+      "title": "Prohibition on legalizing what was illegally built",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that what was prohibited from being done may not be sought to be legitimized after it has been committed — i.e., that the violation (building without a license) cannot be recognized or validated. However, the agent's note actually recommends the opposite: it advises the client to pursue reconciliation/legalization (تصالح) of the unlicensed third floor, treating it as a viable path to legitimize the violation. The note does not contain any statement about the principle that what was prohibited cannot be sought to be legitimized after the fact. In fact, the entire thrust of the advice is about how to legalize the illegal construction."
+     },
+     {
+      "id": "C-004",
+      "title": "Compliance with building conditions does not override the rule",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 2 of the analysis: 'مطابقة المبنى للاشتراطات لا تُغني عن الترخيص' (compliance with building conditions does not substitute for the license), and explains that the building being technically compliant does not convert the unlicensed floor into a licensed one, and the violation persists until resolved through reconciliation or other legal means. This clearly satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Recommendation for remedial legislation",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the General Assembly recommended enacting legislation to address the situation of buildings constructed without a license. The agent's note does not mention any recommendation by the General Assembly (الجمعية العمومية) regarding enacting legislation. It discusses reconciliation laws and building permits but does not reference any General Assembly recommendation."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/criminal-liability-for-unlicensed-construction-on-buildings",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/criminal-liability-for-unlicensed-construction-on-buildings",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:12:35.718204+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.4,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

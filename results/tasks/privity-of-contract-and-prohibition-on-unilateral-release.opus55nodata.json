@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: المسؤول عن سداد مستحقات شركة الصناعات الإلكترونية والرجوع على هيئة التمويل\n\n## الوقائع\n- أبرمت هيئة تمويل العلوم والتكنولوجيا والابتكار (الممول) عقد منحة بحثية مع الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (المستفيد).\n- وتنفيذًا للمنحة، أبرمت مدينة الأبحاث عقد توريد بخمسة ملايين جنيه مع شركة تابعة لوزارة الإنتاج الحربي، ونفذت الشركة التزاماتها.\n- ترفض هيئة التمويل السداد المباشر للشركة.\n\n## التحليل\n### 1. من المدين أمام الشركة؟ (نسبية أثر العقد)\n- وفق المادة 152 من القانون المدني، لا يرتب العقد التزامًا في ذمة الغير. وعقد التوريد طرفاه مدينة الأبحاث والشركة فقط، وهيئة التمويل ليست طرفًا فيه.\n- لذلك **فالمدينة هي المسؤولة أمام الشركة عن سداد ثمن التوريد**. ولا يجوز لها أن تحتج على الشركة بعدم وصول التمويل، لأن علاقتها بالممول مستقلة عن علاقتها بالمورد، إلا إذا تضمن عقد التوريد شرطًا صريحًا يعلّق السداد على ورود التمويل.\n- ولا تلتزم هيئة التمويل مباشرة أمام الشركة إلا في حالات محددة: إذا كانت طرفًا في عقد التوريد، أو قبلت حوالة الدين وفق المادة 315 وما بعدها من القانون المدني، أو تضمن عقد المنحة اشتراطًا لمصلحة الغير لصالح المورد وفق المادتين 154 و155. وهذا يستلزم مراجعة نصوص عقد المنحة.\n\n### 2. رجوع مدينة الأبحاث على هيئة التمويل\n- عقد المنحة ملزم لطرفيه وفق المادة 147 مدني (\"العقد شريعة المتعاقدين\"). فإذا التزمت هيئة التمويل بتمويل بنود المشروع، ومنها الأجهزة محل التوريد، **فللمدينة أن ترجع عليها** بقيمة التمويل المستحق وفق شروط المنحة، وذلك متى التزمت المدينة بشروطها: اعتماد بنود الصرف، وتقديم التقارير، والالتزام بقواعد الشراء.\n- وقول هيئة التمويل إن \"الالتزام يقع عليها\" يُعد إقرارًا بالتزامها التمويلي، ويصلح سندًا للمدينة في رجوعها عليها. لكنه لا يحول دون مطالبة الشركة للمدينة.\n\n### 3. طريق حل النزاع\n- أطراف النزاع جميعًا جهات عامة أو تابعة للدولة، والمرجح أن الشركة التابعة للإنتاج الحربي تدخل في هذا الوصف. فالمختص بالنزاع، بحسب فهمي، هو **الجمعية العمومية لقسمي الفتوى والتشريع بمجلس الدولة** وفق المادة 66 (د) من قانون مجلس الدولة رقم 47 لسنة 1972. ورأيها في ذلك ملزم للطرفين، ولا يُلجأ في هذه المنازعات إلى القضاء العادي ولا إلى التحكيم.\n- **تحفظ:** يلزم التحقق من الطبيعة القانونية للشركة. فإذا كانت شركة خاضعة للقانون الخاص لا تُعد من الجهات المشمولة بالمادة 66 (د)، يكون الاختصاص لمحاكم مجلس الدولة إذا كان العقد إداريًا.\n\n## الخلاصة\nتتحمل الهيئة العامة لمدينة الأبحاث العلمية سداد مستحقات الشركة، بوصفها الطرف المتعاقد معها. ولها أن ترجع على هيئة تمويل العلوم والتكنولوجيا والابتكار بما التزمت به الأخيرة في عقد المنحة. ولا تُطالب هيئة التمويل مباشرة من الشركة إلا إذا وُجد اتفاق صريح بذلك، كحوالة أو اشتراط لمصلحة الغير. ويُوصى بمراجعة عقدي المنحة والتوريد، وعرض النزاع على الجمعية العمومية لقسمي الفتوى والتشريع.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly addresses privity of contract (نسبية أثر العقد) in Section 1, citing Article 152 of the Civil Code, stating that 'the contract does not create obligations for third parties.' It clearly explains that the supply contract is only between the research city and the company, and that the funding authority is not a party to it. Therefore, the funding authority is not directly obligated to the company. The note further states that the research city is the party responsible for paying the company, as it is the contracting party. This satisfies the criterion that the effects of the contract are confined to its parties and obligations extend only to the contracting parties."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). While the note references Article 147 of the Civil Code ('العقد شريعة المتعاقدين') and discusses binding obligations between parties, it never explicitly addresses the prohibition on unilateral release from contractual obligations. The criterion specifically requires a statement that no party may release itself from its obligations by its own unilateral will, which is absent from the note."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in multiple places that the Heiئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the company. Specifically, in section 1 it states 'فالمدينة هي المسؤولة أمام الشركة عن سداد ثمن التوريد' and in the conclusion 'تتحمل الهيئة العامة لمدينة الأبحاث العلمية سداد مستحقات الشركة، بوصفها الطرف المتعاقد معها.'"
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 2 that the City for Science and Technology (مدينة الأبحاث) has the right of recourse (رجوع) against the Science, Technology and Innovation Funding Authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) based on the terms of the grant contract, stating 'فللمدينة أن ترجع عليها بقيمة التمويل المستحق وفق شروط المنحة'. This is reiterated in the conclusion section as well. The criterion is satisfied."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "fail",
+     "reasoning": "The note explicitly states in Section 2: 'عقد المنحة ملزم لطرفيه وفق المادة 147 مدني (\"العقد شريعة المتعاقدين\")'. However, the criterion requires not only stating that the contract is the law of the contracting parties, but also that it may not be revoked or modified except by agreement of both parties or for reasons established by law. The note only quotes the first part of the principle without mentioning the prohibition on unilateral revocation or modification. The full principle under Article 147 includes both elements, but the note omits the second part about revocation/modification."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Privity of Contract",
+     "verdict": "pass",
+     "reasoning": "The note clearly states the principle of privity of contract (نسبية أثر العقد), citing Article 152 of the Civil Code, explaining that the contract does not create obligations on third parties ('لا يرتب العقد التزامًا في ذمة الغير'), and that the supply contract's parties are only the Research City and the company, with the funding authority not being a party. This satisfies the criterion that the effects of the contract are confined to its parties and obligations extend only to the contracting parties."
+    },
+    {
+     "id": "C-002",
+     "title": "No Unilateral Release",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). While the note discusses privity of contract, binding nature of contracts (العقد شريعة المتعاقدين), and the inability of one party to avoid obligations, it does not explicitly state that no party may unilaterally release itself from its obligations by its own will (إرادة منفردة). The concept is implicitly touched upon but not explicitly stated as required by the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "ASRT Liability",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the company, as it is the contracting party with the company. This is stated both in the analysis section ('فالمدينة هي المسؤولة أمام الشركة عن سداد ثمن التوريد') and in the conclusion ('تتحمل الهيئة العامة لمدينة الأبحاث العلمية سداد مستحقات الشركة، بوصفها الطرف المتعاقد معها'). The criterion is satisfied."
+    },
+    {
+     "id": "C-004",
+     "title": "Right of Recourse",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that the entity (referred to in the criterion as 'King Abdulaziz City for Science and Technology' but in the note as 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية') has the right of recourse against the Science, Technology and Innovation Funding Authority in accordance with the terms of the research grant contract. The note clearly states in Section 2 and the conclusion that the research city (مدينة الأبحاث) has the right to seek recourse (ترجع عليها) against the funding authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) for the funding amount owed under the grant contract terms. While the entity name differs from 'King Abdulaziz City for Science and Technology' (the criterion uses this name but the note uses 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية'), the substantive legal point about the right of recourse against the funding authority under the grant contract is clearly stated. The note says: 'فللمدينة أن ترجع عليها بقيمة التمويل المستحق وفق شروط المنحة' and in the conclusion: 'ولها أن ترجع على هيئة تمويل العلوم والتكنولوجيا والابتكار بما التزمت به الأخيرة في عقد المنحة.' This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Contract Binding Force",
+     "verdict": "fail",
+     "reasoning": "The note states 'العقد شريعة المتعاقدين' (the contract is the law of the contracting parties) in Section 2, referencing Article 147 of the Civil Code. However, the criterion also requires stating that the contract 'may not be revoked or modified except by agreement of both parties or for reasons established by law.' The note does not include this second part about the prohibition on unilateral revocation or modification. Since the criterion requires both elements, and the note only addresses the first, it does not fully satisfy the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/privity-of-contract-and-prohibition-on-unilateral-release",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+  "scored_at": "2026-11-22T20:27:24.457787+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly addresses privity of contract (نسبية أثر العقد) in Section 1, citing Article 152 of the Civil Code, stating that 'the contract does not create obligations for third parties.' It clearly explains that the supply contract is only between the research city and the company, and that the funding authority is not a party to it. Therefore, the funding authority is not directly obligated to the company. The note further states that the research city is the party responsible for paying the company, as it is the contracting party. This satisfies the criterion that the effects of the contract are confined to its parties and obligations extend only to the contracting parties."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). While the note references Article 147 of the Civil Code ('العقد شريعة المتعاقدين') and discusses binding obligations between parties, it never explicitly addresses the prohibition on unilateral release from contractual obligations. The criterion specifically requires a statement that no party may release itself from its obligations by its own unilateral will, which is absent from the note."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in multiple places that the Heiئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the company. Specifically, in section 1 it states 'فالمدينة هي المسؤولة أمام الشركة عن سداد ثمن التوريد' and in the conclusion 'تتحمل الهيئة العامة لمدينة الأبحاث العلمية سداد مستحقات الشركة، بوصفها الطرف المتعاقد معها.'"
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 2 that the City for Science and Technology (مدينة الأبحاث) has the right of recourse (رجوع) against the Science, Technology and Innovation Funding Authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) based on the terms of the grant contract, stating 'فللمدينة أن ترجع عليها بقيمة التمويل المستحق وفق شروط المنحة'. This is reiterated in the conclusion section as well. The criterion is satisfied."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "fail",
+      "reasoning": "The note explicitly states in Section 2: 'عقد المنحة ملزم لطرفيه وفق المادة 147 مدني (\"العقد شريعة المتعاقدين\")'. However, the criterion requires not only stating that the contract is the law of the contracting parties, but also that it may not be revoked or modified except by agreement of both parties or for reasons established by law. The note only quotes the first part of the principle without mentioning the prohibition on unilateral revocation or modification. The full principle under Article 147 includes both elements, but the note omits the second part about revocation/modification."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:23:42.390343+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Privity of Contract",
+      "verdict": "pass",
+      "reasoning": "The note clearly states the principle of privity of contract (نسبية أثر العقد), citing Article 152 of the Civil Code, explaining that the contract does not create obligations on third parties ('لا يرتب العقد التزامًا في ذمة الغير'), and that the supply contract's parties are only the Research City and the company, with the funding authority not being a party. This satisfies the criterion that the effects of the contract are confined to its parties and obligations extend only to the contracting parties."
+     },
+     {
+      "id": "C-002",
+      "title": "No Unilateral Release",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that no party may release itself from its obligations by its own unilateral will (إرادة منفردة). While the note discusses privity of contract, binding nature of contracts (العقد شريعة المتعاقدين), and the inability of one party to avoid obligations, it does not explicitly state that no party may unilaterally release itself from its obligations by its own will (إرادة منفردة). The concept is implicitly touched upon but not explicitly stated as required by the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "ASRT Liability",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية (ASRT) is responsible for paying the amounts due to the company, as it is the contracting party with the company. This is stated both in the analysis section ('فالمدينة هي المسؤولة أمام الشركة عن سداد ثمن التوريد') and in the conclusion ('تتحمل الهيئة العامة لمدينة الأبحاث العلمية سداد مستحقات الشركة، بوصفها الطرف المتعاقد معها'). The criterion is satisfied."
+     },
+     {
+      "id": "C-004",
+      "title": "Right of Recourse",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that the entity (referred to in the criterion as 'King Abdulaziz City for Science and Technology' but in the note as 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية') has the right of recourse against the Science, Technology and Innovation Funding Authority in accordance with the terms of the research grant contract. The note clearly states in Section 2 and the conclusion that the research city (مدينة الأبحاث) has the right to seek recourse (ترجع عليها) against the funding authority (هيئة تمويل العلوم والتكنولوجيا والابتكار) for the funding amount owed under the grant contract terms. While the entity name differs from 'King Abdulaziz City for Science and Technology' (the criterion uses this name but the note uses 'الهيئة العامة لمدينة الأبحاث العلمية والتطبيقات التكنولوجية'), the substantive legal point about the right of recourse against the funding authority under the grant contract is clearly stated. The note says: 'فللمدينة أن ترجع عليها بقيمة التمويل المستحق وفق شروط المنحة' and in the conclusion: 'ولها أن ترجع على هيئة تمويل العلوم والتكنولوجيا والابتكار بما التزمت به الأخيرة في عقد المنحة.' This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Contract Binding Force",
+      "verdict": "fail",
+      "reasoning": "The note states 'العقد شريعة المتعاقدين' (the contract is the law of the contracting parties) in Section 2, referencing Article 147 of the Civil Code. However, the criterion also requires stating that the contract 'may not be revoked or modified except by agreement of both parties or for reasons established by law.' The note does not include this second part about the prohibition on unilateral revocation or modification. Since the criterion requires both elements, and the note only addresses the first, it does not fully satisfy the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/privity-of-contract-and-prohibition-on-unilateral-release",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/privity-of-contract-and-prohibition-on-unilateral-release",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:27:24.457405+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

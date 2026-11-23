@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: تمديد التوقيف والتظلم منه، وتفتيش المتهمة\n\n## أولًا: توقيف أحمد وتمديده والتظلم\n- وفق نظام الإجراءات الجزائية السعودي (حسب علمي المواد 112–114 تقريبًا)، للمحقق أن يأمر بالتوقيف مدة لا تزيد على **خمسة أيام** من تاريخ القبض.\n- إذا رأى المحقق تمديد التوقيف فعليه قبل انقضاء المدة عرض الأوراق على **رئيس الفرع / الجهة المختصة في النيابة العامة** ليصدر أمرًا بالتمديد لمدد متعاقبة لا تتجاوز في مجموعها (على ما أذكر) أربعين يومًا من تاريخ القبض، ثم في الحالات التي تتطلب مزيدًا يُرفع الأمر إلى جهة أعلى بمدد لا تزيد كل منها على ثلاثين يومًا وبحد أقصى مائة وثمانين يومًا، وبعدها يُحال المتهم إلى المحكمة أو يُفرج عنه، ما لم تأمر المحكمة بغير ذلك.\n- **ملاحظة جوهرية:** إذا كان التمديد قد صدر من المحقق نفسه دون عرض على الجهة المختصة، فالأرجح أنه مخالف للنظام، ويمكن الدفع بذلك.\n- لا يُشترط أن تمر الخمسة أيام كاملة لاتخاذ قرار التمديد، لكن يجب صدوره قبل انتهائها وممن يملكه.\n- **التظلم:** للموقوف أو وكيله التظلم من أمر التوقيف أو تمديده إلى الجهة الأعلى في النيابة العامة، وتقديمه في يوم صدور الأمر جائز ولا يُعدّ سابقًا لأوانه. لست متأكدًا من وجود مدة نظامية محددة للبت فيه أو من رقم المادة، فيلزم التحقق.\n- حقوق مصاحبة: إبلاغ الموقوف بأسباب توقيفه، وحقه في الاستعانة بمحامٍ، والاتصال بمن يرى إبلاغه.\n\n## ثانيًا: تفتيش المتهمة سارة\n- يجوز لرجل الضبط الجنائي تفتيش المتهم في الأحوال التي يجوز فيها القبض عليه نظامًا، وهذا متحقق هنا.\n- لكن إذا كان المتهم **أنثى** فيجب أن يكون التفتيش بمعرفة **أنثى** يندبها رجل الضبط الجنائي (حسب علمي المادة 42 من النظام)، ولا يجوز أن يتولاه بنفسه.\n- يُحرَّر محضر بالتفتيش ونتيجته، ويُراعى ستر المتهمة وكرامتها.\n- التفتيش المخالف لذلك يُعرّض الدليل المستمد منه للبطلان.\n\n## التوصية\n- التحقق من الجهة مصدرة أمر التمديد ومدته، والطعن فيه إن صدر من غير مختص.\n- متابعة التظلم كتابةً والاحتفاظ بما يثبت تاريخ تقديمه.\n- في حال تفتيش سارة من غير أنثى، التمسك ببطلان التفتيش وما ترتب عليه.\n\n*تنبيه: أرقام المواد والمدد مذكورة من الذاكرة وتحتاج إلى مراجعة النص النافذ.*",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Complaint recipient",
+     "verdict": "fail",
+     "reasoning": "The note only mentions 'الجهة الأعلى في النيابة العامة' (the higher authority in the Public Prosecution) as the recipient of the complaint (تظلم). It does not specify all three recipients: head of the investigation department (رئيس التحقيق), head of the branch (رئيس الفرع), or head of the authority (رئيس الهيئة), nor does it include the condition 'as the case may be' (بحسب الأحوال). The criterion requires all three recipients to be mentioned along with that condition."
+    },
+    {
+     "id": "C-002",
+     "title": "Complaint deadline",
+     "verdict": "fail",
+     "reasoning": "The note explicitly states 'لست متأكدًا من وجود مدة نظامية محددة للبت فيه' (I am not certain there is a specific statutory period for deciding it), which means the note does not state that the complaint is decided within five days from the date of submission. The five-day period required by the criterion is completely absent."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension order complaint",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states 'للموقوف أو وكيله التظلم من أمر التوقيف أو تمديده' (the detainee or their representative has the right to complain against the detention order or its extension), clearly covering both the original detention order and the extension order."
+    },
+    {
+     "id": "C-004",
+     "title": "Female search requirement",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (Second) that if the accused is female, the search must be conducted by a female (أنثى) appointed by the criminal investigation officer, and that the officer himself may not conduct it directly. This satisfies the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Delegation of female searcher",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'يجب أن يكون التفتيش بمعرفة أنثى يندبها رجل الضبط الجنائي' — meaning the search must be conducted by a female delegated/appointed by the criminal investigation officer (رجل الضبط الجنائي). This directly attributes the delegation of the female searcher to the criminal investigation officer."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Complaint recipient",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the complaint (تظلم) is submitted to the head of the investigation department, the head of the branch, or the head of the authority, as the case may be — specifying all three recipients and the condition 'as the case may be.' The agent's note only mentions 'الجهة الأعلى في النيابة العامة' (the higher authority in the Public Prosecution) without specifying the three distinct recipients (رئيس دائرة التحقيق، رئيس الفرع، رئيس الهيئة) or the conditional phrase 'بحسب الأحوال' (as the case may be)."
+    },
+    {
+     "id": "C-002",
+     "title": "Complaint deadline",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the complaint (تظلم) is decided within five days from the date of its submission. The agent's note does not mention the five-day period for deciding the complaint. Instead, it states: 'لست متأكدًا من وجود مدة نظامية محددة للبت فيه أو من رقم المادة، فيلزم التحقق' (I'm not sure if there is a specific statutory period for deciding it). This fails to meet the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Extension order complaint",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'للموقوف أو وكيله التظلم من أمر التوقيف أو تمديده إلى الجهة الأعلى في النيابة العامة', which clearly covers both the original detention order and the extension order (تمديده). This satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Female search requirement",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that if the accused is female, the search must be carried out by a woman (أنثى) deputized by the criminal investigation officer, and that the officer may not conduct it himself. It also notes that a search violating this requirement exposes the resulting evidence to nullification."
+    },
+    {
+     "id": "C-005",
+     "title": "Delegation of female searcher",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'يجب أن يكون التفتيش بمعرفة أنثى يندبها رجل الضبط الجنائي' — meaning the female searcher is delegated by the criminal investigation officer (رجل الضبط الجنائي). This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/complaint-recipient-deadline-and-female-search-requirement",
+  "task": "astrolabe-open/saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+  "scored_at": "2026-11-22T21:56:45.575525+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Complaint recipient",
+      "verdict": "fail",
+      "reasoning": "The note only mentions 'الجهة الأعلى في النيابة العامة' (the higher authority in the Public Prosecution) as the recipient of the complaint (تظلم). It does not specify all three recipients: head of the investigation department (رئيس التحقيق), head of the branch (رئيس الفرع), or head of the authority (رئيس الهيئة), nor does it include the condition 'as the case may be' (بحسب الأحوال). The criterion requires all three recipients to be mentioned along with that condition."
+     },
+     {
+      "id": "C-002",
+      "title": "Complaint deadline",
+      "verdict": "fail",
+      "reasoning": "The note explicitly states 'لست متأكدًا من وجود مدة نظامية محددة للبت فيه' (I am not certain there is a specific statutory period for deciding it), which means the note does not state that the complaint is decided within five days from the date of submission. The five-day period required by the criterion is completely absent."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension order complaint",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states 'للموقوف أو وكيله التظلم من أمر التوقيف أو تمديده' (the detainee or their representative has the right to complain against the detention order or its extension), clearly covering both the original detention order and the extension order."
+     },
+     {
+      "id": "C-004",
+      "title": "Female search requirement",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (Second) that if the accused is female, the search must be conducted by a female (أنثى) appointed by the criminal investigation officer, and that the officer himself may not conduct it directly. This satisfies the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Delegation of female searcher",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'يجب أن يكون التفتيش بمعرفة أنثى يندبها رجل الضبط الجنائي' — meaning the search must be conducted by a female delegated/appointed by the criminal investigation officer (رجل الضبط الجنائي). This directly attributes the delegation of the female searcher to the criminal investigation officer."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/complaint-recipient-deadline-and-female-search-requirement",
+    "task": "astrolabe-open/saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T21:51:03.517967+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Complaint recipient",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the complaint (تظلم) is submitted to the head of the investigation department, the head of the branch, or the head of the authority, as the case may be — specifying all three recipients and the condition 'as the case may be.' The agent's note only mentions 'الجهة الأعلى في النيابة العامة' (the higher authority in the Public Prosecution) without specifying the three distinct recipients (رئيس دائرة التحقيق، رئيس الفرع، رئيس الهيئة) or the conditional phrase 'بحسب الأحوال' (as the case may be)."
+     },
+     {
+      "id": "C-002",
+      "title": "Complaint deadline",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the complaint (تظلم) is decided within five days from the date of its submission. The agent's note does not mention the five-day period for deciding the complaint. Instead, it states: 'لست متأكدًا من وجود مدة نظامية محددة للبت فيه أو من رقم المادة، فيلزم التحقق' (I'm not sure if there is a specific statutory period for deciding it). This fails to meet the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Extension order complaint",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'للموقوف أو وكيله التظلم من أمر التوقيف أو تمديده إلى الجهة الأعلى في النيابة العامة', which clearly covers both the original detention order and the extension order (تمديده). This satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Female search requirement",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that if the accused is female, the search must be carried out by a woman (أنثى) deputized by the criminal investigation officer, and that the officer may not conduct it himself. It also notes that a search violating this requirement exposes the resulting evidence to nullification."
+     },
+     {
+      "id": "C-005",
+      "title": "Delegation of female searcher",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'يجب أن يكون التفتيش بمعرفة أنثى يندبها رجل الضبط الجنائي' — meaning the female searcher is delegated by the criminal investigation officer (رجل الضبط الجنائي). This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/complaint-recipient-deadline-and-female-search-requirement",
+    "task": "astrolabe-open/saudi-criminal-procedure/complaint-recipient-deadline-and-female-search-requirement",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T21:56:45.575099+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

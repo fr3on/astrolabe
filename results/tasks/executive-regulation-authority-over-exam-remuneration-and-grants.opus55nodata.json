@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: مكافآت أعمال الامتحانات بقرار منفرد من مجلس الجامعة\n\n## السؤال\nهل يكفي قرار مجلس الجامعة وحده لمنح مكافآت أعمال الامتحانات لأعضاء هيئة التدريس؟\n\n## الرأي المختصر\nعلى الأرجح لا. القرار ناقص من حيث الإجراءات، وهو قابل للطعن ومعرّض لاعتراض الجهات الرقابية ما لم يُستكمل.\n\n## الأسباب\n1. **قانون تنظيم الجامعات (القانون رقم 49 لسنة 1972) ولائحته التنفيذية**: هذا القانون ينظم المرتبات والمكافآت والبدلات بنصوص وجداول ملحقة به. والأصل أن أي مكافأة غير منصوص عليها لا تُمنح إلا بأداة قانونية أعلى أو بالاتفاق مع الجهات المختصة.\n2. **الاختصاص المالي**: حسب ما أعرفه من فتاوى الجمعية العمومية لقسمي الفتوى والتشريع بمجلس الدولة، تقرير مكافآت الامتحانات وتحديد فئاتها يحتاج عادة إلى موافقة **المجلس الأعلى للجامعات** وإلى موافقة **وزارة المالية**، أو أن يصدر بقرار من وزير التعليم العالي بعد أخذ رأي المجلس الأعلى. ولا يصح أن ينفرد به مجلس الجامعة. لا أذكر رقم المادة بدقة، فلا بد من التحقق من نص اللائحة التنفيذية السارية.\n3. **مبدأ عام**: لا يجوز صرف أي مبلغ من المال العام دون سند قانوني صادر عن الجهة المختصة، ولا يجوز تجاوز الاعتمادات المقررة في الموازنة، وفقًا لقانون المالية العامة الموحد وقواعد تنفيذ الموازنة.\n\n## الأثر العملي\n- قد ترى الجهات الرقابية (الجهاز المركزي للمحاسبات أو وزارة المالية) أن الصرف تم دون سند، وتطالب برد المبالغ.\n- استقرت فتاوى مجلس الدولة في حالات مشابهة على جواز عدم مطالبة العامل حسن النية برد ما صرفه، ولكن هذا المبدأ لا ينطبق في كل الحالات.\n\n## التوصية\n- عرض القرار على المجلس الأعلى للجامعات ووزارة المالية للموافقة عليه، أو إصدار قرار يصحح الوضع.\n- التحقق من النص الحالي للائحة التنفيذية والقرارات الوزارية المنظمة للمكافآت، فما ذُكر هنا من سند مبني على معرفتي العامة ويحتاج إلى مراجعة.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Executive Regulation Authority",
+     "verdict": "pass",
+     "reasoning": "The note mentions the Executive Regulation (اللائحة التنفيذية) of Law 49/1972 as a relevant authority that organizes salaries, remuneration, and allowances, and states that any unlisted remuneration requires a higher legal instrument or agreement with competent authorities. It explicitly states that the University Council cannot act alone and references the need for approval from the Supreme Council of Universities and the Ministry of Finance, or a ministerial decree. The note does acknowledge the role of the Executive Regulation in establishing the framework, though somewhat briefly, and explicitly denies that the University Council can act alone. This satisfies the criterion's requirement that the note must not attribute authority solely to the University Council and must not omit the role of the Executive Regulation."
+    },
+    {
+     "id": "C-002",
+     "title": "Exam Remuneration Rules",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the rules governing examination secondment and related remuneration are among the competencies entrusted to the Executive Regulation (اللائحة التنفيذية). The agent's output mentions the Executive Regulation (اللائحة التنفيذية) only in passing, as a document to be checked, and does not attribute responsibility for examination remuneration rules to it. Instead, the agent attributes the authority to the Supreme Council of Universities, the Ministry of Finance, and the Minister of Higher Education. The note does not state that examination secondment and remuneration rules fall within the competencies of the Executive Regulation itself."
+    },
+    {
+     "id": "C-003",
+     "title": "Financial Grants Rules",
+     "verdict": "pass",
+     "reasoning": "The note does mention the Executive Regulation (اللائحة التنفيذية) in point 1, stating that Law No. 49 of 1972 and its Executive Regulation regulate salaries, remuneration, and allowances. However, the note then attributes the authority to determine exam remuneration primarily to the Supreme Council of Universities and the Ministry of Finance, or to a ministerial decree, rather than clearly stating that the Executive Regulation itself is what regulates the rules for financial remuneration and grants for faculty members. The criterion requires the note to state that these rules are regulated by the Executive Regulation. While the Executive Regulation is mentioned, its role is diluted and the primary regulatory authority is attributed to other bodies. The note does reference the Executive Regulation as a source that needs to be checked, which partially satisfies the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Issuance Procedure",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the Executive Regulation is issued by a decision of the President of the Republic based on the submission of the Minister of Higher Education and after taking the opinion of the Universities Council (مجلس الجامعات) and the approval of the Supreme Council of Universities (المجلس الأعلى للجامعات). The agent's note does not mention this issuance procedure at all. It mentions the Executive Regulation (اللائحة التنفيذية) only in passing and refers to needing approval from المجلس الأعلى للجامعات and وزارة المالية, but never states that the Executive Regulation itself is issued by a decision of the President of the Republic upon submission by the Minister of Higher Education after taking the opinion of مجلس الجامعات. The specific procedural chain required by the criterion is entirely absent."
+    },
+    {
+     "id": "C-005",
+     "title": "Decision Invalidity",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the opening summary (الرأي المختصر) that 'القرار ناقص من حيث الإجراءات، وهو قابل للطعن ومعرّض لاعتراض الجهات الرقابية' and throughout the document explains that the University Council acting alone does not have the authority to grant exam remuneration — that it requires approval from the Supreme Council of Universities and the Ministry of Finance, or a ministerial decision. The note identifies the unilateral decision as procedurally defective and legally insufficient, which satisfies the criterion of identifying the University Council's unilateral decision as legally defective or contrary to the law."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Executive Regulation Authority",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that the Executive Regulation (اللائحة التنفيذية) is the authority entrusted with establishing the general framework for implementing the provisions of the law, not the University Council acting alone. The agent's note does reference the Executive Regulation (اللائحة التنفيذية) in point 1 and mentions that the law and its executive regulation organize salaries, bonuses, and allowances. It also clearly states that the University Council cannot act alone. However, the note does not explicitly state that the Executive Regulation is the authority entrusted with establishing the general framework for implementing the law's provisions. Instead, it attributes the authority more to the Supreme Council of Universities and the Ministry of Finance. The role of the Executive Regulation as the framework-setting instrument is mentioned but not emphasized as the key authority. The note references the Executive Regulation but treats it more as a reference source rather than explicitly stating it is 'the authority entrusted with establishing the general framework for implementing the provisions of the law.' This is a borderline case, but the criterion specifically asks whether the note states that the Executive Regulation is the authority for establishing the general framework. The note does mention the Executive Regulation and its role in organizing matters, and it does say the University Council cannot act alone, which together convey the essential message. I'll consider this a marginal pass since the note does reference the اللائحة التنفيذية as the organizing instrument and denies the University Council sole authority."
+    },
+    {
+     "id": "C-002",
+     "title": "Exam Remuneration Rules",
+     "verdict": "fail",
+     "reasoning": "The criterion requires that the note states that the rules governing examination duties secondment and remuneration are among the competencies entrusted to the Executive Regulation (اللائحة التنفيذية). The agent's note does not clearly state this. Instead, it vaguely references the Executive Regulation in point 1 but attributes the authority primarily to the Supreme Council of Universities and the Ministry of Finance, or to the Minister of Higher Education. It does not explicitly state that the Executive Regulation (اللائحة التنفيذية) is the instrument entrusted with governing exam remuneration rules. This misattributes responsibility away from the Executive Regulation."
+    },
+    {
+     "id": "C-003",
+     "title": "Financial Grants Rules",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that the rules for determining financial remuneration and grants for faculty members are regulated by the Executive Regulation (اللائحة التنفيذية). The agent's note does mention the Executive Regulation (اللائحة التنفيذية) in point 1 under 'الأسباب', stating that Law 49 of 1972 and its Executive Regulation organize salaries, remuneration, and allowances. It also references the Executive Regulation in the recommendation section. While the note does attribute regulation of financial remuneration partly to the Executive Regulation, it also distributes authority to the Supreme Council of Universities, the Ministry of Finance, and the Minister of Higher Education, somewhat diluting the central role of the Executive Regulation. However, the note does explicitly state that the Executive Regulation regulates remuneration and grants ('ينظم المرتبات والمكافآت والبدلات بنصوص وجداول ملحقة به'), which satisfies the criterion's requirement that the note states financial remuneration and grants are regulated by the Executive Regulation."
+    },
+    {
+     "id": "C-004",
+     "title": "Issuance Procedure",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the Executive Regulation (اللائحة التنفيذية) is issued by a decision of the President of the Republic based on the submission of the Minister of Higher Education and after taking the opinion of the Universities Council (مجلس الجامعات) and the approval of the Supreme Council of Universities (المجلس الأعلى للجامعات). The agent's note does not mention this issuance procedure at all. It does not mention the President of the Republic, the Minister of Higher Education's submission, the Universities Council's opinion, or the Supreme Council of Universities' approval in the context of issuing the Executive Regulation. The note only vaguely references the need for approval from the Supreme Council of Universities and the Ministry of Finance for exam remuneration, but does not describe the specific procedural chain for issuing the Executive Regulation as required by the criterion."
+    },
+    {
+     "id": "C-005",
+     "title": "Decision Invalidity",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that a unilateral decision by the University Council is insufficient and legally defective. It says 'القرار ناقص من حيث الإجراءات، وهو قابل للطعن ومعرّض لاعتراض الجهات الرقابية' and 'لا يصح أن ينفرد به مجلس الجامعة'. It also indicates that regulatory bodies may consider the disbursement 'تم دون سند' (without legal basis). While it uses language like 'على الأرجح لا' rather than a definitive 'مخالفاً للقانون', the overall thrust clearly identifies the University Council's unilateral decision as legally defective and contrary to prescribed procedures. The note states it is 'ناقص من حيث الإجراءات' and 'قابل للطعن', which effectively conveys that the decision violates the law."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/executive-regulation-authority-over-exam-remuneration-and-grants",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+  "scored_at": "2026-11-22T20:13:01.065760+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Executive Regulation Authority",
+      "verdict": "pass",
+      "reasoning": "The note mentions the Executive Regulation (اللائحة التنفيذية) of Law 49/1972 as a relevant authority that organizes salaries, remuneration, and allowances, and states that any unlisted remuneration requires a higher legal instrument or agreement with competent authorities. It explicitly states that the University Council cannot act alone and references the need for approval from the Supreme Council of Universities and the Ministry of Finance, or a ministerial decree. The note does acknowledge the role of the Executive Regulation in establishing the framework, though somewhat briefly, and explicitly denies that the University Council can act alone. This satisfies the criterion's requirement that the note must not attribute authority solely to the University Council and must not omit the role of the Executive Regulation."
+     },
+     {
+      "id": "C-002",
+      "title": "Exam Remuneration Rules",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the rules governing examination secondment and related remuneration are among the competencies entrusted to the Executive Regulation (اللائحة التنفيذية). The agent's output mentions the Executive Regulation (اللائحة التنفيذية) only in passing, as a document to be checked, and does not attribute responsibility for examination remuneration rules to it. Instead, the agent attributes the authority to the Supreme Council of Universities, the Ministry of Finance, and the Minister of Higher Education. The note does not state that examination secondment and remuneration rules fall within the competencies of the Executive Regulation itself."
+     },
+     {
+      "id": "C-003",
+      "title": "Financial Grants Rules",
+      "verdict": "pass",
+      "reasoning": "The note does mention the Executive Regulation (اللائحة التنفيذية) in point 1, stating that Law No. 49 of 1972 and its Executive Regulation regulate salaries, remuneration, and allowances. However, the note then attributes the authority to determine exam remuneration primarily to the Supreme Council of Universities and the Ministry of Finance, or to a ministerial decree, rather than clearly stating that the Executive Regulation itself is what regulates the rules for financial remuneration and grants for faculty members. The criterion requires the note to state that these rules are regulated by the Executive Regulation. While the Executive Regulation is mentioned, its role is diluted and the primary regulatory authority is attributed to other bodies. The note does reference the Executive Regulation as a source that needs to be checked, which partially satisfies the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Issuance Procedure",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the Executive Regulation is issued by a decision of the President of the Republic based on the submission of the Minister of Higher Education and after taking the opinion of the Universities Council (مجلس الجامعات) and the approval of the Supreme Council of Universities (المجلس الأعلى للجامعات). The agent's note does not mention this issuance procedure at all. It mentions the Executive Regulation (اللائحة التنفيذية) only in passing and refers to needing approval from المجلس الأعلى للجامعات and وزارة المالية, but never states that the Executive Regulation itself is issued by a decision of the President of the Republic upon submission by the Minister of Higher Education after taking the opinion of مجلس الجامعات. The specific procedural chain required by the criterion is entirely absent."
+     },
+     {
+      "id": "C-005",
+      "title": "Decision Invalidity",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the opening summary (الرأي المختصر) that 'القرار ناقص من حيث الإجراءات، وهو قابل للطعن ومعرّض لاعتراض الجهات الرقابية' and throughout the document explains that the University Council acting alone does not have the authority to grant exam remuneration — that it requires approval from the Supreme Council of Universities and the Ministry of Finance, or a ministerial decision. The note identifies the unilateral decision as procedurally defective and legally insufficient, which satisfies the criterion of identifying the University Council's unilateral decision as legally defective or contrary to the law."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:08:58.475044+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Executive Regulation Authority",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that the Executive Regulation (اللائحة التنفيذية) is the authority entrusted with establishing the general framework for implementing the provisions of the law, not the University Council acting alone. The agent's note does reference the Executive Regulation (اللائحة التنفيذية) in point 1 and mentions that the law and its executive regulation organize salaries, bonuses, and allowances. It also clearly states that the University Council cannot act alone. However, the note does not explicitly state that the Executive Regulation is the authority entrusted with establishing the general framework for implementing the law's provisions. Instead, it attributes the authority more to the Supreme Council of Universities and the Ministry of Finance. The role of the Executive Regulation as the framework-setting instrument is mentioned but not emphasized as the key authority. The note references the Executive Regulation but treats it more as a reference source rather than explicitly stating it is 'the authority entrusted with establishing the general framework for implementing the provisions of the law.' This is a borderline case, but the criterion specifically asks whether the note states that the Executive Regulation is the authority for establishing the general framework. The note does mention the Executive Regulation and its role in organizing matters, and it does say the University Council cannot act alone, which together convey the essential message. I'll consider this a marginal pass since the note does reference the اللائحة التنفيذية as the organizing instrument and denies the University Council sole authority."
+     },
+     {
+      "id": "C-002",
+      "title": "Exam Remuneration Rules",
+      "verdict": "fail",
+      "reasoning": "The criterion requires that the note states that the rules governing examination duties secondment and remuneration are among the competencies entrusted to the Executive Regulation (اللائحة التنفيذية). The agent's note does not clearly state this. Instead, it vaguely references the Executive Regulation in point 1 but attributes the authority primarily to the Supreme Council of Universities and the Ministry of Finance, or to the Minister of Higher Education. It does not explicitly state that the Executive Regulation (اللائحة التنفيذية) is the instrument entrusted with governing exam remuneration rules. This misattributes responsibility away from the Executive Regulation."
+     },
+     {
+      "id": "C-003",
+      "title": "Financial Grants Rules",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that the rules for determining financial remuneration and grants for faculty members are regulated by the Executive Regulation (اللائحة التنفيذية). The agent's note does mention the Executive Regulation (اللائحة التنفيذية) in point 1 under 'الأسباب', stating that Law 49 of 1972 and its Executive Regulation organize salaries, remuneration, and allowances. It also references the Executive Regulation in the recommendation section. While the note does attribute regulation of financial remuneration partly to the Executive Regulation, it also distributes authority to the Supreme Council of Universities, the Ministry of Finance, and the Minister of Higher Education, somewhat diluting the central role of the Executive Regulation. However, the note does explicitly state that the Executive Regulation regulates remuneration and grants ('ينظم المرتبات والمكافآت والبدلات بنصوص وجداول ملحقة به'), which satisfies the criterion's requirement that the note states financial remuneration and grants are regulated by the Executive Regulation."
+     },
+     {
+      "id": "C-004",
+      "title": "Issuance Procedure",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the Executive Regulation (اللائحة التنفيذية) is issued by a decision of the President of the Republic based on the submission of the Minister of Higher Education and after taking the opinion of the Universities Council (مجلس الجامعات) and the approval of the Supreme Council of Universities (المجلس الأعلى للجامعات). The agent's note does not mention this issuance procedure at all. It does not mention the President of the Republic, the Minister of Higher Education's submission, the Universities Council's opinion, or the Supreme Council of Universities' approval in the context of issuing the Executive Regulation. The note only vaguely references the need for approval from the Supreme Council of Universities and the Ministry of Finance for exam remuneration, but does not describe the specific procedural chain for issuing the Executive Regulation as required by the criterion."
+     },
+     {
+      "id": "C-005",
+      "title": "Decision Invalidity",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that a unilateral decision by the University Council is insufficient and legally defective. It says 'القرار ناقص من حيث الإجراءات، وهو قابل للطعن ومعرّض لاعتراض الجهات الرقابية' and 'لا يصح أن ينفرد به مجلس الجامعة'. It also indicates that regulatory bodies may consider the disbursement 'تم دون سند' (without legal basis). While it uses language like 'على الأرجح لا' rather than a definitive 'مخالفاً للقانون', the overall thrust clearly identifies the University Council's unilateral decision as legally defective and contrary to prescribed procedures. The note states it is 'ناقص من حيث الإجراءات' and 'قابل للطعن', which effectively conveys that the decision violates the law."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/executive-regulation-authority-over-exam-remuneration-and-grants",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:13:01.065407+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

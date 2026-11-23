@@ -1,0 +1,221 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: هل يجوز إنهاء العقد الإداري بسبب مخالفات في إجراءات الطرح والترسية؟\n\n## الوقائع\nفي 1/3/2023 أبرمت هيئة حكومية عقد بنية تحتية بقيمة 50 مليون جنيه لمدة عامين. وبعد ستة أشهر من بدء التنفيذ وصرف 15 مليون جنيه، تبين أن إجراءات الطرح والترسية شابتها مخالفات إجرائية.\n\n## التحليل\n### 1. القانون الحاكم\nيسري على هذا العقد قانون تنظيم التعاقدات التي تبرمها الجهات العامة رقم 182 لسنة 2018 ولائحته التنفيذية، وتختص بمنازعاته محاكم مجلس الدولة.\n\n### 2. نظرية القرارات الإدارية المنفصلة\n- قرارات الطرح والترسية قرارات إدارية **منفصلة** عن العقد. وقد استقر قضاء مجلس الدولة المصري على أن إلغاء القرار المنفصل، أو ثبوت عدم مشروعيته، **لا يؤدي تلقائيًا إلى بطلان العقد أو انقضائه**. فالعقد يظل قائمًا منتجًا لآثاره بين طرفيه إلى أن يقضي قاضي العقد ببطلانه أو فسخه.\n- ويفرّق القضاء بين نوعين من المخالفات. المخالفة الجسيمة التي تمس أركان العقد تفسده، ومن أمثلتها انعدام الاختصاص، أو الغش والتواطؤ مع المتعاقد، أو التعاقد دون أي إجراء. أما المخالفة الإجرائية البسيطة فلا تنال من صحة العقد، وتبقى سببًا للمساءلة التأديبية للموظفين المسؤولين.\n\n### 3. هل للهيئة أن تنهي العقد فورًا بإرادتها المنفردة؟\n- **لا يجوز إنهاء العقد فورًا استنادًا إلى مخالفات الإجراءات وحدها**، خاصة إذا لم يكن للمتعاقد يد فيها. فالمتعاقد حسن النية لا يُضار بخطأ الإدارة، وإنهاء العقد بهذا السبب قد يرتب على الهيئة التزامًا بالتعويض.\n- **سلطة الإنهاء للمصلحة العامة:** للإدارة سلطة مقررة في نظرية العقد الإداري لإنهاء العقد إذا اقتضت المصلحة العامة ذلك، حتى لو لم يخطئ المتعاقد. لكن الإنهاء في هذه الحالة يلزمها بتعويض المتعاقد تعويضًا كاملًا عن الأعمال المنفذة والمصروفات وما فاته من كسب. ويخضع قرار الإنهاء لرقابة القضاء من حيث سببه وعدم الانحراف بالسلطة.\n- **الإنهاء الجزائي:** يكون عند إخلال المتعاقد بالتزاماته، أو عند ثبوت غشه أو تلاعبه أو رشوته. وقد نص القانون 182 لسنة 2018 على حالات فسخ أو إنهاء من هذا النوع، منها الغش والتلاعب والرشوة وإفلاس المتعاقد. ولا أتذكر بدقة رقم المادة، ويُرجَّح أنها في حدود المادة 50، فيجب التحقق منها.\n\n### 4. البديل الأسلم\n- التحقيق في المخالفات وتحديد طبيعتها (جسيمة أم إجرائية بسيطة)، وتحديد ما إذا كان للمتعاقد دور فيها.\n- إذا كانت المخالفات بسيطة: **الاستمرار في التنفيذ**، مع إمكان تصحيح الإجراء أو إجازته من السلطة المختصة، ومساءلة الموظفين المسؤولين.\n- إذا ثبت غش أو تواطؤ من المتعاقد: يجوز الفسخ أو الإنهاء الجزائي وفق القانون، مع مصادرة التأمين والرجوع بالتعويض.\n- إذا قدّرت الهيئة أن المصلحة العامة تقتضي الإنهاء: يجوز ذلك بقرار مسبَّب، مع تحمل تعويض المتعاقد ومحاسبته عن الـ15 مليون جنيه وما نفذه فعلًا.\n- يمكن استطلاع رأي الجمعية العمومية لقسمي الفتوى والتشريع، أو إدارة الفتوى المختصة، قبل اتخاذ أي قرار.\n\n## الخلاصة\nلا يحق للهيئة إنهاء العقد فورًا لمجرد وجود مخالفات إجرائية سابقة على التعاقد، والأصل أنها ملزمة بالاستمرار في التنفيذ. ويرجع ذلك إلى انفصال قرارات الطرح والترسية عن العقد، وإلى حماية المتعاقد حسن النية. ويُستثنى من ذلك أن تكون المخالفة جسيمة تمس أركان العقد، أو أن يثبت غش المتعاقد، أو أن تختار الهيئة الإنهاء للمصلحة العامة مع تعويض المتعاقد تعويضًا كاملًا. ويُنصح بالتحقق من أرقام مواد القانون 182 لسنة 2018 ولائحته.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 1,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Contract as binding law",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state the principle that 'العقد شريعة المتعاقدين' (the contract is binding law upon the contracting parties) and may not be revoked except by mutual agreement or for reasons established by law. While the note discusses related concepts such as the contract remaining valid despite procedural defects, the administration's power to terminate for public interest with compensation, and punitive termination for contractor fault, it never directly invokes or states this foundational contract law principle. The criterion requires an explicit statement of this principle."
+    },
+    {
+     "id": "C-002",
+     "title": "Good faith execution",
+     "verdict": "fail",
+     "reasoning": "The note mentions good faith (حسن النية) in the context of protecting the contractor who acted in good faith ('المتعاقد حسن النية لا يُضار بخطأ الإدارة'), but this refers to the contractor's good faith status rather than a requirement that the contract must be executed in a manner consistent with good faith requirements. The criterion requires the note to state that the contract must be executed in a manner consistent with the requirements of good faith (أن العقد يجب أن يُنفَّذ وفق متطلبات حسن النية). The note does not make this affirmative statement about execution obligations under good faith principles."
+    },
+    {
+     "id": "C-003",
+     "title": "Pre-contract procedural defects do not void a complete contract",
+     "verdict": "pass",
+     "reasoning": "The note explicitly discusses the doctrine of 'separate administrative decisions' (القرارات الإدارية المنفصلة) and states that nullity or illegality of pre-contract procedures (قرارات الطرح والترسية) does not automatically lead to the nullity or termination of the contract. It states: 'إلغاء القرار المنفصل، أو ثبوت عدم مشروعيته، لا يؤدي تلقائيًا إلى بطلان العقد أو انقضائه. فالعقد يظل قائمًا منتجًا لآثاره بين طرفيه.' This directly satisfies the criterion that pre-contract procedural defects do not void a complete contract once it has fulfilled its essential elements. The note also distinguishes between serious defects affecting contract elements (which can void it) and minor procedural defects (which do not), further reinforcing the principle."
+    },
+    {
+     "id": "C-004",
+     "title": "Obligation to continue execution",
+     "verdict": "fail",
+     "reasoning": "The note states in section 4 that if the violations are minor, the recommendation is 'الاستمرار في التنفيذ' (continuing execution), and in the conclusion it states 'الأصل أنها ملزمة بالاستمرار في التنفيذ' (the default is that the authority is obligated to continue execution). However, the note does not explicitly ground this obligation in the principle of 'استقرار المعاملات' (stability of transactions). The criterion specifically requires that the note state the obligation to continue execution is tied to achieving the principle of stability of transactions. The note cites protection of the good-faith contractor and the separability doctrine, but does not mention استقرار المعاملات as the basis."
+    },
+    {
+     "id": "C-005",
+     "title": "Public interest harm from termination",
+     "verdict": "fail",
+     "reasoning": "The note does not explicitly state that terminating the contract during execution causes serious harm to the public interest due to the loss of amounts already expended or the imposition of exorbitant amounts on the public treasury. While the note mentions that termination for public interest requires full compensation to the contractor (covering executed works, expenses, and lost profits), and references the 15 million EGP already disbursed in the facts section, it does not frame contract termination as causing serious harm to the public interest through loss of expended amounts or imposing exorbitant burdens on the public treasury. The focus is on the contractor's rights to compensation rather than the public interest harm from termination itself."
+    },
+    {
+     "id": "C-006",
+     "title": "Liability of violators preserved",
+     "verdict": "fail",
+     "reasoning": "The note mentions disciplinary accountability ('مساءلة التأديبية للموظفين المسؤولين') in section 2 when discussing minor procedural violations, and in section 4 it again mentions holding responsible employees accountable ('مساءلة الموظفين المسؤولين'). However, the criterion requires the note to explicitly state that *continuing to execute the contract* does not prejudice the rules of civil, disciplinary, AND criminal liability against those who committed the violations. The note only mentions disciplinary liability ('مساءلة تأديبية') in passing, and does not comprehensively state that continuation of contract execution preserves all three tracks of liability (civil, disciplinary, and criminal) against the violators. There is no explicit statement linking contract continuation to the preservation of these liability rules as a combined principle."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 1,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Contract as binding law",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state the principle that the contract is binding law upon the contracting parties (العقد شريعة المتعاقدين) and that it may not be revoked except by mutual agreement or for reasons established by law. While the note does convey that the contract remains binding and cannot be terminated unilaterally merely due to procedural defects, and discusses exceptions (mutual agreement is implicit, legal reasons are discussed), it never explicitly states the foundational principle 'العقد شريعة المتعاقدين' nor formulates the rule that a contract may not be revoked except by mutual agreement or for legally established reasons. The note implies these concepts but does not state them directly as required by the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "Good faith execution",
+     "verdict": "fail",
+     "reasoning": "The note repeatedly references the concept of good faith (حسن النية), particularly in the context of protecting the good-faith contractor ('المتعاقد حسن النية لا يُضار بخطأ الإدارة') and in the conclusion ('حماية المتعاقد حسن النية'). However, the criterion specifically asks whether the note states that the contract must be *executed* in a manner consistent with good faith requirements. The note discusses good faith in the context of the contractor's status (i.e., being a good-faith party who should not be harmed by the administration's procedural errors), but it does not explicitly state the broader principle that the contract must be executed/performed in accordance with good faith requirements. The references are about the contractor's good faith as a shield against termination, not about good faith as a governing principle of contract execution. This is a close call, but the criterion asks for a statement that the contract must be executed consistently with good faith, which is a distinct legal principle from merely noting the contractor is acting in good faith. The note does not contain such a statement."
+    },
+    {
+     "id": "C-003",
+     "title": "Pre-contract procedural defects do not void a complete contract",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that pre-contract procedural defects (مخالفات في إجراءات الطرح والترسية) do not automatically void the contract. It explains that these are 'قرارات إدارية منفصلة عن العقد' (separate administrative decisions from the contract) and that their illegality 'لا يؤدي تلقائيًا إلى بطلان العقد أو انقضائه' (does not automatically lead to nullity or termination of the contract). It further distinguishes between minor procedural violations that 'لا تنال من صحة العقد' (do not affect the validity of the contract) and serious violations that 'تمس أركان العقد' (affect the essential elements of the contract). This effectively conveys that nullity affecting pre-contract procedures does not prevent the contract from being binding once it has fulfilled its essential elements."
+    },
+    {
+     "id": "C-004",
+     "title": "Obligation to continue execution",
+     "verdict": "fail",
+     "reasoning": "The note states that the administrative authority is obligated to continue executing the contract ('الأصل أنها ملزمة بالاستمرار في التنفيذ') and mentions continuing execution. However, the criterion specifically requires that the note state the authority is obligated to continue executing the contract **until the end of its term** in order to achieve **the principle of stability of transactions (استقرار المعاملات)**. The note does not explicitly mention 'until the end of its term' nor does it reference the principle of 'استقرار المعاملات' (stability of transactions). While the concept is implicitly present, the specific principle name and the 'until end of term' language are absent."
+    },
+    {
+     "id": "C-005",
+     "title": "Public interest harm from termination",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that terminating the contract during execution causes serious harm to the public interest due to loss of amounts already expended or imposition of exorbitant amounts on the public treasury. While the note mentions the 15 million already spent and that the administration would need to compensate the contractor fully (including executed works, expenses, and lost profits), it does not explicitly frame termination as causing 'serious harm to the public interest' due to these financial consequences. It mentions compensation obligations but does not characterize this as harm to the public interest or loss to the public treasury in the direct terms required by the criterion."
+    },
+    {
+     "id": "C-006",
+     "title": "Liability of violators preserved",
+     "verdict": "fail",
+     "reasoning": "The criterion requires that the note states that continuing to execute the contract does not prejudice the rules of civil, disciplinary, and criminal liability against those who took the procedures in violation of the law. The note mentions 'مساءلة الموظفين المسؤولين' (accountability of responsible employees) and refers to 'المساءلة التأديبية' (disciplinary accountability) in the context of minor procedural violations. However, the note only mentions disciplinary liability and does not explicitly state that civil and criminal liability are also preserved. The criterion specifically requires all three types of liability (civil, disciplinary, and criminal) to be mentioned as not being prejudiced by the continuation of the contract. The note falls short of this requirement."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/binding-force-of-contract-despite-pre-contract-procedural-defects",
+  "task": "astrolabe-open/egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+  "scored_at": "2026-11-22T20:24:58.418553+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/6 criteria passed.  Missed 5 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Contract as binding law",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state the principle that 'العقد شريعة المتعاقدين' (the contract is binding law upon the contracting parties) and may not be revoked except by mutual agreement or for reasons established by law. While the note discusses related concepts such as the contract remaining valid despite procedural defects, the administration's power to terminate for public interest with compensation, and punitive termination for contractor fault, it never directly invokes or states this foundational contract law principle. The criterion requires an explicit statement of this principle."
+     },
+     {
+      "id": "C-002",
+      "title": "Good faith execution",
+      "verdict": "fail",
+      "reasoning": "The note mentions good faith (حسن النية) in the context of protecting the contractor who acted in good faith ('المتعاقد حسن النية لا يُضار بخطأ الإدارة'), but this refers to the contractor's good faith status rather than a requirement that the contract must be executed in a manner consistent with good faith requirements. The criterion requires the note to state that the contract must be executed in a manner consistent with the requirements of good faith (أن العقد يجب أن يُنفَّذ وفق متطلبات حسن النية). The note does not make this affirmative statement about execution obligations under good faith principles."
+     },
+     {
+      "id": "C-003",
+      "title": "Pre-contract procedural defects do not void a complete contract",
+      "verdict": "pass",
+      "reasoning": "The note explicitly discusses the doctrine of 'separate administrative decisions' (القرارات الإدارية المنفصلة) and states that nullity or illegality of pre-contract procedures (قرارات الطرح والترسية) does not automatically lead to the nullity or termination of the contract. It states: 'إلغاء القرار المنفصل، أو ثبوت عدم مشروعيته، لا يؤدي تلقائيًا إلى بطلان العقد أو انقضائه. فالعقد يظل قائمًا منتجًا لآثاره بين طرفيه.' This directly satisfies the criterion that pre-contract procedural defects do not void a complete contract once it has fulfilled its essential elements. The note also distinguishes between serious defects affecting contract elements (which can void it) and minor procedural defects (which do not), further reinforcing the principle."
+     },
+     {
+      "id": "C-004",
+      "title": "Obligation to continue execution",
+      "verdict": "fail",
+      "reasoning": "The note states in section 4 that if the violations are minor, the recommendation is 'الاستمرار في التنفيذ' (continuing execution), and in the conclusion it states 'الأصل أنها ملزمة بالاستمرار في التنفيذ' (the default is that the authority is obligated to continue execution). However, the note does not explicitly ground this obligation in the principle of 'استقرار المعاملات' (stability of transactions). The criterion specifically requires that the note state the obligation to continue execution is tied to achieving the principle of stability of transactions. The note cites protection of the good-faith contractor and the separability doctrine, but does not mention استقرار المعاملات as the basis."
+     },
+     {
+      "id": "C-005",
+      "title": "Public interest harm from termination",
+      "verdict": "fail",
+      "reasoning": "The note does not explicitly state that terminating the contract during execution causes serious harm to the public interest due to the loss of amounts already expended or the imposition of exorbitant amounts on the public treasury. While the note mentions that termination for public interest requires full compensation to the contractor (covering executed works, expenses, and lost profits), and references the 15 million EGP already disbursed in the facts section, it does not frame contract termination as causing serious harm to the public interest through loss of expended amounts or imposing exorbitant burdens on the public treasury. The focus is on the contractor's rights to compensation rather than the public interest harm from termination itself."
+     },
+     {
+      "id": "C-006",
+      "title": "Liability of violators preserved",
+      "verdict": "fail",
+      "reasoning": "The note mentions disciplinary accountability ('مساءلة التأديبية للموظفين المسؤولين') in section 2 when discussing minor procedural violations, and in section 4 it again mentions holding responsible employees accountable ('مساءلة الموظفين المسؤولين'). However, the criterion requires the note to explicitly state that *continuing to execute the contract* does not prejudice the rules of civil, disciplinary, AND criminal liability against those who committed the violations. The note only mentions disciplinary liability ('مساءلة تأديبية') in passing, and does not comprehensively state that continuation of contract execution preserves all three tracks of liability (civil, disciplinary, and criminal) against the violators. There is no explicit statement linking contract continuation to the preservation of these liability rules as a combined principle."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:21:44.402690+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/6 criteria passed.  Missed 5 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Contract as binding law",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state the principle that the contract is binding law upon the contracting parties (العقد شريعة المتعاقدين) and that it may not be revoked except by mutual agreement or for reasons established by law. While the note does convey that the contract remains binding and cannot be terminated unilaterally merely due to procedural defects, and discusses exceptions (mutual agreement is implicit, legal reasons are discussed), it never explicitly states the foundational principle 'العقد شريعة المتعاقدين' nor formulates the rule that a contract may not be revoked except by mutual agreement or for legally established reasons. The note implies these concepts but does not state them directly as required by the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "Good faith execution",
+      "verdict": "fail",
+      "reasoning": "The note repeatedly references the concept of good faith (حسن النية), particularly in the context of protecting the good-faith contractor ('المتعاقد حسن النية لا يُضار بخطأ الإدارة') and in the conclusion ('حماية المتعاقد حسن النية'). However, the criterion specifically asks whether the note states that the contract must be *executed* in a manner consistent with good faith requirements. The note discusses good faith in the context of the contractor's status (i.e., being a good-faith party who should not be harmed by the administration's procedural errors), but it does not explicitly state the broader principle that the contract must be executed/performed in accordance with good faith requirements. The references are about the contractor's good faith as a shield against termination, not about good faith as a governing principle of contract execution. This is a close call, but the criterion asks for a statement that the contract must be executed consistently with good faith, which is a distinct legal principle from merely noting the contractor is acting in good faith. The note does not contain such a statement."
+     },
+     {
+      "id": "C-003",
+      "title": "Pre-contract procedural defects do not void a complete contract",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that pre-contract procedural defects (مخالفات في إجراءات الطرح والترسية) do not automatically void the contract. It explains that these are 'قرارات إدارية منفصلة عن العقد' (separate administrative decisions from the contract) and that their illegality 'لا يؤدي تلقائيًا إلى بطلان العقد أو انقضائه' (does not automatically lead to nullity or termination of the contract). It further distinguishes between minor procedural violations that 'لا تنال من صحة العقد' (do not affect the validity of the contract) and serious violations that 'تمس أركان العقد' (affect the essential elements of the contract). This effectively conveys that nullity affecting pre-contract procedures does not prevent the contract from being binding once it has fulfilled its essential elements."
+     },
+     {
+      "id": "C-004",
+      "title": "Obligation to continue execution",
+      "verdict": "fail",
+      "reasoning": "The note states that the administrative authority is obligated to continue executing the contract ('الأصل أنها ملزمة بالاستمرار في التنفيذ') and mentions continuing execution. However, the criterion specifically requires that the note state the authority is obligated to continue executing the contract **until the end of its term** in order to achieve **the principle of stability of transactions (استقرار المعاملات)**. The note does not explicitly mention 'until the end of its term' nor does it reference the principle of 'استقرار المعاملات' (stability of transactions). While the concept is implicitly present, the specific principle name and the 'until end of term' language are absent."
+     },
+     {
+      "id": "C-005",
+      "title": "Public interest harm from termination",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that terminating the contract during execution causes serious harm to the public interest due to loss of amounts already expended or imposition of exorbitant amounts on the public treasury. While the note mentions the 15 million already spent and that the administration would need to compensate the contractor fully (including executed works, expenses, and lost profits), it does not explicitly frame termination as causing 'serious harm to the public interest' due to these financial consequences. It mentions compensation obligations but does not characterize this as harm to the public interest or loss to the public treasury in the direct terms required by the criterion."
+     },
+     {
+      "id": "C-006",
+      "title": "Liability of violators preserved",
+      "verdict": "fail",
+      "reasoning": "The criterion requires that the note states that continuing to execute the contract does not prejudice the rules of civil, disciplinary, and criminal liability against those who took the procedures in violation of the law. The note mentions 'مساءلة الموظفين المسؤولين' (accountability of responsible employees) and refers to 'المساءلة التأديبية' (disciplinary accountability) in the context of minor procedural violations. However, the note only mentions disciplinary liability and does not explicitly state that civil and criminal liability are also preserved. The criterion specifically requires all three types of liability (civil, disciplinary, and criminal) to be mentioned as not being prejudiced by the continuation of the contract. The note falls short of this requirement."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "task": "astrolabe-open/egypt-contracts-and-obligations/binding-force-of-contract-despite-pre-contract-procedural-defects",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:24:58.418135+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.16666666666666666,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/permissibility-of-inter-unit-transfer-for-surplus-employees",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: نقل العامل بين المجموعات النوعية ونقل العامل الزائد إلى وحدة أخرى\n\n## الأسئلة\n1. هل يجوز نقل أحمد منصور من المجموعة النوعية للوظائف الإدارية إلى المجموعة المالية داخل الوحدة نفسها لأن فيها وظائف شاغرة؟\n2. ما حكم نقل عامل زائد عن حاجة العمل إلى وحدة أخرى؟\n\n## الرأي المختصر\n1. نقل أحمد جائز من حيث المبدأ، بشرط أن تكون الوظيفة المنقول إليها **معادلة** لوظيفته في الدرجة، وأن **يستوفي شروط شغلها** الواردة في بطاقة الوصف، خاصة المؤهل والخبرة المطلوبين للوظائف المالية. وأن يكون النقل لمصلحة العمل وليس عقوبة مقنعة.\n2. نقل العامل الزائد إلى وحدة أخرى جائز، بل هو من الحلول التي ينص عليها القانون لمعالجة العمالة الزائدة. ويشترط أن يكون إلى وظيفة معادلة يستوفي شروطها، وأن يصدر من السلطة المختصة.\n\n## السند القانوني\n- **القانون رقم 47 لسنة 1978 (العاملون المدنيون بالدولة)**: تنص المادة 54 تقريبًا على جواز نقل العامل من وحدة إلى أخرى أو داخل الوحدة الواحدة، إذا لم يترتب على النقل تفويت دوره في الترقية بالأقدمية، أو كان النقل بناءً على طلبه. ويكون النقل إلى وظيفة من الدرجة نفسها أو إلى وظيفة معادلة. كما تشترط اللوائح استيفاء العامل لاشتراطات الوظيفة المنقول إليها. هذه الأحكام مذكورة من الذاكرة وتحتاج إلى التحقق.\n- **قانون الخدمة المدنية رقم 81 لسنة 2016 ولائحته التنفيذية**، وهو القانون الساري حاليًا: يجيز النقل داخل الوحدة وبينها وبين وحدات أخرى إلى وظيفة من المستوى نفسه، مع استيفاء العامل لشروط الوظيفة. ويسمح بالنقل لمعالجة العجز والزيادة في أعداد العاملين بين الجهات. لا أذكر أرقام المواد بدقة.\n- **مبدأ قضائي مستقر**: النقل سلطة تقديرية للإدارة تخضع لرقابة القضاء في حالة الانحراف بالسلطة، أو إذا كان النقل في حقيقته جزاءً مقنعًا أو ترتب عليه تنزيل العامل إلى وظيفة أدنى.\n\n## التوصية\n- **بالنسبة لأحمد**: يجب التأكد قبل صدور القرار من أن مؤهله وخبرته يستوفيان شروط الوظيفة المالية، وأن النقل لا يضر بأقدميته أو بدوره في الترقية. فإذا لم يستوف الشروط، كان القرار معيبًا وقابلًا للطعن.\n- **بالنسبة للعامل الزائد**: يصدر قرار النقل من السلطة المختصة بعد التنسيق مع الوحدة المنقول إليها، ويُنقل إلى وظيفة معادلة يستوفي شروطها. ويجب التأكد من أي إجراءات تتطلبها اللائحة، مثل موافقة الجهاز المركزي للتنظيم والإدارة في حالة النقل بين الجهات.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 1,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Prohibition of inter-group transfer",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not state that transfer between occupational groups (مجموعة نوعية) is prohibited. Instead, the note states that the transfer of Ahmed Mansour from the administrative occupational group to the financial occupational group is permissible in principle ('جائز من حيث المبدأ'), subject to certain conditions such as equivalent grade and meeting job requirements. The criterion requires the note to explicitly state that inter-group transfer is prohibited, which the agent failed to do."
+    },
+    {
+     "id": "C-002",
+     "title": "Occupational groups as distinct units",
+     "verdict": "fail",
+     "reasoning": "The note does not state that each occupational group (مجموعة نوعية) is considered a distinct unit with respect to appointment, promotion, transfer, and secondment. While the note discusses transferring Ahmed from one occupational group to another and mentions conditions for such transfers, it never establishes the foundational legal principle that each occupational group constitutes a distinct unit in the fields of appointment, promotion, transfer, and secondment. This principle is critical for answering whether inter-occupational-group transfers are permissible and under what framework they operate."
+    },
+    {
+     "id": "C-003",
+     "title": "Distinction between intra-unit and inter-unit transfer",
+     "verdict": "fail",
+     "reasoning": "The note does not clearly distinguish between intra-unit inter-group transfer (Ahmed's case: moving from administrative to financial occupational group within the same unit) and inter-unit transfer (surplus employee moved to a different unit). While the note addresses both questions separately, it applies essentially the same conditions to both (equivalent grade, meeting job requirements, competent authority) without explaining that these are fundamentally different types of transfers governed by different rules or having different procedural requirements. The note treats them as variations of the same concept rather than fundamentally distinct operations."
+    },
+    {
+     "id": "C-004",
+     "title": "Permissibility of inter-unit transfer for surplus employees",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the 'الرأي المختصر' section that transferring a surplus worker to another unit is permissible ('جائز'), and even describes it as one of the solutions prescribed by law to address surplus labor ('هو من الحلول التي ينص عليها القانون لمعالجة العمالة الزائدة'). This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 1,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Prohibition of inter-group transfer",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that a worker may not be transferred from one occupational group (مجموعة نوعية) to another. The agent's note does not state this prohibition. Instead, it says the transfer of Ahmed from the administrative group to the financial group is permissible in principle ('جائز من حيث المبدأ'), subject to conditions like equivalent grade and meeting job requirements. The note fails to mention the legal prohibition on inter-group transfers between different مجموعات نوعية."
+    },
+    {
+     "id": "C-002",
+     "title": "Occupational groups as distinct units",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to explicitly state that each occupational group (مجموعة نوعية) is considered a distinct unit with respect to appointment, promotion, transfer, and secondment. The agent's note discusses the conditions for transfer between occupational groups (such as equivalent grade and meeting job requirements), but it never explicitly states that each occupational group constitutes a distinct unit in the fields of appointment, promotion, transfer, and secondment. This specific legal characterization is absent from the output."
+    },
+    {
+     "id": "C-003",
+     "title": "Distinction between intra-unit and inter-unit transfer",
+     "verdict": "fail",
+     "reasoning": "The note treats the two questions separately and discusses different procedural requirements (e.g., inter-unit transfer requires coordination with the receiving unit and potentially approval from the Central Agency for Organization and Administration), but it never explicitly states that transferring between occupational groups within the same unit is fundamentally different from transferring between units. The note discusses them as two separate scenarios but does not articulate the conceptual or legal distinction between intra-unit inter-group transfer and inter-unit transfer as such."
+    },
+    {
+     "id": "C-004",
+     "title": "Permissibility of inter-unit transfer for surplus employees",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in the short opinion (الرأي المختصر) that transferring a surplus employee to another unit is permissible and is one of the solutions prescribed by law to address surplus labor ('نقل العامل الزائد إلى وحدة أخرى جائز، بل هو من الحلول التي ينص عليها القانون لمعالجة العمالة الزائدة'). This directly satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/permissibility-of-inter-unit-transfer-for-surplus-employees",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/permissibility-of-inter-unit-transfer-for-surplus-employees",
+  "scored_at": "2026-11-22T20:15:24.347247+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/4 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Prohibition of inter-group transfer",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not state that transfer between occupational groups (مجموعة نوعية) is prohibited. Instead, the note states that the transfer of Ahmed Mansour from the administrative occupational group to the financial occupational group is permissible in principle ('جائز من حيث المبدأ'), subject to certain conditions such as equivalent grade and meeting job requirements. The criterion requires the note to explicitly state that inter-group transfer is prohibited, which the agent failed to do."
+     },
+     {
+      "id": "C-002",
+      "title": "Occupational groups as distinct units",
+      "verdict": "fail",
+      "reasoning": "The note does not state that each occupational group (مجموعة نوعية) is considered a distinct unit with respect to appointment, promotion, transfer, and secondment. While the note discusses transferring Ahmed from one occupational group to another and mentions conditions for such transfers, it never establishes the foundational legal principle that each occupational group constitutes a distinct unit in the fields of appointment, promotion, transfer, and secondment. This principle is critical for answering whether inter-occupational-group transfers are permissible and under what framework they operate."
+     },
+     {
+      "id": "C-003",
+      "title": "Distinction between intra-unit and inter-unit transfer",
+      "verdict": "fail",
+      "reasoning": "The note does not clearly distinguish between intra-unit inter-group transfer (Ahmed's case: moving from administrative to financial occupational group within the same unit) and inter-unit transfer (surplus employee moved to a different unit). While the note addresses both questions separately, it applies essentially the same conditions to both (equivalent grade, meeting job requirements, competent authority) without explaining that these are fundamentally different types of transfers governed by different rules or having different procedural requirements. The note treats them as variations of the same concept rather than fundamentally distinct operations."
+     },
+     {
+      "id": "C-004",
+      "title": "Permissibility of inter-unit transfer for surplus employees",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the 'الرأي المختصر' section that transferring a surplus worker to another unit is permissible ('جائز'), and even describes it as one of the solutions prescribed by law to address surplus labor ('هو من الحلول التي ينص عليها القانون لمعالجة العمالة الزائدة'). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/permissibility-of-inter-unit-transfer-for-surplus-employees",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/permissibility-of-inter-unit-transfer-for-surplus-employees",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:12:42.511679+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "1/4 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 1,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Prohibition of inter-group transfer",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that a worker may not be transferred from one occupational group (مجموعة نوعية) to another. The agent's note does not state this prohibition. Instead, it says the transfer of Ahmed from the administrative group to the financial group is permissible in principle ('جائز من حيث المبدأ'), subject to conditions like equivalent grade and meeting job requirements. The note fails to mention the legal prohibition on inter-group transfers between different مجموعات نوعية."
+     },
+     {
+      "id": "C-002",
+      "title": "Occupational groups as distinct units",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to explicitly state that each occupational group (مجموعة نوعية) is considered a distinct unit with respect to appointment, promotion, transfer, and secondment. The agent's note discusses the conditions for transfer between occupational groups (such as equivalent grade and meeting job requirements), but it never explicitly states that each occupational group constitutes a distinct unit in the fields of appointment, promotion, transfer, and secondment. This specific legal characterization is absent from the output."
+     },
+     {
+      "id": "C-003",
+      "title": "Distinction between intra-unit and inter-unit transfer",
+      "verdict": "fail",
+      "reasoning": "The note treats the two questions separately and discusses different procedural requirements (e.g., inter-unit transfer requires coordination with the receiving unit and potentially approval from the Central Agency for Organization and Administration), but it never explicitly states that transferring between occupational groups within the same unit is fundamentally different from transferring between units. The note discusses them as two separate scenarios but does not articulate the conceptual or legal distinction between intra-unit inter-group transfer and inter-unit transfer as such."
+     },
+     {
+      "id": "C-004",
+      "title": "Permissibility of inter-unit transfer for surplus employees",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in the short opinion (الرأي المختصر) that transferring a surplus employee to another unit is permissible and is one of the solutions prescribed by law to address surplus labor ('نقل العامل الزائد إلى وحدة أخرى جائز، بل هو من الحلول التي ينص عليها القانون لمعالجة العمالة الزائدة'). This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/permissibility-of-inter-unit-transfer-for-surplus-employees",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/permissibility-of-inter-unit-transfer-for-surplus-employees",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:15:24.346877+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.25,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

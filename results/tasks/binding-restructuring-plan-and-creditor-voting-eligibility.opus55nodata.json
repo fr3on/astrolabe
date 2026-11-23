@@ -1,0 +1,221 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: أثر قبول مقترح المدين الصغير وحق التصويت\n\n## الوقائع\nتقدم المدين الصغير أحمد العمري بمقترح لدائنيه في إجراءات صغار المدينين، وقبله الدائنون في جلسة التصويت بتاريخ 15 مارس 2025. وترى شركة البناء المتحدة أنه لم يكن لها حق التصويت لأن المقترح لا يمس حقوقها.\n\n## تحفظ أولي\nبحسب علمي، تنظم إجراءات صغار المدينين اللائحة الخاصة بها الصادرة بموجب نظام الإفلاس السعودي (1439هـ). وأي مقترح لإعادة الهيكلة يندرج غالبًا في إجراء **إعادة التنظيم المالي** لصغار المدينين، وليس في إجراء التصفية. فإن كان الإجراء تصفية فعلًا فهذا يحتاج تحققًا. ولست متأكدًا من أرقام المواد.\n\n## التحليل\n1. **أثر القبول:** قبول الدائنين وحده لا يكفي عادةً. يُرفع المقترح إلى **المحكمة لتصادق عليه**، وتتحقق المحكمة من سلامة إجراءات التصويت، ومن تحقق النصاب، ومن أن الدائنين المعترضين لا يكونون في وضع أسوأ مما لو صُفيت أموال المدين.\n2. **النفاذ:** حسب المبادئ العامة في نظام الإفلاس، يصبح المقترح نافذًا وملزمًا للمدين ولجميع الدائنين المعنيين، حتى من لم يوافق، **من تاريخ تصديق المحكمة عليه**، وليس من تاريخ جلسة التصويت.\n3. **حق التصويت لشركة البناء المتحدة:** المبدأ أن التصويت يقتصر على الدائنين **الذين يتأثرون بالمقترح**. فالدائن الذي لا يمس المقترح حقوقه لا يدخل في فئات التصويت. فإن صح أن المقترح لا يمس حقوقها، فرأيها صحيح ولم يكن لها حق التصويت، ولا يحسب صوتها في النصاب.\n4. **إن كانت قد صوتت:** يجب بحث ما إذا كان صوتها أثّر في النتيجة. إن لم يؤثر فالأثر محدود. وإن كان مؤثرًا، فقد يعد ذلك سببًا للاعتراض على صحة التصويت أمام المحكمة قبل التصديق.\n\n## التوصية\n- مراجعة نص المقترح للتأكد من أنه لا يمس حقوق الشركة فعلًا.\n- متابعة طلب التصديق أمام المحكمة، وتقديم أي اعتراض في وقته.\n- التحقق من نص اللائحة ونظام الإفلاس.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Effective Date of Proposal",
+     "verdict": "fail",
+     "reasoning": "The note states that the proposal becomes binding and effective 'from the date of court ratification/certification' (من تاريخ تصديق المحكمة عليه), not from the date the voting result is deposited with the court. The criterion requires the note to tie the effective date specifically to the deposit of the voting result with the court, which the note does not mention at all."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding Plan",
+     "verdict": "fail",
+     "reasoning": "The note states that upon court ratification, the proposal becomes binding on the debtor and 'all creditors concerned' (جميع الدائنين المعنيين), but it does not mention the owners (الملاك/المساهمون) as a third bound party. The criterion explicitly requires that the note state the plan binds all three parties: the small debtor, the creditors, AND the owners. Since the owners are not mentioned, the criterion is not satisfied."
+    },
+    {
+     "id": "C-003",
+     "title": "Debtor's Obligation",
+     "verdict": "fail",
+     "reasoning": "The note does not mention any obligation on the small debtor (Ahmed Al-Omari) to complete regulatory procedures mandated by relevant regulations. The analysis focuses on the effect of creditor acceptance, court ratification, and creditor voting eligibility, but never addresses the debtor's obligation to fulfill the regulatory/procedural requirements imposed by the applicable regulations."
+    },
+    {
+     "id": "C-004",
+     "title": "Trustee Registration Duty",
+     "verdict": "fail",
+     "reasoning": "The agent's note does not mention the trustee (الأمين) at all, nor does it state that the trustee must deposit a record in the bankruptcy register confirming the plan's effectiveness, nor that the trustee must make an announcement of that fact. The note focuses on court ratification, voting rights, and general recommendations, but entirely omits the trustee's registration and announcement duties."
+    },
+    {
+     "id": "C-005",
+     "title": "Voting Eligibility Condition",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 3 (حق التصويت لشركة البناء المتحدة) that voting is limited to creditors who are affected by the proposal ('المبدأ أن التصويت يقتصر على الدائنين الذين يتأثرون بالمقترح'), and that a creditor whose rights are not affected by the proposal does not enter the voting categories. This directly satisfies the criterion that voting eligibility is restricted to those creditors or owners whose statutory or contractual rights are affected by the proposal."
+    },
+    {
+     "id": "C-006",
+     "title": "No Voting Right for Unaffected Creditor",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section 3 (حق التصويت لشركة البناء المتحدة) that voting is limited to creditors who are affected by the proposal, and that a creditor whose rights are not affected by the proposal does not enter the voting categories. It then directly concludes: 'فإن صح أن المقترح لا يمس حقوقها، فرأيها صحيح ولم يكن لها حق التصويت، ولا يحسب صوتها في النصاب' — meaning if the proposal truly does not affect its rights, then United Construction Company's position is correct and it had no right to vote. This satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Effective Date of Proposal",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the proposal becomes effective from the date the voting result is deposited with the court. The agent's note states that the proposal becomes binding 'from the date of court ratification' (من تاريخ تصديق المحكمة عليه), not from the date the voting result is deposited with the court. These are two different events - depositing the voting result with the court versus the court ratifying/approving the proposal. The agent does not mention the deposit of the voting result as the trigger for the effective date."
+    },
+    {
+     "id": "C-002",
+     "title": "Binding Plan",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the proposal becomes a binding plan on three parties: the small debtor, the creditors, AND the owners. The agent's note states it becomes 'نافذًا وملزمًا للمدين ولجميع الدائنين المعنيين' (binding on the debtor and all relevant creditors) but does not mention the owners (الملاك) as a bound party. Since all three parties must be mentioned and the owners are missing, the criterion is not satisfied."
+    },
+    {
+     "id": "C-003",
+     "title": "Debtor's Obligation",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the small debtor is required to complete the regulatory procedures mandated by the relevant regulations. The agent's note does not explicitly state that the small debtor must complete regulatory procedures. While it mentions that the proposal must be submitted to the court for ratification and discusses procedural aspects, it does not clearly articulate an obligation on the small debtor to complete specific regulatory procedures required by the relevant regulations. The focus is on court ratification and voting procedures, not on the debtor's obligation to fulfill regulatory requirements."
+    },
+    {
+     "id": "C-004",
+     "title": "Trustee Registration Duty",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention the trustee (الأمين) depositing a record in the bankruptcy register confirming the plan's effectiveness, nor does it mention the trustee making an announcement of that fact. The criterion requires both elements to be present for a PASS."
+    },
+    {
+     "id": "C-005",
+     "title": "Voting Eligibility Condition",
+     "verdict": "pass",
+     "reasoning": "The note states in point 3 that voting is limited to creditors 'who are affected by the proposal' (الذين يتأثرون بالمقترح) and that a creditor whose rights are not affected does not enter the voting categories. This satisfies the criterion requiring the note to state that voting eligibility is restricted to those creditors whose statutory or contractual rights are affected by the proposal."
+    },
+    {
+     "id": "C-006",
+     "title": "No Voting Right for Unaffected Creditor",
+     "verdict": "pass",
+     "reasoning": "The note clearly states in point 3 that voting is restricted to creditors affected by the proposal, and that if the proposal does not affect United Construction Company's rights, then its position is correct and it did not have the right to vote, nor should its vote be counted in the quorum. This satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/binding-restructuring-plan-and-creditor-voting-eligibility",
+  "task": "astrolabe-open/saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+  "scored_at": "2026-11-23T06:43:27.220040+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/6 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Effective Date of Proposal",
+      "verdict": "fail",
+      "reasoning": "The note states that the proposal becomes binding and effective 'from the date of court ratification/certification' (من تاريخ تصديق المحكمة عليه), not from the date the voting result is deposited with the court. The criterion requires the note to tie the effective date specifically to the deposit of the voting result with the court, which the note does not mention at all."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding Plan",
+      "verdict": "fail",
+      "reasoning": "The note states that upon court ratification, the proposal becomes binding on the debtor and 'all creditors concerned' (جميع الدائنين المعنيين), but it does not mention the owners (الملاك/المساهمون) as a third bound party. The criterion explicitly requires that the note state the plan binds all three parties: the small debtor, the creditors, AND the owners. Since the owners are not mentioned, the criterion is not satisfied."
+     },
+     {
+      "id": "C-003",
+      "title": "Debtor's Obligation",
+      "verdict": "fail",
+      "reasoning": "The note does not mention any obligation on the small debtor (Ahmed Al-Omari) to complete regulatory procedures mandated by relevant regulations. The analysis focuses on the effect of creditor acceptance, court ratification, and creditor voting eligibility, but never addresses the debtor's obligation to fulfill the regulatory/procedural requirements imposed by the applicable regulations."
+     },
+     {
+      "id": "C-004",
+      "title": "Trustee Registration Duty",
+      "verdict": "fail",
+      "reasoning": "The agent's note does not mention the trustee (الأمين) at all, nor does it state that the trustee must deposit a record in the bankruptcy register confirming the plan's effectiveness, nor that the trustee must make an announcement of that fact. The note focuses on court ratification, voting rights, and general recommendations, but entirely omits the trustee's registration and announcement duties."
+     },
+     {
+      "id": "C-005",
+      "title": "Voting Eligibility Condition",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 3 (حق التصويت لشركة البناء المتحدة) that voting is limited to creditors who are affected by the proposal ('المبدأ أن التصويت يقتصر على الدائنين الذين يتأثرون بالمقترح'), and that a creditor whose rights are not affected by the proposal does not enter the voting categories. This directly satisfies the criterion that voting eligibility is restricted to those creditors or owners whose statutory or contractual rights are affected by the proposal."
+     },
+     {
+      "id": "C-006",
+      "title": "No Voting Right for Unaffected Creditor",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section 3 (حق التصويت لشركة البناء المتحدة) that voting is limited to creditors who are affected by the proposal, and that a creditor whose rights are not affected by the proposal does not enter the voting categories. It then directly concludes: 'فإن صح أن المقترح لا يمس حقوقها، فرأيها صحيح ولم يكن لها حق التصويت، ولا يحسب صوتها في النصاب' — meaning if the proposal truly does not affect its rights, then United Construction Company's position is correct and it had no right to vote. This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "task": "astrolabe-open/saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-23T06:43:10.256472+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/6 criteria passed.  Missed 4 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Effective Date of Proposal",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the proposal becomes effective from the date the voting result is deposited with the court. The agent's note states that the proposal becomes binding 'from the date of court ratification' (من تاريخ تصديق المحكمة عليه), not from the date the voting result is deposited with the court. These are two different events - depositing the voting result with the court versus the court ratifying/approving the proposal. The agent does not mention the deposit of the voting result as the trigger for the effective date."
+     },
+     {
+      "id": "C-002",
+      "title": "Binding Plan",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the proposal becomes a binding plan on three parties: the small debtor, the creditors, AND the owners. The agent's note states it becomes 'نافذًا وملزمًا للمدين ولجميع الدائنين المعنيين' (binding on the debtor and all relevant creditors) but does not mention the owners (الملاك) as a bound party. Since all three parties must be mentioned and the owners are missing, the criterion is not satisfied."
+     },
+     {
+      "id": "C-003",
+      "title": "Debtor's Obligation",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the small debtor is required to complete the regulatory procedures mandated by the relevant regulations. The agent's note does not explicitly state that the small debtor must complete regulatory procedures. While it mentions that the proposal must be submitted to the court for ratification and discusses procedural aspects, it does not clearly articulate an obligation on the small debtor to complete specific regulatory procedures required by the relevant regulations. The focus is on court ratification and voting procedures, not on the debtor's obligation to fulfill regulatory requirements."
+     },
+     {
+      "id": "C-004",
+      "title": "Trustee Registration Duty",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention the trustee (الأمين) depositing a record in the bankruptcy register confirming the plan's effectiveness, nor does it mention the trustee making an announcement of that fact. The criterion requires both elements to be present for a PASS."
+     },
+     {
+      "id": "C-005",
+      "title": "Voting Eligibility Condition",
+      "verdict": "pass",
+      "reasoning": "The note states in point 3 that voting is limited to creditors 'who are affected by the proposal' (الذين يتأثرون بالمقترح) and that a creditor whose rights are not affected does not enter the voting categories. This satisfies the criterion requiring the note to state that voting eligibility is restricted to those creditors whose statutory or contractual rights are affected by the proposal."
+     },
+     {
+      "id": "C-006",
+      "title": "No Voting Right for Unaffected Creditor",
+      "verdict": "pass",
+      "reasoning": "The note clearly states in point 3 that voting is restricted to creditors affected by the proposal, and that if the proposal does not affect United Construction Company's rights, then its position is correct and it did not have the right to vote, nor should its vote be counted in the quorum. This satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "task": "astrolabe-open/saudi-insolvency-and-restructuring/binding-restructuring-plan-and-creditor-voting-eligibility",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-23T06:43:27.219549+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.3333333333333333,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

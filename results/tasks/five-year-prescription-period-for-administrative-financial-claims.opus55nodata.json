@@ -1,0 +1,221 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: تقادم حق أحمد سالم في المكافأة\n\n## الوقائع\nاستحقت لأحمد سالم، الموظف بجهة حكومية، مكافأة في 1/1/2015، ولم يطالب بها قضائياً ولا إدارياً حتى 15/3/2021، أي بعد أكثر من ست سنوات وشهرين.\n\n## السؤالان\n1. هل يحق لأحمد المطالبة بالمكافأة الآن؟\n2. هل يجوز لجهة الإدارة أن تصرفها له؟\n\n## السند القانوني\n- **القانون المدني المصري، المادة 375:** تتقادم الحقوق الدورية المتجددة، كالمرتبات والأجور، بمضي خمس سنوات. وقد طبق قضاء مجلس الدولة وإفتاؤه هذه القاعدة على مستحقات الموظفين المالية ومنها المكافآت.\n- **قوانين المحاسبة الحكومية:** نصت المادة 50 من قانون المحاسبة الحكومية رقم 127 لسنة 1981، كما فهمها مجلس الدولة، على أن المبالغ المستحقة على الدولة تؤول إليها نهائياً إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها، ما لم يوجد سبب قانوني يقطع المدة أو يوقفها. وقد صدر لاحقاً قانون المالية العامة الموحد رقم 6 لسنة 2022 فحل محل هذا القانون، **ولست متأكداً من رقم المادة المقابلة فيه ولا من صياغتها**، فيجب الرجوع إليه.\n- **إفتاء الجمعية العمومية لقسمي الفتوى والتشريع:** استقر على أن التقادم الخمسي في هذا المجال لا يقتصر على أن للإدارة أن تتمسك به إن شاءت، بل هو قاعدة تنظيمية تتصل بالمال العام وبالاستقرار المالي للدولة، فيمتنع على الإدارة أن تصرف الحق بعد سقوطه، ولا يجوز لها أن تتنازل عن التمسك بالتقادم.\n- **قطع التقادم:** تنقطع المدة بالمطالبة القضائية، أو بإقرار المدين بالحق (المادتان 383 و384 مدني). ويعتد قضاء مجلس الدولة كذلك بالطلب أو التظلم الإداري الذي يقدمه الموظف إلى جهته متمسكاً فيه بحقه.\n\n## التحليل\n- بدأت المدة في 1/1/2015 واكتملت في 1/1/2020 تقريباً، ولم يُتخذ أي إجراء يقطعها بحسب الوقائع.\n- لذلك سقط الحق بالتقادم الخمسي قبل 15/3/2021.\n- ما لم يوجد سبب لوقف المدة أو قطعها، كمانع مادي أو قانوني حال دون المطالبة، أو إقرار مكتوب من الجهة بالحق، فإن الحق ساقط.\n\n## الخلاصة\n1. **لا يستطيع أحمد في الغالب المطالبة بالمكافأة**، ومن المرجح أن تُرفض دعواه أو طلبه للتقادم.\n2. **لا يجوز لجهة الإدارة أن تصرفها له**، إذ تؤول المبالغ إلى الخزانة العامة، وقد تترتب مسؤولية على من يأمر بالصرف.\n\n## التوصية\n- ابحث عن أي مستند يقطع التقادم أو يوقفه: طلب مكتوب، تظلم، مكاتبة من الجهة تقر فيها بالحق، أو عذر قاهر.\n- راجع نص قانون المالية العامة الموحد الساري والتعليمات المالية المنفذة له، لأنني لست متأكداً من أرقام مواده.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Five-Year Prescription Period",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states both required elements: (1) the five-year prescription period from the date of entitlement ('المبالغ المستحقة على الدولة تؤول إليها نهائياً إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها') and (2) the transfer to the public treasury ('تؤول المبالغ إلى الخزانة العامة'). Both the five-year period and the transfer to the public treasury are clearly mentioned."
+    },
+    {
+     "id": "C-002",
+     "title": "Administrative or Judicial Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the facts section that Ahmed Salem did not claim the bonus 'قضائياً ولا إدارياً' (judicially nor administratively). In the interruption of prescription section, it mentions that the period is interrupted by judicial claim ('المطالبة القضائية') and also recognizes 'الطلب أو التظلم الإداري' (administrative request or grievance) as equally valid for interrupting prescription. The note treats both judicial and administrative claims as valid means of interruption, satisfying the criterion that both types are addressed equally."
+    },
+    {
+     "id": "C-003",
+     "title": "Two Conditions for Application",
+     "verdict": "pass",
+     "reasoning": "The note explicitly mentions both conditions required for application of the five-year prescription period: (1) the existence of a financial right owed by the state ('المبالغ المستحقة على الدولة' / 'مكافأة' as a financial right owed by a government entity), and (2) the failure to claim it for five years ('لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها'). Both conditions are clearly stated in the legal basis section under the government accounting law article, and the analysis confirms that no claim was made during the five-year period."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer to Treasury by Force of Law",
+     "verdict": "fail",
+     "reasoning": "The note states that amounts owed by the state transfer to it finally ('تؤول إليها نهائياً') if not claimed within five years from the date they became due, and mentions the five-year period. However, the criterion specifically requires that the note states the transfer occurs 'by force of law' (بقوة القانون). The note does not use this phrase or an equivalent formulation indicating automaticity by operation of law. The transfer is described as a consequence of non-claim within five years, but the specific legal mechanism 'by force of law' is not stated."
+    },
+    {
+     "id": "C-005",
+     "title": "Prohibition on Administration's Acknowledgment or Payment",
+     "verdict": "fail",
+     "reasoning": "The note explicitly states in the legal basis section (إفتاء الجمعية العمومية) that the administration is prohibited from paying the entitlement after it has lapsed ('يمتنع على الإدارة أن تصرف الحق بعد سقوطه، ولا يجوز لها أن تتنازل عن التمسك بالتقادم'). The conclusion section also reiterates that the administration cannot pay ('لا يجوز لجهة الإدارة أن تصرفها له'). However, the criterion requires that the note state the prohibition on both acknowledgment AND payment. The note mentions the prohibition on payment clearly, but does not explicitly mention a prohibition on acknowledgment (الاعتراف بالحق) of the entitlement after five years. The note mentions that the administration cannot waive the prescription defense, but this is not the same as explicitly prohibiting acknowledgment of the entitlement. The criterion specifically requires mention of prohibition on 'both acknowledgment and payment.'"
+    },
+    {
+     "id": "C-006",
+     "title": "Expiry Date Calculation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the five-year period began on 1/1/2015 and was completed around 1/1/2020, before Ahmed's claim on 15/3/2021. It explicitly concludes that the right lapsed due to the five-year prescription period before March 2021, and that Ahmed most likely cannot claim the bonus and the administration cannot pay it."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 6,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Five-Year Prescription Period",
+     "verdict": "pass",
+     "reasoning": "The note clearly states the five-year prescription period for financial claims of state employees, mentions that the amounts transfer to the public treasury (الخزانة العامة) after the period expires ('تؤول المبالغ إلى الخزانة العامة'), and ties this to the date of entitlement (1/1/2015). Both required elements are present."
+    },
+    {
+     "id": "C-002",
+     "title": "Administrative or Judicial Claim",
+     "verdict": "pass",
+     "reasoning": "The note explicitly mentions both judicial and administrative claims. In the السند القانوني section under قطع التقادم, it states that the prescription period is interrupted by judicial claims (المطالبة القضائية) and also by administrative requests/grievances (الطلب أو التظلم الإداري). In the الوقائع section, it notes that Ahmed did not claim 'قضائياً ولا إدارياً' (neither judicially nor administratively). The note treats both types of claims as equally valid means of interrupting prescription."
+    },
+    {
+     "id": "C-003",
+     "title": "Two Conditions for Application",
+     "verdict": "pass",
+     "reasoning": "The note clearly indicates both conditions: (1) the existence of a financial right owed by the state (the مكافأة that was due to أحمد سالم from a government entity), and (2) the failure to claim it for five years (المبالغ المستحقة على الدولة تؤول إليها نهائياً إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها). The analysis section also applies both conditions to the facts, noting the right arose on 1/1/2015 and that no action was taken to interrupt the five-year period."
+    },
+    {
+     "id": "C-004",
+     "title": "Transfer to Treasury by Force of Law",
+     "verdict": "fail",
+     "reasoning": "The note states that amounts transfer to the public treasury (الخزانة العامة) after the five-year period, mentioning that 'المبالغ المستحقة على الدولة تؤول إليها نهائياً إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها' and in the conclusion 'تؤول المبالغ إلى الخزانة العامة'. However, the criterion requires the note to specify that this transfer occurs 'بقوة القانون' (by force of law). The note does not explicitly use the phrase 'بقوة القانون'. While it implies the transfer is mandatory and automatic (using 'نهائياً' and stating the administration cannot waive it), the specific phrase 'by force of law' is not present. The criterion is specific about this requirement."
+    },
+    {
+     "id": "C-005",
+     "title": "Prohibition on Administration's Acknowledgment or Payment",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the administration is prohibited from both acknowledging the entitlements AND paying them after five years. The note clearly states that the administration cannot pay ('لا يجوز لجهة الإدارة أن تصرفها له') and that it cannot waive the prescription defense ('لا يجوز لها أن تتنازل عن التمسك بالتقادم'). It also states that amounts revert to the public treasury and that responsibility may fall on whoever orders payment. However, regarding 'acknowledgment' specifically - the note says the administration cannot waive the prescription defense, and mentions that the prescription is a regulatory rule connected to public funds, but it doesn't explicitly state that the administration is prohibited from 'acknowledging' (الإقرار بالحق) the entitlements after five years. The prohibition on acknowledgment is a distinct concept from prohibition on payment or waiving the defense. The note discusses acknowledgment only in the context of interrupting prescription (as something the debtor might do), not as something the administration is prohibited from doing after the period expires. This is a subtle but important gap - the criterion specifically requires mention of prohibition on both acknowledgment and payment."
+    },
+    {
+     "id": "C-006",
+     "title": "Expiry Date Calculation",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the five-year period began on 1/1/2015 and was completed around 1/1/2020, well before Ahmed's claim on 15/3/2021. It explicitly concludes that the claim is time-barred and that Ahmed cannot successfully claim the bonus, and that the administration cannot pay it out."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/five-year-prescription-period-for-administrative-financial-claims",
+  "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+  "scored_at": "2026-11-22T20:21:33.783076+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "4/6 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Five-Year Prescription Period",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states both required elements: (1) the five-year prescription period from the date of entitlement ('المبالغ المستحقة على الدولة تؤول إليها نهائياً إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها') and (2) the transfer to the public treasury ('تؤول المبالغ إلى الخزانة العامة'). Both the five-year period and the transfer to the public treasury are clearly mentioned."
+     },
+     {
+      "id": "C-002",
+      "title": "Administrative or Judicial Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the facts section that Ahmed Salem did not claim the bonus 'قضائياً ولا إدارياً' (judicially nor administratively). In the interruption of prescription section, it mentions that the period is interrupted by judicial claim ('المطالبة القضائية') and also recognizes 'الطلب أو التظلم الإداري' (administrative request or grievance) as equally valid for interrupting prescription. The note treats both judicial and administrative claims as valid means of interruption, satisfying the criterion that both types are addressed equally."
+     },
+     {
+      "id": "C-003",
+      "title": "Two Conditions for Application",
+      "verdict": "pass",
+      "reasoning": "The note explicitly mentions both conditions required for application of the five-year prescription period: (1) the existence of a financial right owed by the state ('المبالغ المستحقة على الدولة' / 'مكافأة' as a financial right owed by a government entity), and (2) the failure to claim it for five years ('لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها'). Both conditions are clearly stated in the legal basis section under the government accounting law article, and the analysis confirms that no claim was made during the five-year period."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer to Treasury by Force of Law",
+      "verdict": "fail",
+      "reasoning": "The note states that amounts owed by the state transfer to it finally ('تؤول إليها نهائياً') if not claimed within five years from the date they became due, and mentions the five-year period. However, the criterion specifically requires that the note states the transfer occurs 'by force of law' (بقوة القانون). The note does not use this phrase or an equivalent formulation indicating automaticity by operation of law. The transfer is described as a consequence of non-claim within five years, but the specific legal mechanism 'by force of law' is not stated."
+     },
+     {
+      "id": "C-005",
+      "title": "Prohibition on Administration's Acknowledgment or Payment",
+      "verdict": "fail",
+      "reasoning": "The note explicitly states in the legal basis section (إفتاء الجمعية العمومية) that the administration is prohibited from paying the entitlement after it has lapsed ('يمتنع على الإدارة أن تصرف الحق بعد سقوطه، ولا يجوز لها أن تتنازل عن التمسك بالتقادم'). The conclusion section also reiterates that the administration cannot pay ('لا يجوز لجهة الإدارة أن تصرفها له'). However, the criterion requires that the note state the prohibition on both acknowledgment AND payment. The note mentions the prohibition on payment clearly, but does not explicitly mention a prohibition on acknowledgment (الاعتراف بالحق) of the entitlement after five years. The note mentions that the administration cannot waive the prescription defense, but this is not the same as explicitly prohibiting acknowledgment of the entitlement. The criterion specifically requires mention of prohibition on 'both acknowledgment and payment.'"
+     },
+     {
+      "id": "C-006",
+      "title": "Expiry Date Calculation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the five-year period began on 1/1/2015 and was completed around 1/1/2020, before Ahmed's claim on 15/3/2021. It explicitly concludes that the right lapsed due to the five-year prescription period before March 2021, and that Ahmed most likely cannot claim the bonus and the administration cannot pay it."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/five-year-prescription-period-for-administrative-financial-claims",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:17:47.934433+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "4/6 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 6,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Five-Year Prescription Period",
+      "verdict": "pass",
+      "reasoning": "The note clearly states the five-year prescription period for financial claims of state employees, mentions that the amounts transfer to the public treasury (الخزانة العامة) after the period expires ('تؤول المبالغ إلى الخزانة العامة'), and ties this to the date of entitlement (1/1/2015). Both required elements are present."
+     },
+     {
+      "id": "C-002",
+      "title": "Administrative or Judicial Claim",
+      "verdict": "pass",
+      "reasoning": "The note explicitly mentions both judicial and administrative claims. In the السند القانوني section under قطع التقادم, it states that the prescription period is interrupted by judicial claims (المطالبة القضائية) and also by administrative requests/grievances (الطلب أو التظلم الإداري). In the الوقائع section, it notes that Ahmed did not claim 'قضائياً ولا إدارياً' (neither judicially nor administratively). The note treats both types of claims as equally valid means of interrupting prescription."
+     },
+     {
+      "id": "C-003",
+      "title": "Two Conditions for Application",
+      "verdict": "pass",
+      "reasoning": "The note clearly indicates both conditions: (1) the existence of a financial right owed by the state (the مكافأة that was due to أحمد سالم from a government entity), and (2) the failure to claim it for five years (المبالغ المستحقة على الدولة تؤول إليها نهائياً إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها). The analysis section also applies both conditions to the facts, noting the right arose on 1/1/2015 and that no action was taken to interrupt the five-year period."
+     },
+     {
+      "id": "C-004",
+      "title": "Transfer to Treasury by Force of Law",
+      "verdict": "fail",
+      "reasoning": "The note states that amounts transfer to the public treasury (الخزانة العامة) after the five-year period, mentioning that 'المبالغ المستحقة على الدولة تؤول إليها نهائياً إذا لم يطالب بها صاحبها خلال خمس سنوات من تاريخ استحقاقها' and in the conclusion 'تؤول المبالغ إلى الخزانة العامة'. However, the criterion requires the note to specify that this transfer occurs 'بقوة القانون' (by force of law). The note does not explicitly use the phrase 'بقوة القانون'. While it implies the transfer is mandatory and automatic (using 'نهائياً' and stating the administration cannot waive it), the specific phrase 'by force of law' is not present. The criterion is specific about this requirement."
+     },
+     {
+      "id": "C-005",
+      "title": "Prohibition on Administration's Acknowledgment or Payment",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the administration is prohibited from both acknowledging the entitlements AND paying them after five years. The note clearly states that the administration cannot pay ('لا يجوز لجهة الإدارة أن تصرفها له') and that it cannot waive the prescription defense ('لا يجوز لها أن تتنازل عن التمسك بالتقادم'). It also states that amounts revert to the public treasury and that responsibility may fall on whoever orders payment. However, regarding 'acknowledgment' specifically - the note says the administration cannot waive the prescription defense, and mentions that the prescription is a regulatory rule connected to public funds, but it doesn't explicitly state that the administration is prohibited from 'acknowledging' (الإقرار بالحق) the entitlements after five years. The prohibition on acknowledgment is a distinct concept from prohibition on payment or waiving the defense. The note discusses acknowledgment only in the context of interrupting prescription (as something the debtor might do), not as something the administration is prohibited from doing after the period expires. This is a subtle but important gap - the criterion specifically requires mention of prohibition on both acknowledgment and payment."
+     },
+     {
+      "id": "C-006",
+      "title": "Expiry Date Calculation",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the five-year period began on 1/1/2015 and was completed around 1/1/2020, well before Ahmed's claim on 15/3/2021. It explicitly concludes that the claim is time-barred and that Ahmed cannot successfully claim the bonus, and that the administration cannot pay it out."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/five-year-prescription-period-for-administrative-financial-claims",
+    "task": "astrolabe-open/egypt-civil-procedure-and-litigation/five-year-prescription-period-for-administrative-financial-claims",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:21:33.782693+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.6666666666666666,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

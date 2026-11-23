@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: غرامة التقصير في عقد الصيانة الحكومي\n\n## الوقائع\nعقد صيانة بين جهة حكومية وشركة \"الإنشاء المتقدم\" بقيمة مليون ريال، مع تقصير متكرر من الشركة، وقررت الجهة فرض غرامة 10% (100,000 ريال) وتعتقد أنها كل ما ستتحمله الشركة.\n\n## الجواب المختصر\nهذا الفهم غير صحيح في الغالب. الغرامة ليست بالضرورة كل ما تتحمله الشركة.\n\n## التحليل\n1. **طبيعة الغرامة:** بحسب نظام المنافسات والمشتريات الحكومية السعودي (1440هـ) ولائحته التنفيذية، الغرامات جزاء تعاقدي له سقف محدد. وحسب علمي، غرامة التأخير لها حد أعلى (نحو 6% من قيمة العقد في الغالب)، وغرامات مخالفة الشروط والمواصفات لها حد أعلى نحو 10%، مع حد أقصى لمجموع الغرامات. لست متأكدًا من النسب وأرقام المواد، ويجب التحقق منها في النص الرسمي.\n2. **الغرامة لا تمنع الجزاءات الأخرى:** يجوز للجهة الحكومية، فوق الغرامة، أن:\n   - تنفذ الأعمال المقصَّر فيها على حساب الشركة، وتحمّلها الفرق في التكلفة والمصاريف الإدارية؛\n   - تسحب العمل أو تنهي العقد إذا تكرر الإخلال بعد إنذارها؛\n   - تصادر الضمان النهائي كله أو بعضه؛\n   - تطالب بالتعويض عن الأضرار الفعلية التي تزيد على الغرامة، حسب القواعد العامة؛\n   - تتخذ إجراءات إدارية مثل الإيقاف عن التعامل أو تخفيض التصنيف في الحالات الجسيمة.\n3. **سقف الغرامة:** إذا كانت نسبة 10% داخل الحد النظامي لغرامات المخالفة فهي صحيحة، لكنها تمثل حد هذا النوع من الغرامات، وليست حدًا لكل مسؤولية الشركة.\n\n## التوصية\n- التأكد من أن الغرامة تقع داخل الحد النظامي وتستند إلى شروط العقد ومحاضر التقصير.\n- توثيق الأضرار الفعلية وتكاليف التنفيذ على حساب الشركة للمطالبة بها مستقلةً عن الغرامة.\n- توجيه إنذار مكتوب قبل اللجوء إلى سحب العمل أو إنهاء العقد.\n- مراجعة النص الرسمي للنظام ولائحته للتحقق من النسب وأرقام المواد.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Maintenance contract penalty cap",
+     "verdict": "fail",
+     "reasoning": "The agent's output mentions that penalties for violating terms and specifications have an upper limit of approximately 10% ('غرامات مخالفة الشروط والمواصفات لها حد أعلى نحو 10%'), but it does not specifically state that the penalty cap for maintenance and operation contracts (عقود الصيانة والتشغيل) is 10% of the contract value. The agent explicitly admits uncertainty about the exact percentages and article numbers ('لست متأكدًا من النسب وأرقام المواد'). The criterion requires a clear statement that the penalty in maintenance and operation contracts does not exceed 10% of the contract value, which the agent did not definitively provide."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction of unexecuted works",
+     "verdict": "fail",
+     "reasoning": "The note mentions that the government entity can execute unperformed works at the contractor's expense and charge the cost difference and administrative expenses ('تنفذ الأعمال المقصَّر فيها على حساب الشركة، وتحمّلها الفرق في التكلفة والمصاريف الإدارية'). However, this refers to the cost of re-executing defaulted works by a third party, not to the deduction of the value of unexecuted works (الأعمال التي لم تُنفَّذ) from the contract amount. The criterion specifically requires stating that the value of unexecuted works is deducted in addition to the penalty. The note does not explicitly state that the value of works not performed is deducted from the contractor's entitlement as a separate mechanism from the penalty."
+    },
+    {
+     "id": "C-003",
+     "title": "Total liability exceeds penalty alone",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the summary answer that 'the penalty is not necessarily all that the company bears' (الغرامة ليست بالضرورة كل ما تتحمله الشركة). It further elaborates in the analysis section that beyond the penalty, the government entity may execute unfinished works at the company's expense, confiscate the performance bond, claim actual damages exceeding the penalty, and take administrative measures. This clearly communicates that the company's total liability exceeds the 100,000 riyal penalty alone."
+    },
+    {
+     "id": "C-004",
+     "title": "Incorrect assumption corrected",
+     "verdict": "pass",
+     "reasoning": "The agent's output clearly and explicitly corrects the government entity's mistaken understanding. In the 'الجواب المختصر' section, it directly states 'هذا الفهم غير صحيح في الغالب. الغرامة ليست بالضرورة كل ما تتحمله الشركة.' (This understanding is generally incorrect. The penalty is not necessarily all that the company bears.) The analysis then elaborates on multiple other remedies available beyond the penalty, including execution at the contractor's expense, contract termination, forfeiture of performance bond, and claims for actual damages exceeding the penalty amount. The note also reiterates in point 3 that the 10% cap represents the limit for this type of penalty, not the limit of the company's total liability."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Maintenance contract penalty cap",
+     "verdict": "pass",
+     "reasoning": "The criterion requires the note to state that the penalty in maintenance and operation contracts does not exceed 10% of the contract value. The agent's note mentions that 'غرامات مخالفة الشروط والمواصفات لها حد أعلى نحو 10%' and discusses the 10% cap in the context of maintenance contracts. While the agent hedges with phrases like 'حسب علمي' and 'لست متأكدًا من النسب', it does state that the penalty cap for this type is approximately 10% of the contract value. The note also says 'إذا كانت نسبة 10% داخل الحد النظامي لغرامات المخالفة فهي صحيحة' which acknowledges the 10% cap. However, the agent does not specifically and clearly state that the penalty in maintenance and operation contracts (عقود الصيانة والتشغيل) does not exceed 10% - it frames it with uncertainty and attributes it to violations of conditions and specifications generally rather than specifically to maintenance contracts. The criterion requires a clear statement that the penalty cap for maintenance and operation contracts is 10%. The agent comes close but hedges significantly and doesn't clearly tie the 10% specifically to maintenance contracts as a category. On balance, the note does convey that the 10% is the applicable cap for this type of penalty, even if expressed with some uncertainty."
+    },
+    {
+     "id": "C-002",
+     "title": "Deduction of unexecuted works",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. The agent's note mentions that the government entity can 'execute the works that were deficient at the company's expense and charge them the difference in cost and administrative expenses' (تنفذ الأعمال المقصَّر فيها على حساب الشركة). However, this is about executing works on the company's account, not about deducting the value of unexecuted works from the contract price. The concept of deducting the value of unexecuted works (حسم قيمة الأعمال التي لم تُنفَّذ) is a distinct concept - it means that if the contractor didn't perform certain works, the value of those works is deducted from what they're paid, in addition to any penalty. The agent's note does not explicitly mention this deduction of unexecuted works' value."
+    },
+    {
+     "id": "C-003",
+     "title": "Total liability exceeds penalty alone",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the short answer that the penalty is not necessarily all the company will bear ('الغرامة ليست بالضرورة كل ما تتحمله الشركة'). The analysis section further clarifies multiple additional liabilities beyond the penalty: execution of works at the company's expense, forfeiture of performance bond, compensation for actual damages exceeding the penalty, and administrative measures. Point 3 explicitly states the 10% penalty cap represents only the cap for that type of penalty, not a cap on the company's total liability. This clearly communicates that total liability exceeds the 100,000 riyal penalty alone."
+    },
+    {
+     "id": "C-004",
+     "title": "Incorrect assumption corrected",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in the short answer ('الجواب المختصر') that the government entity's understanding is incorrect — the penalty is not necessarily all the company will bear. The analysis section further elaborates that beyond the penalty, the entity can pursue execution at the company's expense, forfeit the performance bond, claim actual damages exceeding the penalty, terminate the contract, and take administrative measures. This clearly corrects the mistaken assumption that the penalty cap is the full extent of liability."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+  "scored_at": "2026-11-22T22:19:57.141794+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Maintenance contract penalty cap",
+      "verdict": "fail",
+      "reasoning": "The agent's output mentions that penalties for violating terms and specifications have an upper limit of approximately 10% ('غرامات مخالفة الشروط والمواصفات لها حد أعلى نحو 10%'), but it does not specifically state that the penalty cap for maintenance and operation contracts (عقود الصيانة والتشغيل) is 10% of the contract value. The agent explicitly admits uncertainty about the exact percentages and article numbers ('لست متأكدًا من النسب وأرقام المواد'). The criterion requires a clear statement that the penalty in maintenance and operation contracts does not exceed 10% of the contract value, which the agent did not definitively provide."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction of unexecuted works",
+      "verdict": "fail",
+      "reasoning": "The note mentions that the government entity can execute unperformed works at the contractor's expense and charge the cost difference and administrative expenses ('تنفذ الأعمال المقصَّر فيها على حساب الشركة، وتحمّلها الفرق في التكلفة والمصاريف الإدارية'). However, this refers to the cost of re-executing defaulted works by a third party, not to the deduction of the value of unexecuted works (الأعمال التي لم تُنفَّذ) from the contract amount. The criterion specifically requires stating that the value of unexecuted works is deducted in addition to the penalty. The note does not explicitly state that the value of works not performed is deducted from the contractor's entitlement as a separate mechanism from the penalty."
+     },
+     {
+      "id": "C-003",
+      "title": "Total liability exceeds penalty alone",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the summary answer that 'the penalty is not necessarily all that the company bears' (الغرامة ليست بالضرورة كل ما تتحمله الشركة). It further elaborates in the analysis section that beyond the penalty, the government entity may execute unfinished works at the company's expense, confiscate the performance bond, claim actual damages exceeding the penalty, and take administrative measures. This clearly communicates that the company's total liability exceeds the 100,000 riyal penalty alone."
+     },
+     {
+      "id": "C-004",
+      "title": "Incorrect assumption corrected",
+      "verdict": "pass",
+      "reasoning": "The agent's output clearly and explicitly corrects the government entity's mistaken understanding. In the 'الجواب المختصر' section, it directly states 'هذا الفهم غير صحيح في الغالب. الغرامة ليست بالضرورة كل ما تتحمله الشركة.' (This understanding is generally incorrect. The penalty is not necessarily all that the company bears.) The analysis then elaborates on multiple other remedies available beyond the penalty, including execution at the contractor's expense, contract termination, forfeiture of performance bond, and claims for actual damages exceeding the penalty amount. The note also reiterates in point 3 that the 10% cap represents the limit for this type of penalty, not the limit of the company's total liability."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T22:13:49.201068+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/4 criteria passed.  Missed 1 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Maintenance contract penalty cap",
+      "verdict": "pass",
+      "reasoning": "The criterion requires the note to state that the penalty in maintenance and operation contracts does not exceed 10% of the contract value. The agent's note mentions that 'غرامات مخالفة الشروط والمواصفات لها حد أعلى نحو 10%' and discusses the 10% cap in the context of maintenance contracts. While the agent hedges with phrases like 'حسب علمي' and 'لست متأكدًا من النسب', it does state that the penalty cap for this type is approximately 10% of the contract value. The note also says 'إذا كانت نسبة 10% داخل الحد النظامي لغرامات المخالفة فهي صحيحة' which acknowledges the 10% cap. However, the agent does not specifically and clearly state that the penalty in maintenance and operation contracts (عقود الصيانة والتشغيل) does not exceed 10% - it frames it with uncertainty and attributes it to violations of conditions and specifications generally rather than specifically to maintenance contracts. The criterion requires a clear statement that the penalty cap for maintenance and operation contracts is 10%. The agent comes close but hedges significantly and doesn't clearly tie the 10% specifically to maintenance contracts as a category. On balance, the note does convey that the 10% is the applicable cap for this type of penalty, even if expressed with some uncertainty."
+     },
+     {
+      "id": "C-002",
+      "title": "Deduction of unexecuted works",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the value of unexecuted works (الأعمال التي لم تُنفَّذ) is deducted in addition to the penalty. The agent's note mentions that the government entity can 'execute the works that were deficient at the company's expense and charge them the difference in cost and administrative expenses' (تنفذ الأعمال المقصَّر فيها على حساب الشركة). However, this is about executing works on the company's account, not about deducting the value of unexecuted works from the contract price. The concept of deducting the value of unexecuted works (حسم قيمة الأعمال التي لم تُنفَّذ) is a distinct concept - it means that if the contractor didn't perform certain works, the value of those works is deducted from what they're paid, in addition to any penalty. The agent's note does not explicitly mention this deduction of unexecuted works' value."
+     },
+     {
+      "id": "C-003",
+      "title": "Total liability exceeds penalty alone",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the short answer that the penalty is not necessarily all the company will bear ('الغرامة ليست بالضرورة كل ما تتحمله الشركة'). The analysis section further clarifies multiple additional liabilities beyond the penalty: execution of works at the company's expense, forfeiture of performance bond, compensation for actual damages exceeding the penalty, and administrative measures. Point 3 explicitly states the 10% penalty cap represents only the cap for that type of penalty, not a cap on the company's total liability. This clearly communicates that total liability exceeds the 100,000 riyal penalty alone."
+     },
+     {
+      "id": "C-004",
+      "title": "Incorrect assumption corrected",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in the short answer ('الجواب المختصر') that the government entity's understanding is incorrect — the penalty is not necessarily all the company will bear. The analysis section further elaborates that beyond the penalty, the entity can pursue execution at the company's expense, forfeit the performance bond, claim actual damages exceeding the penalty, terminate the contract, and take administrative measures. This clearly corrects the mistaken assumption that the penalty cap is the full extent of liability."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "task": "astrolabe-open/saudi-government-procurement/maintenance-contract-penalty-cap-and-unexecuted-works-deduction",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T22:19:57.141347+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.625,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

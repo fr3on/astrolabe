@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة\n\n**الموضوع:** اختصاص مجمع البحوث الإسلامية وعلاقته بالدراسات العليا.\n\n## أولًا: الوقائع\nتقدم الدكتور سامي عبد الله في مارس 2001 بطلب إلى مجمع البحوث الإسلامية للإشراف على رسالته للدرجة العالمية، معتقدًا أن اختصاص المجمع مقصور على الفتاوى العقدية والمذهبية.\n\n## ثانيًا: الرأي\n1. **اعتقاده غير دقيق.** المجمع منظّم بالقانون رقم 103 لسنة 1961 بشأن إعادة تنظيم الأزهر والهيئات التي يشملها ولائحته التنفيذية. وبحسب علمي، يُعد المجمع الهيئة العليا للبحوث الإسلامية، ويختص بالدراسة في كل ما يتصل بالبحوث الإسلامية، وتجديد الثقافة الإسلامية وتجريدها من الشوائب، وتحقيق التراث ونشره، وبيان الرأي فيما يجد من مشكلات مذهبية أو اجتماعية تتعلق بالعقيدة، وحمل تبعة الدعوة. فاختصاصه بحثي علمي واسع لا يقتصر على الفتوى (والإفتاء الفردي أصلًا من شأن دار الإفتاء ولجنة الفتوى بالأزهر).\n2. **الإشراف على الرسائل:** الإشراف على رسائل الدرجة العالمية (الدكتوراه) ومنحها من اختصاص جامعة الأزهر وكلياتها ومجالسها وفقًا للقانون ذاته ولائحته. وأذكر أن القانون يتضمن نصًا على معاونة المجمع للجامعة في توجيه الدراسات العليا ومتابعتها (لا الإشراف المباشر)، لكني غير متأكد من صياغته ورقم مادته.\n\n## ثالثًا: الخلاصة\n- اعتقاد الدكتور سامي بأن المجمع لا صلة له بالدراسات العليا غير صحيح؛ فللمجمع دور بحثي وقد يكون له دور معاون للجامعة في توجيه الدراسات العليا.\n- لكن الإشراف الأكاديمي الفعلي على الرسالة يكون عبر جامعة الأزهر، فيُنصح بتوجيه الطلب إليها مع الاستئناس بالمجمع.\n\n**تنبيه:** يلزم التحقق من نصوص القانون 103 لسنة 1961 ولائحته التنفيذية.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Incorrect assumption about scope",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (point 1) that Dr. Sami's belief is incorrect ('اعتقاده غير دقيق'), and clarifies that the Council's jurisdiction is broad scientific research that is not limited to fatwa/doctrinal matters. The conclusion (ثالثًا) also reiterates that his belief that the Council has no connection to higher studies is incorrect. The criterion is satisfied."
+    },
+    {
+     "id": "C-002",
+     "title": "Supervision of higher studies",
+     "verdict": "fail",
+     "reasoning": "The note mentions that the Council has a role in assisting the university in directing and following up on higher studies ('توجيه الدراسات العليا ومتابعتها'), but it does not specifically mention the two degree levels of التخصص (specialisation) and العالمية (highest academic degree), nor does it mention the Council's role in supervising or participating in their examinations. The criterion requires explicit mention of both degree levels (التخصص and العالمية) and the Council's supervision of or participation in their examinations. The agent only vaguely references 'الدراسات العليا' without specifying these two levels or the examination participation aspect."
+    },
+    {
+     "id": "C-003",
+     "title": "Publication and translation mandate",
+     "verdict": "fail",
+     "reasoning": "The agent's output does not mention the Council's exclusive competence regarding publication (النشر), translation (الترجمة), authorship (التأليف), missions (البعوث), preachers (الدعاة), or incoming students (الطلاب الوافدين). The note only briefly mentions 'تحقيق التراث ونشره' (editing and publishing heritage) and 'حمل تبعة الدعوة' (bearing the responsibility of da'wa), but does not specifically state the Council's exclusive mandate covering translation, authorship, missions, preachers, and incoming students as required by the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Broader mandate confirmed",
+     "verdict": "pass",
+     "reasoning": "The agent's output explicitly states that the Council's mandate includes 'الدراسة في كل ما يتصل بالبحوث الإسلامية، وتجديد الثقافة الإسلامية وتجريدها من الشوائب' (studying everything connected with Islamic research, renewing Islamic culture, and purifying it from impurities). The note also clarifies that this mandate goes beyond fatwa issuance, noting that individual fatwas are handled by Dar al-Ifta and Al-Azhar's fatwa committee. This directly satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 2,
+   "n_criteria": 4,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Incorrect assumption about scope",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا (point 1) that Dr. Sami's belief is inaccurate ('اعتقاده غير دقيق'), and explains that the Council's mandate is broad and not limited to fatwas or doctrinal/sectarian matters. The conclusion (ثالثًا) reiterates that Dr. Sami's assumption that the Council has no connection to higher studies is incorrect."
+    },
+    {
+     "id": "C-002",
+     "title": "Supervision of higher studies",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the Council assists Al-Azhar University in directing, supervising, or participating in examinations of higher Islamic studies at the levels of التخصص (specialisation) and العالمية (highest academic degree). The agent's note mentions the Council's role in assisting the university in 'توجيه الدراسات العليا ومتابعتها' (directing and following up on higher studies), but it does not specifically mention the two degree levels (التخصص and العالمية) nor does it mention participation in examinations. The criterion explicitly requires mention of these two specific degree levels and the supervision/examination role. The note fails to meet these specific requirements."
+    },
+    {
+     "id": "C-003",
+     "title": "Publication and translation mandate",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that the Council is exclusively competent in everything connected with publication, translation, authorship, missions (البعوث), its preachers (دعاته), and its incoming students (طلابه الوافدين). The agent's note does not mention any of these specific competencies — publication, translation, authorship, missions, preachers, or incoming students are all absent from the output."
+    },
+    {
+     "id": "C-004",
+     "title": "Broader mandate confirmed",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states that the Council's mandate includes 'الدراسة في كل ما يتصل بالبحوث الإسلامية، وتجديد الثقافة الإسلامية وتجريدها من الشوائب، وتحقيق التراث ونشره' and clarifies that its scope is 'بحثي علمي واسع لا يقتصر على الفتوى'. This clearly confirms the broader mandate covering Islamic research, renewal of Islamic culture, and purification from impurities, going beyond doctrinal fatwas alone."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/scope-of-mandate-for-higher-studies-supervision-and-publication",
+  "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+  "scored_at": "2026-11-22T20:15:46.001465+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Incorrect assumption about scope",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (point 1) that Dr. Sami's belief is incorrect ('اعتقاده غير دقيق'), and clarifies that the Council's jurisdiction is broad scientific research that is not limited to fatwa/doctrinal matters. The conclusion (ثالثًا) also reiterates that his belief that the Council has no connection to higher studies is incorrect. The criterion is satisfied."
+     },
+     {
+      "id": "C-002",
+      "title": "Supervision of higher studies",
+      "verdict": "fail",
+      "reasoning": "The note mentions that the Council has a role in assisting the university in directing and following up on higher studies ('توجيه الدراسات العليا ومتابعتها'), but it does not specifically mention the two degree levels of التخصص (specialisation) and العالمية (highest academic degree), nor does it mention the Council's role in supervising or participating in their examinations. The criterion requires explicit mention of both degree levels (التخصص and العالمية) and the Council's supervision of or participation in their examinations. The agent only vaguely references 'الدراسات العليا' without specifying these two levels or the examination participation aspect."
+     },
+     {
+      "id": "C-003",
+      "title": "Publication and translation mandate",
+      "verdict": "fail",
+      "reasoning": "The agent's output does not mention the Council's exclusive competence regarding publication (النشر), translation (الترجمة), authorship (التأليف), missions (البعوث), preachers (الدعاة), or incoming students (الطلاب الوافدين). The note only briefly mentions 'تحقيق التراث ونشره' (editing and publishing heritage) and 'حمل تبعة الدعوة' (bearing the responsibility of da'wa), but does not specifically state the Council's exclusive mandate covering translation, authorship, missions, preachers, and incoming students as required by the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Broader mandate confirmed",
+      "verdict": "pass",
+      "reasoning": "The agent's output explicitly states that the Council's mandate includes 'الدراسة في كل ما يتصل بالبحوث الإسلامية، وتجديد الثقافة الإسلامية وتجريدها من الشوائب' (studying everything connected with Islamic research, renewing Islamic culture, and purifying it from impurities). The note also clarifies that this mandate goes beyond fatwa issuance, noting that individual fatwas are handled by Dar al-Ifta and Al-Azhar's fatwa committee. This directly satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:13:44.532871+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/4 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 4,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Incorrect assumption about scope",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا (point 1) that Dr. Sami's belief is inaccurate ('اعتقاده غير دقيق'), and explains that the Council's mandate is broad and not limited to fatwas or doctrinal/sectarian matters. The conclusion (ثالثًا) reiterates that Dr. Sami's assumption that the Council has no connection to higher studies is incorrect."
+     },
+     {
+      "id": "C-002",
+      "title": "Supervision of higher studies",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the Council assists Al-Azhar University in directing, supervising, or participating in examinations of higher Islamic studies at the levels of التخصص (specialisation) and العالمية (highest academic degree). The agent's note mentions the Council's role in assisting the university in 'توجيه الدراسات العليا ومتابعتها' (directing and following up on higher studies), but it does not specifically mention the two degree levels (التخصص and العالمية) nor does it mention participation in examinations. The criterion explicitly requires mention of these two specific degree levels and the supervision/examination role. The note fails to meet these specific requirements."
+     },
+     {
+      "id": "C-003",
+      "title": "Publication and translation mandate",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that the Council is exclusively competent in everything connected with publication, translation, authorship, missions (البعوث), its preachers (دعاته), and its incoming students (طلابه الوافدين). The agent's note does not mention any of these specific competencies — publication, translation, authorship, missions, preachers, or incoming students are all absent from the output."
+     },
+     {
+      "id": "C-004",
+      "title": "Broader mandate confirmed",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states that the Council's mandate includes 'الدراسة في كل ما يتصل بالبحوث الإسلامية، وتجديد الثقافة الإسلامية وتجريدها من الشوائب، وتحقيق التراث ونشره' and clarifies that its scope is 'بحثي علمي واسع لا يقتصر على الفتوى'. This clearly confirms the broader mandate covering Islamic research, renewal of Islamic culture, and purification from impurities, going beyond doctrinal fatwas alone."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "task": "astrolabe-open/egypt-administrative-law-and-public-employment/scope-of-mandate-for-higher-studies-supervision-and-publication",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:15:46.001095+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.5,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}

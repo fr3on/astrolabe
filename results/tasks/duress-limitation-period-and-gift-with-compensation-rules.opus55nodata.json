@@ -1,0 +1,173 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: إبطال عقد المقاولة للإكراه وحكم اشتراط هبة الأرض\n\n## الوقائع باختصار\nعقد مقاولة لبناء منزل أُبرم عام 2020م، وفيه شرط أن يهب المقاول لسالم قطعة أرض مقابل تخفيض أتعابه. يدّعي سالم أنه أُكره على قبول الشروط، وزال الإكراه في يناير 2023م، ويريد طلب الإبطال في فبراير 2024م.\n\n## أولًا: هل يحق لسالم طلب الإبطال في فبراير 2024م؟\n- الإكراه عيب من عيوب الإرادة، ويجعل العقد قابلًا للإبطال لمصلحة المُكرَه، لا باطلًا بطلانًا مطلقًا.\n- القاعدة المعروفة في نظام المعاملات المدنية السعودي (وفي القوانين المدنية العربية المشابهة) أن حق طلب الإبطال يسقط إذا لم يُتمسك به خلال **سنة** من يوم زوال الإكراه، وفي كل الأحوال بمضي مدة طويلة (عشر سنوات على ما أذكر) من وقت إبرام العقد. لست متأكدًا من رقم المادة بدقة، فيلزم الرجوع إلى النص.\n- العبرة بتاريخ **زوال الإكراه** (يناير 2023م) لا بتاريخ \"اكتشافه\" عام 2022م. ومن يناير 2023م إلى فبراير 2024م مضت أكثر من سنة، **فالأرجح أن حق طلب الإبطال قد سقط**.\n- تنبيه: العقد أُبرم عام 2020م قبل نفاذ نظام المعاملات المدنية (ديسمبر 2023م تقريبًا)، فتُطرح مسألة تطبيق النظام من حيث الزمان. وقبل النظام كانت المحاكم تطبّق أحكام الفقه الإسلامي التي تجعل عقد المُكرَه غير لازم وله فسخه أو إجازته بعد زوال الإكراه، وقد تُعدّ سكوته مدة طويلة بعد زوال الإكراه إجازةً ضمنية. يجب التحقق من الأحكام الانتقالية في النظام.\n- كذلك إذا صدر من سالم بعد زوال الإكراه ما يدل على الإجازة (كاستمرار التنفيذ أو دفع الأتعاب دون تحفظ) فقد يسقط حقه بالإجازة ولو كان في المدة.\n\n## ثانيًا: حكم اشتراط هبة الأرض مقابل تخفيض الأتعاب\n- الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.\n- الأصل صحة الشروط في العقود ما لم تخالف النظام العام أو تنافي مقتضى العقد أو تكن غير مشروعة، وهذا الشرط في ذاته لا يبدو مخالفًا، بشرط أن تكون الأرض معيّنة تعيينًا نافيًا للجهالة.\n- لكن الشرط جزء من العقد ذاته المشوب بالإكراه؛ فإن أُبطل العقد سقط الشرط معه، وإن لم يُبطل (لسقوط الحق) بقي الشرط ملزمًا.\n- نقل ملكية العقار يتطلب الإفراغ/التسجيل لدى الجهة المختصة، ولا يكفي مجرد الشرط لانتقال الملكية.\n\n## التوصية\n1. جمع أي دليل على أن الإكراه استمر إلى وقت أقرب، أو أن سالم تمسك بالإبطال (مطالبة مكتوبة) قبل يناير 2024م.\n2. بحث مسألة تطبيق النظام زمنيًا على عقد 2020م.\n3. إن تعذّر الإبطال، النظر في طرق بديلة: المطالبة بالتعويض، أو بتنفيذ شرط الأرض.\n\n*تنبيه: المذكرة مبنية على المعرفة العامة دون نصوص مرفقة، وأرقام المواد والمدد تحتاج إلى تحقق.*",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Duress limitation period",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states: 'العبرة بتاريخ زوال الإكراه (يناير 2023م) لا بتاريخ اكتشافه عام 2022م' and earlier mentions that the right to seek annulment lapses if not exercised within one year 'من يوم زوال الإكراه'. This clearly satisfies the criterion that the one-year annulment period starts from the date the duress ceases."
+    },
+    {
+     "id": "C-002",
+     "title": "Claim time-barred",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in Section 1 that the one-year period runs from the cessation of duress (يناير 2023م), and that from January 2023 to February 2024 more than one year has elapsed, concluding 'فالأرجح أن حق طلب الإبطال قد سقط' (the right to seek annulment has most likely lapsed). This directly satisfies the criterion that the annulment claim is time-barred because one year from cessation of duress elapsed before the February 2024 filing."
+    },
+    {
+     "id": "C-003",
+     "title": "Gift with compensation",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in section ثانيًا: 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This directly satisfies the criterion by stating that a gift with stipulated compensation takes the ruling of exchange (معاوضة), transforming it from a pure gift into a contract of exchange."
+    },
+    {
+     "id": "C-004",
+     "title": "Applicable rules",
+     "verdict": "pass",
+     "reasoning": "The note states in the second section that 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This directly states that a gift with compensation takes the ruling of exchange contracts (المعاوضة) rather than the rules of gift (الهبة), which satisfies the criterion."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 4,
+   "n_criteria": 4,
+   "all_pass": true,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Duress limitation period",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the one-year period for annulment due to duress begins from the date the duress ceases (زوال الإكراه). Specifically, it says 'العبرة بتاريخ زوال الإكراه (يناير 2023م)' and 'حق طلب الإبطال يسقط إذا لم يُتمسك به خلال سنة من يوم زوال الإكراه'."
+    },
+    {
+     "id": "C-002",
+     "title": "Claim time-barred",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the duress ceased in January 2023, that more than one year elapsed from January 2023 to February 2024, and that therefore the right to seek annulment has most likely lapsed ('فالأرجح أن حق طلب الإبطال قد سقط'). This satisfies the criterion."
+    },
+    {
+     "id": "C-003",
+     "title": "Gift with compensation",
+     "verdict": "pass",
+     "reasoning": "The note states: 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This clearly conveys that when a donor stipulates compensation (عوض) from the donee, the contract is transformed from a gift (هبة) into a contract of exchange (معاوضة), satisfying the criterion."
+    },
+    {
+     "id": "C-004",
+     "title": "Applicable rules",
+     "verdict": "pass",
+     "reasoning": "The note states that 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This clearly states that the rules of exchange contracts (أحكام المعاوضات) apply to the gift with compensation, not the rules of gift (الهبة), which satisfies the criterion."
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/duress-limitation-period-and-gift-with-compensation-rules",
+  "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+  "scored_at": "2026-11-22T20:51:05.965421+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Duress limitation period",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states: 'العبرة بتاريخ زوال الإكراه (يناير 2023م) لا بتاريخ اكتشافه عام 2022م' and earlier mentions that the right to seek annulment lapses if not exercised within one year 'من يوم زوال الإكراه'. This clearly satisfies the criterion that the one-year annulment period starts from the date the duress ceases."
+     },
+     {
+      "id": "C-002",
+      "title": "Claim time-barred",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in Section 1 that the one-year period runs from the cessation of duress (يناير 2023م), and that from January 2023 to February 2024 more than one year has elapsed, concluding 'فالأرجح أن حق طلب الإبطال قد سقط' (the right to seek annulment has most likely lapsed). This directly satisfies the criterion that the annulment claim is time-barred because one year from cessation of duress elapsed before the February 2024 filing."
+     },
+     {
+      "id": "C-003",
+      "title": "Gift with compensation",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in section ثانيًا: 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This directly satisfies the criterion by stating that a gift with stipulated compensation takes the ruling of exchange (معاوضة), transforming it from a pure gift into a contract of exchange."
+     },
+     {
+      "id": "C-004",
+      "title": "Applicable rules",
+      "verdict": "pass",
+      "reasoning": "The note states in the second section that 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This directly states that a gift with compensation takes the ruling of exchange contracts (المعاوضة) rather than the rules of gift (الهبة), which satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/duress-limitation-period-and-gift-with-compensation-rules",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:41:23.658880+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 1.0,
+    "max_score": 1.0,
+    "summary": "4/4 criteria passed.  ALL-PASS.",
+    "all_pass": true,
+    "n_criteria": 4,
+    "n_passed": 4,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Duress limitation period",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the one-year period for annulment due to duress begins from the date the duress ceases (زوال الإكراه). Specifically, it says 'العبرة بتاريخ زوال الإكراه (يناير 2023م)' and 'حق طلب الإبطال يسقط إذا لم يُتمسك به خلال سنة من يوم زوال الإكراه'."
+     },
+     {
+      "id": "C-002",
+      "title": "Claim time-barred",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the duress ceased in January 2023, that more than one year elapsed from January 2023 to February 2024, and that therefore the right to seek annulment has most likely lapsed ('فالأرجح أن حق طلب الإبطال قد سقط'). This satisfies the criterion."
+     },
+     {
+      "id": "C-003",
+      "title": "Gift with compensation",
+      "verdict": "pass",
+      "reasoning": "The note states: 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This clearly conveys that when a donor stipulates compensation (عوض) from the donee, the contract is transformed from a gift (هبة) into a contract of exchange (معاوضة), satisfying the criterion."
+     },
+     {
+      "id": "C-004",
+      "title": "Applicable rules",
+      "verdict": "pass",
+      "reasoning": "The note states that 'الهبة بعوض (مقابل تخفيض الأتعاب) تأخذ في الفقه والنظام حكم المعاوضة (كالبيع)، فهي في حقيقتها جزء من المقابل في عقد المقاولة.' This clearly states that the rules of exchange contracts (أحكام المعاوضات) apply to the gift with compensation, not the rules of gift (الهبة), which satisfies the criterion."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/duress-limitation-period-and-gift-with-compensation-rules",
+    "task": "astrolabe-open/saudi-contracts-and-obligations/duress-limitation-period-and-gift-with-compensation-rules",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:51:05.965078+00:00"
+   }
+  },
+  "dual_criterion_pass": 1.0,
+  "dual_all_pass_rate": 1.0,
+  "all_pass": true
+ }
+}

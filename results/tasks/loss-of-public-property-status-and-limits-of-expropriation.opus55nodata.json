@@ -1,0 +1,197 @@
+{
+ "metrics": {
+  "model": "Claude Opus 5.5",
+  "task": "egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+  "setting": "no data",
+  "effort": "",
+  "batch": "four tasks per reply",
+  "tools": "none",
+  "turn_count": 1,
+  "finished_cleanly": true
+ },
+ "answer": "# مذكرة مشورة: تغيير الغرض من أراضٍ نُزعت ملكيتها في بني سويف\n\n## الوقائع\nنُزعت ملكية أراضٍ عام 1972 بقرار جمهوري لإنشاء مجمعات تنظيم الإنتاج الزراعي، وتريد وزارة الزراعة الآن تحويل جزء منها إلى إسكان اجتماعي.\n\n## الرأي المختصر\n**لا يحق للوزارة ذلك دون قيد.** الحرية مقيدة بغاية المنفعة العامة وبالإجراءات القانونية.\n\n## السند القانوني\n1. **الدستور**: يحظر نزع الملكية إلا للمنفعة العامة ومقابل تعويض عادل (المادة 35 من دستور 2014، والمادة 34 من دستور 1971).\n2. **قانون نزع الملكية**: نزعت الملكية في ظل القانون 577 لسنة 1954، والقانون الحالي هو القانون 10 لسنة 1990. وحسب ما أتذكر، يتيح القانون 10 لسنة 1990 للمالك الأصلي أو ورثته طلب استرداد العقار إذا لم يُستخدم في الغرض المخصص له. ولكنني غير متأكد من صياغة النص أو رقمه أو من مدى سريانه على عمليات نزع الملكية السابقة عليه.\n3. **مبدأ تخصيص المال العام**: الأرض بعد نزع ملكيتها تصبح مالًا عامًا مخصصًا لمنفعة عامة بعينها (المادة 87 من القانون المدني). ولا يجوز تغيير التخصيص إلا بأداة قانونية مماثلة أو أعلى، أي بقرار جمهوري أو بقرار من الجهة المختصة قانونًا، وليس بقرار من الوزارة وحدها. كما تنتهي صفة المال العام بانتهاء التخصيص (المادة 88 مدني).\n4. **قضاء مجلس الدولة**: استقر الإفتاء والقضاء الإداري على أنه إذا تغير الغرض إلى غرض آخر من أغراض المنفعة العامة، فلا يُعتبر ذلك في ذاته انحرافًا. ولكن يشترط أن يكون الغرض الجديد منفعة عامة حقيقية، وأن يصدر قرار تغيير التخصيص من الجهة المختصة، وألا تكون الغاية تحقيق ربح أو مصلحة خاصة. والإسكان الاجتماعي قد يُعتبر منفعة عامة، أما البيع للأفراد بأغراض تجارية فمحل نظر.\n\n## مخاطر\n- طعن الملاك الأصليين أو ورثتهم بطلب الاسترداد أو التعويض.\n- الطعن على قرار الوزارة بعيب عدم الاختصاص أو الانحراف بالسلطة.\n- قد تكون الأرض قد آلت إلى جهات أخرى (مثل هيئة التعمير والتنمية الزراعية أو المحافظة)، ويلزم التحقق من الجهة صاحبة الولاية.\n\n## التوصية\nاستصدار قرار من الجهة المختصة (رئيس الجمهورية أو رئيس مجلس الوزراء بحسب الأحوال) بتغيير التخصيص، مع تسبيب المنفعة العامة الجديدة. ويُستحسن طلب رأي قسم الفتوى بمجلس الدولة. **تنبيه:** أرقام المواد من الذاكرة ويجب مراجعتها.",
+ "transcript": [],
+ "judges": {
+  "us.anthropic.claude-sonnet-4-6": {
+   "n_passed": 2,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public property loses status only upon purpose termination",
+     "verdict": "pass",
+     "reasoning": "The note explicitly states in point 3 (مبدأ تخصيص المال العام): 'كما تنتهي صفة المال العام بانتهاء التخصيص (المادة 88 مدني)' — meaning public property status ends upon termination of the specific purpose/designation. This directly satisfies the criterion that public property loses its status only upon termination of the specific purpose for which it was expropriated."
+    },
+    {
+     "id": "C-002",
+     "title": "State regains discretion after purpose ends",
+     "verdict": "fail",
+     "reasoning": "The note discusses that public property status ends when the designated purpose ends (citing Article 88 of the Civil Code: 'تنتهي صفة المال العام بانتهاء التخصيص'), and that changing the purpose to another public purpose is permissible according to established administrative jurisprudence. However, the note frames this as requiring a formal decision from the competent authority and conditions it on the new purpose being a genuine public benefit. It does not clearly state that once the original purpose ends, the State regains its general discretionary authority to end public property status or reassign it according to general rules. Instead, the note emphasizes procedural requirements and restrictions, without affirmatively stating that the State recovers discretion over the property once the original purpose has ended."
+    },
+    {
+     "id": "C-003",
+     "title": "Administration must respect original expropriation purpose",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the land after expropriation becomes public property dedicated to a specific public purpose (المادة 87 من القانون المدني), and that changing this designation requires a legal instrument of equivalent or higher authority. It further states under 'قضاء مجلس الدولة' that the new purpose must be a genuine public benefit, and warns about the risk of challenge for 'الانحراف بالسلطة' (abuse of power/deviation from purpose). The recommendation explicitly requires a decision from the competent authority to change the designation with justification of the new public benefit. This collectively conveys that the administrative authority must respect the original expropriation purpose and cannot exceed it without proper legal authority and justification."
+    },
+    {
+     "id": "C-004",
+     "title": "Deviation to another purpose is a violation even if public benefit",
+     "verdict": "fail",
+     "reasoning": "The note states that redirecting the land to another public benefit purpose is NOT considered a violation ('لا يُعتبر ذلك في ذاته انحرافًا'), provided certain conditions are met. The criterion requires the note to state that redirecting land to a different purpose, even one serving public benefit, constitutes a flagrant violation (مخالفة صريحة) of expropriation rules. The agent's output takes the opposite position, treating such redirection as potentially permissible under conditions, rather than characterizing it as a flagrant violation."
+    },
+    {
+     "id": "C-005",
+     "title": "Expropriation is an exception limited to defined boundaries",
+     "verdict": "fail",
+     "reasoning": "The note does reference constitutional provisions prohibiting expropriation except for public benefit and fair compensation (Article 35 of the 2014 Constitution), and states 'لا يحق للوزارة ذلك دون قيد' (the Ministry cannot do this without restriction). However, the note does not explicitly frame expropriation itself as an exception established within specific limits that must not be exceeded. It discusses the limits on changing the purpose of already-expropriated land, but does not state that the institution of expropriation for public benefit is fundamentally an exceptional measure with defined boundaries. The criterion requires the note to affirmatively state that expropriation for public benefit was established only as an exception within specific limits — this framing is absent from the note."
+    }
+   ]
+  },
+  "us.anthropic.claude-opus-4-6-v1": {
+   "n_passed": 3,
+   "n_criteria": 5,
+   "all_pass": false,
+   "criteria": [
+    {
+     "id": "C-001",
+     "title": "Public property loses status only upon purpose termination",
+     "verdict": "pass",
+     "reasoning": "The note states in point 3: 'كما تنتهي صفة المال العام بانتهاء التخصيص (المادة 88 مدني)' which translates to 'public property status ends upon the termination of the designated purpose (Article 88 Civil Code).' This directly states that public property loses its status only upon termination of the specific purpose for which it was designated, satisfying the criterion."
+    },
+    {
+     "id": "C-002",
+     "title": "State regains discretion after purpose ends",
+     "verdict": "fail",
+     "reasoning": "The note does mention that public property status ends when the designation ends (المادة 88 مدني) and discusses the possibility of reassigning to another public purpose. It also notes that if the purpose changes to another public purpose, this is not considered a deviation per se (قضاء مجلس الدولة section). However, the note does not clearly state that once the original purpose ends, the State *regains its discretionary authority* to end the public property status or reassign it. Instead, the note emphasizes restrictions and the need for proper authorization. The concept of the State regaining discretion after the purpose ends is not explicitly articulated. The note mentions Article 88 about the end of public property status when designation ends, and mentions reassignment is possible, but frames everything in terms of constraints rather than stating the State regains discretionary authority. This is a close call, but the note does implicitly convey the idea through the combination of Article 88 (end of public property status when designation ends) and the administrative law principle that reassignment to another public purpose is permissible with proper procedure. However, it doesn't explicitly state the State 'regains discretionary authority' — it frames the situation more as requiring specific procedural steps rather than having broad discretion."
+    },
+    {
+     "id": "C-003",
+     "title": "Administration must respect original expropriation purpose",
+     "verdict": "pass",
+     "reasoning": "The note clearly states that the expropriation is constrained by the specific public purpose for which it was made. It mentions that the land becomes public property dedicated to a specific public benefit ('مالًا عامًا مخصصًا لمنفعة عامة بعينها'), that changing the designation requires a legal instrument of equal or higher authority and cannot be done by the ministry alone, and that the original owners or heirs can seek recovery if the property is not used for its designated purpose. The opening legal opinion explicitly states 'الحرية مقيدة بغاية المنفعة العامة' (freedom is constrained by the public benefit purpose). This satisfies the criterion that the administration must respect the original expropriation purpose and must not exceed it to achieve another purpose."
+    },
+    {
+     "id": "C-004",
+     "title": "Deviation to another purpose is a violation even if public benefit",
+     "verdict": "fail",
+     "reasoning": "The criterion requires the note to state that redirecting the land to a different purpose—even one serving public benefit—constitutes a flagrant violation (مخالفة صريحة) of expropriation rules. However, the agent's note states the opposite: 'استقر الإفتاء والقضاء الإداري على أنه إذا تغير الغرض إلى غرض آخر من أغراض المنفعة العامة، فلا يُعتبر ذلك في ذاته انحرافًا.' This explicitly says that changing to another public benefit purpose is NOT in itself a deviation. The note does not characterize such redirection as a flagrant violation of expropriation rules."
+    },
+    {
+     "id": "C-005",
+     "title": "Expropriation is an exception limited to defined boundaries",
+     "verdict": "pass",
+     "reasoning": "The note states that expropriation is constrained by the purpose of public benefit and by legal procedures ('الحرية مقيدة بغاية المنفعة العامة وبالإجراءات القانونية'), and references the constitutional prohibition against expropriation except for public benefit ('يحظر نزع الملكية إلا للمنفعة العامة'). It also discusses that changing the purpose requires proper authorization and that the original purpose constrains what can be done with the land. However, the criterion specifically requires the note to state that expropriation was established as an **exception** (استثناء) within **specific limits that must not be exceeded**. While the note implies this by discussing constitutional constraints and the requirement that expropriation only be for public benefit, it does not explicitly frame expropriation as an 'exception' with limits that 'must not be exceeded.' The language used focuses on the conditions and restrictions but does not use the specific framing of expropriation being an exceptional measure. The note does say the constitution 'prohibits' expropriation except for public benefit, which implicitly conveys expropriation as an exception, and says freedom is 'constrained' by the purpose and procedures. This arguably conveys the substance of the criterion - that expropriation is limited and exceptional. On balance, the note communicates that expropriation is restricted to specific conditions (public benefit, fair compensation, legal procedures) and cannot exceed those bounds, which captures the essence of the criterion even if not using the exact word 'exception.'"
+    }
+   ]
+  }
+ },
+ "dual": {
+  "run_id": "open-o55nd-nodata/loss-of-public-property-status-and-limits-of-expropriation",
+  "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+  "scored_at": "2026-11-22T20:33:13.697525+00:00",
+  "judges": [
+   "bedrock.us.anthropic.claude-sonnet-4-6",
+   "bedrock.global.anthropic.claude-opus-4-6-v1"
+  ],
+  "judge_profile": "custom-dual",
+  "per_judge": {
+   "bedrock.us.anthropic.claude-sonnet-4-6": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "2/5 criteria passed.  Missed 3 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 2,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public property loses status only upon purpose termination",
+      "verdict": "pass",
+      "reasoning": "The note explicitly states in point 3 (مبدأ تخصيص المال العام): 'كما تنتهي صفة المال العام بانتهاء التخصيص (المادة 88 مدني)' — meaning public property status ends upon termination of the specific purpose/designation. This directly satisfies the criterion that public property loses its status only upon termination of the specific purpose for which it was expropriated."
+     },
+     {
+      "id": "C-002",
+      "title": "State regains discretion after purpose ends",
+      "verdict": "fail",
+      "reasoning": "The note discusses that public property status ends when the designated purpose ends (citing Article 88 of the Civil Code: 'تنتهي صفة المال العام بانتهاء التخصيص'), and that changing the purpose to another public purpose is permissible according to established administrative jurisprudence. However, the note frames this as requiring a formal decision from the competent authority and conditions it on the new purpose being a genuine public benefit. It does not clearly state that once the original purpose ends, the State regains its general discretionary authority to end public property status or reassign it according to general rules. Instead, the note emphasizes procedural requirements and restrictions, without affirmatively stating that the State recovers discretion over the property once the original purpose has ended."
+     },
+     {
+      "id": "C-003",
+      "title": "Administration must respect original expropriation purpose",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the land after expropriation becomes public property dedicated to a specific public purpose (المادة 87 من القانون المدني), and that changing this designation requires a legal instrument of equivalent or higher authority. It further states under 'قضاء مجلس الدولة' that the new purpose must be a genuine public benefit, and warns about the risk of challenge for 'الانحراف بالسلطة' (abuse of power/deviation from purpose). The recommendation explicitly requires a decision from the competent authority to change the designation with justification of the new public benefit. This collectively conveys that the administrative authority must respect the original expropriation purpose and cannot exceed it without proper legal authority and justification."
+     },
+     {
+      "id": "C-004",
+      "title": "Deviation to another purpose is a violation even if public benefit",
+      "verdict": "fail",
+      "reasoning": "The note states that redirecting the land to another public benefit purpose is NOT considered a violation ('لا يُعتبر ذلك في ذاته انحرافًا'), provided certain conditions are met. The criterion requires the note to state that redirecting land to a different purpose, even one serving public benefit, constitutes a flagrant violation (مخالفة صريحة) of expropriation rules. The agent's output takes the opposite position, treating such redirection as potentially permissible under conditions, rather than characterizing it as a flagrant violation."
+     },
+     {
+      "id": "C-005",
+      "title": "Expropriation is an exception limited to defined boundaries",
+      "verdict": "fail",
+      "reasoning": "The note does reference constitutional provisions prohibiting expropriation except for public benefit and fair compensation (Article 35 of the 2014 Constitution), and states 'لا يحق للوزارة ذلك دون قيد' (the Ministry cannot do this without restriction). However, the note does not explicitly frame expropriation itself as an exception established within specific limits that must not be exceeded. It discusses the limits on changing the purpose of already-expropriated land, but does not state that the institution of expropriation for public benefit is fundamentally an exceptional measure with defined boundaries. The criterion requires the note to affirmatively state that expropriation for public benefit was established only as an exception within specific limits — this framing is absent from the note."
+     }
+    ],
+    "run_id": "open-o55nd-nodata/loss-of-public-property-status-and-limits-of-expropriation",
+    "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+    "judge_model": "claude-sonnet-4-6",
+    "scored_at": "2026-11-22T20:31:33.228196+00:00"
+   },
+   "bedrock.global.anthropic.claude-opus-4-6-v1": {
+    "score": 0.0,
+    "max_score": 1.0,
+    "summary": "3/5 criteria passed.  Missed 2 — task FAIL.",
+    "all_pass": false,
+    "n_criteria": 5,
+    "n_passed": 3,
+    "n_grading_errors": 0,
+    "pandoc_version": null,
+    "criteria_results": [
+     {
+      "id": "C-001",
+      "title": "Public property loses status only upon purpose termination",
+      "verdict": "pass",
+      "reasoning": "The note states in point 3: 'كما تنتهي صفة المال العام بانتهاء التخصيص (المادة 88 مدني)' which translates to 'public property status ends upon the termination of the designated purpose (Article 88 Civil Code).' This directly states that public property loses its status only upon termination of the specific purpose for which it was designated, satisfying the criterion."
+     },
+     {
+      "id": "C-002",
+      "title": "State regains discretion after purpose ends",
+      "verdict": "fail",
+      "reasoning": "The note does mention that public property status ends when the designation ends (المادة 88 مدني) and discusses the possibility of reassigning to another public purpose. It also notes that if the purpose changes to another public purpose, this is not considered a deviation per se (قضاء مجلس الدولة section). However, the note does not clearly state that once the original purpose ends, the State *regains its discretionary authority* to end the public property status or reassign it. Instead, the note emphasizes restrictions and the need for proper authorization. The concept of the State regaining discretion after the purpose ends is not explicitly articulated. The note mentions Article 88 about the end of public property status when designation ends, and mentions reassignment is possible, but frames everything in terms of constraints rather than stating the State regains discretionary authority. This is a close call, but the note does implicitly convey the idea through the combination of Article 88 (end of public property status when designation ends) and the administrative law principle that reassignment to another public purpose is permissible with proper procedure. However, it doesn't explicitly state the State 'regains discretionary authority' — it frames the situation more as requiring specific procedural steps rather than having broad discretion."
+     },
+     {
+      "id": "C-003",
+      "title": "Administration must respect original expropriation purpose",
+      "verdict": "pass",
+      "reasoning": "The note clearly states that the expropriation is constrained by the specific public purpose for which it was made. It mentions that the land becomes public property dedicated to a specific public benefit ('مالًا عامًا مخصصًا لمنفعة عامة بعينها'), that changing the designation requires a legal instrument of equal or higher authority and cannot be done by the ministry alone, and that the original owners or heirs can seek recovery if the property is not used for its designated purpose. The opening legal opinion explicitly states 'الحرية مقيدة بغاية المنفعة العامة' (freedom is constrained by the public benefit purpose). This satisfies the criterion that the administration must respect the original expropriation purpose and must not exceed it to achieve another purpose."
+     },
+     {
+      "id": "C-004",
+      "title": "Deviation to another purpose is a violation even if public benefit",
+      "verdict": "fail",
+      "reasoning": "The criterion requires the note to state that redirecting the land to a different purpose—even one serving public benefit—constitutes a flagrant violation (مخالفة صريحة) of expropriation rules. However, the agent's note states the opposite: 'استقر الإفتاء والقضاء الإداري على أنه إذا تغير الغرض إلى غرض آخر من أغراض المنفعة العامة، فلا يُعتبر ذلك في ذاته انحرافًا.' This explicitly says that changing to another public benefit purpose is NOT in itself a deviation. The note does not characterize such redirection as a flagrant violation of expropriation rules."
+     },
+     {
+      "id": "C-005",
+      "title": "Expropriation is an exception limited to defined boundaries",
+      "verdict": "pass",
+      "reasoning": "The note states that expropriation is constrained by the purpose of public benefit and by legal procedures ('الحرية مقيدة بغاية المنفعة العامة وبالإجراءات القانونية'), and references the constitutional prohibition against expropriation except for public benefit ('يحظر نزع الملكية إلا للمنفعة العامة'). It also discusses that changing the purpose requires proper authorization and that the original purpose constrains what can be done with the land. However, the criterion specifically requires the note to state that expropriation was established as an **exception** (استثناء) within **specific limits that must not be exceeded**. While the note implies this by discussing constitutional constraints and the requirement that expropriation only be for public benefit, it does not explicitly frame expropriation as an 'exception' with limits that 'must not be exceeded.' The language used focuses on the conditions and restrictions but does not use the specific framing of expropriation being an exceptional measure. The note does say the constitution 'prohibits' expropriation except for public benefit, which implicitly conveys expropriation as an exception, and says freedom is 'constrained' by the purpose and procedures. This arguably conveys the substance of the criterion - that expropriation is limited and exceptional. On balance, the note communicates that expropriation is restricted to specific conditions (public benefit, fair compensation, legal procedures) and cannot exceed those bounds, which captures the essence of the criterion even if not using the exact word 'exception.'"
+     }
+    ],
+    "run_id": "open-o55nd-nodata/loss-of-public-property-status-and-limits-of-expropriation",
+    "task": "astrolabe-open/egypt-property-and-co-ownership/loss-of-public-property-status-and-limits-of-expropriation",
+    "judge_model": "claude-opus-4-6-v1",
+    "scored_at": "2026-11-22T20:33:13.697096+00:00"
+   }
+  },
+  "dual_criterion_pass": 0.5,
+  "dual_all_pass_rate": 0.0,
+  "all_pass": false
+ }
+}
