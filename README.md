@@ -43,7 +43,7 @@ Each cell reads **from memory → with the text**.
 
 - **From memory:** no source text. **With the text:** the source texts are in the prompt.
 - **Criteria passed:** a criterion counts only when both judges pass it. Each model was run once. Bold marks the best score among the "with the text" results (ties are all bold).
-- **Gemini 4 Neon:** run in Google Antigravity at Low effort, one run, with the same 209 questions and the same scoring rule. Its task notes are written (44 of 44) but not graded yet, so those two columns say pending. It is not in the Claude average. Seven of its eight misses fail only because the article number ("مادة ١ -") is missing from the answer; the Claude models miss almost the same questions.
+- **Gemini 4 Neon:** one run, with the same 209 questions and the same scoring rule. Its task notes are written (44 of 44) but not graded yet, so those two columns say pending. It is not in the Claude average. Seven of its eight misses fail only because the article number ("مادة ١ -") is missing from the answer; the Claude models miss almost the same questions.
 - **Sonnet 5.5 and Opus 5.5:** these answered four tasks per reply, with no tools, so they have no trajectory and the comparison with Sonnet 4.6 is not exact. Their exact-text questions were answered in batches of up to 24, with and without the text; the task notes were run with the text only.
 - The models read the law well and do not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
 
