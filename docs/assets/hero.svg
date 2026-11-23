@@ -12,9 +12,9 @@
     <text x="150" y="274" font-size="32" fill="#8d8b84">→</text>
     <text x="196" y="276" font-size="46" font-weight="700" fill="#f6f5f1">87%</text>
     <text x="470" y="228" font-size="13" letter-spacing="1.6" fill="#8d8b84">TASK CRITERIA · 44 TASKS</text>
-    <text x="470" y="276" font-size="46" font-weight="700" fill="#8d8b84">35–51%</text>
-    <text x="660" y="274" font-size="32" fill="#8d8b84">→</text>
-    <text x="712" y="276" font-size="46" font-weight="700" fill="#f6f5f1">97%</text>
+    <text x="470" y="276" font-size="46" font-weight="700" fill="#8d8b84">41%</text>
+    <text x="582" y="274" font-size="32" fill="#8d8b84">→</text>
+    <text x="628" y="276" font-size="46" font-weight="700" fill="#f6f5f1">97%</text>
     <text x="66" y="305" font-size="14" fill="#8d8b84">Average of three Claude models, one run each. From memory, then with the exact text in the prompt.</text>
   </g>
 </svg>
