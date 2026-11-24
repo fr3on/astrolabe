@@ -19,12 +19,17 @@
   <img alt="Format: Harvey LAB" src="https://img.shields.io/badge/format-Harvey%20LAB-111827?style=flat-square">
 </p>
 
-A benchmark of Arabic law, first release: Saudi Arabia and Egypt. Browse every task, run and judge verdict at **[0x200.com/astrolabe](https://0x200.com/astrolabe)**.
+**A benchmark of Arabic law.** First release: Saudi Arabia and Egypt.
 
-Do language models know the law, or do they only sound like they do? Astrolabe tests two things, each run **from memory** (no data) and **with the text** (the source text is given):
+Do language models know the law, or do they only sound like they do? Astrolabe checks it in two ways, and runs each one twice: **from memory** (no data) and **with the text** (the source text is given).
 
-1. **Exact-text questions (209).** The model is asked for the exact wording of an article, decree or fatwa. Scored by code, with no model in the loop.
-2. **Client-matter tasks (44, 208 criteria).** A model writes a short advice note for a client. Each task has pass/fail criteria in the [Harvey LAB](https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark) format, graded by two model judges. A criterion counts only when both judges pass it.
+| | Exact-text questions | Client-matter tasks |
+|---|---|---|
+| **Size** | 209 questions | 44 tasks, 208 criteria |
+| **The model must** | Give the exact wording of an article, decree or fatwa | Write a short advice note for a client |
+| **Scored by** | Code, with no model in the loop | Two model judges, in the [Harvey LAB](https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark) format. A criterion counts only when both pass it |
+
+**Browse every task, run and judge verdict at [0x200.com/astrolabe](https://0x200.com/astrolabe).**
 
 ## Key findings
 
