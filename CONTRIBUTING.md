@@ -98,7 +98,7 @@ Tasks without a review record are drafts.
 ## Exact-text questions
 
 Add a line to `data/exact-text/questions.jsonl` with `id`, `jurisdiction`, `type`, `question`, `reference` and `canonical_id`.
-The reference is the exact text. Scoring is by code: right when the answer has at least 60% of the reference words and every number.
+The reference is the exact text. Scoring is by code: right when the answer has at least 60% of the reference words and at least 80% of its numbers.
 
 ## Adding a run
 

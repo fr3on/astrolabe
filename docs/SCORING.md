@@ -1,6 +1,6 @@
 # Scoring notes
 
-How the exact-text rule behaves, and how much the headline numbers depend on it. The rule itself is in [`code/score.py`](../code/score.py): an answer is right when it contains at least 60% of the reference words (ignoring words the question already gives away) and every number in the reference.
+How the exact-text rule behaves, and how much the headline numbers depend on it. The rule itself is in [`code/score.py`](../code/score.py): an answer is right when it contains at least 60% of the reference words (ignoring words the question already gives away) and at least 80% of the numbers in the reference.
 
 ## Does the 60% cutoff matter?
 

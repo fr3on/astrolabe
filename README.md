@@ -76,7 +76,7 @@ For Sonnet 5.5 and Opus 5.5 the batches were up to 24 exact-text questions or fo
 
 ## Scoring
 
-- **Exact text:** right when the answer contains at least 60% of the reference words and every number in it. Code only; see [`code/score.py`](code/score.py).
+- **Exact text:** right when the answer contains at least 60% of the reference words and at least 80% of the numbers in the reference. Code only; see [`code/`](code/README.md).
 - **Tasks:** two judges, Claude Sonnet 4.6 and Claude Opus 4.6, using the unchanged Harvey LAB rubric template. A criterion passes only when both pass it.
 - **Sensitivity:** results at 50–80% cutoffs, and the effect of the number rule, are in [`docs/SCORING.md`](docs/SCORING.md). The order of the models does not change between 50% and 70%.
 
