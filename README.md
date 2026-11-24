@@ -59,7 +59,7 @@ Run as agents with tools. Not in the Claude average.
 |---|---|---|---|
 | Gemini 4 Neon | 0% → 96% | 70% → 97% | 10 → 40 |
 | Gemini 4 Argon | 0% → 91% | 73% → **98%** | 14 → 40 |
-| Gemini 4 Hydrogen | 0% → **97%** | pending | pending |
+| Gemini 4 Hydrogen | 0% → **97%** | 58% → pending | 3 → pending |
 
 The Gemini and Claude results are not a like-for-like comparison, because the runs were set up differently. See [How the runs differ](#how-the-runs-differ). Per-model notes are in [`docs/RESULTS.md`](docs/RESULTS.md).
 
