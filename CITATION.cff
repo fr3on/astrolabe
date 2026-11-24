@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: If you use Astrolabe, please cite the paper.
+title: "Astrolabe: Do language models know Arabic law, or only sound like they do?"
+type: dataset
+authors:
+  - family-names: Mardi
+    given-names: Ahmed
+date-released: 2026-11-24
+doi: 10.5281/zenodo.24449437
+url: https://github.com/fr3on/astrolabe
+repository-code: https://github.com/fr3on/astrolabe
+license:
+  - Apache-2.0
+  - CC-BY-4.0
