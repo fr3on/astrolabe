@@ -56,6 +56,19 @@ Each cell reads **from memory → with the text**.
 - **Exact text:** right when the answer contains at least 60% of the reference words and every number in it.
 - **Tasks:** the two judges are Claude Sonnet 4.6 and Claude Opus 4.6. The judge prompt is the unchanged Harvey LAB rubric template.
 
+### Does the 60% cutoff matter?
+
+The same answers scored at other cutoffs, with the number rule unchanged. "From memory" is 0 of 209 for every model at every cutoff (Gemini 4 Argon gets 1 if the number rule is dropped), so only the with-the-text results change.
+
+| Model | 50% | **60% (used)** | 70% | 80% | 60%, words only |
+|---|---|---|---|---|---|
+| Claude Sonnet 4.6 | 84% | **82%** | 73% | 57% | 88% |
+| Gemini 4 Neon | 96% | **96%** | 96% | 91% | 99.5% |
+| Gemini 4 Argon | 92% | **91%** | 90% | 86% | 97% |
+| Gemini 4 Hydrogen | 97% | **97%** | 97% | 94% | 100% |
+
+The order of the models does not change at 50%, 60% or 70%, and the cutoff moves the headline by at most 2 points between 50% and 60%. The number rule matters more: it is what separates the models, because most misses have nearly all the words but lack a number such as the article number. Sonnet 5.5 and Opus 5.5 are not in this table because their raw exact-text answers were not saved as files, only the pass or fail per question.
+
 ## Paper
 
 Mardi, A. (2026). *Astrolabe: Do language models know Arabic law, or only sound like they do?* Zenodo. [https://doi.org/10.5281/zenodo.24449438](https://doi.org/10.5281/zenodo.24449438)
