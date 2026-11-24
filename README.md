@@ -65,11 +65,14 @@ The Gemini and Claude results are not a like-for-like comparison, because the ru
 
 ### How the runs differ
 
+The groups were set up differently, so read the tables as separate sets of runs, not one controlled comparison.
+
 | Models | How they ran | Tools | Notes |
 |---|---|---|---|
-| Claude Sonnet 4.6 | Tasks: agent harness on AWS Bedrock. Exact text: direct API calls | Tasks: yes | Full run record with transcript and metrics |
-| Claude Sonnet 5.5, Opus 5.5 | Four tasks per reply; exact-text in batches of up to 24 | No | Answer only, no transcript |
-| Gemini 4 Neon, Argon, Hydrogen | Agent run | Yes, not logged | Told to use no web or search; one run each |
+| **Claude Sonnet 4.6** | Tasks through an agent harness on AWS Bedrock; exact text through direct API calls | Yes, on tasks | Full run record: transcript, metrics and both judges' verdicts |
+| **Claude Sonnet 5.5, Opus 5.5, Gemini 4 Neon, Argon, Hydrogen** | Answered in batches, one run per setting | No web or search | Answers and verdicts only, no transcript |
+
+For Sonnet 5.5 and Opus 5.5 the batches were up to 24 exact-text questions or four tasks per reply, with no tools at all. The Gemini models ran as agents that read the question files and wrote their answers to files; their tool use was not logged, so a search cannot be ruled out. All task notes were graded by the same two judges.
 
 ## Scoring
 
