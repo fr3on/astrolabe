@@ -39,13 +39,13 @@ Each cell reads **from memory → with the text**.
 | Claude Sonnet 4.6 | 0% → 82% | 38% → 97% | 2 → **41** |
 | Claude Sonnet 5.5 | 0% → 90% | 35% → 97% | 1 → 38 |
 | Claude Opus 5.5 | 0.5% → 88% | 51% → 97% | 3 → 38 |
-| Gemini 4 Neon | 0% → 96% | not run → 97% | not run → 40 |
+| Gemini 4 Neon | 0% → 96% | 70% → 97% | 10 → 40 |
 | Gemini 4 Argon | 0% → 91% | not run → **98%** | not run → 40 |
 | Gemini 4 Hydrogen | 0% → **97%** | pending | pending |
 
 - **From memory:** no source text. **With the text:** the source texts are in the prompt.
 - **Criteria passed:** a criterion counts only when both judges pass it. Each model was run once. Bold marks the best score among the "with the text" results (ties are all bold).
-- **Gemini 4 Neon:** one run, with the same 209 questions and the same scoring rule. Its 44 task notes were graded with the same two judges as the Claude models (Sonnet 4.6 and Opus 4.6, both must pass): 202 of 208 criteria and 40 of 44 tasks. It was not run without the data, so there is no starting number for the task columns. It is not in the Claude average. Seven of its eight exact-text misses fail only because the article number ("مادة ١ -") is missing from the answer; the Claude models miss almost the same questions.
+- **Gemini 4 Neon:** one run, with the same 209 questions and the same scoring rule. Its 44 task notes were graded with the same two judges as the Claude models (Sonnet 4.6 and Opus 4.6, both must pass): 202 of 208 criteria and 40 of 44 tasks. The from-memory task run (facts only, no source text) passed 146 of 208 criteria and 10 of 44 tasks. That is far above the Claude models' 35–51%, so read it with care: Neon ran as an agent in Google Antigravity, which has tools. It was told to use no web or search, but its tool use was not logged, so we cannot rule it out. It is not in the Claude average. Seven of its eight exact-text misses fail only because the article number ("مادة ١ -") is missing from the answer; the Claude models miss almost the same questions.
 - **Gemini 4 Argon:** same exact-text run as Neon (209 questions, same rule). It answered "I don't know" to 203 of 209 questions from memory. Its 44 task notes were graded with the same two judges: 203 of 208 criteria and 40 of 44 tasks. It was not run without the data, so there is no starting number for the task columns. It is not in the Claude average.
 - **Gemini 4 Hydrogen:** same exact-text run (209 questions, same rule). It answered "I don't know" to all 209 from memory. All 7 of its misses have 87–96% of the reference words and fail only on the number check. Its task notes are not run yet. It is not in the Claude average.
 - **Sonnet 5.5 and Opus 5.5:** these answered four tasks per reply, with no tools, so they have no trajectory and the comparison with Sonnet 4.6 is not exact. Their exact-text questions were answered in batches of up to 24, with and without the text; the task notes were run with the text only.
