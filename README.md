@@ -19,59 +19,68 @@
   <img alt="Format: Harvey LAB" src="https://img.shields.io/badge/format-Harvey%20LAB-111827?style=flat-square">
 </p>
 
-A benchmark of Arabic law. The first release covers Saudi Arabia and Egypt.
+A benchmark of Arabic law, first release: Saudi Arabia and Egypt. Browse every task, run and judge verdict at **[0x200.com/astrolabe](https://0x200.com/astrolabe)**.
 
-Do language models know the law, or do they only sound like they do? Astrolabe tests two things:
+Do language models know the law, or do they only sound like they do? Astrolabe tests two things, each run **from memory** (no data) and **with the text** (the source text is given):
 
 1. **Exact-text questions (209).** The model is asked for the exact wording of an article, decree or fatwa. Scored by code, with no model in the loop.
 2. **Client-matter tasks (44, 208 criteria).** A model writes a short advice note for a client. Each task has pass/fail criteria in the [Harvey LAB](https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark) format, graded by two model judges. A criterion counts only when both judges pass it.
 
-Each is run two ways: **no data** (from memory) and **files only** (the source text is given).
+## Key findings
+
+- **With the text, models do well.** Every model passes about 97% or more of the task criteria, and 82–97% of the exact-text questions.
+- **From memory, they do not remember the text.** On exact wording, no model got more than 1 of 209 right; the Gemini models mostly answer "I don't know".
+- **They still reason.** From memory the same models pass 35–73% of the task criteria, because most criteria reward the right conclusion, not the exact article.
+- **Both judges are Claude models.** A Gemini judge agreed with them on 206 of 208 criteria in a check, but that is one small check (see [Limits](#limits)).
 
 ## Results
 
-With the source text, all three models pass about 97% of the task criteria. Without it, no model got more than 1 of the 209 exact-text questions right.
+Each cell reads **from memory → with the text**. Bold marks the best "with the text" score in each column.
 
-Each cell reads **from memory → with the text**.
+### Claude models
 
 | Model | Exact text right (of 209) | Criteria passed (of 208) | Tasks fully passed (of 44) |
 |---|---|---|---|
 | Claude Sonnet 4.6 | 0% → 82% | 38% → 97% | 2 → **41** |
-| Claude Sonnet 5.5 | 0% → 90% | 35% → 97% | 1 → 38 |
+| Claude Sonnet 5.5 | 0% → **90%** | 35% → 97% | 1 → 38 |
 | Claude Opus 5.5 | 0.5% → 88% | 51% → 97% | 3 → 38 |
+| **Average of the three** | 0.2% → 87% | 41% → 97% | 2 → 39 |
+
+### Gemini 4 models
+
+Run as agents with tools. Not in the Claude average.
+
+| Model | Exact text right (of 209) | Criteria passed (of 208) | Tasks fully passed (of 44) |
+|---|---|---|---|
 | Gemini 4 Neon | 0% → 96% | 70% → 97% | 10 → 40 |
 | Gemini 4 Argon | 0% → 91% | 73% → **98%** | 14 → 40 |
 | Gemini 4 Hydrogen | 0% → **97%** | pending | pending |
 
-- **From memory:** no source text. **With the text:** the source texts are in the prompt.
-- **Criteria passed:** a criterion counts only when both judges pass it. Each model was run once. Bold marks the best score among the "with the text" results (ties are all bold).
-- **Gemini 4 Neon:** one run, with the same 209 questions and the same scoring rule. Its 44 task notes were graded with the same two judges as the Claude models (Sonnet 4.6 and Opus 4.6, both must pass): 202 of 208 criteria and 40 of 44 tasks. The from-memory task run (facts only, no source text) passed 146 of 208 criteria and 10 of 44 tasks. That is far above the Claude models' 35–51%, and Gemini 4 Argon lands in the same place (73%). Both ran as agents in Google Antigravity, which has tools, and they were told to use no web or search. Tool use was not logged, but a check of the from-memory notes found no sign of searching: only 13 of Neon's 77 cited article numbers appear in the source text, and the notes rarely copy its wording. It is not in the Claude average. Seven of its eight exact-text misses fail only because the article number ("مادة ١ -") is missing from the answer; the Claude models miss almost the same questions.
-- **Gemini 4 Argon:** same exact-text run as Neon (209 questions, same rule). It answered "I don't know" to 203 of 209 questions from memory. Its 44 task notes were graded with the same two judges: 203 of 208 criteria and 40 of 44 tasks. The from-memory task run (facts only, no source text) passed 151 of 208 criteria and 14 of 44 tasks. It is not in the Claude average.
-- **Gemini 4 Hydrogen:** same exact-text run (209 questions, same rule). It answered "I don't know" to all 209 from memory. All 7 of its misses have 87–96% of the reference words and fail only on the number check. Its task notes are not run yet. It is not in the Claude average.
-- **Sonnet 5.5 and Opus 5.5:** these answered four tasks per reply, with no tools, so they have no trajectory and the comparison with Sonnet 4.6 is not exact. Their exact-text questions were answered in batches of up to 24, with and without the text; the task notes were run with the text only.
-- The models read the law well and do not remember it. 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
+The Gemini and Claude results are not a like-for-like comparison, because the runs were set up differently. See [How the runs differ](#how-the-runs-differ). Per-model notes are in [`docs/RESULTS.md`](docs/RESULTS.md).
+
+### How the runs differ
+
+| Models | How they ran | Tools | Notes |
+|---|---|---|---|
+| Claude Sonnet 4.6 | Tasks: agent harness on AWS Bedrock. Exact text: direct API calls | Tasks: yes | Full run record with transcript and metrics |
+| Claude Sonnet 5.5, Opus 5.5 | Four tasks per reply; exact-text in batches of up to 24 | No | Answer only, no transcript |
+| Gemini 4 Neon, Argon, Hydrogen | Agent run | Yes, not logged | Told to use no web or search; one run each |
 
 ## Scoring
 
-- **Exact text:** right when the answer contains at least 60% of the reference words and every number in it.
-- **Tasks:** the two judges are Claude Sonnet 4.6 and Claude Opus 4.6. The judge prompt is the unchanged Harvey LAB rubric template.
+- **Exact text:** right when the answer contains at least 60% of the reference words and every number in it. Code only; see [`code/score.py`](code/score.py).
+- **Tasks:** two judges, Claude Sonnet 4.6 and Claude Opus 4.6, using the unchanged Harvey LAB rubric template. A criterion passes only when both pass it.
+- **Sensitivity:** results at 50–80% cutoffs, and the effect of the number rule, are in [`docs/SCORING.md`](docs/SCORING.md). The order of the models does not change between 50% and 70%.
 
-### Does the 60% cutoff matter?
+## Limits
 
-The same answers scored at other cutoffs, with the number rule unchanged. "From memory" is 0 of 209 for every model at every cutoff (Gemini 4 Argon gets 1 if the number rule is dropped), so only the with-the-text results change.
-
-| Model | 50% | **60% (used)** | 70% | 80% | 60%, words only |
-|---|---|---|---|---|---|
-| Claude Sonnet 4.6 | 84% | **82%** | 73% | 57% | 88% |
-| Gemini 4 Neon | 96% | **96%** | 96% | 91% | 99.5% |
-| Gemini 4 Argon | 92% | **91%** | 90% | 86% | 97% |
-| Gemini 4 Hydrogen | 97% | **97%** | 97% | 94% | 100% |
-
-The order of the models does not change at 50%, 60% or 70%, and the cutoff moves the headline by at most 2 points between 50% and 60%. At 80% the gap widens: Claude Sonnet 4.6 falls to 57% while the Gemini models stay between 86% and 94%, so a strict cutoff favours the models that quote the text more closely. The number rule matters more: it is what separates the models, because most misses have nearly all the words but lack a number.
-
-**One number-rule effect, checked.** All 7 of Gemini 4 Hydrogen's misses, and 6 of Claude Sonnet 4.6's, are one case: the reference starts "مادة ١" and the answer writes "المادة الأولى", so the number 1 is not found. Counting "المادة الأولى" as 1 in the answer (the reference side unchanged) would move Hydrogen from 202 to 209 (97% to 100%) and Claude Sonnet 4.6 from 171 to 177 (82% to 85%), and would not change Gemini 4 Neon (201) or Gemini 4 Argon (191). The published numbers keep the original rule, so they stay comparable with Claude Sonnet 5.5 and Opus 5.5.
-
-Claude Sonnet 5.5 and Opus 5.5 are not in this table because their raw exact-text answers were not saved as files, only the pass or fail per question. Any change to the scoring rule can therefore be applied to the other four models but not to those two, and their batched setup (up to 24 questions per reply) may also differ from the others.
+- **Judges:** both task judges are Claude models, and Claude models are also scored. As a check, Gemini 4 Neon graded the 208 criteria of Claude Opus 5.5's notes and agreed with the two Claude judges on 206 of 208 (99%). That is one model's notes and one Gemini judge, not a replacement for a second judge across all runs.
+- **One run per model:** run-to-run variance is unknown.
+- **Lawyer review:** 16 of the 44 tasks were reviewed by a lawyer; the rest are drafts.
+- **Different run setups:** see [How the runs differ](#how-the-runs-differ). The Gemini agents had tools and their use was not logged. A check of the from-memory notes found no sign of searching, but cannot rule it out.
+- **Sonnet 5.5 and Opus 5.5:** raw exact-text answers were not saved, so a changed scoring rule cannot be applied to them.
+- **Scoring rule:** the 60% and number-rule choices are a judgement; see [`docs/SCORING.md`](docs/SCORING.md).
+- **Scripts:** run scripts for the exact-text questions and the Dike search check are not in this release yet.
 
 ## Paper
 
@@ -87,10 +96,6 @@ Mardi, A. (2026). *Astrolabe: Do language models know Arabic law, or only sound 
   publisher = {Zenodo}
 }
 ```
-
-## Status and limits
-
-Three Claude models, one run each, and three Gemini 4 models with partial runs, over two legal systems. Run scripts for the exact-text questions and the Dike search check are not in this release yet. Both task judges are Claude models. As a check, Gemini 4 Neon graded the 208 criteria of Claude Opus 5.5's notes: it agreed with the two Claude judges on 206 of 208 (99%). One model's notes and one Gemini judge is a small check, not a replacement for a second judge across all runs.
 
 ## Contributing
 
