@@ -33,7 +33,7 @@ Do language models know the law, or do they only sound like they do? Astrolabe c
 
 ## Key findings
 
-- **With the text, models do well.** Every model passes about 97% or more of the task criteria, and 82–97% of the exact-text questions.
+- **With the text, models do well.** Every model passes 94% or more of the task criteria, and 82–97% of the exact-text questions.
 - **From memory, they do not remember the text.** On exact wording, no model got more than 1 of 209 right; the Gemini models mostly answer "I don't know".
 - **They still reason.** From memory the same models pass 35–73% of the task criteria, because most criteria reward the right conclusion, not the exact article.
 - **Both judges are Claude models.** A Gemini judge agreed with them on 206 of 208 criteria in a check, but that is one small check (see [Limits](#limits)).
@@ -59,7 +59,7 @@ Run as agents with tools. Not in the Claude average.
 |---|---|---|---|
 | Gemini 4 Neon | 0% → 96% | 70% → 97% | 10 → 40 |
 | Gemini 4 Argon | 0% → 91% | 73% → **98%** | 14 → 40 |
-| Gemini 4 Hydrogen | 0% → **97%** | 58% → pending | 3 → pending |
+| Gemini 4 Hydrogen | 0% → **97%** | 58% → 94% | 3 → 34 |
 
 The Gemini and Claude results are not a like-for-like comparison, because the runs were set up differently. See [How the runs differ](#how-the-runs-differ). Per-model notes are in [`docs/RESULTS.md`](docs/RESULTS.md).
 

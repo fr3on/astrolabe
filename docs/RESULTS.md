@@ -22,4 +22,4 @@ Same exact-text run as Neon.
 ## Gemini 4 Hydrogen
 Same exact-text run as Neon.
 - **Exact text:** it answered "I don't know" to all 209 questions from memory; 97% with the text. All 7 of its misses have 87–96% of the reference words and fail only on the number check.
-- **Tasks:** from memory (facts only, no source text) it passed 121 of 208 criteria and 3 of 44 tasks. That is lower than Neon (70%) and Argon (73%) but still above the Claude average of 41%. The with-the-text notes are not run yet.
+- **Tasks:** from memory (facts only, no source text) it passed 121 of 208 criteria and 3 of 44 tasks. That is lower than Neon (70%) and Argon (73%) but still above the Claude average of 41%. With the text it passed 196 of 208 criteria (94%) and 34 of 44 tasks, a little behind Neon and Argon despite the best exact-text score. Its notes are the shortest of the three Gemini models. Because AWS throttled the Opus 4.6 judge on the `global` route, 21 of its 44 with-the-text tasks were graded with the same model on the `us` route.
