@@ -92,15 +92,15 @@ For Sonnet 5.5 and Opus 5.5 the batches were up to 24 exact-text questions or fo
 
 ## Paper
 
-Mardi, A. (2026). *Astrolabe: Do language models know Arabic law, or only sound like they do?* Zenodo. [https://doi.org/10.5281/zenodo.24449437](https://doi.org/10.5281/zenodo.24449437)
+Mardi, A. (2026). *Astrolabe: Do language models know Arabic law, or only sound like they do?* Zenodo. [https://doi.org/10.5281/zenodo.24499404](https://doi.org/10.5281/zenodo.24499404)
 
 ```bibtex
 @misc{mardi2026astrolabe,
   author = {Mardi, Ahmed},
   title  = {Astrolabe: Do language models know Arabic law, or only sound like they do?},
   year   = {2026},
-  doi    = {10.5281/zenodo.24449437},
-  url    = {https://doi.org/10.5281/zenodo.24449437},
+  doi    = {10.5281/zenodo.24499404},
+  url    = {https://doi.org/10.5281/zenodo.24499404},
   publisher = {Zenodo}
 }
 ```
